@@ -38,7 +38,7 @@ export function Reader({ lang, titles }: { lang: "vi" | "en"; titles: [string, s
   const les = DATA.find((x) => x.l === st.l);
   const vi = lang === "vi";
   const T = {
-    head: vi ? "课文 · Bài khoá" : "课文 · Texts",
+    head: vi ? "课文文章 · Bài khoá" : "课文文章 · Texts",
     note: vi
       ? "Đây là các bài khoá luyện tập do trang này tự soạn, dùng từ mới và ngữ pháp của từng bài trong giáo trình HSK 4 (nhân vật: A Linh – cô gái Việt Nam du học ở Trung Quốc, và bạn cùng phòng Tiểu Tuyết). Bài khoá gốc trong sách thuộc bản quyền của nhà xuất bản nên không đăng lại ở đây – hãy đọc trong sách giáo khoa."
       : "These are original practice texts written for this site, using each lesson's HSK 4 vocabulary and grammar (characters: A Linh, a Vietnamese student in China, and her roommate Xiaoxue). The textbook's own texts are copyrighted by the publisher and are not reproduced here — read them in your book.",

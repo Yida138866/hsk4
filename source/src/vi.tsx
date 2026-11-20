@@ -992,7 +992,7 @@ function weekTasks(w: number): Task[] {
     { title: "全真模拟", tv: "Thi thử như thật", detail: "按考试时间完整做一套（纸笔考约85分钟），考后只复习错题。", dv: "Làm trọn một đề đúng thời gian thi thật (thi giấy khoảng 85 phút), sau đó chỉ ôn lại câu sai.", min: 85 },
   ];
   const study = (l: number): Task[] => [
-    { title: `第${l}课 生词 + 课文`, tv: `Bài ${l}: Từ mới + Bài khóa`, detail: `「课程」→ 第${l}课：生词表朗读两遍，闪卡过一遍；看课文要点，用中文回答问题。`, dv: `Vào «Bài học» → Bài ${l}: đọc to bảng từ mới hai lần, xem thẻ từ một lượt; đọc ý chính các bài khóa và trả lời câu hỏi bằng tiếng Trung.`, min: ls.length === 3 ? 45 : 40 },
+    { title: `第${l}课 生词 + 课文文章`, tv: `Bài ${l}: Từ mới + Bài khóa`, detail: `「课程」→ 第${l}课：生词表朗读两遍，闪卡过一遍；看课文文章要点，用中文回答问题。`, dv: `Vào «Bài học» → Bài ${l}: đọc to bảng từ mới hai lần, xem thẻ từ một lượt; đọc ý chính các bài khóa và trả lời câu hỏi bằng tiếng Trung.`, min: ls.length === 3 ? 45 : 40 },
     { title: `第${l}课 语言点 + 小测`, tv: `Bài ${l}: Ngữ pháp + Kiểm tra`, detail: `学5个语言点，每个照例句自己造1句；做第${l}课小测（目标 8/10 以上），错词抄写3遍。`, dv: `Học 5 điểm ngữ pháp, mỗi điểm tự đặt 1 câu theo câu mẫu; làm bài kiểm tra bài ${l} (mục tiêu từ 8/10 trở lên), chép lại từ sai 3 lần.`, min: ls.length === 3 ? 45 : 35 },
   ];
   const days: Task[] = [];
@@ -1210,7 +1210,7 @@ export default function App() {
 
   return (
     <Page title="HSK 4 系统学习 · Học HSK 4 có hệ thống (中文–Tiếng Việt)" summary="按《HSK标准教程4》上下册 20 课整理：10 周学习计划、602 个生词（越南语释义 + 闪卡）、100 个语言点、水平测试和每课小测。· Theo 20 bài của giáo trình chuẩn HSK 4 (Quyển Thượng và Hạ): kế hoạch 10 tuần, 602 từ mới có nghĩa tiếng Việt và thẻ từ, 100 điểm ngữ pháp, bài kiểm tra trình độ và bài kiểm tra từng bài. HSK 3.0 bắt đầu áp dụng từ 13/12/2026, xem «Thông tin kỳ thi»." width="column" lang="zh-Hans">
-      <Segmented options={[{ value: "plan", label: "学习计划 · Kế hoạch học tập" }, { value: "read", label: "课文 · Bài khoá" }, { value: "lessons", label: "课程 · Bài học" }, { value: "quiz", label: "每课小测 · Kiểm tra từng bài" }, { value: "test", label: "随机水平测验 · Kiểm tra ngẫu nhiên" }, { value: "exam", label: "考试须知 · Thông tin kỳ thi" }, ...(PET_ON ? [{ value: "pet", label: "我的宠物 · Thú cưng" }] : [])]} value={tab} onChange={(v: string) => setTab(v)} />
+      <Segmented options={[{ value: "plan", label: "学习计划 · Kế hoạch học tập" }, { value: "read", label: "课文文章 · Bài khoá" }, { value: "lessons", label: "课程 · Bài học" }, { value: "quiz", label: "每课小测 · Kiểm tra từng bài" }, { value: "test", label: "随机水平测验 · Kiểm tra ngẫu nhiên" }, { value: "exam", label: "考试须知 · Thông tin kỳ thi" }, ...(PET_ON ? [{ value: "pet", label: "我的宠物 · Thú cưng" }] : [])]} value={tab} onChange={(v: string) => setTab(v)} />
 
       {tab === "plan" ? (
         <Section heading="10 周学习计划 · Kế hoạch học 10 tuần">
@@ -1231,7 +1231,7 @@ export default function App() {
       {tab === "lessons" ? (
         <Section heading={`第${L}课 ${title[0]} · Bài ${L}: ${title[1]}`} caption={`${L <= 10 ? "4上 · Quyển 4 Thượng" : "4下 · Quyển 4 Hạ"} · ${lw.length} 个生词 · ${lw.length} từ mới`}>
           <Select label="选择课 · Chọn bài" options={lessonOpts} value={lesson} onChange={(v: string) => { setLesson(v); }} />
-          <Segmented options={[{ value: "words", label: "生词 · Từ mới", count: lw.length }, { value: "cards", label: "闪卡 · Thẻ từ" }, { value: "grammar", label: "语言点 · Ngữ pháp" }, { value: "texts", label: "课文 · Bài khóa" }]} value={view} onChange={(v: string) => setView(v)} />
+          <Segmented options={[{ value: "words", label: "生词 · Từ mới", count: lw.length }, { value: "cards", label: "闪卡 · Thẻ từ" }, { value: "grammar", label: "语言点 · Ngữ pháp" }, { value: "texts", label: "课文文章 · Bài khóa" }]} value={view} onChange={(v: string) => setView(v)} />
           {view === "words" ? (
             <Table columns={["汉字 · Chữ Hán", "拼音 · Pinyin", "词性 · Từ loại", "越南语 · Nghĩa tiếng Việt"]} rows={lw.map((w: Word) => [<span style={{ display: "inline-flex", alignItems: "center", gap: 8, whiteSpace: "nowrap" }}><SpeakBtn items={wordAudio(w.h)} k={"w:" + w.h} size={28} /><span lang="zh-Hans" style={{ fontSize: 17 }}>{w.h}</span></span>, w.p, w.pos || "—", <MeaningCell v={w.v} hv={w.hv} />])} align={["start", "start", "start", "start"]} />
           ) : null}

@@ -961,7 +961,7 @@ function weekTasks(w: number): Task[] {
     { title: "全真模拟", detail: "按考试时间完整做一套（纸笔考约85分钟），考后只复习错题。", min: 85 },
   ];
   const study = (l: number): Task[] => [
-    { title: `第${l}课 生词 + 课文`, detail: `「课程」→ 第${l}课：生词表朗读两遍，闪卡过一遍；看课文要点，用中文回答问题。`, min: ls.length === 3 ? 45 : 40 },
+    { title: `第${l}课 生词 + 课文文章`, detail: `「课程」→ 第${l}课：生词表朗读两遍，闪卡过一遍；看课文文章要点，用中文回答问题。`, min: ls.length === 3 ? 45 : 40 },
     { title: `第${l}课 语言点 + 小测`, detail: `学5个语言点，每个照例句自己造1句；做第${l}课小测（目标 8/10 以上），错词抄写3遍。`, min: ls.length === 3 ? 45 : 35 },
   ];
   const days: Task[] = [];
@@ -1150,7 +1150,7 @@ export default function App() {
 
   return (
     <Page title="HSK 4 系统学习：10 周计划 · 20 课 · 测试" summary="按《HSK标准教程4》上下册 20 课整理：每天 30–45 分钟的 10 周计划、全部 602 个生词（闪卡）、100 个语言点、水平测试和每课小测。新版 HSK 3.0 已于 2026 年 12 月 13 日启用，题型见「考试须知」。" width="column" lang="zh-Hans">
-      <Segmented options={[{ value: "plan", label: "学习计划" }, { value: "read", label: "课文 · Texts" }, { value: "lessons", label: "课程" }, { value: "quiz", label: "每课小测" }, { value: "test", label: "随机水平测验 · Random Level Test" }, { value: "exam", label: "考试须知" }, ...(PET_ON ? [{ value: "pet", label: "我的宠物 · My Pet" }] : [])]} value={tab} onChange={(v: string) => setTab(v)} />
+      <Segmented options={[{ value: "plan", label: "学习计划" }, { value: "read", label: "课文文章 · Texts" }, { value: "lessons", label: "课程" }, { value: "quiz", label: "每课小测" }, { value: "test", label: "随机水平测验 · Random Level Test" }, { value: "exam", label: "考试须知" }, ...(PET_ON ? [{ value: "pet", label: "我的宠物 · My Pet" }] : [])]} value={tab} onChange={(v: string) => setTab(v)} />
 
       {tab === "plan" ? (
         <Section heading="10 周学习计划">
@@ -1170,7 +1170,7 @@ export default function App() {
       {tab === "lessons" ? (
         <Section heading={`第${L}课 ${title[0]}`} caption={`${title[1]} · ${L <= 10 ? "4上" : "4下"} · ${lw.length} 个生词`}>
           <Select label="选择课" options={lessonOpts} value={lesson} onChange={(v: string) => { setLesson(v); }} />
-          <Segmented options={[{ value: "words", label: "生词", count: lw.length }, { value: "cards", label: "闪卡" }, { value: "grammar", label: "语言点" }, { value: "texts", label: "课文" }]} value={view} onChange={(v: string) => setView(v)} />
+          <Segmented options={[{ value: "words", label: "生词", count: lw.length }, { value: "cards", label: "闪卡" }, { value: "grammar", label: "语言点" }, { value: "texts", label: "课文文章" }]} value={view} onChange={(v: string) => setView(v)} />
           {view === "words" ? (
             <Table columns={["汉字", "拼音", "词性", "释义"]} rows={lw.map((w: Word) => [<span style={{ display: "inline-flex", alignItems: "center", gap: 8, whiteSpace: "nowrap" }}><SpeakBtn items={wordAudio(w.h)} k={"w:" + w.h} size={28} /><span lang="zh-Hans" style={{ fontSize: 17 }}>{w.h}</span></span>, w.p, w.pos || "—", w.m])} align={["start", "start", "start", "start"]} />
           ) : null}

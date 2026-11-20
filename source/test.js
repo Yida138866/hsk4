@@ -38,7 +38,7 @@ const body = (page) => page.evaluate(() => document.body.innerText);
     if (shotPrefix && vp.name === "phone" && !path) await page.screenshot({ path: shotPrefix + "_card.png" });
     await clickText(page, "button", "下一张");
     await clickText(page, "[role=tab]", "语言点"); t = await body(page); log(`grammar: ${t.includes("不仅")}`);
-    await clickText(page, "[role=tab]", "课文"); t = await body(page); log(`reader tab: ${t.includes("阿玲")}`);
+    await clickText(page, "[role=tab]", "课文文章"); t = await body(page); log(`reader tab: ${t.includes("课文文章") && t.includes("阿玲")}`);
     const rb = await page.evaluate(() => document.querySelectorAll("ruby").length);
     await clickText(page, "button", "✓ 拼音"); const rb2 = await page.evaluate(() => document.querySelectorAll("ruby").length);
     await clickText(page, "button", "拼音"); log(`reader pinyin toggle: ${rb > 0 && rb2 === 0} (${rb}->${rb2})`);
