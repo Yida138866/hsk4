@@ -1,6 +1,7 @@
 import { Page, Section, Text, Segmented, Select, Button, Callout, Table, Properties, LinkCards, Rows, useState, useMemo, useEffect, useGrokTheme } from "grok/canvas";
 import type { ReactNode } from "grok/canvas";
 import { Reader } from "./reader";
+import { SpeakBtn, wordAudio } from "./audio";
 
 type Word = { h: string; p: string; pos: string; v: string; hv: string; l: number };
 type Q = { id: string; sec: "listen" | "read" | "write"; kind: string; passage?: string; stem: string; opts: string[]; a: number; ex?: string };
@@ -1111,7 +1112,7 @@ function Flashcards({ words }: { words: Word[] }) {
   return (
     <div>
       <div onClick={() => setFlip(!flip)} style={{ cursor: "pointer", border: `1px solid ${t.border.default}`, borderRadius: 16, padding: "36px 20px", textAlign: "center", background: t.bg.elevated, minHeight: 180, display: "flex", flexDirection: "column", justifyContent: "center", gap: 10 }}>
-        <div style={{ fontSize: "44px", lineHeight: "52px", color: t.text.primary }}>{w.h}</div>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12 }}><div lang="zh-Hans" style={{ fontSize: "44px", lineHeight: "52px", color: t.text.primary }}>{w.h}</div><SpeakBtn items={wordAudio(w.h)} k={"w:" + w.h} size={40} /></div>
         {flip ? (
           <div>
             <div style={{ fontSize: "22px", lineHeight: "30px", color: t.text.primary }}>{w.p}</div>
@@ -1228,7 +1229,7 @@ export default function App() {
           <Select label="选择课 · Chọn bài" options={lessonOpts} value={lesson} onChange={(v: string) => { setLesson(v); }} />
           <Segmented options={[{ value: "words", label: "生词 · Từ mới", count: lw.length }, { value: "cards", label: "闪卡 · Thẻ từ" }, { value: "grammar", label: "语言点 · Ngữ pháp" }, { value: "texts", label: "课文 · Bài khóa" }]} value={view} onChange={(v: string) => setView(v)} />
           {view === "words" ? (
-            <Table columns={["汉字 · Chữ Hán", "拼音 · Pinyin", "词性 · Từ loại", "越南语 · Nghĩa tiếng Việt"]} rows={lw.map((w: Word) => [w.h, w.p, w.pos || "—", <MeaningCell v={w.v} hv={w.hv} />])} align={["start", "start", "start", "start"]} />
+            <Table columns={["汉字 · Chữ Hán", "拼音 · Pinyin", "词性 · Từ loại", "越南语 · Nghĩa tiếng Việt"]} rows={lw.map((w: Word) => [<span style={{ display: "inline-flex", alignItems: "center", gap: 8, whiteSpace: "nowrap" }}><SpeakBtn items={wordAudio(w.h)} k={"w:" + w.h} size={28} /><span lang="zh-Hans" style={{ fontSize: 17 }}>{w.h}</span></span>, w.p, w.pos || "—", <MeaningCell v={w.v} hv={w.hv} />])} align={["start", "start", "start", "start"]} />
           ) : null}
           {view === "cards" ? <Flashcards key={`fc-${L}`} words={lw} /> : null}
           {view === "grammar" ? (

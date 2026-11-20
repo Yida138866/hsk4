@@ -21,8 +21,9 @@ for k, c in cfg.items():
     src = src.replace('import("grok/canvas")', 'import("./kit")')
     src = 'declare const HSK_DATA: Record<string, string>;\n' + src
     open(f"src/build_{k}.tsx", "w").write(src)
-    open(f"src/entry_{k}.tsx", "w").write(f'import {{ createRoot }} from "react-dom/client";\nimport {{ ThemeRoot }} from "./kit";\nimport App from "./build_{k}";\ncreateRoot(document.getElementById("root")!).render(<ThemeRoot><App /></ThemeRoot>);\n')
+    open(f"src/entry_{k}.tsx", "w").write(f'import {{ createRoot }} from "react-dom/client";\nimport {{ ThemeRoot }} from "./kit";\nimport App from "./build_{k}";\nimport {{ MusicBar }} from "./audio";\ncreateRoot(document.getElementById("root")!).render(<ThemeRoot><App /></ThemeRoot>);\nconst mr = document.getElementById("music-root"); if (mr) createRoot(mr).render(<MusicBar lang="{k}" />);\n')
     open(f"{c['dir']}/assets/texts.js", "w").write("window.HSK_TEXTS = " + open("texts.json").read() + ";\n")
+    if k == "vi": open(f"{out}/assets/tracks.js", "w").write("window.HSK_TRACKS = " + open("tracks.json").read() + ";\n")
     js = "window.HSK_DATA = " + json.dumps(data, ensure_ascii=False, indent=0) + ";\n"
     open(f"{c['dir']}/assets/data.js", "w").write(js)
     subprocess.run(["npx", "esbuild", f"src/entry_{k}.tsx", "--bundle", "--minify", "--jsx=automatic", "--define:process.env.NODE_ENV=\"production\"", "--target=es2018", f"--outfile={c['dir']}/assets/app.js", "--log-level=warning"], check=True)
@@ -48,6 +49,10 @@ rt{{user-select:none}}
 .langbar{{max-width:1280px;margin:0 auto;padding:12px 14px 0;display:flex;justify-content:flex-end;align-items:center;gap:10px;font:13px/18px ui-rounded,"SF Pro Rounded","Nunito",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;}}
 .langbar a{{color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;background:linear-gradient(135deg,#ff8cc0,#c58bff);box-shadow:0 3px 10px rgba(232,85,154,.25);font-weight:700}}
 .langbar span{{color:#a0507f;padding:5px 0}}
+#music-root{{margin-right:auto;min-width:0}}
+.note-bounce{{display:inline-block;animation:nb 1s ease-in-out infinite}}
+@keyframes nb{{0%,100%{{transform:translateY(0)}}50%{{transform:translateY(-3px) rotate(-8deg)}}}}
+@media (max-width:520px){{.langbar{{flex-wrap:wrap}} .lnote{{display:none}} .mtitle{{max-width:90px}} .mpanel{{position:fixed!important;left:10px;right:10px!important;top:58px!important;width:auto!important}}}}
 .deco{{position:fixed;pointer-events:none;z-index:0;opacity:.55}}
 #root{{position:relative;z-index:1}}
 @media (max-width:520px){{.deco{{display:none}} .hero-deco{{display:none}}}}
@@ -55,7 +60,7 @@ noscript{{display:block;padding:24px;font-family:sans-serif}}
 </style>
 </head>
 <body>
-<nav class="langbar" aria-label="Language"><span>{c['note']}</span><a href="{c['other_href']}" hreflang="{'en' if k=='vi' else 'vi'}">{c['other_label']}</a></nav>
+<nav class="langbar" aria-label="Language"><div id="music-root"></div><span class="lnote">{c['note']}</span><a href="{c['other_href']}" hreflang="{'en' if k=='vi' else 'vi'}">{c['other_label']}</a></nav>
 <svg class="deco" aria-hidden="true" style="left:2%;top:140px" width="46" height="46" viewBox="0 0 20 20"><path d="M10 0l2.4 7.6 7.6 2.4-7.6 2.4L10 20l-2.4-7.6L0 10l7.6-2.4z" fill="#ffc46b"/></svg>
 <svg class="deco" aria-hidden="true" style="right:3%;top:320px" width="40" height="40" viewBox="0 0 32 32"><path d="M16 29C7 22 2 17 2 11a7 7 0 0 1 14-3 7 7 0 0 1 14 3c0 6-5 11-14 18z" fill="#f9a8cf"/></svg>
 <svg class="deco" aria-hidden="true" style="left:3%;bottom:80px" width="44" height="44" viewBox="0 0 40 40"><g fill="#d9c2ff"><circle cx="20" cy="9" r="7"/><circle cx="31" cy="17" r="7"/><circle cx="27" cy="30" r="7"/><circle cx="13" cy="30" r="7"/><circle cx="9" cy="17" r="7"/></g><circle cx="20" cy="21" r="5" fill="#ffd27a"/></svg>
@@ -63,13 +68,14 @@ noscript{{display:block;padding:24px;font-family:sans-serif}}
 <div id="root"></div>
 <noscript>This page needs JavaScript. · Trang này cần bật JavaScript.</noscript>
 <script src="{c.get('texts_src','assets/texts.js')}"></script>
+<script src="{'../' if k=='en' else ''}assets/tracks.js"></script>
 <script src="assets/data.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>
 """
     open(f"{c['dir']}/index.html", "w").write(html)
-shutil.copy("../course_vi.json", out + "/data/course_vi.json")
-shutil.copy("../course.json", out + "/data/course.json")
+os.path.exists("../course_vi.json") and shutil.copy("../course_vi.json", out + "/data/course_vi.json")
+os.path.exists("../course.json") and shutil.copy("../course.json", out + "/data/course.json")
 open(out + "/.nojekyll", "w").write("")
 print("ok")

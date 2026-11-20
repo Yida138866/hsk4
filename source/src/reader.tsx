@@ -1,6 +1,7 @@
 // 课文 reader: original practice texts (written for this site) with toggleable pinyin and translation.
 import { useState, useEffect, ZH_FONT, Sparkle } from "./kit";
 import type { ReactNode } from "./kit";
+import { SpeakBtn, useSpeaking } from "./audio";
 
 type Line = { s: string; sp: string[]; t: string; p: string[]; vi: string; en: string };
 type Txt = { n: number; zh: string; vi: string; en: string; lines: Line[] };
@@ -49,6 +50,8 @@ export function Reader({ lang, titles }: { lang: "vi" | "en"; titles: [string, s
     size: vi ? "Cỡ chữ" : "Text size",
   };
   const ttl = titles[st.l - 1] ?? ["", ""];
+  const cur = useSpeaking();
+  const lineItem = (tx: Txt, i: number): [string, string, string] => [`t/${st.l}_${tx.n}_${i}.mp3`, tx.lines[i].t, `t:${st.l}_${tx.n}_${i}`];
   return (
     <section id="reader-top" className="card" style={{ display: "flex", flexDirection: "column", gap: 16, padding: "20px 16px", borderRadius: 24, background: "rgba(255,255,255,0.92)", boxShadow: "0 8px 26px rgba(214,90,160,0.12)", border: "1.5px solid rgba(248,190,220,0.55)", minWidth: 0 }}>
       <h2 style={{ margin: 0, fontSize: 21, lineHeight: "28px", fontWeight: 800, color: "#8f2160" }}><span aria-hidden style={{ color: "#f07ab3", marginRight: 6 }}>✿</span>{T.head}</h2>
@@ -79,17 +82,19 @@ export function Reader({ lang, titles }: { lang: "vi" | "en"; titles: [string, s
           <article key={tx.n} style={{ borderRadius: 22, padding: "16px 14px", background: tx.n % 2 ? "linear-gradient(180deg,#fff7fb,#ffffff)" : "linear-gradient(180deg,#f9f4ff,#ffffff)", border: "1.5px dashed rgba(232,85,154,0.28)" }}>
             <div style={{ display: "flex", alignItems: "baseline", gap: 8, flexWrap: "wrap", marginBottom: 10 }}>
               <span style={{ fontSize: 12, fontWeight: 800, color: "#fff", background: "linear-gradient(135deg,#ff8cc0,#ffa877)", borderRadius: 9999, padding: "3px 10px" }}>{T.text(tx.n)}</span>
-              <span lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontSize: 19, fontWeight: 700, color: "#43284d" }}>{tx.zh}</span>
+              <span lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontSize: 19, fontWeight: 700, color: "#43284d", flex: "1 1 auto" }}>{tx.zh}</span>
+              <span style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: 12, fontWeight: 800, color: "#c0447f" }}>{vi ? "Nghe cả bài" : "Play all"}<SpeakBtn items={tx.lines.map((_, i) => lineItem(tx, i))} k={`all:${st.l}_${tx.n}`} size={36} label={vi ? "Nghe cả bài" : "Play whole text"} /></span>
             </div>
             {st.tr ? <div style={{ fontSize: 14, color: "rgba(74,42,82,0.7)", marginTop: -4, marginBottom: 10 }}>{vi ? tx.vi : tx.en}</div> : null}
             <div style={{ display: "flex", flexDirection: "column", gap: dlg ? 14 : 12 }}>
               {tx.lines.map((ln, i) => (
-                <div key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
+                <div key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start", borderRadius: 14, padding: "4px 6px", margin: "0 -6px", background: cur === `t:${st.l}_${tx.n}_${i}` ? "rgba(255,200,225,0.45)" : "transparent", transition: "background .2s" }}>
                   {ln.s ? <span lang="zh-Hans" style={{ flex: "0 0 auto", marginTop: st.py ? Math.round(size * 0.55) : 4, fontFamily: ZH_FONT, fontSize: 14, fontWeight: 700, color: "#fff", background: ln.s === "阿玲" ? "#f07ab3" : ln.s === "小雪" ? "#a98bf0" : "#ffa877", borderRadius: 12, padding: "3px 8px", whiteSpace: "nowrap" }}>{ln.s}</span> : null}
                   <div style={{ minWidth: 0, flex: 1 }}>
                     <p lang="zh-Hans" style={{ margin: 0, fontFamily: ZH_FONT, fontSize: size, lineHeight: st.py ? `${Math.round(size * 2.15)}px` : `${Math.round(size * 1.65)}px`, color: "#2f1b37", textIndent: ln.s ? 0 : "2em", wordBreak: "break-all" }}><Ruby text={ln.t} py={ln.p} show={st.py} size={size} /></p>
                     {st.tr ? <p style={{ margin: "4px 0 0", fontSize: 15, lineHeight: "23px", color: "#7a4a72" }}>{vi ? ln.vi : ln.en}</p> : null}
                   </div>
+                  <span style={{ marginTop: st.py ? Math.round(size * 0.5) : 2 }}><SpeakBtn items={[lineItem(tx, i)]} k={`t:${st.l}_${tx.n}_${i}`} size={30} label={vi ? "Nghe câu này" : "Play sentence"} /></span>
                 </div>
               ))}
             </div>
