@@ -1147,7 +1147,7 @@ export default function App() {
 
   return (
     <Page title="HSK 4 系统学习：10 周计划 · 20 课 · 测试" summary="按《HSK标准教程4》上下册 20 课整理：每天 30–45 分钟的 10 周计划、全部 602 个生词（闪卡）、100 个语言点、水平测试和每课小测。新版 HSK 3.0 已于 2026 年 12 月 13 日启用，题型见「考试须知」。" width="column" lang="zh-Hans">
-      <Segmented options={[{ value: "plan", label: "学习计划" }, { value: "lessons", label: "课程" }, { value: "read", label: "课文 · Texts" }, { value: "quiz", label: "每课小测" }, { value: "test", label: "随机水平测验 · Random Level Test" }, { value: "exam", label: "考试须知" }]} value={tab} onChange={(v: string) => setTab(v)} />
+      <Segmented options={[{ value: "plan", label: "学习计划" }, { value: "read", label: "课文 · Texts" }, { value: "lessons", label: "课程" }, { value: "quiz", label: "每课小测" }, { value: "test", label: "随机水平测验 · Random Level Test" }, { value: "exam", label: "考试须知" }]} value={tab} onChange={(v: string) => setTab(v)} />
 
       {tab === "plan" ? (
         <Section heading="10 周学习计划">

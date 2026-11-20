@@ -1207,7 +1207,7 @@ export default function App() {
 
   return (
     <Page title="HSK 4 系统学习 · Học HSK 4 có hệ thống (中文–Tiếng Việt)" summary="按《HSK标准教程4》上下册 20 课整理：10 周学习计划、602 个生词（越南语释义 + 闪卡）、100 个语言点、水平测试和每课小测。· Theo 20 bài của giáo trình chuẩn HSK 4 (Quyển Thượng và Hạ): kế hoạch 10 tuần, 602 từ mới có nghĩa tiếng Việt và thẻ từ, 100 điểm ngữ pháp, bài kiểm tra trình độ và bài kiểm tra từng bài. HSK 3.0 bắt đầu áp dụng từ 13/12/2026, xem «Thông tin kỳ thi»." width="column" lang="zh-Hans">
-      <Segmented options={[{ value: "plan", label: "学习计划 · Kế hoạch học tập" }, { value: "lessons", label: "课程 · Bài học" }, { value: "read", label: "课文 · Bài khoá" }, { value: "quiz", label: "每课小测 · Kiểm tra từng bài" }, { value: "test", label: "随机水平测验 · Kiểm tra ngẫu nhiên" }, { value: "exam", label: "考试须知 · Thông tin kỳ thi" }]} value={tab} onChange={(v: string) => setTab(v)} />
+      <Segmented options={[{ value: "plan", label: "学习计划 · Kế hoạch học tập" }, { value: "read", label: "课文 · Bài khoá" }, { value: "lessons", label: "课程 · Bài học" }, { value: "quiz", label: "每课小测 · Kiểm tra từng bài" }, { value: "test", label: "随机水平测验 · Kiểm tra ngẫu nhiên" }, { value: "exam", label: "考试须知 · Thông tin kỳ thi" }]} value={tab} onChange={(v: string) => setTab(v)} />
 
       {tab === "plan" ? (
         <Section heading="10 周学习计划 · Kế hoạch học 10 tuần">
