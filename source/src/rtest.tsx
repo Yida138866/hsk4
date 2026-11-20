@@ -1,6 +1,7 @@
 // 随机水平测验: random 30-question level test drawn from a ~2,100-item bank (lessons 1–20).
 import { useState, useEffect, ZH_FONT, Sparkle } from "./kit";
 import { SpeakBtn } from "./audio";
+import { petEvent } from "./pet";
 
 type Item = { id: string; l: number; ty: string; stem: string; opts: string[]; ex: string; au?: [string, string]; passage?: string; q?: string };
 declare const HSK_BANK: Item[];
@@ -98,6 +99,7 @@ export function RandomTest({ lang }: { lang: "vi" | "en" }) {
   const weak = Object.keys(byLesson).map(Number).filter((l) => byLesson[l][0] < byLesson[l][1]).sort((a, b) => (byLesson[a][0] / byLesson[a][1]) - (byLesson[b][0] / byLesson[b][1]) || a - b);
   const submit = () => {
     setDone(true);
+    petEvent("rtest", { score, n: set.length, level });
     const h: Hist = { t: Date.now(), score, n: set.length, byType, weak };
     const nh = [h, ...hist].slice(0, 30); setHist(nh);
     try { window.localStorage.setItem(HKEY, JSON.stringify(nh)); } catch (e) { /* storage unavailable */ }

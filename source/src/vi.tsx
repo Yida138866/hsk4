@@ -3,6 +3,7 @@ import type { ReactNode } from "grok/canvas";
 import { Reader } from "./reader";
 import { SpeakBtn, wordAudio } from "./audio";
 import { RandomTest } from "./rtest";
+import { PET_ON, PetTab, petEvent } from "./pet";
 
 type Word = { h: string; p: string; pos: string; v: string; hv: string; l: number };
 type Q = { id: string; sec: "listen" | "read" | "write"; kind: string; passage?: string; stem: string; opts: string[]; a: number; ex?: string };
@@ -1127,7 +1128,7 @@ function Flashcards({ words }: { words: Word[] }) {
       <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 12, alignItems: "center" }}>
         <Button label="上一张 · Thẻ trước" onClick={() => { setI((i - 1 + deck.length) % deck.length); setFlip(false); }} />
         <Button label={flip ? "盖住 · Úp lại" : "翻面 · Lật thẻ"} variant="primary" onClick={() => setFlip(!flip)} />
-        <Button label="下一张 · Thẻ sau" onClick={() => { setI((i + 1) % deck.length); setFlip(false); }} />
+        <Button label="下一张 · Thẻ sau" onClick={() => { if ((i + 1) % deck.length === 0 && deck[0]) petEvent("cards", { lesson: (deck[0] as Word).l }); setI((i + 1) % deck.length); setFlip(false); }} />
         <Button label="打乱顺序 · Xáo trộn" onClick={() => { setSeed(Math.floor(Math.random() * 100000) + 1); setI(0); setFlip(false); }} />
         <span style={{ color: t.text.tertiary, fontSize: t.font.label.fontSize }}>{(i % deck.length) + 1} / {deck.length}</span>
       </div>
@@ -1160,6 +1161,7 @@ function MeaningCell({ v, hv }: { v: string; hv: string }) {
 export default function App() {
   const t = useGrokTheme();
   const [tab, setTab] = useState<string>("plan");
+  useEffect(() => { const f = (e: Event) => { const d = (e as CustomEvent).detail; if (typeof d === "string") { setTab(d); setTimeout(() => { const el = document.getElementById("pet-top"); if (el && el.scrollIntoView) el.scrollIntoView({ behavior: "smooth", block: "start" }); }, 50); } }; window.addEventListener("hsk4-goto", f); return () => window.removeEventListener("hsk4-goto", f); }, []);
   const [week, setWeek] = useState<string>("0");
   const [done, setDone] = useState<Record<string, boolean>>({});
   const [lesson, setLesson] = useState<string>("1");
@@ -1178,6 +1180,7 @@ export default function App() {
   const toggleDay = (key: string) => {
     const next = { ...done, [key]: !done[key] };
     setDone(next);
+    if (next[key]) petEvent("task", { key });
     try { window.localStorage.setItem(STORE, JSON.stringify(next)); } catch (e) { /* storage unavailable */ }
   };
 
@@ -1207,7 +1210,7 @@ export default function App() {
 
   return (
     <Page title="HSK 4 系统学习 · Học HSK 4 có hệ thống (中文–Tiếng Việt)" summary="按《HSK标准教程4》上下册 20 课整理：10 周学习计划、602 个生词（越南语释义 + 闪卡）、100 个语言点、水平测试和每课小测。· Theo 20 bài của giáo trình chuẩn HSK 4 (Quyển Thượng và Hạ): kế hoạch 10 tuần, 602 từ mới có nghĩa tiếng Việt và thẻ từ, 100 điểm ngữ pháp, bài kiểm tra trình độ và bài kiểm tra từng bài. HSK 3.0 bắt đầu áp dụng từ 13/12/2026, xem «Thông tin kỳ thi»." width="column" lang="zh-Hans">
-      <Segmented options={[{ value: "plan", label: "学习计划 · Kế hoạch học tập" }, { value: "read", label: "课文 · Bài khoá" }, { value: "lessons", label: "课程 · Bài học" }, { value: "quiz", label: "每课小测 · Kiểm tra từng bài" }, { value: "test", label: "随机水平测验 · Kiểm tra ngẫu nhiên" }, { value: "exam", label: "考试须知 · Thông tin kỳ thi" }]} value={tab} onChange={(v: string) => setTab(v)} />
+      <Segmented options={[{ value: "plan", label: "学习计划 · Kế hoạch học tập" }, { value: "read", label: "课文 · Bài khoá" }, { value: "lessons", label: "课程 · Bài học" }, { value: "quiz", label: "每课小测 · Kiểm tra từng bài" }, { value: "test", label: "随机水平测验 · Kiểm tra ngẫu nhiên" }, { value: "exam", label: "考试须知 · Thông tin kỳ thi" }, ...(PET_ON ? [{ value: "pet", label: "我的宠物 · Thú cưng" }] : [])]} value={tab} onChange={(v: string) => setTab(v)} />
 
       {tab === "plan" ? (
         <Section heading="10 周学习计划 · Kế hoạch học 10 tuần">
@@ -1244,6 +1247,8 @@ export default function App() {
           {view === "texts" && partial ? <Callout tone="info">本课部分内容：{partial[0]}。生词和语言点是完整的。· Bài này chưa đầy đủ: {partial[1]}. Từ mới và ngữ pháp thì đầy đủ.</Callout> : null}
         </Section>
       ) : null}
+
+      {tab === "pet" && PET_ON ? <PetTab /> : null}
 
       {tab === "test" ? <RandomTest lang="vi" /> : null}
 
@@ -1282,7 +1287,7 @@ export default function App() {
             <QBlock key={`${qSeed}-${q.id}`} q={q} idx={i + 1} chosen={qAns[q.id]} done={qDone} onPick={(k: number) => setQAns({ ...qAns, [q.id]: k })} />
           ))}
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center" }}>
-            {!qDone ? <Button label="交卷 · Nộp bài" variant="primary" onClick={() => setQDone(true)} /> : <Button label="换一套题 · Đổi đề khác" variant="primary" onClick={() => { setQSeed(qSeed + 1); setQAns({}); setQDone(false); }} />}
+            {!qDone ? <Button label="交卷 · Nộp bài" variant="primary" onClick={() => { setQDone(true); petEvent("quiz", { lesson: Number(qLesson), score: qScore }); }} /> : <Button label="换一套题 · Đổi đề khác" variant="primary" onClick={() => { setQSeed(qSeed + 1); setQAns({}); setQDone(false); }} />}
             <Button label="重做本套 · Làm lại đề này" onClick={() => { setQAns({}); setQDone(false); }} />
             {qDone ? <span style={{ color: t.text.primary, fontSize: t.font.body1.fontSize }}>得分 · Điểm: {qScore} / 10{qScore >= 8 ? " · 不错！Tốt lắm!" : " · 把错词放进闪卡多复习几遍。Hãy ôn lại các từ sai bằng thẻ từ nhiều lần."}</span> : null}
           </div>

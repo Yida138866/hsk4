@@ -2,6 +2,7 @@
 import { useState, useEffect, ZH_FONT, Sparkle } from "./kit";
 import type { ReactNode } from "./kit";
 import { SpeakBtn, useSpeaking } from "./audio";
+import { petEvent } from "./pet";
 
 type Line = { s: string; sp: string[]; t: string; p: string[]; vi: string; en: string };
 type Txt = { n: number; zh: string; vi: string; en: string; lines: Line[] };
@@ -83,7 +84,7 @@ export function Reader({ lang, titles }: { lang: "vi" | "en"; titles: [string, s
             <div style={{ display: "flex", alignItems: "baseline", gap: 8, flexWrap: "wrap", marginBottom: 10 }}>
               <span style={{ fontSize: 12, fontWeight: 800, color: "#fff", background: "linear-gradient(135deg,#ff8cc0,#ffa877)", borderRadius: 9999, padding: "3px 10px" }}>{T.text(tx.n)}</span>
               <span lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontSize: 19, fontWeight: 700, color: "#43284d", flex: "1 1 auto" }}>{tx.zh}</span>
-              <span style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: 12, fontWeight: 800, color: "#c0447f" }}>{vi ? "Nghe cả bài" : "Play all"}<SpeakBtn items={tx.lines.map((_, i) => lineItem(tx, i))} k={`all:${st.l}_${tx.n}`} size={36} label={vi ? "Nghe cả bài" : "Play whole text"} /></span>
+              <span style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: 12, fontWeight: 800, color: "#c0447f" }}>{vi ? "Nghe cả bài" : "Play all"}<SpeakBtn items={tx.lines.map((_, i) => lineItem(tx, i))} k={`all:${st.l}_${tx.n}`} size={36} onDone={() => petEvent("listen", { key: `${st.l}_${tx.n}` })} label={vi ? "Nghe cả bài" : "Play whole text"} /></span>
             </div>
             {st.tr ? <div style={{ fontSize: 14, color: "rgba(74,42,82,0.7)", marginTop: -4, marginBottom: 10 }}>{vi ? tx.vi : tx.en}</div> : null}
             <div style={{ display: "flex", flexDirection: "column", gap: dlg ? 14 : 12 }}>

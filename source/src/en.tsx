@@ -2,6 +2,7 @@ import { Page, Section, Text, Segmented, Select, Button, Callout, Table, Propert
 import { Reader } from "./reader";
 import { SpeakBtn, wordAudio } from "./audio";
 import { RandomTest } from "./rtest";
+import { PET_ON, PetTab, petEvent } from "./pet";
 
 type Word = { h: string; p: string; pos: string; m: string; l: number };
 type Q = { id: string; sec: "listen" | "read" | "write"; kind: string; passage?: string; stem: string; opts: string[]; a: number };
@@ -1090,7 +1091,7 @@ function Flashcards({ words }: { words: Word[] }) {
       <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 12, alignItems: "center" }}>
         <Button label="上一张" onClick={() => { setI((i - 1 + deck.length) % deck.length); setFlip(false); }} />
         <Button label={flip ? "盖住" : "翻面"} variant="primary" onClick={() => setFlip(!flip)} />
-        <Button label="下一张" onClick={() => { setI((i + 1) % deck.length); setFlip(false); }} />
+        <Button label="下一张" onClick={() => { if ((i + 1) % deck.length === 0 && deck[0]) petEvent("cards", { lesson: (deck[0] as Word).l }); setI((i + 1) % deck.length); setFlip(false); }} />
         <Button label="打乱顺序" onClick={() => { setSeed(Math.floor(Math.random() * 100000) + 1); setI(0); setFlip(false); }} />
         <span style={{ color: t.text.tertiary, fontSize: t.font.label.fontSize }}>{(i % deck.length) + 1} / {deck.length}</span>
       </div>
@@ -1101,6 +1102,7 @@ function Flashcards({ words }: { words: Word[] }) {
 export default function App() {
   const t = useGrokTheme();
   const [tab, setTab] = useState<string>("plan");
+  useEffect(() => { const f = (e: Event) => { const d = (e as CustomEvent).detail; if (typeof d === "string") { setTab(d); setTimeout(() => { const el = document.getElementById("pet-top"); if (el && el.scrollIntoView) el.scrollIntoView({ behavior: "smooth", block: "start" }); }, 50); } }; window.addEventListener("hsk4-goto", f); return () => window.removeEventListener("hsk4-goto", f); }, []);
   const [week, setWeek] = useState<string>("0");
   const [done, setDone] = useState<Record<string, boolean>>({});
   const [lesson, setLesson] = useState<string>("1");
@@ -1119,6 +1121,7 @@ export default function App() {
   const toggleDay = (key: string) => {
     const next = { ...done, [key]: !done[key] };
     setDone(next);
+    if (next[key]) petEvent("task", { key });
     try { window.localStorage.setItem(STORE, JSON.stringify(next)); } catch (e) { /* storage unavailable */ }
   };
 
@@ -1147,7 +1150,7 @@ export default function App() {
 
   return (
     <Page title="HSK 4 系统学习：10 周计划 · 20 课 · 测试" summary="按《HSK标准教程4》上下册 20 课整理：每天 30–45 分钟的 10 周计划、全部 602 个生词（闪卡）、100 个语言点、水平测试和每课小测。新版 HSK 3.0 已于 2026 年 12 月 13 日启用，题型见「考试须知」。" width="column" lang="zh-Hans">
-      <Segmented options={[{ value: "plan", label: "学习计划" }, { value: "read", label: "课文 · Texts" }, { value: "lessons", label: "课程" }, { value: "quiz", label: "每课小测" }, { value: "test", label: "随机水平测验 · Random Level Test" }, { value: "exam", label: "考试须知" }]} value={tab} onChange={(v: string) => setTab(v)} />
+      <Segmented options={[{ value: "plan", label: "学习计划" }, { value: "read", label: "课文 · Texts" }, { value: "lessons", label: "课程" }, { value: "quiz", label: "每课小测" }, { value: "test", label: "随机水平测验 · Random Level Test" }, { value: "exam", label: "考试须知" }, ...(PET_ON ? [{ value: "pet", label: "我的宠物 · My Pet" }] : [])]} value={tab} onChange={(v: string) => setTab(v)} />
 
       {tab === "plan" ? (
         <Section heading="10 周学习计划">
@@ -1181,6 +1184,8 @@ export default function App() {
           {view === "texts" && PARTIAL[L] ? <Callout tone="info">本课部分内容：{PARTIAL[L]}。生词和语言点是完整的。</Callout> : null}
         </Section>
       ) : null}
+
+      {tab === "pet" && PET_ON ? <PetTab /> : null}
 
       {tab === "test" ? <RandomTest lang="en" /> : null}
 
@@ -1219,7 +1224,7 @@ export default function App() {
             <QBlock key={`${qSeed}-${q.id}`} q={q} idx={i + 1} chosen={qAns[q.id]} done={qDone} onPick={(k: number) => setQAns({ ...qAns, [q.id]: k })} />
           ))}
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center" }}>
-            {!qDone ? <Button label="交卷" variant="primary" onClick={() => setQDone(true)} /> : <Button label="换一套题" variant="primary" onClick={() => { setQSeed(qSeed + 1); setQAns({}); setQDone(false); }} />}
+            {!qDone ? <Button label="交卷" variant="primary" onClick={() => { setQDone(true); petEvent("quiz", { lesson: Number(qLesson), score: qScore }); }} /> : <Button label="换一套题" variant="primary" onClick={() => { setQSeed(qSeed + 1); setQAns({}); setQDone(false); }} />}
             <Button label="重做本套" onClick={() => { setQAns({}); setQDone(false); }} />
             {qDone ? <span style={{ color: t.text.primary, fontSize: t.font.body1.fontSize }}>得分 {qScore} / 10{qScore >= 8 ? "，不错！" : "，把错词放进闪卡多复习几遍。"}</span> : null}
           </div>

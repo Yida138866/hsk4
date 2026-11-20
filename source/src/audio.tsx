@@ -4,7 +4,7 @@ import { useState, useEffect } from "./kit";
 type Track = { file: string; title: string; artist: string; license: string; collection: string; source: string; dur: number };
 declare const HSK_TRACKS: Track[];
 const TRACKS: Track[] = typeof HSK_TRACKS !== "undefined" ? HSK_TRACKS : [];
-const BASE = typeof location !== "undefined" && /\/en\/?/.test(location.pathname) ? "../" : "";
+const BASE: string = typeof window !== "undefined" && typeof (window as unknown as { HSK_BASE?: string }).HSK_BASE === "string" ? (window as unknown as { HSK_BASE: string }).HSK_BASE : typeof location !== "undefined" && /\/en\/?/.test(location.pathname) ? "../" : "";
 const KEY = "hsk4-music-v1";
 
 type MState = { on: boolean; loop: boolean; shuffle: boolean; idx: number; vol: number; playing: boolean };
@@ -85,18 +85,19 @@ function playFile(path: string, text: string, tok: number): Promise<void> {
 }
 export function stopSpeech() { spToken++; if (sp) { sp.pause(); } try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch (e) { /* ignore */ } duckOff(); setSpeaking(""); }
 /** Play a list of [audioPath, text, key] items in order. */
-export async function speakSeq(items: [string, string, string][]) {
+export async function speakSeq(items: [string, string, string][]): Promise<boolean> {
   stopSpeech(); const tok = ++spToken; duckOn();
-  for (const [p, t, k] of items) { if (tok !== spToken) return; setSpeaking(k); await playFile(p, t, tok); if (tok !== spToken) return; await new Promise((r) => setTimeout(r, 250)); }
-  if (tok === spToken) { duckOff(); setSpeaking(""); }
+  for (const [p, t, k] of items) { if (tok !== spToken) return false; setSpeaking(k); await playFile(p, t, tok); if (tok !== spToken) return false; await new Promise((r) => setTimeout(r, 250)); }
+  if (tok === spToken) { duckOff(); setSpeaking(""); return true; }
+  return false;
 }
 export const wordAudio = (w: string): [string, string, string][] => [["w/" + encodeURIComponent(w) + ".mp3", w, "w:" + w]];
 
-export function SpeakBtn({ items, k, size = 34, label }: { items: [string, string, string][]; k: string; size?: number; label?: string }) {
+export function SpeakBtn({ items, k, size = 34, label, onDone }: { items: [string, string, string][]; k: string; size?: number; label?: string; onDone?: () => void }) {
   const cur = useSpeaking();
   const on = cur !== "" && (cur === k || items.some((x) => x[2] === cur));
   return (
-    <button aria-label={label || "播放 · play"} title={label || "播放"} onClick={(e) => { e.stopPropagation(); if (on) stopSpeech(); else speakSeq(items); }}
+    <button aria-label={label || "播放 · play"} title={label || "播放"} onClick={(e) => { e.stopPropagation(); if (on) stopSpeech(); else speakSeq(items).then((ok) => { if (ok && onDone) onDone(); }); }}
       style={{ cursor: "pointer", flex: "0 0 auto", width: size, height: size, borderRadius: 9999, border: on ? "none" : "1.5px solid rgba(232,85,154,0.35)", background: on ? "linear-gradient(135deg,#ff8cc0,#c58bff)" : "#fff", color: on ? "#fff" : "#d63f8c", display: "inline-flex", alignItems: "center", justifyContent: "center", padding: 0, verticalAlign: "middle", boxShadow: on ? "0 3px 10px rgba(232,85,154,0.35)" : "none" }}>
       {on ? <svg width={size * 0.42} height={size * 0.42} viewBox="0 0 10 10" aria-hidden><rect x="1" y="1" width="8" height="8" rx="2" fill="currentColor" /></svg>
         : <svg width={size * 0.55} height={size * 0.55} viewBox="0 0 24 24" aria-hidden><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor" /><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>}

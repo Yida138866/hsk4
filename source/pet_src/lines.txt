@@ -1,0 +1,16 @@
+hi|你好呀！今天也一起学中文吧！|Chào cậu! Hôm nay mình cùng học tiếng Trung nhé!|Hi there! Let's study Chinese together today!
+hi|看到你真开心！|Gặp cậu vui quá đi!|I'm so happy to see you!
+cheer|加油！你一定可以的！|Cố lên! Cậu nhất định làm được!|You can do it!
+cheer|每天进步一点点就很棒了。|Mỗi ngày tiến bộ một chút là tuyệt lắm rồi.|A little progress every day is wonderful.
+cheer|慢慢来，比较快。|Từ từ mà chắc nhé.|Slow and steady wins the race.
+cheer|学累了就休息一下，喝口水吧。|Học mệt thì nghỉ một chút, uống ngụm nước nhé.|Tired? Take a break and have some water.
+cheer|你的汉语越来越好了！|Tiếng Trung của cậu ngày càng giỏi rồi!|Your Chinese is getting better and better!
+cheer|今天学了几个生词？说给我听听！|Hôm nay học được mấy từ mới? Nói mình nghe với!|How many new words today? Tell me!
+miss|我好想你呀！我们一起复习吧。|Mình nhớ cậu lắm! Mình cùng ôn bài nhé.|I missed you so much! Let's review together.
+miss|肚子有点儿饿了……我们学一会儿吧？|Bụng hơi đói rồi… mình học một lát nhé?|I'm a little hungry… shall we study for a bit?
+fed|好好吃！谢谢你！|Ngon quá! Cảm ơn cậu!|Yummy! Thank you!
+fed|吃饱了，学习更有力气了！|No rồi, học càng có sức!|I'm full — now I have more energy to study!
+level|哇！我长大了！谢谢你每天陪我学习！|Oa! Mình lớn rồi! Cảm ơn cậu ngày nào cũng học cùng mình!|Wow, I grew up! Thanks for studying with me every day!
+grad|我们毕业啦！你是最棒的！|Chúng mình tốt nghiệp rồi! Cậu là giỏi nhất!|We graduated! You're the best!
+reward|太棒了，又得到奖励了！|Tuyệt quá, lại được thưởng rồi!|Amazing, another reward!
+egg|蛋里面好像有什么在动……|Hình như trong quả trứng có gì đó đang động đậy…|Something seems to be moving inside the egg…
