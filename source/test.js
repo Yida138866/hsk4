@@ -21,7 +21,7 @@ const body = (page) => page.evaluate(() => document.body.innerText);
     await page.evaluateOnNewDocument(() => {});
     await page.goto(url, { waitUntil: "networkidle0" });
     await page.evaluate(() => localStorage.clear()); await page.reload({ waitUntil: "networkidle0" });
-    if (shotPrefix && vp.name === "phone" && !path) await page.screenshot({ path: shotPrefix + "_plan.png" });
+    if (shotPrefix) await page.screenshot({ path: `${shotPrefix}_${path ? "en" : "vi"}_${vp.name}_home.png` });
     // overflow check
     const ow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth); log(`horizontal overflow px=${ow}`);
     // plan
@@ -38,7 +38,15 @@ const body = (page) => page.evaluate(() => document.body.innerText);
     if (shotPrefix && vp.name === "phone" && !path) await page.screenshot({ path: shotPrefix + "_card.png" });
     await clickText(page, "button", "下一张");
     await clickText(page, "[role=tab]", "语言点"); t = await body(page); log(`grammar: ${t.includes("不仅")}`);
-    await clickText(page, "[role=tab]", "课文"); t = await body(page); log(`texts: ${t.includes("孙月")}`);
+    await clickText(page, "[role=tab]", "课文"); t = await body(page); log(`reader tab: ${t.includes("阿玲")}`);
+    const rb = await page.evaluate(() => document.querySelectorAll("ruby").length);
+    await clickText(page, "button", "✓ 拼音"); const rb2 = await page.evaluate(() => document.querySelectorAll("ruby").length);
+    await clickText(page, "button", "拼音"); log(`reader pinyin toggle: ${rb > 0 && rb2 === 0} (${rb}->${rb2})`);
+    await clickText(page, "button", "✓ 翻译"); const trOff = !(await body(page)).includes(path ? "A Linh and Xiaoxue" : "A Linh và Tiểu Tuyết nói chuyện"); await clickText(page, "button", "翻译"); log(`reader translation toggle: ${trOff}`);
+    await clickText(page, "#reader-top button", path ? "Next" : "Bài sau"); await sleep(300); t = await body(page); log(`reader next lesson: ${t.includes("第2课")}`);
+    await clickText(page, "#reader-top button", "1"); await sleep(400);
+    if (shotPrefix) { await page.evaluate(() => { const e = document.getElementById("reader-top"); window.scrollTo(0, e.getBoundingClientRect().top + window.scrollY - 8); }); await sleep(500); await page.screenshot({ path: `${shotPrefix}_${path ? "en" : "vi"}_${vp.name}_texts.png`, fullPage: vp.name === "phone" ? false : false }); }
+    const ow2 = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth); log(`reader overflow px=${ow2}`);
     // placement test
     await clickText(page, "[role=tab]", "水平测试");
     const nOpts = await page.evaluate(() => { let n = 0; document.querySelectorAll("main button").forEach((b) => { const s = b.getAttribute("style") || ""; if (s.includes("text-align: left") && !b.getAttribute("role")) { b.click(); n++; } }); return n; });

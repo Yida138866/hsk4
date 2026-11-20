@@ -22,6 +22,7 @@ for k, c in cfg.items():
     src = 'declare const HSK_DATA: Record<string, string>;\n' + src
     open(f"src/build_{k}.tsx", "w").write(src)
     open(f"src/entry_{k}.tsx", "w").write(f'import {{ createRoot }} from "react-dom/client";\nimport {{ ThemeRoot }} from "./kit";\nimport App from "./build_{k}";\ncreateRoot(document.getElementById("root")!).render(<ThemeRoot><App /></ThemeRoot>);\n')
+    open(f"{c['dir']}/assets/texts.js", "w").write("window.HSK_TEXTS = " + open("texts.json").read() + ";\n")
     js = "window.HSK_DATA = " + json.dumps(data, ensure_ascii=False, indent=0) + ";\n"
     open(f"{c['dir']}/assets/data.js", "w").write(js)
     subprocess.run(["npx", "esbuild", f"src/entry_{k}.tsx", "--bundle", "--minify", "--jsx=automatic", "--define:process.env.NODE_ENV=\"production\"", "--target=es2018", f"--outfile={c['dir']}/assets/app.js", "--log-level=warning"], check=True)
@@ -32,22 +33,36 @@ for k, c in cfg.items():
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{c['title']}</title>
 <meta name="description" content="{c['desc']}">
-<meta name="color-scheme" content="light dark">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23c8102e%22/%3E%3Ctext x=%2232%22 y=%2244%22 font-size=%2234%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22%3E4%3C/text%3E%3C/svg%3E">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#ffd6e8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Cdefs%3E%3ClinearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%23ff8cc0%22/%3E%3Cstop offset=%221%22 stop-color=%22%23c58bff%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d=%22M32 58C14 45 4 36 4 22A14 14 0 0 1 32 14A14 14 0 0 1 60 22C60 36 50 45 32 58Z%22 fill=%22url(%23g)%22/%3E%3Ctext x=%2232%22 y=%2240%22 font-size=%2224%22 font-weight=%22800%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22%3E4%3C/text%3E%3C/svg%3E">
 <style>
 html,body{{margin:0;padding:0;-webkit-text-size-adjust:100%;}}
+html{{background:#fff4f9;}}
+body{{min-height:100vh;background-color:#fff4f9;background-image:radial-gradient(rgba(240,122,179,.16) 1.4px,transparent 1.6px),radial-gradient(rgba(197,139,255,.14) 1.4px,transparent 1.6px),linear-gradient(160deg,#ffe8f2 0%,#f6ecff 45%,#fff0e6 100%);background-size:26px 26px,26px 26px,100% 100%;background-position:0 0,13px 13px,0 0;background-attachment:scroll,scroll,fixed;}}
 *{{box-sizing:border-box}}
-button,select{{-webkit-tap-highlight-color:transparent;}}
-.langbar{{max-width:1280px;margin:0 auto;padding:10px 16px 0;display:flex;justify-content:flex-end;gap:12px;font:13px/18px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;}}
-.langbar a{{color:#1d8cf0;text-decoration:none;padding:4px 10px;border-radius:999px;border:1px solid rgba(29,140,240,.35)}}
-.langbar span{{opacity:.55;padding:5px 0}}
+button,select{{-webkit-tap-highlight-color:transparent;transition:transform .12s ease, box-shadow .16s ease;}}
+button:not(:disabled):active{{transform:scale(.97)}}
+::selection{{background:#ffc6e0}}
+rt{{user-select:none}}
+.langbar{{max-width:1280px;margin:0 auto;padding:12px 14px 0;display:flex;justify-content:flex-end;align-items:center;gap:10px;font:13px/18px ui-rounded,"SF Pro Rounded","Nunito",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;}}
+.langbar a{{color:#fff;text-decoration:none;padding:6px 14px;border-radius:999px;background:linear-gradient(135deg,#ff8cc0,#c58bff);box-shadow:0 3px 10px rgba(232,85,154,.25);font-weight:700}}
+.langbar span{{color:#a0507f;padding:5px 0}}
+.deco{{position:fixed;pointer-events:none;z-index:0;opacity:.55}}
+#root{{position:relative;z-index:1}}
+@media (max-width:520px){{.deco{{display:none}} .hero-deco{{display:none}}}}
 noscript{{display:block;padding:24px;font-family:sans-serif}}
 </style>
 </head>
 <body>
 <nav class="langbar" aria-label="Language"><span>{c['note']}</span><a href="{c['other_href']}" hreflang="{'en' if k=='vi' else 'vi'}">{c['other_label']}</a></nav>
+<svg class="deco" aria-hidden="true" style="left:2%;top:140px" width="46" height="46" viewBox="0 0 20 20"><path d="M10 0l2.4 7.6 7.6 2.4-7.6 2.4L10 20l-2.4-7.6L0 10l7.6-2.4z" fill="#ffc46b"/></svg>
+<svg class="deco" aria-hidden="true" style="right:3%;top:320px" width="40" height="40" viewBox="0 0 32 32"><path d="M16 29C7 22 2 17 2 11a7 7 0 0 1 14-3 7 7 0 0 1 14 3c0 6-5 11-14 18z" fill="#f9a8cf"/></svg>
+<svg class="deco" aria-hidden="true" style="left:3%;bottom:80px" width="44" height="44" viewBox="0 0 40 40"><g fill="#d9c2ff"><circle cx="20" cy="9" r="7"/><circle cx="31" cy="17" r="7"/><circle cx="27" cy="30" r="7"/><circle cx="13" cy="30" r="7"/><circle cx="9" cy="17" r="7"/></g><circle cx="20" cy="21" r="5" fill="#ffd27a"/></svg>
+<svg class="deco" aria-hidden="true" style="right:4%;bottom:140px" width="30" height="30" viewBox="0 0 20 20"><path d="M10 0l2.4 7.6 7.6 2.4-7.6 2.4L10 20l-2.4-7.6L0 10l7.6-2.4z" fill="#c58bff"/></svg>
 <div id="root"></div>
 <noscript>This page needs JavaScript. · Trang này cần bật JavaScript.</noscript>
+<script src="{c.get('texts_src','assets/texts.js')}"></script>
 <script src="assets/data.js"></script>
 <script src="assets/app.js"></script>
 </body>

@@ -1,5 +1,6 @@
 import { Page, Section, Text, Segmented, Select, Button, Callout, Table, Properties, LinkCards, Rows, useState, useMemo, useEffect, useGrokTheme } from "grok/canvas";
 import type { ReactNode } from "grok/canvas";
+import { Reader } from "./reader";
 
 type Word = { h: string; p: string; pos: string; v: string; hv: string; l: number };
 type Q = { id: string; sec: "listen" | "read" | "write"; kind: string; passage?: string; stem: string; opts: string[]; a: number; ex?: string };
@@ -1204,7 +1205,7 @@ export default function App() {
 
   return (
     <Page title="HSK 4 系统学习 · Học HSK 4 có hệ thống (中文–Tiếng Việt)" summary="按《HSK标准教程4》上下册 20 课整理：10 周学习计划、602 个生词（越南语释义 + 闪卡）、100 个语言点、水平测试和每课小测。· Theo 20 bài của giáo trình chuẩn HSK 4 (Quyển Thượng và Hạ): kế hoạch 10 tuần, 602 từ mới có nghĩa tiếng Việt và thẻ từ, 100 điểm ngữ pháp, bài kiểm tra trình độ và bài kiểm tra từng bài. HSK 3.0 bắt đầu áp dụng từ 13/12/2026, xem «Thông tin kỳ thi»." width="column" lang="zh-Hans">
-      <Segmented options={[{ value: "plan", label: "学习计划 · Kế hoạch học tập" }, { value: "lessons", label: "课程 · Bài học" }, { value: "test", label: "水平测试 · Kiểm tra trình độ" }, { value: "quiz", label: "每课小测 · Kiểm tra từng bài" }, { value: "exam", label: "考试须知 · Thông tin kỳ thi" }]} value={tab} onChange={(v: string) => setTab(v)} />
+      <Segmented options={[{ value: "plan", label: "学习计划 · Kế hoạch học tập" }, { value: "lessons", label: "课程 · Bài học" }, { value: "read", label: "课文 · Bài khoá" }, { value: "test", label: "水平测试 · Kiểm tra trình độ" }, { value: "quiz", label: "每课小测 · Kiểm tra từng bài" }, { value: "exam", label: "考试须知 · Thông tin kỳ thi" }]} value={tab} onChange={(v: string) => setTab(v)} />
 
       {tab === "plan" ? (
         <Section heading="10 周学习计划 · Kế hoạch học 10 tuần">
@@ -1219,6 +1220,8 @@ export default function App() {
           <Text>Tuần 1–7 mỗi tuần học 2 bài, tuần 8–9 mỗi tuần 3 bài, tuần 10 thi thử. Trước khi bắt đầu hãy làm «Kiểm tra trình độ» một lần, đến tuần 10 làm lại để so sánh. Tiến độ được lưu trong trình duyệt của thiết bị này; nếu trình duyệt không cho phép lưu, tiến độ sẽ mất khi đóng trang.</Text>
         </Section>
       ) : null}
+
+      {tab === "read" ? <Reader lang="vi" titles={TITLES} /> : null}
 
       {tab === "lessons" ? (
         <Section heading={`第${L}课 ${title[0]} · Bài ${L}: ${title[1]}`} caption={`${L <= 10 ? "4上 · Quyển 4 Thượng" : "4下 · Quyển 4 Hạ"} · ${lw.length} 个生词 · ${lw.length} từ mới`}>

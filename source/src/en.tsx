@@ -1,4 +1,5 @@
 import { Page, Section, Text, Segmented, Select, Button, Callout, Table, Properties, LinkCards, Rows, useState, useMemo, useEffect, useGrokTheme } from "grok/canvas";
+import { Reader } from "./reader";
 
 type Word = { h: string; p: string; pos: string; m: string; l: number };
 type Q = { id: string; sec: "listen" | "read" | "write"; kind: string; passage?: string; stem: string; opts: string[]; a: number };
@@ -1144,7 +1145,7 @@ export default function App() {
 
   return (
     <Page title="HSK 4 系统学习：10 周计划 · 20 课 · 测试" summary="按《HSK标准教程4》上下册 20 课整理：每天 30–45 分钟的 10 周计划、全部 602 个生词（闪卡）、100 个语言点、水平测试和每课小测。新版 HSK 3.0 已于 2026 年 12 月 13 日启用，题型见「考试须知」。" width="column" lang="zh-Hans">
-      <Segmented options={[{ value: "plan", label: "学习计划" }, { value: "lessons", label: "课程" }, { value: "test", label: "水平测试" }, { value: "quiz", label: "每课小测" }, { value: "exam", label: "考试须知" }]} value={tab} onChange={(v: string) => setTab(v)} />
+      <Segmented options={[{ value: "plan", label: "学习计划" }, { value: "lessons", label: "课程" }, { value: "read", label: "课文 · Texts" }, { value: "test", label: "水平测试" }, { value: "quiz", label: "每课小测" }, { value: "exam", label: "考试须知" }]} value={tab} onChange={(v: string) => setTab(v)} />
 
       {tab === "plan" ? (
         <Section heading="10 周学习计划">
@@ -1158,6 +1159,8 @@ export default function App() {
           <Text>第1–7周每周2课，第8–9周每周3课，第10周做全真模拟。开始前先做一次「水平测试」，第10周再做一次对比。进度保存在这台设备的浏览器里；如果浏览器不允许保存，关闭页面后会重置。</Text>
         </Section>
       ) : null}
+
+      {tab === "read" ? <Reader lang="en" titles={TITLES} /> : null}
 
       {tab === "lessons" ? (
         <Section heading={`第${L}课 ${title[0]}`} caption={`${title[1]} · ${L <= 10 ? "4上" : "4下"} · ${lw.length} 个生词`}>
