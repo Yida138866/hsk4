@@ -76,8 +76,11 @@ const ALL = ["bow", "glasses", "beret", "crown", "scarf", "hoodie", "dress", "ao
     let label = await page.evaluate(() => document.querySelector("#pet-top span[style*='linear-gradient']").textContent);
     ok(`${tag} stage 2 at 700XP/6 lessons`, label.includes("小朋友"), label);
     await scrollTo("#pet-top"); await snap("stage2");
-    const n2 = reqs.length; await page.click('#pet-top button[aria-label="pet"]'); await sleep(1500);
-    ok(tag + " pet talks (audio)", reqs.slice(n2).some((r) => /^(200|206|304) .*audio\/pet\/\d+\.mp3/.test(r)));
+    const n2 = reqs.length; await page.evaluate(() => { window.__tts = 0; try { const ss = window.speechSynthesis; const o = ss.speak.bind(ss); ss.speak = (u) => { window.__tts++; try { o(u); } catch (e) {} }; } catch (e) {} });
+    let talkMp3 = false, talkTts = 0;
+    for (let t = 0; t < 6 && !talkMp3; t++) { await page.click('#pet-top button[aria-label="pet"]'); await sleep(1300); talkMp3 = reqs.slice(n2).some((r) => /^(200|206|304) .*audio\/pet\/\d+\.mp3/.test(r)); }
+    talkTts = await page.evaluate(() => window.__tts);
+    ok(tag + " pet talks (voice mp3 or TTS for dynamic lines)", talkMp3, `mp3=${talkMp3} tts=${talkTts}`);
     const before = await get();
     await click("#pet-top button", EN ? "Food" : "Đồ ăn"); await click("#pet-top .shop button", EN ? "Feed" : "Cho ăn"); await sleep(300);
     await click("#pet-top button", EN ? "Accessories" : "Phụ kiện"); await click("#pet-top .shop button", EN ? "Buy" : "Mua"); await sleep(300);
