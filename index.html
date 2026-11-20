@@ -6,6 +6,7 @@
 <title>HSK 4 系统学习 · Học HSK 4 có hệ thống (中文–Tiếng Việt)</title>
 <meta name="description" content="Giáo trình HSK 4 có hệ thống: kế hoạch 10 tuần, 602 từ mới, 100 điểm ngữ pháp, thẻ từ, kiểm tra trình độ và kiểm tra từng bài.">
 <meta name="color-scheme" content="light">
+<script>window.HSK_BASE="";</script>
 <meta name="theme-color" content="#ffd6e8">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Cdefs%3E%3ClinearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%23ff8cc0%22/%3E%3Cstop offset=%221%22 stop-color=%22%23c58bff%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d=%22M32 58C14 45 4 36 4 22A14 14 0 0 1 32 14A14 14 0 0 1 60 22C60 36 50 45 32 58Z%22 fill=%22url(%23g)%22/%3E%3Ctext x=%2232%22 y=%2240%22 font-size=%2224%22 font-weight=%22800%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22%3E4%3C/text%3E%3C/svg%3E">
 <style>
@@ -27,6 +28,30 @@ rt{user-select:none}
 .deco{position:fixed;pointer-events:none;z-index:0;opacity:.55}
 #root{position:relative;z-index:1}
 @media (max-width:520px){.deco{display:none} .hero-deco{display:none}}
+
+.pet-bounce{animation:pb 2.4s ease-in-out infinite}
+@keyframes pb{0%,100%{transform:translateY(0) scale(1,1)}45%{transform:translateY(-6px) scale(1.01,.99)}55%{transform:translateY(-6px)}80%{transform:translateY(0) scale(1.03,.97)}}
+.pet-wobble{animation:pw 3s ease-in-out infinite}
+@keyframes pw{0%,80%,100%{transform:rotate(0)}85%{transform:rotate(-6deg)}90%{transform:rotate(6deg)}95%{transform:rotate(-3deg)}}
+.hearts-pop{position:absolute;left:50%;top:40%;pointer-events:none;font-size:22px;animation:hp 1.2s ease-out forwards}
+.hearts-pop span{position:absolute;left:-26px;top:10px;animation:hp 1.3s .1s ease-out forwards}
+.hearts-pop span+span{left:24px;top:4px;animation-delay:.2s}
+@keyframes hp{0%{opacity:0;transform:translateY(0) scale(.6)}20%{opacity:1}100%{opacity:0;transform:translateY(-70px) scale(1.2)}}
+.toast{animation:tin .35s ease-out}
+.levelup{animation:lin .5s cubic-bezier(.2,1.4,.4,1)}
+@keyframes tin{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes lin{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+.confetti{position:relative;height:0}
+.confetti span{position:absolute;top:-120px;font-size:18px;animation:cf 1.8s ease-in infinite}
+@keyframes cf{0%{transform:translateY(0) rotate(0);opacity:1}100%{transform:translateY(140px) rotate(200deg);opacity:0}}
+.pulse{animation:pu 1.6s ease-in-out infinite}
+@keyframes pu{0%,100%{transform:scale(1);box-shadow:0 4px 12px rgba(232,85,154,.28)}50%{transform:scale(1.05);box-shadow:0 6px 22px rgba(232,85,154,.5)}}
+.flame{animation:fl 1.2s ease-in-out infinite;transform-origin:50% 90%}
+@keyframes fl{0%,100%{transform:scale(1) rotate(-3deg)}50%{transform:scale(1.12) rotate(3deg)}}
+.ci-pop{animation:cip .6s cubic-bezier(.2,1.5,.4,1)}
+@keyframes cip{0%{transform:scale(.94)}100%{transform:none}}
+@media (prefers-reduced-motion: reduce){.pet-bounce,.pet-wobble,.confetti span,.pulse,.flame,.ci-pop{animation:none}}
+
 noscript{display:block;padding:24px;font-family:sans-serif}
 </style>
 </head>

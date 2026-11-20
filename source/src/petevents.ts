@@ -28,7 +28,7 @@ export function eventOn(day: string): EvId | null {
   if (m >= "12-18" && m <= "12-26") return "xmas";
   return null;
 }
-// Hidden preview switch: ?event=tet|mid|qixi|val|w38|w2010|xmas (or ?event=off)
+// Hidden switch: ?event=tet|mid|qixi|val|w38|w2010|xmas (or ?event=off)
 export function activeEvent(day: string): Ev | null {
   let p: string | null = null;
   try { p = new URLSearchParams(location.search).get("event"); } catch (e) { /* no location */ }

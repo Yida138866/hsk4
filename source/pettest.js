@@ -16,7 +16,25 @@ const ALL = ["bow", "glasses", "beret", "crown", "scarf", "hoodie", "dress", "ao
     const seed = async (o) => { await page.evaluate((o) => { const s = JSON.parse(localStorage.getItem("hsk4-pet-v1")); Object.assign(s, o); localStorage.setItem("hsk4-pet-v1", JSON.stringify(s)); }, o); await page.reload({ waitUntil: "networkidle0" }); await page.click(".pet-widget"); await sleep(600); };
     const scrollTo = async (sel, off = 8) => { await page.evaluate((sel, off) => { const e = document.querySelector(sel); if (e) window.scrollTo(0, e.getBoundingClientRect().top + scrollY - off); }, sel, off); await sleep(450); };
     const snap = async (n) => { if (shot) await page.screenshot({ path: `${shot}_${L}_${vp.name}_${n}.png` }); };
-    await page.goto(base + path, { waitUntil: "networkidle0" }); await page.evaluate(() => localStorage.clear()); await page.reload({ waitUntil: "networkidle0" });
+    await page.goto(base + path, { waitUntil: "networkidle0" }); await page.evaluate(() => localStorage.clear());
+    await page.evaluate(() => {
+      const planKey = /\/en\/?/.test(location.pathname) ? "hsk4-plan-v1" : "hsk4-plan-vi-v1";
+      localStorage.setItem(planKey, JSON.stringify({ "0-0": true, "0-1": true, "0-2": true, "1-0": true }));
+      localStorage.setItem("hsk4-rtest-history-v1", JSON.stringify([{ t: 1730000000000, score: 18, n: 30, byType: {}, weak: [] }]));
+      localStorage.setItem("hsk4-music-v1", JSON.stringify({ loop: true, shuffle: false, idx: 3, vol: 0.4 }));
+      localStorage.setItem("hsk4-reader-v1", JSON.stringify({ l: 7, py: false, tr: true, size: 26 }));
+    });
+    await page.reload({ waitUntil: "networkidle0" });
+    ok(tag + " official (no preview badge/title)", await page.evaluate(() => !document.title.includes("预览") && !document.querySelector(".pv-badge")));
+    const migrated = await page.evaluate(() => ({
+      plan: document.body.innerText.includes("已完成 4 /"),
+      music: JSON.parse(localStorage.getItem("hsk4-music-v1") || "null"),
+      reader: JSON.parse(localStorage.getItem("hsk4-reader-v1") || "null"),
+      hist: JSON.parse(localStorage.getItem("hsk4-rtest-history-v1") || "[]"),
+      pet: localStorage.getItem("hsk4-pet-v1"),
+      pv: Object.keys(localStorage).some((k) => k.startsWith("hsk4pv-")),
+    }));
+    ok(tag + " existing main-site save kept (plan/test/music/reader, no pet yet)", migrated.plan && migrated.music && migrated.music.idx === 3 && migrated.music.vol === 0.4 && migrated.reader && migrated.reader.l === 7 && migrated.hist[0] && migrated.hist[0].score === 18 && !migrated.pet && !migrated.pv, JSON.stringify(migrated));
     ok(tag + " widget visible", await page.$(".pet-widget") !== null);
     await page.click(".pet-widget"); await sleep(500);
     const names = await page.evaluate(() => [...document.querySelectorAll(".adopt button")].map((b) => b.textContent));
@@ -25,7 +43,11 @@ const ALL = ["bow", "glasses", "beret", "crown", "scarf", "hoodie", "dress", "ao
     await page.evaluate(() => document.querySelectorAll(".adopt button")[1].click()); await sleep(100);
     await page.type("#pet-top input", "Mochi"); await page.click(".adopt-go"); await sleep(600);
     let st = await get(); const raw = await page.evaluate(() => Object.keys(window.localStorage));
-    ok(tag + " adopted 小熊猫 + v2 + namespaced", st.pet === "panda" && st.v === 2 && raw.includes("hsk4pv-pet-v1") && !raw.some((k) => k.startsWith("hsk4-")), raw.join(","));
+    const planKey = EN ? "hsk4-plan-v1" : "hsk4-plan-vi-v1";
+    ok(tag + " adopted 小熊猫 + v2 on main hsk4- keys", st.pet === "panda" && st.v === 2 && raw.includes("hsk4-pet-v1") && raw.includes(planKey) && raw.includes("hsk4-music-v1") && raw.includes("hsk4-reader-v1") && raw.includes("hsk4-rtest-history-v1") && !raw.some((k) => k.startsWith("hsk4pv-")), raw.join(","));
+    await click("[role=tab]", "学习计划");
+    ok(tag + " plan progress still 4/70 after adopt", (await page.evaluate(() => document.body.innerText)).includes("已完成 4 /"));
+    await page.click(".pet-widget"); await sleep(400);
     // check-in day 1
     await scrollTo(".checkin", 80); await page.click(".ci-btn"); await sleep(700);
     st = await get(); ok(tag + " check-in day1 +10XP +1⭐", st.xp === 10 && st.stars === 1 && st.ciStreak === 1 && st.ciLast === ds(0), `xp=${st.xp} s=${st.stars}`);
@@ -43,7 +65,8 @@ const ALL = ["bow", "glasses", "beret", "crown", "scarf", "hoodie", "dress", "ao
     // study cap separate: dayXp 60 then check-in still pays
     await seed({ ciLast: ds(-1), ciStreak: 1, xp: 0, stars: 0, day: ds(0), dayXp: 60 }); await page.click(".ci-btn"); await sleep(500); st = await get();
     ok(tag + " check-in outside study cap", st.xp === 10 && st.dayXp === 60, `xp=${st.xp}`);
-    // plan task reward & anti-farm
+    // plan task reward & anti-farm (clear any pre-seeded main-site plan days)
+    await page.evaluate(() => { localStorage.removeItem("hsk4-plan-vi-v1"); localStorage.removeItem("hsk4-plan-v1"); });
     await seed({ xp: 0, stars: 0, dayXp: 0 });
     await click("[role=tab]", "学习计划"); await click("button", "标记完成"); await sleep(400);
     st = await get(); ok(tag + " plan task reward", st.xp === 10 && st.stars === 1, `xp=${st.xp}`);

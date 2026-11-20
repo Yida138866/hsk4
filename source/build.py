@@ -1,7 +1,10 @@
 import re, json, os, shutil, subprocess
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-PREVIEW = os.environ.get("PREVIEW") == "1"
-out = "dist_preview" if PREVIEW else "dist"
+# The pet system is part of the official site. PREVIEW=1 is ignored (no badge, no
+# [预览] title, no hsk4pv- storage rewrite). Output always goes to dist/.
+if os.environ.get("PREVIEW") == "1":
+    print("note: PREVIEW=1 is ignored; pets are in the official build", flush=True)
+out = "dist"
 shutil.rmtree(out, ignore_errors=True)
 os.makedirs(out + "/en/assets", exist_ok=True); os.makedirs(out + "/assets", exist_ok=True); os.makedirs(out + "/data", exist_ok=True)
 NAMES = ["WRAW", "TRAW", "GRAW", "GQRAW", "CLRAW"]
@@ -31,12 +34,10 @@ PV_CSS = """
 @keyframes fl{0%,100%{transform:scale(1) rotate(-3deg)}50%{transform:scale(1.12) rotate(3deg)}}
 .ci-pop{animation:cip .6s cubic-bezier(.2,1.5,.4,1)}
 @keyframes cip{0%{transform:scale(.94)}100%{transform:none}}
-.pv-badge{background:#ffd36e;color:#7a4300;font-weight:800;border-radius:999px;padding:4px 10px}
 @media (prefers-reduced-motion: reduce){.pet-bounce,.pet-wobble,.confetti span,.pulse,.flame,.ci-pop{animation:none}}
-""" if PREVIEW else ""
-PV_STORE = "<script>(function(){try{var P=Storage.prototype,g=P.getItem,s=P.setItem,r=P.removeItem;var k=function(x){return typeof x==='string'&&x.indexOf('hsk4-')===0?'hsk4pv-'+x.slice(5):x};P.getItem=function(x){return g.call(this,k(x))};P.setItem=function(x,v){return s.call(this,k(x),v)};P.removeItem=function(x){return r.call(this,k(x))}}catch(e){}})();</script>"
+"""
 for k, c in cfg.items():
-    PV_HEAD = "\n" + PV_STORE + "<script>window.HSK_BASE=" + ('"../../"' if k == "en" else '"../"') + ";</script>"
+    PV_HEAD = "\n<script>window.HSK_BASE=" + ('"../"' if k == "en" else '""') + ";</script>"
     src = open(f"src/{k}.tsx").read()
     data = {}
     for n in NAMES:
@@ -49,21 +50,21 @@ for k, c in cfg.items():
     src = src.replace('import("grok/canvas")', 'import("./kit")')
     src = 'declare const HSK_DATA: Record<string, string>;\n' + src
     open(f"src/build_{k}.tsx", "w").write(src)
-    open(f"src/entry_{k}.tsx", "w").write(f'import {{ createRoot }} from "react-dom/client";\nimport {{ ThemeRoot }} from "./kit";\nimport App from "./build_{k}";\nimport {{ MusicBar }} from "./audio";\ncreateRoot(document.getElementById("root")!).render(<ThemeRoot><App /></ThemeRoot>);\nconst mr = document.getElementById("music-root"); if (mr) createRoot(mr).render(<MusicBar lang="{k}" />);\n' + ('import { PetWidget } from "./pet";\nconst pr = document.createElement("div"); pr.id = "pet-root"; document.body.appendChild(pr); createRoot(pr).render(<PetWidget />);\n' if PREVIEW else '') + f'')
+    open(f"src/entry_{k}.tsx", "w").write(f'import {{ createRoot }} from "react-dom/client";\nimport {{ ThemeRoot }} from "./kit";\nimport App from "./build_{k}";\nimport {{ MusicBar }} from "./audio";\ncreateRoot(document.getElementById("root")!).render(<ThemeRoot><App /></ThemeRoot>);\nconst mr = document.getElementById("music-root"); if (mr) createRoot(mr).render(<MusicBar lang="{k}" />);\nimport {{ PetWidget }} from "./pet";\nconst pr = document.createElement("div"); pr.id = "pet-root"; document.body.appendChild(pr); createRoot(pr).render(<PetWidget />);\n')
     open(f"{c['dir']}/assets/texts.js", "w").write("window.HSK_TEXTS = " + open("texts.json").read() + ";\n")
     if k == "vi": open(f"{out}/assets/tracks.js", "w").write("window.HSK_TRACKS = " + open("tracks.json").read() + ";\n")
     open(f"{c['dir']}/assets/bank.js", "w").write("window.HSK_BANK = " + open(f"bank_{k}.json").read() + ";\n")
     js = "window.HSK_DATA = " + json.dumps(data, ensure_ascii=False, indent=0) + ";\n"
     open(f"{c['dir']}/assets/data.js", "w").write(js)
-    subprocess.run(["npx", "esbuild", f"src/entry_{k}.tsx", "--bundle", "--minify", "--jsx=automatic", "--define:process.env.NODE_ENV=\"production\"", "--target=es2018", f"--define:__PET__={'true' if PREVIEW else 'false'}", f"--outfile={c['dir']}/assets/app.js", "--log-level=warning"], check=True)
+    subprocess.run(["npx", "esbuild", f"src/entry_{k}.tsx", "--bundle", "--minify", "--jsx=automatic", "--define:process.env.NODE_ENV=\"production\"", "--target=es2018", "--define:__PET__=true", f"--outfile={c['dir']}/assets/app.js", "--log-level=warning"], check=True)
     html = f"""<!doctype html>
 <html lang="{c['lang']}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>{('[预览] ' if PREVIEW else '') + c['title']}</title>
+<title>{c['title']}</title>
 <meta name="description" content="{c['desc']}">
-<meta name="color-scheme" content="light">{PV_HEAD if PREVIEW else ''}
+<meta name="color-scheme" content="light">{PV_HEAD}
 <meta name="theme-color" content="#ffd6e8">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Cdefs%3E%3ClinearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%23ff8cc0%22/%3E%3Cstop offset=%221%22 stop-color=%22%23c58bff%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d=%22M32 58C14 45 4 36 4 22A14 14 0 0 1 32 14A14 14 0 0 1 60 22C60 36 50 45 32 58Z%22 fill=%22url(%23g)%22/%3E%3Ctext x=%2232%22 y=%2240%22 font-size=%2224%22 font-weight=%22800%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22%3E4%3C/text%3E%3C/svg%3E">
 <style>
@@ -90,7 +91,7 @@ noscript{{display:block;padding:24px;font-family:sans-serif}}
 </style>
 </head>
 <body>
-<nav class="langbar" aria-label="Language"><div id="music-root"></div>{'<span class="pv-badge">预览 · ' + ('Preview' if k=='en' else 'Bản xem thử') + '</span>' if PREVIEW else ''}<span class="lnote">{c['note']}</span><a href="{c['other_href']}" hreflang="{'en' if k=='vi' else 'vi'}">{c['other_label']}</a></nav>
+<nav class="langbar" aria-label="Language"><div id="music-root"></div><span class="lnote">{c['note']}</span><a href="{c['other_href']}" hreflang="{'en' if k=='vi' else 'vi'}">{c['other_label']}</a></nav>
 <svg class="deco" aria-hidden="true" style="left:2%;top:140px" width="46" height="46" viewBox="0 0 20 20"><path d="M10 0l2.4 7.6 7.6 2.4-7.6 2.4L10 20l-2.4-7.6L0 10l7.6-2.4z" fill="#ffc46b"/></svg>
 <svg class="deco" aria-hidden="true" style="right:3%;top:320px" width="40" height="40" viewBox="0 0 32 32"><path d="M16 29C7 22 2 17 2 11a7 7 0 0 1 14-3 7 7 0 0 1 14 3c0 6-5 11-14 18z" fill="#f9a8cf"/></svg>
 <svg class="deco" aria-hidden="true" style="left:3%;bottom:80px" width="44" height="44" viewBox="0 0 40 40"><g fill="#d9c2ff"><circle cx="20" cy="9" r="7"/><circle cx="31" cy="17" r="7"/><circle cx="27" cy="30" r="7"/><circle cx="13" cy="30" r="7"/><circle cx="9" cy="17" r="7"/></g><circle cx="20" cy="21" r="5" fill="#ffd27a"/></svg>

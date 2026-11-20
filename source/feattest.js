@@ -67,8 +67,8 @@ const EVS = ["tet", "mid", "qixi", "val", "w38", "w2010", "xmas"];
     const seen = new Set(); const n1 = reqs.length;
     const first = await page.$eval("#pet-top .bubble", (e) => e.textContent).catch(() => "");
     ok(tag + " greeting bubble on open", first.length > 3, first.slice(0, 30));
-    for (let k = 0; k < 18; k++) { await page.click('#pet-top button[aria-label="pet"]'); await sleep(250); seen.add(await page.$eval("#pet-top .bubble", (e) => e.textContent)); }
-    const all = [...seen].join(" | ");
+    let all = "";
+    for (let k = 0; k < 40; k++) { await page.click('#pet-top button[aria-label="pet"]'); await sleep(200); seen.add(await page.$eval("#pet-top .bubble", (e) => e.textContent)); all = [...seen].join(" | "); if (/第8课/.test(all) && /欢迎回来|你回来啦/.test(all) && /(连续打卡5天|每天见到你)/.test(all)) break; }
     ok(tag + " context lines (lesson / break / streak / wb)", /第8课/.test(all) && /欢迎回来|你回来啦/.test(all) && /(连续打卡5天|每天见到你)/.test(all), all.slice(0, 300));
     ok(tag + " fixed context lines have audio", reqs.slice(n1).some((r) => /audio\/pet\/(\d+)\.mp3/.test(r) && Number(r.match(/pet\/(\d+)/)[1]) >= 25));
     await page.evaluate(() => { const b = document.querySelector("#pet-top .bubble"); }); 
@@ -119,5 +119,19 @@ const EVS = ["tet", "mid", "qixi", "val", "w38", "w2010", "xmas"];
     ok(tag + " console clean", errs.length === 0, errs.join(" | "));
     await page.close();
   }
-  await browser.close(); console.log(fail ? `FAILURES ${fail}` : "ALL PASS"); process.exit(fail ? 1 : 0);
+  
+  {
+    const root = base.replace(/\/?$/, "/");
+    const page = await browser.newPage(); await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
+    await page.goto(root + "preview/?teacher=1", { waitUntil: "networkidle0" }); await sleep(800);
+    const u = page.url();
+    const title1 = await page.title();
+    ok("preview/?teacher=1 redirects to main", !/\/preview(?:\/|\?|$)/.test(new URL(u).pathname) && u.includes("teacher=1") && !title1.includes("预览") && await page.$(".teacher") !== null, u + " title=" + title1);
+    await page.goto(root + "preview/en/?event=tet", { waitUntil: "networkidle0" }); await sleep(800);
+    const u2 = page.url();
+    if (await page.$(".pet-widget")) { await page.click(".pet-widget"); await sleep(600); }
+    ok("preview/en/?event=tet redirects to /en/", /\/en\/?$/.test(new URL(u2).pathname) && u2.includes("event=tet") && !/\/preview\//.test(new URL(u2).pathname) && await page.$(".evbanner") !== null, u2);
+    await page.close();
+  }
+await browser.close(); console.log(fail ? `FAILURES ${fail}` : "ALL PASS"); process.exit(fail ? 1 : 0);
 })();

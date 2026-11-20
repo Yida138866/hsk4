@@ -1,4 +1,4 @@
-// Study pet + rewards (preview feature). All data in localStorage; no backend.
+// Study pet + rewards. All data in localStorage; no backend.
 import { useState, useEffect, ZH_FONT } from "./kit";
 import type { ReactNode } from "./kit";
 import { PetArt, Room } from "./petart";
