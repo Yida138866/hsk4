@@ -47,15 +47,28 @@ const body = (page) => page.evaluate(() => document.body.innerText);
     await clickText(page, "#reader-top button", "1"); await sleep(400);
     if (shotPrefix) { await page.evaluate(() => { const e = document.getElementById("reader-top"); window.scrollTo(0, e.getBoundingClientRect().top + window.scrollY - 8); }); await sleep(500); await page.screenshot({ path: `${shotPrefix}_${path ? "en" : "vi"}_${vp.name}_texts.png`, fullPage: vp.name === "phone" ? false : false }); }
     const ow2 = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth); log(`reader overflow px=${ow2}`);
-    // placement test
-    await clickText(page, "[role=tab]", "水平测试");
-    const nOpts = await page.evaluate(() => { let n = 0; document.querySelectorAll("main button").forEach((b) => { const s = b.getAttribute("style") || ""; if (s.includes("text-align: left") && !b.getAttribute("role")) { b.click(); n++; } }); return n; });
+    // random level test
+    const navOk = await page.evaluate(() => { const tabs = [...document.querySelectorAll("[role=tablist]")[0].querySelectorAll("[role=tab]")].map((b) => b.textContent); const qi = tabs.findIndex((x) => x.startsWith("每课小测")); return tabs[qi + 1] && tabs[qi + 1].startsWith("随机水平测验") && !tabs.some((x) => x.startsWith("水平测试")); });
+    log(`rtest nav after 每课小测: ${navOk}`);
+    await clickText(page, "[role=tab]", "随机水平测验");
+    await clickText(page, "button", "🎲"); await sleep(300);
+    const ids1 = await page.evaluate(() => [...document.querySelectorAll(".rq")].map((q) => q.textContent).join("|"));
+    const nq = await page.evaluate(() => document.querySelectorAll(".rq").length);
+    await clickText(page, "button", "🎲"); await sleep(300);
+    const ids2 = await page.evaluate(() => [...document.querySelectorAll(".rq")].map((q) => q.textContent).join("|"));
+    log(`rtest 30 questions & fresh set: ${nq === 30 && ids1 !== ids2} (${nq})`);
+    const types = await page.evaluate(() => { const c = {}; document.querySelectorAll(".rq").forEach((q) => { const k = q.querySelectorAll("span")[1].textContent.split(" · ")[0]; c[k] = (c[k] || 0) + 1; }); return JSON.stringify(c); });
+    log(`rtest type mix: ${Object.keys(JSON.parse(types)).length === 6} ${types}`);
+    if (shotPrefix) await page.screenshot({ path: `${shotPrefix}_${path ? "en" : "vi"}_${vp.name}_rtest.png` });
+    const nClicked = await page.evaluate(() => { let n = 0; document.querySelectorAll(".rq").forEach((q) => { const bs = q.querySelectorAll("div[style*=grid] > button"); if (bs.length === 4) { bs[Math.floor(Math.random() * 4)].click(); n++; } }); return n; }); log(`rtest answered: ${nClicked === 30} (${nClicked})`);
     await sleep(200);
-    const nTiles = await page.evaluate(() => { let n = 0; for (let k = 0; k < 60; k++) { const b = [...document.querySelectorAll("main button")].find((b) => (b.getAttribute("style") || "").includes("padding: 8px 12px") && !b.disabled); if (!b) break; b.click(); n++; } return n; });
-    await sleep(200);
-    await clickText(page, "button", "交卷看成绩"); t = await body(page);
-    log(`placement graded: ${t.includes("估计成绩")} (clicked ${nOpts} options, ${nTiles} tiles)`);
-    if (shotPrefix && vp.name === "phone" && !path) await page.screenshot({ path: shotPrefix + "_test.png" });
+    await clickText(page, "button", path ? "交卷" : "交卷看成绩"); await sleep(400); t = await body(page);
+    const hist = await page.evaluate(() => JSON.parse(localStorage.getItem("hsk4-rtest-history-v1") || "[]").length);
+    const nrv = await page.evaluate(() => document.querySelectorAll(".rv").length);
+    const nrvAudio = await page.evaluate(() => document.querySelectorAll(".rv button").length);
+    log(`rtest graded: ${/\d+ \/ 30/.test(t) && hist === 1 && nrv > 0 && nrvAudio === nrv} (history ${hist}, wrong ${nrv}, audio btns ${nrvAudio})`);
+    if (shotPrefix) { await page.evaluate(() => { const e = document.getElementById("rtest-result"); window.scrollTo(0, e.getBoundingClientRect().top + scrollY - 8); }); await sleep(500); await page.screenshot({ path: `${shotPrefix}_${path ? "en" : "vi"}_${vp.name}_rtest_result.png` }); }
+    const ow3 = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth); log(`rtest overflow px=${ow3}`);
     // quiz
     await clickText(page, "[role=tab]", "每课小测");
     await page.evaluate(() => { document.querySelectorAll("main button").forEach((b) => { const s = b.getAttribute("style") || ""; if (s.includes("text-align: left") && !b.getAttribute("role")) b.click(); }); });

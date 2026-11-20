@@ -1,6 +1,7 @@
 import { Page, Section, Text, Segmented, Select, Button, Callout, Table, Properties, LinkCards, Rows, useState, useMemo, useEffect, useGrokTheme } from "grok/canvas";
 import { Reader } from "./reader";
 import { SpeakBtn, wordAudio } from "./audio";
+import { RandomTest } from "./rtest";
 
 type Word = { h: string; p: string; pos: string; m: string; l: number };
 type Q = { id: string; sec: "listen" | "read" | "write"; kind: string; passage?: string; stem: string; opts: string[]; a: number };
@@ -950,7 +951,7 @@ type Task = { title: string; detail: string; min: number };
 function weekTasks(w: number): Task[] {
   const ls = WEEKS[w] ?? [];
   if (ls.length === 0) return [
-    { title: "水平测试（再做一次）", detail: "做本页「水平测试」，和第一次的分数对比，找出最弱的部分。", min: 40 },
+    { title: "随机水平测验（再做一次）", detail: "做「随机水平测验」（随机30题），和第一次的分数对比，找出最弱的课。", min: 40 },
     { title: "官方 HSK 3.0 样题：听力", detail: "在 chinesetest.cn 下载 HSK 3.0 四级样题包，完成听力部分（约20分钟）并对答案。", min: 35 },
     { title: "官方样题：阅读（限时30分钟）", detail: "完成阅读部分，错题标出生词和语言点。", min: 40 },
     { title: "官方样题：写作（限时25分钟）", detail: "5个看图用词造句 + 1篇不少于80字的短文。", min: 40 },
@@ -1146,7 +1147,7 @@ export default function App() {
 
   return (
     <Page title="HSK 4 系统学习：10 周计划 · 20 课 · 测试" summary="按《HSK标准教程4》上下册 20 课整理：每天 30–45 分钟的 10 周计划、全部 602 个生词（闪卡）、100 个语言点、水平测试和每课小测。新版 HSK 3.0 已于 2026 年 12 月 13 日启用，题型见「考试须知」。" width="column" lang="zh-Hans">
-      <Segmented options={[{ value: "plan", label: "学习计划" }, { value: "lessons", label: "课程" }, { value: "read", label: "课文 · Texts" }, { value: "test", label: "水平测试" }, { value: "quiz", label: "每课小测" }, { value: "exam", label: "考试须知" }]} value={tab} onChange={(v: string) => setTab(v)} />
+      <Segmented options={[{ value: "plan", label: "学习计划" }, { value: "lessons", label: "课程" }, { value: "read", label: "课文 · Texts" }, { value: "quiz", label: "每课小测" }, { value: "test", label: "随机水平测验 · Random Level Test" }, { value: "exam", label: "考试须知" }]} value={tab} onChange={(v: string) => setTab(v)} />
 
       {tab === "plan" ? (
         <Section heading="10 周学习计划">
@@ -1157,7 +1158,7 @@ export default function App() {
               <DayRow key={`${wk}-${d}`} n={d + 1} task={task} done={!!done[`${wk}-${d}`]} onToggle={() => toggleDay(`${wk}-${d}`)} />
             ))}
           </div>
-          <Text>第1–7周每周2课，第8–9周每周3课，第10周做全真模拟。开始前先做一次「水平测试」，第10周再做一次对比。进度保存在这台设备的浏览器里；如果浏览器不允许保存，关闭页面后会重置。</Text>
+          <Text>第1–7周每周2课，第8–9周每周3课，第10周做全真模拟。开始前先做一次「随机水平测验」，第10周再做一次对比。进度保存在这台设备的浏览器里；如果浏览器不允许保存，关闭页面后会重置。</Text>
         </Section>
       ) : null}
 
@@ -1181,7 +1182,9 @@ export default function App() {
         </Section>
       ) : null}
 
-      {tab === "test" ? (
+      {tab === "test" ? <RandomTest lang="en" /> : null}
+
+      {tab === "__old_test" ? (
         <Section heading="水平测试（30题）" caption="没有音频，「听力」用阅读形式的判断对错代替。词汇和语言点全部来自教材。">
           {PLACE.map((q: Q, i: number) => (
             <Fragment2 key={q.id}>
@@ -1235,7 +1238,7 @@ export default function App() {
           </Section>
           <Section heading="旧版 HSK 四级（2.0，供参考）">
             <Table columns={["部分", "题数", "时间（分钟）"]} rows={[["听力（判断对错 10 + 对话 15 + 长对话/短文 20）", "45", "约30"], ["填写答题卡", "—", "5"], ["阅读（选词填空 10 + 排列顺序 10 + 短文理解 20）", "40", "40"], ["书写（完成句子 10 + 看图用词造句 5）", "15", "25"], ["合计", "100", "约100（全程约105）"]]} emphasis={4} />
-            <Text>本页水平测试的题型来自旧版，选词填空和短文理解在新版里仍然有，排列顺序和完成句子能练语序，对新版写作也有帮助。</Text>
+            <Text>本页「随机水平测验」从约2100题的题库里每次随机抽30题（词义、拼音、选词填空、语法、阅读），用来检查自己目前的水平；它不是官方题型，也没有听力。</Text>
           </Section>
           <LinkCards links={[
             { title: "HSK (Level 4) 考试结构", site: "chinesetest.cn", href: "https://www.chinesetest.cn/HSK/4" },

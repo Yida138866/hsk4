@@ -2,6 +2,7 @@ import { Page, Section, Text, Segmented, Select, Button, Callout, Table, Propert
 import type { ReactNode } from "grok/canvas";
 import { Reader } from "./reader";
 import { SpeakBtn, wordAudio } from "./audio";
+import { RandomTest } from "./rtest";
 
 type Word = { h: string; p: string; pos: string; v: string; hv: string; l: number };
 type Q = { id: string; sec: "listen" | "read" | "write"; kind: string; passage?: string; stem: string; opts: string[]; a: number; ex?: string };
@@ -981,7 +982,7 @@ type Task = { title: string; tv: string; detail: string; dv: string; min: number
 function weekTasks(w: number): Task[] {
   const ls = WEEKS[w] ?? [];
   if (ls.length === 0) return [
-    { title: "水平测试（再做一次）", tv: "Làm lại bài kiểm tra trình độ", detail: "做本页「水平测试」，和第一次的分数对比，找出最弱的部分。", dv: "Làm phần «Kiểm tra trình độ» trên trang này, so sánh với điểm lần đầu và tìm ra phần yếu nhất.", min: 40 },
+    { title: "随机水平测验（再做一次）", tv: "Làm lại Kiểm tra ngẫu nhiên", detail: "做「随机水平测验」（随机30题），和第一次的分数对比，找出最弱的课。", dv: "Làm «Kiểm tra ngẫu nhiên» (30 câu ngẫu nhiên), so sánh với điểm lần đầu và tìm ra bài yếu nhất.", min: 40 },
     { title: "官方 HSK 3.0 样题：听力", tv: "Đề mẫu chính thức HSK 3.0: Nghe", detail: "在 chinesetest.cn 下载 HSK 3.0 四级样题包，完成听力部分（约20分钟）并对答案。", dv: "Tải bộ đề mẫu HSK 3.0 cấp 4 tại chinesetest.cn, làm phần nghe (khoảng 20 phút) rồi đối chiếu đáp án.", min: 35 },
     { title: "官方样题：阅读（限时30分钟）", tv: "Đề mẫu: Đọc hiểu (giới hạn 30 phút)", detail: "完成阅读部分，错题标出生词和语言点。", dv: "Làm phần đọc hiểu; ở các câu sai, đánh dấu từ mới và điểm ngữ pháp.", min: 40 },
     { title: "官方样题：写作（限时25分钟）", tv: "Đề mẫu: Viết (giới hạn 25 phút)", detail: "5个看图用词造句 + 1篇不少于80字的短文。", dv: "5 câu nhìn tranh, dùng từ cho sẵn đặt câu + 1 đoạn văn ít nhất 80 chữ.", min: 40 },
@@ -1206,7 +1207,7 @@ export default function App() {
 
   return (
     <Page title="HSK 4 系统学习 · Học HSK 4 có hệ thống (中文–Tiếng Việt)" summary="按《HSK标准教程4》上下册 20 课整理：10 周学习计划、602 个生词（越南语释义 + 闪卡）、100 个语言点、水平测试和每课小测。· Theo 20 bài của giáo trình chuẩn HSK 4 (Quyển Thượng và Hạ): kế hoạch 10 tuần, 602 từ mới có nghĩa tiếng Việt và thẻ từ, 100 điểm ngữ pháp, bài kiểm tra trình độ và bài kiểm tra từng bài. HSK 3.0 bắt đầu áp dụng từ 13/12/2026, xem «Thông tin kỳ thi»." width="column" lang="zh-Hans">
-      <Segmented options={[{ value: "plan", label: "学习计划 · Kế hoạch học tập" }, { value: "lessons", label: "课程 · Bài học" }, { value: "read", label: "课文 · Bài khoá" }, { value: "test", label: "水平测试 · Kiểm tra trình độ" }, { value: "quiz", label: "每课小测 · Kiểm tra từng bài" }, { value: "exam", label: "考试须知 · Thông tin kỳ thi" }]} value={tab} onChange={(v: string) => setTab(v)} />
+      <Segmented options={[{ value: "plan", label: "学习计划 · Kế hoạch học tập" }, { value: "lessons", label: "课程 · Bài học" }, { value: "read", label: "课文 · Bài khoá" }, { value: "quiz", label: "每课小测 · Kiểm tra từng bài" }, { value: "test", label: "随机水平测验 · Kiểm tra ngẫu nhiên" }, { value: "exam", label: "考试须知 · Thông tin kỳ thi" }]} value={tab} onChange={(v: string) => setTab(v)} />
 
       {tab === "plan" ? (
         <Section heading="10 周学习计划 · Kế hoạch học 10 tuần">
@@ -1217,8 +1218,8 @@ export default function App() {
               <DayRow key={`${wk}-${d}`} n={d + 1} task={task} done={!!done[`${wk}-${d}`]} onToggle={() => toggleDay(`${wk}-${d}`)} />
             ))}
           </div>
-          <Text>第1–7周每周2课，第8–9周每周3课，第10周做全真模拟。开始前先做一次「水平测试」，第10周再做一次对比。进度保存在这台设备的浏览器里；如果浏览器不允许保存，关闭页面后会重置。</Text>
-          <Text>Tuần 1–7 mỗi tuần học 2 bài, tuần 8–9 mỗi tuần 3 bài, tuần 10 thi thử. Trước khi bắt đầu hãy làm «Kiểm tra trình độ» một lần, đến tuần 10 làm lại để so sánh. Tiến độ được lưu trong trình duyệt của thiết bị này; nếu trình duyệt không cho phép lưu, tiến độ sẽ mất khi đóng trang.</Text>
+          <Text>第1–7周每周2课，第8–9周每周3课，第10周做全真模拟。开始前先做一次「随机水平测验」，第10周再做一次对比。进度保存在这台设备的浏览器里；如果浏览器不允许保存，关闭页面后会重置。</Text>
+          <Text>Tuần 1–7 mỗi tuần học 2 bài, tuần 8–9 mỗi tuần 3 bài, tuần 10 thi thử. Trước khi bắt đầu hãy làm «Kiểm tra ngẫu nhiên» một lần, đến tuần 10 làm lại để so sánh. Tiến độ được lưu trong trình duyệt của thiết bị này; nếu trình duyệt không cho phép lưu, tiến độ sẽ mất khi đóng trang.</Text>
         </Section>
       ) : null}
 
@@ -1244,7 +1245,9 @@ export default function App() {
         </Section>
       ) : null}
 
-      {tab === "test" ? (
+      {tab === "test" ? <RandomTest lang="vi" /> : null}
+
+      {tab === "__old_test" ? (
         <Section heading="水平测试（30题）· Kiểm tra trình độ (30 câu)" caption="没有音频，「听力」用阅读形式的判断对错代替。· Không có âm thanh, phần «Nghe» được thay bằng câu đúng/sai dạng đọc. Từ vựng và ngữ pháp đều lấy từ giáo trình.">
           {PLACE.map((q: Q, i: number) => (
             <Fragment2 key={q.id}>
@@ -1299,8 +1302,8 @@ export default function App() {
           </Section>
           <Section heading="旧版 HSK 四级（2.0，供参考）· HSK 4 bản cũ (2.0, để tham khảo)">
             <Table columns={["部分 · Phần", "题数 · Số câu", "时间 · Thời gian (phút)"]} rows={[["听力 · Nghe (đúng/sai 10 + hội thoại ngắn 15 + hội thoại dài/đoạn văn 20)", "45", "约30 · khoảng 30"], ["填写答题卡 · Điền phiếu trả lời", "—", "5"], ["阅读 · Đọc (chọn từ 10 + sắp xếp 10 + đọc hiểu 20)", "40", "40"], ["书写 · Viết (hoàn thành câu 10 + nhìn tranh đặt câu 5)", "15", "25"], ["合计 · Tổng", "100", "约100 · khoảng 100 (cả buổi khoảng 105)"]]} emphasis={4} />
-            <Text>本页水平测试的题型来自旧版，选词填空和短文理解在新版里仍然有，排列顺序和完成句子能练语序，对新版写作也有帮助。</Text>
-            <Text>Dạng câu hỏi trong bài kiểm tra trình độ trên trang này lấy từ đề cũ. Chọn từ điền vào chỗ trống và đọc hiểu đoạn văn vẫn có trong đề mới; sắp xếp thứ tự và hoàn thành câu giúp luyện trật tự từ, cũng có ích cho phần viết của đề mới.</Text>
+            <Text>本页「随机水平测验」从约2100题的题库里每次随机抽30题（词义、拼音、选词填空、语法、阅读），用来检查自己目前的水平；它不是官方题型，也没有听力。</Text>
+            <Text>«Kiểm tra ngẫu nhiên» trên trang này mỗi lần rút 30 câu từ ngân hàng khoảng 2.100 câu (nghĩa từ, pinyin, điền từ, ngữ pháp, đọc hiểu) để bạn tự kiểm tra trình độ hiện tại; đây không phải dạng đề chính thức và không có phần nghe.</Text>
           </Section>
           <LinkCards links={[
             { title: "HSK (Level 4) 考试结构 · Cấu trúc đề HSK 4", site: "chinesetest.cn", href: "https://www.chinesetest.cn/HSK/4" },

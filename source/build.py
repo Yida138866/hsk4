@@ -24,6 +24,7 @@ for k, c in cfg.items():
     open(f"src/entry_{k}.tsx", "w").write(f'import {{ createRoot }} from "react-dom/client";\nimport {{ ThemeRoot }} from "./kit";\nimport App from "./build_{k}";\nimport {{ MusicBar }} from "./audio";\ncreateRoot(document.getElementById("root")!).render(<ThemeRoot><App /></ThemeRoot>);\nconst mr = document.getElementById("music-root"); if (mr) createRoot(mr).render(<MusicBar lang="{k}" />);\n')
     open(f"{c['dir']}/assets/texts.js", "w").write("window.HSK_TEXTS = " + open("texts.json").read() + ";\n")
     if k == "vi": open(f"{out}/assets/tracks.js", "w").write("window.HSK_TRACKS = " + open("tracks.json").read() + ";\n")
+    open(f"{c['dir']}/assets/bank.js", "w").write("window.HSK_BANK = " + open(f"bank_{k}.json").read() + ";\n")
     js = "window.HSK_DATA = " + json.dumps(data, ensure_ascii=False, indent=0) + ";\n"
     open(f"{c['dir']}/assets/data.js", "w").write(js)
     subprocess.run(["npx", "esbuild", f"src/entry_{k}.tsx", "--bundle", "--minify", "--jsx=automatic", "--define:process.env.NODE_ENV=\"production\"", "--target=es2018", f"--outfile={c['dir']}/assets/app.js", "--log-level=warning"], check=True)
@@ -69,6 +70,7 @@ noscript{{display:block;padding:24px;font-family:sans-serif}}
 <noscript>This page needs JavaScript. · Trang này cần bật JavaScript.</noscript>
 <script src="{c.get('texts_src','assets/texts.js')}"></script>
 <script src="{'../' if k=='en' else ''}assets/tracks.js"></script>
+<script src="assets/bank.js"></script>
 <script src="assets/data.js"></script>
 <script src="assets/app.js"></script>
 </body>

@@ -1,0 +1,81 @@
+# format: L | stem (＿ = blank; or "!" prefix for sentence choice) | correct | wrong1 | wrong2 | wrong3 | VI explanation | EN explanation
+1|她不仅会说汉语，＿会说英语。|还|就|才|都|“不仅……还/也/而且……”: không những… mà còn…|“不仅……还……” = not only… but also…
+1|我＿＿没去过上海。|从来|刚|已经|正在|“从来” + 没/不: từ trước đến nay chưa từng.|“从来没……过” = have never (ever) done.
+1|＿＿下雨，我们也要去。|即使|因为|所以|不但|“即使……也……”: cho dù… cũng…|“即使……也……” = even if… still…
+1|!选出正确的句子|我们从来没吵过架。|我们从来吵过架没。|我们没从来吵过架。|从来我们吵没过架。|“从来” đứng trước “没 + V + 过”.|“从来” goes before “没 + verb + 过”.
+2|＿＿天气不好，他还是去跑步了。|尽管|如果|因为|只要|“尽管……还是/但是……”: mặc dù… vẫn…|“尽管……还是……” = although… still…
+2|我正想找你，你＿＿来了。|正好|从来|差不多|尽管|“正好”: vừa đúng lúc.|“正好” = just at the right moment.
+2|他们俩的个子＿＿高。|差不多|尽管|却|从来|“差不多” + adj: gần như nhau, xấp xỉ.|“差不多” + adjective = about the same.
+2|这家店的东西很贵，质量＿＿不太好。|却|正好|差不多|从来|“却”: lại (chuyển ý trái với mong đợi), đứng sau chủ ngữ.|“却” = yet/but, placed after the subject, shows contrast.
+3|＿＿明天下不下雨，我都去。|不管|虽然|即使|因为|“不管 + (A不A / 疑问) ……都……”: bất kể… đều…|“不管 + A-not-A/question …都…” = no matter whether…
+3|＿＿，要准时；其次，要诚实。|首先|最后|然后|接着|“首先……其次……”: trước hết… tiếp theo…|“首先……其次……” = first… second…
+3|这个电影＿＿好看的，你也去看看吧。|挺|太|更加|越|“挺……的”: khá…, rất…|“挺……的” = quite/pretty…
+3|我＿＿想去，可是后来没时间了。|本来|从来|正好|差不多|“本来”: vốn dĩ, lúc đầu (sau đó thay đổi).|“本来” = originally (but it changed later).
+4|我＿＿他是中国人，后来才知道他是越南人。|以为|希望|告诉|记得|“以为”: tưởng là (nhưng thực tế không phải).|“以为” = to (wrongly) assume.
+4|＿＿你在这儿！我找了你半天。|原来|本来|从来|后来|“原来”: hóa ra (phát hiện điều trước đó chưa biết).|“原来” = so it turns out (discovering something).
+4|请＿＿老师说的方法做。|按照|关于|对于|为了|“按照”: theo, dựa theo (quy định, phương pháp).|“按照” = according to (a method/rule).
+4|他很忙，＿＿连吃饭的时间都没有。|甚至|还是|或者|因为|“甚至”: thậm chí (nêu ví dụ nổi bật).|“甚至” = even (an extreme example).
+5|＿我来说，健康比钱重要。|对|给|跟|向|“对……来说”: đối với… mà nói.|“对……来说” = as far as … is concerned.
+5|我喜欢水果，＿＿是葡萄。|尤其|还是|或者|以为|“尤其(是)”: nhất là, đặc biệt là.|“尤其(是)” = especially.
+5|他这么努力，＿＿能通过考试。|肯定|从来|曾经|刚才|“肯定”: chắc chắn.|“肯定” = definitely.
+5|!选出正确的句子|这件衣服太贵了，再说颜色也不好看。|这件衣服再说太贵了，颜色也不好看。|这件衣服太贵了，颜色也不再说好看。|这件再说衣服太贵了，颜色也不好看。|“再说” đứng đầu vế sau để bổ sung thêm lý do.|“再说” starts the second clause to add another reason.
+6|我以为他会来，他＿＿没来。|竟然|正好|差不多|尽管|“竟然”: vậy mà, không ngờ.|“竟然” = unexpectedly.
+6|今年的学生是去年的两＿。|倍|次|个|本|“倍”: lần (gấp mấy lần).|“倍” = times (multiples).
+6|这本书很好，＿＿一看。|值得|愿意|认为|觉得|“值得”: đáng để.|“值得” = worth (doing).
+6|我们班有二十个学生，＿＿五个是越南人。|其中|其他|其实|尤其|“其中”: trong số đó.|“其中” = among them.
+7|＿＿明天下雨，我们就不去了。|要是|虽然|尽管|不管|“要是……就……”: nếu… thì…|“要是……就……” = if… then…
+7|她既漂亮＿聪明。|又|就|才|再|“既……又……”: vừa… vừa…|“既……又……” = both… and…
+7|快点儿，要＿＿＿了！|来不及|不要紧|没关系|差不多|“来不及”: không kịp.|“来不及” = not enough time / too late.
+7|!选出正确的句子|周末我们去散散步吧。|周末我们去散步散步吧。|周末我们去散步步吧。|周末我们去散散步步吧。|Động từ ly hợp lặp lại theo kiểu AAB: 散散步.|Separable verbs reduplicate as AAB: 散散步.
+8|＿＿你努力，就一定会进步。|只要|只有|不管|虽然|“只要……就……”: chỉ cần… là…|“只要……就……” = as long as… then…
+8|这个消息＿大家很高兴。|使|被|把|对|“A 使 B + adj/V”: khiến, làm cho.|“A 使 B …” = A makes B…
+8|他每天锻炼，＿＿身体很好。|因此|但是|虽然|尽管|“因此”: vì vậy.|“因此” = therefore.
+8|年轻人＿＿喜欢新的东西。|往往|从来|刚|正好|“往往”: thường thường (quy luật chung).|“往往” = tend to, usually (as a pattern).
+9|＿＿你不知道吗？|难道|为什么|什么|哪里|“难道……吗？”: lẽ nào…? (câu hỏi tu từ).|“难道……吗？” = rhetorical “Don't tell me…?”
+9|＿＿这次比赛，我认识了很多朋友。|通过|关于|按照|对于|“通过”: thông qua.|“通过” = through, by means of.
+9|我们等了他一个小时，＿＿他没来。|结果|尤其|其中|往往|“结果”: kết quả là, rốt cuộc.|“结果” = in the end, as it turned out.
+9|!选出正确的句子|他爱上了这个城市。|他爱了上这个城市。|他上爱了这个城市。|他爱这个上了城市。|“V + 上” chỉ kết quả: 爱上 (đem lòng yêu).|“Verb + 上” shows a result: 爱上 = fall in love with.
+10|＿＿天气原因，航班推迟了。|由于|通过|按照|对于|“由于”: do, bởi vì.|“由于” = due to.
+10|在我＿＿，他是最好的老师。|看来|来说|以为|觉得|“在……看来”: theo cách nhìn của…|“在……看来” = in …'s view.
+10|我喜欢很多水果，＿＿苹果、香蕉。|比如|其中|甚至|因此|“比如”: ví dụ như.|“比如” = for example.
+10|这个菜＿＿很好吃。|确实|从来|刚|正好|“确实”: quả thật.|“确实” = really, indeed.
+11|他太忙了，＿饭都没时间吃。|连|也|都|就|“连……都/也……”: ngay cả… cũng…|“连……都……” = even…
+11|快走吧，＿＿会迟到的。|否则|虽然|尽管|不管|“否则”: nếu không thì.|“否则” = otherwise.
+11|＿＿多忙，他每天都学习。|无论|虽然|即使|尽管|“无论 + 多/疑问 ……都……”: dù… đến đâu cũng…|“无论 + how/question …都…” = no matter…
+11|他在学习的＿＿，还在工作。|同时|以后|以前|当时|“……的同时”: đồng thời.|“……的同时” = at the same time as…
+12|工作＿忙也要吃饭。|再|还|更|最|“再 + adj + 也……”: dù… đến mấy cũng…|“再 + adj + 也……” = no matter how…
+12|＿＿这个问题，大家有不同的看法。|对于|通过|按照|为了|“对于”: đối với (vấn đề, việc gì).|“对于” = regarding.
+12|!选出正确的句子|这里的人个个都很热情。|这里的人个个很都热情。|这里个个的人都很热情。|这里的人个都个很热情。|Lượng từ lặp lại “个个” = mỗi người, ai cũng; đặt trước “都”.|Reduplicated measure word “个个” = every one; it goes before “都”.
+12|他不但没生气，＿＿还笑了。|相反|因此|尽管|否则|“相反”: ngược lại.|“相反” = on the contrary.
+13|＿＿经济的发展，人们的生活越来越好。|随着|关于|按照|对于|“随着”: cùng với (sự thay đổi).|“随着” = along with, as (something changes).
+13|这件事＿我来负责。|由|被|把|对|“由 + người + V”: do ai (phụ trách).|“由 + person + verb” = to be done by (someone).
+13|我们正在＿＿讨论。|进行|发生|出现|发展|“进行 + động từ hai âm tiết”: tiến hành.|“进行 + disyllabic verb” = to carry out.
+13|我不常喝咖啡，只是＿＿喝一杯。|偶尔|往往|经常|总是|“偶尔”: thỉnh thoảng.|“偶尔” = occasionally.
+14|＿＿你病了，就在家休息吧。|既然|虽然|尽管|不管|“既然……就……”: đã… thì…|“既然……就……” = since… then…
+14|他没带伞，＿＿只好在商店等雨停。|于是|否则|尽管|虽然|“于是”: thế là.|“于是” = so, thereupon.
+14|桌子上有苹果、香蕉＿＿＿。|什么的|的话|似的|着呢|“……什么的”: … vân vân.|“……什么的” = … and so on.
+14|他＿第一名的成绩考上了大学。|以|被|把|给|“以”: bằng, với (thành tích, cách thức).|“以” = with, by (a result/means).
+15|你＿＿别忘了带护照！|千万|已经|刚才|从来|“千万 + 别/不要”: nhất định đừng.|“千万别……” = be sure not to…
+15|这个包一百块钱＿＿。|左右|以后|以前|中间|“số lượng + 左右”: khoảng.|“number + 左右” = about.
+15|我＿不起来他的名字了。|想|看|听|说|“想不起来”: không nhớ ra.|“想不起来” = can't recall.
+15|我的电脑被弟弟＿坏了。|弄|办|作|当|“弄”: làm (cho hỏng, bẩn…).|“弄” = to make/cause (e.g. 弄坏 = break).
+16|天这么黑，＿＿要下雨了。|恐怕|难道|到底|千万|“恐怕”: e rằng.|“恐怕” = I'm afraid, probably.
+16|你＿＿去不去？快决定吧。|到底|难道|恐怕|千万|“到底”: rốt cuộc (dùng trong câu hỏi).|“到底” = on earth (in questions).
+16|!选出正确的句子|她胆子小，不敢一个人走夜路。|她胆子小，敢不一个人走夜路。|她胆子小，不一个人敢走夜路。|她不胆子小，敢一个人走夜路。|“不敢 + V”: không dám.|“不敢 + verb” = not dare to.
+16|这道菜＿好吃了！|可|非常|十分|比较|“可 + adj + 了”: thật là… (nhấn mạnh, khẩu ngữ).|“可 + adj + 了” = really… (spoken emphasis).
+17|我去了一＿北京。|趟|本|张|件|“趟”: lượng từ cho chuyến đi.|“趟” = measure word for a trip.
+17|虽然很累，他＿＿坚持工作。|仍然|从来|难道|刚|“仍然”: vẫn.|“仍然” = still.
+17|他们为了理想＿努力。|而|被|把|给|“为了……而……”: vì… mà…|“为了……而……” = for the sake of…
+17|!选出正确的句子|我们一起去了一趟上海。|我们一起去了上海一趟趟。|我们一趟一起去了上海。|我们一起趟去了一上海。|“V + 了 + 一趟 + nơi chốn”.|“verb + 了 + 一趟 + place”.
+18|我不知道他＿＿会来。|是否|难道|千万|竟然|“是否”: có… hay không.|“是否” = whether.
+18|这里太热了，我真＿＿＿。|受不了|来不及|看不起|差不多|“受不了”: chịu không nổi.|“受不了” = can't stand it.
+18|人们＿这种花叫作“梅花”。|把|被|给|让|“把 A 叫作 B”: gọi A là B.|“把 A 叫作 B” = call A “B”.
+18|他先洗了澡，＿＿就睡觉了。|接着|接受|由于|尽管|“先……接着……”: trước… tiếp đó…|“先……接着……” = first… then…
+19|他饿极了，＿＿都想吃。|什么|怎么|哪儿|为什么|Đại từ nghi vấn + 都 = bất cứ… (什么都 = cái gì cũng).|Question word + 都 = any/every (什么都 = anything).
+19|学习好的关键＿＿坚持。|在于|对于|关于|由于|“在于”: nằm ở, là ở.|“在于” = lies in.
+19|我听＿＿了，这是小雪的声音。|出来|起来|下来|上来|“听出来”: nghe ra, nhận ra.|“听出来” = recognise by hearing.
+19|＿＿＿＿，这次旅行很愉快。|总的来说|一般|经常|从来|“总的来说”: nói chung.|“总的来说” = all in all.
+20|他＿到家就睡觉了。|一|再|还|也|“一……就……”: vừa… là…|“一……就……” = as soon as…
+20|她说着说＿就哭了。|着|了|过|的|“V着V着”: đang… thì (bỗng)…|“V着V着” = while doing…, suddenly…
+20|这个问题＿＿怎么解决？|究竟|难道|恐怕|千万|“究竟”: rốt cuộc.|“究竟” = after all, exactly (in questions).
+20|说＿＿容易，做起来难。|起来|出来|下来|上去|“V起来”: (khi) làm thử thì…|“V起来” = when it comes to doing…
