@@ -14,3 +14,12 @@ level|哇！我长大了！谢谢你每天陪我学习！|Oa! Mình lớn rồi!
 grad|我们毕业啦！你是最棒的！|Chúng mình tốt nghiệp rồi! Cậu là giỏi nhất!|We graduated! You're the best!
 reward|太棒了，又得到奖励了！|Tuyệt quá, lại được thưởng rồi!|Amazing, another reward!
 egg|蛋里面好像有什么在动……|Hình như trong quả trứng có gì đó đang động đậy…|Something seems to be moving inside the egg…
+checkin|打卡成功！今天也见到你啦！|Điểm danh thành công! Hôm nay lại gặp cậu rồi!|Checked in! So glad to see you today!
+checkin|连续打卡，你真厉害！明天也要来哦！|Điểm danh liên tục, cậu giỏi thật! Mai nhớ quay lại nhé!|Another day in a row, you're amazing! Come back tomorrow!
+pq|我来考考你，准备好了吗？|Mình đố cậu nhé, sẵn sàng chưa?|Let me quiz you. Ready?
+right|答对了！真聪明！|Đúng rồi! Thông minh quá!|Correct! So smart!
+right|太棒了，完全正确！|Tuyệt quá, hoàn toàn chính xác!|Great, exactly right!
+wrong|没关系，我们一起记住它！|Không sao, mình cùng nhớ nó nhé!|It's okay, let's remember it together!
+pqdone|今天的小测验完成啦，明天见！|Bài đố hôm nay xong rồi, mai gặp nhé!|Today's quiz is done. See you tomorrow!
+newpet|新朋友来啦！请多多关照！|Bạn mới đến rồi! Mong cậu chăm sóc mình nhé!|A new friend is here! Please take good care of me!
+gradall|我毕业啦！所有漂亮的衣服和饰品都送给你！|Mình tốt nghiệp rồi! Tất cả quần áo và phụ kiện xinh đều tặng cậu!|I graduated! All the pretty outfits and accessories are yours!

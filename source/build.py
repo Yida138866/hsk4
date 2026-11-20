@@ -25,8 +25,14 @@ PV_CSS = """
 .confetti{position:relative;height:0}
 .confetti span{position:absolute;top:-120px;font-size:18px;animation:cf 1.8s ease-in infinite}
 @keyframes cf{0%{transform:translateY(0) rotate(0);opacity:1}100%{transform:translateY(140px) rotate(200deg);opacity:0}}
+.pulse{animation:pu 1.6s ease-in-out infinite}
+@keyframes pu{0%,100%{transform:scale(1);box-shadow:0 4px 12px rgba(232,85,154,.28)}50%{transform:scale(1.05);box-shadow:0 6px 22px rgba(232,85,154,.5)}}
+.flame{animation:fl 1.2s ease-in-out infinite;transform-origin:50% 90%}
+@keyframes fl{0%,100%{transform:scale(1) rotate(-3deg)}50%{transform:scale(1.12) rotate(3deg)}}
+.ci-pop{animation:cip .6s cubic-bezier(.2,1.5,.4,1)}
+@keyframes cip{0%{transform:scale(.94)}100%{transform:none}}
 .pv-badge{background:#ffd36e;color:#7a4300;font-weight:800;border-radius:999px;padding:4px 10px}
-@media (prefers-reduced-motion: reduce){.pet-bounce,.pet-wobble,.confetti span{animation:none}}
+@media (prefers-reduced-motion: reduce){.pet-bounce,.pet-wobble,.confetti span,.pulse,.flame,.ci-pop{animation:none}}
 """ if PREVIEW else ""
 PV_STORE = "<script>(function(){try{var P=Storage.prototype,g=P.getItem,s=P.setItem,r=P.removeItem;var k=function(x){return typeof x==='string'&&x.indexOf('hsk4-')===0?'hsk4pv-'+x.slice(5):x};P.getItem=function(x){return g.call(this,k(x))};P.setItem=function(x,v){return s.call(this,k(x),v)};P.removeItem=function(x){return r.call(this,k(x))}}catch(e){}})();</script>"
 for k, c in cfg.items():

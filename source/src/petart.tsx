@@ -1,13 +1,18 @@
-// Original pet artwork (inline SVG): bunny, panda, kitten × 5 stages, with outfits, accessories, rooms.
+// Original pet artwork (inline SVG): bunny, panda, grey kitten, tiger, dragon, puppy × 5 stages, with outfits, accessories, rooms.
 import type { ReactNode } from "./kit";
 
-export type Kind = "bunny" | "panda" | "kitten";
+export type Kind = "bunny" | "panda" | "kitten" | "tiger" | "dragon" | "puppy";
+export const KINDS: Kind[] = ["bunny", "panda", "kitten", "tiger", "dragon", "puppy"];
 export type Equip = { acc?: string; outfit?: string; room?: string; furn?: string[] };
 const INK = "#4a2a52";
-const PAL: Record<Kind, { body: string; stroke: string; inner: string; dark: string; egg: string; egg2: string }> = {
-  bunny: { body: "#ffffff", stroke: "#f3a7c9", inner: "#ffc2dc", dark: "#ffc2dc", egg: "#ffe3ef", egg2: "#ffb3d1" },
-  panda: { body: "#ffffff", stroke: "#cdbfd6", inner: "#f6c6da", dark: "#4b3b55", egg: "#f6f2fa", egg2: "#4b3b55" },
-  kitten: { body: "#ffe2c6", stroke: "#f2ad7a", inner: "#ffc2cf", dark: "#f5b58a", egg: "#fff0dd", egg2: "#ffb98a" },
+type Pal = { body: string; stroke: string; inner: string; dark: string; egg: string; egg2: string; belly: string; nose: string; mark: string };
+const PAL: Record<Kind, Pal> = {
+  bunny: { body: "#ffffff", stroke: "#f3a7c9", inner: "#ffc2dc", dark: "#ffc2dc", egg: "#ffe3ef", egg2: "#ffb3d1", belly: "#fff7fb", nose: INK, mark: "" },
+  panda: { body: "#ffffff", stroke: "#cdbfd6", inner: "#f6c6da", dark: "#4b3b55", egg: "#f6f2fa", egg2: "#4b3b55", belly: "#fff7fb", nose: INK, mark: "" },
+  kitten: { body: "#dedce8", stroke: "#a19db8", inner: "#ffc2cf", dark: "#b3afc7", egg: "#efeef6", egg2: "#b3afc7", belly: "#f6f5fa", nose: "#f48ca8", mark: "#a19db8" },
+  tiger: { body: "#ffc77e", stroke: "#e89a4c", inner: "#fff3df", dark: "#8a5638", egg: "#fff0d6", egg2: "#f2a65a", belly: "#fff6e8", nose: "#f48ca8", mark: "#8a5638" },
+  dragon: { body: "#a6e8cf", stroke: "#5dbf9c", inner: "#fff4c8", dark: "#5dbf9c", egg: "#e4f8ef", egg2: "#7fd4b4", belly: "#fff4c8", nose: INK, mark: "#ff7eb6" },
+  puppy: { body: "#fff3e2", stroke: "#dcb487", inner: "#c98c5e", dark: "#c98c5e", egg: "#fff6ea", egg2: "#d9a77a", belly: "#ffffff", nose: INK, mark: "#c98c5e" },
 };
 
 function Ears({ k }: { k: Kind }) {
@@ -18,9 +23,25 @@ function Ears({ k }: { k: Kind }) {
     <ellipse cx="120" cy="38" rx="12" ry="32" transform="rotate(12 120 38)" fill={p.body} stroke={p.stroke} strokeWidth="3" />
     <ellipse cx="120" cy="40" rx="5.5" ry="21" transform="rotate(12 120 40)" fill={p.inner} /></g>);
   if (k === "panda") return (<g><circle cx="62" cy="56" r="15" fill={p.dark} /><circle cx="138" cy="56" r="15" fill={p.dark} /></g>);
+  if (k === "tiger") return (<g>
+    <circle cx="64" cy="58" r="16" fill={p.body} stroke={p.stroke} strokeWidth="3" /><circle cx="64" cy="60" r="8" fill={p.inner} />
+    <circle cx="136" cy="58" r="16" fill={p.body} stroke={p.stroke} strokeWidth="3" /><circle cx="136" cy="60" r="8" fill={p.inner} /></g>);
+  if (k === "dragon") return (<g>
+    <g fill="none" stroke="#f2b84b" strokeWidth="6" strokeLinecap="round"><path d="M80 56 L72 22" /><path d="M75 36 L64 30" /><path d="M120 56 L128 22" /><path d="M125 36 L136 30" /></g>
+    <g fill="#ffd36e"><circle cx="72" cy="22" r="4" /><circle cx="128" cy="22" r="4" /></g>
+    <path d="M56 84 q-16 -6 -18 -20 q14 0 22 10z" fill={p.body} stroke={p.stroke} strokeWidth="2.5" strokeLinejoin="round" />
+    <path d="M144 84 q16 -6 18 -20 q-14 0 -22 10z" fill={p.body} stroke={p.stroke} strokeWidth="2.5" strokeLinejoin="round" /></g>);
+  if (k === "puppy") return null; // floppy ears are drawn in front of the head
   return (<g>
     <path d="M58 76 L66 32 L96 54 Z" fill={p.body} stroke={p.stroke} strokeWidth="3" strokeLinejoin="round" /><path d="M66 66 L69 44 L86 56 Z" fill={p.inner} />
     <path d="M142 76 L134 32 L104 54 Z" fill={p.body} stroke={p.stroke} strokeWidth="3" strokeLinejoin="round" /><path d="M134 66 L131 44 L114 56 Z" fill={p.inner} /></g>);
+}
+function EarsFront({ k }: { k: Kind }) {
+  const p = PAL[k];
+  if (k === "puppy") return (<g fill={p.dark} stroke="#b07548" strokeWidth="2.5">
+    <path d="M60 60 q-14 6 -12 40 q2 14 12 10 q8 -4 10 -22 q2 -18 -2 -26z" /><path d="M140 60 q14 6 12 40 q-2 14 -12 10 q-8 -4 -10 -22 q-2 -18 2 -26z" /></g>);
+  if (k === "dragon") return (<g fill={p.mark}><path d="M88 50 q4 -14 12 -16 q-2 8 0 16z" /><path d="M100 48 q6 -14 14 -14 q-4 8 -4 16z" /><path d="M84 54 q-6 -10 -2 -18 q4 8 10 12z" /></g>);
+  return null;
 }
 
 function Face({ k, stage, mood }: { k: Kind; stage: number; mood: string }) {
@@ -36,18 +57,26 @@ function Face({ k, stage, mood }: { k: Kind; stage: number; mood: string }) {
       <circle cx="84.5" cy="93" r="2.2" fill="#fff" /><circle cx="120.5" cy="93" r="2.2" fill="#fff" />
       {big ? <g stroke={INK} strokeWidth="2" strokeLinecap="round"><path d="M75 89 l-4 -3" /><path d="M76 86 l-2 -4" /><path d="M125 89 l4 -3" /><path d="M124 86 l2 -4" /></g> : null}
     </g>;
+  const whisk = k === "kitten" || k === "tiger";
   return (
     <g>
       {k === "panda" ? <g fill={p.dark}><ellipse cx="81" cy="97" rx="12" ry="14" transform="rotate(20 81 97)" /><ellipse cx="119" cy="97" rx="12" ry="14" transform="rotate(-20 119 97)" /></g> : null}
-      {k === "kitten" ? <g fill="none" stroke="#f0a070" strokeWidth="4" strokeLinecap="round"><path d="M92 50 v10" /><path d="M100 48 v12" /><path d="M108 50 v10" /></g> : null}
+      {k === "puppy" ? <ellipse cx="119" cy="95" rx="14" ry="13" fill={p.dark} opacity="0.55" /> : null}
+      {k === "kitten" ? <g fill="none" stroke={p.mark} strokeWidth="4" strokeLinecap="round"><path d="M92 50 v10" /><path d="M100 48 v12" /><path d="M108 50 v10" /></g> : null}
+      {k === "tiger" ? <g fill="none" stroke={p.mark} strokeWidth="3.2" strokeLinecap="round"><path d="M90 56 h20" /><path d="M92 63 h16" /><path d="M100 54 v16" /><path d="M90 70 h20" /><path d="M54 92 l10 3" /><path d="M54 100 l9 1" /><path d="M146 92 l-10 3" /><path d="M146 100 l-9 1" /></g> : null}
+      {k === "dragon" || k === "puppy" || k === "tiger" ? <ellipse cx="100" cy="110" rx="17" ry="11" fill={k === "dragon" ? p.belly : "#ffffff"} opacity="0.9" /> : null}
       {eyes}
       {sad ? <g stroke={INK} strokeWidth="2.2" strokeLinecap="round" fill="none"><path d="M74 84 l12 4" /><path d="M126 84 l-12 4" /></g> : null}
       <ellipse cx="68" cy="110" rx="8" ry="4.5" fill="#ffb3d1" opacity="0.85" /><ellipse cx="132" cy="110" rx="8" ry="4.5" fill="#ffb3d1" opacity="0.85" />
-      <path d="M97 104 l3 3 l3 -3z" fill={k === "kitten" ? "#f48ca8" : INK} />
+      {k === "dragon" ? <g fill={INK}><circle cx="96" cy="105" r="1.6" /><circle cx="104" cy="105" r="1.6" /></g>
+        : k === "puppy" ? <ellipse cx="100" cy="105" rx="5" ry="3.6" fill={INK} />
+        : <path d="M97 104 l3 3 l3 -3z" fill={p.nose} />}
       {sad ? <path d="M93 116 q7 -5 14 0" fill="none" stroke={INK} strokeWidth="2.4" strokeLinecap="round" />
         : <path d="M92 110 q4 5 8 0 q4 5 8 0" fill="none" stroke={INK} strokeWidth="2.4" strokeLinecap="round" />}
+      {k === "puppy" && !sad ? <path d="M101 113 q3 7 7 1z" fill="#ff8fb0" /> : null}
       {sad ? <path d="M128 104 q3 6 0 9 q-3 -3 0 -9z" fill="#9fd0ff" /> : null}
-      {k === "kitten" ? <g stroke="#d99b7a" strokeWidth="1.6" strokeLinecap="round"><path d="M60 104 h-16" /><path d="M60 110 l-15 4" /><path d="M140 104 h16" /><path d="M140 110 l15 4" /></g> : null}
+      {whisk ? <g stroke={k === "tiger" ? "#c98b5a" : "#8f8aa8"} strokeWidth="1.6" strokeLinecap="round"><path d="M60 104 h-16" /><path d="M60 110 l-15 4" /><path d="M140 104 h16" /><path d="M140 110 l15 4" /></g> : null}
+      {k === "dragon" ? <g fill="none" stroke="#f2b84b" strokeWidth="2.2" strokeLinecap="round"><path d="M92 106 q-22 -2 -34 8 q-8 8 2 10" /><path d="M108 106 q22 -2 34 8 q8 8 -2 10" /></g> : null}
     </g>
   );
 }
@@ -67,7 +96,7 @@ function Outfit({ id, stage }: { id?: string; stage: number }) {
 }
 
 function Acc({ id, k }: { id?: string; k: Kind }) {
-  const top = k === "panda" ? 46 : 50;
+  const top = k === "panda" ? 46 : k === "dragon" ? 44 : 50;
   if (id === "bow") return <g transform="translate(100 140)"><path d="M0 0 l-18 -11 v22z M0 0 l18 -11 v22z" fill="#ff5fa2" /><circle r="5.5" fill="#ff8cc0" /></g>;
   if (id === "glasses") return <g fill="rgba(255,255,255,0.25)" stroke="#8f2160" strokeWidth="3"><circle cx="82" cy="96" r="13" /><circle cx="118" cy="96" r="13" /><path d="M95 96 h10" /></g>;
   if (id === "crown") return <g>{[66, 82, 100, 118, 134].map((x, i) => <g key={x}><circle cx={x} cy={top + (i % 2 ? -2 : 2)} r="7" fill={["#ff8cc0", "#ffd36e", "#c58bff", "#7ad8c8", "#ff8cc0"][i]} /><circle cx={x} cy={top + (i % 2 ? -2 : 2)} r="2.5" fill="#fff" /></g>)}</g>;
@@ -103,6 +132,9 @@ export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true }: { 
         {kind === "bunny" ? <g fill={p.egg2}><ellipse cx="80" cy="130" rx="7" ry="11" /><ellipse cx="118" cy="160" rx="9" ry="7" /><circle cx="96" cy="182" r="5" /></g> : null}
         {kind === "panda" ? <g fill={p.egg2}><circle cx="78" cy="132" r="9" /><circle cx="122" cy="128" r="7" /><circle cx="108" cy="176" r="8" /></g> : null}
         {kind === "kitten" ? <g fill="none" stroke={p.egg2} strokeWidth="6" strokeLinecap="round"><path d="M64 140 q36 -12 72 0" /><path d="M60 162 q40 -12 80 0" /></g> : null}
+        {kind === "tiger" ? <g fill="none" stroke={p.egg2} strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"><path d="M58 138 l12 6 l-10 6" /><path d="M142 138 l-12 6 l10 6" /><path d="M62 170 l14 4 l-12 6" /><path d="M138 170 l-14 4 l12 6" /><path d="M92 126 h16 M100 120 v14" /></g> : null}
+        {kind === "dragon" ? <g fill="none" stroke={p.egg2} strokeWidth="3.5" strokeLinecap="round">{[[76, 132], [100, 132], [124, 132], [64, 154], [88, 154], [112, 154], [136, 154], [76, 176], [100, 176], [124, 176]].map(([x, y], i) => <path key={i} d={`M${x - 10} ${y} q10 10 20 0`} />)}<circle cx="100" cy="112" r="5" fill="#ffd36e" stroke="none" /></g> : null}
+        {kind === "puppy" ? <g fill={p.egg2}><ellipse cx="100" cy="160" rx="11" ry="9" /><circle cx="86" cy="146" r="4.5" /><circle cx="96" cy="140" r="4.5" /><circle cx="106" cy="140" r="4.5" /><circle cx="115" cy="146" r="4.5" /><circle cx="72" cy="124" r="6" opacity="0.6" /><circle cx="128" cy="184" r="7" opacity="0.6" /></g> : null}
         <path d="M86 102 l6 8 l-6 6 l8 6" fill="none" stroke={p.stroke} strokeWidth="2.5" strokeLinecap="round" />
         <path d="M84 196 q16 6 32 0" fill="none" stroke="rgba(0,0,0,0.05)" strokeWidth="6" />
       </g>
@@ -115,11 +147,16 @@ export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true }: { 
       <g transform={`translate(100 205) scale(${s}) translate(-100 -205)`}>
         {kind === "kitten" ? <path d="M134 176 q34 -6 26 -40" fill="none" stroke={p.stroke} strokeWidth="11" strokeLinecap="round" /> : null}
         {kind === "kitten" ? <path d="M134 176 q34 -6 26 -40" fill="none" stroke={p.body} strokeWidth="6" strokeLinecap="round" /> : null}
+        {kind === "tiger" ? <g fill="none" strokeLinecap="round"><path d="M134 176 q34 -6 26 -40" stroke={p.stroke} strokeWidth="11" /><path d="M134 176 q34 -6 26 -40" stroke={p.body} strokeWidth="6" /><path d="M134 176 q34 -6 26 -40" stroke={p.mark} strokeWidth="6" strokeDasharray="4 8" strokeLinecap="butt" /></g> : null}
+        {kind === "puppy" ? <g fill="none" strokeLinecap="round"><path d="M134 178 q24 -2 22 -26" stroke={p.stroke} strokeWidth="11" /><path d="M134 178 q24 -2 22 -26" stroke={p.body} strokeWidth="6" /></g> : null}
+        {kind === "dragon" ? <g><path d="M130 184 q44 8 42 -34" fill="none" stroke={p.stroke} strokeWidth="13" strokeLinecap="round" /><path d="M130 184 q44 8 42 -34" fill="none" stroke={p.body} strokeWidth="8" strokeLinecap="round" /><path d="M172 152 q-12 -10 -4 -24 q4 8 10 4 q2 12 -6 20z" fill={p.mark} /></g> : null}
         {kind === "bunny" ? <circle cx="136" cy="178" r="9" fill="#fff" stroke={p.stroke} strokeWidth="2.5" /> : null}
         <ellipse cx="82" cy="198" rx="13" ry="8" fill={limb} stroke={p.stroke} strokeWidth="2.5" />
         <ellipse cx="118" cy="198" rx="13" ry="8" fill={limb} stroke={p.stroke} strokeWidth="2.5" />
         <ellipse cx="100" cy="164" rx="38" ry="36" fill={p.body} stroke={p.stroke} strokeWidth="3" />
-        <ellipse cx="100" cy="172" rx="22" ry="20" fill={kind === "kitten" ? "#fff3e6" : "#fff7fb"} />
+        <ellipse cx="100" cy="172" rx="22" ry="20" fill={p.belly} />
+        {kind === "tiger" ? <g stroke={p.mark} strokeWidth="3.5" strokeLinecap="round" fill="none"><path d="M64 160 l10 2" /><path d="M66 172 l10 0" /><path d="M136 160 l-10 2" /><path d="M134 172 l-10 0" /></g> : null}
+        {kind === "dragon" ? <g fill="none" stroke="#f0d98a" strokeWidth="2"><path d="M82 160 h36" /><path d="M80 172 h40" /><path d="M84 184 h32" /></g> : null}
         <Outfit id={equip.outfit} stage={stage} />
         <ellipse cx="62" cy="156" rx="10" ry="15" transform="rotate(25 62 156)" fill={limb} stroke={p.stroke} strokeWidth="2.5" />
         <ellipse cx="138" cy="156" rx="10" ry="15" transform="rotate(-25 138 156)" fill={limb} stroke={p.stroke} strokeWidth="2.5" />
@@ -127,6 +164,7 @@ export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true }: { 
         <Ears k={kind} />
         <circle cx="100" cy="94" r="48" fill={p.body} stroke={p.stroke} strokeWidth="3" />
         <Face k={kind} stage={stage} mood={mood} />
+        <EarsFront k={kind} />
         {stage === 2 && !equip.acc ? <g><ellipse cx="100" cy="52" rx="30" ry="9" fill="#ffd36e" /><path d="M76 52 q24 -26 48 0" fill="#ffd36e" /></g> : null}
         {stage === 3 && !equip.acc ? <path d="M93 46 q7 -14 14 0 q-7 6 -14 0z" fill="#ff8cc0" /> : null}
         <Acc id={equip.acc} k={kind} />
