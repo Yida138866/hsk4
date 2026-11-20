@@ -3,7 +3,7 @@ import type { ReactNode } from "grok/canvas";
 import { Reader } from "./reader";
 import { SpeakBtn, wordAudio } from "./audio";
 import { RandomTest } from "./rtest";
-import { PET_ON, PetTab, petEvent } from "./pet";
+import { PET_ON, PetTab, petEvent, quizWrong } from "./pet";
 
 type Word = { h: string; p: string; pos: string; v: string; hv: string; l: number };
 type Q = { id: string; sec: "listen" | "read" | "write"; kind: string; passage?: string; stem: string; opts: string[]; a: number; ex?: string };
@@ -1284,10 +1284,10 @@ export default function App() {
         <Section heading={`第${qLesson}课 小测（10题）· Kiểm tra bài ${qLesson} (10 câu)`} caption="8题词汇（意思、汉字、拼音）+ 2题语言点填空，全部取自本课。· 8 câu từ vựng (nghĩa, chữ Hán, pinyin) + 2 câu điền ngữ pháp, tất cả lấy từ bài này. Chọn một đáp án cho mỗi câu rồi bấm «Nộp bài».">
           <Select label="选择课 · Chọn bài" options={lessonOpts} value={qLesson} onChange={(v: string) => { setQLesson(v); setQAns({}); setQDone(false); setQSeed(1); }} />
           {quiz.map((q: Q, i: number) => (
-            <QBlock key={`${qSeed}-${q.id}`} q={q} idx={i + 1} chosen={qAns[q.id]} done={qDone} onPick={(k: number) => setQAns({ ...qAns, [q.id]: k })} />
+            <QBlock key={`${qSeed}-${q.id}`} q={q} idx={i + 1} chosen={qAns[q.id]} done={qDone} onPick={(k: number) => setQAns((a: Record<string, number>) => ({ ...a, [q.id]: k }))} />
           ))}
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center" }}>
-            {!qDone ? <Button label="交卷 · Nộp bài" variant="primary" onClick={() => { setQDone(true); petEvent("quiz", { lesson: Number(qLesson), score: qScore }); }} /> : <Button label="换一套题 · Đổi đề khác" variant="primary" onClick={() => { setQSeed(qSeed + 1); setQAns({}); setQDone(false); }} />}
+            {!qDone ? <Button label="交卷 · Nộp bài" variant="primary" onClick={() => { setQDone(true); petEvent("quiz", { lesson: Number(qLesson), score: qScore, wrong: PET_ON ? quizWrong(quiz, qAns) : [] }); }} /> : <Button label="换一套题 · Đổi đề khác" variant="primary" onClick={() => { setQSeed(qSeed + 1); setQAns({}); setQDone(false); }} />}
             <Button label="重做本套 · Làm lại đề này" onClick={() => { setQAns({}); setQDone(false); }} />
             {qDone ? <span style={{ color: t.text.primary, fontSize: t.font.body1.fontSize }}>得分 · Điểm: {qScore} / 10{qScore >= 8 ? " · 不错！Tốt lắm!" : " · 把错词放进闪卡多复习几遍。Hãy ôn lại các từ sai bằng thẻ từ nhiều lần."}</span> : null}
           </div>

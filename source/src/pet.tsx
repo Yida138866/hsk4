@@ -5,6 +5,10 @@ import { PetArt, Room } from "./petart";
 import type { Kind, Equip } from "./petart";
 import { speakSeq, SpeakBtn } from "./audio";
 import { LINES } from "./pet_lines";
+import { activeEvent, EVENTS, EV_STEPS } from "./petevents";
+import type { Ev } from "./petevents";
+import { ClassCard, TeacherView } from "./petcard";
+import type { CardData } from "./petcard";
 
 declare const __PET__: boolean;
 export const PET_ON = typeof __PET__ !== "undefined" && __PET__;
@@ -35,11 +39,13 @@ type St = {
   gifts: string[]; stage: number; born: number;
   minStage: number; ciLast: string; ciStreak: number; ciMax: number; ciDays: string[]; pq: PQ | null;
   grads: Grad[]; gradDone: boolean; gradDate: string; earned: string[];
+  wb: Record<string, WB>; wbCleared: number; lastPass: { l: number; day: string } | null; evXp: Record<string, number>; cardName: string; cardClass: string;
 };
+type WB = { src: string; l: number; ty: string; t: number };
 const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
 const dayStr = (off: number) => { const d = new Date(); d.setDate(d.getDate() + off); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
 const dayDiff = (a: string, b: string) => Math.round((Date.parse(b + "T00:00:00") - Date.parse(a + "T00:00:00")) / 86400000);
-const fresh = (): St => ({ v: 2, pet: null, name: "", xp: 0, stars: 0, hearts: 0, happy: 70, owned: [], equip: { furn: [] }, lessons: [], ready: false, best: -1, day: today(), dayXp: 0, claims: {}, streak: 0, maxStreak: 0, lastDay: "", stats: { cards: 0, listen: 0, quiz100: 0, quiz: 0, rtest: 0, fed: 0, tasks: 0, checkins: 0, pq: 0, pq5: 0 }, gifts: [], stage: 0, born: Date.now(), minStage: 0, ciLast: "", ciStreak: 0, ciMax: 0, ciDays: [], pq: null, grads: [], gradDone: false, gradDate: "", earned: [] });
+const fresh = (): St => ({ v: 2, pet: null, name: "", xp: 0, stars: 0, hearts: 0, happy: 70, owned: [], equip: { furn: [] }, lessons: [], ready: false, best: -1, day: today(), dayXp: 0, claims: {}, streak: 0, maxStreak: 0, lastDay: "", stats: { cards: 0, listen: 0, quiz100: 0, quiz: 0, rtest: 0, fed: 0, tasks: 0, checkins: 0, pq: 0, pq5: 0 }, gifts: [], stage: 0, born: Date.now(), minStage: 0, ciLast: "", ciStreak: 0, ciMax: 0, ciDays: [], pq: null, grads: [], gradDone: false, gradDate: "", earned: [], wb: {}, wbCleared: 0, lastPass: null, evXp: {}, cardName: "", cardClass: "" });
 // Pet name: the student's own name (required), whitespace-trimmed.
 export function petName(n: string | undefined | null): string { return String(n || "").replace(/\s+/g, " ").trim().slice(0, 12); }
 // v1 → v2 migration: never demote a pet (minStage = old stage); carry the old activity streak into the check-in streak.
@@ -86,14 +92,54 @@ function gainXp(n: number): number {
   const bonus = ciCur(S) >= 7 ? 1.1 : 1;
   const room = Math.max(0, DAILY_CAP - S.dayXp);
   const base = Math.min(room, n); S.dayXp += base;
-  const got = Math.round(base * bonus); S.xp += got; return got;
+  const got = Math.round(base * bonus); S.xp += got; evGain(got); return got;
 }
+// ---------- festival events ----------
+export function evNow(): Ev | null { return activeEvent(today()); }
+const evKey = (e: Ev) => `${e.id}-${today().slice(0, 4)}`;
+function evGain(n: number) { const e = evNow(); if (!e || n <= 0) return; const k = evKey(e); S.evXp[k] = (S.evXp[k] || 0) + n; }
+export function evProgress(s: St, e: Ev): number { return s.evXp[evKey(e)] || 0; }
+function evUnlock(): boolean {
+  const e = evNow(); if (!e || !S.pet) return false; const x = S.evXp[evKey(e)] || 0; let got = false;
+  e.items.forEach((id, i) => { if (x >= EV_STEPS[i] && !S.owned.includes(id)) { S.owned.push(id); got = true; const it = SHOP.find((z) => z.id === id); toast(`🎁 ${VI ? "Quà giới hạn" : "Limited gift"}: ${it ? `${it.icon} ${it.zh} · ${VI ? it.vi : it.en}` : id}`, "gift"); } });
+  return got;
+}
+
+// ---------- 错题本 (wrong-answer rescue) ----------
+const WB_MAX = 300;
+export function wbAdd(ids: string[], src: string) {
+  if (!PET_ON) return; let n = 0;
+  ids.forEach((id) => { const it = bankItem(id); if (!it || S.wb[id]) return; S.wb[id] = { src, l: it.l, ty: it.ty, t: Date.now() }; n++; });
+  const keys = Object.keys(S.wb); if (keys.length > WB_MAX) keys.sort((a, b) => S.wb[a].t - S.wb[b].t).slice(0, keys.length - WB_MAX).forEach((k) => { delete S.wb[k]; });
+  if (n) save();
+}
+// Lesson quiz questions (built from the word list) → matching items in the question bank.
+export function quizWrong(qs: { id: string; kind: string; stem: string; opts: string[]; a: number }[], ans: Record<string, number>): string[] {
+  const B = bank(); const out: string[] = [];
+  qs.forEach((q) => {
+    if (ans[q.id] === undefined || ans[q.id] === q.a) return;
+    const k = q.kind; let hit: BItem | undefined;
+    if (k.startsWith("看汉字选意思")) hit = B.find((x) => x.ty === "meaning" && x.stem === q.stem);
+    else if (k.startsWith("看意思选汉字")) hit = B.find((x) => x.ty === "hanzi" && x.opts[0] === q.opts[q.a]);
+    else if (k.startsWith("看汉字选拼音")) hit = B.find((x) => x.ty === "pinyin" && x.stem === q.stem);
+    else { const right = q.opts[q.a]; hit = B.find((x) => (x.ty === "grammar" || x.ty === "fill") && x.opts[0] === right && x.l >= 1 && x.stem.replace(/＿+/g, "") === q.stem.replace(/＿+/g, "")) || B.find((x) => x.ty === "fill" && x.opts[0] === right); }
+    if (hit) out.push(hit.id);
+  });
+  return out;
+}
+export function wbRescue(id: string, ok: boolean) {
+  if (!S.wb[id]) return;
+  if (!ok) return;
+  delete S.wb[id]; S.wbCleared++;
+  if (S.pet) { touchDay(); const xp = gainXp(2); S.stars += 1; finish([`🛟 ${VI ? "Cứu được 1 từ" : "Rescued"}`, `+1⭐`, ...(xp ? [`+${xp} XP`] : [])]); } else save();
+}
+
 function claim(k: string, perDay: boolean): boolean { const t = today(); const prev = S.claims[k]; if (prev && (!perDay || prev === t)) return false; S.claims[k] = t; return true; }
 function graduate() {
   if (S.gradDone) return;
   S.gradDone = true; S.gradDate = today();
-  SHOP.forEach((i) => { if (i.cat !== "food" && !S.owned.includes(i.id)) S.owned.push(i.id); });
-  toast(VI ? "🎓 Tốt nghiệp! Mở khoá TẤT CẢ phụ kiện, trang phục, phòng và nội thất 🎁" : "🎓 Graduated! ALL accessories, outfits, rooms and furniture unlocked 🎁", "gift");
+  SHOP.forEach((i) => { if (i.cat !== "food" && !i.ev && !S.owned.includes(i.id)) S.owned.push(i.id); });
+  toast(VI ? "🎓 Tốt nghiệp! Mở khoá TẤT CẢ phụ kiện, trang phục, phòng và nội thất (trừ quà giới hạn dịp lễ) 🎁" : "🎓 Graduated! ALL accessories, outfits, rooms and furniture unlocked (festival-limited gifts excepted) 🎁", "gift");
 }
 function finish(parts: string[]) {
   const before = S.stage; const now = stageOf(S);
@@ -101,13 +147,16 @@ function finish(parts: string[]) {
   if (parts.length) toast(parts.join("  "), "reward");
   if (now > before) { S.stage = now; const l = say(now === 4 ? "gradall" : "level"); toast(`🎉 ${STAGES[now].zh} · ${VI ? STAGES[now].vi : STAGES[now].en}${l ? " — " + l.zh : ""}`, "level", l ? (VI ? l.vi : l.en) : undefined); }
   if (now >= 4) graduate();
+  if (evUnlock() && now === before) say("evitem");
   const nb: string[] = [];
   BADGES.forEach((b) => { if (!S.earned.includes(b.id) && b.ok(S)) { S.earned.push(b.id); if (b.id !== "first") nb.push(`${b.icon} ${b.zh}`); } });
   if (nb.length) toast(`🏅 ${VI ? "Huy hiệu mới" : "New badge"}: ${nb.join(" · ")}`, "gift");
   save();
 }
-export function petEvent(type: "task" | "cards" | "listen" | "quiz" | "rtest", d: { key?: string; lesson?: number; score?: number; n?: number; level?: number } = {}) {
-  if (!PET_ON || !S.pet) return;
+export function petEvent(type: "task" | "cards" | "listen" | "quiz" | "rtest", d: { key?: string; lesson?: number; score?: number; n?: number; level?: number; wrong?: string[] } = {}) {
+  if (!PET_ON) return;
+  if (d.wrong && d.wrong.length) wbAdd(d.wrong, type);
+  if (!S.pet) return;
   touchDay();
   const parts: string[] = []; let xp = 0;
   const capNote = () => (S.dayXp >= DAILY_CAP ? (VI ? " (đủ XP học hôm nay)" : " (daily study XP cap reached)") : "");
@@ -116,7 +165,7 @@ export function petEvent(type: "task" | "cards" | "listen" | "quiz" | "rtest", d
   if (type === "listen") { if (!claim("l:" + d.key, true)) return; xp = gainXp(XP_RULES.listen); S.stars += 1; S.stats.listen++; parts.push(`+${xp} XP`, "+1⭐", VI ? "Nghe bài khoá" : "Listened to a text"); }
   if (type === "quiz") {
     const sc = d.score ?? 0; const L = d.lesson ?? 0;
-    if (sc >= 8 && !S.lessons.includes(L)) S.lessons = [...S.lessons, L].sort((a, b) => a - b);
+    if (sc >= 8 && !S.lessons.includes(L)) { S.lessons = [...S.lessons, L].sort((a, b) => a - b); S.lastPass = { l: L, day: today() }; }
     if (!claim("q:" + L, true)) { finish([]); return; }
     xp = gainXp(sc * XP_RULES.quizPerPoint); S.stats.quiz++; parts.push(`+${xp} XP`);
     if (sc >= 8) { const h = sc === 10 ? 2 : 1; S.hearts += h; parts.push(`+${h}💗`); }
@@ -142,7 +191,7 @@ export function checkIn(): boolean {
   const gap = S.ciLast ? dayDiff(S.ciLast, t) : 99;
   S.ciStreak = gap === 1 ? S.ciStreak + 1 : 1; S.ciLast = t; S.ciMax = Math.max(S.ciMax, S.ciStreak);
   S.ciDays = [...S.ciDays.filter((x) => dayDiff(x, t) < 60), t]; S.stats.checkins++;
-  const r = ciReward(S.ciStreak); S.xp += r.xp; S.stars += r.s;
+  const r = ciReward(S.ciStreak); S.xp += r.xp; S.stars += r.s; evGain(r.xp);
   if (S.ciStreak >= 7 && !S.gifts.includes("s7")) { S.gifts.push("s7"); if (!S.owned.includes("bow")) S.owned.push("bow"); S.stars += 10; toast(VI ? "🔥 Chuỗi 7 ngày! Quà: nơ xinh 🎀 + 10⭐" : "🔥 7-day streak! Gift: cute bow 🎀 + 10⭐", "gift"); }
   if (S.ciStreak >= 30 && !S.gifts.includes("s30")) { S.gifts.push("s30"); if (!S.owned.includes("crown")) S.owned.push("crown"); S.hearts += 5; toast(VI ? "🔥 Chuỗi 30 ngày! Quà: vòng hoa 🌸 + 5💗" : "🔥 30-day streak! Gift: flower crown 🌸 + 5💗", "gift"); }
   say("checkin");
@@ -172,6 +221,7 @@ export function pqAnswer(k: number) {
   const q = S.pq; if (!q || q.done || q.day !== today()) return;
   const i = q.ans.length; const d = q.items[i]; if (!d) return;
   q.ans = [...q.ans, k]; const ok = d.perm[k] === 0; const it = bankItem(d.id);
+  if (!ok) wbAdd([d.id], "pq");
   say(ok ? "right" : "wrong", it && it.au ? [[it.au[0], it.au[1], "pq:" + d.id]] : undefined);
   save();
 }
@@ -180,7 +230,7 @@ export function pqFinish() {
   q.done = true; const right = q.items.filter((d, i) => d.perm[q.ans[i]] === 0).length;
   let xp = right * PQ_RULES.perRight; let st = right * PQ_RULES.perRightStars; let h = 0;
   if (right === q.items.length) { xp += PQ_RULES.perfectXp; h = PQ_RULES.perfectHearts; S.stats.pq5++; }
-  S.xp += xp; S.stars += st; S.hearts += h; S.stats.pq++;
+  S.xp += xp; S.stars += st; S.hearts += h; S.stats.pq++; evGain(xp);
   q.got = `+${xp} XP · +${st}⭐${h ? ` · +${h}💗` : ""}`;
   say("pqdone");
   finish([`🧠 ${right}/${q.items.length}`, `+${xp} XP`, `+${st}⭐`, ...(h ? [`+${h}💗`] : [])]);
@@ -199,7 +249,7 @@ export function adopt(kind: Kind, rawName: string) {
 function keepAcross(): Partial<St> { return { stars: S.stars, hearts: S.hearts, owned: S.owned, earned: S.earned, grads: S.grads, stats: S.stats, gifts: S.gifts, ciLast: S.ciLast, ciStreak: S.ciStreak, ciMax: S.ciMax, ciDays: S.ciDays, pq: S.pq, claims: S.claims, day: S.day, dayXp: S.dayXp, best: S.best }; }
 
 // ---------- shop & badges ----------
-type Item = { id: string; cat: "acc" | "outfit" | "food" | "room" | "furn"; zh: string; vi: string; en: string; s?: number; h?: number; happy?: number; icon: string };
+type Item = { ev?: string; id: string; cat: "acc" | "outfit" | "food" | "room" | "furn" | "hold"; zh: string; vi: string; en: string; s?: number; h?: number; happy?: number; icon: string };
 export const SHOP: Item[] = [
   { id: "bow", cat: "acc", zh: "蝴蝶结", vi: "Nơ xinh", en: "Bow", s: 15, icon: "🎀" },
   { id: "glasses", cat: "acc", zh: "眼镜", vi: "Kính", en: "Glasses", s: 20, icon: "👓" },
@@ -219,6 +269,28 @@ export const SHOP: Item[] = [
   { id: "plant", cat: "furn", zh: "盆栽", vi: "Chậu cây", en: "Plant", s: 10, icon: "🪴" },
   { id: "lamp", cat: "furn", zh: "台灯", vi: "Đèn bàn", en: "Lamp", s: 10, icon: "💡" },
   { id: "desk", cat: "furn", zh: "小书桌", vi: "Bàn học", en: "Study desk", s: 15, icon: "📚" },
+  // festival-limited (earned by normal study during the event; not for sale)
+  { ev: "tet", id: "lixi", cat: "hold", zh: "红包", vi: "Lì xì", en: "Red envelope", icon: "🧧" },
+  { ev: "tet", id: "aodai_red", cat: "outfit", zh: "红色奥黛", vi: "Áo dài đỏ", en: "Red áo dài", icon: "👘" },
+  { ev: "tet", id: "tetroom", cat: "room", zh: "新年房间", vi: "Phòng Tết hoa mai", en: "Tết room", icon: "🏮" },
+  { ev: "mid", id: "lantern", cat: "hold", zh: "灯笼", vi: "Đèn lồng", en: "Lantern", icon: "🏮" },
+  { ev: "mid", id: "bunnyears", cat: "acc", zh: "玉兔发箍", vi: "Bờm tai thỏ ngọc", en: "Moon-rabbit headband", icon: "🐰" },
+  { ev: "mid", id: "moonroom", cat: "room", zh: "赏月房间", vi: "Phòng ngắm trăng", en: "Moon-viewing room", icon: "🌕" },
+  { ev: "qixi", id: "hairpin", cat: "acc", zh: "发簪", vi: "Trâm cài tóc", en: "Hairpin", icon: "🌸" },
+  { ev: "qixi", id: "fan", cat: "hold", zh: "团扇", vi: "Quạt tròn", en: "Round fan", icon: "🪭" },
+  { ev: "qixi", id: "qixiroom", cat: "room", zh: "银河房间", vi: "Phòng Ngân Hà", en: "Milky Way room", icon: "🌌" },
+  { ev: "val", id: "rose", cat: "hold", zh: "玫瑰", vi: "Hoa hồng", en: "Rose", icon: "🌹" },
+  { ev: "val", id: "heartglasses", cat: "acc", zh: "爱心眼镜", vi: "Kính trái tim", en: "Heart glasses", icon: "💕" },
+  { ev: "val", id: "valroom", cat: "room", zh: "爱心房间", vi: "Phòng trái tim", en: "Hearts room", icon: "💝" },
+  { ev: "w38", id: "bouquet", cat: "hold", zh: "花束", vi: "Bó hoa", en: "Bouquet", icon: "💐" },
+  { ev: "w38", id: "tiara", cat: "acc", zh: "小皇冠", vi: "Vương miện nhỏ", en: "Tiara", icon: "👑" },
+  { ev: "w38", id: "w38room", cat: "room", zh: "花园房间", vi: "Phòng vườn hoa", en: "Flower garden room", icon: "🌷" },
+  { ev: "w2010", id: "aodai_white", cat: "outfit", zh: "白色奥黛", vi: "Áo dài trắng", en: "White áo dài", icon: "🤍" },
+  { ev: "w2010", id: "nonla", cat: "acc", zh: "斗笠", vi: "Nón lá", en: "Nón lá (conical hat)", icon: "👒" },
+  { ev: "w2010", id: "w2010room", cat: "room", zh: "荷花房间", vi: "Phòng hoa sen", en: "Lotus room", icon: "🪷" },
+  { ev: "xmas", id: "santahat", cat: "acc", zh: "圣诞帽", vi: "Mũ Noel", en: "Santa hat", icon: "🎅" },
+  { ev: "xmas", id: "gift", cat: "hold", zh: "礼物盒", vi: "Hộp quà", en: "Gift box", icon: "🎁" },
+  { ev: "xmas", id: "snowroom", cat: "room", zh: "雪景房间", vi: "Phòng tuyết", en: "Snowy room", icon: "❄️" },
 ];
 const BADGES: { id: string; icon: string; zh: string; vi: string; en: string; ok: (s: St) => boolean }[] = [
   { id: "first", icon: "🌱", zh: "第一步", vi: "Bước đầu tiên", en: "First step", ok: (s) => s.xp > 0 },
@@ -231,6 +303,8 @@ const BADGES: { id: string; icon: string; zh: string; vi: string; en: string; ok
   { id: "food", icon: "🍡", zh: "小吃货", vi: "Tín đồ ăn uống (cho ăn 10 lần)", en: "Foodie (fed 10 times)", ok: (s) => s.stats.fed >= 10 },
   { id: "fashion", icon: "👗", zh: "时尚达人", vi: "Fashionista (5 món đồ)", en: "Fashionista (5 items)", ok: (s) => s.owned.filter((x) => SHOP.find((i) => i.id === x && (i.cat === "acc" || i.cat === "outfit"))).length >= 5 },
   { id: "ready", icon: "🎯", zh: "测验高手", vi: "Sẵn sàng HSK 4", en: "HSK 4 ready", ok: (s) => s.ready },
+  { id: "rescue", icon: "🛟", zh: "救援小英雄", vi: "Anh hùng cứu từ (20 từ)", en: "Word rescuer (20 words)", ok: (s) => s.wbCleared >= 20 },
+  { id: "festival", icon: "🎊", zh: "节日小达人", vi: "Quà dịp lễ đầu tiên", en: "First festival gift", ok: (s) => s.owned.some((x) => SHOP.some((i) => i.ev && i.id === x)) },
   { id: "pq5", icon: "🧠", zh: "小测验王", vi: "Vua đố vui (5 lần đúng 5/5)", en: "Quiz champ (5 perfect pet quizzes)", ok: (s) => s.stats.pq5 >= 5 },
   { id: "grad", icon: "🎓", zh: "毕业生", vi: "Tốt nghiệp (mở khoá mọi món đồ)", en: "Graduate (all items unlocked)", ok: (s) => s.gradDone || s.grads.length > 0 },
   { id: "collector", icon: "🏆", zh: "宠物收藏家", vi: "Nhà sưu tầm (3 bạn tốt nghiệp)", en: "Collector (3 graduates)", ok: (s) => s.grads.length + (s.gradDone ? 1 : 0) >= 3 },
@@ -245,8 +319,45 @@ function buy(it: Item) {
 }
 function wear(it: Item) {
   if (it.cat === "furn") { const f = S.equip.furn || []; S.equip = { ...S.equip, furn: f.includes(it.id) ? f.filter((x) => x !== it.id) : [...f, it.id] }; }
-  else if (it.cat === "acc" || it.cat === "outfit" || it.cat === "room") { S.equip = { ...S.equip, [it.cat]: S.equip[it.cat] === it.id ? undefined : it.id }; }
+  else if (it.cat === "acc" || it.cat === "outfit" || it.cat === "room" || it.cat === "hold") { S.equip = { ...S.equip, [it.cat]: S.equip[it.cat] === it.id ? undefined : it.id }; }
   save();
+}
+
+// ---------- context-aware dialogue (fixed lines = pre-generated audio; dynamic lines = browser TTS) ----------
+type Line = { zh: string; vi: string; en: string; au?: string; tts?: boolean };
+function fixedLine(k: string): Line | null { const pool = LINES.filter((l) => l.k === k); return pool.length ? pool[rnd(pool.length)] : null; }
+function speakTTS(t: string) {
+  try { const ss = window.speechSynthesis; if (!ss) return; const u = new SpeechSynthesisUtterance(t); u.lang = "zh-CN"; const v = ss.getVoices().find((x) => /^zh[-_](CN|Hans)/i.test(x.lang)); if (v) u.voice = v; u.rate = 0.95; u.pitch = 1.25; ss.cancel(); ss.speak(u); } catch (e) { /* no TTS */ }
+}
+export function speakLine(l: Line) { if (l.au) speakSeq([[l.au, l.zh, "pet:" + l.au]]); else if (l.tts) speakTTS(l.zh); }
+function weakLesson(s: St): { l: number; g: boolean } | null {
+  const c: Record<number, [number, number]> = {};
+  Object.values(s.wb).forEach((w) => { const g = w.ty === "grammar" || w.ty === "fill" || w.ty === "order"; c[w.l] = c[w.l] || [0, 0]; c[w.l][0]++; if (g) c[w.l][1]++; });
+  let best = 0, n = 0; Object.keys(c).forEach((k) => { const v = c[Number(k)][0]; if (v > n) { n = v; best = Number(k); } });
+  return n >= 2 && best >= 1 && best <= 20 ? { l: best, g: c[best][1] * 2 >= c[best][0] } : null;
+}
+function learnedWord(s: St): { h: string; m: string } | null {
+  const ls = s.lessons.length ? s.lessons : [1, 2]; const pool = bank().filter((x) => x.ty === "meaning" && ls.includes(x.l));
+  const it = pool[rnd(pool.length)]; return it ? { h: it.stem, m: it.opts[0] } : null;
+}
+export function ctxLines(s: St): { l: Line; w: number }[] {
+  const out: { l: Line; w: number }[] = []; const push = (l: Line | null, w: number) => { if (l) out.push({ l, w }); };
+  if (stageOf(s) === 0) { push(fixedLine("egg"), 3); const e0 = evNow(); if (e0) push(fixedLine(e0.line), 2); return out; }
+  const e = evNow(); if (e) push(fixedLine(e.line), 3);
+  if (moodOf(s) === "miss") push(fixedLine("back"), 6);
+  const h = new Date().getHours(); push(fixedLine(h >= 5 && h < 10 ? "morning" : h >= 10 && h < 13 ? "noon" : h >= 13 && h < 17 ? "afternoon" : h >= 17 && h < 22 ? "evening" : "night"), 2);
+  if (s.lastPass && dayDiff(s.lastPass.day, today()) <= 2) push(fixedLine("pass" + s.lastPass.l), 4);
+  const wk = weakLesson(s); if (wk) push(fixedLine((wk.g ? "weakg" : "weakw") + wk.l), 3);
+  const n = Object.keys(s.wb).length;
+  if (n) { push({ zh: `错题本里有${n}个小单词在等你，不着急哦～`, vi: `Sổ lỗi có ${n} từ nhỏ đang đợi cậu, không vội đâu～`, en: `${n} little words are waiting in the mistake book, no rush～`, tts: true }, 2); push(fixedLine("rescue"), 1); }
+  const cs = ciCur(s); if (cs >= 2) { push({ zh: `我们已经连续打卡${cs}天啦！`, vi: `Chúng mình đã điểm danh ${cs} ngày liền rồi!`, en: `We've checked in ${cs} days in a row!`, tts: true }, 2); push(fixedLine("streak"), 1); }
+  const w = learnedWord(s); if (w) push({ zh: `你还记得「${w.h}」是什么意思吗？`, vi: `Cậu còn nhớ «${w.h}» nghĩa là gì không? → ${w.m}`, en: `Do you remember what «${w.h}» means? → ${w.m}`, tts: true }, 2);
+  push(fixedLine("cheer"), 1); push(fixedLine("hi"), 1);
+  return out;
+}
+export function pickLine(s: St, avoid?: string): Line | null {
+  const c = ctxLines(s).filter((x) => x.l.zh !== avoid); if (!c.length) return null;
+  let r = Math.random() * c.reduce((a, x) => a + x.w, 0); for (const x of c) { r -= x.w; if (r <= 0) return x.l; } return c[0].l;
 }
 
 // ---------- export / import ----------
@@ -267,11 +378,13 @@ export function PetSvg({ kind, stage, mood, equip, size, room, anim = true }: { 
 }
 const L3 = (zh: string, vi: string, en: string) => `${zh} · ${VI ? vi : en}`;
 
-export function PetTab() {
+const TEACHER = typeof location !== "undefined" && /[?&]teacher=1/.test(location.search);
+export function PetTab() { return <>{TEACHER ? <TeacherView vi={VI} /> : null}<PetTabInner /></>; }
+function PetTabInner() {
   const s = usePet();
   const [name, setName] = useState("");
   const [pick, setPick] = useState<Kind>("bunny");
-  const [line, setLine] = useState<{ zh: string; vi: string; en: string } | null>(null);
+  const [line, setLine] = useState<Line | null>(() => (S.pet ? pickLine(S) : null));
   const [cat, setCat] = useState<Item["cat"]>("acc");
   const [code, setCode] = useState("");
   const [msg, setMsg] = useState("");
@@ -310,11 +423,12 @@ export function PetTab() {
     );
   }
   const next = STAGES[Math.min(4, st + 1)];
-  const talk = () => { const l = say(st === 0 ? "egg" : mood === "miss" ? "miss" : Math.random() < 0.3 ? "hi" : "cheer"); if (l) setLine(l); setPop((x: number) => x + 1); };
+  const talk = () => { const l = pickLine(s, line ? line.zh : undefined); if (l) speakLine(l); if (l) setLine(l); setPop((x: number) => x + 1); };
   const happyNow = Math.max(0, s.happy - (mood === "miss" ? 20 : 0));
   return (
     <section id="pet-top" className="card" style={{ display: "flex", flexDirection: "column", gap: 14, padding: "20px 16px", borderRadius: 24, background: "rgba(255,255,255,0.92)", boxShadow: "0 8px 26px rgba(214,90,160,0.12)", border: "1.5px solid rgba(248,190,220,0.55)", minWidth: 0 }}>
       <h2 style={{ margin: 0, fontSize: 21, fontWeight: 800, color: "#8f2160" }}>✿ {L3("我的宠物", "Thú cưng", "My Pet")}</h2>
+      {evNow() ? <EventBanner s={s} e={evNow() as Ev} /> : null}
       <div className="pet-main" style={{ display: "flex", flexWrap: "wrap", gap: 16, alignItems: "flex-start" }}>
         <div style={{ flex: "1 1 260px", maxWidth: 360, position: "relative" }}>
           <button aria-label="pet" onClick={talk} style={{ cursor: "pointer", border: "none", padding: 0, background: "transparent", width: "100%", display: "block", borderRadius: 24, boxShadow: "0 8px 24px rgba(143,33,96,0.15)" }}>
@@ -357,14 +471,16 @@ export function PetTab() {
       </div>
       {s.gradDone ? <GradCard s={s} onNext={() => { setAdopting(true); setTimeout(() => { const e = document.getElementById("pet-top"); if (e && e.scrollIntoView) e.scrollIntoView({ block: "start" }); }, 30); }} /> : null}
       <CheckIn s={s} />
+      <WrongBook s={s} />
       <PetQuiz s={s} />
       <div style={{ ...box }}>
         <div style={{ fontWeight: 800, color: "#8f2160", marginBottom: 8 }}>🛍️ {L3("商店", "Cửa hàng", "Shop")}</div>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 10 }}>
-          {([["acc", "饰品", "Phụ kiện", "Accessories"], ["outfit", "衣服", "Trang phục", "Outfits"], ["food", "美食", "Đồ ăn", "Food"], ["room", "房间", "Phòng", "Rooms"], ["furn", "家具", "Nội thất", "Furniture"]] as [Item["cat"], string, string, string][]).map(([c, zh, v, e]) => <button key={c} onClick={() => setCat(c)} style={btn(cat === c)}>{zh} · {VI ? v : e}</button>)}
+          {([["acc", "饰品", "Phụ kiện", "Accessories"], ["outfit", "衣服", "Trang phục", "Outfits"], ["food", "美食", "Đồ ăn", "Food"], ["room", "房间", "Phòng", "Rooms"], ["furn", "家具", "Nội thất", "Furniture"], ["hold", "限定", "Quà dịp lễ", "Festival gifts"]] as [Item["cat"], string, string, string][]).map(([c, zh, v, e]) => <button key={c} onClick={() => setCat(c)} style={btn(cat === c)}>{zh} · {VI ? v : e}</button>)}
         </div>
         <div className="shop" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px,1fr))", gap: 8 }}>
-          {SHOP.filter((i) => i.cat === cat).map((it) => {
+          {cat === "hold" ? <div style={{ gridColumn: "1 / -1", fontSize: 12.5, color: "#7a4f78" }}>{VI ? "🎊 Quà giới hạn chỉ có trong dịp lễ (Tết, Trung Thu, 8/3, 20/10…): học như bình thường là nhận được, không cần làm thêm gì." : "🎊 Limited gifts appear only during festivals (Tết, Mid-Autumn, 8/3, 20/10…): just study as usual to receive them, nothing extra needed."}</div> : null}
+          {SHOP.filter((i) => (cat === "hold" ? !!i.ev : i.cat === cat && !i.ev) && (!i.ev || s.owned.includes(i.id))).map((it) => {
             const own = it.cat !== "food" && s.owned.includes(it.id);
             const on = own && (it.cat === "furn" ? (s.equip.furn || []).includes(it.id) : (s.equip as Record<string, unknown>)[it.cat] === it.id);
             const afford = (it.s ? s.stars >= it.s : true) && (it.h ? s.hearts >= it.h : true);
@@ -372,7 +488,7 @@ export function PetTab() {
               <div key={it.id} style={{ borderRadius: 18, padding: 10, background: on ? "linear-gradient(160deg,#ffe1ee,#f3e6ff)" : "#fff7fb", border: on ? "2px solid #e8559a" : "1.5px solid rgba(232,85,154,0.18)", textAlign: "center" }}>
                 <div style={{ fontSize: 30 }}>{it.icon}</div>
                 <div lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontWeight: 800, color: "#8f2160" }}>{it.zh}</div>
-                <div style={{ fontSize: 12, color: "#8a5a82", minHeight: 18 }}>{VI ? it.vi : it.en}{it.happy ? ` · +${it.happy}♡` : ""}</div>
+                <div style={{ fontSize: 12, color: "#8a5a82", minHeight: 18 }}>{VI ? it.vi : it.en}{it.ev ? (VI ? " · giới hạn" : " · limited") : ""}{it.happy ? ` · +${it.happy}♡` : ""}</div>
                 {own ? <button onClick={() => wear(it)} style={{ ...btn(on), marginTop: 6, padding: "6px 12px", fontSize: 12 }}>{on ? (VI ? "Đang dùng ✓" : "On ✓") : VI ? "Dùng" : "Use"}</button>
                   : <button disabled={!afford} onClick={() => buy(it)} style={{ ...btn(afford), marginTop: 6, padding: "6px 12px", fontSize: 12, opacity: afford ? 1 : 0.45 }}>{it.s ? `${it.s}⭐` : `${it.h}💗`} {it.cat === "food" ? (VI ? "Cho ăn" : "Feed") : VI ? "Mua" : "Buy"}</button>}
               </div>
@@ -381,6 +497,7 @@ export function PetTab() {
         </div>
       </div>
       <Collection s={s} />
+      <ClassCard vi={VI} data={cardData(s)} onChange={(n, c) => { S.cardName = n; S.cardClass = c; save(); }} pet={s.pet ? <PetSvg kind={s.pet} stage={st} equip={s.equip} size={420} room anim={false} /> : null} />
       <div style={{ ...box }}>
         <div style={{ fontWeight: 800, color: "#8f2160", marginBottom: 8 }}>🏅 {L3("徽章", "Huy hiệu", "Badges")}</div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(96px,1fr))", gap: 8 }}>
@@ -571,6 +688,99 @@ function Collection({ s }: { s: St }) {
   );
 }
 
+function readBestTest(): [number, number] {
+  try { const h = JSON.parse(window.localStorage.getItem("hsk4-rtest-history-v1") || "[]"); let b = -1, n = 0; (Array.isArray(h) ? h : []).forEach((x: { score?: number; n?: number }) => { if (typeof x.score === "number" && x.score > b) { b = x.score; n = x.n || 30; } }); return b >= 0 ? [b, n] : [0, 0]; } catch (e) { return [0, 0]; }
+}
+function cardData(s: St): CardData {
+  const st = stageOf(s); const kind = PETS.find((p) => p[0] === s.pet); const [b, bn] = readBestTest();
+  const icons = BADGES.filter((x) => s.earned.includes(x.id) || x.ok(s)).map((x) => x.icon).join("");
+  return { n: s.cardName || "", c: s.cardClass || "", k: s.pet || "", kz: kind ? kind[1] : "", pn: s.name, st, stz: STAGES[st].zh, l: s.lessons.length, b, bn, s: ciCur(s), bd: icons, g: s.grads.length + (s.gradDone ? 1 : 0), d: today() };
+}
+
+function EventBanner({ s, e }: { s: St; e: Ev }) {
+  const x = evProgress(s, e); const greet = LINES.find((l) => l.k === e.line);
+  return (
+    <div className="evbanner" data-ev={e.id} style={{ borderRadius: 22, padding: "14px 16px", background: e.bg, color: e.id === "mid" || e.id === "qixi" ? "#fff" : "#7a2350", boxShadow: "0 8px 22px rgba(143,33,96,0.15)", position: "relative", overflow: "hidden" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 8 }}><span style={{ fontSize: 12, fontWeight: 800, letterSpacing: 1.5, opacity: 0.85 }}>{VI ? "SỰ KIỆN GIỚI HẠN" : "LIMITED EVENT"}</span><span aria-hidden className="ev-deco" style={{ marginLeft: "auto", fontSize: 24, letterSpacing: 4 }}>{e.deco}</span></div>
+      <div lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontSize: 20, fontWeight: 800, marginTop: 2 }}>{e.zh} · {VI ? e.vi : e.en}</div>
+      {greet ? <button onClick={() => speakLine(greet)} style={{ marginTop: 6, textAlign: "left", cursor: "pointer", border: "none", borderRadius: 16, padding: "8px 12px", background: "rgba(255,255,255,0.88)", color: "#5a3a5f", fontFamily: "inherit", fontSize: 13, lineHeight: "19px", maxWidth: "100%" }}>
+        <span lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontWeight: 800, color: "#8f2160", fontSize: 15 }}>🔊 {greet.zh}</span><br />{VI ? greet.vi : greet.en}</button> : null}
+      <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 10 }}>
+        {e.items.map((id, i) => { const it = SHOP.find((z) => z.id === id); const got = s.owned.includes(id); return (
+          <div key={id} className={got ? "ev-got" : "ev-lock"} style={{ flex: "1 1 90px", textAlign: "center", borderRadius: 16, padding: "8px 6px", background: got ? "rgba(255,255,255,0.95)" : "rgba(255,255,255,0.55)", color: "#7a2350", border: got ? "2px solid #ffd36e" : "1.5px dashed rgba(122,35,80,0.35)" }}>
+            <div style={{ fontSize: 24, filter: got ? "none" : "grayscale(0.6)" }}>{it ? it.icon : "🎁"}</div>
+            <div lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontSize: 13, fontWeight: 800 }}>{it ? it.zh : id}</div>
+            <div style={{ fontSize: 11 }}>{got ? (VI ? "Đã nhận ✓" : "Received ✓") : `${Math.min(x, EV_STEPS[i])}/${EV_STEPS[i]} XP`}</div>
+          </div>); })}
+      </div>
+      <div style={{ fontSize: 12, marginTop: 8, opacity: 0.92 }}>{VI ? "Quà tự đến khi cậu học như mọi ngày (XP kiếm được trong dịp lễ). Không có nhiệm vụ thêm, không hết hạn đáng lo — món đã nhận giữ mãi." : "Gifts arrive as you study normally (XP earned during the festival). No extra tasks, and anything received is yours to keep."}</div>
+    </div>
+  );
+}
+
+function shortEx(ex: string): string { const t = ex.split(/\s(?:Câu gốc|Full line|Original):/)[0]; return t.length > 220 ? t.slice(0, 218) + "…" : t; }
+function WrongBook({ s }: { s: St }) {
+  const ids = Object.keys(s.wb);
+  const [sess, setSess] = useState<{ ids: string[]; perm: number[][]; pick: (number | null)[]; i: number } | null>(null);
+  const [hint, setHint] = useState<Line | null>(null);
+  const st = stageOf(s);
+  const start = () => { const pool = ids.slice().sort((a, b) => s.wb[a].t - s.wb[b].t).slice(0, 12); const set = shuf(pool).slice(0, 5); setSess({ ids: set, perm: set.map(() => shuf([0, 1, 2, 3])), pick: set.map(() => null), i: 0 }); const l = fixedLine("rescue"); if (l) { setHint(l); speakLine(l); } };
+  const head = <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8, flexWrap: "wrap" }}><span style={{ fontWeight: 800, color: "#8f2160" }}>📒 {L3("错题本", "Sổ giải cứu từ sai", "Word rescue book")}</span><span className="wb-count" style={{ fontSize: 12, fontWeight: 800, color: "#6b4fa8", background: "#efe6ff", borderRadius: 9999, padding: "2px 10px" }}>{ids.length}</span><span style={{ fontSize: 11.5, color: "#a0507f" }}>{VI ? "· không bắt buộc" : "· optional"}</span></div>;
+  const avatar = s.pet ? <div style={{ width: 58, flex: "0 0 58px" }}><PetSvg kind={s.pet} stage={st} equip={s.equip} size={58} /></div> : null;
+  if (!sess) {
+    const l = ids.length ? (hint || fixedLine("rescue")) : fixedLine("wbempty");
+    return (
+      <div className="wrongbook" style={{ ...box }}>{head}
+        <div style={{ display: "flex", gap: 10, alignItems: "center" }}>{avatar}
+          {l ? <button onClick={() => speakLine(l)} style={{ ...SAY_BUBBLE, textAlign: "left", cursor: "pointer", fontFamily: "inherit" }}><div lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontWeight: 700, color: "#8f2160" }}>🔊 {l.zh}</div><div style={{ fontSize: 12.5, color: "#6b3a63" }}>{VI ? l.vi : l.en}</div></button> : null}
+        </div>
+        <div style={{ fontSize: 12, color: "#8a5a82", margin: "8px 0", lineHeight: "18px" }}>{VI ? "Câu sai trong kiểm tra ngẫu nhiên, kiểm tra từng bài và đố vui của thú cưng tự động vào đây (không trùng lặp). Trả lời đúng 1 lần là cứu được: +1⭐ +2 XP (trong giới hạn XP học)." : "Wrong answers from the random test, lesson quizzes and the pet quiz land here automatically (no duplicates). Answer one right once to rescue it: +1⭐ +2 XP (within the study cap)."}</div>
+        {ids.length ? <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 8 }}>{ids.slice(0, 10).map((id) => { const it = bankItem(id); return it ? <span key={id} lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontSize: 12, background: "#fff3f9", border: "1px solid #ffd1e6", borderRadius: 9999, padding: "2px 8px", color: "#8f2160", maxWidth: 160, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{it.ty === "hanzi" ? it.opts[0] : it.stem}</span> : null; })}{ids.length > 10 ? <span style={{ fontSize: 12, color: "#a0507f" }}>+{ids.length - 10}</span> : null}</div> : null}
+        {ids.length ? <button className="wb-start" onClick={start} style={btn(true)}>🛟 {VI ? `Cứu ${Math.min(5, ids.length)} từ` : `Rescue ${Math.min(5, ids.length)}`}</button> : null}
+      </div>
+    );
+  }
+  const i = sess.i; const n = sess.ids.length;
+  if (i >= n) {
+    const got = sess.pick.filter((p, k) => p !== null && sess.perm[k][p] === 0).length;
+    return (
+      <div className="wrongbook" style={{ ...box }}>{head}
+        <div style={{ display: "flex", gap: 10, alignItems: "center" }}>{avatar}
+          <div style={SAY_BUBBLE}><div className="wb-result" style={{ fontSize: 20, fontWeight: 800, color: "#8f2160" }}>🛟 {got}/{n}</div><div style={{ fontSize: 13, color: "#6b3a63" }}>{VI ? (got ? `Cứu được ${got} từ, cảm ơn cậu! Từ chưa cứu vẫn đợi ở đây, lúc nào rảnh mình làm tiếp.` : "Không sao cả, mấy từ này vẫn đợi ở đây, lúc nào rảnh mình làm tiếp nhé.") : got ? `Rescued ${got}, thank you! The rest will wait here whenever you're free.` : "No worries, these words will wait here whenever you're free."}</div></div>
+        </div>
+        <div style={{ display: "flex", gap: 8, marginTop: 10, flexWrap: "wrap" }}>
+          {Object.keys(s.wb).length ? <button className="wb-again" onClick={start} style={btn(true)}>🛟 {VI ? "Thêm 5 từ" : "5 more"}</button> : null}
+          <button className="wb-done" onClick={() => { setSess(null); setHint(null); }} style={btn()}>{VI ? "Xong" : "Done"}</button>
+        </div>
+      </div>
+    );
+  }
+  const id = sess.ids[i]; const it = bankItem(id); const perm = sess.perm[i]; const pk = sess.pick[i];
+  const next = () => setSess({ ...sess, i: i + 1 });
+  if (!it) { next(); return null; }
+  const lab = PQT[it.ty] || PQT.grammar; const zhStem = it.ty !== "hanzi";
+  const answered = pk !== null; const ok = answered && perm[pk as number] === 0;
+  return (
+    <div className="wrongbook" style={{ ...box }}>{head}
+      <div style={{ display: "flex", gap: 4, marginBottom: 8 }}>{sess.ids.map((_, k) => <span key={k} style={{ flex: 1, height: 6, borderRadius: 9999, background: k < i ? "#7ad8c8" : k === i ? "#c58bff" : "#efe6ff" }} />)}</div>
+      <div style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>{avatar}
+        <div className="wb-q" data-id={id} style={SAY_BUBBLE}>
+          <div style={{ fontSize: 12, color: "#a0507f", fontWeight: 700 }}>{i + 1}/{n} · {lab[0]} · {VI ? lab[1] : lab[2]} · {VI ? `Bài ${it.l}` : `L${it.l}`}</div>
+          <div lang={zhStem ? "zh-Hans" : undefined} style={{ fontFamily: zhStem ? ZH_FONT : "inherit", fontSize: it.ty === "meaning" || it.ty === "pinyin" ? 26 : 17, fontWeight: 700, color: "#5a3a5f", lineHeight: 1.4, marginTop: 4 }}>{it.stem}</div>
+        </div>
+      </div>
+      <div className="wb-opts" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px,1fr))", gap: 8, marginTop: 10 }}>
+        {perm.map((oi, k) => { const right = oi === 0; const mine = pk === k; return <button key={k} disabled={answered} onClick={() => { const p2 = sess.pick.slice(); p2[i] = k; setSess({ ...sess, pick: p2 }); const good = perm[k] === 0; wbRescue(id, good); speakSeq([[(LINES.find((l) => l.k === (good ? "rescued" : "wrong")) || LINES[0]).au, "", "wb:fb"], ...(it.au ? [[it.au[0], it.au[1], "wb:" + id] as [string, string, string]] : [])]); }} style={{ ...btn(), textAlign: "left", borderRadius: 16, padding: "10px 12px", fontFamily: /[\u4e00-\u9fff]/.test(it.opts[oi]) ? ZH_FONT : "inherit", fontWeight: 700, background: answered && right ? "#eafaf3" : answered && mine ? "#fff0f4" : "#fff", borderColor: answered && right ? "#7ad8c8" : undefined, cursor: answered ? "default" : "pointer" }}>{"ABCD"[k]}. {it.opts[oi]}{answered && right ? " ✓" : ""}</button>; })}
+      </div>
+      {answered ? <div className="wb-ex" style={{ marginTop: 10, borderRadius: 14, background: ok ? "#eafaf3" : "#fff7fb", padding: "8px 12px", fontSize: 13, color: "#5a3a5f", lineHeight: "20px", display: "flex", gap: 8, alignItems: "flex-start" }}>
+        <span style={{ flex: 1 }}><b style={{ color: ok ? "#167a59" : "#b0306a" }}>{ok ? (VI ? "🛟 Cứu được rồi! " : "🛟 Rescued! ") : (VI ? "Gần đúng rồi, lần sau nhé. " : "So close, next time! ")}</b>{shortEx(it.ex)}</span>
+        {it.au ? <SpeakBtn items={[[it.au[0], it.au[1], "wbx:" + id]]} k={"wbx:" + id} size={30} /> : null}
+      </div> : null}
+      {answered ? <button className="wb-next" onClick={next} style={{ ...btn(true), marginTop: 10 }}>{i + 1 < n ? (VI ? "Tiếp ›" : "Next ›") : (VI ? "Xem kết quả" : "See result")}</button> : null}
+    </div>
+  );
+}
+
 function ImportBox({ code, setCode, msg, setMsg }: { code: string; setCode: (s: string) => void; msg: string; setMsg: (s: string) => void }) {
   return (
     <div style={{ marginTop: 8, display: "flex", flexDirection: "column", gap: 6 }}>
@@ -589,6 +799,8 @@ export function PetWidget() {
   if (!PET_ON) return null;
   const st = stageOf(s); const next = STAGES[Math.min(4, st + 1)];
   const go = () => window.dispatchEvent(new CustomEvent("hsk4-goto", { detail: "pet" }));
+  useEffect(() => { if (PET_ON && TEACHER) setTimeout(() => { go(); setTimeout(() => { const e = document.getElementById("teacher-top"); if (e && e.scrollIntoView) e.scrollIntoView({ block: "start" }); }, 120); }, 60); }, []);
+  const ev = evNow();
   return (
     <>
       <div className="toasts" aria-live="polite" style={{ position: "fixed", left: "50%", transform: "translateX(-50%)", bottom: 96, zIndex: 80, display: "flex", flexDirection: "column", gap: 8, alignItems: "center", pointerEvents: "none", width: "min(92vw, 420px)" }}>
@@ -603,6 +815,7 @@ export function PetWidget() {
           : <div key={t.id} className="toast" style={{ background: t.kind === "gift" ? "linear-gradient(135deg,#fff3c4,#ffe1ee)" : "#fff", borderRadius: 9999, padding: "9px 16px", boxShadow: "0 8px 24px rgba(143,33,96,0.22)", fontSize: 14, fontWeight: 800, color: "#8f2160", border: "1.5px solid #ffc2dc" }}>{t.text}</div>)}
       </div>
       <button className="pet-widget" aria-label={VI ? "Thú cưng của tôi" : "My pet"} onClick={go} style={{ position: "fixed", right: 12, bottom: 12, zIndex: 70, cursor: "pointer", border: "2px solid #ffc2dc", background: "rgba(255,255,255,0.95)", borderRadius: 24, padding: "6px 10px 8px", boxShadow: "0 8px 22px rgba(143,33,96,0.2)", display: "flex", flexDirection: "column", alignItems: "center", gap: 3, width: 84 }}>
+        {ev ? <span className="widget-ev" aria-hidden style={{ position: "absolute", top: -10, left: -8, fontSize: 22 }}>{ev.icon}</span> : null}
         {s.pet ? <PetSvg kind={s.pet} stage={st} mood={moodOf(s)} equip={s.equip} size={58} /> : <span style={{ fontSize: 34, lineHeight: "50px" }}>🥚</span>}
         <span style={{ fontSize: 10.5, fontWeight: 800, color: "#8f2160", maxWidth: 70, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{s.pet ? s.name : VI ? "Nhận nuôi!" : "Adopt!"}</span>
         {s.pet ? <span style={{ width: 64 }}><Bar v={st >= 4 ? 1 : s.xp} max={st >= 4 ? 1 : next.xp} /></span> : null}

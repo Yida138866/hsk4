@@ -99,7 +99,7 @@ export function RandomTest({ lang }: { lang: "vi" | "en" }) {
   const weak = Object.keys(byLesson).map(Number).filter((l) => byLesson[l][0] < byLesson[l][1]).sort((a, b) => (byLesson[a][0] / byLesson[a][1]) - (byLesson[b][0] / byLesson[b][1]) || a - b);
   const submit = () => {
     setDone(true);
-    petEvent("rtest", { score, n: set.length, level });
+    petEvent("rtest", { score, n: set.length, level, wrong: set.filter((d) => ans[d.id] !== undefined && !right(d)).map((d) => d.id) });
     const h: Hist = { t: Date.now(), score, n: set.length, byType, weak };
     const nh = [h, ...hist].slice(0, 30); setHist(nh);
     try { window.localStorage.setItem(HKEY, JSON.stringify(nh)); } catch (e) { /* storage unavailable */ }

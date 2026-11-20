@@ -23,3 +23,84 @@ wrong|没关系，我们一起记住它！|Không sao, mình cùng nhớ nó nh�
 pqdone|今天的小测验完成啦，明天见！|Bài đố hôm nay xong rồi, mai gặp nhé!|Today's quiz is done. See you tomorrow!
 newpet|新朋友来啦！请多多关照！|Bạn mới đến rồi! Mong cậu chăm sóc mình nhé!|A new friend is here! Please take good care of me!
 gradall|我毕业啦！所有漂亮的衣服和饰品都送给你！|Mình tốt nghiệp rồi! Tất cả quần áo và phụ kiện xinh đều tặng cậu!|I graduated! All the pretty outfits and accessories are yours!
+rescue|帮我救回这些单词吧！拜托啦～|Giúp mình giải cứu mấy từ này nhé! Nhờ cậu đó～|Help me rescue these words! Pretty please～
+rescue|这些小单词迷路了，我们一起把它们找回来吧！|Mấy từ nhỏ này bị lạc rồi, mình cùng tìm chúng về nhé!|These little words got lost. Let's bring them home together!
+rescued|救回来啦！谢谢你！|Cứu được rồi! Cảm ơn cậu!|Rescued! Thank you!
+wbempty|错题本空空的，你太厉害了！|Sổ lỗi trống trơn, cậu giỏi quá!|The mistake book is empty. You're amazing!
+morning|早上好！今天也是美好的一天。|Chào buổi sáng! Hôm nay lại là một ngày đẹp.|Good morning! Today is another lovely day.
+morning|早上好！吃早饭了吗？|Chào buổi sáng! Cậu ăn sáng chưa?|Good morning! Have you had breakfast?
+noon|中午好！记得好好吃午饭哦。|Buổi trưa vui vẻ! Nhớ ăn trưa ngon nhé.|Good afternoon! Remember to have a nice lunch.
+afternoon|下午好！来杯奶茶休息一下吧。|Chào buổi chiều! Làm ly trà sữa nghỉ chút nhé.|Good afternoon! Let's take a bubble-tea break.
+evening|晚上好！今天辛苦了。|Chào buổi tối! Hôm nay cậu vất vả rồi.|Good evening! You worked hard today.
+night|这么晚了，早点儿休息吧，明天见！|Khuya rồi, nghỉ sớm nhé, mai gặp!|It's late. Get some rest, see you tomorrow!
+back|欢迎回来！我一直在这儿等你，一点儿也不着急。|Chào mừng cậu quay lại! Mình vẫn ở đây đợi cậu, không vội chút nào.|Welcome back! I was right here waiting, no rush at all.
+back|你回来啦！我们慢慢来就好。|Cậu về rồi! Mình cứ từ từ thôi.|You're back! We'll just take it slow.
+streak|每天见到你，我都好开心！|Ngày nào gặp cậu mình cũng vui!|I'm so happy to see you every day!
+ev_tet|新年快乐！恭喜发财，万事如意！|Chúc mừng năm mới! An khang thịnh vượng, vạn sự như ý!|Happy Lunar New Year! Wishing you luck and joy!
+ev_mid|中秋节快乐！我们一起赏月、吃月饼吧！|Trung thu vui vẻ! Mình cùng ngắm trăng, ăn bánh trung thu nhé!|Happy Mid-Autumn! Let's watch the moon and eat mooncakes!
+ev_qixi|七夕快乐！愿你被温柔地爱着。|Thất tịch vui vẻ! Mong cậu luôn được yêu thương dịu dàng.|Happy Qixi! May you always be loved gently.
+ev_val|情人节快乐！你值得所有的美好。|Valentine vui vẻ! Cậu xứng đáng với mọi điều tốt đẹp.|Happy Valentine's Day! You deserve all good things.
+ev_w38|三八妇女节快乐！你又美丽又能干！|Chúc mừng 8/3! Cậu vừa xinh đẹp vừa giỏi giang!|Happy Women's Day! You're beautiful and capable!
+ev_w2010|越南妇女节快乐！祝你永远开心、美丽！|Chúc mừng 20/10! Chúc cậu luôn vui vẻ và xinh đẹp!|Happy Vietnamese Women's Day! Stay happy and beautiful!
+ev_xmas|圣诞快乐！送你一份小礼物！|Giáng sinh vui vẻ! Tặng cậu một món quà nhỏ!|Merry Christmas! A little gift for you!
+evitem|这是节日限定的礼物，送给你！|Đây là quà giới hạn dịp lễ, tặng cậu!|A limited festival gift, just for you!
+pass1|第1课过关啦！你真棒！|Qua bài 1 rồi! Cậu giỏi lắm!|Lesson 1 passed! You're great!
+pass2|第2课过关啦！你真棒！|Qua bài 2 rồi! Cậu giỏi lắm!|Lesson 2 passed! You're great!
+pass3|第3课过关啦！你真棒！|Qua bài 3 rồi! Cậu giỏi lắm!|Lesson 3 passed! You're great!
+pass4|第4课过关啦！你真棒！|Qua bài 4 rồi! Cậu giỏi lắm!|Lesson 4 passed! You're great!
+pass5|第5课过关啦！你真棒！|Qua bài 5 rồi! Cậu giỏi lắm!|Lesson 5 passed! You're great!
+pass6|第6课过关啦！你真棒！|Qua bài 6 rồi! Cậu giỏi lắm!|Lesson 6 passed! You're great!
+pass7|第7课过关啦！你真棒！|Qua bài 7 rồi! Cậu giỏi lắm!|Lesson 7 passed! You're great!
+pass8|第8课过关啦！你真棒！|Qua bài 8 rồi! Cậu giỏi lắm!|Lesson 8 passed! You're great!
+pass9|第9课过关啦！你真棒！|Qua bài 9 rồi! Cậu giỏi lắm!|Lesson 9 passed! You're great!
+pass10|第10课过关啦！你真棒！|Qua bài 10 rồi! Cậu giỏi lắm!|Lesson 10 passed! You're great!
+pass11|第11课过关啦！你真棒！|Qua bài 11 rồi! Cậu giỏi lắm!|Lesson 11 passed! You're great!
+pass12|第12课过关啦！你真棒！|Qua bài 12 rồi! Cậu giỏi lắm!|Lesson 12 passed! You're great!
+pass13|第13课过关啦！你真棒！|Qua bài 13 rồi! Cậu giỏi lắm!|Lesson 13 passed! You're great!
+pass14|第14课过关啦！你真棒！|Qua bài 14 rồi! Cậu giỏi lắm!|Lesson 14 passed! You're great!
+pass15|第15课过关啦！你真棒！|Qua bài 15 rồi! Cậu giỏi lắm!|Lesson 15 passed! You're great!
+pass16|第16课过关啦！你真棒！|Qua bài 16 rồi! Cậu giỏi lắm!|Lesson 16 passed! You're great!
+pass17|第17课过关啦！你真棒！|Qua bài 17 rồi! Cậu giỏi lắm!|Lesson 17 passed! You're great!
+pass18|第18课过关啦！你真棒！|Qua bài 18 rồi! Cậu giỏi lắm!|Lesson 18 passed! You're great!
+pass19|第19课过关啦！你真棒！|Qua bài 19 rồi! Cậu giỏi lắm!|Lesson 19 passed! You're great!
+pass20|第20课过关啦！你真棒！|Qua bài 20 rồi! Cậu giỏi lắm!|Lesson 20 passed! You're great!
+weakw1|第1课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 1 nhé～|Let's review the words of lesson 1 together～
+weakw2|第2课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 2 nhé～|Let's review the words of lesson 2 together～
+weakw3|第3课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 3 nhé～|Let's review the words of lesson 3 together～
+weakw4|第4课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 4 nhé～|Let's review the words of lesson 4 together～
+weakw5|第5课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 5 nhé～|Let's review the words of lesson 5 together～
+weakw6|第6课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 6 nhé～|Let's review the words of lesson 6 together～
+weakw7|第7课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 7 nhé～|Let's review the words of lesson 7 together～
+weakw8|第8课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 8 nhé～|Let's review the words of lesson 8 together～
+weakw9|第9课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 9 nhé～|Let's review the words of lesson 9 together～
+weakw10|第10课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 10 nhé～|Let's review the words of lesson 10 together～
+weakw11|第11课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 11 nhé～|Let's review the words of lesson 11 together～
+weakw12|第12课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 12 nhé～|Let's review the words of lesson 12 together～
+weakw13|第13课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 13 nhé～|Let's review the words of lesson 13 together～
+weakw14|第14课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 14 nhé～|Let's review the words of lesson 14 together～
+weakw15|第15课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 15 nhé～|Let's review the words of lesson 15 together～
+weakw16|第16课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 16 nhé～|Let's review the words of lesson 16 together～
+weakw17|第17课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 17 nhé～|Let's review the words of lesson 17 together～
+weakw18|第18课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 18 nhé～|Let's review the words of lesson 18 together～
+weakw19|第19课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 19 nhé～|Let's review the words of lesson 19 together～
+weakw20|第20课的生词我们一起复习吧～|Mình cùng ôn từ mới bài 20 nhé～|Let's review the words of lesson 20 together～
+weakg1|第1课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 1 nhé～|Let's review the grammar of lesson 1 together～
+weakg2|第2课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 2 nhé～|Let's review the grammar of lesson 2 together～
+weakg3|第3课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 3 nhé～|Let's review the grammar of lesson 3 together～
+weakg4|第4课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 4 nhé～|Let's review the grammar of lesson 4 together～
+weakg5|第5课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 5 nhé～|Let's review the grammar of lesson 5 together～
+weakg6|第6课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 6 nhé～|Let's review the grammar of lesson 6 together～
+weakg7|第7课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 7 nhé～|Let's review the grammar of lesson 7 together～
+weakg8|第8课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 8 nhé～|Let's review the grammar of lesson 8 together～
+weakg9|第9课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 9 nhé～|Let's review the grammar of lesson 9 together～
+weakg10|第10课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 10 nhé～|Let's review the grammar of lesson 10 together～
+weakg11|第11课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 11 nhé～|Let's review the grammar of lesson 11 together～
+weakg12|第12课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 12 nhé～|Let's review the grammar of lesson 12 together～
+weakg13|第13课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 13 nhé～|Let's review the grammar of lesson 13 together～
+weakg14|第14课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 14 nhé～|Let's review the grammar of lesson 14 together～
+weakg15|第15课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 15 nhé～|Let's review the grammar of lesson 15 together～
+weakg16|第16课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 16 nhé～|Let's review the grammar of lesson 16 together～
+weakg17|第17课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 17 nhé～|Let's review the grammar of lesson 17 together～
+weakg18|第18课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 18 nhé～|Let's review the grammar of lesson 18 together～
+weakg19|第19课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 19 nhé～|Let's review the grammar of lesson 19 together～
+weakg20|第20课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 20 nhé～|Let's review the grammar of lesson 20 together～
