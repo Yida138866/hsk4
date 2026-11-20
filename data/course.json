@@ -1,0 +1,4766 @@
+{
+ "source": {
+  "4A": "HSK标准教程4上 (scanned PDF, OCR by tesseract chi_sim + visual transcription of 词语总表)",
+  "4B": "HSK标准教程4下 (PDF with OCR layer; re-OCR + visual transcription of 词语总表)"
+ },
+ "notes": "Vocabulary transcribed from each book's 词语总表 (with lesson numbers). Grammar point names from 目录; examples from each lesson's 注释 section (OCR, obvious OCR typos corrected). Texts summarised by title + the book's comprehension questions.",
+ "lessons": [
+  {
+   "n": 1,
+   "book": "4上",
+   "title": "简单的爱情",
+   "en": "Simple love",
+   "texts": [
+    {
+     "n": 1,
+     "title": "孙月和王静聊王静的男朋友",
+     "q": "王静跟李进是怎么认识的？王静为什么喜欢李进？"
+    },
+    {
+     "n": 2,
+     "title": "王静跟李老师聊她要结婚的事情",
+     "q": "王静和李进有哪些共同的爱好？"
+    },
+    {
+     "n": 3,
+     "title": "高老师和李老师聊结婚后的生活",
+     "q": "丈夫和妻子两个人怎样才能很好地生活在一起？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "年轻人、中年人、老年人（对爱情）有什么不同的看法？什么样的爱情让人感动？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "爱情跟结婚是什么关系？"
+    }
+   ],
+   "words": [
+    {
+     "h": "爱情",
+     "p": "àiqíng",
+     "pos": "n.",
+     "m": "love (between a man and a woman)"
+    },
+    {
+     "h": "不仅",
+     "p": "bùjǐn",
+     "pos": "conj.",
+     "m": "not only"
+    },
+    {
+     "h": "从来",
+     "p": "cónglái",
+     "pos": "adv.",
+     "m": "always, all along"
+    },
+    {
+     "h": "法律",
+     "p": "fǎlǜ",
+     "pos": "n.",
+     "m": "law"
+    },
+    {
+     "h": "感动",
+     "p": "gǎndòng",
+     "pos": "v.",
+     "m": "to touch, to move"
+    },
+    {
+     "h": "刚",
+     "p": "gāng",
+     "pos": "adv.",
+     "m": "just, not long"
+    },
+    {
+     "h": "共同",
+     "p": "gòngtóng",
+     "pos": "adj.",
+     "m": "common, shared"
+    },
+    {
+     "h": "够",
+     "p": "gòu",
+     "pos": "v.",
+     "m": "to be enough"
+    },
+    {
+     "h": "互相",
+     "p": "hùxiāng",
+     "pos": "adv.",
+     "m": "mutually"
+    },
+    {
+     "h": "即使",
+     "p": "jíshǐ",
+     "pos": "conj.",
+     "m": "even if"
+    },
+    {
+     "h": "加班",
+     "p": "jiā bān",
+     "pos": "v.",
+     "m": "to work overtime"
+    },
+    {
+     "h": "接受",
+     "p": "jiēshòu",
+     "pos": "v.",
+     "m": "to accept"
+    },
+    {
+     "h": "开玩笑",
+     "p": "kāi wánxiào",
+     "pos": "",
+     "m": "to be kidding"
+    },
+    {
+     "h": "浪漫",
+     "p": "làngmàn",
+     "pos": "adj.",
+     "m": "romantic"
+    },
+    {
+     "h": "俩",
+     "p": "liǎ",
+     "pos": "num.-m.",
+     "m": "two, both"
+    },
+    {
+     "h": "脾气",
+     "p": "píqi",
+     "pos": "n.",
+     "m": "temper, disposition"
+    },
+    {
+     "h": "缺点",
+     "p": "quēdiǎn",
+     "pos": "n.",
+     "m": "shortcoming"
+    },
+    {
+     "h": "深",
+     "p": "shēn",
+     "pos": "adj.",
+     "m": "deep"
+    },
+    {
+     "h": "生活",
+     "p": "shēnghuó",
+     "pos": "n./v.",
+     "m": "life; to live"
+    },
+    {
+     "h": "适合",
+     "p": "shìhé",
+     "pos": "v.",
+     "m": "to suit, to fit"
+    },
+    {
+     "h": "熟悉",
+     "p": "shúxi",
+     "pos": "v.",
+     "m": "to be familiar with"
+    },
+    {
+     "h": "吸引",
+     "p": "xīyǐn",
+     "pos": "v.",
+     "m": "to attract"
+    },
+    {
+     "h": "羡慕",
+     "p": "xiànmù",
+     "pos": "v.",
+     "m": "to envy, to admire"
+    },
+    {
+     "h": "幸福",
+     "p": "xìngfú",
+     "pos": "adj.",
+     "m": "happy"
+    },
+    {
+     "h": "性格",
+     "p": "xìnggé",
+     "pos": "n.",
+     "m": "character, personality"
+    },
+    {
+     "h": "印象",
+     "p": "yìnxiàng",
+     "pos": "n.",
+     "m": "impression"
+    },
+    {
+     "h": "幽默",
+     "p": "yōumò",
+     "pos": "adj.",
+     "m": "humorous"
+    },
+    {
+     "h": "原因",
+     "p": "yuányīn",
+     "pos": "n.",
+     "m": "reason"
+    },
+    {
+     "h": "自然",
+     "p": "zìrán",
+     "pos": "adv.",
+     "m": "naturally, certainly"
+    },
+    {
+     "h": "最好",
+     "p": "zuìhǎo",
+     "pos": "adv.",
+     "m": "had better"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "不仅……也/还/而且……",
+     "ex": "他不仅足球踢得好，性格也不错。"
+    },
+    {
+     "point": "从来",
+     "ex": "虽然我们认识的时间不长，但我从来没这么快乐过。"
+    },
+    {
+     "point": "刚",
+     "ex": "我上午刚借的那本书，怎么找不到了？"
+    },
+    {
+     "point": "即使……也……",
+     "ex": "大部分人每天晚上最少应该睡7个小时，但有些人即使只睡5个小时也没问题。"
+    },
+    {
+     "point": "(在)……上",
+     "ex": "两个人共同生活，不仅需要浪漫的爱情，更需要性格上互相吸引。"
+    }
+   ],
+   "partial": false,
+   "partialNote": ""
+  },
+  {
+   "n": 2,
+   "book": "4上",
+   "title": "真正的朋友",
+   "en": "A true friend",
+   "texts": [
+    {
+     "n": 1,
+     "title": "小夏和马克聊马克的中国朋友",
+     "q": "马克刚来中国的时候适应这儿的生活吗？马克新交的中国朋友怎么样？"
+    },
+    {
+     "n": 2,
+     "title": "小李和小林聊同学聚会的事情",
+     "q": "小李为什么给小林打电话？"
+    },
+    {
+     "n": 3,
+     "title": "孙月和王静聊她们的朋友",
+     "q": "王静看到上大学时的照片会想起什么？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "如果没有朋友，我们的生活会怎么样？怎样才能交到更多的朋友？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "什么是真正的朋友？"
+    }
+   ],
+   "words": [
+    {
+     "h": "毕业",
+     "p": "bì yè",
+     "pos": "v.",
+     "m": "to graduate"
+    },
+    {
+     "h": "差不多",
+     "p": "chàbuduō",
+     "pos": "adv.",
+     "m": "almost"
+    },
+    {
+     "h": "重新",
+     "p": "chóngxīn",
+     "pos": "adv.",
+     "m": "again, once more"
+    },
+    {
+     "h": "当",
+     "p": "dāng",
+     "pos": "prep.",
+     "m": "when, just at (a time or place)"
+    },
+    {
+     "h": "短信",
+     "p": "duǎnxìn",
+     "pos": "n.",
+     "m": "text message"
+    },
+    {
+     "h": "而",
+     "p": "ér",
+     "pos": "conj.",
+     "m": "(showing a contrast) while, yet"
+    },
+    {
+     "h": "丰富",
+     "p": "fēngfù",
+     "pos": "v.",
+     "m": "to enrich"
+    },
+    {
+     "h": "逛",
+     "p": "guàng",
+     "pos": "v.",
+     "m": "to stroll, to roam"
+    },
+    {
+     "h": "好像",
+     "p": "hǎoxiàng",
+     "pos": "adv.",
+     "m": "as if"
+    },
+    {
+     "h": "及时",
+     "p": "jíshí",
+     "pos": "adv.",
+     "m": "in time"
+    },
+    {
+     "h": "交",
+     "p": "jiāo",
+     "pos": "v.",
+     "m": "to make (friends)"
+    },
+    {
+     "h": "交流",
+     "p": "jiāoliú",
+     "pos": "v.",
+     "m": "to exchange, to communicate"
+    },
+    {
+     "h": "尽管",
+     "p": "jǐnguǎn",
+     "pos": "conj.",
+     "m": "although"
+    },
+    {
+     "h": "镜子",
+     "p": "jìngzi",
+     "pos": "n.",
+     "m": "mirror"
+    },
+    {
+     "h": "聚会",
+     "p": "jùhuì",
+     "pos": "v./n.",
+     "m": "to have a party; party, get-together"
+    },
+    {
+     "h": "困难",
+     "p": "kùnnan",
+     "pos": "n.",
+     "m": "difficulty"
+    },
+    {
+     "h": "理解",
+     "p": "lǐjiě",
+     "pos": "v.",
+     "m": "to understand"
+    },
+    {
+     "h": "联系",
+     "p": "liánxì",
+     "pos": "v.",
+     "m": "to contact"
+    },
+    {
+     "h": "麻烦",
+     "p": "máfan",
+     "pos": "v.",
+     "m": "to bother"
+    },
+    {
+     "h": "陪",
+     "p": "péi",
+     "pos": "v.",
+     "m": "to accompany"
+    },
+    {
+     "h": "平时",
+     "p": "píngshí",
+     "pos": "n.",
+     "m": "normal times"
+    },
+    {
+     "h": "却",
+     "p": "què",
+     "pos": "adv.",
+     "m": "but, yet"
+    },
+    {
+     "h": "适应",
+     "p": "shìyìng",
+     "pos": "v.",
+     "m": "to get used to"
+    },
+    {
+     "h": "讨厌",
+     "p": "tǎoyàn",
+     "pos": "v.",
+     "m": "to dislike"
+    },
+    {
+     "h": "无聊",
+     "p": "wúliáo",
+     "pos": "adj.",
+     "m": "boring"
+    },
+    {
+     "h": "友谊",
+     "p": "yǒuyì",
+     "pos": "n.",
+     "m": "friendship"
+    },
+    {
+     "h": "真正",
+     "p": "zhēnzhèng",
+     "pos": "adj.",
+     "m": "true, real"
+    },
+    {
+     "h": "正好",
+     "p": "zhènghǎo",
+     "pos": "adv.",
+     "m": "just in time, just right"
+    },
+    {
+     "h": "周围",
+     "p": "zhōuwéi",
+     "pos": "n.",
+     "m": "surrounding"
+    },
+    {
+     "h": "专门",
+     "p": "zhuānmén",
+     "pos": "adv.",
+     "m": "specially"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "正好",
+     "ex": "你来得正好，我的钱包不见了，借我点儿钱吧。"
+    },
+    {
+     "point": "差不多",
+     "ex": "女儿上中学后，个子长得特别快，现在都快一米七了，差不多跟我一样高了。"
+    },
+    {
+     "point": "尽管",
+     "ex": "尽管已经毕业这么多年，我们还是经常联系的。"
+    },
+    {
+     "point": "却",
+     "ex": "现在很多人虽然住在同一个楼里，但是却从来没说过话。"
+    },
+    {
+     "point": "而",
+     "ex": "有些人觉得朋友就是能和自己一起快乐的人，而我的理解是：当你遇到困难的时候，真正的朋友会站出来，及时给你帮助。"
+    }
+   ],
+   "partial": false,
+   "partialNote": ""
+  },
+  {
+   "n": 3,
+   "book": "4上",
+   "title": "经理对我印象不错",
+   "en": "I've made a good impression on the manager",
+   "texts": [
+    {
+     "n": 1,
+     "title": "小夏和小雨聊小雨面试的情况",
+     "q": "小雨面试时紧张吗？面试时应该怎样？"
+    },
+    {
+     "n": 2,
+     "title": "马经理和小林聊招聘的事情",
+     "q": "参加应聘的两个人适合不适合这个工作？为什么？"
+    },
+    {
+     "n": 3,
+     "title": "小林和王静聊王静的工作情况",
+     "q": "王静为什么很喜欢她现在的工作？"
+    }
+   ],
+   "words": [
+    {
+     "h": "安排",
+     "p": "ānpái",
+     "pos": "v.",
+     "m": "to arrange"
+    },
+    {
+     "h": "本来",
+     "p": "běnlái",
+     "pos": "adv.",
+     "m": "originally, at first"
+    },
+    {
+     "h": "不管",
+     "p": "bùguǎn",
+     "pos": "conj.",
+     "m": "no matter (what, how, etc.)"
+    },
+    {
+     "h": "材料",
+     "p": "cáiliào",
+     "pos": "n.",
+     "m": "data, material"
+    },
+    {
+     "h": "诚实",
+     "p": "chéngshí",
+     "pos": "adj.",
+     "m": "honest"
+    },
+    {
+     "h": "符合",
+     "p": "fúhé",
+     "pos": "v.",
+     "m": "to accord with"
+    },
+    {
+     "h": "负责",
+     "p": "fùzé",
+     "pos": "v.",
+     "m": "to be in charge of"
+    },
+    {
+     "h": "改变",
+     "p": "gǎibiàn",
+     "pos": "v.",
+     "m": "to change"
+    },
+    {
+     "h": "感觉",
+     "p": "gǎnjué",
+     "pos": "n.",
+     "m": "feeling"
+    },
+    {
+     "h": "顾客",
+     "p": "gùkè",
+     "pos": "n.",
+     "m": "customer, client"
+    },
+    {
+     "h": "紧张",
+     "p": "jǐnzhāng",
+     "pos": "adj.",
+     "m": "nervous"
+    },
+    {
+     "h": "另外",
+     "p": "lìngwài",
+     "pos": "conj.",
+     "m": "besides, in addition"
+    },
+    {
+     "h": "留",
+     "p": "liú",
+     "pos": "v.",
+     "m": "to leave"
+    },
+    {
+     "h": "律师",
+     "p": "lǜshī",
+     "pos": "n.",
+     "m": "lawyer"
+    },
+    {
+     "h": "能力",
+     "p": "nénglì",
+     "pos": "n.",
+     "m": "ability, competence"
+    },
+    {
+     "h": "判断",
+     "p": "pànduàn",
+     "pos": "v.",
+     "m": "to judge, to decide"
+    },
+    {
+     "h": "其次",
+     "p": "qícì",
+     "pos": "pron.",
+     "m": "second, next"
+    },
+    {
+     "h": "收入",
+     "p": "shōurù",
+     "pos": "n.",
+     "m": "income"
+    },
+    {
+     "h": "首先",
+     "p": "shǒuxiān",
+     "pos": "pron.",
+     "m": "first"
+    },
+    {
+     "h": "提供",
+     "p": "tígōng",
+     "pos": "v.",
+     "m": "to provide"
+    },
+    {
+     "h": "挺",
+     "p": "tǐng",
+     "pos": "adv.",
+     "m": "quite, rather"
+    },
+    {
+     "h": "通知",
+     "p": "tōngzhī",
+     "pos": "v.",
+     "m": "to inform"
+    },
+    {
+     "h": "信心",
+     "p": "xìnxīn",
+     "pos": "n.",
+     "m": "confidence"
+    },
+    {
+     "h": "应聘",
+     "p": "yìngpìn",
+     "pos": "v.",
+     "m": "to apply for a job"
+    },
+    {
+     "h": "与",
+     "p": "yǔ",
+     "pos": "prep.",
+     "m": "with"
+    },
+    {
+     "h": "约会",
+     "p": "yuēhuì",
+     "pos": "v.",
+     "m": "to date, to go to an appointment"
+    },
+    {
+     "h": "咱们",
+     "p": "zánmen",
+     "pos": "pron.",
+     "m": "we, us"
+    },
+    {
+     "h": "招聘",
+     "p": "zhāopìn",
+     "pos": "v.",
+     "m": "to recruit"
+    },
+    {
+     "h": "正式",
+     "p": "zhèngshì",
+     "pos": "adj.",
+     "m": "formal"
+    },
+    {
+     "h": "专业",
+     "p": "zhuānyè",
+     "pos": "n.",
+     "m": "major, specialty"
+    },
+    {
+     "h": "准时",
+     "p": "zhǔnshí",
+     "pos": "adj.",
+     "m": "punctual, on time"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "挺",
+     "ex": "他们问的问题都挺容易的。"
+    },
+    {
+     "point": "本来",
+     "ex": "我本来不会开车，但现在开得特别好。"
+    },
+    {
+     "point": "另外",
+     "ex": "家里的空调坏了，咱们另外再买一个吧。"
+    },
+    {
+     "point": "首先……其次……",
+     "ex": "不管做什么事情，首先应该明白你为什么要做，其次要知道怎么做。"
+    },
+    {
+     "point": "不管",
+     "ex": "不管忙不忙，他每天都要锻炼一个小时身体。"
+    }
+   ],
+   "partial": true,
+   "partialNote": "课文4、5 的内容未能从扫描件中可靠提取"
+  },
+  {
+   "n": 4,
+   "book": "4上",
+   "title": "不要太着急赚钱",
+   "en": "Don't be anxious to make money",
+   "texts": [
+    {
+     "n": 1,
+     "title": "小林和小李聊换工作（标题未能提取）",
+     "q": "你觉得小李为什么总是换工作？"
+    },
+    {
+     "n": 2,
+     "title": "王经理和小李在说工作",
+     "q": "那份调查的完成时间有什么变化？每天把计划要做的事情记下来有什么好处？"
+    },
+    {
+     "n": 3,
+     "title": "王经理和马经理在说工作",
+     "q": "马经理觉得做生意容易吗？为什么？“万事开头难”是什么意思？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "他们今年工作的完成情况怎么样？公司用什么方法来感谢大家的努力工作？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "我们遇到不愿意做的工作时应该怎么办？"
+    }
+   ],
+   "words": [
+    {
+     "h": "按时",
+     "p": "ànshí",
+     "pos": "adv.",
+     "m": "on time, on schedule"
+    },
+    {
+     "h": "按照",
+     "p": "ànzhào",
+     "pos": "prep.",
+     "m": "according to"
+    },
+    {
+     "h": "保证",
+     "p": "bǎozhèng",
+     "pos": "v.",
+     "m": "to guarantee"
+    },
+    {
+     "h": "不得不",
+     "p": "bù dé bù",
+     "pos": "",
+     "m": "to have to, to have no choice but"
+    },
+    {
+     "h": "成功",
+     "p": "chénggōng",
+     "pos": "adj.",
+     "m": "successful"
+    },
+    {
+     "h": "调查",
+     "p": "diàochá",
+     "pos": "v.",
+     "m": "to survey, to investigate"
+    },
+    {
+     "h": "方法",
+     "p": "fāngfǎ",
+     "pos": "n.",
+     "m": "method, way"
+    },
+    {
+     "h": "份",
+     "p": "fèn",
+     "pos": "m.",
+     "m": "used for jobs among other things"
+    },
+    {
+     "h": "感谢",
+     "p": "gǎnxiè",
+     "pos": "v.",
+     "m": "to thank"
+    },
+    {
+     "h": "工资",
+     "p": "gōngzī",
+     "pos": "n.",
+     "m": "pay, salary"
+    },
+    {
+     "h": "积累",
+     "p": "jīlěi",
+     "pos": "v.",
+     "m": "to accumulate"
+    },
+    {
+     "h": "计划",
+     "p": "jìhuà",
+     "pos": "n./v.",
+     "m": "plan; to intend to"
+    },
+    {
+     "h": "奖金",
+     "p": "jiǎngjīn",
+     "pos": "n.",
+     "m": "money award, bonus"
+    },
+    {
+     "h": "经验",
+     "p": "jīngyàn",
+     "pos": "n.",
+     "m": "experience"
+    },
+    {
+     "h": "乱",
+     "p": "luàn",
+     "pos": "adj.",
+     "m": "hurry-scurry, confused"
+    },
+    {
+     "h": "甚至",
+     "p": "shènzhì",
+     "pos": "conj.",
+     "m": "even, so far as to"
+    },
+    {
+     "h": "生意",
+     "p": "shēngyi",
+     "pos": "n.",
+     "m": "business, trade"
+    },
+    {
+     "h": "顺利",
+     "p": "shùnlì",
+     "pos": "adj.",
+     "m": "smooth"
+    },
+    {
+     "h": "谈",
+     "p": "tán",
+     "pos": "v.",
+     "m": "to talk, to discuss"
+    },
+    {
+     "h": "提",
+     "p": "tí",
+     "pos": "v.",
+     "m": "to mention"
+    },
+    {
+     "h": "提前",
+     "p": "tíqián",
+     "pos": "v.",
+     "m": "to do (sth.) in advance"
+    },
+    {
+     "h": "提醒",
+     "p": "tí xǐng",
+     "pos": "v.",
+     "m": "to remind"
+    },
+    {
+     "h": "完全",
+     "p": "wánquán",
+     "pos": "adv.",
+     "m": "completely"
+    },
+    {
+     "h": "消息",
+     "p": "xiāoxi",
+     "pos": "n.",
+     "m": "news"
+    },
+    {
+     "h": "一切",
+     "p": "yíqiè",
+     "pos": "pron.",
+     "m": "all, every"
+    },
+    {
+     "h": "以为",
+     "p": "yǐwéi",
+     "pos": "v.",
+     "m": "to think, to believe"
+    },
+    {
+     "h": "原来",
+     "p": "yuánlái",
+     "pos": "adj.",
+     "m": "original"
+    },
+    {
+     "h": "责任",
+     "p": "zérèn",
+     "pos": "n.",
+     "m": "responsibility, duty"
+    },
+    {
+     "h": "知识",
+     "p": "zhīshi",
+     "pos": "n.",
+     "m": "knowledge"
+    },
+    {
+     "h": "赚",
+     "p": "zhuàn",
+     "pos": "v.",
+     "m": "to earn"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "以为",
+     "ex": "她汉语说得那么好，我还以为她是中国人。"
+    },
+    {
+     "point": "原来",
+     "ex": "她原来是汉语老师，现在已经成了一名律师。"
+    },
+    {
+     "point": "并",
+     "ex": "我原来以为做生意很简单，后来才发现其实并不容易。"
+    },
+    {
+     "point": "按照",
+     "ex": "我们今年的工作都已经按照计划完成了。"
+    },
+    {
+     "point": "甚至",
+     "ex": "很多时候，我们不得不去做一些自己不愿意做甚至是非常不喜欢的工作。"
+    }
+   ],
+   "partial": false,
+   "partialNote": ""
+  },
+  {
+   "n": 5,
+   "book": "4上",
+   "title": "只买对的，不买贵的",
+   "en": "Buy the right, not the expensive",
+   "texts": [
+    {
+     "n": 1,
+     "title": "王静在家具店买沙发",
+     "q": ""
+    },
+    {
+     "n": 2,
+     "title": "王静和李进在商场买东西",
+     "q": "李进开始为什么不同意买冰箱？后来为什么又同意了？"
+    },
+    {
+     "n": 3,
+     "title": "李进和王静在超市买礼物",
+     "q": "王静和李进打算给李老师买什么礼物？为什么不能完全相信广告？"
+    }
+   ],
+   "words": [
+    {
+     "h": "标准",
+     "p": "biāozhǔn",
+     "pos": "n.",
+     "m": "standard"
+    },
+    {
+     "h": "打折",
+     "p": "dǎ zhé",
+     "pos": "v.",
+     "m": "to give a discount"
+    },
+    {
+     "h": "购物",
+     "p": "gòu wù",
+     "pos": "",
+     "m": "to shop, to buy things"
+    },
+    {
+     "h": "光",
+     "p": "guāng",
+     "pos": "adv.",
+     "m": "only, merely"
+    },
+    {
+     "h": "广告",
+     "p": "guǎnggào",
+     "pos": "n.",
+     "m": "advertisement"
+    },
+    {
+     "h": "寄",
+     "p": "jì",
+     "pos": "v.",
+     "m": "to mail, to send"
+    },
+    {
+     "h": "家具",
+     "p": "jiājù",
+     "pos": "n.",
+     "m": "furniture"
+    },
+    {
+     "h": "价格",
+     "p": "jiàgé",
+     "pos": "n.",
+     "m": "price"
+    },
+    {
+     "h": "考虑",
+     "p": "kǎolǜ",
+     "pos": "v.",
+     "m": "to consider"
+    },
+    {
+     "h": "肯定",
+     "p": "kěndìng",
+     "pos": "adv.",
+     "m": "surely, certainly"
+    },
+    {
+     "h": "浪费",
+     "p": "làngfèi",
+     "pos": "v.",
+     "m": "to waste"
+    },
+    {
+     "h": "流行",
+     "p": "liúxíng",
+     "pos": "v.",
+     "m": "to be popular"
+    },
+    {
+     "h": "年龄",
+     "p": "niánlíng",
+     "pos": "n.",
+     "m": "age"
+    },
+    {
+     "h": "葡萄",
+     "p": "pútao",
+     "pos": "n.",
+     "m": "grape"
+    },
+    {
+     "h": "任何",
+     "p": "rènhé",
+     "pos": "pron.",
+     "m": "any, whatever"
+    },
+    {
+     "h": "沙发",
+     "p": "shāfā",
+     "pos": "n.",
+     "m": "sofa"
+    },
+    {
+     "h": "实际",
+     "p": "shíjì",
+     "pos": "n.",
+     "m": "reality"
+    },
+    {
+     "h": "实在",
+     "p": "shízài",
+     "pos": "adv.",
+     "m": "really"
+    },
+    {
+     "h": "受到",
+     "p": "shòudào",
+     "pos": "v.",
+     "m": "to receive"
+    },
+    {
+     "h": "顺便",
+     "p": "shùnbiàn",
+     "pos": "adv.",
+     "m": "in passing"
+    },
+    {
+     "h": "台",
+     "p": "tái",
+     "pos": "m.",
+     "m": "used for machines"
+    },
+    {
+     "h": "味道",
+     "p": "wèidào",
+     "pos": "n.",
+     "m": "taste"
+    },
+    {
+     "h": "现金",
+     "p": "xiànjīn",
+     "pos": "n.",
+     "m": "cash"
+    },
+    {
+     "h": "效果",
+     "p": "xiàoguǒ",
+     "pos": "n.",
+     "m": "effect"
+    },
+    {
+     "h": "样子",
+     "p": "yàngzi",
+     "pos": "n.",
+     "m": "look, appearance"
+    },
+    {
+     "h": "邀请",
+     "p": "yāoqǐng",
+     "pos": "v.",
+     "m": "to invite"
+    },
+    {
+     "h": "艺术",
+     "p": "yìshù",
+     "pos": "n.",
+     "m": "art"
+    },
+    {
+     "h": "优点",
+     "p": "yōudiǎn",
+     "pos": "n.",
+     "m": "merit"
+    },
+    {
+     "h": "尤其",
+     "p": "yóuqí",
+     "pos": "adv.",
+     "m": "especially"
+    },
+    {
+     "h": "质量",
+     "p": "zhìliàng",
+     "pos": "n.",
+     "m": "quality"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "肯定",
+     "ex": "每天喝一点儿葡萄酒，对身体是有好处的。但是不能喝太多，喝太多酒肯定对身体不好。"
+    },
+    {
+     "point": "再说",
+     "ex": "现在的事，做了再说；以后的事，以后再说。"
+    },
+    {
+     "point": "实际",
+     "ex": "你们做计划应该联系实际。"
+    },
+    {
+     "point": "对……来说",
+     "ex": "对我来说，衣服的样子流行不流行并不是很重要。"
+    },
+    {
+     "point": "尤其",
+     "ex": "您女儿真可爱，长得真像您，尤其是眼睛。"
+    }
+   ],
+   "partial": true,
+   "partialNote": "课文4、5 的内容未能从扫描件中可靠提取"
+  },
+  {
+   "n": 6,
+   "book": "4上",
+   "title": "一分钱一分货",
+   "en": "The higher the price, the better the quality",
+   "texts": [
+    {
+     "n": 1,
+     "title": "张远和李进聊李进昨晚的购物经历",
+     "q": "昨天晚上李进为什么没接张远的电话？"
+    },
+    {
+     "n": 2,
+     "title": "王静在商店买西红柿",
+     "q": "王静买的西红柿怎么样？"
+    },
+    {
+     "n": 3,
+     "title": "李进在商场买行李箱",
+     "q": "李进想买什么样的行李箱？花了多少钱买的？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "书店今天有什么活动？怎么才能免费办会员卡？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "“一分钱一分货”是什么意思？一般什么时候商场会降价？"
+    }
+   ],
+   "words": [
+    {
+     "h": "百分之",
+     "p": "bǎi fēn zhī",
+     "pos": "",
+     "m": "percent"
+    },
+    {
+     "h": "倍",
+     "p": "bèi",
+     "pos": "m.",
+     "m": "times, -fold"
+    },
+    {
+     "h": "尝",
+     "p": "cháng",
+     "pos": "v.",
+     "m": "to taste"
+    },
+    {
+     "h": "打扰",
+     "p": "dǎrǎo",
+     "pos": "v.",
+     "m": "to disturb, to bother"
+    },
+    {
+     "h": "方面",
+     "p": "fāngmiàn",
+     "pos": "n.",
+     "m": "aspect"
+    },
+    {
+     "h": "各",
+     "p": "gè",
+     "pos": "pron.",
+     "m": "various, different"
+    },
+    {
+     "h": "果汁",
+     "p": "guǒzhī",
+     "pos": "n.",
+     "m": "fruit juice"
+    },
+    {
+     "h": "好处",
+     "p": "hǎochù",
+     "pos": "n.",
+     "m": "benefit, advantage"
+    },
+    {
+     "h": "活动",
+     "p": "huódòng",
+     "pos": "n.",
+     "m": "activity, event"
+    },
+    {
+     "h": "获得",
+     "p": "huòdé",
+     "pos": "v.",
+     "m": "to get, to obtain"
+    },
+    {
+     "h": "降低",
+     "p": "jiàngdī",
+     "pos": "v.",
+     "m": "to lower, to reduce"
+    },
+    {
+     "h": "竟然",
+     "p": "jìngrán",
+     "pos": "adv.",
+     "m": "indicating unexpectedness"
+    },
+    {
+     "h": "举办",
+     "p": "jǔbàn",
+     "pos": "v.",
+     "m": "to hold, to conduct"
+    },
+    {
+     "h": "举行",
+     "p": "jǔxíng",
+     "pos": "v.",
+     "m": "to hold (a meeting, event, etc.)"
+    },
+    {
+     "h": "例如",
+     "p": "lìrú",
+     "pos": "v.",
+     "m": "for example"
+    },
+    {
+     "h": "满",
+     "p": "mǎn",
+     "pos": "v.",
+     "m": "to reach a quota or limit"
+    },
+    {
+     "h": "免费",
+     "p": "miǎn fèi",
+     "pos": "v.",
+     "m": "to be free of charge"
+    },
+    {
+     "h": "内",
+     "p": "nèi",
+     "pos": "n.",
+     "m": "in, within"
+    },
+    {
+     "h": "皮肤",
+     "p": "pífū",
+     "pos": "n.",
+     "m": "skin"
+    },
+    {
+     "h": "其中",
+     "p": "qízhōng",
+     "pos": "n.",
+     "m": "among (which, them, etc.)"
+    },
+    {
+     "h": "轻",
+     "p": "qīng",
+     "pos": "adj.",
+     "m": "light, of little weight"
+    },
+    {
+     "h": "情况",
+     "p": "qíngkuàng",
+     "pos": "n.",
+     "m": "situation, circumstances"
+    },
+    {
+     "h": "售货员",
+     "p": "shòuhuòyuán",
+     "pos": "n.",
+     "m": "salesperson"
+    },
+    {
+     "h": "所有",
+     "p": "suǒyǒu",
+     "pos": "adj.",
+     "m": "all"
+    },
+    {
+     "h": "袜子",
+     "p": "wàzi",
+     "pos": "n.",
+     "m": "socks"
+    },
+    {
+     "h": "西红柿",
+     "p": "xīhóngshì",
+     "pos": "n.",
+     "m": "tomato"
+    },
+    {
+     "h": "小说",
+     "p": "xiǎoshuō",
+     "pos": "n.",
+     "m": "novel, fiction"
+    },
+    {
+     "h": "修理",
+     "p": "xiūlǐ",
+     "pos": "v.",
+     "m": "to repair, to mend"
+    },
+    {
+     "h": "支持",
+     "p": "zhīchí",
+     "pos": "v.",
+     "m": "to support"
+    },
+    {
+     "h": "值得",
+     "p": "zhídé",
+     "pos": "v.",
+     "m": "to be worth"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "竟然",
+     "ex": "这个歌特别好听，最近很流行，你竟然没听过？"
+    },
+    {
+     "point": "倍",
+     "ex": "我的工资是每月5000块，他的工资是我的两倍。"
+    },
+    {
+     "point": "值得",
+     "ex": "你应该改改自己的脾气，别总是为一点儿小事生气，不值得。"
+    },
+    {
+     "point": "其中",
+     "ex": "我们不仅要会读书，还要会选择其中的好书来读。"
+    },
+    {
+     "point": "(在)……下",
+     "ex": "在老师和同学们的帮助下，他的汉语提高得非常快。"
+    }
+   ],
+   "partial": false,
+   "partialNote": ""
+  },
+  {
+   "n": 7,
+   "book": "4上",
+   "title": "最好的医生是自己",
+   "en": "The best doctor is yourself",
+   "texts": [
+    {
+     "n": 1,
+     "title": "小李和小林聊天气和身体情况",
+     "q": "小林可能是中国哪里人？春天的时候怎么才能少感冒？"
+    },
+    {
+     "n": 2,
+     "title": "小夏和小雨聊小雨抽烟的事情",
+     "q": "如果你有抽烟的朋友，你想对他/她说些什么？"
+    },
+    {
+     "n": 3,
+     "title": "小李和小林聊电脑对身体的影响",
+     "q": "长时间坐在电脑前面工作好不好？为什么？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "过去和现在的人们对健康的认识有哪些不同？晚饭后和家人一起去散散步有哪几个方面的好处？"
+    }
+   ],
+   "words": [
+    {
+     "h": "擦",
+     "p": "cā",
+     "pos": "v.",
+     "m": "to wipe"
+    },
+    {
+     "h": "超过",
+     "p": "chāoguò",
+     "pos": "v.",
+     "m": "to exceed, to surpass"
+    },
+    {
+     "h": "抽烟",
+     "p": "chōu yān",
+     "pos": "",
+     "m": "to smoke"
+    },
+    {
+     "h": "出现",
+     "p": "chūxiàn",
+     "pos": "v.",
+     "m": "to appear, to emerge"
+    },
+    {
+     "h": "窗户",
+     "p": "chuānghu",
+     "pos": "n.",
+     "m": "window"
+    },
+    {
+     "h": "大夫",
+     "p": "dàifu",
+     "pos": "n.",
+     "m": "doctor"
+    },
+    {
+     "h": "掉",
+     "p": "diào",
+     "pos": "v.",
+     "m": "used after certain verbs, indicating the result of an action"
+    },
+    {
+     "h": "动作",
+     "p": "dòngzuò",
+     "pos": "n.",
+     "m": "action, movement"
+    },
+    {
+     "h": "肚子",
+     "p": "dùzi",
+     "pos": "n.",
+     "m": "belly, stomach"
+    },
+    {
+     "h": "烦恼",
+     "p": "fánnǎo",
+     "pos": "adj.",
+     "m": "worried, vexed"
+    },
+    {
+     "h": "反对",
+     "p": "fǎnduì",
+     "pos": "v.",
+     "m": "to oppose, to object to"
+    },
+    {
+     "h": "感情",
+     "p": "gǎnqíng",
+     "pos": "n.",
+     "m": "affection, love"
+    },
+    {
+     "h": "估计",
+     "p": "gūjì",
+     "pos": "v.",
+     "m": "to estimate, to reckon"
+    },
+    {
+     "h": "后悔",
+     "p": "hòuhuǐ",
+     "pos": "v.",
+     "m": "to regret"
+    },
+    {
+     "h": "减肥",
+     "p": "jiǎn féi",
+     "pos": "v.",
+     "m": "to lose weight"
+    },
+    {
+     "h": "教授",
+     "p": "jiàoshòu",
+     "pos": "n.",
+     "m": "professor"
+    },
+    {
+     "h": "咳嗽",
+     "p": "késou",
+     "pos": "v.",
+     "m": "to cough"
+    },
+    {
+     "h": "空气",
+     "p": "kōngqì",
+     "pos": "n.",
+     "m": "air"
+    },
+    {
+     "h": "来不及",
+     "p": "láibují",
+     "pos": "v.",
+     "m": "to have not enough time to, to be too late to"
+    },
+    {
+     "h": "气候",
+     "p": "qìhòu",
+     "pos": "n.",
+     "m": "climate"
+    },
+    {
+     "h": "散步",
+     "p": "sàn bù",
+     "pos": "v.",
+     "m": "to take a walk"
+    },
+    {
+     "h": "数字",
+     "p": "shùzì",
+     "pos": "n.",
+     "m": "number"
+    },
+    {
+     "h": "帅",
+     "p": "shuài",
+     "pos": "adj.",
+     "m": "handsome"
+    },
+    {
+     "h": "说明",
+     "p": "shuōmíng",
+     "pos": "v.",
+     "m": "to explain, to show"
+    },
+    {
+     "h": "辛苦",
+     "p": "xīnkǔ",
+     "pos": "adj.",
+     "m": "hard, toilsome"
+    },
+    {
+     "h": "严重",
+     "p": "yánzhòng",
+     "pos": "adj.",
+     "m": "serious, grave"
+    },
+    {
+     "h": "研究",
+     "p": "yánjiū",
+     "pos": "v.",
+     "m": "to study, to do research"
+    },
+    {
+     "h": "要是",
+     "p": "yàoshi",
+     "pos": "conj.",
+     "m": "if, supposing"
+    },
+    {
+     "h": "植物",
+     "p": "zhíwù",
+     "pos": "n.",
+     "m": "plant"
+    },
+    {
+     "h": "指",
+     "p": "zhǐ",
+     "pos": "v.",
+     "m": "to refer to"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "估计",
+     "ex": "你有没有去问问小王？估计他应该有办法。"
+    },
+    {
+     "point": "来不及",
+     "ex": "等你身体出现问题了，后悔就来不及了。"
+    },
+    {
+     "point": "离合词重叠",
+     "ex": "咱们午饭后就去附近的公园散散步吧。"
+    },
+    {
+     "point": "要是",
+     "ex": "要是质量比别人的好的话，那么价格贵一点儿也是可以接受的。"
+    },
+    {
+     "point": "既……又/也/还……",
+     "ex": "散步是生活中最简单的锻炼方法，既可以活动身体，又可以减肥。"
+    }
+   ],
+   "partial": true,
+   "partialNote": "课文5 的内容未能从扫描件中可靠提取"
+  },
+  {
+   "n": 8,
+   "book": "4上",
+   "title": "生活中不缺少美",
+   "en": "Beauty is not rare in life",
+   "texts": [
+    {
+     "n": 1,
+     "title": "李老师和高老师聊关于巧克力的事情",
+     "q": "吃巧克力对人的心情有哪些影响？"
+    },
+    {
+     "n": 2,
+     "title": "小夏和马克聊关于上次足球比赛的事情",
+     "q": "马克可能因为什么原因带小夏去看那里的景色？"
+    },
+    {
+     "n": 3,
+     "title": "马克和司机聊关于堵车的事情",
+     "q": ""
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "怎么理解“生活中的美到处都是”这句话？哪种方法可以让我们了解一个人的性格？"
+    }
+   ],
+   "words": [
+    {
+     "h": "成为",
+     "p": "chéngwéi",
+     "pos": "v.",
+     "m": "to become"
+    },
+    {
+     "h": "大使馆",
+     "p": "dàshǐguǎn",
+     "pos": "n.",
+     "m": "embassy"
+    },
+    {
+     "h": "到处",
+     "p": "dàochù",
+     "pos": "adv.",
+     "m": "everywhere"
+    },
+    {
+     "h": "堵车",
+     "p": "dǔ chē",
+     "pos": "v.",
+     "m": "traffic jam"
+    },
+    {
+     "h": "发生",
+     "p": "fāshēng",
+     "pos": "v.",
+     "m": "to happen, to take place"
+    },
+    {
+     "h": "放松",
+     "p": "fàngsōng",
+     "pos": "v.",
+     "m": "to relax"
+    },
+    {
+     "h": "回忆",
+     "p": "huíyì",
+     "pos": "v.",
+     "m": "to call to mind, to recall"
+    },
+    {
+     "h": "积极",
+     "p": "jījí",
+     "pos": "adj.",
+     "m": "positive"
+    },
+    {
+     "h": "景色",
+     "p": "jǐngsè",
+     "pos": "n.",
+     "m": "scene, view"
+    },
+    {
+     "h": "距离",
+     "p": "jùlí",
+     "pos": "n.",
+     "m": "distance"
+    },
+    {
+     "h": "科学",
+     "p": "kēxué",
+     "pos": "n.",
+     "m": "science"
+    },
+    {
+     "h": "耐心",
+     "p": "nàixīn",
+     "pos": "n.",
+     "m": "patience"
+    },
+    {
+     "h": "巧克力",
+     "p": "qiǎokèlì",
+     "pos": "n.",
+     "m": "chocolate"
+    },
+    {
+     "h": "亲戚",
+     "p": "qīnqi",
+     "pos": "n.",
+     "m": "relative, kinsfolk"
+    },
+    {
+     "h": "缺少",
+     "p": "quēshǎo",
+     "pos": "v.",
+     "m": "to lack"
+    },
+    {
+     "h": "伤心",
+     "p": "shāng xīn",
+     "pos": "adj.",
+     "m": "sad, sorrowful"
+    },
+    {
+     "h": "生命",
+     "p": "shēngmìng",
+     "pos": "n.",
+     "m": "life"
+    },
+    {
+     "h": "师傅",
+     "p": "shīfu",
+     "pos": "n.",
+     "m": "polite title for a skilled tradesperson"
+    },
+    {
+     "h": "使",
+     "p": "shǐ",
+     "pos": "v.",
+     "m": "to make, to cause"
+    },
+    {
+     "h": "态度",
+     "p": "tàidu",
+     "pos": "n.",
+     "m": "attitude"
+    },
+    {
+     "h": "特点",
+     "p": "tèdiǎn",
+     "pos": "n.",
+     "m": "characteristic"
+    },
+    {
+     "h": "往往",
+     "p": "wǎngwǎng",
+     "pos": "adv.",
+     "m": "often, usually"
+    },
+    {
+     "h": "心情",
+     "p": "xīnqíng",
+     "pos": "n.",
+     "m": "mood, state of mind"
+    },
+    {
+     "h": "压力",
+     "p": "yālì",
+     "pos": "n.",
+     "m": "pressure, stress"
+    },
+    {
+     "h": "阳光",
+     "p": "yángguāng",
+     "pos": "adj.",
+     "m": "optimistic, cheerful"
+    },
+    {
+     "h": "因此",
+     "p": "yīncǐ",
+     "pos": "conj.",
+     "m": "therefore, so"
+    },
+    {
+     "h": "愉快",
+     "p": "yúkuài",
+     "pos": "adj.",
+     "m": "glad, cheerful"
+    },
+    {
+     "h": "证明",
+     "p": "zhèngmíng",
+     "pos": "v.",
+     "m": "to prove"
+    },
+    {
+     "h": "只要",
+     "p": "zhǐyào",
+     "pos": "conj.",
+     "m": "as long as, provided"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "使",
+     "ex": "在中国生活的三年使他在音乐方面有了很多新的想法。"
+    },
+    {
+     "point": "只要",
+     "ex": "只要这次你好好儿准备，一定能把比赛踢好。"
+    },
+    {
+     "point": "可不是",
+     "ex": "A：没想到咱们毕业都已经十年了。B：可不是！时间过得太快了。"
+    },
+    {
+     "point": "因此",
+     "ex": "我认识他很多年，因此，很了解他的性格。"
+    },
+    {
+     "point": "往往",
+     "ex": "女孩子对衣服颜色的选择往往与她们的性格有关。"
+    }
+   ],
+   "partial": true,
+   "partialNote": "课文3、5 的要点未能从扫描件中可靠提取"
+  },
+  {
+   "n": 9,
+   "book": "4上",
+   "title": "阳光总在风雨后",
+   "en": "The sun will shine again after the storm",
+   "texts": [
+    {
+     "n": 1,
+     "title": "王静和孙月聊孙月减肥的事情",
+     "q": "怎样减肥才能有效果？"
+    },
+    {
+     "n": 2,
+     "title": "李进和张远聊张远的成功经历",
+     "q": "张远的网球为什么打得那么好？为什么说没有人能随随便便成功？"
+    },
+    {
+     "n": 3,
+     "title": "小林和小李谈王红的成功经历",
+     "q": "王红是干什么的？她是怎样获得成功的？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "过程和结果，哪个更重要？为什么说失败了也没关系？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "人们对困难的态度有什么不同？爱迪生是怎样成功发明电灯的？"
+    }
+   ],
+   "words": [
+    {
+     "h": "饼干",
+     "p": "bǐnggān",
+     "pos": "n.",
+     "m": "biscuit"
+    },
+    {
+     "h": "当时",
+     "p": "dāngshí",
+     "pos": "n.",
+     "m": "then, at that time"
+    },
+    {
+     "h": "得",
+     "p": "děi",
+     "pos": "mod.",
+     "m": "must, have to"
+    },
+    {
+     "h": "放弃",
+     "p": "fàngqì",
+     "pos": "v.",
+     "m": "to give up"
+    },
+    {
+     "h": "国际",
+     "p": "guójì",
+     "pos": "n.",
+     "m": "international"
+    },
+    {
+     "h": "过程",
+     "p": "guòchéng",
+     "pos": "n.",
+     "m": "course, process"
+    },
+    {
+     "h": "汗",
+     "p": "hàn",
+     "pos": "n.",
+     "m": "sweat, perspiration"
+    },
+    {
+     "h": "坚持",
+     "p": "jiānchí",
+     "pos": "v.",
+     "m": "to insist, to persist"
+    },
+    {
+     "h": "结果",
+     "p": "jiéguǒ",
+     "pos": "n.",
+     "m": "result"
+    },
+    {
+     "h": "经历",
+     "p": "jīnglì",
+     "pos": "v.",
+     "m": "to go through, to experience"
+    },
+    {
+     "h": "可是",
+     "p": "kěshì",
+     "pos": "conj.",
+     "m": "but, however"
+    },
+    {
+     "h": "理想",
+     "p": "lǐxiǎng",
+     "pos": "n.",
+     "m": "ideal"
+    },
+    {
+     "h": "难道",
+     "p": "nándào",
+     "pos": "adv.",
+     "m": "used in a rhetorical question for emphasis"
+    },
+    {
+     "h": "篇",
+     "p": "piān",
+     "pos": "m.",
+     "m": "used for writings, papers or articles"
+    },
+    {
+     "h": "轻松",
+     "p": "qīngsōng",
+     "pos": "adj.",
+     "m": "relaxed, effortless"
+    },
+    {
+     "h": "区别",
+     "p": "qūbié",
+     "pos": "n.",
+     "m": "difference, distinction"
+    },
+    {
+     "h": "取",
+     "p": "qǔ",
+     "pos": "v.",
+     "m": "to gain, to seek"
+    },
+    {
+     "h": "失败",
+     "p": "shībài",
+     "pos": "v.",
+     "m": "to fail"
+    },
+    {
+     "h": "随便",
+     "p": "suíbiàn",
+     "pos": "adj.",
+     "m": "casual, at random"
+    },
+    {
+     "h": "通过",
+     "p": "tōngguò",
+     "pos": "prep.",
+     "m": "through, by means of"
+    },
+    {
+     "h": "网球",
+     "p": "wǎngqiú",
+     "pos": "n.",
+     "m": "tennis"
+    },
+    {
+     "h": "许多",
+     "p": "xǔduō",
+     "pos": "num.",
+     "m": "many, plenty of"
+    },
+    {
+     "h": "赢",
+     "p": "yíng",
+     "pos": "v.",
+     "m": "to win"
+    },
+    {
+     "h": "勇敢",
+     "p": "yǒnggǎn",
+     "pos": "adj.",
+     "m": "brave, courageous"
+    },
+    {
+     "h": "暂时",
+     "p": "zànshí",
+     "pos": "n.",
+     "m": "temporary, for the time being"
+    },
+    {
+     "h": "正确",
+     "p": "zhèngquè",
+     "pos": "adj.",
+     "m": "right, correct"
+    },
+    {
+     "h": "至少",
+     "p": "zhìshǎo",
+     "pos": "adv.",
+     "m": "at least"
+    },
+    {
+     "h": "主意",
+     "p": "zhǔyi / zhúyi",
+     "pos": "n.",
+     "m": "idea, plan"
+    },
+    {
+     "h": "总结",
+     "p": "zǒngjié",
+     "pos": "v.",
+     "m": "to sum up"
+    },
+    {
+     "h": "作家",
+     "p": "zuòjiā",
+     "pos": "n.",
+     "m": "writer"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "难道",
+     "ex": "怎么又买了这么多饼干和巧克力？难道你不减肥了？"
+    },
+    {
+     "point": "通过",
+     "ex": "任何成功都要通过努力才能得到。"
+    },
+    {
+     "point": "可是",
+     "ex": "虽然收入高，可是经常要加班，很少有时间和家人在一起。"
+    },
+    {
+     "point": "结果",
+     "ex": "小张，你这份计划书写得不错，就按照这个计划去做市场调查吧。下个月把调查结果交上来。"
+    },
+    {
+     "point": "上",
+     "ex": "这个城市的地铁已经有上百年的历史了。"
+    }
+   ],
+   "partial": false,
+   "partialNote": ""
+  },
+  {
+   "n": 10,
+   "book": "4上",
+   "title": "幸福的标准",
+   "en": "Standards of happiness",
+   "texts": [
+    {
+     "n": 1,
+     "title": "孙月和王静聊王静的生活情况",
+     "q": "孙月让王静陪她去做什么？王静为什么很辛苦？她为什么也觉得很幸福？"
+    },
+    {
+     "n": 2,
+     "title": "高老师和李老师在谈幸福",
+     "q": "高老师为什么羡慕王老师？"
+    },
+    {
+     "n": 3,
+     "title": "小雨和小夏聊找工作的事情",
+     "q": "小雨对选择职业有什么建议？在小雨看来，什么是幸福？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "为什么说没钱也很难过得幸福？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "关于幸福，人们有哪些不同的看法？怎样才算是真正的幸福？"
+    }
+   ],
+   "words": [
+    {
+     "h": "比如",
+     "p": "bǐrú",
+     "pos": "v.",
+     "m": "for example, such as"
+    },
+    {
+     "h": "不过",
+     "p": "búguò",
+     "pos": "conj.",
+     "m": "but, yet"
+    },
+    {
+     "h": "答案",
+     "p": "dá'àn",
+     "pos": "n.",
+     "m": "answer, key"
+    },
+    {
+     "h": "等",
+     "p": "děng",
+     "pos": "part.",
+     "m": "etc., and so on"
+    },
+    {
+     "h": "低",
+     "p": "dī",
+     "pos": "adj.",
+     "m": "low"
+    },
+    {
+     "h": "发展",
+     "p": "fāzhǎn",
+     "pos": "v.",
+     "m": "to develop, to promote"
+    },
+    {
+     "h": "翻译",
+     "p": "fānyì",
+     "pos": "n.",
+     "m": "translator, interpreter"
+    },
+    {
+     "h": "方向",
+     "p": "fāngxiàng",
+     "pos": "n.",
+     "m": "direction, orientation"
+    },
+    {
+     "h": "富",
+     "p": "fù",
+     "pos": "adj.",
+     "m": "rich, wealthy"
+    },
+    {
+     "h": "关键",
+     "p": "guānjiàn",
+     "pos": "n.",
+     "m": "hinge, crux"
+    },
+    {
+     "h": "建议",
+     "p": "jiànyì",
+     "pos": "n.",
+     "m": "suggestion, advice"
+    },
+    {
+     "h": "将来",
+     "p": "jiānglái",
+     "pos": "n.",
+     "m": "future"
+    },
+    {
+     "h": "经济",
+     "p": "jīngjì",
+     "pos": "n.",
+     "m": "economy"
+    },
+    {
+     "h": "空儿",
+     "p": "kòngr",
+     "pos": "n.",
+     "m": "free time, spare time"
+    },
+    {
+     "h": "困",
+     "p": "kùn",
+     "pos": "adj.",
+     "m": "sleepy"
+    },
+    {
+     "h": "拉",
+     "p": "lā",
+     "pos": "v.",
+     "m": "to pull, to drag"
+    },
+    {
+     "h": "礼拜天",
+     "p": "lǐbàitiān",
+     "pos": "n.",
+     "m": "Sunday"
+    },
+    {
+     "h": "母亲",
+     "p": "mǔqīn",
+     "pos": "n.",
+     "m": "mother"
+    },
+    {
+     "h": "穷",
+     "p": "qióng",
+     "pos": "adj.",
+     "m": "poor, impoverished"
+    },
+    {
+     "h": "确实",
+     "p": "quèshí",
+     "pos": "adv.",
+     "m": "truly, indeed"
+    },
+    {
+     "h": "硕士",
+     "p": "shuòshì",
+     "pos": "n.",
+     "m": "Master, person who has a master's degree"
+    },
+    {
+     "h": "糖",
+     "p": "táng",
+     "pos": "n.",
+     "m": "sugar, candy"
+    },
+    {
+     "h": "躺",
+     "p": "tǎng",
+     "pos": "v.",
+     "m": "to lie (on one's back)"
+    },
+    {
+     "h": "条件",
+     "p": "tiáojiàn",
+     "pos": "n.",
+     "m": "condition"
+    },
+    {
+     "h": "橡皮",
+     "p": "xiàngpí",
+     "pos": "n.",
+     "m": "eraser, rubber"
+    },
+    {
+     "h": "兴奋",
+     "p": "xīngfèn",
+     "pos": "adj.",
+     "m": "excited"
+    },
+    {
+     "h": "永远",
+     "p": "yǒngyuǎn",
+     "pos": "adv.",
+     "m": "forever"
+    },
+    {
+     "h": "优秀",
+     "p": "yōuxiù",
+     "pos": "adj.",
+     "m": "excellent, outstanding"
+    },
+    {
+     "h": "由于",
+     "p": "yóuyú",
+     "pos": "conj.",
+     "m": "because, since"
+    },
+    {
+     "h": "职业",
+     "p": "zhíyè",
+     "pos": "n.",
+     "m": "occupation, profession"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "不过",
+     "ex": "我现在上有老，下有小。除了工作以外，家里还有母亲和儿子需要照顾。不过现在我很幸福。"
+    },
+    {
+     "point": "确实",
+     "ex": "爱情确实是结婚的重要原因，但仅有爱情是不够的。"
+    },
+    {
+     "point": "在……看来",
+     "ex": "在我看来，比赛结果并不是最重要的，在参加比赛的过程中使自己获得提高更重要。"
+    },
+    {
+     "point": "由于",
+     "ex": "由于种种原因，我们不得不改变原来的计划。"
+    },
+    {
+     "point": "比如",
+     "ex": "还有人说，小时候幸福是一件东西，比如一块橡皮、一块糖，得到了就很幸福。"
+    }
+   ],
+   "partial": false,
+   "partialNote": ""
+  },
+  {
+   "n": 11,
+   "book": "4下",
+   "title": "读书好，读好书，好读书",
+   "en": "It's good to read; read good books and like reading",
+   "texts": [
+    {
+     "n": 1,
+     "title": "马克介绍自己学习汉语的方法",
+     "q": "大卫认为对学习汉语的外国人来说，做什么特别难？"
+    },
+    {
+     "n": 2,
+     "title": "小夏和小雨聊考试的情况",
+     "q": "要想考好，应该注意哪些方面？为什么？"
+    },
+    {
+     "n": 3,
+     "title": "小李告诉小林阅读的好处",
+     "q": "小李家的客厅有什么特点？坚持阅读能给人带来哪些好处？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "我们应该选择读什么样的书？为什么？"
+    }
+   ],
+   "words": [
+    {
+     "h": "表示",
+     "p": "biǎoshì",
+     "pos": "v.",
+     "m": "to express, to indicate"
+    },
+    {
+     "h": "猜",
+     "p": "cāi",
+     "pos": "v.",
+     "m": "to guess"
+    },
+    {
+     "h": "词语",
+     "p": "cíyǔ",
+     "pos": "n.",
+     "m": "word, expression"
+    },
+    {
+     "h": "否则",
+     "p": "fǒuzé",
+     "pos": "conj.",
+     "m": "or, otherwise"
+    },
+    {
+     "h": "复杂",
+     "p": "fùzá",
+     "pos": "adj.",
+     "m": "complicated"
+    },
+    {
+     "h": "精彩",
+     "p": "jīngcǎi",
+     "pos": "adj.",
+     "m": "wonderful, splendid"
+    },
+    {
+     "h": "看法",
+     "p": "kànfǎ",
+     "pos": "n.",
+     "m": "viewpoint, opinion"
+    },
+    {
+     "h": "客厅",
+     "p": "kètīng",
+     "pos": "n.",
+     "m": "living room"
+    },
+    {
+     "h": "来得及",
+     "p": "láidejí",
+     "pos": "v.",
+     "m": "there's still time (to do sth.)"
+    },
+    {
+     "h": "厉害",
+     "p": "lìhai",
+     "pos": "adj.",
+     "m": "awesome, serious"
+    },
+    {
+     "h": "连",
+     "p": "lián",
+     "pos": "prep.",
+     "m": "even"
+    },
+    {
+     "h": "流利",
+     "p": "liúlì",
+     "pos": "adj.",
+     "m": "fluent"
+    },
+    {
+     "h": "内容",
+     "p": "nèiróng",
+     "pos": "n.",
+     "m": "content"
+    },
+    {
+     "h": "然而",
+     "p": "rán'ér",
+     "pos": "conj.",
+     "m": "but, however"
+    },
+    {
+     "h": "顺序",
+     "p": "shùnxù",
+     "pos": "n.",
+     "m": "order, sequence"
+    },
+    {
+     "h": "填空",
+     "p": "tián kòng",
+     "pos": "v.",
+     "m": "to fill in a blank"
+    },
+    {
+     "h": "同时",
+     "p": "tóngshí",
+     "pos": "conj.",
+     "m": "at the same time, meanwhile"
+    },
+    {
+     "h": "文章",
+     "p": "wénzhāng",
+     "pos": "n.",
+     "m": "essay, article"
+    },
+    {
+     "h": "无论",
+     "p": "wúlùn",
+     "pos": "conj.",
+     "m": "regardless of, no matter (what, how, etc.)"
+    },
+    {
+     "h": "相同",
+     "p": "xiāngtóng",
+     "pos": "adj.",
+     "m": "same"
+    },
+    {
+     "h": "养成",
+     "p": "yǎngchéng",
+     "pos": "v.",
+     "m": "to develop, to form"
+    },
+    {
+     "h": "页",
+     "p": "yè",
+     "pos": "m.",
+     "m": "page"
+    },
+    {
+     "h": "语法",
+     "p": "yǔfǎ",
+     "pos": "n.",
+     "m": "grammar"
+    },
+    {
+     "h": "阅读",
+     "p": "yuèdú",
+     "pos": "v.",
+     "m": "to read"
+    },
+    {
+     "h": "杂志",
+     "p": "zázhì",
+     "pos": "n.",
+     "m": "magazine"
+    },
+    {
+     "h": "增加",
+     "p": "zēngjiā",
+     "pos": "v.",
+     "m": "to increase, to add"
+    },
+    {
+     "h": "之",
+     "p": "zhī",
+     "pos": "part.",
+     "m": "connecting the modifier and the word modified"
+    },
+    {
+     "h": "只好",
+     "p": "zhǐhǎo",
+     "pos": "adv.",
+     "m": "cannot but, to be forced to"
+    },
+    {
+     "h": "著名",
+     "p": "zhùmíng",
+     "pos": "adj.",
+     "m": "famous, well-known"
+    },
+    {
+     "h": "准确",
+     "p": "zhǔnquè",
+     "pos": "adj.",
+     "m": "accurate, precise"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "连",
+     "ex": "你太厉害了！连中文报纸都看得懂。"
+    },
+    {
+     "point": "否则",
+     "ex": "他一定有重要的事找你，否则不会打这么多次电话来。"
+    },
+    {
+     "point": "无论",
+     "ex": "无论做什么事都要注意方法，正确的方法可以让我们做得更好。"
+    },
+    {
+     "point": "然而",
+     "ex": "他虽然失败了很多次，然而一直没有放弃。"
+    },
+    {
+     "point": "同时",
+     "ex": "在学习汉语的同时，我还了解了中国文化，认识了很多中国朋友。"
+    }
+   ],
+   "partial": true,
+   "partialNote": "课文4 的要点未能从扫描件中可靠提取"
+  },
+  {
+   "n": 12,
+   "book": "4下",
+   "title": "用心发现世界",
+   "en": "Discover the world with your heart",
+   "texts": [
+    {
+     "n": 1,
+     "title": "王经理做生意遇到了困难",
+     "q": "要是工作或学习遇到困难，你可能用什么方法去解决？"
+    },
+    {
+     "n": 2,
+     "title": "高老师告诉女儿洗衣服的方法",
+     "q": "哪种方法可以保护衣服不掉颜色？"
+    },
+    {
+     "n": 3,
+     "title": "高老师学习王教授的教育方法",
+     "q": "高老师认为王教授上课成功有哪些方面的原因？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "人们的说话方式可能和什么有关系？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "你的学习方法是“事半功倍”还是“事倍功半”？对于别人的意见，什么态度是正确的？"
+    }
+   ],
+   "words": [
+    {
+     "h": "保护",
+     "p": "bǎohù",
+     "pos": "v.",
+     "m": "to protect"
+    },
+    {
+     "h": "并且",
+     "p": "bìngqiě",
+     "pos": "conj.",
+     "m": "and"
+    },
+    {
+     "h": "对于",
+     "p": "duìyú",
+     "pos": "prep.",
+     "m": "for, to, with regard to"
+    },
+    {
+     "h": "规定",
+     "p": "guīdìng",
+     "pos": "n.",
+     "m": "rule, regulation"
+    },
+    {
+     "h": "教育",
+     "p": "jiàoyù",
+     "pos": "v.",
+     "m": "to educate"
+    },
+    {
+     "h": "节",
+     "p": "jié",
+     "pos": "m.",
+     "m": "section, length"
+    },
+    {
+     "h": "节约",
+     "p": "jiéyuē",
+     "pos": "v.",
+     "m": "to economize, to save"
+    },
+    {
+     "h": "解释",
+     "p": "jiěshì",
+     "pos": "v.",
+     "m": "to explain"
+    },
+    {
+     "h": "可惜",
+     "p": "kěxī",
+     "pos": "adj.",
+     "m": "pitiful, regretful"
+    },
+    {
+     "h": "力气",
+     "p": "lìqi",
+     "pos": "n.",
+     "m": "physical strength, effort"
+    },
+    {
+     "h": "全部",
+     "p": "quánbù",
+     "pos": "n.",
+     "m": "all, whole"
+    },
+    {
+     "h": "任务",
+     "p": "rènwu",
+     "pos": "n.",
+     "m": "task, mission"
+    },
+    {
+     "h": "商量",
+     "p": "shāngliang",
+     "pos": "v.",
+     "m": "to discuss, to consult"
+    },
+    {
+     "h": "勺子",
+     "p": "sháozi",
+     "pos": "n.",
+     "m": "spoon"
+    },
+    {
+     "h": "使用",
+     "p": "shǐyòng",
+     "pos": "v.",
+     "m": "to use"
+    },
+    {
+     "h": "死",
+     "p": "sǐ",
+     "pos": "adj.",
+     "m": "rigid, inflexible"
+    },
+    {
+     "h": "无",
+     "p": "wú",
+     "pos": "v.",
+     "m": "not to have, to be without"
+    },
+    {
+     "h": "无法",
+     "p": "wú fǎ",
+     "pos": "v.",
+     "m": "cannot, to be unable (to do sth.)"
+    },
+    {
+     "h": "误会",
+     "p": "wùhuì",
+     "pos": "n.",
+     "m": "misunderstanding"
+    },
+    {
+     "h": "相反",
+     "p": "xiāngfǎn",
+     "pos": "conj.",
+     "m": "on the contrary"
+    },
+    {
+     "h": "详细",
+     "p": "xiángxì",
+     "pos": "adj.",
+     "m": "detailed"
+    },
+    {
+     "h": "盐",
+     "p": "yán",
+     "pos": "n.",
+     "m": "salt"
+    },
+    {
+     "h": "也许",
+     "p": "yěxǔ",
+     "pos": "adv.",
+     "m": "maybe, perhaps"
+    },
+    {
+     "h": "叶子",
+     "p": "yèzi",
+     "pos": "n.",
+     "m": "leaf"
+    },
+    {
+     "h": "意见",
+     "p": "yìjiàn",
+     "pos": "n.",
+     "m": "opinion, suggestion"
+    },
+    {
+     "h": "引起",
+     "p": "yǐnqǐ",
+     "pos": "v.",
+     "m": "to cause, to lead to"
+    },
+    {
+     "h": "友好",
+     "p": "yǒuhǎo",
+     "pos": "adj.",
+     "m": "friendly"
+    },
+    {
+     "h": "语言",
+     "p": "yǔyán",
+     "pos": "n.",
+     "m": "language"
+    },
+    {
+     "h": "直接",
+     "p": "zhíjiē",
+     "pos": "adj.",
+     "m": "direct, straight"
+    },
+    {
+     "h": "仔细",
+     "p": "zǐxì",
+     "pos": "adj.",
+     "m": "careful, meticulous"
+    },
+    {
+     "h": "作用",
+     "p": "zuòyòng",
+     "pos": "n.",
+     "m": "function"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "并且",
+     "ex": "他做事很认真，并且有丰富的经验，让他负责很合适。"
+    },
+    {
+     "point": "再……也……",
+     "ex": "事情已经发生了，你再后悔也无法改变，别伤心了。"
+    },
+    {
+     "point": "对于",
+     "ex": "对于这件事，我跟大家的看法不同。"
+    },
+    {
+     "point": "名量词重叠",
+     "ex": "做好小事是完成大事的第一步，因此，件件小事都应该被看成是一次学习的机会。"
+    },
+    {
+     "point": "相反",
+     "ex": "调查结果和他们想的几乎完全相反，他们不得不改变原来的计划。"
+    }
+   ],
+   "partial": false,
+   "partialNote": ""
+  },
+  {
+   "n": 13,
+   "book": "4下",
+   "title": "喝着茶看京剧",
+   "en": "Drink tea while watching Beijing opera",
+   "texts": [
+    {
+     "n": 1,
+     "title": "小雨和小夏在聊小夏的爷爷表演京剧的情况",
+     "q": "小夏受了爷爷哪些影响？"
+    },
+    {
+     "n": 2,
+     "title": "小雨和马克在聊京剧",
+     "q": "马克学过京剧吗？他怎么学的？京剧给了马克哪些新的想法？"
+    },
+    {
+     "n": 3,
+     "title": "李老师和校长在谈工作",
+     "q": "为什么李老师想申请举办中国传统文化节活动？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "为什么国外的中国餐厅会提供使用筷子的详细说明？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "茶开始时被用来做什么？后来呢？广东人爱喝的凉茶是一种什么样的饮料？"
+    }
+   ],
+   "words": [
+    {
+     "h": "遍",
+     "p": "biàn",
+     "pos": "m.",
+     "m": "(an action from beginning to end) time"
+    },
+    {
+     "h": "表演",
+     "p": "biǎoyǎn",
+     "pos": "v.",
+     "m": "to act, to perform"
+    },
+    {
+     "h": "部分",
+     "p": "bùfen",
+     "pos": "n.",
+     "m": "part"
+    },
+    {
+     "h": "餐厅",
+     "p": "cāntīng",
+     "pos": "n.",
+     "m": "restaurant"
+    },
+    {
+     "h": "吃惊",
+     "p": "chī jīng",
+     "pos": "v.",
+     "m": "to be surprised, to be shocked"
+    },
+    {
+     "h": "错误",
+     "p": "cuòwù",
+     "pos": "adj.",
+     "m": "wrong"
+    },
+    {
+     "h": "大概",
+     "p": "dàgài",
+     "pos": "adv.",
+     "m": "roughly, approximately"
+    },
+    {
+     "h": "大约",
+     "p": "dàyuē",
+     "pos": "adv.",
+     "m": "approximately, about"
+    },
+    {
+     "h": "观众",
+     "p": "guānzhòng",
+     "pos": "n.",
+     "m": "audience"
+    },
+    {
+     "h": "厚",
+     "p": "hòu",
+     "pos": "adj.",
+     "m": "deep, profound"
+    },
+    {
+     "h": "互联网",
+     "p": "hùliánwǎng",
+     "pos": "n.",
+     "m": "Internet"
+    },
+    {
+     "h": "基础",
+     "p": "jīchǔ",
+     "pos": "n.",
+     "m": "basis, foundation"
+    },
+    {
+     "h": "继续",
+     "p": "jìxù",
+     "pos": "v.",
+     "m": "to go on, to continue"
+    },
+    {
+     "h": "进行",
+     "p": "jìnxíng",
+     "pos": "v.",
+     "m": "to conduct, to carry out"
+    },
+    {
+     "h": "京剧",
+     "p": "jīngjù",
+     "pos": "n.",
+     "m": "Beijing opera"
+    },
+    {
+     "h": "开心",
+     "p": "kāixīn",
+     "pos": "adj.",
+     "m": "happy, glad"
+    },
+    {
+     "h": "苦",
+     "p": "kǔ",
+     "pos": "adj.",
+     "m": "bitter"
+    },
+    {
+     "h": "来自",
+     "p": "láizì",
+     "pos": "v.",
+     "m": "to be from"
+    },
+    {
+     "h": "偶尔",
+     "p": "ǒu'ěr",
+     "pos": "adv.",
+     "m": "occasionally, once in a while"
+    },
+    {
+     "h": "普遍",
+     "p": "pǔbiàn",
+     "pos": "adj.",
+     "m": "universal, common"
+    },
+    {
+     "h": "稍微",
+     "p": "shāowēi",
+     "pos": "adv.",
+     "m": "a little, slightly"
+    },
+    {
+     "h": "申请",
+     "p": "shēnqǐng",
+     "pos": "v.",
+     "m": "to apply for"
+    },
+    {
+     "h": "省",
+     "p": "shěng",
+     "pos": "n.",
+     "m": "province"
+    },
+    {
+     "h": "十分",
+     "p": "shífēn",
+     "pos": "adv.",
+     "m": "very, extremely"
+    },
+    {
+     "h": "随着",
+     "p": "suízhe",
+     "pos": "prep.",
+     "m": "along with, as"
+    },
+    {
+     "h": "讨论",
+     "p": "tǎolùn",
+     "pos": "v.",
+     "m": "to discuss, to talk over"
+    },
+    {
+     "h": "演出",
+     "p": "yǎnchū",
+     "pos": "v.",
+     "m": "to perform, to put on (a show)"
+    },
+    {
+     "h": "演员",
+     "p": "yǎnyuán",
+     "pos": "n.",
+     "m": "actor/actress"
+    },
+    {
+     "h": "由",
+     "p": "yóu",
+     "pos": "prep.",
+     "m": "by (sb.)"
+    },
+    {
+     "h": "有趣",
+     "p": "yǒuqù",
+     "pos": "adj.",
+     "m": "interesting, fun"
+    },
+    {
+     "h": "正常",
+     "p": "zhèngcháng",
+     "pos": "adj.",
+     "m": "normal, regular"
+    },
+    {
+     "h": "纸袋",
+     "p": "zhǐdài",
+     "pos": "n.",
+     "m": "paper bag"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "大概",
+     "ex": "他8岁就开始上台演出，到现在大概唱了60多年了，他对这门艺术的热爱从来没有改变过。"
+    },
+    {
+     "point": "偶尔",
+     "ex": "三叶草的叶子一般为三个，但偶尔也会出现四个叶子的。"
+    },
+    {
+     "point": "由",
+     "ex": "按照规定，这件事情应该由王大夫负责。"
+    },
+    {
+     "point": "进行",
+     "ex": "有人在互联网上专门进行过调查，结果发现每六个中国人中就有一个使用筷子的方法是错误的。"
+    },
+    {
+     "point": "随着",
+     "ex": "随着社会的发展，京剧也在改变，以适应不同年龄观众的需要。"
+    }
+   ],
+   "partial": false,
+   "partialNote": ""
+  },
+  {
+   "n": 14,
+   "book": "4下",
+   "title": "保护地球母亲",
+   "en": "Protect our Mother Earth",
+   "texts": [
+    {
+     "n": 1,
+     "title": "李进要出差，王静和李进在聊天儿",
+     "q": ""
+    },
+    {
+     "n": 2,
+     "title": "经理和服务员在谈工作",
+     "q": "经理希望小王做什么？店里哪些地方需要打扫？"
+    },
+    {
+     "n": 3,
+     "title": "孙月和王静在聊关于环保的事情",
+     "q": "“地球一小时”是个什么活动？这个活动的目的是什么？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "塑料袋有什么好处？有什么坏处？怎样解决使用塑料袋带来的污染问题？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "我们需要注意哪些事情来保护地球环境？怎样才能使地球变得更美丽？"
+    }
+   ],
+   "words": [
+    {
+     "h": "抱歉",
+     "p": "bàoqiàn",
+     "pos": "v.",
+     "m": "to be sorry"
+    },
+    {
+     "h": "乘坐",
+     "p": "chéngzuò",
+     "pos": "v.",
+     "m": "to take (a vehicle), to ride"
+    },
+    {
+     "h": "出差",
+     "p": "chū chāi",
+     "pos": "v.",
+     "m": "to go on a business trip"
+    },
+    {
+     "h": "得意",
+     "p": "déyì",
+     "pos": "adj.",
+     "m": "complacent, gloating"
+    },
+    {
+     "h": "地球",
+     "p": "dìqiú",
+     "pos": "n.",
+     "m": "earth, globe"
+    },
+    {
+     "h": "丢",
+     "p": "diū",
+     "pos": "v.",
+     "m": "to throw, to cast"
+    },
+    {
+     "h": "鼓励",
+     "p": "gǔlì",
+     "pos": "v.",
+     "m": "to encourage"
+    },
+    {
+     "h": "盒子",
+     "p": "hézi",
+     "pos": "n.",
+     "m": "box, case"
+    },
+    {
+     "h": "既然",
+     "p": "jìrán",
+     "pos": "conj.",
+     "m": "since, as, now that"
+    },
+    {
+     "h": "减少",
+     "p": "jiǎnshǎo",
+     "pos": "v.",
+     "m": "to reduce, to decrease"
+    },
+    {
+     "h": "拒绝",
+     "p": "jùjué",
+     "pos": "v.",
+     "m": "to refuse, to reject"
+    },
+    {
+     "h": "空",
+     "p": "kōng",
+     "pos": "adj.",
+     "m": "empty"
+    },
+    {
+     "h": "垃圾桶",
+     "p": "lājītǒng",
+     "pos": "n.",
+     "m": "dustbin, trash can"
+    },
+    {
+     "h": "毛巾",
+     "p": "máojīn",
+     "pos": "n.",
+     "m": "towel"
+    },
+    {
+     "h": "美丽",
+     "p": "měilì",
+     "pos": "adj.",
+     "m": "beautiful"
+    },
+    {
+     "h": "目的",
+     "p": "mùdì",
+     "pos": "n.",
+     "m": "aim, purpose"
+    },
+    {
+     "h": "暖",
+     "p": "nuǎn",
+     "pos": "adj.",
+     "m": "warm"
+    },
+    {
+     "h": "扔",
+     "p": "rēng",
+     "pos": "v.",
+     "m": "to throw away"
+    },
+    {
+     "h": "省",
+     "p": "shěng",
+     "pos": "v.",
+     "m": "to save, to economize"
+    },
+    {
+     "h": "数量",
+     "p": "shùliàng",
+     "pos": "n.",
+     "m": "quantity, amount"
+    },
+    {
+     "h": "速度",
+     "p": "sùdù",
+     "pos": "n.",
+     "m": "speed"
+    },
+    {
+     "h": "塑料袋",
+     "p": "sùliàodài",
+     "pos": "n.",
+     "m": "plastic bag"
+    },
+    {
+     "h": "停",
+     "p": "tíng",
+     "pos": "v.",
+     "m": "to stop, to cease"
+    },
+    {
+     "h": "卫生间",
+     "p": "wèishēngjiān",
+     "pos": "n.",
+     "m": "restroom, bathroom"
+    },
+    {
+     "h": "温度",
+     "p": "wēndù",
+     "pos": "n.",
+     "m": "temperature"
+    },
+    {
+     "h": "污染",
+     "p": "wūrǎn",
+     "pos": "v.",
+     "m": "to pollute"
+    },
+    {
+     "h": "行",
+     "p": "xíng",
+     "pos": "v.",
+     "m": "to be OK, to be all right"
+    },
+    {
+     "h": "牙膏",
+     "p": "yágāo",
+     "pos": "n.",
+     "m": "toothpaste"
+    },
+    {
+     "h": "以",
+     "p": "yǐ",
+     "pos": "prep.",
+     "m": "via, by means of"
+    },
+    {
+     "h": "于是",
+     "p": "yúshì",
+     "pos": "conj.",
+     "m": "hence, therefore"
+    },
+    {
+     "h": "脏",
+     "p": "zāng",
+     "pos": "adj.",
+     "m": "dirty"
+    },
+    {
+     "h": "重",
+     "p": "zhòng",
+     "pos": "adj.",
+     "m": "heavy, weighty"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "够",
+     "ex": "不用拿这些，宾馆都会免费提供的。再说，箱子已经够重的了！"
+    },
+    {
+     "point": "以",
+     "ex": "经理您放心，我一定以最快的速度完成。"
+    },
+    {
+     "point": "既然",
+     "ex": "A：真抱歉，明天我得出差，不能参加明天的会议了。B：既然这样，就只好安排在下周了。"
+    },
+    {
+     "point": "于是",
+     "ex": "……它的大量使用也带来了严重的环境污染问题。于是，一些国家规定，超市、商场不能为顾客提供免费塑料袋。"
+    },
+    {
+     "point": "什么的",
+     "ex": "A：我们去趟超市吧，明天出去玩儿得买点儿饼干和面包。B：好，还有矿泉水、果汁什么的。"
+    }
+   ],
+   "partial": false,
+   "partialNote": ""
+  },
+  {
+   "n": 15,
+   "book": "4下",
+   "title": "教育孩子的艺术",
+   "en": "The art of educating children",
+   "texts": [
+    {
+     "n": 1,
+     "title": "李老师建议王静让孩子养成好习惯",
+     "q": "怎么理解“父母是孩子最重要的老师”这句话？"
+    },
+    {
+     "n": 2,
+     "title": "王静建议孙月教育孩子学会安排时间",
+     "q": "孙月常因为什么事情心情不好？"
+    },
+    {
+     "n": 3,
+     "title": "王静和孙月讨论表扬孩子的方法",
+     "q": "用表扬这种方式教育孩子时，应该注意哪些问题？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "有的孩子为什么故意乱扔东西？为什么有的孩子会说假话骗人？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "对教儿童的老师来说，怎么做才能让他们安静地学习？"
+    }
+   ],
+   "words": [
+    {
+     "h": "棒",
+     "p": "bàng",
+     "pos": "adj.",
+     "m": "excellent, amazing"
+    },
+    {
+     "h": "笨",
+     "p": "bèn",
+     "pos": "adj.",
+     "m": "stupid, foolish"
+    },
+    {
+     "h": "表扬",
+     "p": "biǎoyáng",
+     "pos": "v.",
+     "m": "to praise, to commend"
+    },
+    {
+     "h": "厕所",
+     "p": "cèsuǒ",
+     "pos": "n.",
+     "m": "lavatory, toilet"
+    },
+    {
+     "h": "粗心",
+     "p": "cūxīn",
+     "pos": "adj.",
+     "m": "careless, thoughtless"
+    },
+    {
+     "h": "打针",
+     "p": "dǎ zhēn",
+     "pos": "v.",
+     "m": "to give or have an injection"
+    },
+    {
+     "h": "儿童",
+     "p": "értóng",
+     "pos": "n.",
+     "m": "children"
+    },
+    {
+     "h": "父亲",
+     "p": "fùqīn",
+     "pos": "n.",
+     "m": "father"
+    },
+    {
+     "h": "赶",
+     "p": "gǎn",
+     "pos": "v.",
+     "m": "to rush for, to hurry"
+    },
+    {
+     "h": "故意",
+     "p": "gùyì",
+     "pos": "adv.",
+     "m": "intentionally, on purpose"
+    },
+    {
+     "h": "管理",
+     "p": "guǎnlǐ",
+     "pos": "v.",
+     "m": "to manage, to administer"
+    },
+    {
+     "h": "害羞",
+     "p": "hàixiū",
+     "pos": "v.",
+     "m": "to be shy, to be timid"
+    },
+    {
+     "h": "寒假",
+     "p": "hánjià",
+     "pos": "n.",
+     "m": "winter vacation"
+    },
+    {
+     "h": "合适",
+     "p": "héshì",
+     "pos": "adj.",
+     "m": "fit, suitable"
+    },
+    {
+     "h": "护士",
+     "p": "hùshi",
+     "pos": "n.",
+     "m": "nurse"
+    },
+    {
+     "h": "怀疑",
+     "p": "huáiyí",
+     "pos": "v.",
+     "m": "to suspect, to doubt"
+    },
+    {
+     "h": "假",
+     "p": "jiǎ",
+     "pos": "adj.",
+     "m": "false, fake"
+    },
+    {
+     "h": "骄傲",
+     "p": "jiāo'ào",
+     "pos": "adj.",
+     "m": "arrogant, conceited"
+    },
+    {
+     "h": "懒",
+     "p": "lǎn",
+     "pos": "adj.",
+     "m": "lazy"
+    },
+    {
+     "h": "弄",
+     "p": "nòng",
+     "pos": "v.",
+     "m": "to do, to make"
+    },
+    {
+     "h": "批评",
+     "p": "pīpíng",
+     "pos": "v.",
+     "m": "to criticize"
+    },
+    {
+     "h": "骗",
+     "p": "piàn",
+     "pos": "v.",
+     "m": "to cheat, to deceive"
+    },
+    {
+     "h": "千万",
+     "p": "qiānwàn",
+     "pos": "adv.",
+     "m": "must, to be sure to"
+    },
+    {
+     "h": "敲",
+     "p": "qiāo",
+     "pos": "v.",
+     "m": "to knock, to beat, to strike"
+    },
+    {
+     "h": "孙子",
+     "p": "sūnzi",
+     "pos": "n.",
+     "m": "grandson"
+    },
+    {
+     "h": "弹钢琴",
+     "p": "tán gāngqín",
+     "pos": "",
+     "m": "to play the piano"
+    },
+    {
+     "h": "响",
+     "p": "xiǎng",
+     "pos": "v.",
+     "m": "to sound, to ring"
+    },
+    {
+     "h": "醒",
+     "p": "xǐng",
+     "pos": "v.",
+     "m": "to wake up, to be awake"
+    },
+    {
+     "h": "整理",
+     "p": "zhěnglǐ",
+     "pos": "v.",
+     "m": "to tidy up, to arrange"
+    },
+    {
+     "h": "左右",
+     "p": "zuǒyòu",
+     "pos": "n.",
+     "m": "around, or so"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "想起来",
+     "ex": "我突然想起来得去银行，所以不能陪你去大使馆了。"
+    },
+    {
+     "point": "弄",
+     "ex": "每天因为这些小事批评她，弄得我俩心情都不好。"
+    },
+    {
+     "point": "千万",
+     "ex": "我要等她生日那天再送给她这个礼物，你现在千万别告诉她。"
+    },
+    {
+     "point": "来",
+     "ex": "小王经验比较丰富，并且做事认真，这次就让他来负责吧。"
+    },
+    {
+     "point": "左右",
+     "ex": "网上买的那本书估计三天左右就能到，你收到了记得给我打个电话说一声。"
+    }
+   ],
+   "partial": false,
+   "partialNote": ""
+  },
+  {
+   "n": 16,
+   "book": "4下",
+   "title": "生活可以更美好",
+   "en": "Life can be better",
+   "texts": [
+    {
+     "n": 1,
+     "title": "小夏出国留学遇到了问题",
+     "q": "如果想出国留学可能需要准备哪些材料？"
+    },
+    {
+     "n": 2,
+     "title": "王老板告诉李进自己成功的经验",
+     "q": "王老板怎么介绍自己的成功经验的？"
+    },
+    {
+     "n": 3,
+     "title": "小林不好意思拒绝朋友",
+     "q": "小李和小林两个人对“拒绝别人”有哪些不同的理解？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "对于“有什么事情明天再说”这句话，你认为正确吗？为什么？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "怎么理解“天外有天，人外有人”这句话？"
+    }
+   ],
+   "words": [
+    {
+     "h": "报名",
+     "p": "bào míng",
+     "pos": "v.",
+     "m": "to apply, to sign up"
+    },
+    {
+     "h": "表格",
+     "p": "biǎogé",
+     "pos": "n.",
+     "m": "form, table"
+    },
+    {
+     "h": "博士",
+     "p": "bóshì",
+     "pos": "n.",
+     "m": "doctor (academic degree)"
+    },
+    {
+     "h": "参观",
+     "p": "cānguān",
+     "pos": "v.",
+     "m": "to visit, to look around"
+    },
+    {
+     "h": "传真",
+     "p": "chuánzhēn",
+     "pos": "v.",
+     "m": "to send by fax"
+    },
+    {
+     "h": "导游",
+     "p": "dǎoyóu",
+     "pos": "n.",
+     "m": "tour guide"
+    },
+    {
+     "h": "到底",
+     "p": "dàodǐ",
+     "pos": "adv.",
+     "m": "(used in questions for emphasis) on earth"
+    },
+    {
+     "h": "敢",
+     "p": "gǎn",
+     "pos": "v.",
+     "m": "to dare"
+    },
+    {
+     "h": "挂",
+     "p": "guà",
+     "pos": "v.",
+     "m": "to hang, to put up"
+    },
+    {
+     "h": "号码",
+     "p": "hàomǎ",
+     "pos": "n.",
+     "m": "number"
+    },
+    {
+     "h": "激动",
+     "p": "jīdòng",
+     "pos": "adj.",
+     "m": "excited, emotional"
+    },
+    {
+     "h": "记者",
+     "p": "jìzhě",
+     "pos": "n.",
+     "m": "journalist, reporter"
+    },
+    {
+     "h": "郊区",
+     "p": "jiāoqū",
+     "pos": "n.",
+     "m": "suburb, outskirts"
+    },
+    {
+     "h": "恐怕",
+     "p": "kǒngpà",
+     "pos": "adv.",
+     "m": "(indicating an estimation) I guess…"
+    },
+    {
+     "h": "冷静",
+     "p": "lěngjìng",
+     "pos": "adj.",
+     "m": "calm, composed"
+    },
+    {
+     "h": "礼貌",
+     "p": "lǐmào",
+     "pos": "n.",
+     "m": "polite"
+    },
+    {
+     "h": "马虎",
+     "p": "mǎhu",
+     "pos": "adj.",
+     "m": "careless, slipshod"
+    },
+    {
+     "h": "签证",
+     "p": "qiānzhèng",
+     "pos": "n.",
+     "m": "visa"
+    },
+    {
+     "h": "失望",
+     "p": "shīwàng",
+     "pos": "v.",
+     "m": "disappointed"
+    },
+    {
+     "h": "输",
+     "p": "shū",
+     "pos": "v.",
+     "m": "to lose, to suffer defeat"
+    },
+    {
+     "h": "同情",
+     "p": "tóngqíng",
+     "pos": "v.",
+     "m": "to show sympathy for"
+    },
+    {
+     "h": "推",
+     "p": "tuī",
+     "pos": "v.",
+     "m": "to put off, to postpone"
+    },
+    {
+     "h": "小伙子",
+     "p": "xiǎohuǒzi",
+     "pos": "n.",
+     "m": "young man"
+    },
+    {
+     "h": "呀",
+     "p": "ya",
+     "pos": "part.",
+     "m": "variant of 啊, used at the end of a question to soften the tone"
+    },
+    {
+     "h": "预习",
+     "p": "yùxí",
+     "pos": "v.",
+     "m": "to prepare lessons before class"
+    },
+    {
+     "h": "原谅",
+     "p": "yuánliàng",
+     "pos": "v.",
+     "m": "to forgive"
+    },
+    {
+     "h": "重点",
+     "p": "zhòngdiǎn",
+     "pos": "n.",
+     "m": "focal point, emphasis"
+    },
+    {
+     "h": "重视",
+     "p": "zhòngshì",
+     "pos": "v.",
+     "m": "to attach importance to"
+    },
+    {
+     "h": "自信",
+     "p": "zìxìn",
+     "pos": "adj.",
+     "m": "self-confident"
+    },
+    {
+     "h": "尊重",
+     "p": "zūnzhòng",
+     "pos": "v.",
+     "m": "to respect"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "可",
+     "ex": "下个星期就要去使馆办签证了，这可怎么办？"
+    },
+    {
+     "point": "恐怕",
+     "ex": "我的工作经验还比较少，那份工作我恐怕完成不了。"
+    },
+    {
+     "point": "到底",
+     "ex": "你不是已经买好火车票了吗？你到底怎么打算的呀？"
+    },
+    {
+     "point": "拿……来说",
+     "ex": "这次招聘很多人符合公司的要求，拿他来说，他不仅专业符合职业要求，而且还有工作经验。"
+    },
+    {
+     "point": "敢",
+     "ex": "小时候我总喜欢躺在床上看书，结果眼睛越来越不好，所以从那以后我就不敢再躺着看书了。"
+    }
+   ],
+   "partial": false,
+   "partialNote": ""
+  },
+  {
+   "n": 17,
+   "book": "4下",
+   "title": "人与自然",
+   "en": "Humans and nature",
+   "texts": [
+    {
+     "n": 1,
+     "title": "小夏和安娜在聊天气",
+     "q": "现在是什么季节？天气怎么样？"
+    },
+    {
+     "n": 2,
+     "title": "小林和小李在聊小李的狗",
+     "q": "小林为什么喜欢小李的狗？他为什么也想养狗？"
+    },
+    {
+     "n": 3,
+     "title": "马克和小夏在聊动物",
+     "q": "马克什么时候去的北京动物园？他去那儿做什么了？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "植物之间会竞争吗？它们会为了什么而竞争？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "海洋在地球上占多大比例？海底世界里有什么？"
+    }
+   ],
+   "words": [
+    {
+     "h": "抱",
+     "p": "bào",
+     "pos": "v.",
+     "m": "to hold in the arms, to hug"
+    },
+    {
+     "h": "倒",
+     "p": "dào",
+     "pos": "adv.",
+     "m": "(indicating contrast) yet, actually"
+    },
+    {
+     "h": "底",
+     "p": "dǐ",
+     "pos": "n.",
+     "m": "bottom, base"
+    },
+    {
+     "h": "放暑假",
+     "p": "fàng shǔjià",
+     "pos": "",
+     "m": "to be on summer vacation"
+    },
+    {
+     "h": "干",
+     "p": "gàn",
+     "pos": "v.",
+     "m": "to do, to act"
+    },
+    {
+     "h": "公里",
+     "p": "gōnglǐ",
+     "pos": "m.",
+     "m": "kilometer"
+    },
+    {
+     "h": "广播",
+     "p": "guǎngbō",
+     "pos": "n.",
+     "m": "broadcast, radio program"
+    },
+    {
+     "h": "海洋",
+     "p": "hǎiyáng",
+     "pos": "n.",
+     "m": "sea, ocean"
+    },
+    {
+     "h": "活泼",
+     "p": "huópō",
+     "pos": "adj.",
+     "m": "lively, vivacious"
+    },
+    {
+     "h": "竞争",
+     "p": "jìngzhēng",
+     "pos": "v.",
+     "m": "to compete"
+    },
+    {
+     "h": "老虎",
+     "p": "lǎohǔ",
+     "pos": "n.",
+     "m": "tiger"
+    },
+    {
+     "h": "凉快",
+     "p": "liángkuai",
+     "pos": "adj.",
+     "m": "pleasantly cool"
+    },
+    {
+     "h": "毛",
+     "p": "máo",
+     "pos": "n.",
+     "m": "hair, fur"
+    },
+    {
+     "h": "梦",
+     "p": "mèng",
+     "pos": "n.",
+     "m": "dream"
+    },
+    {
+     "h": "难受",
+     "p": "nánshòu",
+     "pos": "adj.",
+     "m": "sad, unhappy"
+    },
+    {
+     "h": "暖和",
+     "p": "nuǎnhuo",
+     "pos": "adj.",
+     "m": "warm"
+    },
+    {
+     "h": "排队",
+     "p": "pái duì",
+     "pos": "v.",
+     "m": "to form a line, to line up"
+    },
+    {
+     "h": "排列",
+     "p": "páiliè",
+     "pos": "v.",
+     "m": "to put in order, to arrange"
+    },
+    {
+     "h": "热闹",
+     "p": "rènao",
+     "pos": "adj.",
+     "m": "busy, bustling"
+    },
+    {
+     "h": "仍然",
+     "p": "réngrán",
+     "pos": "adv.",
+     "m": "still, yet"
+    },
+    {
+     "h": "入口",
+     "p": "rùkǒu",
+     "pos": "n.",
+     "m": "entrance"
+    },
+    {
+     "h": "森林",
+     "p": "sēnlín",
+     "pos": "n.",
+     "m": "forest"
+    },
+    {
+     "h": "社会",
+     "p": "shèhuì",
+     "pos": "n.",
+     "m": "society"
+    },
+    {
+     "h": "剩",
+     "p": "shèng",
+     "pos": "v.",
+     "m": "to be left over, to remain"
+    },
+    {
+     "h": "趟",
+     "p": "tàng",
+     "pos": "m.",
+     "m": "(used for a round trip) time"
+    },
+    {
+     "h": "严格",
+     "p": "yángé",
+     "pos": "adj.",
+     "m": "strict, rigorous"
+    },
+    {
+     "h": "云",
+     "p": "yún",
+     "pos": "n.",
+     "m": "cloud"
+    },
+    {
+     "h": "照",
+     "p": "zhào",
+     "pos": "v.",
+     "m": "to take a picture, to photograph"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "倒",
+     "ex": "我以为坐出租车会快些，没想到倒比骑车还慢。"
+    },
+    {
+     "point": "干",
+     "ex": "每次你让它干什么，它就像能听懂你的话一样去做。"
+    },
+    {
+     "point": "趟",
+     "ex": "我要出趟差，你能帮我照顾一下我的小狗吗？"
+    },
+    {
+     "point": "为了……而……",
+     "ex": "植物会为了阳光、空气和水而竞争。"
+    },
+    {
+     "point": "仍然",
+     "ex": "人比动物聪明，但动物仍然有很多值得人学习的地方。"
+    }
+   ],
+   "partial": false,
+   "partialNote": ""
+  },
+  {
+   "n": 18,
+   "book": "4下",
+   "title": "科技与世界",
+   "en": "Science, technology and the world",
+   "texts": [
+    {
+     "n": 1,
+     "title": "王静给孙月推荐一本书",
+     "q": "王静给孙月推荐了一本什么书？为什么给她推荐这本书？"
+    },
+    {
+     "n": 2,
+     "title": "李老师和高老师在聊电脑和互联网技术的发展",
+     "q": "现在的大学生遇到不明白的问题怎么办？"
+    },
+    {
+     "n": 3,
+     "title": "王静和孙月在聊关于梦的情况",
+     "q": "人们对梦进行过哪些解释？目前的研究结果是什么？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "为什么说现代人的生活越来越离不开手机了？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "为什么人们把地球叫作“地球村”？"
+    }
+   ],
+   "words": [
+    {
+     "h": "安全",
+     "p": "ānquán",
+     "pos": "adj.",
+     "m": "safe, secure"
+    },
+    {
+     "h": "地点",
+     "p": "dìdiǎn",
+     "pos": "n.",
+     "m": "place, site"
+    },
+    {
+     "h": "地址",
+     "p": "dìzhǐ",
+     "pos": "n.",
+     "m": "address"
+    },
+    {
+     "h": "付款",
+     "p": "fù kuǎn",
+     "pos": "",
+     "m": "to pay a sum of money"
+    },
+    {
+     "h": "火",
+     "p": "huǒ",
+     "pos": "adj.",
+     "m": "hot, popular"
+    },
+    {
+     "h": "技术",
+     "p": "jìshù",
+     "pos": "n.",
+     "m": "technology"
+    },
+    {
+     "h": "降落",
+     "p": "jiàngluò",
+     "pos": "v.",
+     "m": "to descend, to land"
+    },
+    {
+     "h": "交通",
+     "p": "jiāotōng",
+     "pos": "n.",
+     "m": "traffic, communication"
+    },
+    {
+     "h": "接着",
+     "p": "jiēzhe",
+     "pos": "adv.",
+     "m": "then, immediately after that"
+    },
+    {
+     "h": "警察",
+     "p": "jǐngchá",
+     "pos": "n.",
+     "m": "police"
+    },
+    {
+     "h": "举",
+     "p": "jǔ",
+     "pos": "v.",
+     "m": "to give, to enumerate"
+    },
+    {
+     "h": "矿泉水",
+     "p": "kuàngquánshuǐ",
+     "pos": "n.",
+     "m": "mineral water"
+    },
+    {
+     "h": "迷路",
+     "p": "mí lù",
+     "pos": "v.",
+     "m": "to lose one's way"
+    },
+    {
+     "h": "密码",
+     "p": "mìmǎ",
+     "pos": "n.",
+     "m": "password"
+    },
+    {
+     "h": "秒",
+     "p": "miǎo",
+     "pos": "m.",
+     "m": "second, 1/60 minute"
+    },
+    {
+     "h": "桥",
+     "p": "qiáo",
+     "pos": "n.",
+     "m": "bridge"
+    },
+    {
+     "h": "日记",
+     "p": "rìjì",
+     "pos": "n.",
+     "m": "diary, journal"
+    },
+    {
+     "h": "世纪",
+     "p": "shìjì",
+     "pos": "n.",
+     "m": "century"
+    },
+    {
+     "h": "是否",
+     "p": "shìfǒu",
+     "pos": "adv.",
+     "m": "if, whether"
+    },
+    {
+     "h": "收",
+     "p": "shōu",
+     "pos": "v.",
+     "m": "to receive"
+    },
+    {
+     "h": "受不了",
+     "p": "shòubuliǎo",
+     "pos": "",
+     "m": "cannot stand, cannot bear"
+    },
+    {
+     "h": "网站",
+     "p": "wǎngzhàn",
+     "pos": "n.",
+     "m": "website"
+    },
+    {
+     "h": "危险",
+     "p": "wēixiǎn",
+     "pos": "adj.",
+     "m": "dangerous"
+    },
+    {
+     "h": "咸",
+     "p": "xián",
+     "pos": "adj.",
+     "m": "salty"
+    },
+    {
+     "h": "信封",
+     "p": "xìnfēng",
+     "pos": "n.",
+     "m": "envelope"
+    },
+    {
+     "h": "信息",
+     "p": "xìnxī",
+     "pos": "n.",
+     "m": "news, information"
+    },
+    {
+     "h": "邮局",
+     "p": "yóujú",
+     "pos": "n.",
+     "m": "post office"
+    },
+    {
+     "h": "允许",
+     "p": "yǔnxǔ",
+     "pos": "v.",
+     "m": "to allow, to permit"
+    },
+    {
+     "h": "作者",
+     "p": "zuòzhě",
+     "pos": "n.",
+     "m": "author"
+    },
+    {
+     "h": "座",
+     "p": "zuò",
+     "pos": "m.",
+     "m": "used for bridges, mountains, buildings"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "是否",
+     "ex": "不过她这么小，这本书我不知道她是否能读懂。"
+    },
+    {
+     "point": "受不了",
+     "ex": "不过天天对着电脑看，眼睛实在受不了。"
+    },
+    {
+     "point": "接着",
+     "ex": "这本书的内容非常有趣，你看完以后先不要还，我接着看。"
+    },
+    {
+     "point": "除此以外",
+     "ex": "他和弟弟同一天出生，兄弟俩长得很像，但除此以外几乎再找不到其他共同点。"
+    },
+    {
+     "point": "把……叫作……",
+     "ex": "黄河是中国第二大河，从中国西部流向东部，全长5464公里，人们把它叫作“母亲河”。"
+    }
+   ],
+   "partial": false,
+   "partialNote": ""
+  },
+  {
+   "n": 19,
+   "book": "4下",
+   "title": "生活的味道",
+   "en": "Taste of life",
+   "texts": [
+    {
+     "n": 1,
+     "title": "马克申请下个学期继续在学校学习",
+     "q": "填写申请表格时，应该提供哪些方面的信息？"
+    },
+    {
+     "n": 2,
+     "title": "课文2",
+     "q": "今天他们能吃到羊肉饺子吗？如果吃不到，他们会怎么办？"
+    },
+    {
+     "n": 3,
+     "title": "安娜帮助马克练习舞蹈动作",
+     "q": "马克的那个动作做得正确吗？那个动作应该怎么做？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "马克现在租的房子和广告上的房子各有哪些特点？马克为什么一直没联系上房东？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "“乒乓球”这个名字是怎么来的？"
+    }
+   ],
+   "words": [
+    {
+     "h": "包子",
+     "p": "bāozi",
+     "pos": "n.",
+     "m": "steamed stuffed bun"
+    },
+    {
+     "h": "场",
+     "p": "chǎng",
+     "pos": "m.",
+     "m": "used for sports or recreational events"
+    },
+    {
+     "h": "出生",
+     "p": "chūshēng",
+     "pos": "v.",
+     "m": "to be born"
+    },
+    {
+     "h": "厨房",
+     "p": "chúfáng",
+     "pos": "n.",
+     "m": "kitchen"
+    },
+    {
+     "h": "打印",
+     "p": "dǎyìn",
+     "pos": "v.",
+     "m": "to print out"
+    },
+    {
+     "h": "打招呼",
+     "p": "dǎ zhāohu",
+     "pos": "",
+     "m": "to greet, to say hello"
+    },
+    {
+     "h": "戴",
+     "p": "dài",
+     "pos": "v.",
+     "m": "to wear (accessories)"
+    },
+    {
+     "h": "刀",
+     "p": "dāo",
+     "pos": "n.",
+     "m": "knife"
+    },
+    {
+     "h": "道歉",
+     "p": "dào qiàn",
+     "pos": "v.",
+     "m": "to apologize"
+    },
+    {
+     "h": "房东",
+     "p": "fángdōng",
+     "pos": "n.",
+     "m": "landlord/landlady"
+    },
+    {
+     "h": "复印",
+     "p": "fùyìn",
+     "pos": "v.",
+     "m": "to photocopy"
+    },
+    {
+     "h": "胳膊",
+     "p": "gēbo",
+     "pos": "n.",
+     "m": "arm"
+    },
+    {
+     "h": "功夫",
+     "p": "gōngfu",
+     "pos": "n.",
+     "m": "kung fu"
+    },
+    {
+     "h": "国籍",
+     "p": "guójí",
+     "pos": "n.",
+     "m": "nationality, citizenship"
+    },
+    {
+     "h": "饺子",
+     "p": "jiǎozi",
+     "pos": "n.",
+     "m": "jiaozi, dumpling"
+    },
+    {
+     "h": "禁止",
+     "p": "jìnzhǐ",
+     "pos": "v.",
+     "m": "to prohibit, to forbid"
+    },
+    {
+     "h": "理发",
+     "p": "lǐ fà",
+     "pos": "v.",
+     "m": "to get a haircut"
+    },
+    {
+     "h": "零钱",
+     "p": "língqián",
+     "pos": "n.",
+     "m": "small change"
+    },
+    {
+     "h": "乒乓球",
+     "p": "pīngpāngqiú",
+     "pos": "n.",
+     "m": "table tennis, ping-pong"
+    },
+    {
+     "h": "破",
+     "p": "pò",
+     "pos": "adj.",
+     "m": "broken, torn"
+    },
+    {
+     "h": "抬",
+     "p": "tái",
+     "pos": "v.",
+     "m": "to lift, to raise"
+    },
+    {
+     "h": "脱",
+     "p": "tuō",
+     "pos": "v.",
+     "m": "to take off"
+    },
+    {
+     "h": "性别",
+     "p": "xìngbié",
+     "pos": "n.",
+     "m": "sex, gender"
+    },
+    {
+     "h": "学期",
+     "p": "xuéqī",
+     "pos": "n.",
+     "m": "term, semester"
+    },
+    {
+     "h": "眼镜",
+     "p": "yǎnjìng",
+     "pos": "n.",
+     "m": "glasses, spectacles"
+    },
+    {
+     "h": "羽毛球",
+     "p": "yǔmáoqiú",
+     "pos": "n.",
+     "m": "badminton"
+    },
+    {
+     "h": "占线",
+     "p": "zhànxiàn",
+     "pos": "v.",
+     "m": "(of a telephone line) to be busy"
+    },
+    {
+     "h": "转",
+     "p": "zhuǎn",
+     "pos": "v.",
+     "m": "to turn, to shift"
+    },
+    {
+     "h": "租",
+     "p": "zū",
+     "pos": "v.",
+     "m": "to rent, to lease"
+    },
+    {
+     "h": "座位",
+     "p": "zuòwèi",
+     "pos": "n.",
+     "m": "seat"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "疑问代词活用表示任指",
+     "ex": "“世界上没有免费的午餐”这句话是说，什么东西都要通过努力才能得到。"
+    },
+    {
+     "point": "上",
+     "ex": "现在堵车这么厉害，看来今天坐不上8点那趟去上海的飞机了。"
+    },
+    {
+     "point": "出来",
+     "ex": "你要的那篇文章我已经翻译出来了，你方便的时候就来取吧。"
+    },
+    {
+     "point": "总的来说",
+     "ex": "很多人问去丽江旅游怎么样，总的来说，丽江景色不错，那里的人也很热情，去那里旅游是个不错的选择。"
+    },
+    {
+     "point": "在于",
+     "ex": "选择职业的关键在于兴趣，当你喜欢做一件事情的时候，你会带着热情去工作。"
+    }
+   ],
+   "partial": true,
+   "partialNote": "课文2 的标题未能提取"
+  },
+  {
+   "n": 20,
+   "book": "4下",
+   "title": "路上的风景",
+   "en": "The view along the way",
+   "texts": [
+    {
+     "n": 1,
+     "title": "小张去北京，朋友送小张去机场",
+     "q": ""
+    },
+    {
+     "n": 2,
+     "title": "孙月和丈夫计划放寒假带女儿去旅行",
+     "q": "孙月和丈夫为什么想带女儿去旅行？他们准备去哪儿旅行？"
+    },
+    {
+     "n": 3,
+     "title": "安娜向马克介绍去丽江旅行的经验",
+     "q": "安娜这次去丽江找的那个导游怎么样？为什么丽江值得去旅游？"
+    },
+    {
+     "n": 4,
+     "title": "短文",
+     "q": "一个北方人跟上海人对话时，可能会遇到什么问题？"
+    },
+    {
+     "n": 5,
+     "title": "短文",
+     "q": "对“我”来说，旅行有哪些好处？旅行中什么东西给“我”的印象最深？"
+    }
+   ],
+   "words": [
+    {
+     "h": "出发",
+     "p": "chūfā",
+     "pos": "v.",
+     "m": "to depart, to set off"
+    },
+    {
+     "h": "存",
+     "p": "cún",
+     "pos": "v.",
+     "m": "to store, to keep"
+    },
+    {
+     "h": "打扮",
+     "p": "dǎban",
+     "pos": "v.",
+     "m": "to dress up, to deck out"
+    },
+    {
+     "h": "登机牌",
+     "p": "dēngjīpái",
+     "pos": "n.",
+     "m": "boarding pass"
+    },
+    {
+     "h": "对话",
+     "p": "duìhuà",
+     "pos": "v.",
+     "m": "to have a dialogue"
+    },
+    {
+     "h": "对面",
+     "p": "duìmiàn",
+     "pos": "n.",
+     "m": "opposite, across"
+    },
+    {
+     "h": "干杯",
+     "p": "gān bēi",
+     "pos": "v.",
+     "m": "to drink a toast"
+    },
+    {
+     "h": "高速公路",
+     "p": "gāosù gōnglù",
+     "pos": "",
+     "m": "expressway"
+    },
+    {
+     "h": "航班",
+     "p": "hángbān",
+     "pos": "n.",
+     "m": "scheduled flight"
+    },
+    {
+     "h": "合格",
+     "p": "hégé",
+     "pos": "adj.",
+     "m": "qualified, up to standard"
+    },
+    {
+     "h": "加油站",
+     "p": "jiāyóuzhàn",
+     "pos": "n.",
+     "m": "gas station"
+    },
+    {
+     "h": "究竟",
+     "p": "jiūjìng",
+     "pos": "adv.",
+     "m": "(used in questions for emphasis) exactly"
+    },
+    {
+     "h": "烤鸭",
+     "p": "kǎoyā",
+     "pos": "n.",
+     "m": "roast duck"
+    },
+    {
+     "h": "棵",
+     "p": "kē",
+     "pos": "m.",
+     "m": "used for plants"
+    },
+    {
+     "h": "可怜",
+     "p": "kělián",
+     "pos": "adj.",
+     "m": "pitiable, poor"
+    },
+    {
+     "h": "辣",
+     "p": "là",
+     "pos": "adj.",
+     "m": "hot, spicy"
+    },
+    {
+     "h": "旅行",
+     "p": "lǚxíng",
+     "pos": "v.",
+     "m": "to travel, to tour"
+    },
+    {
+     "h": "民族",
+     "p": "mínzú",
+     "pos": "n.",
+     "m": "nationality, ethnic group"
+    },
+    {
+     "h": "普通话",
+     "p": "pǔtōnghuà",
+     "pos": "n.",
+     "m": "Mandarin Chinese"
+    },
+    {
+     "h": "收拾",
+     "p": "shōushi",
+     "pos": "v.",
+     "m": "to put in order, to pack"
+    },
+    {
+     "h": "首都",
+     "p": "shǒudū",
+     "pos": "n.",
+     "m": "capital (of a country)"
+    },
+    {
+     "h": "酸",
+     "p": "suān",
+     "pos": "adj.",
+     "m": "sour, tart"
+    },
+    {
+     "h": "汤",
+     "p": "tāng",
+     "pos": "n.",
+     "m": "soup"
+    },
+    {
+     "h": "推迟",
+     "p": "tuīchí",
+     "pos": "v.",
+     "m": "to postpone, to delay"
+    },
+    {
+     "h": "香",
+     "p": "xiāng",
+     "pos": "adj.",
+     "m": "fragrant, scented"
+    },
+    {
+     "h": "小吃",
+     "p": "xiǎochī",
+     "pos": "n.",
+     "m": "small and cheap dishes, snacks"
+    },
+    {
+     "h": "笑话",
+     "p": "xiàohua",
+     "pos": "n.",
+     "m": "joke"
+    },
+    {
+     "h": "钥匙",
+     "p": "yàoshi",
+     "pos": "n.",
+     "m": "key"
+    },
+    {
+     "h": "祝贺",
+     "p": "zhùhè",
+     "pos": "v.",
+     "m": "to congratulate"
+    }
+   ],
+   "grammar": [
+    {
+     "point": "V+着+V+着",
+     "ex": "她讲着讲着自己就先笑了，而大家却不明白她到底为什么笑。"
+    },
+    {
+     "point": "一……就……",
+     "ex": "100年前，塑料一出现就受到人们的普遍欢迎。"
+    },
+    {
+     "point": "究竟",
+     "ex": "究竟哪个季节去丽江旅游比较好呢？"
+    },
+    {
+     "point": "起来",
+     "ex": "邻居小王最近一定遇到了很多开心的事，你听，他又唱起来了。"
+    },
+    {
+     "point": "V+起",
+     "ex": "聊起那场网球比赛，他们俩就兴奋得停不下来了。"
+    }
+   ],
+   "partial": false,
+   "partialNote": ""
+  }
+ ]
+}
