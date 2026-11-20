@@ -40,6 +40,10 @@ const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(
 const dayStr = (off: number) => { const d = new Date(); d.setDate(d.getDate() + off); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
 const dayDiff = (a: string, b: string) => Math.round((Date.parse(b + "T00:00:00") - Date.parse(a + "T00:00:00")) / 86400000);
 const fresh = (): St => ({ v: 2, pet: null, name: "", xp: 0, stars: 0, hearts: 0, happy: 70, owned: [], equip: { furn: [] }, lessons: [], ready: false, best: -1, day: today(), dayXp: 0, claims: {}, streak: 0, maxStreak: 0, lastDay: "", stats: { cards: 0, listen: 0, quiz100: 0, quiz: 0, rtest: 0, fed: 0, tasks: 0, checkins: 0, pq: 0, pq5: 0 }, gifts: [], stage: 0, born: Date.now(), minStage: 0, ciLast: "", ciStreak: 0, ciMax: 0, ciDays: [], pq: null, grads: [], gradDone: false, gradDate: "", earned: [] });
+// Pet name: blank names fall back to 宠物成长; known auto-inserted values (phone keyboard prediction / autofill, not typed on purpose) are corrected.
+export const DEFAULT_NAME = "宠物成长";
+const BAD_NAMES = ["经济建设"];
+export function petName(n: string | undefined | null): string { const t = String(n || "").replace(/\s+/g, " ").trim().slice(0, 12); return !t || BAD_NAMES.includes(t) ? DEFAULT_NAME : t; }
 // v1 → v2 migration: never demote a pet (minStage = old stage); carry the old activity streak into the check-in streak.
 function migrate(o: Record<string, unknown>): St {
   const base = fresh();
@@ -50,6 +54,8 @@ function migrate(o: Record<string, unknown>): St {
     if (ld && dayDiff(ld, t) <= 1 && Number(o.streak || 0) > 0) { m.ciStreak = Number(o.streak); m.ciLast = ld === t ? dayStr(-1) : ld; m.ciMax = Math.max(Number(o.maxStreak || 0), m.ciStreak); }
     else m.ciMax = Number(o.maxStreak || 0);
   }
+  if (m.pet) m.name = petName(m.name);
+  m.grads = (m.grads || []).map((g) => ({ ...g, name: petName(g.name) }));
   return m;
 }
 function load(): St { try { const r = window.localStorage.getItem(KEY); if (r) return migrate(JSON.parse(r)); } catch (e) { /* storage unavailable */ } return fresh(); }
@@ -185,7 +191,8 @@ export function pqFinish() {
 }
 
 // ---------- graduation → adopt the next pet ----------
-export function adopt(kind: Kind, name: string) {
+export function adopt(kind: Kind, rawName: string) {
+  const name = petName(rawName);
   if (!S.pet) { S = { ...fresh(), ...(S.grads.length ? keepAcross() : {}), pet: kind, name, born: Date.now() }; save(); return; }
   if (!S.gradDone) return;
   S.grads = [...S.grads, { pet: S.pet, name: S.name, equip: S.equip, date: S.gradDate || today(), xp: S.xp, born: S.born }];
@@ -274,6 +281,8 @@ export function PetTab() {
   const [msg, setMsg] = useState("");
   const [pop, setPop] = useState(0);
   const [adopting, setAdopting] = useState(false);
+  const [renaming, setRenaming] = useState(false);
+  const [rn, setRn] = useState("");
   const st = stageOf(s); const mood = moodOf(s);
   useEffect(() => { if (s.pet && st !== s.stage) { S.stage = st; save(); } if (s.pet && st >= 4 && !s.gradDone) { graduate(); save(); } }, [st]);
   if (!s.pet || adopting) {
@@ -294,10 +303,10 @@ export function PetTab() {
           ))}
         </div>
         <label style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: 13, color: "#8f2160", fontWeight: 700 }}>{L3("名字", "Tên", "Name")}
-          <input value={name} maxLength={12} onChange={(e) => setName(e.target.value)} placeholder={VI ? "ví dụ: 小美, Bông, Mochi…" : "e.g. 小美, Mochi…"} style={{ padding: "10px 14px", borderRadius: 16, border: "1.5px solid rgba(232,85,154,0.3)", fontSize: 16, fontFamily: "inherit" }} />
+          <input value={name} maxLength={12} name="hsk4-pet-nickname" autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck={false} onChange={(e) => setName(e.target.value)} placeholder={VI ? `Để trống = «${DEFAULT_NAME}» · ví dụ: 小美, Bông, Mochi…` : `Leave blank for «${DEFAULT_NAME}» · e.g. 小美, Mochi…`} style={{ padding: "10px 14px", borderRadius: 16, border: "1.5px solid rgba(232,85,154,0.3)", fontSize: 16, fontFamily: "inherit" }} />
         </label>
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-          <button className="adopt-go" disabled={!name.trim()} onClick={() => { const first = !s.pet; adopt(pick, name.trim()); setAdopting(false); setName(""); if (first) { const l = say("egg"); if (l) setLine(l); } }} style={{ ...btn(true), opacity: name.trim() ? 1 : 0.5, padding: "11px 20px", fontSize: 15 }}>💗 {L3("领养", "Nhận nuôi", "Adopt")}</button>
+          <button className="adopt-go" onClick={() => { const first = !s.pet; adopt(pick, name.trim()); setAdopting(false); setName(""); if (first) { const l = say("egg"); if (l) setLine(l); } }} style={{ ...btn(true), padding: "11px 20px", fontSize: 15 }}>💗 {L3("领养", "Nhận nuôi", "Adopt")}</button>
           {next ? <button onClick={() => setAdopting(false)} style={btn()}>{VI ? "Để sau" : "Later"}</button> : null}
         </div>
         {next ? null : <ImportBox code={code} setCode={setCode} msg={msg} setMsg={setMsg} />}
@@ -323,7 +332,10 @@ export function PetTab() {
         <div style={{ flex: "1 1 240px", minWidth: 0, display: "flex", flexDirection: "column", gap: 10 }}>
           <div style={{ ...box }}>
             <div style={{ display: "flex", alignItems: "baseline", gap: 8, flexWrap: "wrap" }}>
-              <span lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontSize: 22, fontWeight: 800, color: "#8f2160" }}>{s.name}</span>
+              {renaming
+                ? <span style={{ display: "inline-flex", gap: 6, alignItems: "center" }}><input className="rename-in" value={rn} maxLength={12} autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck={false} onChange={(e) => setRn(e.target.value)} placeholder={DEFAULT_NAME} style={{ width: 130, padding: "6px 10px", borderRadius: 12, border: "1.5px solid rgba(232,85,154,0.35)", fontSize: 16, fontFamily: "inherit" }} /><button className="rename-ok" onClick={() => { S.name = petName(rn); save(); setRenaming(false); }} style={{ ...btn(true), padding: "6px 12px", fontSize: 13 }}>OK</button></span>
+                : <span className="pet-name" lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontSize: 22, fontWeight: 800, color: "#8f2160" }}>{s.name}</span>}
+              {renaming ? null : <button className="rename" aria-label={VI ? "Đổi tên" : "Rename"} title={VI ? "Đổi tên" : "Rename"} onClick={() => { setRn(s.name); setRenaming(true); }} style={{ border: "none", background: "transparent", cursor: "pointer", fontSize: 15, padding: 2 }}>✏️</button>}
               <span style={{ fontSize: 12, fontWeight: 800, color: "#fff", background: "linear-gradient(135deg,#ff8cc0,#c58bff)", borderRadius: 9999, padding: "3px 10px" }}>{STAGES[st].zh} · {VI ? STAGES[st].vi : STAGES[st].en}</span>
             </div>
             <div style={{ fontSize: 13, color: "#6b3a63", marginTop: 8 }}>XP {s.xp}{st < 4 ? ` / ${next.xp}` : ""}</div>
