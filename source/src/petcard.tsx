@@ -111,21 +111,21 @@ export function TeacherView({ vi }: { vi: boolean }) {
   res.forEach((r) => { if (!r.ok || !r.row) return; const k = (r.row.n + "|" + r.row.c).toLowerCase(); if (!best[k] || r.row.d >= best[k].d) best[k] = r.row; });
   const rows = Object.values(best).sort((a, b) => a.c.localeCompare(b.c) || b.l - a.l || a.n.localeCompare(b.n));
   const bad = res.filter((r) => !r.ok);
-  const H = vi ? ["Tên", "Lớp", "Thú cưng", "Giai đoạn", "Bài đã qua", "Test tốt nhất", "Chuỗi", "Huy hiệu", "🎓", "Ngày"] : ["Name", "Class", "Pet", "Stage", "Lessons", "Best test", "Streak", "Badges", "🎓", "Date"];
-  const csv = () => { const lines = [H.join(","), ...rows.map((r) => [r.n, r.c, `${r.pn} (${r.kz})`, r.stz, r.l, r.bn ? `${r.b}/${r.bn}` : "", r.s, Array.from(r.bd).length, r.g, r.d].map((x) => `"${String(x).replace(/"/g, '""')}"`).join(","))]; const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob(["\ufeff" + lines.join("\n")], { type: "text/csv" })); a.download = "hsk4-class.csv"; a.click(); };
+  void vi; const H = ["姓名", "班级", "宠物", "成长阶段", "已过课数", "随机测试最高分", "连续打卡", "徽章", "已毕业宠物", "日期"];
+  const csv = () => { const lines = [H.join(","), ...rows.map((r) => [r.n, r.c, `${r.pn} (${r.kz})`, r.stz, r.l, r.bn ? `${r.b}/${r.bn}` : "", r.s, Array.from(r.bd).length, r.g, r.d].map((x) => `"${String(x).replace(/"/g, '""')}"`).join(","))]; const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob(["\ufeff" + lines.join("\n")], { type: "text/csv" })); a.download = "HSK4班级成绩.csv"; a.click(); };
   const td = { padding: "6px 8px", borderBottom: "1px solid #fde8f3", whiteSpace: "nowrap" } as const;
   return (
-    <section id="teacher-top" className="teacher" style={{ ...box, display: "flex", flexDirection: "column", gap: 10, marginBottom: 14 }}>
-      <h2 style={{ margin: 0, fontSize: 20, fontWeight: 800, color: "#8f2160" }}>👩‍🏫 {vi ? "教师视图 · Trang giáo viên" : "教师视图 · Teacher view"}</h2>
-      <div style={{ fontSize: 13, color: "#6b3a63", lineHeight: "20px" }}>{vi ? "Dán các tin nhắn/mã thẻ học viên gửi (mỗi mã bắt đầu bằng HSK4C1.). Có thể dán nhiều mã cùng lúc, kể cả cả đoạn tin nhắn Zalo. Mã bị sửa sẽ bị đánh dấu ⚠." : "Paste the messages/card codes students send (each starts with HSK4C1.). You can paste many at once, even whole Zalo messages. Edited codes are flagged ⚠."}</div>
-      <textarea className="teacher-in" value={txt} onChange={(e) => setTxt(e.target.value)} rows={5} placeholder="HSK4C1.…" style={{ width: "100%", borderRadius: 14, border: "1.5px solid rgba(232,85,154,0.3)", padding: 8, fontSize: 12.5, fontFamily: "ui-monospace, monospace" }} />
-      <div style={{ fontSize: 13, color: "#8f2160" }}>{vi ? `${rows.length} học viên hợp lệ` : `${rows.length} valid students`}{bad.length ? ` · ⚠ ${bad.length} ${vi ? "mã không hợp lệ/bị sửa" : "invalid/edited code(s)"}` : ""}{rows.length ? <button onClick={csv} style={{ ...btn(), marginLeft: 8, padding: "4px 10px", fontSize: 12 }}>CSV</button> : null}</div>
+    <section id="teacher-top" className="teacher" lang="zh-Hans" style={{ ...box, fontFamily: ZH_FONT, display: "flex", flexDirection: "column", gap: 10, marginBottom: 14 }}>
+      <h2 style={{ margin: 0, fontSize: 20, fontWeight: 800, color: "#8f2160" }}>👩‍🏫 教师视图 · 班级成绩汇总</h2>
+      <div style={{ fontSize: 13, color: "#6b3a63", lineHeight: "20px" }}>请把学生发来的消息或成绩卡代码粘贴到下面（每个代码以 HSK4C1. 开头）。可以一次粘贴多个，整段 Zalo / Messenger 消息也可以。系统会自动识别、去重（同一姓名+班级只保留最新一张），并按班级排序。被修改过的代码会标记 ⚠ 。</div>
+      <textarea className="teacher-in" value={txt} onChange={(e) => setTxt(e.target.value)} rows={5} placeholder="在这里粘贴学生的成绩卡代码 HSK4C1.…" style={{ width: "100%", borderRadius: 14, border: "1.5px solid rgba(232,85,154,0.3)", padding: 8, fontSize: 12.5, fontFamily: "ui-monospace, monospace" }} />
+      <div style={{ fontSize: 13, color: "#8f2160" }}>{`有效学生：${rows.length} 人`}{bad.length ? ` · ⚠ 无效或被修改的代码：${bad.length} 个` : ""}{rows.length ? <button onClick={csv} style={{ ...btn(), marginLeft: 8, padding: "4px 10px", fontSize: 12 }}>下载 CSV 表格</button> : null}</div>
       {rows.length ? <div style={{ overflowX: "auto" }}><table className="teacher-table" style={{ borderCollapse: "collapse", fontSize: 13, color: "#5a3a5f", minWidth: "100%" }}>
         <thead><tr>{H.map((h) => <th key={h} style={{ ...td, textAlign: "left", color: "#8f2160", background: "#fff3f9" }}>{h}</th>)}</tr></thead>
-        <tbody>{rows.map((r, i) => <tr key={i}><td style={{ ...td, fontWeight: 800 }}>{r.n}</td><td style={td}>{r.c || "—"}</td><td style={td}><span lang="zh-Hans" style={{ fontFamily: ZH_FONT }}>{r.pn} · {r.kz}</span></td><td style={td}><span lang="zh-Hans" style={{ fontFamily: ZH_FONT }}>{r.stz}</span></td><td style={td}>{r.l}/20</td><td style={td}>{r.bn ? `${r.b}/${r.bn}` : "—"}</td><td style={td}>🔥{r.s}</td><td style={td}>{Array.from(r.bd).length}</td><td style={td}>{r.g}</td><td style={td}>{r.d}</td></tr>)}</tbody>
+        <tbody>{rows.map((r, i) => <tr key={i}><td style={{ ...td, fontWeight: 800 }}>{r.n}</td><td style={td}>{r.c || "（无）"}</td><td style={td}><span lang="zh-Hans" style={{ fontFamily: ZH_FONT }}>{r.pn} · {r.kz}</span></td><td style={td}><span lang="zh-Hans" style={{ fontFamily: ZH_FONT }}>{r.stz}</span></td><td style={td}>{r.l} / 20 课</td><td style={td}>{r.bn ? `${r.b}/${r.bn}` : "—"}</td><td style={td}>🔥{r.s} 天</td><td style={td}>{Array.from(r.bd).length}</td><td style={td}>{r.g}</td><td style={td}>{r.d}</td></tr>)}</tbody>
       </table></div> : null}
-      {bad.length ? <div className="teacher-bad" style={{ fontSize: 12, color: "#b0306a" }}>{bad.map((b) => <div key={b.raw}>⚠ {b.raw.slice(0, 40)}…</div>)}</div> : null}
-      <a href="?" style={{ fontSize: 12, color: "#a0507f" }}>← {vi ? "Quay lại" : "Back"}</a>
+      {bad.length ? <div className="teacher-bad" style={{ fontSize: 12, color: "#b0306a" }}>{bad.map((b) => <div key={b.raw}>⚠ 无效或被修改：{b.raw.slice(0, 40)}…</div>)}</div> : null}
+      <a href="?" style={{ fontSize: 12, color: "#a0507f" }}>← 返回宠物页面（关闭教师视图）</a>
     </section>
   );
 }
