@@ -1231,7 +1231,7 @@ export default function App() {
       {tab === "lessons" ? (
         <Section heading={`第${L}课 ${title[0]} · Bài ${L}: ${title[1]}`} caption={`${L <= 10 ? "4上 · Quyển 4 Thượng" : "4下 · Quyển 4 Hạ"} · ${lw.length} 个生词 · ${lw.length} từ mới`}>
           <Select label="选择课 · Chọn bài" options={lessonOpts} value={lesson} onChange={(v: string) => { setLesson(v); }} />
-          <Segmented options={[{ value: "words", label: "生词 · Từ mới", count: lw.length }, { value: "cards", label: "闪卡 · Thẻ từ" }, { value: "grammar", label: "语言点 · Ngữ pháp" }, { value: "texts", label: "课文文章 · Bài khóa" }]} value={view} onChange={(v: string) => setView(v)} />
+          <Segmented options={[{ value: "words", label: "生词 · Từ mới", count: lw.length }, { value: "cards", label: "闪卡 · Thẻ từ" }, { value: "grammar", label: "语言点 · Ngữ pháp" }, { value: "texts", label: "课文 · Bài khóa" }]} value={view} onChange={(v: string) => setView(v)} />
           {view === "words" ? (
             <Table columns={["汉字 · Chữ Hán", "拼音 · Pinyin", "词性 · Từ loại", "越南语 · Nghĩa tiếng Việt"]} rows={lw.map((w: Word) => [<span style={{ display: "inline-flex", alignItems: "center", gap: 8, whiteSpace: "nowrap" }}><SpeakBtn items={wordAudio(w.h)} k={"w:" + w.h} size={28} /><span lang="zh-Hans" style={{ fontSize: 17 }}>{w.h}</span></span>, w.p, w.pos || "—", <MeaningCell v={w.v} hv={w.hv} />])} align={["start", "start", "start", "start"]} />
           ) : null}

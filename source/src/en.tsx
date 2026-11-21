@@ -1170,7 +1170,7 @@ export default function App() {
       {tab === "lessons" ? (
         <Section heading={`第${L}课 ${title[0]}`} caption={`${title[1]} · ${L <= 10 ? "4上" : "4下"} · ${lw.length} 个生词`}>
           <Select label="选择课" options={lessonOpts} value={lesson} onChange={(v: string) => { setLesson(v); }} />
-          <Segmented options={[{ value: "words", label: "生词", count: lw.length }, { value: "cards", label: "闪卡" }, { value: "grammar", label: "语言点" }, { value: "texts", label: "课文文章" }]} value={view} onChange={(v: string) => setView(v)} />
+          <Segmented options={[{ value: "words", label: "生词", count: lw.length }, { value: "cards", label: "闪卡" }, { value: "grammar", label: "语言点" }, { value: "texts", label: "课文" }]} value={view} onChange={(v: string) => setView(v)} />
           {view === "words" ? (
             <Table columns={["汉字", "拼音", "词性", "释义"]} rows={lw.map((w: Word) => [<span style={{ display: "inline-flex", alignItems: "center", gap: 8, whiteSpace: "nowrap" }}><SpeakBtn items={wordAudio(w.h)} k={"w:" + w.h} size={28} /><span lang="zh-Hans" style={{ fontSize: 17 }}>{w.h}</span></span>, w.p, w.pos || "—", w.m])} align={["start", "start", "start", "start"]} />
           ) : null}
