@@ -1,23 +1,49 @@
 // 课文 reader: original practice texts (written for this site) with toggleable pinyin and translation.
 import { useState, useEffect, ZH_FONT, Sparkle } from "./kit";
-import type { ReactNode } from "./kit";
+import type { ReactNode, CSSProperties } from "./kit";
 import { SpeakBtn, useSpeaking } from "./audio";
 import { petEvent } from "./pet";
 
 type Line = { s: string; sp: string[]; t: string; p: string[]; vi: string; en: string };
-type Txt = { n: number; zh: string; vi: string; en: string; lines: Line[] };
+type Txt = { n: number; zh: string; vi: string; en: string; kw?: string[]; lines: Line[] };
 type Lesson = { l: number; texts: Txt[] };
 declare const HSK_TEXTS: Lesson[];
 const DATA: Lesson[] = typeof HSK_TEXTS !== "undefined" ? HSK_TEXTS : [];
 const KEY = "hsk4-reader-v1";
 
-function Ruby({ text, py, show, size }: { text: string; py: string[]; show: boolean; size: number }) {
-  if (!show) return <span>{text}</span>;
-  const out: ReactNode[] = [];
-  Array.from(text).forEach((ch, i) => {
+function markAt(text: string, words: string[]): boolean[] {
+  const hl = new Array(Array.from(text).length).fill(false);
+  const list = [...words].filter((w) => w).sort((a, b) => b.length - a.length);
+  for (const w of list) {
+    let from = 0;
+    while (from <= text.length - w.length) {
+      const k = text.indexOf(w, from);
+      if (k < 0) break;
+      const chars = Array.from(text.slice(0, k)).length;
+      const n = Array.from(w).length;
+      if (hl.slice(chars, chars + n).every((x) => !x)) for (let i = 0; i < n; i++) hl[chars + i] = true;
+      from = k + Math.max(1, w.length);
+    }
+  }
+  return hl;
+}
+const KW_STYLE: CSSProperties = { fontWeight: 800, color: "#6a1848", background: "linear-gradient(180deg, #fff3a8 0%, #ffd2e8 100%)", borderRadius: 5, padding: "0 2px", boxShadow: "inset 0 -2px 0 rgba(232,85,154,0.28)", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" };
+function Ruby({ text, py, show, size, marks }: { text: string; py: string[]; show: boolean; size: number; marks?: string[] }) {
+  const chars = Array.from(text);
+  const hl = marks && marks.length ? markAt(text, marks) : chars.map(() => false);
+  const glyph = (ch: string, i: number) => {
     const p = py[i] ?? "";
-    out.push(p ? <ruby key={i}>{ch}<rt style={{ fontSize: Math.max(11, Math.round(size * 0.5)), color: "#c0447f", fontFamily: "ui-rounded, system-ui, sans-serif", fontWeight: 500, letterSpacing: 0 }}>{p}</rt></ruby> : <span key={i}>{ch}</span>);
-  });
+    return show && p ? <ruby key={i}>{ch}<rt style={{ fontSize: Math.max(11, Math.round(size * 0.5)), color: "#c0447f", fontFamily: "ui-rounded, system-ui, sans-serif", fontWeight: 500, letterSpacing: 0 }}>{p}</rt></ruby> : <span key={i}>{ch}</span>;
+  };
+  const out: ReactNode[] = [];
+  let i = 0;
+  while (i < chars.length) {
+    if (hl[i]) {
+      let j = i + 1; while (j < chars.length && hl[j]) j++;
+      out.push(<strong key={i} style={KW_STYLE}>{chars.slice(i, j).map((ch, k) => glyph(ch, i + k))}</strong>);
+      i = j;
+    } else { out.push(glyph(chars[i], i)); i++; }
+  }
   return <>{out}</>;
 }
 
@@ -92,7 +118,7 @@ export function Reader({ lang, titles }: { lang: "vi" | "en"; titles: [string, s
                 <div key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start", borderRadius: 14, padding: "4px 6px", margin: "0 -6px", background: cur === `t:${st.l}_${tx.n}_${i}` ? "rgba(255,200,225,0.45)" : "transparent", transition: "background .2s" }}>
                   {ln.s ? <span lang="zh-Hans" style={{ flex: "0 0 auto", marginTop: st.py ? Math.round(size * 0.55) : 4, fontFamily: ZH_FONT, fontSize: 14, fontWeight: 700, color: "#fff", background: ln.s === "阿玲" ? "#f07ab3" : ln.s === "小雪" ? "#a98bf0" : "#ffa877", borderRadius: 12, padding: "3px 8px", whiteSpace: "nowrap" }}>{ln.s}</span> : null}
                   <div style={{ minWidth: 0, flex: 1 }}>
-                    <p lang="zh-Hans" style={{ margin: 0, fontFamily: ZH_FONT, fontSize: size, lineHeight: st.py ? `${Math.round(size * 2.15)}px` : `${Math.round(size * 1.65)}px`, color: "#2f1b37", textIndent: ln.s ? 0 : "2em", wordBreak: "break-all" }}><Ruby text={ln.t} py={ln.p} show={st.py} size={size} /></p>
+                    <p lang="zh-Hans" style={{ margin: 0, fontFamily: ZH_FONT, fontSize: size, lineHeight: st.py ? `${Math.round(size * 2.15)}px` : `${Math.round(size * 1.65)}px`, color: "#2f1b37", textIndent: ln.s ? 0 : "2em", wordBreak: "break-all" }}><Ruby text={ln.t} py={ln.p} show={st.py} size={size} marks={tx.kw} /></p>
                     {st.tr ? <p style={{ margin: "4px 0 0", fontSize: 15, lineHeight: "23px", color: "#7a4a72" }}>{vi ? ln.vi : ln.en}</p> : null}
                   </div>
                   <span style={{ marginTop: st.py ? Math.round(size * 0.5) : 2 }}><SpeakBtn items={[lineItem(tx, i)]} k={`t:${st.l}_${tx.n}_${i}`} size={30} label={vi ? "Nghe câu này" : "Play sentence"} /></span>

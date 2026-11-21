@@ -1,5 +1,6 @@
 ## 1
 # 1 对话：阿玲和小雪聊阿玲的男朋友 | Hội thoại: A Linh và Tiểu Tuyết nói về bạn trai của A Linh | Dialogue: A Linh and Xiaoxue talk about A Linh's boyfriend
+@ 法律，俩，印象，深，熟悉，不仅，性格
 小雪：阿玲，听说你男朋友周南跟你一个学校，他是你同学吗？
 = A Linh, nghe nói bạn trai cậu là Châu Nam học cùng trường với cậu, anh ấy là bạn cùng lớp à?
 ~ A Linh, I heard your boyfriend Zhou Nan goes to the same university as you. Is he in your class?
@@ -19,6 +20,7 @@
 = Không chỉ vậy. Anh ấy không những giảng được luật khó một cách rõ ràng, tính cách cũng rất điềm tĩnh, ở bên anh ấy mình cảm thấy yên tâm.
 ~ It's not just that. He can not only explain difficult points of law clearly, he also has a steady character, and I feel at ease with him.
 # 2 对话：阿玲告诉小雪她准备结婚 | Hội thoại: A Linh nói với Tiểu Tuyết là mình định kết hôn | Dialogue: A Linh tells Xiaoxue she plans to get married
+@ 开玩笑，从来，最好，共同，适合，幸福
 阿玲：小雪，我想先告诉你一件事：我和周南准备今年冬天结婚。
 = Tiểu Tuyết, mình muốn nói trước với cậu một chuyện: mình và Châu Nam định kết hôn vào mùa đông năm nay.
 ~ Xiaoxue, I want to tell you something first: Zhou Nan and I are planning to get married this winter.
@@ -38,6 +40,7 @@
 = Nghe cậu kể vậy, mình đúng là mừng cho cậu. Mong hai người mãi hạnh phúc như vậy.
 ~ Hearing you say this, I'm genuinely happy for you. I hope you two stay this happy.
 # 3 对话：林阿姨和赵阿姨聊婚后的日子 | Hội thoại: Thím Lâm và thím Triệu nói về cuộc sống sau khi cưới | Dialogue: Aunt Lin and Aunt Zhao talk about married life
+@ 生活，刚，浪漫，够，缺点，接受
 林阿姨：赵阿姨，听说您结婚快十五年了？
 = Thím Triệu, nghe nói thím kết hôn gần mười lăm năm rồi phải không?
 ~ Aunt Zhao, I heard you've been married for almost fifteen years?
@@ -57,110 +60,304 @@
 = Ở bên nhau lâu, ai cũng có chỗ làm đối phương không dễ chịu. Chấp nhận những điều đó, sống ngày tháng cho bình lặng, sẽ nhẹ nhàng hơn.
 ~ When you've been together a long time, everyone has something that makes the other uncomfortable. Accept that, and live the days more calmly, and it will feel easier.
 # 4 短文：生活里的小浪漫 | Đoạn văn: Chút lãng mạn trong đời thường | Passage: The small romances in everyday life
+@ 羡慕，爱情，星星，即使，加班，亮，感动
 很多人羡慕电影里的爱情，总觉得那才够浪漫。可我现在慢慢发现，真正留下来的往往是很小的事。有一次停电，爸爸指着窗外的星星给弟弟讲故事；还有一天，我即使加班到很晚，回到家也还能看见桌上那碗热汤。最让我感动的，是父母晚饭后去散步，路灯已经亮了，他们还是走得很慢，像是要把一天里没说完的话，慢慢补回来。
 = Nhiều người ngưỡng mộ tình yêu trong phim, cứ nghĩ thế mới đủ lãng mạn. Nhưng giờ tôi dần nhận ra, những gì thật sự còn lại thường là chuyện rất nhỏ. Có lần mất điện, bố chỉ lên những ngôi sao ngoài cửa sổ kể chuyện cho em trai; còn có một ngày, dù tôi tăng ca đến rất muộn, về nhà vẫn thấy trên bàn bát canh nóng ấy. Điều khiến tôi cảm động nhất là bố mẹ đi dạo sau bữa tối, đèn đường đã sáng họ vẫn đi rất chậm, như muốn lấy lại những câu cả ngày chưa kịp nói.
 ~ Many people envy the love in films and always feel that is what counts as romance. But I have slowly come to see that what really lasts is often something very small. Once, during a power cut, Dad pointed at the stars outside the window and told my little brother a story; and one day, even though I worked late, I could still see that bowl of hot soup on the table when I got home. What moves me most is my parents' walk after dinner: the street lights are already on, yet they still walk very slowly, as if they want to slowly make up the words they had no time for during the day.
 # 5 短文：走进婚姻的理由 | Đoạn văn: Lý do bước vào hôn nhân | Passage: Reasons for walking into marriage
+@ 自然，原因，互相，吸引，幽默，脾气
 提起结婚，有人会想得很远，也有人觉得这件事很自然。在我看来，两个人走进婚姻，原因不只是喜欢，还要能在想法上互相吸引。我姐姐的丈夫是中学老师，上课很幽默，学生们都爱听。他脾气很软，家里意见不一样的时候，他总是先听完再慢慢说。看着他们，我才明白，这样的相处，比甜言蜜语更让人放心。
 = Nhắc đến kết hôn, có người nghĩ rất xa, cũng có người thấy việc ấy rất tự nhiên. Với tôi, hai người bước vào hôn nhân, lý do không chỉ là thích nhau, mà còn phải thu hút lẫn nhau về mặt suy nghĩ. Chồng chị gái tôi là giáo viên trung học, dạy học rất hài hước, học sinh nào cũng thích nghe. Tính khí anh ấy rất dịu, khi ở nhà có ý kiến khác nhau, anh ấy luôn nghe hết rồi mới nói chậm rãi. Nhìn họ, tôi mới hiểu, cách sống bên nhau như vậy khiến người ta yên tâm hơn những lời đường mật.
 ~ When people mention marriage, some think far ahead, while others feel it is a very natural step. To me, when two people enter marriage, the reason is not only that they like each other — they also need to attract each other in the way they think. My elder sister's husband is a secondary-school teacher. He is very humorous in class, and the students love listening to him. He has a gentle temper: when they disagree at home, he always listens to the end before speaking slowly. Watching them, I finally understand that this way of being together is more reassuring than sweet words.
 
 ## 2
-# 1 阿玲和小雪准备同学聚会 | A Linh và Tiểu Tuyết chuẩn bị họp lớp | A Linh and Xiaoxue get ready for a class reunion
-小雪：下个周末有同学聚会，你去不去？
-= Cuối tuần sau có họp lớp, cậu có đi không?
-~ There's a class reunion next weekend. Are you going?
-阿玲：当然去！我正好想见见大家。毕业以后，我们差不多两年没见了。
-= Tất nhiên là đi! Mình đang muốn gặp mọi người. Từ khi tốt nghiệp, bọn mình gần hai năm không gặp rồi.
-~ Of course! I was just wanting to see everyone. We've hardly seen each other in almost two years since graduating.
-小雪：尽管平时大家都很忙，但是每次聚会都很热闹。
-= Tuy bình thường ai cũng bận, nhưng lần họp mặt nào cũng rất vui.
-~ Although everyone is busy normally, every reunion is really lively.
-阿玲：是啊。我刚来中国的时候不适应这里的生活，是同学们陪我逛街、帮我解决困难。
-= Đúng vậy. Hồi mới sang Trung Quốc mình chưa quen cuộc sống ở đây, chính các bạn cùng lớp đã đi dạo phố với mình, giúp mình giải quyết khó khăn.
-~ Yes. When I first came to China I couldn't adapt to life here; my classmates went shopping with me and helped me through my difficulties.
-小雪：那我们专门给大家准备一个小礼物吧。
-= Vậy chúng mình chuẩn bị riêng một món quà nhỏ cho mọi người nhé.
-~ Then let's prepare a little gift especially for everyone.
-阿玲：好主意！我马上给他们发短信，及时联系一下。
-= Ý hay đấy! Mình nhắn tin cho mọi người ngay để liên lạc kịp thời.
-~ Great idea! I'll text them right away so we can get in touch in time.
-# 2 短文：朋友像一面镜子 | Đoạn văn: Bạn bè như một tấm gương | Passage: A friend is like a mirror
-有人说，真正的朋友像一面镜子。他会告诉你哪里做得好，也会告诉你哪里做得不对。生活中，周围的人很多，可是能真正理解你的人却不多。好朋友不一定每天联系，而是在你需要帮助的时候，总会出现在你身边。友谊需要交流，也需要时间。如果你觉得生活无聊，不如给老朋友打个电话吧。
-= Có người nói, người bạn thật sự giống như một tấm gương. Họ sẽ cho bạn biết bạn làm tốt ở đâu, cũng sẽ cho bạn biết bạn làm chưa đúng ở đâu. Trong cuộc sống, người xung quanh rất nhiều, nhưng người thật sự hiểu bạn lại không nhiều. Bạn tốt không nhất thiết ngày nào cũng liên lạc, mà là khi bạn cần giúp đỡ, họ luôn xuất hiện bên cạnh bạn. Tình bạn cần trò chuyện, cũng cần thời gian. Nếu bạn thấy cuộc sống nhàm chán, chi bằng gọi điện cho một người bạn cũ đi.
-~ Some say a true friend is like a mirror. They'll tell you what you do well and also where you go wrong. In life there are many people around us, yet few who truly understand us. A good friend doesn't have to keep in touch every day; rather, whenever you need help, they always turn up by your side. Friendship needs communication and it needs time. If life feels boring, why not phone an old friend?
+# 1 对话：阿玲和阮明聊刚到中国的日子 | Hội thoại: A Linh và Nguyễn Minh nói về những ngày mới đến Trung Quốc | Dialogue: A Linh and Nguyen Minh talk about his first days in China
+@ 适应，逛，交，平时，短信，正好
+小雪：阿玲，新来的同学阮明还习惯这儿吗？
+= A Linh, bạn mới Nguyễn Minh đã quen ở đây chưa?
+~ A Linh, has the new classmate Nguyen Minh got used to it here yet?
+阿玲：他刚来的那两周，吃饭、坐车都不太适应。后来我带他去交了几个朋友，情况才好起来。
+= Hai tuần đầu anh ấy mới đến, ăn uống và đi xe đều không được thích nghi lắm. Sau đó mình đưa anh ấy đi kết thêm vài người bạn, mọi thứ mới khá hơn.
+~ In the first two weeks after he arrived, meals and buses were hard to adapt to. Then I took him out to make a few friends, and things got better.
+小雪：你们平时都做些什么？
+= Bình thường các bạn làm gì?
+~ What do you usually do?
+阿玲：周末我们喜欢去逛附近的小市场，看看水果，听听大家说话。他有问题，也会给我发短信。
+= Cuối tuần bọn mình thích đi dạo chợ nhỏ gần đó, xem trái cây, nghe mọi người nói chuyện. Có việc gì anh ấy cũng nhắn tin cho mình.
+~ At weekends we like to stroll around the little market nearby, look at the fruit and listen to people talking. If he has a question, he also texts me.
+小雪：这个周六正好有个校园音乐会，要不要叫上他？
+= Thứ bảy này đúng lúc có hòa nhạc trong trường, có gọi anh ấy không?
+~ There's a campus concert this Saturday, as it happens — shall we ask him along?
+阿玲：好啊。他正想多认识点儿人，去了一定高兴。
+= Được chứ. Anh ấy đang muốn quen thêm người, đi thì chắc vui.
+~ Yes. He wants to meet more people, so he'll be glad to come.
+# 2 对话：小雪为同学聚会发愁 | Hội thoại: Tiểu Tuyết lo chuyện họp lớp | Dialogue: Xiaoxue worries about a class reunion
+@ 聚会，毕业，差不多，联系，专门，麻烦
+小雪：阿玲，下个月班里要办一场同学聚会，我有点儿发愁。
+= A Linh, tháng sau lớp mình tổ chức họp lớp, mình hơi lo.
+~ A Linh, the class is holding a reunion next month, and I'm a bit worried.
+阿玲：发愁什么？大家毕业才差不多一年，应该都还记得路吧？
+= Lo gì? Mọi người tốt nghiệp mới được khoảng một năm, chắc vẫn nhớ đường chứ?
+~ Why? It's only been about a year since everyone graduated — they should still remember the way, shouldn't they?
+小雪：问题是有几个人不太好联系。有的换了号码，我专门问了老师，还是没问到。
+= Vấn đề là có vài người khá khó liên lạc. Có người đổi số, mình còn hỏi riêng giáo viên, vẫn chưa ra.
+~ The problem is that a few people are hard to contact. Some have changed numbers. I even went out of my way to ask the teacher, and I still didn't get them.
+阿玲：那就先请到的人来。你已经尽力了，别把这件事变成麻烦。
+= Vậy thì mời trước những người liên lạc được. Cậu đã cố rồi, đừng biến việc này thành chuyện phiền phức.
+~ Then just invite the people you can reach first. You've already tried your best — don't turn it into a hassle.
+小雪：说得对。我今晚先把通知发给大家，地点还是那家常去的小馆。
+= Đúng đó. Tối nay mình gửi thông báo trước, địa điểm vẫn là quán nhỏ mọi người hay đến.
+~ That's right. I'll send the notice out tonight. The place can still be that little restaurant we often go to.
+阿玲：需要我帮忙联系谁，你就说一声。
+= Cần mình giúp liên lạc ai thì cậu nói một tiếng.
+~ If you need me to help contact anyone, just say.
+# 3 对话：阿玲和小雪翻看夏令营的照片 | Hội thoại: A Linh và Tiểu Tuyết xem ảnh trại hè | Dialogue: A Linh and Xiaoxue look through summer-camp photos
+@ 好像，重新，尽管，真正，友谊，当
+小雪：你看这张，当我们在山里教孩子们写汉字的时候，你的帽子都歪了。
+= Cậu nhìn tấm này, khi chúng mình đang dạy bọn trẻ viết chữ Hán trên núi, mũ cậu còn lệch nữa.
+~ Look at this one — when we were teaching the children to write characters in the mountains, your hat was even crooked.
+阿玲：真的好像是昨天的事。我倒想重新再去一次，再听他们喊我们“老师”。
+= Thật giống như chuyện hôm qua. Mình lại muốn đi lại một lần nữa, nghe các em gọi mình bằng «cô giáo».
+~ It really seems like yesterday. I'd love to go again, and hear them call us "teacher" once more.
+小雪：尽管现在各忙各的，我还是会想起那时大家一起做饭、一起笑的晚上。
+= Dù giờ ai cũng bận việc của mình, mình vẫn nhớ những tối cả nhóm cùng nấu ăn, cùng cười.
+~ Even though we're each busy with our own things now, I still think of those evenings when we cooked and laughed together.
+阿玲：所以我说，真正让人记得住的，不是风景，是那段友谊。
+= Nên mình mới nói, điều thật sự khiến người ta nhớ không phải phong cảnh, mà là tình bạn ấy.
+~ That's why I say what you really remember isn't the scenery, it's that friendship.
+小雪：明年要是再办这样的活动，咱们还去，当一回“大姐姐”。
+= Năm sau nếu lại tổ chức hoạt động thế này, mình vẫn đi, làm một chuyến «chị lớn».
+~ If they run something like this again next year, let's go and be "big sisters" once more.
+阿玲：一言为定。到时候我把这些照片再翻出来给大家看。
+= Được, nói trước đã. Lúc ấy mình sẽ lại lấy mấy tấm ảnh này ra cho mọi người xem.
+~ It's a deal. When the time comes, I'll bring these photos out again to show everyone.
+# 4 短文：宿舍里的那一小时 | Đoạn văn: Một giờ trong ký túc xá | Passage: That one hour in the dorm
+@ 周围，交，丰富，交流，讨厌，无聊，却
+我刚住进宿舍的时候，周围很安静，晚上只听得见楼下的车。那时我觉得日子有点儿无聊，也讨厌一个人吃饭。后来慢慢交了几个朋友，晚饭后大家坐在走廊里交流家乡的小吃和上课的笑话，晚上忽然变得丰富起来。可我却还给自己留出一小时：关上门，写写日记，听听自己喜欢的歌。有朋友在身边很好，有一段属于自己的时间，也同样重要。
+= Lúc mới ở ký túc xá, xung quanh rất yên, tối chỉ nghe tiếng xe dưới phố. Khi ấy tôi thấy ngày tháng hơi buồn chán, cũng ghét phải ăn một mình. Sau dần kết được vài người bạn, sau bữa tối cả nhóm ngồi ở hành lang trao đổi về món quê và chuyện vui trên lớp, buổi tối bỗng trở nên phong phú. Thế nhưng tôi vẫn để dành cho mình một giờ: đóng cửa, viết nhật ký, nghe bài mình thích. Có bạn bên cạnh thì tốt, có một khoảng thời gian thuộc về mình cũng quan trọng không kém.
+~ When I first moved into the dorm, it was very quiet around me; at night I could only hear the cars downstairs. In those days I found life a bit dull, and I also hated eating alone. Later I slowly made a few friends. After dinner we would sit in the corridor and talk about hometown snacks and jokes from class, and the evenings suddenly became rich. And yet I still keep one hour for myself: I close the door, write in my diary, and listen to a song I like. It is good to have friends nearby, and a stretch of time that belongs only to you is just as important.
+# 5 短文：朋友不是只会说好话的人 | Đoạn văn: Bạn không phải chỉ biết nói lời hay | Passage: A friend is not only someone who says nice things
+@ 镜子，理解，困难，及时，陪，而，真正
+有人把朋友比作镜子，觉得镜子里只会看见自己最好看的样子。可我想，真正的朋友更像一扇窗。当你遇到困难，他能理解你为什么走不动，也会及时过来敲敲门，陪你把心里的话说完。他高兴时会和你一起笑，而在你不想说话的时候，也愿意安静地坐在旁边。这样的人不必很多，但有一个，就够让人觉得自己不是一个人。
+= Có người ví bạn bè như tấm gương, cho rằng trong gương chỉ thấy mình ở kiểu đẹp nhất. Nhưng tôi nghĩ, người bạn thật sự hơn giống một ô cửa sổ. Khi bạn gặp khó khăn, người ấy hiểu vì sao bạn bước không nổi, cũng kịp thời đến gõ cửa, ở bên để bạn nói hết những điều trong lòng. Lúc vui họ cười cùng bạn, còn khi bạn không muốn nói, họ cũng sẵn sàng ngồi yên cạnh đó. Người như vậy không cần nhiều, nhưng có một người thôi, cũng đủ để thấy mình không cô độc.
+~ Some people compare a friend to a mirror, and feel that a mirror only shows you at your best. But I think a true friend is more like a window. When you run into difficulties, they can understand why you can't go on, and they will also come and knock in time, and sit with you until you've said what's on your mind. They will laugh with you when they're happy, and when you don't feel like talking, they are also willing to sit quietly beside you. You don't need many people like that, but even one is enough to make you feel you are not alone.
+
 ## 3
-# 1 阿玲准备面试 | A Linh chuẩn bị phỏng vấn | A Linh prepares for a job interview
-阿玲：陈老师，明天我要去一家公司应聘翻译，我挺紧张的。
-= Cô Trần ơi, ngày mai em đi ứng tuyển vị trí phiên dịch ở một công ty, em hồi hộp lắm.
-~ Ms Chen, tomorrow I'm applying for a translator job at a company, and I'm pretty nervous.
-陈老师：别紧张。首先，你要准时到；其次，回答问题要诚实。
-= Đừng lo. Trước tiên, em phải đến đúng giờ; thứ hai, trả lời câu hỏi phải trung thực.
-~ Don't be nervous. First, be on time; second, answer the questions honestly.
-阿玲：我本来想多说说自己的优点，可是又怕说得太多。
-= Em vốn định nói nhiều về ưu điểm của mình, nhưng lại sợ nói quá nhiều.
-~ I was going to talk a lot about my strengths, but I'm afraid of saying too much.
-陈老师：不管他们问什么，你都要有信心。另外，别忘了带上你的材料。
-= Dù họ hỏi gì, em cũng phải tự tin. Ngoài ra, đừng quên mang theo hồ sơ.
-~ Whatever they ask, be confident. Also, don't forget to bring your documents.
-阿玲：我的专业是中文，这个工作很符合我的能力。
-= Chuyên ngành của em là tiếng Trung, công việc này rất phù hợp với năng lực của em.
-~ My major is Chinese, so this job really suits my abilities.
-陈老师：那就没问题。面试结束后，记得留下电话，等他们通知你。
-= Vậy thì không có vấn đề gì. Phỏng vấn xong nhớ để lại số điện thoại, chờ họ thông báo nhé.
-~ Then you'll be fine. After the interview, remember to leave your number and wait for them to contact you.
-# 2 短文：给经理留下好印象 | Đoạn văn: Để lại ấn tượng tốt với giám đốc | Passage: Making a good impression on the manager
-阿玲正式上班已经一个月了。她负责给顾客提供翻译，每天都认真准备材料。有一次，经理临时改变了安排，阿玲没有抱怨，很快就完成了任务。经理对她印象不错，说她做事负责，与同事的关系也很好。阿玲觉得，收入多少不是最重要的，能在工作中学到东西才最重要。
-= A Linh chính thức đi làm đã được một tháng. Cô phụ trách phiên dịch cho khách hàng, ngày nào cũng chuẩn bị tài liệu cẩn thận. Có lần giám đốc đột ngột thay đổi kế hoạch, A Linh không phàn nàn mà nhanh chóng hoàn thành nhiệm vụ. Giám đốc có ấn tượng tốt về cô, nói cô làm việc có trách nhiệm, quan hệ với đồng nghiệp cũng rất tốt. A Linh cảm thấy, thu nhập nhiều hay ít không phải điều quan trọng nhất, học được điều gì trong công việc mới là quan trọng nhất.
-~ A Linh has been working officially for a month. She's responsible for interpreting for customers and prepares her materials carefully every day. Once the manager suddenly changed the schedule; A Linh didn't complain and quickly finished the task. The manager has a good impression of her and says she is responsible and gets on well with her colleagues. A Linh feels that how much she earns isn't the most important thing — learning something from the work is.
+# 1 对话：阿玲面试前有点儿紧张 | Hội thoại: A Linh hơi hồi hộp trước buổi phỏng vấn | Dialogue: A Linh is a little nervous before her interview
+@ 紧张，能力，提供，信心，招聘，挺
+小雪：明天那家语言中心招聘辅导老师，你还去吗？
+= Ngày mai trung tâm ngôn ngữ ấy tuyển giáo viên kèm, cậu vẫn đi chứ?
+~ That language centre is recruiting tutors tomorrow — are you still going?
+阿玲：去。可我一想到要开口介绍自己，就有点儿紧张。
+= Đi chứ. Nhưng nghĩ đến lúc phải mở miệng giới thiệu mình là mình hơi hồi hộp.
+~ Yes. But as soon as I think about having to introduce myself, I get a little nervous.
+小雪：他们要看的是你的能力，不是你讲得漂不漂亮。你带学生复习，一向很清楚。
+= Họ nhìn năng lực của cậu, không phải nói hay hay không. Cậu kèm các bạn ôn bài vốn rất rõ ràng.
+~ They'll be looking at your ability, not at how pretty your speech is. You're always very clear when you review with students.
+阿玲：通知上说，他们会提供一周的培训。有培训，我心里才有信心一点儿。
+= Trong giấy báo nói họ sẽ cung cấp một tuần tập huấn. Có tập huấn, mình mới có chút tự tin.
+~ The notice said they would provide a week of training. With that, I feel a bit more confident.
+小雪：那就好好睡一觉。我看你挺适合这份工作的。
+= Vậy thì ngủ một giấc cho ngon. Mình thấy cậu khá hợp với việc này.
+~ Then get a good night's sleep. I think you're quite right for this job.
+阿玲：好。明天我一出来，就给你发消息。
+= Được. Ngày mai ra xong mình nhắn ngay cho cậu.
+~ All right. I'll message you as soon as I come out tomorrow.
+# 2 对话：周姐和阿玲谈两份应聘材料 | Hội thoại: Chị Châu và A Linh bàn hai hồ sơ ứng tuyển | Dialogue: Sister Zhou and A Linh discuss two applications
+@ 本来，材料，符合，负责，通知，应聘
+周姐：阿玲，你帮我看看这两份应聘材料。前台这份工作，本来我们想找有经验的人。
+= A Linh, em xem giúp chị hai hồ sơ ứng tuyển này. Việc lễ tân này, vốn dĩ chị muốn tìm người có kinh nghiệm.
+~ A Linh, help me look at these two job applications. For this front-desk job, we originally wanted someone with experience.
+阿玲：这份更符合要求：字写得清楚，也写过类似的工作。那一份经验少一些。
+= Hồ sơ này hợp yêu cầu hơn: chữ viết rõ, cũng từng làm việc tương tự. Hồ sơ kia ít kinh nghiệm hơn.
+~ This one fits the requirements better: the writing is clear, and they've done similar work. The other one has a little less experience.
+周姐：那我先通知第一位下周三来见面。来了以后，前台就由她负责试做一天。
+= Vậy chị báo trước cho người thứ nhất thứ tư tuần sau đến gặp. Đến rồi thì để bạn ấy phụ trách lễ tân thử một ngày.
+~ Then I'll notify the first person to come in next Wednesday. Once they're here, they can be responsible for the front desk on a one-day trial.
+阿玲：要是她那天来不了呢？
+= Nếu hôm đó bạn ấy không đến được thì sao?
+~ What if she can't come that day?
+周姐：再联系第二位。招聘不宜拖太久，咱们尽快定下来。
+= Thì liên lạc người thứ hai. Việc tuyển dụng không nên kéo dài, mình quyết sớm thôi.
+~ Then we'll contact the second one. We shouldn't let the hiring drag on — let's decide as soon as we can.
+阿玲：好，我把时间记在本子上。
+= Được, em ghi thời gian vào sổ.
+~ All right, I'll write the time down in the notebook.
+# 3 对话：陈晓跟阿玲说她的新工作 | Hội thoại: Trần Hiểu kể với A Linh về việc mới | Dialogue: Chen Xiao tells A Linh about her new job
+@ 安排，另外，律师，收入，咱们，专业
+陈晓：阿玲，我找到工作了，在一家律师事务所做助理。
+= A Linh, mình tìm được việc rồi, làm trợ lý ở một văn phòng luật sư.
+~ A Linh, I've found a job — as an assistant at a law firm.
+阿玲：真好！你的专业就是法律，这不是正好用上了吗？
+= Hay quá! Chuyên ngành cậu là luật, thế thì chẳng đúng lúc dùng được sao?
+~ That's wonderful! Your major is law — isn't that just the right use for it?
+陈晓：对。收入不算特别高，可每个月都很稳定。另外，晚上还能继续上课。
+= Đúng. Thu nhập không đặc biệt cao, nhưng tháng nào cũng ổn định. Ngoài ra, tối vẫn học tiếp được.
+~ Yes. The income isn't especially high, but it's steady every month. Besides that, I can still go to class in the evenings.
+阿玲：那时间够用吗？咱们以前晚上常一起去图书馆。
+= Vậy thời gian có đủ không? Trước giờ tối nào mình cũng hay cùng đi thư viện.
+~ Will you have enough time? We used to go to the library together in the evenings.
+陈晓：我自己先把一周的安排写好。忙的那几天，可能只能周末再见了。
+= Mình sẽ viết sẵn lịch một tuần. Những ngày bận, có lẽ chỉ cuối tuần mới gặp được.
+~ I'll write out the week's schedule first. On the busy days, we may only be able to meet at the weekend.
+阿玲：没关系。你先安顿好，我为你高兴。
+= Không sao. Cậu an vị đã, mình mừng cho cậu.
+~ That's all right. Get yourself settled first — I'm happy for you.
+# 4 短文：面试时我想着的两件事 | Đoạn văn: Hai điều tôi nhớ khi phỏng vấn | Passage: Two things I keep in mind in an interview
+@ 首先，其次，诚实，正式，留
+第一次去参加正式面试的时候，我在门口站了很久。后来我只记住两件事。首先，要诚实：不会的不要装会，被问到也可以说“我想再学”。其次，要认真听完再回答，不要抢话。衣服不必很贵，但要干净、整齐。走出门的时候我还是有些不好意思，可我希望自己至少留下了一个清楚、认真的印象。
+= Lần đầu đi phỏng vấn chính thức, tôi đứng mãi ở cửa. Sau đó tôi chỉ nhớ hai điều. Trước hết, phải thành thật: không biết thì đừng giả vờ biết, bị hỏi cũng có thể nói «tôi muốn học thêm». Thứ hai, phải nghe hết rồi mới trả lời, đừng cướp lời. Áo quần không cần đắt, nhưng phải sạch và gọn. Lúc bước ra tôi vẫn hơi ngại, nhưng mong ít nhất mình đã để lại một ấn tượng rõ ràng, nghiêm túc.
+~ The first time I went to a formal interview, I stood at the door for a long time. After that I only kept two things in mind. First, be honest: if you can't do something, don't pretend you can, and if you're asked, you can also say "I'd like to learn more." Second, listen to the end before you answer, and don't interrupt. Your clothes don't have to be expensive, but they should be clean and tidy. I was still a little embarrassed when I walked out, but I hoped I had at least left a clear, careful impression.
+# 5 短文：把约定的时间放在心里 | Đoạn văn: Để thời gian đã hẹn trong lòng | Passage: Keep the appointed time in mind
+@ 不管，改变，感觉，顾客，判断，约会，准时，与
+我在一家小咖啡馆打工。每天要与顾客说话，先判断他们是想坐一坐，还是打包就走，再按他们的需要去做。不管店里有多忙，我都提醒自己不要改变脸上的态度。有一次，一位老师与我约好下午三点来取蛋糕，那是我们的一次约会。我提前做好，准时放到柜台上。她进门时笑着说：“我就知道你们不会让人白等。”那句话让我感觉，准时其实是一种尊重。
+= Tôi làm thêm ở một quán cà phê nhỏ. Mỗi ngày phải nói chuyện với khách, trước hết phán đoán họ muốn ngồi một lúc hay lấy mang về, rồi làm theo nhu cầu của họ. Dù trong quán bận đến mấy, tôi cũng nhắc mình đừng đổi thái độ trên mặt. Có lần một cô giáo hẹn với tôi chiều ba giờ đến lấy bánh, đó là một cuộc hẹn của chúng tôi. Tôi làm sẵn, đúng giờ đặt lên quầy. Cô bước vào, cười nói: «Tôi biết các bạn sẽ không để người ta đợi phí.» Câu ấy khiến tôi cảm thấy, đúng giờ thật ra là một cách tôn trọng.
+~ I work part-time in a little café. Every day I have to talk with the customers, first judge whether they want to sit for a while or take their order away, and then do what they need. No matter how busy the shop is, I remind myself not to change the look on my face. Once a teacher arranged with me to pick up a cake at three in the afternoon — that was an appointment we had. I had it ready and put it on the counter on time. When she came in she smiled and said, "I knew you wouldn't leave anyone waiting for nothing." That sentence made me feel that being on time is really a kind of respect.
+
 ## 4
-# 1 小雪的新计划 | Kế hoạch mới của Tiểu Tuyết | Xiaoxue's new plan
-阿玲：你最近好像很忙，每天都加班吗？
-= Dạo này cậu có vẻ bận lắm, ngày nào cũng tăng ca à?
-~ You seem really busy lately. Are you working overtime every day?
-小雪：是啊，经理让我做一份市场调查，下个星期就要交。
-= Ừ, giám đốc bảo mình làm một bản khảo sát thị trường, tuần sau phải nộp rồi.
-~ Yes, the manager asked me to do a market survey, and it's due next week.
-阿玲：我以为你们公司不忙呢。原来工作这么多！
-= Mình cứ tưởng công ty cậu không bận chứ. Hóa ra nhiều việc thế!
-~ I thought your company wasn't busy. So you've got this much work!
-小雪：我现在按照计划做事，每天把要做的事情写下来，就不乱了。
-= Giờ mình làm việc theo kế hoạch, mỗi ngày ghi lại những việc phải làm nên không bị rối nữa.
-~ Now I work to a plan — I write down what I need to do each day, so things don't get messy.
-阿玲：这个方法真好。这样你就能按时完成了。
-= Cách này hay thật. Như vậy cậu sẽ hoàn thành đúng hạn.
-~ That's a great method. That way you'll finish on time.
-小雪：我保证提前完成！完成以后，说不定还有奖金呢。
-= Mình đảm bảo sẽ hoàn thành sớm! Xong rồi không chừng còn có tiền thưởng ấy chứ.
-~ I promise to finish early! Afterwards I might even get a bonus.
-# 2 短文：万事开头难 | Đoạn văn: Vạn sự khởi đầu nan | Passage: Every beginning is hard
-阿玲的表姐开了一家小咖啡店。刚开始的时候，生意很不顺利，她甚至想过放弃。后来，她认真调查了顾客的需要，积累了很多经验，咖啡店才慢慢成功了。现在她不但能赚钱，还请了三个员工。她常说：“万事开头难，只要不怕困难，一切都会好起来的。”
-= Chị họ của A Linh mở một quán cà phê nhỏ. Lúc mới bắt đầu, việc kinh doanh rất không thuận lợi, chị thậm chí từng nghĩ đến chuyện bỏ cuộc. Sau đó, chị nghiêm túc tìm hiểu nhu cầu của khách hàng, tích lũy được nhiều kinh nghiệm, quán cà phê mới dần dần thành công. Bây giờ chị không những kiếm được tiền mà còn thuê ba nhân viên. Chị thường nói: "Vạn sự khởi đầu nan, chỉ cần không sợ khó khăn, mọi thứ đều sẽ tốt lên."
-~ A Linh's cousin opened a small coffee shop. At first business went badly, and she even thought about giving up. Later she carefully researched what customers wanted and built up a lot of experience, and the shop slowly became a success. Now she not only makes money but has hired three staff. She often says, "Every beginning is hard. As long as you're not afraid of difficulties, everything will get better."
+# 1 对话：小雪又想换工作 | Hội thoại: Tiểu Tuyết lại muốn đổi việc | Dialogue: Xiaoxue wants to change jobs again
+@ 完全，以为，份，提，赚
+小雪：阿玲，我又想提换工作的事了。这份工作做了半年，我以为能学到很多，结果每天都差不多。
+= A Linh, mình lại muốn nêu chuyện đổi việc. Việc này làm đã nửa năm, mình tưởng học được nhiều, hóa ra ngày nào cũng gần như nhau.
+~ A Linh, I want to bring up changing jobs again. I've done this job for half a year. I thought I would learn a lot, but every day is more or less the same.
+阿玲：你不是才涨了一点儿工资吗？别完全否定它。
+= Chẳng phải cậu vừa được tăng một chút lương sao? Đừng phủ nhận hoàn toàn.
+~ Didn't you just get a small raise? Don't dismiss it completely.
+小雪：涨是涨了，可我看同学做别的，好像赚得更多。
+= Tăng thì có tăng, nhưng mình thấy bạn cùng lớp làm việc khác, hình như kiếm được nhiều hơn.
+~ The raise happened, yes, but I see classmates in other jobs who seem to earn more.
+阿玲：赚钱很重要，可一份工作好不好，不能只看这个月的数字。
+= Kiếm tiền thì quan trọng, nhưng một công việc có tốt hay không không thể chỉ nhìn con số tháng này.
+~ Earning money is important, but whether a job is good or not can't be judged only by this month's number.
+小雪：那你说我该等等？
+= Vậy cậu bảo mình nên đợi thêm?
+~ So you think I should wait a little longer?
+阿玲：先把现在手边的事做好。真要走，也先想清楚下一份是什么，再提离开。
+= Hãy làm tốt việc đang có đã. Thật sự muốn đi, cũng nghĩ rõ việc tiếp theo là gì rồi hãy nói đến chuyện rời đi.
+~ Do the work in front of you well first. If you really want to leave, think clearly about what the next job is before you bring up going.
+# 2 对话：林主管请小雪把调查提前做完 | Hội thoại: Chủ quản Lâm nhờ Tiểu Tuyết hoàn thành khảo sát sớm | Dialogue: Supervisor Lin asks Xiaoxue to finish a survey early
+@ 保证，调查，计划，提前，提醒，原来，乱
+林主管：小雪，上周那份调查，计划是这周五交。现在要提前到周三，你能保证完成吗？
+= Tiểu Tuyết, bản khảo sát tuần trước, kế hoạch là nộp thứ sáu này. Giờ phải làm sớm hơn vào thứ tư, em bảo đảm hoàn thành được không?
+~ Xiaoxue, for that survey from last week, the plan was to hand it in this Friday. Now it has to be earlier, by Wednesday — can you guarantee you'll finish it?
+小雪：周三……时间是紧了些。我先把这几天的安排重新看一遍，免得改乱了。
+= Thứ tư… thời gian hơi căng. Em xem lại lịch mấy ngày này đã, để khỏi sửa cho rối.
+~ Wednesday… that's a bit tight. I'll go through these days' schedule again first, so it doesn't get into a mess.
+林主管：原来截止日期改了，是因为后面还有一场会。我明天再提醒你一次。
+= Hóa ra hạn chót đổi vì phía sau còn một cuộc họp. Ngày mai chị nhắc em thêm lần nữa.
+~ It turns out the deadline was changed because there's a meeting after that. I'll remind you again tomorrow.
+小雪：好。今晚我先做完前半部分，明天一早就把后半部分接着做。
+= Được. Tối nay em làm xong nửa đầu, sáng mai làm tiếp nửa sau.
+~ All right. I'll finish the first half tonight, and carry on with the second half first thing tomorrow.
+林主管：有困难早点说，不要拖到最后。
+= Có khó thì nói sớm, đừng để đến phút cuối.
+~ If there's a difficulty, say so early — don't leave it until the last minute.
+小雪：知道了。我尽量在周二晚上给您。
+= Em biết rồi. Em cố đưa chị vào tối thứ ba.
+~ Understood. I'll try to get it to you by Tuesday evening.
+# 3 对话：赵叔叔跟阿玲谈做小生意 | Hội thoại: Chú Triệu nói với A Linh về làm ăn nhỏ | Dialogue: Uncle Zhao talks with A Linh about a small business
+@ 积累，经验，生意，一切，谈
+阿玲：赵叔叔，听说您在社区开了一家小文具店？
+= Chú Triệu, nghe nói chú mở một tiệm văn phòng phẩm nhỏ trong khu?
+~ Uncle Zhao, I heard you opened a little stationery shop in the neighbourhood?
+赵叔叔：是啊。说起来是生意，其实刚开头那几个月，一切都比我想的慢。
+= Phải. Nói là làm ăn, nhưng mấy tháng đầu mọi thứ đều chậm hơn chú nghĩ.
+~ That's right. You can call it a business, but in those first few months everything was slower than I had expected.
+阿玲：您以前不是做过老师吗？开店跟教书差很多吧？
+= Trước chú chẳng phải làm giáo viên sao? Mở tiệm khác dạy học nhiều chứ?
+~ Weren't you a teacher before? Running a shop must be very different from teaching, surely?
+赵叔叔：差很多。不过以前带学生，也让我积累了一些与人谈话的经验。客人来谈需要，我能听得比较耐心。
+= Khác nhiều. Nhưng trước dẫn học sinh cũng giúp chú tích lũy ít kinh nghiệm nói chuyện với người. Khách đến bàn nhu cầu, chú nghe được kiên nhẫn hơn.
+~ Very different. But taking students before also helped me build up some experience of talking with people. When customers come to discuss what they need, I can listen more patiently.
+阿玲：那现在好一些了吗？
+= Vậy giờ đã khá hơn chưa?
+~ Is it any better now?
+赵叔叔：慢慢好了。别急着看这个月赚多少，先把店里的事一件一件做稳。
+= Dần khá rồi. Đừng vội nhìn tháng này kiếm được bao nhiêu, hãy làm vững từng việc trong tiệm đã.
+~ It's slowly getting better. Don't be in a hurry to look at how much this month earns — first get each thing in the shop on a steady footing.
+# 4 短文：一条让人放心的消息 | Đoạn văn: Một tin khiến người ta yên tâm | Passage: A piece of news that puts people at ease
+@ 按时，按照，成功，感谢，奖金，顺利，消息
+今年部门的工作进行得很顺利。大家按照年初写好的计划，一件一件按时做完，最后成功地赶上了大活动的日期。活动结束那天，经理发来一条消息，感谢每一个加班的人，还说今年会有一笔小小的奖金。钱不多，可那条消息让人觉得：只要把该做的事做完，别人是看得见的。
+= Năm nay việc của phòng diễn ra rất thuận lợi. Mọi người làm theo kế hoạch viết từ đầu năm, hoàn thành đúng hạn từng việc, cuối cùng thành công bắt kịp ngày sự kiện lớn. Ngày kết thúc, giám đốc gửi một tin, cảm ơn từng người tăng ca, còn nói năm nay sẽ có một khoản thưởng nhỏ. Tiền không nhiều, nhưng tin ấy khiến người ta thấy: chỉ cần làm xong việc phải làm, người khác sẽ nhìn thấy.
+~ This year the department's work has gone smoothly. Everyone followed the plan written at the beginning of the year, finished each task on time, and in the end succeeded in meeting the date of the big event. On the day it ended, the manager sent a message thanking everyone who had worked extra hours, and also said there would be a small bonus this year. It was not a lot of money, but that message made people feel that if you finish what you're supposed to do, others will notice.
+# 5 短文：不愿做的那份工作 | Đoạn văn: Việc mình không muốn làm | Passage: The work you would rather not do
+@ 不得不，方法，工资，甚至，责任，知识
+工作里总会有人不愿意做的事：又慢，又看不出成绩。可有时你不得不把它做完，因为那是你的责任。我曾经把一份很烦的材料推了又推，甚至想：这又不会加工资，为什么要认真？后来还是坐下来，找到自己的方法，把材料一项一项做清楚。做完以后我才发现，自己又多懂了一点相关的知识。工资是生活的一部分，但把一件难事做完，也会让人踏实。
+= Trong việc luôn có chuyện người ta không muốn làm: vừa chậm, vừa không thấy thành tích. Nhưng đôi khi bạn buộc phải làm xong, vì đó là trách nhiệm. Tôi từng đẩy đi đẩy lại một bản tài liệu rất mệt, thậm chí nghĩ: cái này lại không tăng lương, cần gì nghiêm túc? Sau cùng vẫn ngồi xuống, tìm phương pháp của mình, làm rõ từng mục. Xong rồi tôi mới thấy mình hiểu thêm một chút kiến thức liên quan. Lương là một phần của đời sống, nhưng làm xong một việc khó cũng khiến người ta vững lòng.
+~ In any job there are always things people would rather not do: they are slow, and they don't seem to show any results. But sometimes you have no choice but to finish them, because that is your responsibility. I once pushed a very tedious set of materials aside again and again, and even thought: this won't even raise my pay, so why take it seriously? In the end I still sat down, found my own method, and worked through the materials item by item. Only when I had finished did I realise I had learned a little more of the related knowledge. Pay is part of life, but finishing a hard task also leaves you feeling steady.
+
 ## 5
-# 1 阿玲买沙发 | A Linh mua ghế sofa | A Linh buys a sofa
-阿玲：这个沙发的样子真好看，质量怎么样？
-= Chiếc sofa này kiểu dáng đẹp thật, chất lượng thế nào ạ?
-~ This sofa looks lovely. How's the quality?
-售货员：您放心，质量肯定没问题。现在打八折，价格也不贵。
-= Chị yên tâm, chất lượng chắc chắn không có vấn đề. Bây giờ đang giảm 20%, giá cũng không đắt.
-~ Don't worry, the quality is definitely fine. It's 20% off now, so the price isn't high either.
-阿玲：我再考虑一下。对我来说，舒服比流行更重要。
-= Em suy nghĩ thêm chút đã. Đối với em, thoải mái quan trọng hơn hợp mốt.
-~ Let me think about it. For me, comfort matters more than fashion.
-售货员：您可以坐上去试试，实际效果比广告上还好。
-= Chị có thể ngồi thử, hiệu quả thực tế còn tốt hơn trên quảng cáo.
-~ You can sit on it and try. It's even better in reality than in the advert.
-阿玲：确实很舒服！可以用现金付款吗？能不能顺便帮我寄到家里？
-= Đúng là rất thoải mái! Em trả tiền mặt được không? Tiện thể gửi giúp em về nhà được không?
-~ It really is comfortable! Can I pay in cash? And could you deliver it to my home as well?
-售货员：都可以。您留个地址，我们明天就送到。
-= Đều được ạ. Chị để lại địa chỉ, ngày mai chúng tôi sẽ giao đến.
-~ Both are fine. Leave your address and we'll deliver it tomorrow.
-# 2 短文：一分钱一分货 | Đoạn văn: Tiền nào của nấy | Passage: You get what you pay for
-很多人购物的时候喜欢买便宜的东西，尤其是打折的时候，总是买很多。可是，有些东西价格低，质量却不好，用不了多久就坏了，实在是浪费钱。中国有句话叫“一分钱一分货”，意思是价格和质量往往是一样的。所以买东西时，不要只看价格，还要考虑自己是不是真的需要。
-= Nhiều người khi mua sắm thích mua đồ rẻ, nhất là khi giảm giá, lúc nào cũng mua rất nhiều. Nhưng có những thứ giá thấp mà chất lượng lại không tốt, dùng chẳng được bao lâu đã hỏng, thật là phí tiền. Trung Quốc có câu "tiền nào của nấy", ý là giá cả và chất lượng thường đi đôi với nhau. Vì vậy khi mua đồ, đừng chỉ nhìn giá, mà còn phải cân nhắc xem mình có thật sự cần hay không.
-~ Many people like to buy cheap things when shopping, especially during sales, and always buy a lot. But some things are cheap yet poor quality and break before long — a real waste of money. There's a Chinese saying, "a cent's worth of money, a cent's worth of goods", meaning price and quality usually go together. So when buying things, don't just look at the price; also think about whether you really need it.
+# 1 对话：阿玲在家具店看沙发 | Hội thoại: A Linh xem ghế sofa ở cửa hàng nội thất | Dialogue: A Linh looks at sofas in a furniture shop
+@ 打折，家具，价格，肯定，流行，沙发，质量
+吴姐：姑娘，想看沙发吗？这几款最近很流行，这周末还打折。
+= Cô gái, muốn xem sofa không? Mấy mẫu này gần đây rất thịnh hành, cuối tuần này còn giảm giá.
+~ Miss, would you like to look at sofas? These styles have been very popular lately, and they're also on sale this weekend.
+阿玲：我想看质量好一点儿的。颜色不要太花，价格也希望能接受。
+= Em muốn xem loại chất lượng khá hơn một chút. Màu đừng quá sặc sỡ, giá cũng mong chấp nhận được.
+~ I'd like to see ones with a bit better quality. The colour shouldn't be too busy, and I hope the price is acceptable too.
+吴姐：那您看这一套。面料耐用，坐上去也舒服。现在的价格比上周低了不少。
+= Vậy cô xem bộ này. Vải bền, ngồi cũng êm. Giá hiện tại thấp hơn tuần trước nhiều.
+~ Then have a look at this set. The fabric is durable, and it's comfortable to sit on. The price now is quite a bit lower than last week.
+阿玲：我再摸摸。买家具不是小事，我肯定要再比较一下。
+= Em sờ thêm đã. Mua nội thất không phải việc nhỏ, em chắc chắn phải so nữa.
+~ I'll feel it again. Buying furniture isn't a small thing — I definitely want to compare a bit more.
+吴姐：可以。您先拍个照片，想好了再来。
+= Được. Cô chụp ảnh trước, nghĩ xong hãy đến.
+~ Of course. Take a photo first, and come back when you've thought it over.
+阿玲：好，谢谢您。我今天先看看别的店。
+= Vâng, cảm ơn chị. Hôm nay em xem thêm vài cửa khác đã.
+~ Thank you. I'll look at a few other shops today first.
+# 2 对话：阿玲和周南在商场 | Hội thoại: A Linh và Châu Nam ở trung tâm thương mại | Dialogue: A Linh and Zhou Nan at the mall
+@ 实在，顺便，现金，效果，光，台
+周南：你不是来看台灯的吗？怎么站在冰箱前面了？
+= Chẳng phải cậu đến xem đèn bàn sao? Sao lại đứng trước tủ lạnh?
+~ Weren't you here to look at desk lamps? Why are you standing in front of the fridges?
+阿玲：我想顺便看看。这一台能耗低，可价钱实在不便宜。
+= Mình muốn tiện thể xem. Cái này tiêu hao điện thấp, nhưng giá thực sự không rẻ.
+~ I wanted to have a look while we're here. This one uses little electricity, but the price really isn't cheap.
+周南：你不能光看宣传上写的效果，最好再问问一个月大概要用多少电。
+= Cậu đừng chỉ nhìn hiệu quả viết trên tờ quảng cáo, tốt nhất hỏi thêm mỗi tháng tốn khoảng bao nhiêu điện.
+~ You shouldn't only look at the results written in the ads. It'd be better to ask how much electricity it uses in a month.
+阿玲：说得对。那台灯呢？我想找一盏光不会太刺眼的。
+= Đúng đó. Còn đèn bàn? Mình muốn tìm cái ánh sáng không quá chói.
+~ That's true. And the lamp? I want one whose light isn't too harsh.
+周南：那两台都不错。你要是决定买，我可以用现金先付。
+= Hai cái kia cũng ổn. Nếu cậu quyết mua, mình có thể trả bằng tiền mặt trước.
+~ Those two are both fine. If you decide to buy one, I can pay in cash first.
+阿玲：先把说明书拍下来，回去再想一晚吧。
+= Chụp hướng dẫn đã, về nghĩ thêm một đêm.
+~ Let's photograph the instructions first and think it over for a night at home.
+# 3 对话：给陈老师挑一份礼物 | Hội thoại: Chọn quà cho cô Trần | Dialogue: Choosing a gift for Teacher Chen
+@ 广告，葡萄，实际，味道，邀请，艺术，优点
+小雪：周末想邀请陈老师来家里吃晚饭。礼物你说买什么好？
+= Cuối tuần muốn mời cô Trần đến nhà ăn tối. Quà cậu bảo nên mua gì?
+~ I'd like to invite Teacher Chen home for dinner at the weekend. What do you think we should buy her as a gift?
+阿玲：水果比较合适。那边在卖葡萄，广告上写“又甜又大”，可不知道实际味道怎么样。
+= Trái cây thì hợp. Bên đó đang bán nho, quảng cáo viết «vừa ngọt vừa to», nhưng không biết vị thực tế ra sao.
+~ Fruit would be suitable. They're selling grapes over there, and the advertisement says "sweet and big", but I don't know what they actually taste like.
+小雪：那我们先买一丁点儿尝尝。要是味道不行，再看别的。
+= Vậy mình mua một chút nếm trước. Nếu vị không ổn thì xem thứ khác.
+~ Then let's buy a little to taste first. If the flavour isn't right, we'll look at something else.
+阿玲：也可以送一本小画册。她喜欢艺术，这算是一个优点：不贵，又记得住。
+= Cũng có thể tặng một tập tranh nhỏ. Cô thích nghệ thuật, đó là một ưu điểm: không đắt mà lại dễ nhớ.
+~ We could also give her a little book of pictures. She likes art, and that's one advantage: it isn't expensive, and she'll remember it.
+小雪：那就水果和画册都准备一点儿，让她选。
+= Vậy thì chuẩn bị cả trái cây lẫn tập tranh, để cô chọn.
+~ Then let's get a little of both, the fruit and the picture book, and let her choose.
+阿玲：好。广告再好看，我们也先看东西本身。
+= Được. Quảng cáo đẹp đến mấy, mình cũng xem bản thân món đồ đã.
+~ All right. However nice the advertisement is, we'll look at the thing itself first.
+# 4 短文：买衣服时我给自己的几条标准 | Đoạn văn: Vài tiêu chuẩn tôi đặt khi mua áo | Passage: A few standards I set myself when I buy clothes
+@ 标准，考虑，浪费，年龄，样子，质量
+以前我买衣服，只看样子新不新，偶尔还跟着流行走。穿过两次就不想再穿，等于把钱浪费了。后来我给自己定了几条标准：先考虑质量，再看颜色和大小是否适合我现在的年龄。样子可以简单，但一定要舒服、耐穿。这样买，衣服虽然少了，可每一件都能穿很久。
+= Trước kia tôi mua áo chỉ nhìn kiểu mới hay không, đôi lúc còn theo mốt. Mặc hai lần đã không muốn mặc nữa, chẳng khác nào lãng phí tiền. Sau tôi đặt cho mình vài tiêu chuẩn: trước hãy xem xét chất lượng, rồi mới nhìn màu và kích cỡ có hợp với tuổi hiện tại không. Kiểu có thể đơn giản, nhưng phải thoải mái, bền. Mua như vậy, áo tuy ít hơn, nhưng mỗi món mặc được rất lâu.
+~ I used to buy clothes only by whether the look was new, and sometimes I even followed the fashion. After wearing something twice I wouldn't want it again, which really meant I was wasting money. Later I set myself a few standards: consider the quality first, and then see whether the colour and size suit my age now. The style can be simple, but it must be comfortable and long-lasting. Buying this way, I have fewer clothes, but I can wear each piece for a long time.
+# 5 短文：网上购物也要停一停 | Đoạn văn: Mua hàng online cũng cần dừng lại một chút | Passage: Even when shopping online, it helps to pause
+@ 购物，任何，受到，尤其，寄，家具
+现在网上购物很方便，图片好看，手指一点，过两天东西就寄到家。可任何便利的背后，都可能让人买多。我曾经受到几张漂亮图片的影响，尤其是家具，看着眼红就下了单，收到后才发现房间根本放不下。后来我给自己定了个习惯：想买的东西先放一天，再决定要不要点。购物是为了用，不是为了点得痛快。
+= Giờ mua sắm trên mạng rất tiện, ảnh đẹp, một cái chạm tay, vài hôm sau đồ đã được gửi tới nhà. Nhưng đằng sau bất kỳ sự tiện nào cũng có thể khiến người ta mua nhiều. Tôi từng chịu ảnh hưởng của vài tấm ảnh đẹp, nhất là đồ nội thất, nhìn ham là đặt, nhận xong mới thấy phòng chẳng để vừa. Sau tôi đặt cho mình một thói quen: món muốn mua để đó một ngày, rồi mới quyết có bấm không. Mua sắm là để dùng, không phải để bấm cho đã.
+~ Shopping online is very convenient now: the pictures look nice, you tap once, and in a couple of days the things are sent to your home. But behind any convenience there is a chance you'll buy too much. I was once influenced by a few attractive pictures, especially of furniture; I ordered while my eyes were still hungry for it, and only when it arrived did I find it wouldn't fit in the room at all. Later I gave myself a habit: I leave anything I want to buy for a day, and only then decide whether to click. You shop in order to use things, not in order to enjoy clicking.
+
 ## 6
 # 1 阿玲去健身房 | A Linh đi phòng tập | A Linh goes to the gym
 小雪：你竟然每天早上都去健身房？真厉害！

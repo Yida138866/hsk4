@@ -624,22 +624,26 @@ const TRAW = `1|1|对话：阿玲和小雪聊阿玲的男朋友|阿玲跟周南�
 1|3|对话：林阿姨和赵阿姨聊婚后的日子|林阿姨刚结婚时是什么感觉？赵阿姨觉得两个人该怎样相处？|Hội thoại: Thím Lâm và thím Triệu nói về cuộc sống sau khi cưới|Lúc mới cưới, thím Lâm cảm thấy thế nào? Thím Triệu nghĩ hai người nên sống bên nhau ra sao?
 1|4|短文：生活里的小浪漫|文中写了哪些小小的浪漫？最让作者感动的是什么？|Đoạn văn: Chút lãng mạn trong đời thường|Bài viết kể những chút lãng mạn nào? Điều gì khiến tác giả cảm động nhất?
 1|5|短文：走进婚姻的理由|作者认为两个人走进婚姻，最重要的是什么？|Đoạn văn: Lý do bước vào hôn nhân|Tác giả cho rằng điều quan trọng nhất khi hai người bước vào hôn nhân là gì?
-2|1|小夏和马克聊马克的中国朋友|马克刚来中国的时候适应这儿的生活吗？马克新交的中国朋友怎么样？|Tiểu Hạ và Mark nói chuyện về bạn Trung Quốc của Mark|Khi mới đến Trung Quốc, Mark có thích nghi với cuộc sống ở đây không? Người bạn Trung Quốc mới quen của Mark thế nào?
-2|2|小李和小林聊同学聚会的事情|小李为什么给小林打电话？|Tiểu Lý và Tiểu Lâm nói chuyện về buổi họp lớp|Vì sao Tiểu Lý gọi điện cho Tiểu Lâm?
-2|3|孙月和王静聊她们的朋友|王静看到上大学时的照片会想起什么？|Tôn Nguyệt và Vương Tĩnh nói chuyện về bạn bè của họ|Khi xem ảnh thời đại học, Vương Tĩnh nhớ lại điều gì?
-2|4|短文|如果没有朋友，我们的生活会怎么样？怎样才能交到更多的朋友？|Đoạn văn|Nếu không có bạn bè, cuộc sống của chúng ta sẽ ra sao? Làm thế nào để kết được nhiều bạn hơn?
-2|5|短文|什么是真正的朋友？|Đoạn văn|Thế nào là người bạn thật sự?
-3|1|小夏和小雨聊小雨面试的情况|小雨面试时紧张吗？面试时应该怎样？|Tiểu Hạ và Tiểu Vũ nói chuyện về buổi phỏng vấn của Tiểu Vũ|Tiểu Vũ có hồi hộp khi phỏng vấn không? Khi phỏng vấn nên thế nào?
-3|2|马经理和小林聊招聘的事情|参加应聘的两个人适合不适合这个工作？为什么？|Giám đốc Mã và Tiểu Lâm nói chuyện về việc tuyển dụng|Hai người đến ứng tuyển có phù hợp với công việc này không? Vì sao?
-3|3|小林和王静聊王静的工作情况|王静为什么很喜欢她现在的工作？|Tiểu Lâm và Vương Tĩnh nói chuyện về công việc của Vương Tĩnh|Vì sao Vương Tĩnh rất thích công việc hiện tại?
-4|1|小林和小李聊换工作（标题未能提取）|你觉得小李为什么总是换工作？|Tiểu Lâm và Tiểu Lý nói chuyện về việc đổi việc (chưa trích xuất được tiêu đề gốc)|Bạn nghĩ vì sao Tiểu Lý cứ đổi việc mãi?
-4|2|王经理和小李在说工作|那份调查的完成时间有什么变化？每天把计划要做的事情记下来有什么好处？|Giám đốc Vương và Tiểu Lý nói về công việc|Thời hạn hoàn thành bản khảo sát đó thay đổi thế nào? Mỗi ngày ghi lại những việc định làm có lợi ích gì?
-4|3|王经理和马经理在说工作|马经理觉得做生意容易吗？为什么？“万事开头难”是什么意思？|Giám đốc Vương và giám đốc Mã nói về công việc|Giám đốc Mã có thấy kinh doanh dễ không? Vì sao? “Vạn sự khởi đầu nan” nghĩa là gì?
-4|4|短文|他们今年工作的完成情况怎么样？公司用什么方法来感谢大家的努力工作？|Đoạn văn|Năm nay họ hoàn thành công việc thế nào? Công ty dùng cách gì để cảm ơn sự làm việc chăm chỉ của mọi người?
-4|5|短文|我们遇到不愿意做的工作时应该怎么办？|Đoạn văn|Khi gặp công việc mình không muốn làm, chúng ta nên làm thế nào?
-5|1|王静在家具店买沙发||Vương Tĩnh mua ghế sofa ở cửa hàng nội thất|
-5|2|王静和李进在商场买东西|李进开始为什么不同意买冰箱？后来为什么又同意了？|Vương Tĩnh và Lý Tiến mua sắm ở trung tâm thương mại|Lúc đầu vì sao Lý Tiến không đồng ý mua tủ lạnh? Sau đó vì sao lại đồng ý?
-5|3|李进和王静在超市买礼物|王静和李进打算给李老师买什么礼物？为什么不能完全相信广告？|Lý Tiến và Vương Tĩnh mua quà ở siêu thị|Vương Tĩnh và Lý Tiến định mua quà gì cho giáo viên Lý? Vì sao không thể hoàn toàn tin vào quảng cáo?
+2|1|对话：阿玲和阮明聊刚到中国的日子|阮明刚到中国时适应吗？他平时和阿玲做些什么？|Hội thoại: A Linh và Nguyễn Minh nói về những ngày mới đến Trung Quốc|Khi mới đến Trung Quốc, Nguyễn Minh đã thích nghi chưa? Bình thường anh ấy và A Linh làm gì?
+2|2|对话：小雪为同学聚会发愁|小雪为什么为同学聚会发愁？阿玲怎么安慰她？|Hội thoại: Tiểu Tuyết lo chuyện họp lớp|Vì sao Tiểu Tuyết lo chuyện họp lớp? A Linh an ủi cô ấy thế nào?
+2|3|对话：阿玲和小雪翻看夏令营的照片|看着照片，她们想起了什么？什么是真正让人记得住的？|Hội thoại: A Linh và Tiểu Tuyết xem ảnh trại hè|Nhìn ảnh, họ nhớ điều gì? Điều gì mới thật sự khiến người ta nhớ?
+2|4|短文：宿舍里的那一小时|作者刚住进宿舍时是什么感觉？后来生活有了哪些变化？|Đoạn văn: Một giờ trong ký túc xá|Lúc mới vào ký túc xá tác giả cảm thấy thế nào? Sau đó cuộc sống thay đổi ra sao?
+2|5|短文：朋友不是只会说好话的人|作者把真正的朋友比作什么？这样的朋友会怎样做？|Đoạn văn: Bạn không phải chỉ biết nói lời hay|Tác giả ví người bạn thật sự với gì? Người bạn ấy sẽ làm thế nào?
+3|1|对话：阿玲面试前有点儿紧张|阿玲为什么紧张？小雪怎样鼓励她？|Hội thoại: A Linh hơi hồi hộp trước buổi phỏng vấn|Vì sao A Linh hồi hộp? Tiểu Tuyết động viên cô ấy thế nào?
+3|2|对话：周姐和阿玲谈两份应聘材料|哪一份材料更符合要求？周姐打算怎样安排？|Hội thoại: Chị Châu và A Linh bàn hai hồ sơ ứng tuyển|Hồ sơ nào hợp yêu cầu hơn? Chị Châu định sắp xếp thế nào?
+3|3|对话：陈晓跟阿玲说她的新工作|陈晓的新工作是什么？她怎样安排时间和收入？|Hội thoại: Trần Hiểu kể với A Linh về việc mới|Việc mới của Trần Hiểu là gì? Cô ấy sắp xếp thời gian và thu nhập thế nào?
+3|4|短文：面试时我想着的两件事|作者参加正式面试时记住了哪两件事？|Đoạn văn: Hai điều tôi nhớ khi phỏng vấn|Khi đi phỏng vấn chính thức, tác giả nhớ hai điều nào?
+3|5|短文：把约定的时间放在心里|在咖啡馆里，作者怎样对待顾客和约定的时间？|Đoạn văn: Để thời gian đã hẹn trong lòng|Ở quán cà phê, tác giả đối xử với khách và giờ hẹn như thế nào?
+4|1|对话：小雪又想换工作|小雪为什么又想换工作？阿玲为什么劝她先等等？|Hội thoại: Tiểu Tuyết lại muốn đổi việc|Vì sao Tiểu Tuyết lại muốn đổi việc? A Linh khuyên cô ấy đợi đã là vì sao?
+4|2|对话：林主管请小雪把调查提前做完|调查的计划有了什么变化？小雪准备怎么做？|Hội thoại: Chủ quản Lâm nhờ Tiểu Tuyết hoàn thành khảo sát sớm|Kế hoạch khảo sát thay đổi thế nào? Tiểu Tuyết định làm ra sao?
+4|3|对话：赵叔叔跟阿玲谈做小生意|赵叔叔的小店刚开头时怎么样？他积累了什么经验？|Hội thoại: Chú Triệu nói với A Linh về làm ăn nhỏ|Tiệm nhỏ của chú Triệu lúc mới mở thế nào? Ông tích lũy được kinh nghiệm gì?
+4|4|短文：一条让人放心的消息|今年的工作为什么说进行得很顺利？经理用什么来感谢大家？|Đoạn văn: Một tin khiến người ta yên tâm|Vì sao nói công việc năm nay diễn ra thuận lợi? Giám đốc cảm ơn mọi người bằng cách nào?
+4|5|短文：不愿做的那份工作|遇到不愿意做的工作时，作者后来是怎么做的？她明白了什么？|Đoạn văn: Việc mình không muốn làm|Khi gặp việc không muốn làm, tác giả đã làm thế nào? Cô ấy hiểu ra điều gì?
+5|1|对话：阿玲在家具店看沙发|阿玲想买什么样的沙发？她为什么不马上决定？|Hội thoại: A Linh xem ghế sofa ở cửa hàng nội thất|A Linh muốn mua sofa thế nào? Vì sao cô ấy không quyết ngay?
+5|2|对话：阿玲和周南在商场|阿玲为什么要顺便看冰箱？周南提醒她不要只看什么？|Hội thoại: A Linh và Châu Nam ở trung tâm thương mại|Vì sao A Linh tiện thể xem tủ lạnh? Châu Nam nhắc cô ấy đừng chỉ nhìn vào đâu?
+5|3|对话：给陈老师挑一份礼物|她们为什么想请陈老师吃饭？最后准备了哪些礼物？|Hội thoại: Chọn quà cho cô Trần|Vì sao họ muốn mời cô Trần ăn cơm? Cuối cùng chuẩn bị quà gì?
+5|4|短文：买衣服时我给自己的几条标准|作者以前买衣服有什么问题？后来给自己定了哪些标准？|Đoạn văn: Vài tiêu chuẩn tôi đặt khi mua áo|Trước kia tác giả mua áo có vấn đề gì? Sau đó cô ấy đặt những tiêu chuẩn nào?
+5|5|短文：网上购物也要停一停|作者在网上购物时遇到过什么麻烦？后来养成了什么习惯？|Đoạn văn: Mua hàng online cũng cần dừng lại một chút|Khi mua hàng trên mạng, tác giả từng gặp chuyện gì? Sau đó cô ấy có thói quen gì?
 6|1|张远和李进聊李进昨晚的购物经历|昨天晚上李进为什么没接张远的电话？|Trương Viễn và Lý Tiến nói chuyện về lần mua sắm tối qua của Lý Tiến|Tối qua vì sao Lý Tiến không nghe điện thoại của Trương Viễn?
 6|2|王静在商店买西红柿|王静买的西红柿怎么样？|Vương Tĩnh mua cà chua ở cửa hàng|Cà chua Vương Tĩnh mua thế nào?
 6|3|李进在商场买行李箱|李进想买什么样的行李箱？花了多少钱买的？|Lý Tiến mua vali ở trung tâm thương mại|Lý Tiến muốn mua vali như thế nào? Đã mua hết bao nhiêu tiền?
