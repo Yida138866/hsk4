@@ -42,7 +42,7 @@ const body = (page) => page.evaluate(() => document.body.innerText);
     const rb = await page.evaluate(() => document.querySelectorAll("ruby").length);
     await clickText(page, "button", "✓ 拼音"); const rb2 = await page.evaluate(() => document.querySelectorAll("ruby").length);
     await clickText(page, "button", "拼音"); log(`reader pinyin toggle: ${rb > 0 && rb2 === 0} (${rb}->${rb2})`);
-    await clickText(page, "button", "✓ 翻译"); const trOff = !(await body(page)).includes(path ? "A Linh and Xiaoxue" : "A Linh và Tiểu Tuyết nói chuyện"); await clickText(page, "button", "翻译"); log(`reader translation toggle: ${trOff}`);
+    await clickText(page, "button", "✓ 翻译"); const trOff = !(await body(page)).includes(path ? "A Linh and Xiaoxue" : "A Linh và Tiểu Tuyết nói về"); await clickText(page, "button", "翻译"); log(`reader translation toggle: ${trOff}`);
     await clickText(page, "#reader-top button", path ? "Next" : "Bài sau"); await sleep(300); t = await body(page); log(`reader next lesson: ${t.includes("第2课")}`);
     await clickText(page, "#reader-top button", "1"); await sleep(400);
     if (shotPrefix) { await page.evaluate(() => { const e = document.getElementById("reader-top"); window.scrollTo(0, e.getBoundingClientRect().top + window.scrollY - 8); }); await sleep(500); await page.screenshot({ path: `${shotPrefix}_${path ? "en" : "vi"}_${vp.name}_texts.png`, fullPage: vp.name === "phone" ? false : false }); }

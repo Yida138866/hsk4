@@ -624,26 +624,26 @@ const TRAW = `1|1|对话：阿玲和小雪聊阿玲的男朋友|阿玲跟周南�
 1|3|对话：林阿姨和赵阿姨聊婚后的日子|林阿姨刚结婚时是什么感觉？赵阿姨觉得两个人该怎样相处？|Hội thoại: Thím Lâm và thím Triệu nói về cuộc sống sau khi cưới|Lúc mới cưới, thím Lâm cảm thấy thế nào? Thím Triệu nghĩ hai người nên sống bên nhau ra sao?
 1|4|短文：生活里的小浪漫|文中写了哪些小小的浪漫？最让作者感动的是什么？|Đoạn văn: Chút lãng mạn trong đời thường|Bài viết kể những chút lãng mạn nào? Điều gì khiến tác giả cảm động nhất?
 1|5|短文：走进婚姻的理由|作者认为两个人走进婚姻，最重要的是什么？|Đoạn văn: Lý do bước vào hôn nhân|Tác giả cho rằng điều quan trọng nhất khi hai người bước vào hôn nhân là gì?
-2|1|对话：阿玲和阮明聊刚到中国的日子|阮明刚到中国时适应吗？他平时和阿玲做些什么？|Hội thoại: A Linh và Nguyễn Minh nói về những ngày mới đến Trung Quốc|Khi mới đến Trung Quốc, Nguyễn Minh đã thích nghi chưa? Bình thường anh ấy và A Linh làm gì?
-2|2|对话：小雪为同学聚会发愁|小雪为什么为同学聚会发愁？阿玲怎么安慰她？|Hội thoại: Tiểu Tuyết lo chuyện họp lớp|Vì sao Tiểu Tuyết lo chuyện họp lớp? A Linh an ủi cô ấy thế nào?
-2|3|对话：阿玲和小雪翻看夏令营的照片|看着照片，她们想起了什么？什么是真正让人记得住的？|Hội thoại: A Linh và Tiểu Tuyết xem ảnh trại hè|Nhìn ảnh, họ nhớ điều gì? Điều gì mới thật sự khiến người ta nhớ?
-2|4|短文：宿舍里的那一小时|作者刚住进宿舍时是什么感觉？后来生活有了哪些变化？|Đoạn văn: Một giờ trong ký túc xá|Lúc mới vào ký túc xá tác giả cảm thấy thế nào? Sau đó cuộc sống thay đổi ra sao?
-2|5|短文：朋友不是只会说好话的人|作者把真正的朋友比作什么？这样的朋友会怎样做？|Đoạn văn: Bạn không phải chỉ biết nói lời hay|Tác giả ví người bạn thật sự với gì? Người bạn ấy sẽ làm thế nào?
+2|1|对话：阿玲和阮明聊刚到中国的日子|阮明刚来的时候适应这儿的生活吗？阿玲平时带他做些什么？|Hội thoại: A Linh và Nguyễn Minh nói về những ngày mới đến Trung Quốc|Khi mới đến, Nguyễn Minh có thích nghi với cuộc sống ở đây không? Bình thường A Linh đưa anh ấy làm gì?
+2|2|对话：小雪为同学聚会发愁|小雪为什么为同学聚会发愁？阿玲怎么安慰她？|Hội thoại: Tiểu Tuyết lo chuyện họp lớp|Vì sao Tiểu Tuyết lo việc họp lớp? A Linh an ủi cô ấy thế nào?
+2|3|对话：阿玲和小雪翻看夏令营的照片|她们看着照片想起了什么？阿玲觉得真正让人记得住的是什么？|Hội thoại: A Linh và Tiểu Tuyết xem ảnh trại hè|Nhìn ảnh, họ nhớ điều gì? A Linh cho rằng điều thật sự khiến người ta nhớ là gì?
+2|4|短文：宿舍里的那一小时|作者刚住进宿舍时是什么感觉？后来生活有了什么变化？她为什么还给自己留出一小时？|Đoạn văn: Một giờ trong ký túc xá|Lúc mới ở ký túc xá, tác giả cảm thấy thế nào? Sau đó cuộc sống thay đổi ra sao? Vì sao cô ấy vẫn để dành cho mình một giờ?
+2|5|短文：朋友不是只会说好话的人|作者为什么说真正的朋友更像一扇窗？真正的朋友在你遇到困难时会怎么做？|Đoạn văn: Bạn không phải chỉ biết nói lời hay|Vì sao tác giả nói người bạn thật sự hơn giống một ô cửa sổ? Khi bạn gặp khó khăn, người bạn thật sự sẽ làm gì?
 3|1|对话：阿玲面试前有点儿紧张|阿玲为什么紧张？小雪怎样鼓励她？|Hội thoại: A Linh hơi hồi hộp trước buổi phỏng vấn|Vì sao A Linh hồi hộp? Tiểu Tuyết động viên cô ấy thế nào?
-3|2|对话：周姐和阿玲谈两份应聘材料|哪一份材料更符合要求？周姐打算怎样安排？|Hội thoại: Chị Châu và A Linh bàn hai hồ sơ ứng tuyển|Hồ sơ nào hợp yêu cầu hơn? Chị Châu định sắp xếp thế nào?
-3|3|对话：陈晓跟阿玲说她的新工作|陈晓的新工作是什么？她怎样安排时间和收入？|Hội thoại: Trần Hiểu kể với A Linh về việc mới|Việc mới của Trần Hiểu là gì? Cô ấy sắp xếp thời gian và thu nhập thế nào?
+3|2|对话：周姐和阿玲谈两份应聘材料|周姐本来想找什么样的人？她们最后打算先通知谁？|Hội thoại: Chị Châu và A Linh bàn hai hồ sơ ứng tuyển|Vốn dĩ chị Châu muốn tìm người thế nào? Cuối cùng họ định báo trước cho ai?
+3|3|对话：陈晓跟阿玲说她的新工作|陈晓找到了什么工作？她为什么觉得还可以继续上课？|Hội thoại: Trần Hiểu kể với A Linh về việc mới|Trần Hiểu tìm được việc gì? Vì sao cô ấy vẫn học tiếp được?
 3|4|短文：面试时我想着的两件事|作者参加正式面试时记住了哪两件事？|Đoạn văn: Hai điều tôi nhớ khi phỏng vấn|Khi đi phỏng vấn chính thức, tác giả nhớ hai điều nào?
-3|5|短文：把约定的时间放在心里|在咖啡馆里，作者怎样对待顾客和约定的时间？|Đoạn văn: Để thời gian đã hẹn trong lòng|Ở quán cà phê, tác giả đối xử với khách và giờ hẹn như thế nào?
-4|1|对话：小雪又想换工作|小雪为什么又想换工作？阿玲为什么劝她先等等？|Hội thoại: Tiểu Tuyết lại muốn đổi việc|Vì sao Tiểu Tuyết lại muốn đổi việc? A Linh khuyên cô ấy đợi đã là vì sao?
-4|2|对话：林主管请小雪把调查提前做完|调查的计划有了什么变化？小雪准备怎么做？|Hội thoại: Chủ quản Lâm nhờ Tiểu Tuyết hoàn thành khảo sát sớm|Kế hoạch khảo sát thay đổi thế nào? Tiểu Tuyết định làm ra sao?
-4|3|对话：赵叔叔跟阿玲谈做小生意|赵叔叔的小店刚开头时怎么样？他积累了什么经验？|Hội thoại: Chú Triệu nói với A Linh về làm ăn nhỏ|Tiệm nhỏ của chú Triệu lúc mới mở thế nào? Ông tích lũy được kinh nghiệm gì?
-4|4|短文：一条让人放心的消息|今年的工作为什么说进行得很顺利？经理用什么来感谢大家？|Đoạn văn: Một tin khiến người ta yên tâm|Vì sao nói công việc năm nay diễn ra thuận lợi? Giám đốc cảm ơn mọi người bằng cách nào?
-4|5|短文：不愿做的那份工作|遇到不愿意做的工作时，作者后来是怎么做的？她明白了什么？|Đoạn văn: Việc mình không muốn làm|Khi gặp việc không muốn làm, tác giả đã làm thế nào? Cô ấy hiểu ra điều gì?
+3|5|短文：把约定的时间放在心里|作者在咖啡馆遇到了什么事？她为什么觉得准时是一种尊重？|Đoạn văn: Để thời gian đã hẹn trong lòng|Ở quán cà phê, tác giả gặp chuyện gì? Vì sao cô ấy thấy đúng giờ là một cách tôn trọng?
+4|1|对话：小雪又想换工作|小雪为什么又想换工作？阿玲怎么看这件事？|Hội thoại: Tiểu Tuyết lại muốn đổi việc|Vì sao Tiểu Tuyết lại muốn đổi việc? A Linh nghĩ thế nào về chuyện này?
+4|2|对话：林主管请小雪把调查提前做完|那份调查的完成时间有什么变化？林主管为什么要提前？|Hội thoại: Chủ quản Lâm nhờ Tiểu Tuyết hoàn thành khảo sát sớm|Thời hạn hoàn thành bản khảo sát thay đổi thế nào? Vì sao chủ quản Lâm phải làm sớm hơn?
+4|3|对话：赵叔叔跟阿玲谈做小生意|赵叔叔刚开店时一切顺利吗？以前当老师的经验对他有什么帮助？|Hội thoại: Chú Triệu nói với A Linh về làm ăn nhỏ|Lúc mới mở tiệm, mọi thứ của chú Triệu có thuận không? Kinh nghiệm dạy học trước đây giúp chú thế nào?
+4|4|短文：一条让人放心的消息|他们今年的工作进行得怎么样？经理用什么方式感谢大家？|Đoạn văn: Một tin khiến người ta yên tâm|Năm nay công việc của họ diễn ra thế nào? Giám đốc cảm ơn mọi người bằng cách gì?
+4|5|短文：不愿做的那份工作|遇到不愿意做的工作时，作者后来是怎么做的？做完以后他发现了什么？|Đoạn văn: Việc mình không muốn làm|Khi gặp việc không muốn làm, sau cùng tác giả đã làm thế nào? Làm xong anh ấy nhận ra điều gì?
 5|1|对话：阿玲在家具店看沙发|阿玲想买什么样的沙发？她为什么不马上决定？|Hội thoại: A Linh xem ghế sofa ở cửa hàng nội thất|A Linh muốn mua sofa thế nào? Vì sao cô ấy không quyết ngay?
-5|2|对话：阿玲和周南在商场|阿玲为什么要顺便看冰箱？周南提醒她不要只看什么？|Hội thoại: A Linh và Châu Nam ở trung tâm thương mại|Vì sao A Linh tiện thể xem tủ lạnh? Châu Nam nhắc cô ấy đừng chỉ nhìn vào đâu?
-5|3|对话：给陈老师挑一份礼物|她们为什么想请陈老师吃饭？最后准备了哪些礼物？|Hội thoại: Chọn quà cho cô Trần|Vì sao họ muốn mời cô Trần ăn cơm? Cuối cùng chuẩn bị quà gì?
-5|4|短文：买衣服时我给自己的几条标准|作者以前买衣服有什么问题？后来给自己定了哪些标准？|Đoạn văn: Vài tiêu chuẩn tôi đặt khi mua áo|Trước kia tác giả mua áo có vấn đề gì? Sau đó cô ấy đặt những tiêu chuẩn nào?
-5|5|短文：网上购物也要停一停|作者在网上购物时遇到过什么麻烦？后来养成了什么习惯？|Đoạn văn: Mua hàng online cũng cần dừng lại một chút|Khi mua hàng trên mạng, tác giả từng gặp chuyện gì? Sau đó cô ấy có thói quen gì?
+5|2|对话：阿玲和周南在商场|阿玲先是来看什么的？周南为什么不让她只看宣传上的效果？|Hội thoại: A Linh và Châu Nam ở trung tâm thương mại|Lúc đầu A Linh đến xem gì? Vì sao Châu Nam không để cô ấy chỉ nhìn hiệu quả trên tờ quảng cáo?
+5|3|对话：给陈老师挑一份礼物|她们想邀请谁？为什么不能只看广告就买葡萄？|Hội thoại: Chọn quà cho cô Trần|Họ muốn mời ai? Vì sao không thể chỉ nhìn quảng cáo rồi mua nho?
+5|4|短文：买衣服时我给自己的几条标准|以前作者买衣服有什么问题？后来她给自己定了哪些标准？|Đoạn văn: Vài tiêu chuẩn tôi đặt khi mua áo|Trước kia tác giả mua áo có vấn đề gì? Sau này cô ấy đặt cho mình những tiêu chuẩn nào?
+5|5|短文：网上购物也要停一停|作者在网上买家具时遇到了什么问题？后来她给自己定了什么习惯？|Đoạn văn: Mua hàng online cũng cần dừng lại một chút|Khi mua nội thất trên mạng, tác giả gặp chuyện gì? Sau này cô ấy đặt cho mình thói quen gì?
 6|1|张远和李进聊李进昨晚的购物经历|昨天晚上李进为什么没接张远的电话？|Trương Viễn và Lý Tiến nói chuyện về lần mua sắm tối qua của Lý Tiến|Tối qua vì sao Lý Tiến không nghe điện thoại của Trương Viễn?
 6|2|王静在商店买西红柿|王静买的西红柿怎么样？|Vương Tĩnh mua cà chua ở cửa hàng|Cà chua Vương Tĩnh mua thế nào?
 6|3|李进在商场买行李箱|李进想买什么样的行李箱？花了多少钱买的？|Lý Tiến mua vali ở trung tâm thương mại|Lý Tiến muốn mua vali như thế nào? Đã mua hết bao nhiêu tiền?
