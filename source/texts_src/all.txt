@@ -719,125 +719,365 @@
 ~ The Chinese teacher wrote "What is happiness?" on the blackboard and asked everyone to answer in one sentence. The answers were all different. For example, one person wrote "Being able to sleep until I wake naturally at the weekend", and another wrote "The cup of tea my mother makes, with the sugar kept very low". One classmate finished writing, then gently erased a few characters with an eraser and changed the line to "Eating with my family". The teacher did not say which sentence was the most correct, only that happiness does not have to be loud, and does not have to be expensive. The answers you can put into words are often found in these very small, everyday things.
 
 ## 11
-# 1 阿玲学习阅读 | A Linh luyện đọc hiểu | A Linh practises reading
-阿玲：这篇文章的内容太复杂了，连题目我都看不懂。
-= Nội dung bài văn này phức tạp quá, đến cả đề bài mình cũng không hiểu.
-~ This article is so complicated that I can't even understand the title.
-小雪：别着急。你可以先猜一猜词语的意思，同时看看上下文。
-= Đừng vội. Cậu có thể đoán nghĩa của từ trước, đồng thời xem ngữ cảnh trước sau.
-~ Don't worry. You can guess the meaning of the words first and look at the context at the same time.
-阿玲：可是考试的时候来得及吗？
-= Nhưng lúc thi có kịp không?
-~ But will there be enough time in the exam?
-小雪：所以平时要养成读书的习惯，否则考试时就会很紧张。
-= Vì vậy bình thường phải tạo thói quen đọc sách, nếu không lúc thi sẽ rất căng thẳng.
-~ That's why you need to make reading a habit, otherwise you'll be very nervous in the exam.
-阿玲：无论多忙，我每天都读五页中文杂志，怎么样？
-= Dù bận đến đâu, mỗi ngày mình đọc năm trang tạp chí tiếng Trung, được không?
-~ No matter how busy I am, I'll read five pages of a Chinese magazine every day. How's that?
-小雪：好主意！坚持下去，你的阅读一定会越来越流利。
-= Ý hay! Kiên trì, khả năng đọc của cậu nhất định sẽ ngày càng trôi chảy.
-~ Good idea! Keep it up and your reading will get more and more fluent.
-# 2 短文：读书的乐趣 | Đoạn văn: Niềm vui đọc sách | Passage: The joy of reading
-读书可以增加知识，同时也能让我们放松心情。很多著名的人都有每天阅读的习惯。然而，现在很多年轻人只看手机，很少读完一本书。其实读书不需要很多时间，每天读十几页就够了。在客厅放几本自己喜欢的书，有空儿的时候拿起来看看，慢慢地你就会发现读书的精彩。
-= Đọc sách có thể tăng thêm kiến thức, đồng thời cũng giúp chúng ta thư giãn. Nhiều người nổi tiếng có thói quen đọc sách mỗi ngày. Tuy nhiên, bây giờ nhiều bạn trẻ chỉ xem điện thoại, rất ít khi đọc hết một cuốn sách. Thật ra đọc sách không cần nhiều thời gian, mỗi ngày đọc mười mấy trang là đủ. Đặt vài cuốn sách mình thích trong phòng khách, lúc rảnh cầm lên đọc, dần dần bạn sẽ phát hiện ra cái hay của việc đọc sách.
-~ Reading increases our knowledge and also helps us relax. Many famous people read every day. Yet many young people today only look at their phones and rarely finish a book. In fact reading doesn't take much time — a dozen or so pages a day is enough. Keep a few books you like in the living room and pick one up when you're free; gradually you'll discover how wonderful reading is.
+# 1 对话：林安说他的汉语是怎么练的 | Hội thoại: Lâm An kể cách anh luyện tiếng Trung | Dialogue: Lin An talks about how he practises Chinese
+@ 词语，厉害，流利，语法，准确，连
+小雪：林安，你汉语说得这么流利，是不是有什么特别的办法？
+= Lâm An, tiếng Trung cậu nói lưu loát thế, có cách gì đặc biệt không?
+~ Lin An, you speak Chinese so fluently — is there some special method?
+林安：也没有特别厉害的办法。我每天把新词语抄一遍，再用每个词造两个句子。
+= Cũng chẳng có cách gì đặc biệt giỏi. Mỗi ngày mình chép lại từ mới một lượt, rồi dùng mỗi từ đặt hai câu.
+~ There isn't any especially amazing method. Every day I copy the new words once, then make two sentences with each word.
+阿玲：那语法呢？会不会写的时候还是错？
+= Còn ngữ pháp? Lúc viết vẫn sai chứ?
+~ What about grammar? Do you still make mistakes when you write?
+林安：语法我专门找老师改。他说先求准确，再求快。连发音不好的那个音，我也一天读二十遍。
+= Ngữ pháp mình nhờ giáo viên sửa riêng. Thầy bảo trước hãy chính xác, rồi hãy nhanh. Ngay cả âm phát âm chưa tốt, mình cũng đọc hai mươi lần một ngày.
+~ I have a teacher correct my grammar specially. He says aim for accuracy first, then for speed. Even the sound I still can't pronounce well, I read twenty times a day.
+小雪：听着就认真。我以后也试着每天造句。
+= Nghe đã thấy nghiêm túc. Sau mình cũng thử mỗi ngày đặt câu.
+~ It sounds very conscientious. I'll try making sentences every day too from now on.
+林安：一起练就更好。有人听，才知道哪儿还不准确。
+= Cùng luyện thì càng tốt. Có người nghe mới biết chỗ nào còn chưa chính xác.
+~ It's even better if we practise together. Only when someone listens do you know where you're still not accurate.
+# 2 对话：小雪考试前有点儿来不及 | Hội thoại: Trước kỳ thi Tiểu Tuyết hơi không kịp | Dialogue: Xiaoxue is a little short of time before the exam
+@ 来得及，否则，复杂，填空，阅读，只好，猜
+阿玲：明天就考试了，你复习得怎么样？
+= Ngày mai đã thi rồi, cậu ôn thế nào?
+~ The exam is tomorrow. How is your revision going?
+小雪：阅读还行，可是后面的填空有点儿复杂。有几题我只好先猜。
+= Đọc hiểu còn ổn, nhưng phần điền chỗ trống phía sau hơi phức tạp. Có vài câu mình đành đoán trước.
+~ The reading is all right, but the gap-filling at the back is a bit complicated. For a few items I have no choice but to guess first.
+阿玲：现在开始看，还来得及。否则明天一紧张，更容易空着。
+= Bây giờ bắt đầu xem vẫn còn kịp. Nếu không, ngày mai vừa hồi hộp lại càng dễ để trống.
+~ If you start looking through it now, there's still time. Otherwise, once you're nervous tomorrow, it's even easier to leave them blank.
+小雪：那我今晚先把填空做完。阅读要是剩下十分钟，再检查一遍。
+= Vậy tối nay mình làm xong phần điền đã. Nếu phần đọc còn mười phút thì kiểm tra lại một lượt.
+~ Then I'll finish the gap-filling tonight. If I have ten minutes left for the reading, I'll check it through once more.
+阿玲：对。不会的别空太久，先猜一个，做完再改。
+= Đúng. Câu không làm được đừng để trống lâu, đoán một đáp án trước, làm xong hãy sửa.
+~ That's right. Don't leave the ones you can't do blank for too long. Guess one first, and change it after you finish.
+小雪：好。你也早点儿歇，明天我们都来得及发挥好。
+= Được. Cậu cũng nghỉ sớm, ngày mai cả hai mình vẫn kịp làm tốt.
+~ All right. You should rest a little earlier too, so tomorrow we both still have time to do ourselves justice.
+# 3 对话：阿玲家客厅里的杂志 | Hội thoại: Tạp chí trong phòng khách nhà A Linh | Dialogue: The magazines in A Linh's living room
+@ 客厅，无论，杂志，增加，著名，页
+周南：你们家客厅怎么堆了这么多杂志？
+= Phòng khách nhà cậu sao chất nhiều tạp chí thế?
+~ Why are there so many magazines piled up in your living room?
+阿玲：我妈妈说，无论多忙，每天也要读几页。她还订了两份著名的文化杂志。
+= Mẹ mình bảo, dù bận đến mấy, mỗi ngày cũng phải đọc vài trang. Mẹ còn đặt hai tạp chí văn hóa nổi tiếng.
+~ My mother says that no matter how busy she is, she still reads a few pages every day. She also subscribes to two well-known cultural magazines.
+周南：那你也看吗？
+= Vậy cậu cũng xem chứ?
+~ Do you read them too?
+阿玲：看。我发现，读得多了，自己会写的句子也增加了。有时候一页里就有好几个有用的说法。
+= Có. Mình thấy đọc nhiều thì câu mình viết được cũng tăng lên. Có lúc trong một trang đã có vài cách nói hữu ích.
+~ Yes. I've found that the more I read, the more sentences I can write also increase. Sometimes there are several useful expressions on a single page.
+周南：我以后来，能借一本吗？
+= Lần sau mình đến, mượn một cuốn được không?
+~ Next time I come, may I borrow one?
+阿玲：可以。你先坐在客厅里翻翻，喜欢哪本就拿走。
+= Được. Cậu ngồi ở phòng khách mà lật trước, thích cuốn nào thì mang đi.
+~ Of course. Sit in the living room and leaf through them first, and take whichever you like.
+# 4 短文：我慢慢有了自己的看法 | Đoạn văn: Tôi dần có cách nhìn của riêng mình | Passage: I slowly formed views of my own
+@ 看法，内容，然而，文章，之
+以前读文章，我只问写了什么内容，很少问自己同不同意。后来老师让我们读完写三句话：我看到了什么，我想到了什么，我的看法是什么。然而真要写下看法，才发现并不容易。有的文章之中，作者说得很有道理；有的地方我却想问一句：“一定是这样吗？”就在这一问里，阅读不再只是把字看完，而成为一次认真的对话。
+= Trước khi đọc bài, tôi chỉ hỏi viết nội dung gì, ít khi hỏi mình có đồng ý không. Sau cô giáo bảo đọc xong viết ba câu: tôi thấy gì, nghĩ gì, cách nhìn của tôi là gì. Thế nhưng thật sự phải viết ra cách nhìn mới thấy không dễ. Trong một số bài, tác giả nói rất có lý; có chỗ tôi lại muốn hỏi: «Nhất định phải vậy sao?» Chính trong câu hỏi ấy, việc đọc không còn chỉ là xem hết chữ, mà thành một cuộc đối thoại nghiêm túc.
+~ When I used to read an article, I only asked what the content was, and seldom asked whether I agreed. Later the teacher had us write three sentences after reading: what I saw, what I thought, and what my view was. And yet, only when I really had to write down a view did I find it was not easy. In some articles the author sounds very reasonable; in other places I want to ask, "Does it have to be like this?" It is in that one question that reading is no longer just getting to the end of the words, but becomes a serious conversation.
+# 5 短文：把读书养成一种顺序 | Đoạn văn: Biến việc đọc thành một thứ tự | Passage: Make reading into a kind of order
+@ 表示，精彩，顺序，同时，相同，养成
+选择书的时候，我给自己定了一个小小的顺序：先看自己真正想了解的，再看别人说很精彩的。两本内容并不相同的书，同时放在桌上，反而让我更清楚自己喜欢什么。养成这个习惯以后，我不再一听到“有名”就立刻买。对我来说，读书表示愿意把一段时间安静地交给一本书，而不是匆匆忙忙地翻完。精彩的故事当然好，可适合自己的书，才会让人想再读一遍。
+= Khi chọn sách, tôi đặt cho mình một thứ tự nhỏ: trước hãy xem điều mình thật sự muốn hiểu, rồi mới xem những cuốn người khác bảo rất hay. Hai quyển nội dung không giống nhau, để cùng lúc trên bàn, ngược lại giúp tôi rõ hơn mình thích gì. Sau khi nuôi dưỡng thói quen ấy, tôi không còn vừa nghe «nổi tiếng» là mua ngay. Với tôi, đọc sách biểu thị sẵn sàng dành một khoảng thời gian yên tĩnh cho một quyển sách, chứ không phải lật xong một cách vội. Câu chuyện hay cố nhiên tốt, nhưng cuốn hợp với mình mới khiến người ta muốn đọc lại.
+~ When I choose a book, I have set myself a little order: first look at what I really want to understand, and only then at what other people say is wonderful. Two books whose contents are not the same, placed on the desk at the same time, actually make me clearer about what I like. After forming this habit, I no longer buy something the moment I hear it is "famous." For me, reading means being willing to give a quiet stretch of time to a book, not flipping through it in a hurry. A wonderful story is good, of course, but only a book that suits you makes you want to read it again.
+
 ## 12
-# 1 阿玲学做越南菜 | A Linh dạy nấu món Việt | A Linh teaches Vietnamese cooking
-小雪：阿玲，你能教我做越南春卷吗？
-= A Linh, cậu dạy mình làm nem cuốn Việt Nam được không?
-~ A Linh, can you teach me to make Vietnamese spring rolls?
-阿玲：当然可以。先把菜洗干净，并且要仔细地切好。
-= Tất nhiên rồi. Trước tiên rửa sạch rau, và phải thái cẩn thận.
-~ Of course. First wash the vegetables, and cut them carefully.
-小雪：要放多少盐？用这个勺子可以吗？
-= Phải cho bao nhiêu muối? Dùng cái thìa này được không?
-~ How much salt should I add? Can I use this spoon?
-阿玲：只放一点儿就行。对于越南菜来说，酱汁的作用最大。
-= Chỉ cho một chút là được. Đối với món Việt, nước chấm đóng vai trò lớn nhất.
-~ Just a little. For Vietnamese food, the dipping sauce plays the biggest role.
-小雪：太可惜了，我把卷饼弄破了。
-= Tiếc quá, mình làm rách bánh tráng rồi.
-~ Oh no, I've torn the rice paper.
-阿玲：没关系，再难也别放弃。你看，这次卷得很好！
-= Không sao, khó mấy cũng đừng bỏ cuộc. Cậu xem, lần này cuốn đẹp lắm!
-~ Never mind — however hard it is, don't give up. Look, this one's rolled perfectly!
-# 2 短文：语言和误会 | Đoạn văn: Ngôn ngữ và hiểu lầm | Passage: Language and misunderstandings
-学习一门语言，不只是学习语法和词语，还要了解别人的文化。有一次，阿玲的中国朋友问她：“你吃了吗？”她以为朋友要请她吃饭，结果引起了误会。后来朋友解释说，这只是打招呼的一种方法。相反，越南人见面常常问“你去哪儿？”。也许每种语言都有这样有趣的地方，我们应该友好地互相学习。
-= Học một ngôn ngữ không chỉ là học ngữ pháp và từ vựng, mà còn phải hiểu văn hóa của người khác. Có lần bạn Trung Quốc của A Linh hỏi cô: "Cậu ăn chưa?" Cô tưởng bạn muốn mời mình đi ăn, kết quả gây ra hiểu lầm. Sau đó bạn giải thích rằng đây chỉ là một cách chào hỏi. Ngược lại, người Việt gặp nhau thường hỏi "Đi đâu đấy?". Có lẽ mỗi ngôn ngữ đều có những điểm thú vị như vậy, chúng ta nên học hỏi lẫn nhau một cách thân thiện.
-~ Learning a language means not just learning grammar and words but also understanding other cultures. Once a Chinese friend asked A Linh, "Have you eaten?" She thought her friend was inviting her for a meal, which caused a misunderstanding. Her friend later explained it's just a way of saying hello. In contrast, Vietnamese people often greet each other with "Where are you going?". Perhaps every language has interesting things like this, and we should learn from each other in a friendly way.
+# 1 对话：陈晓的小店遇到了规定 | Hội thoại: Tiệm nhỏ của Trần Hiểu gặp quy định | Dialogue: Chen Xiao's little shop runs into a rule
+@ 并且，规定，可惜，全部，商量，也许，死
+小雪：陈晓今天怎么脸色不好？
+= Hôm nay mặt Trần Hiểu sao không vui?
+~ Why does Chen Xiao look so unhappy today?
+阿玲：他帮忙的那家小店接到新规定：进货渠道全部要改，并且必须这周五前改完。他都快急死了。
+= Tiệm nhỏ cậu ấy phụ thì nhận quy định mới: toàn bộ kênh nhập phải đổi, và phải đổi xong trước thứ sáu tuần này. Cậu ấy gần phát điên lên.
+~ The little shop he helps at has received a new rule: all the supply channels have to be changed, and they must be changed by this Friday. He is almost worried to death.
+小雪：这么急？来不及商量一下吗？
+= Gấp thế? Không kịp bàn bạc một chút à?
+~ So urgent? Is there no time to talk it over a little?
+阿玲：经理说规定不能改，可惜的是，原来那家供货的东西更便宜。
+= Giám đốc bảo quy định không đổi được, đáng tiếc là đồ bên cung cấp cũ rẻ hơn.
+~ The manager says the rule cannot be changed. The pity is that the old supplier's goods were cheaper.
+小雪：也许先改一部分，其余的下周再补？你让他再去商量一次。
+= Có lẽ đổi một phần trước, phần còn lại tuần sau bù? Cậu bảo cậu ấy bàn thêm lần nữa.
+~ Perhaps they could change part of it first, and make up the rest next week? Tell him to go and discuss it once more.
+阿玲：我今晚就跟他说。全部一下子改，真的太赶了。
+= Tối nay mình nói với cậu ấy. Đổi hết một lúc thật sự quá gấp.
+~ I'll talk to him tonight. Changing everything all at once is really too rushed.
+# 2 对话：吴姐教阿玲护一护深色衣服 | Hội thoại: Chị Ngô dạy A Linh giữ áo màu tối | Dialogue: Sister Wu teaches A Linh how to look after dark clothes
+@ 保护，无法，作用，无，盐，勺子
+阿玲：吴姐，这件新衬衣我能和浅色的一起洗吗？
+= Chị Ngô, áo sơ mi mới này em giặt chung với đồ màu sáng được không?
+~ Sister Wu, can I wash this new shirt together with the light-coloured things?
+吴姐：最好别。深色的要是掉色，浅色的就无法再变回来了。
+= Tốt nhất đừng. Đồ tối nếu phai màu thì đồ sáng không cách nào trở lại được nữa.
+~ Better not. If the dark one loses colour, the light ones cannot be made as they were before.
+阿玲：那怎么保护它？
+= Vậy bảo vệ nó thế nào?
+~ Then how can I protect it?
+吴姐：第一次洗，在水里放一小勺子盐，有固色的作用。水要凉，也别泡太久。
+= Lần đầu giặt, cho vào nước một thìa muối nhỏ, có tác dụng giữ màu. Nước phải mát, cũng đừng ngâm lâu.
+~ The first time you wash it, put a small spoon of salt in the water. It has the effect of fixing the colour. The water should be cool, and don't soak it too long either.
+阿玲：没有盐呢？
+= Không có muối thì sao?
+~ What if there's no salt?
+吴姐：没有盐就单独洗。无盐也没关系，只是作用会差一点。
+= Không có muối thì giặt riêng. Không muối cũng không sao, chỉ là tác dụng kém hơn một chút.
+~ Then wash it on its own. It's all right to be without salt, only the effect will be a little weaker.
+# 3 对话：程老师的一节自然课 | Hội thoại: Một tiết tự nhiên của cô Trình | Dialogue: A nature lesson of Teacher Cheng's
+@ 对于，教育，解释，详细，叶子，节
+小雪：你们今天第几节是自然课？我看程老师抱了好多叶子进来。
+= Hôm nay tiết thứ mấy là giờ tự nhiên? Mình thấy cô Trình ôm rất nhiều lá vào.
+~ Which period is nature class for you today? I saw Teacher Cheng come in carrying a lot of leaves.
+阿玲：第三节。她对于怎么引起我们的兴趣，真的很用心。
+= Tiết ba. Cô ấy đối với việc khơi sự thích thú của bọn mình, thật sự rất dụng tâm.
+~ The third period. When it comes to getting us interested, she really puts her heart into it.
+小雪：她怎么上？
+= Cô ấy dạy thế nào?
+~ How does she teach it?
+阿玲：先让我们摸一摸不同的叶子，再详细解释它们为什么形状不一样。一节课下来，大家都不想走。
+= Trước để mình sờ những lá khác nhau, rồi giải thích rất kỹ vì sao hình dạng chúng không giống nhau. Hết một tiết, ai cũng chẳng muốn ra.
+~ First she has us feel different leaves, then she explains in detail why their shapes are not the same. By the end of the period, nobody wants to leave.
+小雪：这种教育方法我喜欢。不是只听，还能动手。
+= Cách giáo dục ấy mình thích. Không phải chỉ nghe, còn được làm.
+~ I like that kind of education. You don't only listen; you can also use your hands.
+阿玲：对。她还说，下节课会带我们去楼下的花园看真的树。
+= Đúng. Cô còn nói tiết sau sẽ đưa mình ra vườn dưới nhà xem cây thật.
+~ Yes. She also said that next period she will take us down to the garden to look at real trees.
+# 4 短文：一句话引起的误会 | Đoạn văn: Sự hiểu lầm do một câu nói | Passage: A misunderstanding caused by one sentence
+@ 使用，误会，引起，友好，语言，直接
+语言使用得不小心，很容易引起误会。有一次我在宿舍想直接问同学：“你的灯还开着吗？”话说快了，听起来倒像在抱怨。她当时没说话，后来才告诉我，她以为我在嫌她。我这才明白，友好的意思，有时不在内容本身，而在快慢和口气。后来再需要提醒别人，我会先叫一声名字，再慢慢把句子说完。直接不是错，可直接也需要温度。
+= Ngôn ngữ dùng không cẩn thận rất dễ gây hiểu lầm. Có lần ở ký túc xá tôi muốn hỏi thẳng bạn: «Đèn cậu vẫn mở à?» Nói nhanh quá, nghe lại giống như phàn nàn. Lúc ấy cô ấy không nói, sau mới bảo tưởng tôi chê. Tôi mới hiểu, ý thân thiện đôi khi không nằm ở bản thân nội dung, mà ở nhanh chậm và giọng. Về sau cần nhắc người khác, tôi gọi tên trước, rồi nói hết câu một cách chậm rãi. Thẳng thắn không sai, nhưng thẳng thắn cũng cần hơi ấm.
+~ If language is used carelessly, it can easily cause a misunderstanding. Once in the dorm I wanted to ask a classmate directly, "Is your light still on?" I said it too quickly, and it sounded rather like a complaint. She said nothing at the time, and only later told me she had thought I was finding fault with her. Only then did I understand that a friendly meaning sometimes lies not in the content itself, but in the speed and the tone. Later, when I need to remind someone of something, I call their name first, then finish the sentence slowly. Being direct is not wrong, but being direct also needs a little warmth.
+# 5 短文：力气要花在该花的地方 | Đoạn văn: Sức lực hãy dùng vào chỗ đáng dùng | Passage: Spend your strength where it ought to be spent
+@ 节约，力气，任务，相反，意见，仔细
+完成一项任务，并不总是花的力气越多越好。有人一得到任务就埋头做很久，相反，有人先仔细看要求，再决定先做什么。第二种看起来慢，常常却更节约时间。对我来说，别人的意见也可以帮我少走弯路，可我不会不看就全听。先听，再想，最后才动手：力气花在该花的地方，事情才会轻一点。
+= Hoàn thành một nhiệm vụ không phải lúc nào cũng càng bỏ nhiều sức càng tốt. Có người vừa nhận việc đã cắm đầu làm rất lâu, ngược lại có người xem kỹ yêu cầu trước, rồi mới quyết làm gì trước. Cách thứ hai trông chậm, thường lại tiết kiệm thời gian hơn. Với tôi, ý kiến người khác cũng có thể giúp bớt đường vòng, nhưng tôi sẽ không nghe hết mà không xem. Nghe trước, nghĩ đã, cuối cùng mới bắt tay: sức dùng đúng chỗ thì việc mới nhẹ hơn.
+~ When you finish a task, more strength is not always better. Some people bury themselves in the work for a long time as soon as they get a task; on the contrary, others first look carefully at what is required, and only then decide what to do first. The second way looks slow, but it often saves more time. For me, other people's opinions can also help me take fewer detours, but I will not follow them all without looking for myself. Listen first, think, and only then start: when your strength is spent where it ought to be spent, the work becomes a little lighter.
+
 ## 13
-# 1 阿玲第一次看京剧 | A Linh lần đầu xem Kinh kịch | A Linh sees Peking opera for the first time
-小雪：昨天的京剧表演怎么样？
-= Buổi biểu diễn Kinh kịch hôm qua thế nào?
-~ How was the Peking opera performance yesterday?
-阿玲：十分精彩！演员的衣服特别漂亮，观众大概有五百人。
-= Rất đặc sắc! Trang phục của diễn viên đặc biệt đẹp, khán giả khoảng năm trăm người.
-~ Wonderful! The actors' costumes were beautiful, and there were about five hundred people in the audience.
-小雪：你听得懂吗？
-= Cậu nghe hiểu không?
-~ Could you understand it?
-阿玲：只听懂一部分，不过旁边有字幕，稍微看一下就明白了。
-= Chỉ hiểu được một phần, nhưng bên cạnh có phụ đề, nhìn qua một chút là hiểu.
-~ Only part of it, but there were subtitles at the side, so a quick look was enough.
-小雪：我偶尔也去看。随着年龄增加，我越来越喜欢京剧了。
-= Thỉnh thoảng mình cũng đi xem. Càng lớn tuổi mình càng thích Kinh kịch.
-~ I go occasionally too. As I get older, I like Peking opera more and more.
-阿玲：下次演出我们一起去吧，由我来买票！
-= Lần biểu diễn sau mình cùng đi nhé, để mình mua vé!
-~ Let's go together to the next show — I'll buy the tickets!
-# 2 短文：互联网和生活 | Đoạn văn: Internet và cuộc sống | Passage: The internet and daily life
-随着互联网的发展，我们的生活发生了很大的变化。现在，在网上申请工作、和来自世界各地的人讨论问题都非常普遍。阿玲每天晚上都和越南的家人视频，好像他们就在身边一样。不过，互联网也有缺点，有的人一上网就是好几个小时。所以，我们应该正确地使用它，让它成为生活的好帮手。
-= Cùng với sự phát triển của Internet, cuộc sống của chúng ta đã thay đổi rất nhiều. Bây giờ, xin việc trên mạng hay thảo luận với những người đến từ khắp nơi trên thế giới đều rất phổ biến. Tối nào A Linh cũng gọi video với gia đình ở Việt Nam, cứ như họ đang ở ngay bên cạnh. Tuy nhiên, Internet cũng có nhược điểm, có người đã lên mạng là mấy tiếng liền. Vì vậy, chúng ta nên sử dụng nó đúng cách, để nó trở thành người trợ thủ tốt trong cuộc sống.
-~ With the development of the internet, our lives have changed enormously. Applying for jobs online or discussing things with people from all over the world is now very common. Every evening A Linh video-calls her family in Vietnam, as if they were right beside her. But the internet has its downsides too — some people spend hours online at a time. So we should use it properly and make it a good helper in our lives.
+# 1 对话：陈叔叔要在社区演京剧 | Hội thoại: Chú Trần sắp diễn Kinh kịch trong khu | Dialogue: Uncle Chen is going to perform Peking opera in the neighbourhood
+@ 大概，观众，京剧，演出，演员，厚
+小雪：周末社区有演出？海报上那个人是谁？
+= Cuối tuần khu phố có buổi diễn à? Người trên áp phích là ai?
+~ Is there a performance in the neighbourhood at the weekend? Who is that person on the poster?
+阿玲：是陈晓的叔叔。他是业余京剧演员，这次要唱一段。
+= Là chú của Trần Hiểu. Chú ấy là diễn viên Kinh kịch nghiệp dư, lần này sẽ hát một đoạn.
+~ That's Chen Xiao's uncle. He's an amateur Peking opera actor, and this time he's going to sing a scene.
+小雪：京剧的衣服那么厚，夏天穿热不热？
+= Áo Kinh kịch dày vậy, mùa hè mặc có nóng không?
+~ Peking opera costumes are so thick — isn't it hot to wear them in summer?
+阿玲：他说大概会有些热，可一想到台下有观众，就顾不上了。
+= Chú ấy bảo đại khái sẽ hơi nóng, nhưng nghĩ đến dưới sân khấu có khán giả thì chẳng kịp để ý nữa.
+~ He said it will probably be a bit hot, but as soon as he thinks of the audience below the stage, he no longer notices.
+小雪：那我们去看吧。我还没现场听过。
+= Vậy mình đi xem đi. Mình chưa nghe trực tiếp bao giờ.
+~ Then let's go and watch. I've never heard it live.
+阿玲：好。陈晓说演完还可以问演员几个问题。
+= Được. Trần Hiểu bảo diễn xong còn có thể hỏi diễn viên vài câu.
+~ All right. Chen Xiao said that after the performance we can also ask the actors a few questions.
+# 2 对话：周南跟着视频学了一段京剧 | Hội thoại: Châu Nam học một đoạn Kinh kịch theo video | Dialogue: Zhou Nan has learned a bit of Peking opera from a video
+@ 表演，吃惊，基础，来自，偶尔，遍
+阿玲：你刚才在房间里唱什么？我听了都吃惊。
+= Lúc nãy cậu hát gì trong phòng thế? Mình nghe đã giật mình.
+~ What were you singing in the room just now? I was startled when I heard it.
+周南：一段很短的京剧。我跟着网上的视频学，同一段听了十几遍，偶尔还比划两下。
+= Một đoạn Kinh kịch rất ngắn. Mình học theo video trên mạng, cùng một đoạn nghe hơn mười lượt, thỉnh thoảng còn ra điệu một chút.
+~ A very short piece of Peking opera. I learned it from a video online, listened to the same passage a dozen times, and occasionally even made a few movements.
+阿玲：你以前有基础吗？
+= Trước cậu có nền tảng không?
+~ Did you have any foundation in it before?
+周南：没有。这兴趣来自上周那场演出。我觉得那种表演很特别，想试试。
+= Không. Hứng thú này đến từ buổi diễn tuần trước. Mình thấy cách biểu diễn ấy rất đặc biệt, muốn thử.
+~ No. This interest comes from that performance last week. I thought that kind of performance was very special, and I wanted to try it.
+阿玲：那你唱一段给我听？
+= Vậy cậu hát một đoạn cho mình nghe được không?
+~ Then will you sing a bit for me?
+周南：行。不过你可别笑，我还只是刚刚开始。
+= Được. Nhưng cậu đừng cười, mình mới chỉ vừa bắt đầu.
+~ All right. But don't you laugh — I'm still only just beginning.
+# 3 对话：程老师向校长申请一个小活动 | Hội thoại: Cô Trình xin hiệu trưởng một hoạt động nhỏ | Dialogue: Teacher Cheng applies to the principal for a small event
+@ 继续，开心，申请，讨论，有趣，正常，由
+小雪：程老师今天怎么这么开心？
+= Hôm nay cô Trình sao vui thế?
+~ Why is Teacher Cheng so happy today?
+阿玲：她向校长申请在下个月办一场小小的文化活动，校长说可以继续往下准备。
+= Cô ấy xin hiệu trưởng tháng sau tổ chức một hoạt động văn hóa nhỏ, thầy hiệu trưởng bảo có thể tiếp tục chuẩn bị.
+~ She applied to the principal to hold a small cultural event next month, and the principal said she could continue preparing it.
+小雪：都有什么？
+= Có những gì?
+~ What's it going to include?
+阿玲：由学生表演短剧、写毛笔字，还讨论怎么把活动做得有趣一点儿。时间就放在正常上课的周五下午。
+= Do học sinh diễn kịch ngắn, viết chữ bút lông, còn thảo luận cách làm hoạt động thú vị hơn một chút. Thời gian để vào chiều thứ sáu giờ học bình thường.
+~ The students will put on a short play and practise brush writing, and they'll also discuss how to make the event a little more interesting. It will be at the normal time, on Friday afternoon.
+小雪：那我们班能参加吗？
+= Vậy lớp mình tham gia được không?
+~ Can our class take part?
+阿玲：能。程老师说先交一份简单的申请，再报名。
+= Được. Cô Trình bảo nộp một đơn xin đơn giản trước, rồi mới đăng ký.
+~ Yes. Teacher Cheng said to hand in a simple application first, and then sign up.
+# 4 短文：餐厅里的一张小说明 | Đoạn văn: Một tờ hướng dẫn nhỏ trong nhà hàng | Passage: A little notice in a restaurant
+@ 互联网，餐厅，错误，大约，进行，纸袋
+附近新开了一家中餐厅。店不大，可桌子上放着一张用中文和越南文写的说明：怎么用筷子，怎么把剩菜装进纸袋。老板说，说明是在互联网上请人一起改的，为的是少出错误。第一次去的人大约都要看一两分钟，才开始点菜。点完以后，服务进行得并不慢。我喜欢这种做法：不是假设人人都会，而是先把可能不清楚的地方写明白。
+= Gần đây mới mở một nhà hàng Trung. Tiệm không lớn, nhưng trên bàn có một tờ hướng dẫn viết bằng tiếng Trung và tiếng Việt: dùng đũa thế nào, thức ăn thừa cho vào túi giấy ra sao. Ông chủ nói tờ ấy được nhờ người sửa cùng trên internet, để bớt sai sót. Người đến lần đầu đại khái đều xem một hai phút rồi mới gọi món. Gọi xong, việc phục vụ tiến hành cũng không chậm. Tôi thích cách ấy: không giả định ai cũng biết, mà viết rõ những chỗ có thể chưa rõ trước.
+~ A Chinese restaurant has just opened nearby. The shop is not large, but on the tables there is a notice written in Chinese and Vietnamese: how to use chopsticks, and how to put leftover dishes into a paper bag. The owner said the notice had been revised together with people on the internet, so as to make fewer mistakes. People coming for the first time spend about one or two minutes reading it before they start to order. After they have ordered, the service is carried out at a pace that is not slow. I like this way of doing things: it does not assume that everyone already knows, but first writes down clearly the places that might not be clear.
+# 5 短文：老家那碗稍微有点儿苦的汤 | Đoạn văn: Bát canh hơi đắng một chút ở quê | Passage: That slightly bitter soup from home
+@ 部分，普遍，稍微，十分，随着，苦，省
+我的老家在一个南方的省。那里有一种汤，味道稍微有点儿苦，可十分清爽。以前只有部分上了年纪的人爱喝。随着年轻人回家的次数增加，这种汤也慢慢变得普遍起来。有人往里放一点甜的，有人坚持原味。我每次回去，还是先喝一碗不放糖的。苦过后的那一点儿甜，像是把一路上的灰尘都洗掉了。
+= Quê tôi ở một tỉnh phía nam. Ở đó có một món canh, vị hơi đắng một chút, nhưng rất thanh. Trước chỉ một phần người lớn tuổi thích uống. Theo những lần người trẻ về nhà tăng lên, món canh ấy cũng dần trở nên phổ biến. Có người cho vào một chút ngọt, có người giữ nguyên vị. Mỗi lần về, tôi vẫn uống trước một bát không đường. Chút ngọt sau vị đắng như rửa sạch bụi dọc đường.
+~ My hometown is in a province in the south. There is a kind of soup there whose taste is slightly bitter, but which is extremely refreshing. In the past only part of the older people liked to drink it. As the number of times young people go home has increased, this soup has also slowly become common. Some people add a little something sweet; some insist on the original taste. Each time I go back, I still first have a bowl with no sugar. The little sweetness after the bitterness feels as if it has washed off the dust of the whole journey.
+
 ## 14
-# 1 阿玲出差 | A Linh đi công tác | A Linh goes on a business trip
-阿玲：这次出差要乘坐火车，我的行李箱太重了。
-= Lần này đi công tác phải đi tàu hỏa, vali của mình nặng quá.
-~ This business trip is by train, and my suitcase is too heavy.
-小雪：你都带了什么？
-= Cậu mang những gì thế?
-~ What have you packed?
-阿玲：毛巾、牙膏、衣服什么的，还有很多材料。
-= Khăn mặt, kem đánh răng, quần áo các thứ, còn có rất nhiều tài liệu.
-~ Towels, toothpaste, clothes and so on, plus lots of documents.
-小雪：既然酒店有毛巾和牙膏，你就别带了，还能减少塑料袋。
-= Khách sạn đã có khăn và kem đánh răng thì cậu đừng mang nữa, còn giảm được túi ni-lông.
-~ Since the hotel has towels and toothpaste, don't bring them — that also cuts down on plastic bags.
-阿玲：有道理，于是我又把它们拿出来了。现在轻多了！
-= Có lý, thế là mình lại lấy chúng ra. Giờ nhẹ hơn nhiều rồi!
-~ Good point — so I've taken them out again. It's much lighter now!
-小雪：路上注意安全，到了给我发个消息。
-= Đi đường cẩn thận, đến nơi nhắn tin cho mình nhé.
-~ Be safe on the way and send me a message when you arrive.
-# 2 短文：保护我们的地球 | Đoạn văn: Bảo vệ Trái Đất của chúng ta | Passage: Protecting our Earth
-地球是我们共同的家，可是现在污染越来越严重，温度也越来越高。其实保护地球并不难，每个人都可以从小事做起：少用塑料袋，不乱扔垃圾，离开房间时关灯，出门时多乘坐公共汽车。阿玲的公司还鼓励员工以骑自行车的方式上班。只要大家一起努力，地球一定会更美丽。
-= Trái Đất là ngôi nhà chung của chúng ta, nhưng bây giờ ô nhiễm ngày càng nghiêm trọng, nhiệt độ cũng ngày càng cao. Thật ra bảo vệ Trái Đất không khó, mỗi người đều có thể bắt đầu từ việc nhỏ: dùng ít túi ni-lông, không vứt rác bừa bãi, tắt đèn khi rời phòng, ra ngoài đi xe buýt nhiều hơn. Công ty của A Linh còn khuyến khích nhân viên đi làm bằng xe đạp. Chỉ cần mọi người cùng cố gắng, Trái Đất nhất định sẽ đẹp hơn.
-~ The Earth is our shared home, but pollution is getting worse and temperatures keep rising. Protecting the Earth isn't actually hard; everyone can start with small things: use fewer plastic bags, don't litter, switch off the lights when you leave a room, and take the bus more often. A Linh's company even encourages staff to cycle to work. As long as we all make an effort, the Earth will surely become more beautiful.
+# 1 对话：阿玲出差前整理箱子 | Hội thoại: A Linh sắp xếp vali trước khi đi công tác | Dialogue: A Linh packs her suitcase before a business trip
+@ 出差，毛巾，污染，牙膏，空，省，行，重
+小雪：你明天出差，箱子整理好了吗？
+= Ngày mai cậu đi công tác, vali sắp xong chưa?
+~ You're going away on business tomorrow. Have you finished packing the suitcase?
+阿玲：还没有。毛巾和牙膏放进去了，可还是有点儿重。你帮我看看，这样行不行？
+= Chưa. Khăn và kem đánh răng đã để vào, nhưng vẫn hơi nặng. Cậu xem giúp, như thế có ổn không?
+~ Not yet. The towel and the toothpaste are in, but it's still a bit heavy. Help me have a look — is this all right?
+小雪：那两瓶水可以拿出来。路上再买，也能少一点儿包装污染。而且箱子里还能空出一些地方。
+= Hai chai nước ấy có thể lấy ra. Dọc đường mua thêm, cũng bớt một chút ô nhiễm bao bì. Và trong vali còn để trống được một ít chỗ.
+~ You can take those two bottles of water out. Buying more on the way will also mean a little less packaging pollution. And there will still be some empty space left in the suitcase.
+阿玲：说得对。这样能省一点分量，提起来也轻松。
+= Đúng đó. Như vậy tiết kiệm được một chút sức, xách cũng nhẹ hơn.
+~ That's right. This way I can save a little weight, and it will also be easier to lift.
+小雪：证件放在最上面了吗？
+= Giấy tờ để trên cùng chưa?
+~ Are your documents on the very top?
+阿玲：放了。现在这样应该就行。
+= Để rồi. Giờ như thế chắc được.
+~ They're in. It should be all right like this now.
+# 2 对话：店长请小雪先把卫生间收拾一下 | Hội thoại: Quản lý nhờ Tiểu Tuyết dọn nhà vệ sinh trước | Dialogue: The shop manager asks Xiaoxue to tidy the bathroom first
+@ 卫生间，抱歉，盒子，速度，扔，以，脏
+店长：小雪，抱歉，开门前还想请你先看一下卫生间。
+= Tiểu Tuyết, xin lỗi, trước khi mở cửa chị muốn nhờ em xem nhà vệ sinh trước.
+~ Xiaoxue, I'm sorry, but before we open I'd like you to look at the bathroom first.
+小雪：好。我刚才看见洗手台有点脏，还有两个空盒子扔在角落里。
+= Được. Lúc nãy em thấy bồn rửa hơi bẩn, còn hai hộp rỗng bị bỏ ở góc.
+~ All right. I just saw that the washbasin is a bit dirty, and there are also two empty boxes thrown in the corner.
+店长：那就先把脏的擦掉，盒子收起来。今天客人来得早，速度得快一点。
+= Vậy hãy lau chỗ bẩn trước, thu các hộp lại. Hôm nay khách đến sớm, tốc độ phải nhanh hơn một chút.
+~ Then wipe the dirty places first, and put the boxes away. The customers will come early today, so the speed needs to be a little quicker.
+小雪：我以最快的速度做。垃圾桶也一起换了吧？
+= Em sẽ làm với tốc độ nhanh nhất. Thùng rác cũng đổi luôn chứ ạ?
+~ I'll do it at the fastest speed I can. Shall I change the bin as well?
+店长：换了。做完跟我说一声，我们再开灯开门。
+= Đổi đi. Xong thì nói chị một tiếng, mình mới bật đèn mở cửa.
+~ Yes, change it. Tell me when you've finished, and then we'll turn on the lights and open the door.
+小雪：好，我现在就去。
+= Vâng, em đi ngay đây.
+~ All right, I'll go right now.
+# 3 对话：周南为关灯夜做了一张海报 | Hội thoại: Châu Nam làm một tấm áp phích cho đêm tắt đèn | Dialogue: Zhou Nan has made a poster for Lights-Off Night
+@ 得意，地球，既然，目的，暖，停
+阿玲：你怎么这么得意？手里那张画的是什么？
+= Sao cậu đắc ý thế? Tấm vẽ trên tay là gì?
+~ Why do you look so pleased with yourself? What's that picture in your hand?
+周南：下周五学校要办“关灯夜”。我画了海报。目的很简单：让灯停一小时，让地球少热一点儿。
+= Thứ sáu tuần sau trường tổ chức «Đêm tắt đèn». Mình vẽ áp phích. Mục đích rất giản: để đèn dừng một giờ, để Trái Đất bớt nóng một chút.
+~ Next Friday the school is holding Lights-Off Night. I drew the poster. The aim is simple: to let the lights stop for an hour, and to let the Earth get a little less hot.
+阿玲：既然是晚上，天气还暖，关灯应该没问题。你海报上写了时间吗？
+= Đã là buổi tối, thời tiết còn ấm, tắt đèn chắc không sao. Áp phích cậu có ghi giờ không?
+~ Since it's in the evening and the weather is still warm, turning the lights off should be all right. Did you write the time on your poster?
+周南：写了。八点开始，九点结束。教室、走廊都参加。
+= Ghi rồi. Tám giờ bắt đầu, chín giờ kết thúc. Lớp học, hành lang đều tham gia.
+~ I did. It starts at eight and ends at nine. The classrooms and the corridors will all take part.
+阿玲：那我帮你贴到楼下。别太得意，字再写清楚一点就更好了。
+= Vậy mình dán giúp xuống tầng dưới. Đừng đắc ý quá, chữ viết rõ hơn nữa thì càng tốt.
+~ Then I'll help you put it up downstairs. Don't be too pleased with yourself — it would be even better if the characters were a little clearer.
+周南：好，我回去改两个字。
+= Được, mình về sửa hai chữ.
+~ All right, I'll go back and change two of the characters.
+# 4 短文：我开始少拿一只塑料袋 | Đoạn văn: Tôi bắt đầu cầm ít hơn một túi ni-lông | Passage: I have started taking one fewer plastic bag
+@ 塑料袋，鼓励，减少，拒绝，数量，于是
+超市的塑料袋用起来确实方便，可数量一大，就很难再看不见。有一次收银员习惯性地递过来两只，我第一次试着拒绝了一只，改用自己带的布袋。收银员没有不高兴，还轻轻点了点头，像是在鼓励我。于是后来再出门，我把布袋放进包里，能少拿就少拿。减少一只袋子，看起来是小事，可每次少拿一点，袋子就不会在家里越堆越高。
+= Túi ni-lông ở siêu thị dùng thì quả tiện, nhưng số lượng một khi đã lớn thì khó mà không nhìn thấy. Có lần nhân viên thu ngân quen tay đưa tới hai chiếc, lần đầu tôi thử từ chối một chiếc, đổi sang túi vải tự mang. Nhân viên không khó chịu, còn gật nhẹ như đang khuyến khích tôi. Thế là những lần ra khỏi cửa sau, tôi bỏ túi vải vào cặp, có thể cầm ít thì cầm ít. Giảm một chiếc túi nhìn thì là việc nhỏ, nhưng lần nào cũng cầm ít hơn một chút thì túi sẽ không chồng cao mãi trong nhà.
+~ Plastic bags at the supermarket are certainly convenient to use, but once the number becomes large, they are hard to ignore. Once a cashier handed me two out of habit. For the first time I tried refusing one, and used a cloth bag I had brought instead. The cashier was not unhappy, and even nodded slightly, as if to encourage me. So later, when I went out again, I put the cloth bag in my backpack, and took fewer whenever I could. Reducing the count by one bag looks like a small thing, but if you take a little fewer each time, the bags will not pile higher and higher at home.
+# 5 短文：把丢掉的习惯也一起丢掉 | Đoạn văn: Hãy vứt luôn cả thói quen vứt đại | Passage: Throw away the habit of throwing things away, too
+@ 垃圾桶，乘坐，美丽，温度，丢
+想让身边的环境美丽一点，其实不必等很大的改变。乘坐公交时，空杯子不要随手丢在座位下，下车时带去站里的垃圾桶。夏天把温度调高一度，冬天调低一度，房间一样能住。这些事谁都会，难的是每次都记得做。我现在出门会先看一看口袋里有没有要丢的东西。能少丢一点，路上就会干净一点，心情也会安静一点。
+= Muốn môi trường quanh mình đẹp hơn một chút, thật ra chẳng cần đợi thay đổi lớn. Khi đi xe buýt, đừng tiện tay vứt cốc không dưới ghế, lúc xuống xe hãy mang tới thùng rác ở trạm. Mùa hè chỉnh nhiệt độ lên một độ, mùa đông xuống một độ, phòng vẫn ở được. Việc ấy ai cũng biết, cái khó là lần nào cũng nhớ làm. Giờ ra khỏi cửa tôi nhìn trước trong túi còn gì phải vứt không. Vứt ít hơn một chút thì đường sạch hơn một chút, tâm trạng cũng yên hơn một chút.
+~ If you want the surroundings to be a little more beautiful, you do not really have to wait for a big change. When you ride the bus, don't casually throw an empty cup under the seat; take it to the bin at the stop when you get off. In summer turn the temperature up one degree, in winter down one degree, and the room is still perfectly livable. Everyone can do these things; the hard part is remembering to do them every time. Now, when I go out, I first look in my pockets to see whether there is anything I need to throw away. If I can throw a little less away, the road will be a little cleaner, and my mood will also be a little quieter.
+
 ## 15
-# 1 阿玲学弹钢琴 | A Linh học đàn piano | A Linh learns the piano
-小雪：我刚才听到有人在弹钢琴，原来是你呀！
-= Vừa nãy mình nghe thấy có người đánh đàn piano, hóa ra là cậu à!
-~ I just heard someone playing the piano — so it was you!
-阿玲：我才学了两个星期，弹得很笨，你千万别笑我。
-= Mình mới học được hai tuần, đánh vụng lắm, cậu đừng cười mình nhé.
-~ I've only been learning for two weeks and I'm clumsy. Please don't laugh at me.
-小雪：怎么会呢？已经很棒了。你怎么想起来学钢琴了？
-= Sao thế được? Đã hay lắm rồi. Sao cậu lại nghĩ đến việc học piano?
-~ Of course not! It's already great. What made you think of learning the piano?
-阿玲：小时候我就想学，可是家里没条件。现在终于有机会了。
-= Hồi nhỏ mình đã muốn học, nhưng nhà không có điều kiện. Bây giờ cuối cùng cũng có cơ hội.
-~ I wanted to learn when I was little, but my family couldn't afford it. Now I finally have the chance.
-小雪：你每天练多长时间？
-= Mỗi ngày cậu tập bao lâu?
-~ How long do you practise each day?
-阿玲：一个小时左右。老师表扬我进步很快，我有点儿骄傲了！
-= Khoảng một tiếng. Thầy khen mình tiến bộ nhanh, mình hơi tự hào rồi đấy!
-~ About an hour. My teacher praised me for improving quickly — I'm a little proud!
-# 2 短文：教育孩子的方法 | Đoạn văn: Cách dạy con | Passage: How to bring up children
-儿童都喜欢被表扬。如果孩子做得好，父母应该及时表扬他；如果孩子粗心弄错了，也不要马上批评，而是耐心地告诉他应该怎么做。有的孩子很害羞，父母可以多鼓励他和别人交流。总之，管理孩子不能只靠批评，合适的方法比严格更重要。
-= Trẻ em đều thích được khen. Nếu con làm tốt, cha mẹ nên khen kịp thời; nếu con sơ ý làm sai, cũng đừng phê bình ngay mà nên kiên nhẫn nói cho con biết phải làm thế nào. Có những đứa trẻ rất hay xấu hổ, cha mẹ có thể khuyến khích con giao tiếp với người khác nhiều hơn. Tóm lại, dạy con không thể chỉ dựa vào phê bình, phương pháp phù hợp quan trọng hơn nghiêm khắc.
-~ Children all love to be praised. If a child does well, parents should praise them promptly; if the child makes a careless mistake, don't criticise straight away but patiently show them what to do. Some children are shy, and parents can encourage them to talk with others more. In short, raising children can't rely on criticism alone — the right method matters more than strictness.
+# 1 对话：周南的父亲让孩子寒假坚持弹钢琴 | Hội thoại: Bố Châu Nam để con kiên trì đánh piano trong kỳ nghỉ đông | Dialogue: Zhou Nan's father has the child keep up the piano over the winter holiday
+@ 弹钢琴，父亲，寒假，孙子，棒，假
+小雪：周南，你弟弟寒假还去上课吗？
+= Châu Nam, em trai cậu kỳ nghỉ đông vẫn đi học chứ?
+~ Zhou Nan, is your little brother still going to class in the winter holiday?
+周南：去。我父亲说，假可以放，可弹钢琴不能停。每天半小时，由他看着。
+= Có. Bố mình bảo, nghỉ thì được nghỉ, nhưng đàn piano không được dừng. Mỗi ngày nửa tiếng, do bố trông.
+~ Yes. My father says he can have the holiday, but the piano must not stop. Half an hour a day, and my father watches him.
+阿玲：小朋友能坐得住吗？
+= Bé ngồi yên được không?
+~ Can the little one sit still for that?
+周南：一开始不太愿意，后来弹了一首简单的，爷爷还夸他棒。他是家里最小的孙子，听了特别高兴。
+= Lúc đầu không mấy muốn, sau đàn được một bài đơn giản, ông còn khen giỏi. Cậu ấy là cháu nội nhỏ nhất trong nhà, nghe vậy vui lắm.
+~ At first he wasn't very willing. Later he played a simple piece, and Grandpa even praised him for being great. He's the youngest grandson in the family, and he was especially happy to hear that.
+小雪：那倒是个好办法。先让他觉得自己行。
+= Thế thì là cách hay. Để cậu ấy thấy mình làm được trước.
+~ That's a good way, actually. Let him feel first that he can do it.
+周南：是啊。我父亲还说，假期里养成的习惯，开学才带得走。
+= Phải. Bố mình còn nói, thói quen nuôi trong kỳ nghỉ thì lúc khai giảng mới mang đi được.
+~ Yes. My father also says that a habit formed in the holiday is one you can take with you when term starts.
+# 2 对话：小雪家早上总为出门着急 | Hội thoại: Nhà Tiểu Tuyết buổi sáng cứ vội vì ra khỏi cửa | Dialogue: Xiaoxue's house is always in a rush in the morning
+@ 厕所，管理，批评，赶，弄，响，醒
+阿玲：你今天怎么气喘吁吁的？
+= Hôm nay cậu sao thở hổn hển thế?
+~ Why are you so out of breath today?
+小雪：早上闹钟响了，弟弟还不醒。等他醒了又去厕所很久，我们出门就得赶车。
+= Sáng đồng hồ reo, em trai vẫn chưa thức. Đợi cậu ấy thức rồi lại vào nhà vệ sinh rất lâu, ra khỏi cửa là phải chạy cho kịp xe.
+~ The alarm went off in the morning, and my little brother still wasn't awake. After he woke up he was in the bathroom for a long time, so when we left we had to rush for the bus.
+阿玲：你妈妈没说他吗？
+= Mẹ cậu không nói gì à?
+~ Didn't your mother say anything to him?
+小雪：说了。可一批评，他就更慢。我妈现在想先教他管理时间，把衣服昨晚就弄好。
+= Có. Nhưng vừa phê bình là cậu ấy càng chậm. Giờ mẹ muốn dạy cậu ấy quản lý thời gian trước, quần áo thì tối hôm trước sắp sẵn.
+~ She did. But as soon as she's critical, he gets even slower. Now my mum wants to teach him first to manage his time, and to get his clothes ready the night before.
+阿玲：这办法好。赶车的时候一着急，谁都会不高兴。
+= Cách ấy hay. Lúc chạy cho kịp xe mà sốt ruột, ai cũng không vui.
+~ That's a good idea. When you're rushing for the bus and getting anxious, nobody is in a good mood.
+小雪：对。今晚我先帮他把书包弄整齐，明天试一天。
+= Đúng. Tối nay mình giúp cậu ấy xếp cặp cho gọn, ngày mai thử một ngày.
+~ Yes. Tonight I'll first help him get his schoolbag straight, and we'll try it for a day tomorrow.
+# 3 对话：诊所里的一次小小表扬 | Hội thoại: Một lời khen nhỏ trong phòng khám | Dialogue: A little bit of praise at the clinic
+@ 表扬，打针，护士，怀疑，千万
+阿玲：陈晓的妹妹今天去打针，哭了吗？
+= Em gái Trần Hiểu hôm nay đi tiêm, có khóc không?
+~ Chen Xiao's little sister went to have an injection today. Did she cry?
+小雪：开始有点儿怕。护士先表扬她站得直，又说“千万别看针，数到三就好”。她还怀疑自己做不到，后来真的没哭。
+= Lúc đầu hơi sợ. Cô y tá khen trước là đứng thẳng, lại nói «nhất định đừng nhìn kim, đếm đến ba là xong». Bé còn nghi mình làm không được, sau đúng là không khóc.
+~ She was a little afraid at first. The nurse first praised her for standing up straight, and also said, "Whatever you do, don't look at the needle; count to three and it will be over." She still doubted she could do it, and then she really didn't cry.
+阿玲：这护士真会说话。
+= Cô y tá ấy biết nói thật.
+~ That nurse really knows how to speak to a child.
+小雪：是啊。陈晓说，回家路上妹妹还问：“我今天是不是挺勇敢？”
+= Phải. Trần Hiểu bảo, trên đường về bé còn hỏi: «Hôm nay em có dũng cảm không?»
+~ Yes. Chen Xiao said that on the way home she even asked, "Was I quite brave today?"
+阿玲：那就再表扬一次。让她记得，怕也可以把事情做完。
+= Vậy thì khen thêm lần nữa. Để bé nhớ, sợ vẫn làm xong việc được.
+~ Then praise her once more. Let her remember that even when you're afraid, you can still finish the thing.
+小雪：我回头告诉陈晓。千万别只说“不哭就好”，要把她哪一点做好了说出来。
+= Lát mình nói với Trần Hiểu. Nhất định đừng chỉ nói «không khóc là được», phải nói rõ bé làm tốt chỗ nào.
+~ I'll tell Chen Xiao later. Be sure not to say only "It's good you didn't cry"; say which part she did well.
+# 4 短文：敲门进来之前 | Đoạn văn: Trước khi gõ cửa bước vào | Passage: Before you knock and come in
+@ 儿童，故意，合适，整理，骗，敲
+有的儿童不是故意要把房间弄乱，只是还没找到合适的办法把东西放回去。也有的孩子说“作业写完了”，其实是想先去玩，这和骗人不远。与其一开口就生气，不如先敲敲他的门，进房间一起整理。把铅笔放进笔袋，把书放回桌上，再问他：下一件事打算怎么做。孩子需要的，常常不是一句重话，而是一个可以跟着做的样子。
+= Có trẻ em không phải cố ý làm loạn phòng, chỉ chưa tìm ra cách phù hợp để để đồ lại chỗ cũ. Cũng có trẻ nói «bài đã viết xong», thật ra muốn đi chơi trước, thế là gần với việc lừa. Thay vì vừa mở miệng đã giận, hãy gõ cửa phòng trước, vào cùng sắp xếp. Bỏ bút vào túi, để sách lại lên bàn, rồi hỏi: việc tiếp theo định làm thế nào. Điều trẻ cần thường không phải một câu nặng lời, mà là một gương để làm theo.
+~ Some children do not make a mess of the room on purpose; they just have not yet found a suitable way to put things back. There are also children who say "I've finished my homework" when they really want to go and play first, which is not far from tricking someone. Rather than getting angry the moment you open your mouth, you might first knock on the door, go in, and tidy up together. Put the pencils in the case, put the books back on the desk, then ask: what do you plan to do next? What a child often needs is not a heavy sentence, but an example they can follow.
+# 5 短文：教室左右两边的两种孩子 | Đoạn văn: Hai kiểu trẻ ở hai bên lớp | Passage: Two kinds of children on the left and right of the classroom
+@ 粗心，害羞，骄傲，左右，笨，懒
+教儿童的老师常会看到：教室左右两边坐着完全不同的孩子。有的因为粗心把题抄错，并不等于笨；有的因为懒得问，也不等于不会。还有的孩子很害羞，一被问起就低头；有的刚刚答对，又容易骄傲。要让他们安静地学下去，先得让他们觉得自己可以被看懂。错了就慢慢改，对了也不必说得太满。孩子不是桌子上的物品，他们会看你的脸色，也会听你口气里的那一点温度。
+= Giáo viên dạy trẻ thường thấy: hai bên trái phải của lớp ngồi những đứa hoàn toàn khác nhau. Có em vì sơ ý chép sai đề, không có nghĩa là vụng; có em vì lười hỏi, cũng không có nghĩa là không biết. Lại có em rất nhút nhát, vừa bị hỏi đã cúi đầu; có em mới trả lời đúng đã dễ kiêu. Muốn các em học yên, trước hết phải để các em thấy mình được hiểu. Sai thì sửa từ từ, đúng cũng đừng nói quá đầy. Trẻ không phải đồ trên bàn, chúng nhìn nét mặt bạn, cũng nghe chút hơi ấm trong giọng bạn.
+~ Teachers of children often see this: on the left and right of the classroom sit completely different children. Some copy a question wrong out of carelessness, which does not mean they are slow; some are too lazy to ask, which does not mean they cannot do it. There are also children who are very shy and look down as soon as they are asked; and some who, having just answered correctly, can easily become proud. If you want them to go on learning quietly, you first have to let them feel they can be understood. When they are wrong, change it slowly; when they are right, there is no need to say too much. Children are not objects on a desk. They watch your face, and they also hear that little bit of warmth in your tone.
+
 ## 16
 # 1 阿玲办签证 | A Linh làm visa | A Linh applies for a visa
 阿玲：小雪，我要报名参加一个夏令营，可是签证到底怎么办？

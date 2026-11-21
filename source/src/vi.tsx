@@ -669,30 +669,31 @@ const TRAW = `1|1|对话：阿玲和小雪聊阿玲的男朋友|阿玲跟周南�
 10|3|对话：陈晓为将来的工作发愁|陈晓为什么躺在宿舍里？阿玲和小雪给了他什么建议？|Hội thoại: Trần Hiểu lo việc làm cho tương lai|Vì sao Trần Hiểu nằm trong ký túc xá? A Linh và Tiểu Tuyết khuyên cậu ấy điều gì?
 10|4|短文：小店门口的一句话|文具店的老板穷不穷？他对扩大店面是怎么看的？|Đoạn văn: Một câu trước cửa tiệm nhỏ|Ông chủ tiệm văn phòng phẩm có nghèo không? Ông ấy nghĩ thế nào về việc mở rộng cửa tiệm?
 10|5|短文：黑板上的几种答案|老师让学生回答什么问题？黑板上出现了哪些不同的答案？|Đoạn văn: Vài lời đáp trên bảng|Cô giáo bảo học sinh trả lời câu gì? Trên bảng có những câu trả lời khác nhau nào?
-11|1|马克介绍自己学习汉语的方法|大卫认为对学习汉语的外国人来说，做什么特别难？|Mark giới thiệu phương pháp học tiếng Trung của mình|David cho rằng đối với người nước ngoài học tiếng Trung, việc gì đặc biệt khó?
-11|2|小夏和小雨聊考试的情况|要想考好，应该注意哪些方面？为什么？|Tiểu Hạ và Tiểu Vũ nói chuyện về kỳ thi|Muốn thi tốt cần chú ý những mặt nào? Vì sao?
-11|3|小李告诉小林阅读的好处|小李家的客厅有什么特点？坚持阅读能给人带来哪些好处？|Tiểu Lý kể cho Tiểu Lâm về lợi ích của việc đọc sách|Phòng khách nhà Tiểu Lý có đặc điểm gì? Kiên trì đọc sách mang lại những lợi ích gì?
-11|5|短文|我们应该选择读什么样的书？为什么？|Đoạn văn|Chúng ta nên chọn đọc những cuốn sách như thế nào? Vì sao?
-12|1|王经理做生意遇到了困难|要是工作或学习遇到困难，你可能用什么方法去解决？|Giám đốc Vương gặp khó khăn trong kinh doanh|Nếu gặp khó khăn trong công việc hoặc học tập, bạn có thể dùng cách gì để giải quyết?
-12|2|高老师告诉女儿洗衣服的方法|哪种方法可以保护衣服不掉颜色？|Giáo viên Cao chỉ cho con gái cách giặt quần áo|Cách nào giúp quần áo không bị phai màu?
-12|3|高老师学习王教授的教育方法|高老师认为王教授上课成功有哪些方面的原因？|Giáo viên Cao học phương pháp giáo dục của giáo sư Vương|Giáo viên Cao cho rằng giáo sư Vương dạy thành công vì những lý do nào?
-12|4|短文|人们的说话方式可能和什么有关系？|Đoạn văn|Cách nói chuyện của con người có thể liên quan đến điều gì?
-12|5|短文|你的学习方法是“事半功倍”还是“事倍功半”？对于别人的意见，什么态度是正确的？|Đoạn văn|Phương pháp học của bạn là “làm ít được nhiều” hay “làm nhiều được ít”? Đối với ý kiến của người khác, thái độ nào là đúng?
-13|1|小雨和小夏在聊小夏的爷爷表演京剧的情况|小夏受了爷爷哪些影响？|Tiểu Vũ và Tiểu Hạ nói chuyện về việc ông nội Tiểu Hạ biểu diễn Kinh kịch|Tiểu Hạ chịu những ảnh hưởng nào từ ông nội?
-13|2|小雨和马克在聊京剧|马克学过京剧吗？他怎么学的？京剧给了马克哪些新的想法？|Tiểu Vũ và Mark nói chuyện về Kinh kịch|Mark đã từng học Kinh kịch chưa? Anh ấy học thế nào? Kinh kịch mang lại cho Mark những ý tưởng mới nào?
-13|3|李老师和校长在谈工作|为什么李老师想申请举办中国传统文化节活动？|Giáo viên Lý và hiệu trưởng nói về công việc|Vì sao giáo viên Lý muốn xin tổ chức hoạt động Lễ hội văn hóa truyền thống Trung Quốc?
-13|4|短文|为什么国外的中国餐厅会提供使用筷子的详细说明？|Đoạn văn|Vì sao các nhà hàng Trung Quốc ở nước ngoài cung cấp hướng dẫn chi tiết cách dùng đũa?
-13|5|短文|茶开始时被用来做什么？后来呢？广东人爱喝的凉茶是一种什么样的饮料？|Đoạn văn|Lúc đầu trà được dùng để làm gì? Sau đó thì sao? Trà thảo mộc (凉茶) mà người Quảng Đông thích uống là loại đồ uống như thế nào?
-14|1|李进要出差，王静和李进在聊天儿||Lý Tiến sắp đi công tác, Vương Tĩnh và Lý Tiến đang trò chuyện|
-14|2|经理和服务员在谈工作|经理希望小王做什么？店里哪些地方需要打扫？|Giám đốc và nhân viên phục vụ nói về công việc|Giám đốc muốn Tiểu Vương làm gì? Những chỗ nào trong cửa hàng cần dọn dẹp?
-14|3|孙月和王静在聊关于环保的事情|“地球一小时”是个什么活动？这个活动的目的是什么？|Tôn Nguyệt và Vương Tĩnh nói chuyện về bảo vệ môi trường|“Giờ Trái Đất” là hoạt động gì? Mục đích của hoạt động này là gì?
-14|4|短文|塑料袋有什么好处？有什么坏处？怎样解决使用塑料袋带来的污染问题？|Đoạn văn|Túi ni-lông có lợi ích gì? Có tác hại gì? Giải quyết vấn đề ô nhiễm do dùng túi ni-lông như thế nào?
-14|5|短文|我们需要注意哪些事情来保护地球环境？怎样才能使地球变得更美丽？|Đoạn văn|Chúng ta cần chú ý những việc gì để bảo vệ môi trường Trái Đất? Làm thế nào để Trái Đất đẹp hơn?
-15|1|李老师建议王静让孩子养成好习惯|怎么理解“父母是孩子最重要的老师”这句话？|Giáo viên Lý khuyên Vương Tĩnh giúp con hình thành thói quen tốt|Hiểu câu “Cha mẹ là người thầy quan trọng nhất của con” như thế nào?
-15|2|王静建议孙月教育孩子学会安排时间|孙月常因为什么事情心情不好？|Vương Tĩnh khuyên Tôn Nguyệt dạy con biết sắp xếp thời gian|Tôn Nguyệt thường không vui vì chuyện gì?
-15|3|王静和孙月讨论表扬孩子的方法|用表扬这种方式教育孩子时，应该注意哪些问题？|Vương Tĩnh và Tôn Nguyệt thảo luận cách khen con|Khi dạy con bằng cách khen ngợi, cần chú ý những vấn đề gì?
-15|4|短文|有的孩子为什么故意乱扔东西？为什么有的孩子会说假话骗人？|Đoạn văn|Vì sao có trẻ cố ý vứt đồ lung tung? Vì sao có trẻ nói dối để lừa người khác?
-15|5|短文|对教儿童的老师来说，怎么做才能让他们安静地学习？|Đoạn văn|Đối với giáo viên dạy trẻ em, làm thế nào để các em yên lặng học bài?
+11|1|对话：林安说他的汉语是怎么练的|林安每天怎么练习词语和语法？他为什么说要先求准确？|Hội thoại: Lâm An kể cách anh luyện tiếng Trung|Lâm An luyện từ và ngữ pháp mỗi ngày thế nào? Vì sao anh ấy nói phải chính xác trước?
+11|2|对话：小雪考试前有点儿来不及|小雪觉得哪一部分比较复杂？阿玲为什么说现在开始还来得及？|Hội thoại: Trước kỳ thi Tiểu Tuyết hơi không kịp|Tiểu Tuyết thấy phần nào phức tạp hơn? Vì sao A Linh bảo bây giờ bắt đầu vẫn còn kịp?
+11|3|对话：阿玲家客厅里的杂志|阿玲的妈妈为什么订杂志？阿玲觉得阅读给她带来了什么？|Hội thoại: Tạp chí trong phòng khách nhà A Linh|Vì sao mẹ A Linh đặt tạp chí? A Linh thấy việc đọc mang lại điều gì?
+11|4|短文：我慢慢有了自己的看法|老师让学生读完文章后写什么？作者后来明白了什么？|Đoạn văn: Tôi dần có cách nhìn của riêng mình|Cô giáo bảo học sinh đọc xong viết gì? Sau này tác giả hiểu ra điều gì?
+11|5|短文：把读书养成一种顺序|作者选书时给自己定了什么顺序？对他来说，读书表示什么？|Đoạn văn: Biến việc đọc thành một thứ tự|Khi chọn sách, tác giả đặt cho mình thứ tự nào? Với tác giả, đọc sách biểu thị điều gì?
+12|1|对话：陈晓的小店遇到了规定|小店接到了什么新规定？为什么陈晓很着急？|Hội thoại: Tiệm nhỏ của Trần Hiểu gặp quy định|Tiệm nhận quy định mới gì? Vì sao Trần Hiểu rất sốt ruột?
+12|2|对话：吴姐教阿玲护一护深色衣服|为什么深色衣服最好不要和浅色的一起洗？盐有什么作用？|Hội thoại: Chị Ngô dạy A Linh giữ áo màu tối|Vì sao đồ màu tối tốt nhất đừng giặt chung với đồ sáng? Muối có tác dụng gì?
+12|3|对话：程老师的一节自然课|程老师这节课是怎么上的？小雪为什么喜欢这种教育方法？|Hội thoại: Một tiết tự nhiên của cô Trình|Cô Trình dạy tiết này thế nào? Vì sao Tiểu Tuyết thích cách giáo dục ấy?
+12|4|短文：一句话引起的误会|作者的哪句话引起了误会？后来再提醒别人时，他会怎么说？|Đoạn văn: Sự hiểu lầm do một câu nói|Câu nào của tác giả gây hiểu lầm? Về sau khi nhắc người khác, tác giả sẽ nói thế nào?
+12|5|短文：力气要花在该花的地方|两种完成任务的方法有什么相反之处？作者认为该怎样对待别人的意见？|Đoạn văn: Sức lực hãy dùng vào chỗ đáng dùng|Hai cách hoàn thành nhiệm vụ trái nhau ở chỗ nào? Tác giả cho rằng nên đối với ý kiến người khác thế nào?
+13|1|对话：陈叔叔要在社区演京剧|陈叔叔是做什么的？阿玲为什么说他顾不上热？|Hội thoại: Chú Trần sắp diễn Kinh kịch trong khu|Chú Trần làm gì? Vì sao A Linh bảo chú ấy chẳng kịp để ý đến nóng?
+13|2|对话：周南跟着视频学了一段京剧|周南是怎么学京剧的？他的兴趣来自哪里？|Hội thoại: Châu Nam học một đoạn Kinh kịch theo video|Châu Nam học Kinh kịch thế nào? Hứng thú của anh ấy đến từ đâu?
+13|3|对话：程老师向校长申请一个小活动|程老师申请了什么？活动由谁来表演，放在什么时间？|Hội thoại: Cô Trình xin hiệu trưởng một hoạt động nhỏ|Cô Trình xin điều gì? Hoạt động do ai biểu diễn, để vào lúc nào?
+13|4|短文：餐厅里的一张小说明|餐厅桌子上的说明写了什么？老板为什么要在互联网上改这张说明？|Đoạn văn: Một tờ hướng dẫn nhỏ trong nhà hàng|Tờ hướng dẫn trên bàn nhà hàng viết gì? Vì sao ông chủ nhờ người sửa tờ ấy trên internet?
+13|5|短文：老家那碗稍微有点儿苦的汤|这种汤是什么味道？随着什么变化，它变得更普遍了？|Đoạn văn: Bát canh hơi đắng một chút ở quê|Món canh ấy có vị thế nào? Theo thay đổi nào mà nó trở nên phổ biến hơn?
+14|1|对话：阿玲出差前整理箱子|阿玲的箱子为什么有点儿重？小雪建议她拿出什么？|Hội thoại: A Linh sắp xếp vali trước khi đi công tác|Vì sao vali của A Linh hơi nặng? Tiểu Tuyết khuyên cô ấy lấy ra gì?
+14|2|对话：店长请小雪先把卫生间收拾一下|卫生间有什么问题？店长为什么让小雪快一点？|Hội thoại: Quản lý nhờ Tiểu Tuyết dọn nhà vệ sinh trước|Nhà vệ sinh có vấn đề gì? Vì sao quản lý bảo Tiểu Tuyết nhanh hơn một chút?
+14|3|对话：周南为关灯夜做了一张海报|“关灯夜”的目的是什么？阿玲为什么说天气还暖，关灯没问题？|Hội thoại: Châu Nam làm một tấm áp phích cho đêm tắt đèn|Mục đích của «Đêm tắt đèn» là gì? Vì sao A Linh bảo thời tiết còn ấm, tắt đèn không sao?
+14|4|短文：我开始少拿一只塑料袋|作者第一次是怎样减少塑料袋的？收银员是什么态度？|Đoạn văn: Tôi bắt đầu cầm ít hơn một túi ni-lông|Lần đầu tác giả giảm túi ni-lông thế nào? Nhân viên thu ngân thái độ ra sao?
+14|5|短文：把丢掉的习惯也一起丢掉|乘坐公交时应该注意什么？作者现在出门前会先看什么？|Đoạn văn: Hãy vứt luôn cả thói quen vứt đại|Khi đi xe buýt nên chú ý điều gì? Giờ trước khi ra khỏi cửa, tác giả sẽ xem gì trước?
+15|1|对话：周南的父亲让孩子寒假坚持弹钢琴|寒假里父亲让弟弟怎么做？弟弟为什么后来高兴了？|Hội thoại: Bố Châu Nam để con kiên trì đánh piano trong kỳ nghỉ đông|Trong kỳ nghỉ đông, bố bảo em trai làm gì? Vì sao sau đó em ấy vui?
+15|2|对话：小雪家早上总为出门着急|弟弟早上做了什么，害得大家要赶车？后来妈妈想先教他什么？|Hội thoại: Nhà Tiểu Tuyết buổi sáng cứ vội vì ra khỏi cửa|Buổi sáng em trai làm gì khiến mọi người phải chạy cho kịp xe? Sau này mẹ muốn dạy cậu ấy điều gì trước?
+15|3|对话：诊所里的一次小小表扬|护士是怎样让妹妹不怕打针的？小雪认为表扬时千万要注意什么？|Hội thoại: Một lời khen nhỏ trong phòng khám|Cô y tá làm thế nào để bé không sợ tiêm? Tiểu Tuyết cho rằng lúc khen nhất định phải chú ý điều gì?
+15|4|短文：敲门进来之前|有的孩子把房间弄乱，一定是故意的吗？作者建议大人怎么做？|Đoạn văn: Trước khi gõ cửa bước vào|Trẻ làm loạn phòng, có nhất định là cố ý không? Tác giả khuyên người lớn nên làm gì?
+15|5|短文：教室左右两边的两种孩子|粗心或害羞的孩子该怎样理解？怎样才能让他们安静地学下去？|Đoạn văn: Hai kiểu trẻ ở hai bên lớp|Nên hiểu trẻ sơ ý hoặc nhút nhát thế nào? Làm sao để các em học yên được?
 16|1|小夏出国留学遇到了问题|如果想出国留学可能需要准备哪些材料？|Tiểu Hạ gặp vấn đề khi đi du học|Nếu muốn đi du học, có thể cần chuẩn bị những giấy tờ gì?
 16|2|王老板告诉李进自己成功的经验|王老板怎么介绍自己的成功经验的？|Ông chủ Vương kể cho Lý Tiến kinh nghiệm thành công của mình|Ông chủ Vương giới thiệu kinh nghiệm thành công của mình như thế nào?
 16|3|小林不好意思拒绝朋友|小李和小林两个人对“拒绝别人”有哪些不同的理解？|Tiểu Lâm ngại từ chối bạn bè|Tiểu Lý và Tiểu Lâm hiểu về việc “từ chối người khác” khác nhau thế nào?
