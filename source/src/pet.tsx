@@ -41,7 +41,7 @@ type St = {
   grads: Grad[]; gradDone: boolean; gradDate: string; earned: string[];
   wb: Record<string, WB>; wbCleared: number; lastPass: { l: number; day: string } | null; evXp: Record<string, number>; cardName: string; cardClass: string;
 };
-type WB = { src: string; l: number; ty: string; t: number };
+type WB = { src: string; l: number; ty: string; t: number; n?: number };
 const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
 const dayStr = (off: number) => { const d = new Date(); d.setDate(d.getDate() + off); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
 const dayDiff = (a: string, b: string) => Math.round((Date.parse(b + "T00:00:00") - Date.parse(a + "T00:00:00")) / 86400000);
@@ -109,9 +109,26 @@ function evUnlock(): boolean {
 const WB_MAX = 300;
 export function wbAdd(ids: string[], src: string) {
   if (!PET_ON) return; let n = 0;
-  ids.forEach((id) => { const it = bankItem(id); if (!it || S.wb[id]) return; S.wb[id] = { src, l: it.l, ty: it.ty, t: Date.now() }; n++; });
+  ids.forEach((id) => {
+    const it = bankItem(id); if (!it) return;
+    if (S.wb[id]) { S.wb[id] = { ...S.wb[id], src, n: (S.wb[id].n || 1) + 1, t: Date.now() }; n++; }
+    else { S.wb[id] = { src, l: it.l, ty: it.ty, t: Date.now(), n: 1 }; n++; }
+  });
   const keys = Object.keys(S.wb); if (keys.length > WB_MAX) keys.sort((a, b) => S.wb[a].t - S.wb[b].t).slice(0, keys.length - WB_MAX).forEach((k) => { delete S.wb[k]; });
   if (n) save();
+}
+function bankWord(it: BItem): string {
+  if (it.ty === "meaning" || it.ty === "pinyin") { const m = it.stem.match(/[一-鿿]+/g); return m ? m[0] : ""; }
+  if (it.ty === "hanzi" || it.ty === "fill" || it.ty === "grammar") { const w = it.opts[0] || ""; return /[一-鿿]/.test(w) ? w : ""; }
+  const m = (it.stem + " " + (it.opts[0] || "")).match(/[一-鿿]+/g); return m ? m[0] : "";
+}
+export function wrongSummary(wb: Record<string, WB>): string {
+  const c: Record<string, number> = {};
+  Object.keys(wb).forEach((id) => {
+    const it = bankItem(id); const w = it ? bankWord(it) : "";
+    if (!w) return; c[w] = (c[w] || 0) + (wb[id].n || 1);
+  });
+  return Object.entries(c).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "zh")).slice(0, 8).map(([w, n]) => w + ":" + n).join(",");
 }
 // Lesson quiz questions (built from the word list) → matching items in the question bank.
 export function quizWrong(qs: { id: string; kind: string; stem: string; opts: string[]; a: number }[], ans: Record<string, number>): string[] {
@@ -153,7 +170,7 @@ function finish(parts: string[]) {
   if (nb.length) toast(`🏅 ${VI ? "Huy hiệu mới" : "New badge"}: ${nb.join(" · ")}`, "gift");
   save();
 }
-export function petEvent(type: "task" | "cards" | "listen" | "quiz" | "rtest", d: { key?: string; lesson?: number; score?: number; n?: number; level?: number; wrong?: string[] } = {}) {
+export function petEvent(type: "task" | "cards" | "listen" | "quiz" | "rtest" | "fill", d: { key?: string; lesson?: number; score?: number; n?: number; level?: number; wrong?: string[] } = {}) {
   if (!PET_ON) return;
   if (d.wrong && d.wrong.length) wbAdd(d.wrong, type);
   if (!S.pet) return;
@@ -170,6 +187,11 @@ export function petEvent(type: "task" | "cards" | "listen" | "quiz" | "rtest", d
     xp = gainXp(sc * XP_RULES.quizPerPoint); S.stats.quiz++; parts.push(`+${xp} XP`);
     if (sc >= 8) { const h = sc === 10 ? 2 : 1; S.hearts += h; parts.push(`+${h}💗`); }
     if (sc === 10) S.stats.quiz100++;
+  }
+  if (type === "fill") {
+    if (!claim("f:" + (d.key || ""), true)) return;
+    xp = gainXp(1);
+    if (xp) parts.push(`+${xp} XP`, VI ? "Điền từ" : "Fill-in");
   }
   if (type === "rtest") {
     const sc = d.score ?? 0; const k = "r:" + today(); const used = Number(S.claims[k] || 0);
@@ -361,7 +383,7 @@ export function pickLine(s: St, avoid?: string): Line | null {
 }
 
 // ---------- export / import ----------
-const KEYS = ["hsk4-pet-v1", "hsk4-plan-vi-v1", "hsk4-plan-v1", "hsk4-reader-v1", "hsk4-music-v1", "hsk4-rtest-history-v1"];
+const KEYS = ["hsk4-pet-v1", "hsk4-plan-vi-v1", "hsk4-plan-v1", "hsk4-reader-v1", "hsk4-music-v1", "hsk4-rtest-history-v1", "hsk4-fav-v1"];
 function exportCode(): string { const o: Record<string, string> = {}; KEYS.forEach((k) => { try { const v = window.localStorage.getItem(k); if (v !== null) o[k] = v; } catch (e) { /* ignore */ } }); return "HSK4PET1:" + btoa(unescape(encodeURIComponent(JSON.stringify(o)))); }
 function importCode(c: string): boolean {
   try { const m = c.trim().match(/^HSK4PET1:([A-Za-z0-9+/=]+)$/); if (!m) return false; const o = JSON.parse(decodeURIComponent(escape(atob(m[1])))); if (typeof o !== "object") return false; Object.keys(o).forEach((k) => { if (KEYS.includes(k) && typeof o[k] === "string") window.localStorage.setItem(k, o[k]); }); return true; } catch (e) { return false; }
@@ -694,7 +716,7 @@ function readBestTest(): [number, number] {
 function cardData(s: St): CardData {
   const st = stageOf(s); const kind = PETS.find((p) => p[0] === s.pet); const [b, bn] = readBestTest();
   const icons = BADGES.filter((x) => s.earned.includes(x.id) || x.ok(s)).map((x) => x.icon).join("");
-  return { n: s.cardName || "", c: s.cardClass || "", k: s.pet || "", kz: kind ? kind[1] : "", pn: s.name, st, stz: STAGES[st].zh, l: s.lessons.length, b, bn, s: ciCur(s), bd: icons, g: s.grads.length + (s.gradDone ? 1 : 0), d: today() };
+  return { n: s.cardName || "", c: s.cardClass || "", k: s.pet || "", kz: kind ? kind[1] : "", pn: s.name, st, stz: STAGES[st].zh, l: s.lessons.length, b, bn, s: ciCur(s), bd: icons, g: s.grads.length + (s.gradDone ? 1 : 0), d: today(), ww: wrongSummary(s.wb) };
 }
 
 function EventBanner({ s, e }: { s: St; e: Ev }) {

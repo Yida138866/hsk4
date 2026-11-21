@@ -2,26 +2,44 @@
 import { useState, useRef, ZH_FONT } from "./kit";
 import type { ReactNode } from "./kit";
 
-export type CardData = { n: string; c: string; k: string; kz: string; pn: string; st: number; stz: string; l: number; b: number; bn: number; s: number; bd: string; g: number; d: string };
+export type CardData = { n: string; c: string; k: string; kz: string; pn: string; st: number; stz: string; l: number; b: number; bn: number; s: number; bd: string; g: number; d: string; ww?: string };
 type Row = CardData & { code: string };
 const SALT = "hsk4|阿玲&小雪|card";
 function fnv(str: string): string { let h = 0x811c9dc5; for (const ch of str) { h ^= ch.codePointAt(0) || 0; h = Math.imul(h, 0x01000193) >>> 0; } return h.toString(36); }
 const b64e = (s: string) => btoa(unescape(encodeURIComponent(s))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
 const b64d = (s: string) => decodeURIComponent(escape(atob(s.replace(/-/g, "+").replace(/_/g, "/") + "===".slice((s.length + 3) % 4))));
-const FIELDS: (keyof CardData)[] = ["n", "c", "k", "kz", "pn", "st", "stz", "l", "b", "bn", "s", "bd", "g", "d"];
-export function makeCode(d: CardData): string { const j = JSON.stringify(FIELDS.map((f) => d[f])); return `HSK4C1.${b64e(j)}.${fnv(SALT + j)}`; }
+const CORE: (keyof CardData)[] = ["n", "c", "k", "kz", "pn", "st", "stz", "l", "b", "bn", "s", "bd", "g", "d"];
+const FIELDS: (keyof CardData)[] = [...CORE, "ww"];
+export function makeCode(d: CardData): string { const j = JSON.stringify(FIELDS.map((f) => (f === "ww" ? (d.ww || "") : d[f]))); return `HSK4C2.${b64e(j)}.${fnv(SALT + j)}`; }
+export function unpackWrong(s: string | undefined): [string, number][] {
+  if (!s) return [];
+  const out: [string, number][] = [];
+  s.split(",").forEach((part) => {
+    const k = part.lastIndexOf(":"); if (k < 1) return;
+    const w = part.slice(0, k).trim(); const n = Number(part.slice(k + 1));
+    if (w && n > 0) out.push([w, n]);
+  });
+  return out;
+}
 export function parseCodes(text: string): { ok: boolean; row?: Row; raw: string }[] {
-  const out: { ok: boolean; row?: Row; raw: string }[] = []; const re = /HSK4C1\.([A-Za-z0-9_-]+)\.([0-9a-z]+)/g; let m: RegExpExecArray | null;
+  const out: { ok: boolean; row?: Row; raw: string }[] = []; const re = /HSK4C([12])\.([A-Za-z0-9_-]+)\.([0-9a-z]+)/g; let m: RegExpExecArray | null;
   while ((m = re.exec(text))) {
-    try { const j = b64d(m[1]); const arr = JSON.parse(j); if (!Array.isArray(arr) || arr.length !== FIELDS.length || fnv(SALT + j) !== m[2]) { out.push({ ok: false, raw: m[0] }); continue; }
-      const row = { code: m[0] } as Row; FIELDS.forEach((f, i) => { (row as Record<string, unknown>)[f] = arr[i]; }); out.push({ ok: true, row, raw: m[0] }); } catch (e) { out.push({ ok: false, raw: m[0] }); }
+    try {
+      const ver = m[1]; const j = b64d(m[2]); const arr = JSON.parse(j);
+      const expect = ver === "1" ? CORE.length : FIELDS.length;
+      if (!Array.isArray(arr) || arr.length !== expect || fnv(SALT + j) !== m[3]) { out.push({ ok: false, raw: m[0] }); continue; }
+      const row = { code: m[0], ww: "" } as Row; (ver === "1" ? CORE : FIELDS).forEach((f, i) => { (row as Record<string, unknown>)[f] = arr[i]; });
+      if (ver === "1") row.ww = undefined;
+      out.push({ ok: true, row, raw: m[0] });
+    } catch (e) { out.push({ ok: false, raw: m[0] }); }
   }
   return out;
 }
 export function cardText(d: CardData, vi: boolean): string {
+  const ww = unpackWrong(d.ww).map(([w, n]) => `${w} ${n}`).join("、") || (d.ww === undefined ? "" : (vi ? "Chưa có từ hay sai" : "No frequent misses yet"));
   const L = vi
-    ? [`🎓 HSK 4 · 班级成绩卡 · Thẻ thành tích`, `👩 ${d.n}${d.c ? ` · Lớp ${d.c}` : ""}`, `🐾 ${d.pn} (${d.kz}) · ${d.stz}`, `📖 Bài đã qua: ${d.l}/20`, `🎯 Kiểm tra ngẫu nhiên tốt nhất: ${d.bn ? `${d.b}/${d.bn}` : "—"}`, `🔥 Chuỗi ${d.s} ngày · 🏅 ${Array.from(d.bd).length ? d.bd : "0"}${d.g ? ` · 🎓×${d.g}` : ""}`, `📅 ${d.d}`]
-    : [`🎓 HSK 4 · 班级成绩卡 · Class card`, `👩 ${d.n}${d.c ? ` · Class ${d.c}` : ""}`, `🐾 ${d.pn} (${d.kz}) · ${d.stz}`, `📖 Lessons passed: ${d.l}/20`, `🎯 Best random test: ${d.bn ? `${d.b}/${d.bn}` : "—"}`, `🔥 ${d.s}-day streak · 🏅 ${Array.from(d.bd).length ? d.bd : "0"}${d.g ? ` · 🎓×${d.g}` : ""}`, `📅 ${d.d}`];
+    ? [`🎓 HSK 4 · 班级成绩卡 · Thẻ thành tích`, `👩 ${d.n}${d.c ? ` · Lớp ${d.c}` : ""}`, `🐾 ${d.pn} (${d.kz}) · ${d.stz}`, `📖 Bài đã qua: ${d.l}/20`, `🎯 Kiểm tra ngẫu nhiên tốt nhất: ${d.bn ? `${d.b}/${d.bn}` : "—"}`, `🔥 Chuỗi ${d.s} ngày · 🏅 ${Array.from(d.bd).length ? d.bd : "0"}${d.g ? ` · 🎓×${d.g}` : ""}`, ...(ww ? [`📝 Từ hay sai: ${ww}`] : []), `📅 ${d.d}`]
+    : [`🎓 HSK 4 · 班级成绩卡 · Class card`, `👩 ${d.n}${d.c ? ` · Class ${d.c}` : ""}`, `🐾 ${d.pn} (${d.kz}) · ${d.stz}`, `📖 Lessons passed: ${d.l}/20`, `🎯 Best random test: ${d.bn ? `${d.b}/${d.bn}` : "—"}`, `🔥 ${d.s}-day streak · 🏅 ${Array.from(d.bd).length ? d.bd : "0"}${d.g ? ` · 🎓×${d.g}` : ""}`, ...(ww ? [`📝 Often missed: ${ww}`] : []), `📅 ${d.d}`];
   return L.join("\n") + "\n" + makeCode(d);
 }
 
@@ -111,19 +129,23 @@ export function TeacherView({ vi }: { vi: boolean }) {
   res.forEach((r) => { if (!r.ok || !r.row) return; const k = (r.row.n + "|" + r.row.c).toLowerCase(); if (!best[k] || r.row.d >= best[k].d) best[k] = r.row; });
   const rows = Object.values(best).sort((a, b) => a.c.localeCompare(b.c) || b.l - a.l || a.n.localeCompare(b.n));
   const bad = res.filter((r) => !r.ok);
-  void vi; const H = ["姓名", "班级", "宠物", "成长阶段", "已过课数", "随机测试最高分", "连续打卡", "徽章", "已毕业宠物", "日期"];
-  const csv = () => { const lines = [H.join(","), ...rows.map((r) => [r.n, r.c, `${r.pn} (${r.kz})`, r.stz, r.l, r.bn ? `${r.b}/${r.bn}` : "", r.s, Array.from(r.bd).length, r.g, r.d].map((x) => `"${String(x).replace(/"/g, '""')}"`).join(","))]; const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob(["\ufeff" + lines.join("\n")], { type: "text/csv" })); a.download = "HSK4班级成绩.csv"; a.click(); };
+  void vi; const H = ["姓名", "班级", "宠物", "成长阶段", "已过课数", "常错词", "随机测试最高分", "连续打卡", "徽章", "已毕业宠物", "日期"];
+  const csv = () => { const lines = [H.join(","), ...rows.map((r) => [r.n, r.c, `${r.pn} (${r.kz})`, r.stz, r.l, r.ww === undefined ? "无数据" : (unpackWrong(r.ww).map(([w, n]) => `${w} ${n}次`).join("、") || "暂无错词"), r.bn ? `${r.b}/${r.bn}` : "", r.s, Array.from(r.bd).length, r.g, r.d].map((x) => `"${String(x).replace(/"/g, '""')}"`).join(","))]; const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob(["\ufeff" + lines.join("\n")], { type: "text/csv" })); a.download = "HSK4班级成绩.csv"; a.click(); };
   const td = { padding: "6px 8px", borderBottom: "1px solid #fde8f3", whiteSpace: "nowrap" } as const;
   return (
     <section id="teacher-top" className="teacher" lang="zh-Hans" style={{ ...box, fontFamily: ZH_FONT, display: "flex", flexDirection: "column", gap: 10, marginBottom: 14 }}>
       <h2 style={{ margin: 0, fontSize: 20, fontWeight: 800, color: "#8f2160" }}>👩‍🏫 教师视图 · 班级成绩汇总</h2>
-      <div style={{ fontSize: 13, color: "#6b3a63", lineHeight: "20px" }}>请把学生发来的消息或成绩卡代码粘贴到下面（每个代码以 HSK4C1. 开头）。可以一次粘贴多个，整段 Zalo / Messenger 消息也可以。系统会自动识别、去重（同一姓名+班级只保留最新一张），并按班级排序。被修改过的代码会标记 ⚠ 。</div>
-      <textarea className="teacher-in" value={txt} onChange={(e) => setTxt(e.target.value)} rows={5} placeholder="在这里粘贴学生的成绩卡代码 HSK4C1.…" style={{ width: "100%", borderRadius: 14, border: "1.5px solid rgba(232,85,154,0.3)", padding: 8, fontSize: 12.5, fontFamily: "ui-monospace, monospace" }} />
+      <div style={{ fontSize: 13, color: "#6b3a63", lineHeight: "20px" }}>请把学生发来的消息或成绩卡代码粘贴到下面（以 HSK4C1. 或 HSK4C2. 开头均可）。可以一次粘贴多个，整段聊天消息也可以。系统会自动识别、去重（同一姓名+班级只保留最新一张），并按班级排序。被修改过的代码会标记 ⚠ 。旧版 HSK4C1 代码没有错词摘要时显示「无数据」。</div>
+      <textarea className="teacher-in" value={txt} onChange={(e) => setTxt(e.target.value)} rows={5} placeholder="在这里粘贴学生的成绩卡代码（HSK4C1. 或 HSK4C2. 均可）…" style={{ width: "100%", borderRadius: 14, border: "1.5px solid rgba(232,85,154,0.3)", padding: 8, fontSize: 12.5, fontFamily: "ui-monospace, monospace" }} />
       <div style={{ fontSize: 13, color: "#8f2160" }}>{`有效学生：${rows.length} 人`}{bad.length ? ` · ⚠ 无效或被修改的代码：${bad.length} 个` : ""}{rows.length ? <button onClick={csv} style={{ ...btn(), marginLeft: 8, padding: "4px 10px", fontSize: 12 }}>下载 CSV 表格</button> : null}</div>
-      {rows.length ? <div style={{ overflowX: "auto" }}><table className="teacher-table" style={{ borderCollapse: "collapse", fontSize: 13, color: "#5a3a5f", minWidth: "100%" }}>
+      {rows.length ? <div style={{ overflowX: "auto", maxWidth: "100%", minWidth: 0 }}><table className="teacher-table" style={{ borderCollapse: "collapse", fontSize: 13, color: "#5a3a5f", minWidth: "100%" }}>
         <thead><tr>{H.map((h) => <th key={h} style={{ ...td, textAlign: "left", color: "#8f2160", background: "#fff3f9" }}>{h}</th>)}</tr></thead>
-        <tbody>{rows.map((r, i) => <tr key={i}><td style={{ ...td, fontWeight: 800 }}>{r.n}</td><td style={td}>{r.c || "（无）"}</td><td style={td}><span lang="zh-Hans" style={{ fontFamily: ZH_FONT }}>{r.pn} · {r.kz}</span></td><td style={td}><span lang="zh-Hans" style={{ fontFamily: ZH_FONT }}>{r.stz}</span></td><td style={td}>{r.l} / 20 课</td><td style={td}>{r.bn ? `${r.b}/${r.bn}` : "—"}</td><td style={td}>🔥{r.s} 天</td><td style={td}>{Array.from(r.bd).length}</td><td style={td}>{r.g}</td><td style={td}>{r.d}</td></tr>)}</tbody>
+        <tbody>{rows.map((r, i) => <tr key={i}><td style={{ ...td, fontWeight: 800 }}>{r.n}</td><td style={td}>{r.c || "（无）"}</td><td style={td}><span lang="zh-Hans" style={{ fontFamily: ZH_FONT }}>{r.pn} · {r.kz}</span></td><td style={td}><span lang="zh-Hans" style={{ fontFamily: ZH_FONT }}>{r.stz}</span></td><td style={td}>{r.l} / 20 课</td><td className="teacher-wrong" style={{ ...td, fontFamily: ZH_FONT }}>{r.ww === undefined ? "无数据" : (unpackWrong(r.ww).map(([w, n]) => `${w} ${n}次`).join("、") || "暂无错词")}</td><td style={td}>{r.bn ? `${r.b}/${r.bn}` : "—"}</td><td style={td}>🔥{r.s} 天</td><td style={td}>{Array.from(r.bd).length}</td><td style={td}>{r.g}</td><td style={td}>{r.d}</td></tr>)}</tbody>
       </table></div> : null}
+      {rows.length ? <div className="teacher-class-wrong" style={{ marginTop: 12, borderRadius: 16, padding: "12px 14px", background: "linear-gradient(135deg,#fff8d8,#ffe6f2)", color: "#5a3a5f" }}>
+        <div style={{ fontWeight: 800, color: "#8f2160", marginBottom: 6 }}>📊 班级高频错词</div>
+        {(() => { const c: Record<string, { n: number; s: number }> = {}; rows.forEach((r) => { const seen: Record<string, true> = {}; unpackWrong(r.ww).forEach(([w, n]) => { c[w] = c[w] || { n: 0, s: 0 }; c[w].n += n; if (!seen[w]) { c[w].s += 1; seen[w] = true; } }); }); const list = Object.entries(c).sort((a, b) => b[1].n - a[1].n || a[0].localeCompare(b[0], "zh")).slice(0, 15); return list.length ? <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>{list.map(([w, x]) => <span key={w} lang="zh-Hans" style={{ fontFamily: ZH_FONT, background: "#fff", borderRadius: 9999, padding: "4px 10px", fontSize: 13, fontWeight: 700, border: "1.5px solid rgba(232,85,154,0.25)" }}>{w} · {x.s}人 · {x.n}次</span>)}</div> : <div style={{ fontSize: 13 }}>暂无班级错词数据（旧版代码会显示为「无数据」）。</div>; })()}
+      </div> : null}
       {bad.length ? <div className="teacher-bad" style={{ fontSize: 12, color: "#b0306a" }}>{bad.map((b) => <div key={b.raw}>⚠ 无效或被修改：{b.raw.slice(0, 40)}…</div>)}</div> : null}
       <a href="?" style={{ fontSize: 12, color: "#a0507f" }}>← 返回宠物页面（关闭教师视图）</a>
     </section>

@@ -3,6 +3,7 @@ import { useState, useEffect, useLayoutEffect, useRef, ZH_FONT, Sparkle } from "
 import type { ReactNode, CSSProperties } from "./kit";
 import { SpeakBtn, useSpeaking, wordAudio } from "./audio";
 import { petEvent } from "./pet";
+import { FavStar } from "./fav";
 
 type Line = { s: string; sp: string[]; t: string; p: string[]; vi: string; en: string };
 type Txt = { n: number; zh: string; vi: string; en: string; kw?: string[]; lines: Line[] };
@@ -160,11 +161,108 @@ function KwPopup({ tip, gloss, lang, onClose }: { tip: Tip; gloss: Gloss | undef
         <div style={{ display: "flex", alignItems: "center", gap: 8, minWidth: 0 }}>
           <div lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontSize: 26, lineHeight: "32px", fontWeight: 800, color: "#6a1848", minWidth: 0 }}>{g.h}</div>
           <SpeakBtn items={wordAudio(g.h)} k={"w:" + g.h} size={32} label={vi ? "Nghe từ này" : "Play this word"} />
+          <FavStar word={g.h} lang={lang} size={32} />
           <button type="button" aria-label={vi ? "Đóng" : "Close"} onClick={onClose} style={{ marginLeft: "auto", cursor: "pointer", width: 28, height: 28, borderRadius: 9999, border: "1.5px solid rgba(232,85,154,0.3)", background: "#fff", color: "#8f2160", fontWeight: 800, fontSize: 16, lineHeight: "26px", padding: 0, flex: "0 0 auto" }}>×</button>
         </div>
         {g.p ? <div style={{ marginTop: 2, fontSize: 15, fontWeight: 600, color: "#c0447f" }}>{g.p}{g.pos ? <span style={{ marginLeft: 8, fontSize: 12, fontWeight: 700, color: "#b07090" }}>· {g.pos}</span> : null}</div> : null}
         <div style={{ marginTop: 8, padding: "8px 10px", borderRadius: 12, background: "linear-gradient(135deg,#fff0f7,#f5ecff)", fontSize: 16, lineHeight: "23px", fontWeight: 600, color: "#5a2a58" }}>{g.m}</div>
       </div>
+    </div>
+  );
+}
+
+
+function shuf<T>(a: T[]): T[] { const b = a.slice(); for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const x = b[i]; b[i] = b[j]; b[j] = x; } return b; }
+function snippet(text: string, w: string): string {
+  const k = text.indexOf(w);
+  if (k < 0) return text;
+  const left = text.slice(0, k); const right = text.slice(k + w.length);
+  const a = left.length > 22 ? "…" + left.slice(-22) : left;
+  const b = right.length > 28 ? right.slice(0, 28) + "…" : right;
+  return a + "____" + b;
+}
+type FillQ = { w: string; q: string; opts: string[]; speaker: string };
+function buildFill(les: Lesson | undefined, all: Lesson[]): FillQ[] {
+  if (!les) return [];
+  const kws = [...new Set(les.texts.flatMap((tx) => tx.kw || []))];
+  const pool = [...new Set(all.flatMap((L) => L.texts.flatMap((tx) => tx.kw || [])))];
+  const cands: FillQ[] = [];
+  les.texts.forEach((tx) => {
+    tx.lines.forEach((ln) => {
+      (tx.kw || []).forEach((w) => {
+        if (!w || ln.t.indexOf(w) < 0) return;
+        if (cands.some((x) => x.w === w)) return;
+        const others = shuf(kws.filter((x) => x !== w));
+        const more = shuf(pool.filter((x) => x !== w && !others.includes(x)));
+        const dist = [...others, ...more].slice(0, 3);
+        if (dist.length < 3) return;
+        cands.push({ w, q: snippet(ln.t, w), opts: shuf([w, ...dist]), speaker: ln.s || "" });
+      });
+    });
+  });
+  return shuf(cands).slice(0, 10);
+}
+
+function FillGame({ lang, lesson, les, all }: { lang: "vi" | "en"; lesson: number; les: Lesson | undefined; all: Lesson[] }) {
+  const vi = lang === "vi";
+  const [open, setOpen] = useState(false);
+  const [qs, setQs] = useState<FillQ[]>([]);
+  const [i, setI] = useState(0);
+  const [pick, setPick] = useState<(number | null)[]>([]);
+  const [end, setEnd] = useState(false);
+  const start = () => { const list = buildFill(les, all); setQs(list); setI(0); setPick(list.map(() => null)); setEnd(false); setOpen(true); };
+  if (!open) {
+    return (
+      <div className="fill-entry" style={{ display: "flex", justifyContent: "center" }}>
+        <button type="button" className="fill-open" onClick={start} style={{ cursor: "pointer", border: "1.5px dashed rgba(232,85,154,0.4)", background: "linear-gradient(135deg,#fff8d8,#ffe6f2)", color: "#8f2160", fontWeight: 800, borderRadius: 9999, padding: "10px 16px", fontFamily: "inherit", fontSize: 14 }}>✦ {vi ? "Điền từ · 填空小游戏" : "Fill-in game · 填空小游戏"}</button>
+      </div>
+    );
+  }
+  const n = qs.length;
+  if (!n) {
+    return <div className="fill-game" style={{ borderRadius: 22, padding: "14px", background: "linear-gradient(180deg,#fff7fb,#fff)", border: "1.5px dashed rgba(232,85,154,0.28)", textAlign: "center", color: "#6b3a63" }}>{vi ? "Bài này chưa đủ từ để chơi." : "This lesson doesn't have enough words for a round yet."}<div><button type="button" onClick={() => setOpen(false)} style={{ marginTop: 8, cursor: "pointer", border: "none", background: "transparent", color: "#c0447f", fontWeight: 700 }}>{vi ? "Đóng" : "Close"}</button></div></div>;
+  }
+  const right = qs.filter((q, k) => pick[k] !== null && q.opts[pick[k] as number] === q.w).length;
+  if (end) {
+    return (
+      <div className="fill-game" style={{ borderRadius: 22, padding: "16px 14px", background: "linear-gradient(180deg,#fff8d8,#fff0f7)", border: "1.5px solid rgba(248,190,220,0.8)" }}>
+        <div style={{ fontSize: 12, fontWeight: 800, color: "#c0447f" }}>✦ {vi ? "ĐIỀN TỪ" : "FILL-IN"} · {vi ? `Bài ${lesson}` : `Lesson ${lesson}`}</div>
+        <div className="fill-result" style={{ fontSize: 22, fontWeight: 800, color: "#8f2160", margin: "8px 0 4px" }}>🌸 {right}/{n}</div>
+        <div style={{ fontSize: 14, color: "#6b3a63", lineHeight: "21px" }}>{right === n ? (vi ? "Tuyệt quá, làm đúng hết rồi! Không sao nếu chỉ muốn ôn lại — không có điểm trừ đâu." : "Lovely, you got them all! You can replay any time — no penalty.") : (vi ? "Làm rất chăm rồi. Câu chưa đúng cũng không sao, xem lại bài khoá rồi chơi lại nhé." : "A gentle try. You can look back at the text and play again whenever you like.")}</div>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 12 }}>
+          <button type="button" className="fill-again" onClick={start} style={{ cursor: "pointer", border: "none", background: "linear-gradient(135deg,#ff8cc0,#c58bff)", color: "#fff", fontWeight: 800, borderRadius: 9999, padding: "8px 14px", fontFamily: "inherit" }}>{vi ? "Chơi lại" : "Play again"}</button>
+          <button type="button" onClick={() => setOpen(false)} style={{ cursor: "pointer", border: "1.5px solid rgba(232,85,154,0.3)", background: "#fff", color: "#8f2160", fontWeight: 800, borderRadius: 9999, padding: "8px 14px", fontFamily: "inherit" }}>{vi ? "Đóng" : "Close"}</button>
+        </div>
+      </div>
+    );
+  }
+  const q = qs[i]; const pk = pick[i]; const answered = pk !== null;
+  const good = answered && q.opts[pk as number] === q.w;
+  return (
+    <div className="fill-game" style={{ borderRadius: 22, padding: "16px 14px 20px", background: "linear-gradient(180deg,#fff7fb,#ffffff)", border: "1.5px dashed rgba(232,85,154,0.28)" }}>
+      <div style={{ display: "flex", alignItems: "baseline", gap: 8, flexWrap: "wrap" }}>
+        <span style={{ fontSize: 12, fontWeight: 800, color: "#c0447f" }}>✦ {vi ? "ĐIỀN TỪ" : "FILL-IN"}</span>
+        <span style={{ marginLeft: "auto", fontSize: 13, color: "#8f2160" }}>{i + 1} / {n}</span>
+      </div>
+      <div style={{ fontSize: 13, color: "#8a5a82", margin: "4px 0 10px" }}>{vi ? "Chọn từ thích hợp để điền vào chỗ trống. Sai cũng không sao." : "Pick the word that fits the blank. No penalty if you miss one."}</div>
+      <div style={{ display: "flex", gap: 8, alignItems: "flex-start" }}>
+        {q.speaker ? <span lang="zh-Hans" style={{ flex: "0 0 auto", fontFamily: ZH_FONT, fontSize: 14, fontWeight: 700, color: "#fff", background: q.speaker === "阿玲" ? "#f07ab3" : q.speaker === "小雪" ? "#a98bf0" : "#ffa877", borderRadius: 12, padding: "3px 8px" }}>{q.speaker}</span> : null}
+        <p lang="zh-Hans" className="fill-q" style={{ margin: 0, fontFamily: ZH_FONT, fontSize: 20, lineHeight: "32px", color: "#2f1b37", fontWeight: 600, wordBreak: "break-all" }}>{q.q}</p>
+      </div>
+      <div className="fill-opts" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8, marginTop: 12 }}>
+        {q.opts.map((opt, k) => {
+          const mine = pk === k; const isRight = opt === q.w;
+          return (
+            <button key={k} type="button" disabled={answered} onClick={() => {
+              if (answered) return;
+              const p2 = pick.slice(); p2[i] = k; setPick(p2);
+              if (opt === q.w) petEvent("fill", { key: `${lesson}:${q.w}` });
+            }} style={{ cursor: answered ? "default" : "pointer", textAlign: "center", borderRadius: 16, padding: "10px 8px", fontFamily: ZH_FONT, fontWeight: 800, fontSize: 18, background: answered && isRight ? "#eafaf3" : answered && mine ? "#fff0f4" : "#fff", border: answered && isRight ? "1.5px solid #7ad8c8" : "1.5px solid rgba(232,85,154,0.3)", color: "#6a1848" }}>{opt}{answered && isRight ? " ✓" : ""}</button>
+          );
+        })}
+      </div>
+      {answered ? <div className="fill-fb" style={{ marginTop: 10, borderRadius: 14, padding: "8px 12px", background: good ? "#eafaf3" : "#fff7fb", fontSize: 14, color: "#5a3a5f", fontWeight: 600 }}>{good ? (vi ? "Đúng rồi, nhẹ nhàng quá!" : "That's it — nicely done!") : (vi ? `Gần đúng rồi. Đáp án là「${q.w}」nhé.` : `So close. The word is「${q.w}」.`)}</div> : null}
+      {answered ? <button type="button" className="fill-next" onClick={() => { if (i + 1 < n) setI(i + 1); else setEnd(true); }} style={{ marginTop: 10, cursor: "pointer", border: "none", background: "linear-gradient(135deg,#ff8cc0,#c58bff)", color: "#fff", fontWeight: 800, borderRadius: 9999, padding: "8px 16px", fontFamily: "inherit" }}>{i + 1 < n ? (vi ? "Câu sau ›" : "Next ›") : (vi ? "Xem kết quả" : "See result")}</button> : null}
     </div>
   );
 }
@@ -193,7 +291,7 @@ export function Reader({ lang, titles }: { lang: "vi" | "en"; titles: [string, s
     note: vi
       ? "Đây là các bài khoá luyện tập do trang này tự soạn, dùng từ mới và ngữ pháp của từng bài trong giáo trình HSK 4 (nhân vật: A Linh – cô gái Việt Nam du học ở Trung Quốc, và bạn cùng phòng Tiểu Tuyết). Bài khoá gốc trong sách thuộc bản quyền của nhà xuất bản nên không đăng lại ở đây – hãy đọc trong sách giáo khoa."
       : "These are original practice texts written for this site, using each lesson's HSK 4 vocabulary and grammar (characters: A Linh, a Vietnamese student in China, and her roommate Xiaoxue). The textbook's own texts are copyrighted by the publisher and are not reproduced here — read them in your book.",
-    hint: vi ? "Bấm vào từ được tô sáng để xem nghĩa tiếng Việt và nghe phát âm." : "Tap a highlighted word to see its meaning and hear it.",
+    hint: vi ? "Bấm vào từ được tô sáng để xem nghĩa, nghe phát âm, hoặc bấm ☆ để lưu vào 收藏." : "Tap a highlighted word to see its meaning, hear it, or tap ☆ to save it.",
     py: vi ? "拼音 · Pinyin" : "拼音 · Pinyin",
     tr: vi ? "翻译 · Bản dịch" : "翻译 · Translation",
     prev: vi ? "‹ Bài trước" : "‹ Previous",
@@ -256,6 +354,7 @@ export function Reader({ lang, titles }: { lang: "vi" | "en"; titles: [string, s
         );
       }) : <div>—</div>}
       {tip ? <KwPopup tip={tip} gloss={gloss.get(tip.w)} lang={lang} onClose={() => setTip(null)} /> : null}
+      <FillGame lang={lang} lesson={st.l} les={les} all={DATA} />
       <div style={{ display: "flex", justifyContent: "space-between", gap: 8 }}>
         <button disabled={st.l <= 1} onClick={() => go(st.l - 1)} style={{ cursor: st.l <= 1 ? "default" : "pointer", opacity: st.l <= 1 ? 0.45 : 1, border: "1.5px solid rgba(232,85,154,0.3)", background: "#fff", color: "#8f2160", fontWeight: 800, borderRadius: 9999, padding: "10px 16px", fontFamily: "inherit", fontSize: 14 }}>{T.prev}</button>
         <button disabled={st.l >= 20} onClick={() => go(st.l + 1)} style={{ cursor: st.l >= 20 ? "default" : "pointer", opacity: st.l >= 20 ? 0.45 : 1, border: "none", background: "linear-gradient(135deg,#ff7eb6,#e8559a)", color: "#fff", fontWeight: 800, borderRadius: 9999, padding: "10px 16px", fontFamily: "inherit", fontSize: 14, boxShadow: "0 4px 12px rgba(232,85,154,0.28)" }}>{T.next}</button>

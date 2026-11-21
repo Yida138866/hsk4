@@ -3,6 +3,7 @@ import { Reader } from "./reader";
 import { SpeakBtn, wordAudio } from "./audio";
 import { RandomTest } from "./rtest";
 import { PET_ON, PetTab, petEvent, quizWrong } from "./pet";
+import { FavStar, useFavs, extraGloss } from "./fav";
 
 type Word = { h: string; p: string; pos: string; m: string; l: number };
 type Q = { id: string; sec: "listen" | "read" | "write"; kind: string; passage?: string; stem: string; opts: string[]; a: number };
@@ -1079,13 +1080,21 @@ function Flashcards({ words }: { words: Word[] }) {
   const [i, setI] = useState<number>(0);
   const [flip, setFlip] = useState<boolean>(false);
   const [seed, setSeed] = useState<number>(0);
-  const deck = useMemo(() => (seed === 0 ? words : shuffle(words, rng(seed))), [words, seed]);
-  const w = deck[i % Math.max(deck.length, 1)];
-  if (!w) return null;
+  const [mode, setMode] = useState<"lesson" | "fav">("lesson");
+  const favs = useFavs();
+  const favWords = useMemo(() => favs.map((h) => WORDS.find((x: Word) => x.h === h) || (() => { const e = extraGloss(h); return e ? { h, p: e.p, pos: e.pos, m: e.en, l: e.l } as Word : null; })()).filter((x): x is Word => !!x), [favs]);
+  const source = mode === "fav" ? favWords : words;
+  const deck = useMemo(() => (seed === 0 ? source : shuffle(source, rng(seed))), [source, seed]);
+  const w = deck.length ? deck[i % deck.length] : null;
   return (
     <div>
+      <div role="tablist" aria-label="flashcard sets" style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 10 }}>
+        <button type="button" className="fav-deck-lesson" aria-pressed={mode === "lesson"} onClick={() => { setMode("lesson"); setI(0); setFlip(false); setSeed(0); }} style={{ cursor: "pointer", border: mode === "lesson" ? "none" : "1.5px solid rgba(232,85,154,0.3)", borderRadius: 9999, padding: "6px 12px", fontFamily: "inherit", fontSize: 13, fontWeight: 800, background: mode === "lesson" ? "linear-gradient(135deg,#ff8cc0,#c58bff)" : "#fff", color: mode === "lesson" ? "#fff" : "#8f2160" }}>本课 · This lesson</button>
+        <button type="button" className="fav-deck" aria-pressed={mode === "fav"} onClick={() => { setMode("fav"); setI(0); setFlip(false); setSeed(0); }} style={{ cursor: "pointer", border: mode === "fav" ? "none" : "1.5px solid rgba(232,85,154,0.3)", borderRadius: 9999, padding: "6px 12px", fontFamily: "inherit", fontSize: 13, fontWeight: 800, background: mode === "fav" ? "linear-gradient(135deg,#ffd36e,#ff8cc0)" : "#fff", color: mode === "fav" ? "#fff" : "#8f2160" }}>⭐ 收藏 · Saved ({favs.length})</button>
+      </div>
+      {!w ? <div style={{ padding: "24px 12px", textAlign: "center", color: "#6b3a63", fontSize: 14, lineHeight: "22px" }}>{mode === "fav" ? "No saved words yet. In 课文文章, tap ☆ on a highlighted word to add it here." : "—"}</div> : <>
       <div onClick={() => setFlip(!flip)} style={{ cursor: "pointer", border: `1px solid ${t.border.default}`, borderRadius: 16, padding: "36px 20px", textAlign: "center", background: t.bg.elevated, minHeight: 180, display: "flex", flexDirection: "column", justifyContent: "center", gap: 10 }}>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12 }}><div lang="zh-Hans" style={{ fontSize: "44px", lineHeight: "52px", color: t.text.primary }}>{w.h}</div><SpeakBtn items={wordAudio(w.h)} k={"w:" + w.h} size={40} /></div>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12 }}><div lang="zh-Hans" style={{ fontSize: "44px", lineHeight: "52px", color: t.text.primary }}>{w.h}</div><SpeakBtn items={wordAudio(w.h)} k={"w:" + w.h} size={40} /><FavStar word={w.h} lang="en" size={40} /></div>
         {flip ? (
           <div>
             <div style={{ fontSize: "22px", lineHeight: "30px", color: t.text.primary }}>{w.p}</div>
@@ -1098,10 +1107,11 @@ function Flashcards({ words }: { words: Word[] }) {
       <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 12, alignItems: "center" }}>
         <Button label="上一张" onClick={() => { setI((i - 1 + deck.length) % deck.length); setFlip(false); }} />
         <Button label={flip ? "盖住" : "翻面"} variant="primary" onClick={() => setFlip(!flip)} />
-        <Button label="下一张" onClick={() => { if ((i + 1) % deck.length === 0 && deck[0]) petEvent("cards", { lesson: (deck[0] as Word).l }); setI((i + 1) % deck.length); setFlip(false); }} />
+        <Button label="下一张" onClick={() => { if (mode === "lesson" && deck.length && (i + 1) % deck.length === 0) petEvent("cards", { lesson: (deck[0] as Word).l }); setI(deck.length ? (i + 1) % deck.length : 0); setFlip(false); }} />
         <Button label="打乱顺序" onClick={() => { setSeed(Math.floor(Math.random() * 100000) + 1); setI(0); setFlip(false); }} />
-        <span style={{ color: t.text.tertiary, fontSize: t.font.label.fontSize }}>{(i % deck.length) + 1} / {deck.length}</span>
+        <span style={{ color: t.text.tertiary, fontSize: t.font.label.fontSize }}>{(i % Math.max(deck.length, 1)) + 1} / {deck.length}</span>
       </div>
+      </>}
     </div>
   );
 }
