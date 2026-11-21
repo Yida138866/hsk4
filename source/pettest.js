@@ -109,10 +109,10 @@ const ALL = ["bow", "glasses", "beret", "crown", "scarf", "hoodie", "dress", "ao
     await click("#pet-top button", EN ? "Accessories" : "Phụ kiện"); await click("#pet-top .shop button", EN ? "Buy" : "Mua"); await sleep(300);
     const after = await get();
     ok(tag + " shop feed + buy", after.stats.fed === before.stats.fed + 1 && after.owned.length === before.owned.length + 1 && after.stars < before.stars);
-    // graduation via check-in crossing 2400
-    await seed({ xp: 2390, lessons: Array.from({ length: 15 }, (_, i) => i + 1), stage: 3, minStage: 0, gradDone: false, ciLast: ds(-1), ciStreak: 2, equip: { outfit: "aodai", room: "night", furn: ["lamp", "desk"] } });
+    // graduation via check-in crossing 1200
+    await seed({ xp: 1190, lessons: Array.from({ length: 15 }, (_, i) => i + 1), stage: 3, minStage: 0, gradDone: false, ciLast: ds(-1), ciStreak: 2, equip: { outfit: "aodai", room: "night", furn: ["lamp", "desk"] } });
     label = await page.evaluate(() => document.querySelector("#pet-top span[style*='linear-gradient']").textContent);
-    ok(`${tag} 2390XP still teen`, label.includes("少女"), label);
+    ok(`${tag} 1190XP still teen`, label.includes("少女"), label);
     await scrollTo(".checkin", 80); await page.click(".ci-btn"); await sleep(900);
     st = await get();
     ok(tag + " graduation: stage4 + all items + badge", st.stage === 4 && st.gradDone && ALL.every((x) => st.owned.includes(x)) && st.earned.includes("grad"), `stage=${st.stage} owned=${st.owned.length}`);
@@ -137,7 +137,7 @@ const ALL = ["bow", "glasses", "beret", "crown", "scarf", "hoodie", "dress", "ao
     const code = await page.evaluate(() => [...document.querySelectorAll("#pet-top textarea")].map((t) => t.value).find((v) => v.startsWith("HSK4PET1:")));
     ok(tag + " export code", !!code && code.length > 50);
     // level-up (child) via task
-    await seed({ xp: 595, lessons: [1, 2, 3, 4, 5, 6], stage: 1, dayXp: 0, day: ds(0), claims: {} });
+    await seed({ xp: 295, lessons: [1, 2, 3, 4, 5, 6], stage: 1, dayXp: 0, day: ds(0), claims: {} });
     await page.evaluate(() => { localStorage.removeItem("hsk4-plan-vi-v1"); localStorage.removeItem("hsk4-plan-v1"); });
     await page.reload({ waitUntil: "networkidle0" }); await click("[role=tab]", "学习计划"); await click("button", "标记完成"); await sleep(900);
     ok(tag + " level-up to child", await page.evaluate(() => !!document.querySelector(".levelup")) && (await get()).stage === 2);

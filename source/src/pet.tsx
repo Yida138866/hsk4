@@ -18,10 +18,10 @@ const VI = LANG === "vi";
 
 export const STAGES = [
   { zh: "蛋", vi: "Trứng", en: "Egg", xp: 0, lessons: 0 },
-  { zh: "宝宝", vi: "Em bé", en: "Baby", xp: 150, lessons: 2 },
-  { zh: "小朋友", vi: "Bạn nhỏ", en: "Child", xp: 600, lessons: 6 },
-  { zh: "少女", vi: "Thiếu nữ", en: "Teen", xp: 1300, lessons: 10 },
-  { zh: "毕业", vi: "Tốt nghiệp", en: "Graduate", xp: 2400, lessons: 15 },
+  { zh: "宝宝", vi: "Em bé", en: "Baby", xp: 75, lessons: 2 },
+  { zh: "小朋友", vi: "Bạn nhỏ", en: "Child", xp: 300, lessons: 6 },
+  { zh: "少女", vi: "Thiếu nữ", en: "Teen", xp: 650, lessons: 10 },
+  { zh: "毕业", vi: "Tốt nghiệp", en: "Graduate", xp: 1200, lessons: 15 },
 ];
 export const DAILY_CAP = 60; // study XP per day; check-in and the pet quiz are outside this cap
 export const XP_RULES = { task: 10, cards: 8, listen: 6, quizPerPoint: 2, rtestPerPoint: 1 };
@@ -845,3 +845,6 @@ export function PetWidget() {
     </>
   );
 }
+
+// Existing pets move up on the next page load if XP + lessons already meet the current thresholds (never demote).
+if (typeof window !== "undefined" && S.pet && stageOf(S) > (S.stage || 0)) finish([]);
