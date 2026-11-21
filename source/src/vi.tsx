@@ -644,29 +644,31 @@ const TRAW = `1|1|对话：阿玲和小雪聊阿玲的男朋友|阿玲跟周南�
 5|3|对话：给陈老师挑一份礼物|她们想邀请谁？为什么不能只看广告就买葡萄？|Hội thoại: Chọn quà cho cô Trần|Họ muốn mời ai? Vì sao không thể chỉ nhìn quảng cáo rồi mua nho?
 5|4|短文：买衣服时我给自己的几条标准|以前作者买衣服有什么问题？后来她给自己定了哪些标准？|Đoạn văn: Vài tiêu chuẩn tôi đặt khi mua áo|Trước kia tác giả mua áo có vấn đề gì? Sau này cô ấy đặt cho mình những tiêu chuẩn nào?
 5|5|短文：网上购物也要停一停|作者在网上买家具时遇到了什么问题？后来她给自己定了什么习惯？|Đoạn văn: Mua hàng online cũng cần dừng lại một chút|Khi mua nội thất trên mạng, tác giả gặp chuyện gì? Sau này cô ấy đặt cho mình thói quen gì?
-6|1|张远和李进聊李进昨晚的购物经历|昨天晚上李进为什么没接张远的电话？|Trương Viễn và Lý Tiến nói chuyện về lần mua sắm tối qua của Lý Tiến|Tối qua vì sao Lý Tiến không nghe điện thoại của Trương Viễn?
-6|2|王静在商店买西红柿|王静买的西红柿怎么样？|Vương Tĩnh mua cà chua ở cửa hàng|Cà chua Vương Tĩnh mua thế nào?
-6|3|李进在商场买行李箱|李进想买什么样的行李箱？花了多少钱买的？|Lý Tiến mua vali ở trung tâm thương mại|Lý Tiến muốn mua vali như thế nào? Đã mua hết bao nhiêu tiền?
-6|4|短文|书店今天有什么活动？怎么才能免费办会员卡？|Đoạn văn|Hôm nay hiệu sách có hoạt động gì? Làm thế nào để làm thẻ hội viên miễn phí?
-6|5|短文|“一分钱一分货”是什么意思？一般什么时候商场会降价？|Đoạn văn|“Tiền nào của nấy” nghĩa là gì? Thường khi nào trung tâm thương mại giảm giá?
-7|1|小李和小林聊天气和身体情况|小林可能是中国哪里人？春天的时候怎么才能少感冒？|Tiểu Lý và Tiểu Lâm nói chuyện về thời tiết và sức khỏe|Tiểu Lâm có thể là người vùng nào của Trung Quốc? Mùa xuân làm thế nào để ít bị cảm?
-7|2|小夏和小雨聊小雨抽烟的事情|如果你有抽烟的朋友，你想对他/她说些什么？|Tiểu Hạ và Tiểu Vũ nói chuyện về việc Tiểu Vũ hút thuốc|Nếu bạn có người bạn hút thuốc, bạn muốn nói gì với người đó?
-7|3|小李和小林聊电脑对身体的影响|长时间坐在电脑前面工作好不好？为什么？|Tiểu Lý và Tiểu Lâm nói chuyện về ảnh hưởng của máy tính đến sức khỏe|Ngồi làm việc trước máy tính trong thời gian dài có tốt không? Vì sao?
-7|4|短文|过去和现在的人们对健康的认识有哪些不同？晚饭后和家人一起去散散步有哪几个方面的好处？|Đoạn văn|Nhận thức về sức khỏe của con người trước đây và bây giờ khác nhau thế nào? Sau bữa tối đi dạo cùng gia đình có lợi ích về những mặt nào?
-8|1|李老师和高老师聊关于巧克力的事情|吃巧克力对人的心情有哪些影响？|Giáo viên Lý và giáo viên Cao nói chuyện về sô-cô-la|Ăn sô-cô-la ảnh hưởng thế nào đến tâm trạng con người?
-8|2|小夏和马克聊关于上次足球比赛的事情|马克可能因为什么原因带小夏去看那里的景色？|Tiểu Hạ và Mark nói chuyện về trận bóng đá lần trước|Có thể vì lý do gì mà Mark đưa Tiểu Hạ đi ngắm cảnh ở đó?
-8|3|马克和司机聊关于堵车的事情||Mark và tài xế nói chuyện về tắc đường|
-8|4|短文|怎么理解“生活中的美到处都是”这句话？哪种方法可以让我们了解一个人的性格？|Đoạn văn|Hiểu câu “Cái đẹp trong cuộc sống có ở khắp nơi” như thế nào? Cách nào giúp chúng ta hiểu tính cách của một người?
-9|1|王静和孙月聊孙月减肥的事情|怎样减肥才能有效果？|Vương Tĩnh và Tôn Nguyệt nói chuyện về việc giảm cân của Tôn Nguyệt|Giảm cân thế nào mới có hiệu quả?
-9|2|李进和张远聊张远的成功经历|张远的网球为什么打得那么好？为什么说没有人能随随便便成功？|Lý Tiến và Trương Viễn nói chuyện về con đường thành công của Trương Viễn|Vì sao Trương Viễn chơi quần vợt giỏi như vậy? Vì sao nói không ai có thể thành công một cách dễ dàng?
-9|3|小林和小李谈王红的成功经历|王红是干什么的？她是怎样获得成功的？|Tiểu Lâm và Tiểu Lý nói về con đường thành công của Vương Hồng|Vương Hồng làm nghề gì? Cô ấy đã thành công như thế nào?
-9|4|短文|过程和结果，哪个更重要？为什么说失败了也没关系？|Đoạn văn|Quá trình và kết quả, cái nào quan trọng hơn? Vì sao nói thất bại cũng không sao?
-9|5|短文|人们对困难的态度有什么不同？爱迪生是怎样成功发明电灯的？|Đoạn văn|Thái độ của mọi người trước khó khăn khác nhau thế nào? Edison đã phát minh thành công bóng đèn điện như thế nào?
-10|1|孙月和王静聊王静的生活情况|孙月让王静陪她去做什么？王静为什么很辛苦？她为什么也觉得很幸福？|Tôn Nguyệt và Vương Tĩnh nói chuyện về cuộc sống của Vương Tĩnh|Tôn Nguyệt nhờ Vương Tĩnh đi cùng để làm gì? Vì sao Vương Tĩnh rất vất vả? Vì sao cô ấy vẫn thấy rất hạnh phúc?
-10|2|高老师和李老师在谈幸福|高老师为什么羡慕王老师？|Giáo viên Cao và giáo viên Lý nói về hạnh phúc|Vì sao giáo viên Cao ngưỡng mộ giáo viên Vương?
-10|3|小雨和小夏聊找工作的事情|小雨对选择职业有什么建议？在小雨看来，什么是幸福？|Tiểu Vũ và Tiểu Hạ nói chuyện về việc tìm việc làm|Tiểu Vũ có lời khuyên gì về việc chọn nghề? Theo Tiểu Vũ, thế nào là hạnh phúc?
-10|4|短文|为什么说没钱也很难过得幸福？|Đoạn văn|Vì sao nói không có tiền cũng khó sống hạnh phúc?
-10|5|短文|关于幸福，人们有哪些不同的看法？怎样才算是真正的幸福？|Đoạn văn|Về hạnh phúc, mọi người có những quan điểm khác nhau nào? Thế nào mới là hạnh phúc thật sự?
+6|1|对话：小雪逛完小店回来|小雪为什么回来得晚？她在小店里买了什么？|Hội thoại: Tiểu Tuyết về sau khi ghé cửa hàng nhỏ|Vì sao Tiểu Tuyết về muộn? Cô ấy đã mua gì ở tiệm nhỏ?
+6|2|对话：阿玲和周南帮社区挑西红柿|他们为什么买西红柿？最后为什么选了那一筐？|Hội thoại: A Linh và Châu Nam chọn cà chua giúp khu phố|Vì sao họ mua cà chua? Cuối cùng vì sao chọn rổ ấy?
+6|3|对话：周南要出远门买箱子|周南想买什么样的箱子？为什么觉得值得买？|Hội thoại: Châu Nam sắp đi xa, mua vali|Châu Nam muốn mua vali thế nào? Vì sao anh ấy thấy đáng mua?
+6|4|短文：书店里的一场小活动|书店举行了什么活动？同学怎样才能获得一本小说？|Đoạn văn: Một hoạt động nhỏ trong hiệu sách|Hiệu sách tổ chức hoạt động gì? Bạn học làm thế nào để nhận được một tiểu thuyết?
+6|5|短文：比的不只是价格|作者在减价时看到了哪两种笔记本？后来明白了什么？|Đoạn văn: So không chỉ mỗi cái giá|Khi giảm giá, tác giả thấy hai loại vở nào? Sau này hiểu ra điều gì?
+7|1|对话：换季的时候阿玲咳嗽了|阿玲为什么咳嗽？小雪建议她怎么做？|Hội thoại: Đổi mùa, A Linh bị ho|Vì sao A Linh bị ho? Tiểu Tuyết khuyên cô ấy làm gì?
+7|2|对话：小雪劝表哥少抽烟|家里为什么反对表哥抽烟？他有没有后悔过？|Hội thoại: Tiểu Tuyết khuyên anh họ ít hút thuốc|Vì sao gia đình phản đối anh họ hút thuốc? Anh ấy đã từng hối chưa?
+7|3|对话：陈晓坐太久，大夫让他多走走|陈晓为什么去看大夫？大夫让他做些什么？|Hội thoại: Trần Hiểu ngồi quá lâu, bác sĩ bảo đi bộ nhiều hơn|Vì sao Trần Hiểu đi khám? Bác sĩ bảo cậu ấy làm gì?
+7|4|短文：教授指给我看的一组数字|教授用数字说明了什么？作者为什么把数字贴在书桌前？|Đoạn văn: Một nhóm số giáo sư chỉ cho tôi xem|Giáo sư dùng những con số để nói điều gì? Vì sao tác giả dán chúng trước bàn học?
+7|5|短文：掉下去的不是只是体重|作者的朋友开始是怎么减肥的？坚持以后，掉下去的还有什么？|Đoạn văn: Cái rơi đi không chỉ là cân nặng|Lúc đầu bạn của tác giả giảm cân thế nào? Kiên trì xong, còn có gì rơi đi nữa?
+8|1|对话：阿玲买巧克力走亲戚|阿玲为什么买巧克力？她觉得巧克力对林阿姨有什么帮助？|Hội thoại: A Linh mua sô-cô-la đi thăm họ hàng|Vì sao A Linh mua sô-cô-la? Cô ấy thấy sô-cô-la giúp thím Lâm thế nào?
+8|2|对话：周末在山上踢球以后|阿玲为什么还想再去山上踢球？她回忆起来先想起什么？|Hội thoại: Sau trận bóng trên núi cuối tuần|Vì sao A Linh vẫn muốn lên núi đá bóng nữa? Khi hồi tưởng, cô ấy nhớ đến điều gì trước?
+8|3|对话：程师傅送阿玲去办事|阿玲要去哪儿？路上为什么比平时慢？|Hội thoại: Bác Trình đưa A Linh đi làm việc|A Linh định đi đâu? Vì sao trên đường chậm hơn bình thường?
+8|4|短文：路边也能看见的东西|作者以前觉得美只在哪里？后来态度有了什么变化？|Đoạn văn: Thứ cũng thấy được bên đường|Trước kia tác giả nghĩ cái đẹp chỉ ở đâu? Sau này thái độ thay đổi thế nào?
+8|5|短文：阳光下的好心情，也要自己找|作者认为阳光和心情是什么关系？积极的人有什么特点？|Đoạn văn: Tâm trạng tốt dưới ánh nắng cũng cần tự tìm|Tác giả cho rằng ánh nắng và tâm trạng có quan hệ thế nào? Người tích cực có đặc điểm gì?
+9|1|对话：小雪又为零食发愁|小雪为什么把饼干放得很高？阿玲给了她什么主意？|Hội thoại: Tiểu Tuyết lại lo vì đồ ăn vặt|Vì sao Tiểu Tuyết để bánh quy rất cao? A Linh cho cô ấy ý gì?
+9|2|对话：周南的网球又赢了|周南今天打得怎么样？他平时怎么训练？|Hội thoại: Châu Nam lại thắng trận quần vợt|Hôm nay Châu Nam chơi thế nào? Bình thường anh ấy tập ra sao?
+9|3|对话：陈晓想当作家|陈晓的理想是什么？他打算怎样同时照顾工作和写作？|Hội thoại: Trần Hiểu muốn làm nhà văn|Lý tưởng của Trần Hiểu là gì? Cậu ấy định vừa làm việc vừa viết như thế nào?
+9|4|短文：一次陶艺课给我的总结|作者第一次做杯子时结果如何？后来她总结出了什么？|Đoạn văn: Một bài tổng kết từ giờ gốm|Lần đầu làm cốc, kết quả thế nào? Sau này cô ấy tổng kết được điều gì?
+9|5|短文：暂时落后的时候|暂时落后时，两种态度有什么区别？作者后来明白了什么？|Đoạn văn: Lúc tạm thời bị tụt lại|Khi tạm thời bị tụt lại, hai thái độ khác nhau thế nào? Sau này tác giả hiểu ra điều gì?
+10|1|对话：礼拜天阿玲陪母亲出门|阿玲为什么星期天起得很早？她们出门后可能怎么走？|Hội thoại: Ngày chủ nhật A Linh đi cùng mẹ|Vì sao chủ nhật A Linh dậy sớm? Ra ngoài họ có thể đi thế nào?
+10|2|对话：两位老师谈同事的新消息|王老师有什么好消息？下午她还要做什么？|Hội thoại: Hai giáo viên nói về tin mới của đồng nghiệp|Cô Vương có tin tốt gì? Chiều cô ấy còn làm gì nữa?
+10|3|对话：陈晓为将来的工作发愁|陈晓为什么躺在宿舍里？阿玲和小雪给了他什么建议？|Hội thoại: Trần Hiểu lo việc làm cho tương lai|Vì sao Trần Hiểu nằm trong ký túc xá? A Linh và Tiểu Tuyết khuyên cậu ấy điều gì?
+10|4|短文：小店门口的一句话|文具店的老板穷不穷？他对扩大店面是怎么看的？|Đoạn văn: Một câu trước cửa tiệm nhỏ|Ông chủ tiệm văn phòng phẩm có nghèo không? Ông ấy nghĩ thế nào về việc mở rộng cửa tiệm?
+10|5|短文：黑板上的几种答案|老师让学生回答什么问题？黑板上出现了哪些不同的答案？|Đoạn văn: Vài lời đáp trên bảng|Cô giáo bảo học sinh trả lời câu gì? Trên bảng có những câu trả lời khác nhau nào?
 11|1|马克介绍自己学习汉语的方法|大卫认为对学习汉语的外国人来说，做什么特别难？|Mark giới thiệu phương pháp học tiếng Trung của mình|David cho rằng đối với người nước ngoài học tiếng Trung, việc gì đặc biệt khó?
 11|2|小夏和小雨聊考试的情况|要想考好，应该注意哪些方面？为什么？|Tiểu Hạ và Tiểu Vũ nói chuyện về kỳ thi|Muốn thi tốt cần chú ý những mặt nào? Vì sao?
 11|3|小李告诉小林阅读的好处|小李家的客厅有什么特点？坚持阅读能给人带来哪些好处？|Tiểu Lý kể cho Tiểu Lâm về lợi ích của việc đọc sách|Phòng khách nhà Tiểu Lý có đặc điểm gì? Kiên trì đọc sách mang lại những lợi ích gì?

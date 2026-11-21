@@ -359,125 +359,365 @@
 ~ Shopping online is very convenient now: the pictures look nice, you tap once, and in a couple of days the things are sent to your home. But behind any convenience there is a chance you'll buy too much. I was once influenced by a few attractive pictures, especially of furniture; I ordered while my eyes were still hungry for it, and only when it arrived did I find it wouldn't fit in the room at all. Later I gave myself a habit: I leave anything I want to buy for a day, and only then decide whether to click. You shop in order to use things, not in order to enjoy clicking.
 
 ## 6
-# 1 阿玲去健身房 | A Linh đi phòng tập | A Linh goes to the gym
-小雪：你竟然每天早上都去健身房？真厉害！
-= Cậu sáng nào cũng đi phòng tập á? Giỏi thật!
-~ You actually go to the gym every morning? Impressive!
-阿玲：健身房在举办活动，这个月免费，当然值得去。
-= Phòng tập đang tổ chức chương trình, tháng này miễn phí, đương nhiên đáng đi rồi.
-~ The gym is running a promotion — it's free this month, so of course it's worth going.
-小雪：运动有什么好处？
-= Tập thể dục có lợi ích gì?
-~ What are the benefits of exercise?
-阿玲：好处很多，例如睡得好、皮肤好，心情也轻松。
-= Nhiều lắm, ví dụ ngủ ngon, da đẹp, tâm trạng cũng thoải mái.
-~ Lots — for example, you sleep well, your skin looks good, and you feel relaxed.
-小雪：那我也想试试。不过我怕坚持不下来。
-= Vậy mình cũng muốn thử. Có điều mình sợ không kiên trì được.
-~ Then I want to try too. But I'm afraid I won't stick with it.
-阿玲：在我的支持下，你一定可以！明天早上我叫你。
-= Có mình ủng hộ, cậu nhất định làm được! Sáng mai mình gọi cậu dậy.
-~ With my support you'll definitely manage! I'll wake you tomorrow morning.
-# 2 短文：生活中不缺少美 | Đoạn văn: Cuộc sống không thiếu cái đẹp | Passage: Life is full of beauty
-生活中不缺少美，只是缺少发现美的眼睛。早上一杯新鲜的果汁，路边一朵小花，朋友一句关心的话，都能让人感到幸福。阿玲有一个小本子，里面记满了每天让她开心的事情，其中有的很小，例如售货员的一个微笑。她说，写下来以后，快乐好像增加了好几倍。
-= Cuộc sống không thiếu cái đẹp, chỉ thiếu đôi mắt biết phát hiện cái đẹp. Một ly nước ép tươi buổi sáng, một bông hoa nhỏ bên đường, một câu hỏi han của bạn bè đều có thể khiến người ta cảm thấy hạnh phúc. A Linh có một cuốn sổ nhỏ, ghi đầy những điều khiến cô vui mỗi ngày, trong đó có những điều rất nhỏ, ví dụ nụ cười của cô bán hàng. Cô nói, sau khi viết ra, niềm vui dường như tăng lên mấy lần.
-~ Life isn't short of beauty, only of eyes that notice it. A glass of fresh juice in the morning, a little flower by the road, a caring word from a friend — all can make us feel happy. A Linh has a small notebook full of things that made her happy each day; some are very small, like a shop assistant's smile. She says that after writing them down, her happiness seems to multiply several times.
+# 1 对话：小雪逛完小店回来 | Hội thoại: Tiểu Tuyết về sau khi ghé cửa hàng nhỏ | Dialogue: Xiaoxue comes back from a little shop
+@ 售货员，打扰，果汁，竟然，袜子
+阿玲：你怎么这么晚才回来？我还以为你在图书馆。
+= Sao cậu về muộn thế? Mình còn tưởng cậu ở thư viện.
+~ Why are you back so late? I thought you were at the library.
+小雪：我路过那家小店，进去看袜子。售货员一直跟着我介绍，有点儿打扰，可她态度很好。
+= Mình đi ngang tiệm nhỏ, vào xem tất. Nhân viên bán hàng cứ đi theo giới thiệu, hơi làm phiền, nhưng thái độ chị ấy rất tốt.
+~ I passed that little shop and went in to look at socks. The salesperson kept following me around to explain things, which was a bit of a disturbance, but her manner was very kind.
+阿玲：那你买了吗？
+= Vậy cậu có mua không?
+~ So did you buy anything?
+小雪：买了两双深色的。排队付款的时候，我竟然还拿了一瓶果汁。走的时候，售货员还说欢迎再来。
+= Mua hai đôi màu tối. Lúc xếp hàng trả tiền, mình không ngờ còn cầm thêm một chai nước ép. Lúc đi, nhân viên còn nói lần sau ghé lại.
+~ I bought two dark pairs. While I was queuing to pay, I even picked up a bottle of juice, unexpectedly. As I left, the salesperson said I was welcome to come again.
+阿玲：瓶子在包里吗？小心别洒了。
+= Chai trong túi chứ? Cẩn thận kẻo đổ.
+~ Is the bottle in your bag? Be careful not to spill it.
+小雪：放稳了。你要不要尝一口？很甜。
+= Để chắc rồi. Cậu có muốn nếm một ngụm không? Ngọt lắm.
+~ It's sitting securely. Do you want a sip? It's very sweet.
+# 2 对话：阿玲和周南帮社区挑西红柿 | Hội thoại: A Linh và Châu Nam chọn cà chua giúp khu phố | Dialogue: A Linh and Zhou Nan pick tomatoes for the neighbourhood
+@ 百分之，西红柿，好处，皮肤，倍，尝
+周南：吴姐托我们买西红柿，做明天社区的汤。你说买哪一种？
+= Chị Ngô nhờ mình mua cà chua, nấu canh cho khu phố ngày mai. Cậu bảo mua loại nào?
+~ Sister Wu asked us to buy tomatoes for tomorrow's neighbourhood soup. Which kind do you think we should get?
+阿玲：先尝一块。这边的更甜，表面也更光滑。
+= Nếm một miếng đã. Bên này ngọt hơn, bề mặt cũng mượt hơn.
+~ Let's taste a piece first. These are sweeter, and the skin is smoother too.
+周南：摊主说，常吃对皮肤有好处。我也不知道是不是真的。
+= Chủ quán nói ăn thường thì có lợi cho da. Mình cũng không biết có thật không.
+~ The stallholder said eating them often is good for the skin. I don't know whether that's true.
+阿玲：好处先不说，你看这个牌子：熟的占百分之八十，比那边多了差不多一倍。做汤正合适。
+= Lợi ích để đó đã, cậu nhìn tấm bảng này: quả chín chiếm tám mươi phần trăm, nhiều hơn bên kia gần một lần. Nấu canh thì đúng.
+~ Leave the benefits aside for a moment. Look at this sign: eighty percent of them are ripe, almost twice as many as at the other stall. That'll be just right for soup.
+周南：那就这一筐。我再问一句能不能少拿几个青的。
+= Vậy lấy rổ này. Mình hỏi thêm có thể bớt vài quả xanh không.
+~ Then let's take this basket. I'll also ask whether we can leave out a few of the green ones.
+阿玲：好。买完我们直接送到吴姐那儿。
+= Được. Mua xong mình đưa thẳng tới chỗ chị Ngô.
+~ All right. When we've bought them we'll take them straight to Sister Wu.
+# 3 对话：周南要出远门买箱子 | Hội thoại: Châu Nam sắp đi xa, mua vali | Dialogue: Zhou Nan is going away and buys a suitcase
+@ 方面，活动，免费，修理，值得，内，轻
+阿玲：你不是下个月要去广州吗？怎么来看箱子了？
+= Tháng sau chẳng phải cậu đi Quảng Châu sao? Sao lại xem vali?
+~ Aren't you going to Guangzhou next month? Why are you looking at suitcases?
+周南：我想买一个轻一点儿的。你看这只，提起来不费劲，内里还有一层小口袋。
+= Mình muốn mua cái nhẹ hơn một chút. Cậu xem cái này, xách lên không mất sức, bên trong còn một lớp túi nhỏ.
+~ I'd like one that's a bit lighter. Look at this one: it isn't hard to lift, and there is also a layer of small pockets inside.
+阿玲：价格呢？这周末商场有活动，会不会便宜些？
+= Còn giá? Cuối tuần này trung tâm có hoạt động, liệu có rẻ hơn không?
+~ What about the price? The mall has a promotion this weekend — might it be cheaper?
+周南：问过了。现在买，一年内免费修理，我觉得值得。
+= Hỏi rồi. Mua bây giờ thì trong một năm sửa miễn phí, mình thấy đáng.
+~ I've already asked. If I buy it now, repairs are free within a year. I think it's worth it.
+阿玲：那在质量方面没问题就好。你再试试轮子转不转得稳。
+= Vậy về mặt chất lượng không vấn đề là được. Cậu thử bánh xe quay có vững không.
+~ Then as long as there's no problem with the quality, that's fine. Try whether the wheels run steadily too.
+周南：还行。我就拿这只吧，省得再跑一趟。
+= Cũng ổn. Mình lấy cái này vậy, khỏi phải chạy thêm chuyến.
+~ It's all right. I'll take this one, so I don't have to come back again.
+# 4 短文：书店里的一场小活动 | Đoạn văn: Một hoạt động nhỏ trong hiệu sách | Passage: A little event in the bookshop
+@ 获得，举行，其中，所有，小说，支持，满
+今天下午，学校书店举行了一场交换旧书的活动。座位很快就坐满了，过道里也站着人。所有带来书的同学，都可以获得一张小书签；其中带来三本以上的，还能再选一本小说带回家。我把两本看完的故事和一本词典放在桌上。虽然我没有多换到什么，可看到那么多人来支持这场活动，心里还是很高兴。晚上我坐在灯下，翻开那本刚换来的小说，倒觉得这一下午没有白来。
+= Chiều nay hiệu sách trường tổ chức một hoạt động đổi sách cũ. Chỗ ngồi chẳng mấy chốc đã kín, lối đi cũng có người đứng. Tất cả bạn mang sách đến đều có thể nhận một tấm đánh dấu sách nhỏ; trong số đó ai mang từ ba quyển trở lên còn được chọn thêm một tiểu thuyết mang về. Tôi để hai tập truyện đã đọc xong và một quyển từ điển lên bàn. Tuy không đổi thêm được bao nhiêu, nhưng thấy nhiều người đến ủng hộ hoạt động ấy, trong lòng vẫn vui. Tối tôi ngồi dưới đèn, mở quyển tiểu thuyết mới đổi, lại thấy cả buổi chiều không uổng.
+~ This afternoon the school bookshop held an event for exchanging old books. The seats were soon full, and people were standing in the aisles as well. All the students who brought books could obtain a little bookmark; among them, those who brought three or more could also choose a novel to take home. I put two stories I had finished and a dictionary on the table. Although I did not exchange much extra, I was still glad to see so many people come and support the event. In the evening I sat under the lamp, opened the novel I had just exchanged, and felt that the afternoon had not been wasted.
+# 5 短文：比的不只是价格 | Đoạn văn: So không chỉ mỗi cái giá | Passage: It is not only the price you compare
+@ 降低，举办，例如，情况，各
+商场一举办促销，价格就会降低一些，这谁都知道。可各家的情况并不一样。例如上周校园超市减价，我看到两种外观差不多的笔记本：一种很便宜，写两天纸就起毛；另一种贵一点，却能用一个学期。后来我才明白，减价是让人走近货架，真正要比较的，是自己会用多久。便宜得让人立刻动手，不一定最合适；贵一点但能用很长时间，有时反而更省。
+= Trung tâm một tổ chức khuyến mãi là giá sẽ giảm đôi chút, ai cũng biết. Nhưng tình hình mỗi nơi không giống nhau. Ví dụ tuần trước siêu thị trong trường giảm giá, tôi thấy hai loại vở trông gần như nhau: một loại rất rẻ, viết hai ngày giấy đã xơ; loại kia đắt hơn một chút, nhưng dùng được cả học kỳ. Sau tôi mới hiểu, giảm giá là để người ta lại gần kệ, điều thật sự cần so là mình dùng được bao lâu. Rẻ đến mức khiến người ta sờ ngay, chưa chắc đã hợp nhất; đắt hơn một chút nhưng dùng lâu, đôi khi lại tiết kiệm hơn.
+~ Everyone knows that as soon as a shopping centre holds a promotion, prices will drop a little. But the situation is not the same at every shop. For example, when the campus supermarket reduced prices last week, I saw two kinds of notebook that looked almost alike: one was very cheap, but after two days of writing the paper began to fluff; the other cost a little more, yet it could last a whole term. Only later did I understand that a sale is what brings you to the shelf, and what you really have to compare is how long you will use the thing. Something so cheap that you reach for it at once is not necessarily the best fit; something a little dearer that lasts a long time can, in fact, save you more.
+
 ## 7
-# 1 阿玲感冒了 | A Linh bị cảm | A Linh has a cold
-小雪：你怎么一直咳嗽？是不是感冒了？
-= Sao cậu ho mãi thế? Có phải bị cảm rồi không?
-~ Why do you keep coughing? Have you caught a cold?
-阿玲：估计是昨天晚上开着窗户睡觉，着凉了。
-= Chắc là tối qua mở cửa sổ ngủ nên bị nhiễm lạnh.
-~ Probably because I slept with the window open last night and caught a chill.
-小雪：要是很严重，就去看大夫吧。
-= Nếu nặng thì đi khám bác sĩ đi.
-~ If it's serious, go and see a doctor.
-阿玲：不严重。我既不发烧，也不头疼，多喝点儿热水就好了。
-= Không nặng đâu. Mình vừa không sốt vừa không đau đầu, uống nhiều nước ấm là khỏi.
-~ It's not serious. I've no fever and no headache; drinking more hot water will sort it out.
-小雪：最近气候变化大，你别为了减肥不吃饭。
-= Dạo này thời tiết thay đổi nhiều, cậu đừng vì giảm cân mà nhịn ăn nhé.
-~ The weather's been changeable lately, so don't skip meals to lose weight.
-阿玲：知道了。等我好了，我们每天晚上一起去散散步。
-= Mình biết rồi. Đợi mình khỏi, tối nào bọn mình cũng cùng đi dạo nhé.
-~ Got it. When I'm better, let's go for a walk together every evening.
-# 2 短文：最好的医生是自己 | Đoạn văn: Bác sĩ giỏi nhất là chính mình | Passage: The best doctor is yourself
-有一位教授说过，最好的医生是自己。研究说明，很多病和我们的生活习惯有关系，例如抽烟、睡得太晚、吃得太多等。要是每天坚持运动，多呼吸新鲜空气，少给自己找烦恼，身体自然就会健康。不要等到生病了才后悔，那时候可能就来不及了。
-= Có một vị giáo sư từng nói, bác sĩ giỏi nhất là chính mình. Nghiên cứu cho thấy rất nhiều bệnh có liên quan đến thói quen sinh hoạt của chúng ta, ví dụ hút thuốc, ngủ quá muộn, ăn quá nhiều… Nếu mỗi ngày kiên trì vận động, hít thở nhiều không khí trong lành, bớt tự chuốc phiền não, cơ thể tự nhiên sẽ khỏe mạnh. Đừng đợi đến khi bị bệnh mới hối hận, lúc đó có thể đã không kịp nữa rồi.
-~ A professor once said that the best doctor is yourself. Research shows that many illnesses are linked to our habits — smoking, going to bed too late, overeating and so on. If you exercise every day, breathe plenty of fresh air and don't go looking for worries, your body will naturally stay healthy. Don't wait until you're ill to regret it; by then it may be too late.
+# 1 对话：换季的时候阿玲咳嗽了 | Hội thoại: Đổi mùa, A Linh bị ho | Dialogue: A Linh has a cough when the season changes
+@ 窗户，估计，咳嗽，空气，气候，严重，擦
+小雪：你的声音怎么哑了？是不是又咳嗽了？
+= Giọng cậu sao khàn thế? Lại ho rồi à?
+~ Why is your voice so hoarse? Have you got a cough again?
+阿玲：这两天气候一下子变冷，我晚上忘了关窗户，早上起来就咳。还好不太严重。
+= Mấy hôm nay khí hậu lạnh đột ngột, tối mình quên đóng cửa sổ, sáng dậy là ho. May mà không nghiêm trọng lắm.
+~ The climate turned cold all of a sudden these past two days. I forgot to close the window at night, and I was coughing when I got up. Luckily it isn't too serious.
+小雪：我估计是风灌进来了。你把窗边擦一擦，别让灰和冷空气一起进来。
+= Mình đoán gió lùa vào. Cậu lau mép cửa sổ một chút, đừng để bụi và không khí lạnh cùng vào.
+~ I would estimate the wind blew in. Wipe around the window a bit, so the dust and the cold air don't come in together.
+阿玲：好。我再泡杯热的。你那边呢？还习惯这儿春天的气候吗？
+= Được. Mình pha thêm chén nóng. Còn phía cậu? Đã quen khí hậu mùa xuân ở đây chưa?
+~ All right. I'll also make a cup of something hot. What about you? Have you got used to the spring climate here yet?
+小雪：比我家那边湿一点儿，不过开窗换空气，人会舒服些。
+= Ẩm hơn nhà mình một chút, nhưng mở cửa đổi không khí thì người dễ chịu hơn.
+~ It's a bit damper than at home, but if you open the window and change the air, you feel more comfortable.
+阿玲：那我白天把窗户打开一阵，晚上再关上。
+= Vậy ban ngày mình mở cửa sổ một lúc, tối đóng lại.
+~ Then I'll open the window for a while in the daytime, and close it again at night.
+# 2 对话：小雪劝表哥少抽烟 | Hội thoại: Tiểu Tuyết khuyên anh họ ít hút thuốc | Dialogue: Xiaoxue urges her cousin to smoke less
+@ 来不及，抽烟，出现，动作，反对，后悔，帅
+阿玲：你一接完电话就皱眉，谁啊？
+= Vừa gác máy cậu đã nhíu mày, ai thế?
+~ You frowned as soon as you hung up. Who was it?
+小雪：我表哥。他一抽烟，家里就反对，可他还是停不下来。
+= Anh họ mình. Hễ anh ấy hút thuốc là nhà phản đối, nhưng anh ấy vẫn không dừng được.
+~ My cousin. Whenever he smokes, the family is against it, but he still can't stop.
+阿玲：你怎么劝的？
+= Cậu khuyên thế nào?
+~ What did you say to him?
+小雪：我说，你看起来挺帅的，可一出现烟味，别人就会往旁边让。他听了只是笑。
+= Mình nói, trông anh cũng khá đẹp trai, nhưng hễ mùi thuốc xuất hiện là người khác tránh sang bên. Anh ấy nghe xong chỉ cười.
+~ I said, "You look quite handsome, but as soon as the smell of smoke appears, people step aside." He only laughed when he heard that.
+阿玲：他后悔过吗？
+= Anh ấy đã từng hối chưa?
+~ Has he ever regretted it?
+小雪：后悔过。有一次要赶车，他在站里找打火机，动作一慢，车就开走了，来不及追。他说那次真不该把时间耗在烟上。
+= Đã hối. Có lần phải bắt xe, anh ấy tìm bật lửa trong bến, động tác chậm một cái là xe chạy mất, không kịp đuổi. Anh ấy bảo lần ấy thật không nên bỏ thời gian vào thuốc.
+~ He has. Once he had to catch a bus. He was looking for a lighter at the stop, his movements were just a little slow, and the bus left — he had no time to run after it. He said he really shouldn't have spent that time on a cigarette.
+# 3 对话：陈晓坐太久，大夫让他多走走 | Hội thoại: Trần Hiểu ngồi quá lâu, bác sĩ bảo đi bộ nhiều hơn | Dialogue: Chen Xiao sat too long, and the doctor told him to walk more
+@ 超过，大夫，散步，研究，植物
+小雪：陈晓最近怎么总揉肩膀？
+= Dạo này Trần Hiểu sao cứ xoa vai?
+~ Why has Chen Xiao been rubbing his shoulders so much lately?
+阿玲：他写论文，一天坐在电脑前超过八个小时。上周去看大夫，大夫说先别吃药，每天出去散步。
+= Cậu ấy viết luận văn, một ngày ngồi trước máy tính hơn tám tiếng. Tuần trước đi khám, bác sĩ bảo đừng uống thuốc vội, mỗi ngày ra ngoài đi dạo.
+~ He's writing his thesis and sits in front of the computer for more than eight hours a day. He went to see the doctor last week. The doctor said not to take medicine first, and to go out for a walk every day.
+小雪：光散步够吗？
+= Chỉ đi dạo đã đủ chưa?
+~ Is walking enough on its own?
+阿玲：大夫还让他在桌上放两盆植物，研究里说，看看绿色，眼睛会轻松一些。
+= Bác sĩ còn bảo đặt hai chậu cây trên bàn, trong nghiên cứu nói nhìn màu xanh thì mắt dễ chịu hơn.
+~ The doctor also told him to put two pots of plants on the desk. Research says that looking at something green makes the eyes a little more at ease.
+小雪：那倒简单。我下午去市场，顺便帮他买一盆。
+= Thế thì đơn giản. Chiều mình ra chợ, tiện thể mua giúp một chậu.
+~ That's easy enough. I'll go to the market this afternoon and get a pot for him while I'm there.
+阿玲：你跟他说一声就行。他已经开始晚饭后围着楼散步了。
+= Cậu nói với anh ấy một tiếng là được. Anh ấy đã bắt đầu sau bữa tối đi dạo quanh nhà rồi.
+~ Just mention it to him. He has already started walking around the building after dinner.
+# 4 短文：教授指给我看的一组数字 | Đoạn văn: Một nhóm số giáo sư chỉ cho tôi xem | Passage: A set of numbers a professor pointed out to me
+@ 教授，数字，说明，要是，指
+健康课上，教授在黑板上写下几组数字，又用粉笔指着其中一行说：“你们看，坐着的时间一年比一年长。”这些数字说明，很多同学不是不知道运动，而是把运动一直往后放。要是每天能抽出二十分钟走一走，情况就会不一样。下课后我把那一行数字抄在本子上，贴在书桌前面。不是为了吓自己，只是希望一抬头就能看见：身体的事，拖不得。
+= Trên giờ sức khỏe, giáo sư viết vài nhóm số lên bảng, rồi dùng phấn chỉ một hàng nói: «Các em nhìn, thời gian ngồi năm sau dài hơn năm trước.» Những con số ấy cho thấy nhiều bạn không phải không biết vận động, mà cứ để việc ấy về sau. Nếu mỗi ngày dành được hai mươi phút đi bộ, tình hình sẽ khác. Tan học tôi chép hàng số đó vào sổ, dán trước bàn. Không phải để tự dọa, chỉ mong ngẩng lên là thấy: việc của cơ thể không thể trì.
+~ In the health class, the professor wrote a few sets of numbers on the blackboard, then pointed to one line with the chalk and said, "Look: the time spent sitting is getting longer year by year." These numbers show that many students are not unaware of exercise; they just keep putting it off. If they could take twenty minutes every day to walk a little, the situation would be different. After class I copied that line of numbers into my notebook and stuck it in front of my desk. It was not to frighten myself, only in the hope that I would see it as soon as I looked up: you cannot put off matters of the body.
+# 5 短文：掉下去的不是只是体重 | Đoạn văn: Cái rơi đi không chỉ là cân nặng | Passage: It is not only the weight that drops
+@ 肚子，烦恼，感情，减肥，辛苦，掉
+我有个朋友为减肥烦了很久。她一看到肚子上的肉，烦恼就来了，连晚饭都吃不安心。后来她不再只看秤上的数字，而是每天走一段路，再少喝一杯甜的。过程当然辛苦，有一回晚上她差点放弃。可坚持了两个月，掉下去的不只是体重，还有那种一看镜子就不开心的感情。她说，身材会变，但更让她高兴的是，自己终于能跟身体好好相处。
+= Tôi có người bạn đã lo chuyện giảm cân rất lâu. Hễ thấy lớp mỡ trên bụng là phiền não kéo đến, cơm tối cũng không yên. Sau cô ấy không chỉ nhìn con số trên cân, mà mỗi ngày đi một đoạn, rồi bớt một ly đồ ngọt. Quá trình tất nhiên vất vả, có tối cô suýt bỏ cuộc. Nhưng kiên trì hai tháng, cái rơi đi không chỉ là cân nặng, mà cả cảm xúc khó chịu mỗi khi nhìn gương. Cô nói, dáng sẽ thay đổi, nhưng điều khiến cô vui hơn là cuối cùng mình sống được tử tế với cơ thể.
+~ I have a friend who was troubled about losing weight for a long time. As soon as she saw the fat on her stomach, the worry arrived, and she could not even eat dinner in peace. Later she stopped looking only at the number on the scale, and instead walked a stretch every day and also drank one less sweet cup. The process was hard work, of course, and one evening she almost gave up. But after she kept it up for two months, what had dropped was not only her weight, but also that unhappy feeling she used to get as soon as she looked in the mirror. She said her figure would change, but what pleased her more was that she could finally get along properly with her own body.
+
 ## 8
-# 1 阿玲心情不好 | A Linh buồn | A Linh is feeling down
-小雪：你今天怎么不太愉快？发生什么事了？
-= Hôm nay sao cậu không vui lắm? Có chuyện gì vậy?
-~ Why aren't you very cheerful today? What happened?
-阿玲：最近压力太大了，考试没考好，我有点儿伤心。
-= Dạo này áp lực lớn quá, thi không tốt nên mình hơi buồn.
-~ I've been under so much pressure lately, and I didn't do well in my exam. I'm a bit upset.
-小雪：别难过。只要你努力了，下次一定会更好。
-= Đừng buồn. Chỉ cần cậu đã cố gắng, lần sau nhất định sẽ tốt hơn.
-~ Don't be sad. As long as you've tried hard, next time will definitely be better.
-阿玲：可不是嘛，伤心也没用。我想出去放松一下。
-= Đúng thế, buồn cũng chẳng ích gì. Mình muốn ra ngoài thư giãn một chút.
-~ You're right, being upset won't help. I want to go out and relax.
-小雪：今天阳光这么好，我们去公园看看景色吧，再买块巧克力！
-= Hôm nay nắng đẹp thế này, mình ra công viên ngắm cảnh đi, mua thêm thanh sô-cô-la nữa!
-~ It's so sunny today — let's go to the park to enjoy the scenery, and buy some chocolate!
-阿玲：好啊！和你在一起，我的心情马上变好了。
-= Được đó! Ở bên cậu, tâm trạng mình tốt lên ngay.
-~ Sure! Being with you cheers me up straight away.
-# 2 短文：态度决定心情 | Đoạn văn: Thái độ quyết định tâm trạng | Passage: Attitude decides your mood
-同一件事，不同的人往往有不同的态度。堵车的时候，有人很着急，有人却听听音乐，看看窗外的景色。科学证明，积极的态度能使人减少压力，心情也会更愉快。生命中总会有让人伤心的事情，因此我们要学会耐心地等待，相信阳光总在风雨后。
-= Cùng một việc, những người khác nhau thường có thái độ khác nhau. Khi tắc đường, có người rất sốt ruột, có người lại nghe nhạc, ngắm cảnh ngoài cửa sổ. Khoa học chứng minh, thái độ tích cực có thể giúp con người giảm áp lực, tâm trạng cũng vui vẻ hơn. Trong cuộc đời luôn có những chuyện khiến người ta buồn, vì vậy chúng ta phải học cách kiên nhẫn chờ đợi, tin rằng sau mưa trời lại sáng.
-~ Different people often take different attitudes to the same thing. In a traffic jam, some get anxious while others listen to music and enjoy the view outside. Science has shown that a positive attitude reduces stress and makes us happier. Life will always bring sad moments, so we should learn to wait patiently and believe the sun always comes out after the storm.
+# 1 对话：阿玲买巧克力走亲戚 | Hội thoại: A Linh mua sô-cô-la đi thăm họ hàng | Dialogue: A Linh buys chocolate to visit relatives
+@ 巧克力，亲戚，伤心，心情，愉快，使
+小雪：你提着这么一大盒，要去哪儿？
+= Cậu xách hộp to thế, định đi đâu?
+~ You're carrying such a big box — where are you going?
+阿玲：去看林阿姨那边的亲戚。我买了巧克力，想使他们高兴一点儿。
+= Đi thăm họ hàng bên thím Lâm. Mình mua sô-cô-la, muốn làm họ vui hơn một chút.
+~ To see some relatives on Aunt Lin's side. I bought chocolate, hoping to make them a little happier.
+小雪：听说吃甜的能让人心情变好，是真的吗？
+= Nghe nói ăn đồ ngọt có thể khiến tâm trạng khá hơn, có thật không?
+~ People say eating something sweet can improve your mood — is that true?
+阿玲：我也不敢说每次都行。不过林阿姨前阵子有点儿伤心，我见她拆开包装，脸色倒是愉快了不少。
+= Mình cũng không dám nói lần nào cũng được. Nhưng thím Lâm vừa rồi hơi buồn, mình thấy thím mở gói ra, nét mặt vui hơn hẳn.
+~ I wouldn't dare say it works every time. But Aunt Lin was a little sad a while ago, and when I saw her unwrap it, her face did become a good deal more cheerful.
+小雪：那就好。你代我问她一声好。
+= Thế thì tốt. Cậu hỏi thăm thím giúp mình một tiếng.
+~ That's good. Please say hello to her for me.
+阿玲：一定。我还买了一小袋给她孙子，免得他看见大人吃，自己没份。
+= Chắc rồi. Mình còn mua một túi nhỏ cho cháu trai thím, kẻo cháu thấy người lớn ăn mà mình không có phần.
+~ I will. I also bought a small bag for her grandson, so he wouldn't watch the adults eat and have none himself.
+# 2 对话：周末在山上踢球以后 | Hội thoại: Sau trận bóng trên núi cuối tuần | Dialogue: After a game of football in the hills at the weekend
+@ 成为，发生，放松，回忆，景色，压力，只要
+周南：上周日那场合球，踢完你还愿意再去吗？
+= Chủ nhật tuần trước trận bóng ấy, đá xong cậu còn muốn đi nữa không?
+~ After that football game last Sunday, would you still go again?
+阿玲：愿意。一到山上，城市里的压力好像都放下了。只要天气还行，我都想去。
+= Muốn chứ. Vừa lên núi, áp lực trong thành phố như buông hết. Chỉ cần thời tiết còn ổn là mình muốn đi.
+~ Yes. As soon as we got up into the hills, the pressure of the city seemed to fall away. As long as the weather is all right, I'll want to go.
+周南：中途还发生了一件有意思的事：球滚进草里，我们找了半天，结果旁边的景色倒成了最好看的一段。
+= Giữa chừng còn xảy ra một chuyện thú vị: bóng lăn vào cỏ, mình tìm mãi, hóa ra cảnh bên cạnh lại thành đoạn đẹp nhất.
+~ Something interesting happened halfway through: the ball rolled into the grass, and we looked for it for a long time. In the end the scenery next to us turned out to be the best part.
+阿玲：我现在一回忆，先想起的不是比分，是大家坐在石头上喝水、放松的样子。
+= Giờ mình vừa hồi tưởng, điều nhớ trước không phải tỉ số, mà là mọi người ngồi trên đá uống nước, thư giãn.
+~ When I look back now, the first thing I recall is not the score, but everyone sitting on the rocks, drinking water and relaxing.
+周南：那就这么说定：下次还去。谁输了，谁买饮料。
+= Vậy chốt vậy: lần sau vẫn đi. Ai thua thì người ấy mua nước.
+~ Then it's settled: we'll go again next time. Whoever loses buys the drinks.
+阿玲：好。能成为每周一次的活动，也不错。
+= Được. Trở thành hoạt động mỗi tuần một lần cũng hay.
+~ All right. It wouldn't be bad if it became a once-a-week activity.
+# 3 对话：程师傅送阿玲去办事 | Hội thoại: Bác Trình đưa A Linh đi làm việc | Dialogue: Master Cheng drives A Linh on an errand
+@ 大使馆，堵车，距离，耐心，师傅
+程师傅：姑娘，今天路上堵车，可能要比平时多花二十分钟。
+= Cô gái, hôm nay đường tắc, có lẽ mất hơn bình thường hai mươi phút.
+~ Miss, the traffic is jammed today. It may take twenty minutes more than usual.
+阿玲：没关系，师傅。我去大使馆交材料，时间还来得及。
+= Không sao, bác. Em đến đại sứ quán nộp hồ sơ, thời gian vẫn kịp.
+~ That's all right, Master. I'm going to the embassy to hand in some papers, and there's still time.
+程师傅：从这儿到大使馆距离不远，就是这几盏灯特别慢。您再耐心等一等。
+= Từ đây tới đại sứ quán khoảng cách không xa, chỉ mấy đèn này chậm đặc biệt. Cô kiên nhẫn đợi thêm.
+~ The distance from here to the embassy isn't far; it's just that these lights are especially slow. Please be patient a little longer.
+阿玲：我就坐着看窗外。您开这么稳，我倒不着急了。
+= Em ngồi nhìn ra cửa sổ. Bác lái vững thế, em lại không nóng ruột nữa.
+~ I'll just sit and look out of the window. You drive so steadily that I'm not in a hurry any more.
+程师傅：前头车一动，我们就走。您把材料放好，别掉了。
+= Xe phía trước vừa nhúc, mình đi. Cô để hồ sơ cho chắc, đừng rơi.
+~ As soon as the car in front moves, we'll go. Keep those papers safe so they don't fall.
+阿玲：已经放进包里了。谢谢师傅。
+= Để vào túi rồi. Cảm ơn bác.
+~ They're already in my bag. Thank you, Master.
+# 4 短文：路边也能看见的东西 | Đoạn văn: Thứ cũng thấy được bên đường | Passage: Things you can also see by the roadside
+@ 到处，缺少，生命，态度，因此
+以前我觉得美只在风景区里，后来才发现，它到处都是。楼下的老树，公交站那盆花，甚至雨后地上的一小摊水，都有自己的样子。生活并不缺少可看的东西，缺少的常常是停一下的态度。因此我现在出门会走得慢一些。不是每条路都有名，可每一条路上都有正在进行的生命。只要愿意看，平凡的早晨也能让人觉得不普通。
+= Trước tôi nghĩ cái đẹp chỉ ở khu thắng cảnh, sau mới thấy nó ở khắp nơi. Cây già dưới nhà, chậu hoa ở trạm xe, thậm chí một vũng nước nhỏ trên đất sau cơn mưa, đều có dáng của mình. Cuộc sống không thiếu thứ đáng nhìn, cái thường thiếu là thái độ dừng lại một chút. Vì thế giờ tôi ra khỏi cửa đi chậm hơn. Không phải con đường nào cũng nổi tiếng, nhưng đường nào cũng có sự sống đang diễn ra. Chỉ cần muốn nhìn, một sáng bình thường cũng có thể khiến người ta thấy không tầm thường.
+~ I used to feel that beauty existed only in scenic spots. Later I found that it is everywhere. The old tree downstairs, the pot of flowers at the bus stop, even a small puddle on the ground after rain, each has a look of its own. Life does not lack things worth looking at; what is often lacking is the attitude of pausing for a moment. Therefore I now walk a little more slowly when I go out. Not every road is famous, but on every road there is life going on. If you are willing to look, an ordinary morning can also feel uncommon.
+# 5 短文：阳光下的好心情，也要自己找 | Đoạn văn: Tâm trạng tốt dưới ánh nắng cũng cần tự tìm | Passage: A good mood in the sunshine is also something you find for yourself
+@ 积极，科学，特点，往往，阳光，证明
+有人说，心情好不好，要看当天有没有阳光。这话只说对了一半。科学研究并不能证明每一个晴天都会让人愉快，它只能说明：阳光往往使人更想出门。真正起作用的，是你出不出去、跟谁说话、用什么样的态度对待麻烦。积极的人有一个特点，不是从不遇到烦事，而是遇到了还肯再试一次。心情不会从天上掉下来，可它会在你迈出门的那一步里慢慢出现。
+= Có người nói tâm trạng tốt hay không là nhìn hôm ấy có ánh nắng hay không. Câu ấy đúng có một nửa. Nghiên cứu khoa học không thể chứng minh ngày nắng nào cũng làm người ta vui, nó chỉ cho thấy: ánh nắng thường khiến người ta muốn ra khỏi cửa hơn. Điều thật sự có tác dụng là bạn có ra ngoài không, nói với ai, lấy thái độ thế nào trước chuyện phiền. Người tích cực có một đặc điểm, không phải không gặp chuyện buồn, mà gặp rồi vẫn chịu thử thêm lần nữa. Tâm trạng không rơi từ trên trời, nhưng nó sẽ dần xuất hiện trong bước bạn bước ra cửa.
+~ Some people say whether you are in a good mood depends on whether there is sunshine that day. That is only half right. Scientific research cannot prove that every clear day will make a person cheerful; it can only show that sunshine often makes people more inclined to go out. What really makes a difference is whether you go out, who you talk to, and what attitude you take toward trouble. A positive person has one characteristic: it is not that they never meet anything annoying, but that when they do, they are still willing to try once more. A mood will not fall from the sky, but it will slowly appear in the step you take out of the door.
+
 ## 9
-# 1 阿玲学打网球 | A Linh học đánh tennis | A Linh learns tennis
-小雪：你学网球多久了？
-= Cậu học tennis bao lâu rồi?
-~ How long have you been learning tennis?
-阿玲：才一个月。开始的时候总是输，我差点儿就放弃了。
-= Mới một tháng. Lúc đầu toàn thua, mình suýt nữa bỏ cuộc.
-~ Only a month. At first I always lost, and I nearly gave up.
-小雪：难道你现在能赢了？
-= Chẳng lẽ bây giờ cậu thắng được rồi à?
-~ Don't tell me you can win now?
-阿玲：通过每天练习，我上个星期终于赢了一次！
-= Nhờ luyện tập mỗi ngày, tuần trước cuối cùng mình đã thắng một lần!
-~ Through practising every day, I finally won once last week!
-小雪：太棒了！不过每天练习，不累吗？
-= Tuyệt quá! Có điều ngày nào cũng tập, không mệt sao?
-~ Fantastic! But isn't practising every day tiring?
-阿玲：累是累，可是出一身汗以后特别轻松。坚持下去，结果一定不错。
-= Mệt thì có mệt, nhưng ra mồ hôi xong thấy rất nhẹ nhõm. Kiên trì tiếp, kết quả chắc chắn sẽ tốt.
-~ It is tiring, but after a good sweat I feel so relaxed. If I keep going, the result is bound to be good.
-# 2 短文：失败是成功之母 | Đoạn văn: Thất bại là mẹ thành công | Passage: Failure is the mother of success
-每个人都会经历失败。有一位作家写第一篇小说时，被拒绝了二十多次。当时很多人劝他换个工作，可是他没有放弃，而是总结每次失败的原因。结果，他的书后来卖了许多本。失败并不可怕，可怕的是不敢再试。只要方向正确，至少我们离理想又近了一步。
-= Ai cũng sẽ trải qua thất bại. Có một nhà văn khi viết cuốn tiểu thuyết đầu tiên đã bị từ chối hơn hai mươi lần. Lúc đó nhiều người khuyên ông đổi nghề, nhưng ông không bỏ cuộc mà tổng kết nguyên nhân của mỗi lần thất bại. Kết quả, sau này sách của ông bán được rất nhiều. Thất bại không đáng sợ, đáng sợ là không dám thử lại. Chỉ cần đi đúng hướng, ít nhất chúng ta lại tiến gần ước mơ thêm một bước.
-~ Everyone experiences failure. One writer was rejected more than twenty times with his first novel. At the time many people urged him to change jobs, but he didn't give up; instead he summed up the reasons for each failure. In the end his books sold many copies. Failure isn't frightening; what's frightening is not daring to try again. As long as the direction is right, at least we're one step closer to our dream.
+# 1 对话：小雪又为零食发愁 | Hội thoại: Tiểu Tuyết lại lo vì đồ ăn vặt | Dialogue: Xiaoxue is worried about snacks again
+@ 饼干，放弃，坚持，难道，主意，得
+阿玲：你怎么把饼干放到柜子最上面了？
+= Sao cậu để bánh quy lên tầng cao nhất của tủ?
+~ Why have you put the biscuits on the very top shelf of the cupboard?
+小雪：我得少吃点儿。一打开包装就停不下来，我难道还要每周都后悔一次吗？
+= Mình phải ăn ít thôi. Hễ mở gói là không dừng được, chẳng lẽ tuần nào cũng phải hối một lần sao?
+~ I have to eat a little less. Once I open a pack I can't stop. Do I really have to regret it every week?
+阿玲：那你就一下子放弃所有零食？怕是坚持不了几天。
+= Vậy cậu bỏ hết mọi món vặt một lúc? E không kiên trì được vài ngày.
+~ So you're going to give up all snacks in one go? I'm afraid you won't last more than a few days.
+小雪：我也这么想。你有没有更好的主意？
+= Mình cũng nghĩ vậy. Cậu có ý hay hơn không?
+~ I think so too. Have you got a better idea?
+阿玲：每天只留两块饼干，其余的先不买。想吃的时候先喝杯水，再决定还要不要打开柜子。
+= Mỗi ngày chỉ để lại hai cái bánh, còn lại đừng mua vội. Lúc muốn ăn thì uống một ly nước đã, rồi mới quyết có mở tủ hay không.
+~ Keep only two biscuits each day, and don't buy the rest for now. When you want some, drink a glass of water first, and then decide whether to open the cupboard.
+小雪：这主意我可以试试。从今天开始，我得坚持两周看看。
+= Ý này mình thử được. Từ hôm nay, mình phải kiên trì hai tuần xem sao.
+~ I can try that idea. Starting today, I have to keep it up for two weeks and see.
+# 2 对话：周南的网球又赢了 | Hội thoại: Châu Nam lại thắng trận quần vợt | Dialogue: Zhou Nan has won at tennis again
+@ 国际，轻松，随便，通过，网球，汗，赢
+阿玲：看你衬衫都湿了，刚打完网球？
+= Áo cậu ướt hết, vừa đánh quần vợt xong à?
+~ Your shirt is soaked — have you just finished tennis?
+周南：对。今天赢了两局，汗都来不及擦。不过真不轻松，对方也是校队的。
+= Đúng. Hôm nay thắng hai ván, mồ hôi còn chưa kịp lau. Nhưng chẳng thoải mái gì, đối phương cũng là đội trường.
+~ Yes. I won two sets today, and I had no time to wipe the sweat. But it was really not easy. The other player is on the school team too.
+阿玲：你怎么进步这么快？是不是有什么特别的方法？
+= Sao cậu tiến bộ nhanh thế? Có cách gì đặc biệt không?
+~ How have you improved so quickly? Is there some special method?
+周南：没有什么随便就能赢的办法。我每周通过三次训练，把基本动作练熟，再看一些国际比赛的录像。
+= Không có cách nào tùy tiện là thắng. Mỗi tuần mình trải ba buổi tập, luyện thuần động tác cơ bản, rồi xem vài băng giải quốc tế.
+~ There is no way to win just casually. I get through three training sessions a week, practise the basic movements until they're familiar, and also watch some recordings of international matches.
+阿玲：听着就累。你下次练习，我可不可以去看看？
+= Nghe đã thấy mệt. Lần sau cậu tập, mình có thể đến xem được không?
+~ It sounds tiring already. May I come and watch next time you practise?
+周南：可以。你要是也想试试，我借你一副球拍。
+= Được. Nếu cậu cũng muốn thử, mình cho mượn một vợt.
+~ Yes. If you'd like to try as well, I'll lend you a racket.
+# 3 对话：陈晓想当作家 | Hội thoại: Trần Hiểu muốn làm nhà văn | Dialogue: Chen Xiao wants to be a writer
+@ 当时，可是，理想，正确，作家，篇
+小雪：陈晓又在本子上写什么？都这么晚了。
+= Trần Hiểu lại viết gì trong sổ thế? Muộn vậy rồi.
+~ What's Chen Xiao writing in his notebook again? It's so late.
+阿玲：一篇短故事。他的理想是以后做作家，可是现在写得很慢，一篇要改很多遍。
+= Một truyện ngắn. Lý tưởng của anh ấy là sau này làm nhà văn, nhưng giờ viết rất chậm, một bài phải sửa rất nhiều lần.
+~ A short story. His ideal is to become a writer one day, but he writes very slowly now, and a single piece has to be revised many times.
+小雪：当时他不是说先找一份稳定的工作吗？
+= Lúc ấy chẳng phải anh ấy nói tìm một việc ổn định trước sao?
+~ Didn't he say at the time that he would find a steady job first?
+阿玲：他说那也正确，晚上和周末仍然可以写。这样生活和理想都能顾上。
+= Anh ấy bảo điều đó cũng đúng, tối và cuối tuần vẫn viết được. Như vậy đời sống và lý tưởng đều giữ được.
+~ He said that was correct too, and that he could still write in the evenings and at weekends. That way he can look after both his life and his ideal.
+小雪：那倒实在。等他写完这篇，我们帮忙看看。
+= Thế thì thực tế. Đợi anh ấy viết xong bài này, mình xem giúp.
+~ That's practical. When he finishes this piece, we can help by reading it.
+阿玲：他已经答应了。他说最怕写完没人读。
+= Anh ấy đã đồng ý. Anh ấy bảo sợ nhất là viết xong chẳng ai đọc.
+~ He's already agreed. He said what he fears most is finishing a piece and having no one read it.
+# 4 短文：一次陶艺课给我的总结 | Đoạn văn: Một bài tổng kết từ giờ gốm | Passage: A summary a pottery class gave me
+@ 过程，结果，失败，勇敢，至少，总结
+第一次上陶艺课，我满心想做出一只漂亮的杯子。结果杯子歪了，还裂了一道。我当时觉得这就是失败。老师却让我把过程再走一遍：土要揉匀，手要稳，火也不能太急。第二次仍然不完美，可至少不再裂开。后来我给自己做了一个总结：结果当然重要，可真正让人进步的，是你敢在失败以后再勇敢地坐回去，把每一步重新做认真。那只歪杯子我还留着，为的是记得那一课。
+= Lần đầu học gốm, tôi chỉ nghĩ làm cho được một cái cốc đẹp. Kết quả cốc lệch, lại nứt một đường. Lúc ấy tôi thấy đó là thất bại. Giáo viên lại bảo tôi đi lại quá trình: đất phải nhào đều, tay phải vững, lửa cũng đừng vội. Lần hai vẫn chưa hoàn hảo, nhưng ít nhất không nứt nữa. Sau tôi tự viết một bài tổng kết: kết quả cố nhiên quan trọng, nhưng điều thật sự giúp người ta tiến bộ là dám, sau thất bại, dũng cảm ngồi lại, làm lại từng bước cho tử tế. Cái cốc lệch ấy tôi vẫn giữ, để nhớ buổi học đó.
+~ The first time I went to a pottery class, all I wanted was to make a handsome cup. The result was that the cup came out crooked and also cracked along one line. At the time I felt that this was failure. The teacher, however, had me go through the process again: the clay had to be kneaded evenly, the hands had to be steady, and the fire could not be too hasty. The second try was still not perfect, but at least it no longer cracked. Later I wrote a summary for myself: the result is important, of course, but what really helps you improve is daring, after a failure, to sit back down bravely and do each step carefully once more. I still keep that crooked cup, so that I will remember the lesson.
+# 5 短文：暂时落后的时候 | Đoạn văn: Lúc tạm thời bị tụt lại | Passage: When you are temporarily behind
+@ 经历，区别，许多，暂时，取
+比赛或考试里，暂时落后是许多人都会有的经历。有人一看见分数不高就停手，有人却会先看别人好在哪里，再取其中对自己有用的一点。这两种态度的区别，不在聪不聪明，而在你还肯不肯再看一眼自己的练习。我以前也急着跟前面的人比，后来才发现，许多弯路都是自己走出来的。把别人的方法取来试一试，再把不适合的放下，路会安静得多。
+= Trong thi đấu hay kỳ thi, việc tạm thời bị tụt lại là trải nghiệm nhiều người đều có. Có người vừa thấy điểm không cao đã dừng tay, có người lại nhìn người khác hay ở chỗ nào, rồi lấy một điểm hữu ích cho mình. Sự khác nhau của hai thái độ ấy không ở thông minh hay không, mà ở chỗ bạn còn chịu nhìn lại bài tập của mình hay không. Trước tôi cũng sốt ruột so với người đi trước, sau mới thấy nhiều đoạn vòng là tự mình đi ra. Lấy cách của người khác về thử, rồi đặt xuống những gì không hợp, đường sẽ yên hơn nhiều.
+~ In a contest or an exam, being temporarily behind is an experience many people have. Some people stop as soon as they see a low score; others first look at what someone else does well, and then take from it one point that is useful to themselves. The difference between these two attitudes is not about how clever you are, but about whether you are still willing to look at your own practice once more. I used to be in a hurry to compare myself with the people in front; only later did I find that many of the detours were ones I had taken myself. If you take other people's methods and try them, and then put down what does not suit you, the road becomes much quieter.
+
 ## 10
-# 1 阿玲考虑将来 | A Linh nghĩ về tương lai | A Linh thinks about the future
-陈老师：阿玲，毕业以后你有什么打算？
-= A Linh, tốt nghiệp xong em có dự định gì?
-~ A Linh, what are your plans after graduating?
-阿玲：我想读硕士，不过也想早点儿工作，现在还没有答案。
-= Em muốn học thạc sĩ, nhưng cũng muốn đi làm sớm, bây giờ vẫn chưa có câu trả lời.
-~ I'd like to do a master's, but I also want to start working soon. I haven't decided yet.
-陈老师：在我看来，你的中文这么优秀，做翻译是个好方向。
-= Theo cô thấy, tiếng Trung của em giỏi như vậy, làm phiên dịch là một hướng tốt.
-~ In my view, your Chinese is so good that translation would be a great direction.
-阿玲：由于越南和中国的经济发展很快，翻译确实很受欢迎。
-= Do kinh tế Việt Nam và Trung Quốc phát triển nhanh, phiên dịch đúng là rất được ưa chuộng.
-~ Because the economies of Vietnam and China are growing fast, translators really are in demand.
-陈老师：对。比如旅游、贸易，都需要会两种语言的人。
-= Đúng vậy. Ví dụ du lịch, thương mại đều cần người biết hai ngôn ngữ.
-~ That's right. Tourism and trade, for example, both need people who speak two languages.
-阿玲：谢谢老师的建议，我会认真考虑的。
-= Cảm ơn lời khuyên của cô, em sẽ suy nghĩ nghiêm túc.
-~ Thank you for your advice. I'll think it over carefully.
-# 2 短文：幸福是什么 | Đoạn văn: Hạnh phúc là gì | Passage: What is happiness
-什么是幸福？不同的人有不同的答案。有人觉得富就是幸福，有人觉得有个好职业就是幸福。阿玲的母亲说，幸福就是礼拜天全家人坐在一起吃饭、聊天。由于每个人的条件不一样，幸福的样子也不一样。不过，关键是要珍惜现在拥有的东西，这样我们才能永远快乐。
-= Hạnh phúc là gì? Mỗi người có một câu trả lời khác nhau. Có người cho rằng giàu có là hạnh phúc, có người cho rằng có nghề nghiệp tốt là hạnh phúc. Mẹ của A Linh nói, hạnh phúc là ngày chủ nhật cả nhà ngồi cùng nhau ăn cơm, trò chuyện. Do điều kiện mỗi người không giống nhau, hình dáng của hạnh phúc cũng khác nhau. Tuy nhiên, điều then chốt là phải trân trọng những gì đang có, như vậy chúng ta mới có thể vui vẻ mãi mãi.
-~ What is happiness? Different people give different answers. Some think being rich is happiness; others think it's having a good career. A Linh's mother says happiness is the whole family sitting together on Sunday, eating and chatting. Because everyone's circumstances differ, happiness looks different too. But the key is to cherish what we have now — only then can we be happy for ever.
+# 1 对话：礼拜天阿玲陪母亲出门 | Hội thoại: Ngày chủ nhật A Linh đi cùng mẹ | Dialogue: On Sunday A Linh goes out with her mother
+@ 礼拜天，不过，方向，空儿，母亲，永远
+小雪：今天礼拜天，你怎么起得这么早？
+= Hôm nay chủ nhật, sao cậu dậy sớm thế?
+~ It's Sunday today — why did you get up so early?
+阿玲：我陪母亲去公园。她说平时没什么空儿，只有这一天走得比较慢。
+= Mình đi công viên với mẹ. Mẹ bảo bình thường chẳng có chút thì giờ nào, chỉ ngày này đi chậm hơn được.
+~ I'm going to the park with my mother. She says she doesn't usually have a spare moment, and only on this day can she walk a little more slowly.
+小雪：那挺好。你们还去别的地方吗？
+= Thế thì hay. Hai mẹ con còn đi chỗ khác nữa không?
+~ That's nice. Are you going anywhere else as well?
+阿玲：先往湖那边走。不过要是太阳太大，我们就换个方向，去有树荫的那条路。
+= Đi về phía hồ trước. Nhưng nếu nắng quá thì mình đổi hướng, sang con đường có bóng cây.
+~ We'll head toward the lake first. But if the sun is too strong, we'll change direction and take the path with the tree shade.
+小雪：替我问阿姨好。她做的汤，我永远都记得。
+= Nhờ cậu hỏi thăm thím. Món canh thím nấu, mình nhớ mãi.
+~ Please say hello to your mother for me. I'll always remember the soup she makes.
+阿玲：一定。晚上要是你有空儿，来家里喝一碗。
+= Chắc rồi. Tối nếu cậu rảnh, đến nhà uống một bát.
+~ I will. If you have a moment this evening, come over to the house for a bowl.
+# 2 对话：两位老师谈同事的新消息 | Hội thoại: Hai giáo viên nói về tin mới của đồng nghiệp | Dialogue: Two teachers talk about a colleague's news
+@ 翻译，确实，硕士，兴奋，优秀，拉
+赵老师：林老师，您听说了吗？王老师的硕士论文通过了。
+= Thầy Lâm, thầy nghe tin chưa? Cô Vương đã bảo vệ xong luận văn thạc sĩ.
+~ Mr. Lin, have you heard? Ms. Wang's master's thesis has been passed.
+林老师：听说了。她研究的是翻译，课又上得好，确实优秀。
+= Nghe rồi. Cô ấy nghiên cứu biên dịch, dạy cũng giỏi, quả thật xuất sắc.
+~ I have. She works on translation, and she teaches well too. She is excellent, she really is.
+赵老师：消息一传开，办公室里都兴奋起来。下午她还要拉一段小提琴给大家听。
+= Tin vừa loan, cả phòng đều hào hứng. Chiều cô ấy còn kéo một khúc vĩ cầm cho mọi người nghe.
+~ As soon as the news spread, the whole office got excited. This afternoon she is even going to play a piece on the violin for everyone.
+林老师：那我一定去。她一拉琴，整个楼道都安静了。
+= Thế thì tôi nhất định đến. Cô ấy vừa kéo đàn là cả hành lang im hết.
+~ Then I shall certainly go. As soon as she starts to play, the whole corridor goes quiet.
+赵老师：是啊。能把课、论文和琴都照顾好，真不容易。
+= Phải. Giữ được cả giờ dạy, luận văn lẫn đàn, thật không dễ.
+~ Yes. Managing to look after her classes, her thesis and the violin is really not easy.
+林老师：我们准备一束花吧，让她一进门就能看见。
+= Mình chuẩn bị một bó hoa, để cô ấy vừa vào cửa đã thấy.
+~ Let's get a bunch of flowers ready, so she can see them as soon as she comes in.
+# 3 对话：陈晓为将来的工作发愁 | Hội thoại: Trần Hiểu lo việc làm cho tương lai | Dialogue: Chen Xiao worries about a job for the future
+@ 发展，关键，建议，将来，职业，困，躺
+小雪：陈晓中午怎么不吃饭，躺在宿舍里？
+= Buổi trưa Trần Hiểu sao không ăn, nằm trong ký túc xá?
+~ Why didn't Chen Xiao have lunch? Why is he lying in the dorm?
+阿玲：他昨晚想将来的职业，想得太困了，今早又爬起来改简历。
+= Tối qua cậu ấy nghĩ về nghề nghiệp tương lai, nghĩ đến mệt rũ, sáng lại dậy sửa sơ yếu lý lịch.
+~ Last night he was thinking about a future career until he was too sleepy, and this morning he got up again to revise his CV.
+小雪：他有没有方向？
+= Cậu ấy đã có hướng chưa?
+~ Does he have a direction?
+阿玲：有两个选择，一个偏研究，一个偏语言。我建议他先问清楚，这两个方向以后怎么发展。
+= Có hai lựa chọn, một thiên về nghiên cứu, một thiên về ngôn ngữ. Mình khuyên cậu ấy hỏi rõ hai hướng ấy sau này phát triển thế nào.
+~ There are two options, one more toward research and one more toward language. I suggested he first find out clearly how those two directions might develop later on.
+小雪：关键是他自己喜欢哪一种，别只看工资。
+= Điều then chốt là bản thân cậu ấy thích loại nào, đừng chỉ nhìn lương.
+~ The key is which kind he himself likes, not to look only at the pay.
+阿玲：对。等他起来，我们再一起帮他看看那两份介绍。
+= Đúng. Đợi cậu ấy dậy, mình cùng xem giúp hai bản giới thiệu ấy.
+~ That's right. When he gets up, we'll go through those two descriptions with him.
+# 4 短文：小店门口的一句话 | Đoạn văn: Một câu trước cửa tiệm nhỏ | Passage: A sentence at the door of a little shop
+@ 经济，条件，由于，等，富，穷
+社区口有一家小文具店。老板并不富，也不觉得自己穷。由于店面不大，纸、笔、本子等常用的东西他都会进，但不进太贵的。有学生问他：“现在经济条件好的人很多，您不着急扩大吗？”他笑着说：“我得先让到这儿的人买得安心。条件会变，急着变富，容易把该做的事放下。”我听完在门口站了一下。钱当然重要，可把眼前的事做稳，也是一种踏实。
+= Ở cửa khu có một tiệm văn phòng phẩm nhỏ. Ông chủ không giàu, cũng không thấy mình nghèo. Vì cửa tiệm không lớn, giấy, bút, vở và những thứ dùng thường ông đều nhập, nhưng không nhập đồ quá đắt. Có học sinh hỏi: «Giờ nhiều người điều kiện kinh tế tốt, bác không sốt ruột mở rộng sao?» Ông cười: «Tôi phải để người đến đây mua cho yên đã. Điều kiện sẽ đổi, vội giàu thì dễ đặt xuống việc phải làm.» Tôi nghe xong đứng trước cửa một chút. Tiền cố nhiên quan trọng, nhưng làm vững việc trước mắt cũng là một sự chắc chắn.
+~ There is a little stationery shop at the entrance to the neighbourhood. The owner is not rich, and he does not feel poor either. Because the shop is not large, he stocks paper, pens, notebooks and other everyday things, but he does not stock anything too expensive. A student once asked him, "Plenty of people have good economic conditions now. Aren't you in a hurry to expand?" He smiled and said, "I have to make sure the people who come here can buy with peace of mind first. Conditions will change, and if you rush to get rich, it is easy to put down the work you ought to be doing." I stood at the door for a moment after I heard that. Money is important, of course, but doing the work in front of you steadily is also a kind of firmness.
+# 5 短文：黑板上的几种答案 | Đoạn văn: Vài lời đáp trên bảng | Passage: A few answers on the blackboard
+@ 比如，答案，橡皮，低，糖
+语文老师在黑板上写下“什么是幸福”，让大家用一句话回答。答案各不相同。比如有人写“周末能睡到自然醒”，有人写“妈妈泡的、糖放得很低的那杯茶”。一个同学写完又用橡皮轻轻擦掉几个字，改成“和家人一起吃饭”。老师没有说哪一句最对，只说：幸福不一定很响，也不一定很贵。能说出来的答案，往往就在这些很小、很日常的事情里。
+= Cô ngữ văn viết lên bảng «Hạnh phúc là gì», bảo cả lớp trả lời bằng một câu. Câu trả lời mỗi người một khác. Chẳng hạn có bạn viết «cuối tuần ngủ đến khi nào tỉnh thì tỉnh», có bạn viết «chén trà mẹ pha, đường để rất thấp». Một bạn viết xong lại dùng tẩy xóa nhẹ vài chữ, sửa thành «ăn cơm cùng gia đình». Cô không nói câu nào đúng nhất, chỉ bảo: hạnh phúc không nhất thiết phải ồn, cũng không nhất thiết phải đắt. Những câu trả lời nói ra được, thường nằm trong những việc rất nhỏ, rất thường ngày ấy.
+~ The Chinese teacher wrote "What is happiness?" on the blackboard and asked everyone to answer in one sentence. The answers were all different. For example, one person wrote "Being able to sleep until I wake naturally at the weekend", and another wrote "The cup of tea my mother makes, with the sugar kept very low". One classmate finished writing, then gently erased a few characters with an eraser and changed the line to "Eating with my family". The teacher did not say which sentence was the most correct, only that happiness does not have to be loud, and does not have to be expensive. The answers you can put into words are often found in these very small, everyday things.
+
 ## 11
 # 1 阿玲学习阅读 | A Linh luyện đọc hiểu | A Linh practises reading
 阿玲：这篇文章的内容太复杂了，连题目我都看不懂。
