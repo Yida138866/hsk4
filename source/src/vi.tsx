@@ -619,11 +619,11 @@ const TITLES: [string, string][] = [
   ["生活可以更美好", "Cuộc sống có thể tốt đẹp hơn"], ["人与自然", "Con người và thiên nhiên"], ["科技与世界", "Khoa học công nghệ và thế giới"], ["生活的味道", "Hương vị cuộc sống"], ["路上的风景", "Phong cảnh trên đường"],
 ];
 
-const TRAW = `1|1|孙月和王静聊王静的男朋友|王静跟李进是怎么认识的？王静为什么喜欢李进？|Tôn Nguyệt và Vương Tĩnh nói chuyện về bạn trai của Vương Tĩnh|Vương Tĩnh và Lý Tiến quen nhau thế nào? Vì sao Vương Tĩnh thích Lý Tiến?
-1|2|王静跟李老师聊她要结婚的事情|王静和李进有哪些共同的爱好？|Vương Tĩnh nói chuyện với giáo viên Lý về việc mình sắp kết hôn|Vương Tĩnh và Lý Tiến có những sở thích chung nào?
-1|3|高老师和李老师聊结婚后的生活|丈夫和妻子两个人怎样才能很好地生活在一起？|Giáo viên Cao và giáo viên Lý nói chuyện về cuộc sống sau khi kết hôn|Vợ chồng làm thế nào mới có thể sống tốt với nhau?
-1|4|短文|年轻人、中年人、老年人（对爱情）有什么不同的看法？什么样的爱情让人感动？|Đoạn văn|Người trẻ, người trung niên và người già có quan điểm khác nhau thế nào (về tình yêu)? Tình yêu như thế nào khiến người ta cảm động?
-1|5|短文|爱情跟结婚是什么关系？|Đoạn văn|Tình yêu và hôn nhân có quan hệ gì?
+const TRAW = `1|1|对话：阿玲和小雪聊阿玲的男朋友|阿玲跟周南是怎么认识的？阿玲为什么喜欢他？|Hội thoại: A Linh và Tiểu Tuyết nói về bạn trai của A Linh|A Linh và Châu Nam quen nhau thế nào? Vì sao A Linh thích anh ấy?
+1|2|对话：阿玲告诉小雪她准备结婚|小雪为什么觉得阿玲在开玩笑？她们后来谈到了什么？|Hội thoại: A Linh nói với Tiểu Tuyết là mình định kết hôn|Vì sao Tiểu Tuyết tưởng A Linh đang nói đùa? Sau đó họ nói về chuyện gì?
+1|3|对话：林阿姨和赵阿姨聊婚后的日子|林阿姨刚结婚时是什么感觉？赵阿姨觉得两个人该怎样相处？|Hội thoại: Thím Lâm và thím Triệu nói về cuộc sống sau khi cưới|Lúc mới cưới, thím Lâm cảm thấy thế nào? Thím Triệu nghĩ hai người nên sống bên nhau ra sao?
+1|4|短文：生活里的小浪漫|文中写了哪些小小的浪漫？最让作者感动的是什么？|Đoạn văn: Chút lãng mạn trong đời thường|Bài viết kể những chút lãng mạn nào? Điều gì khiến tác giả cảm động nhất?
+1|5|短文：走进婚姻的理由|作者认为两个人走进婚姻，最重要的是什么？|Đoạn văn: Lý do bước vào hôn nhân|Tác giả cho rằng điều quan trọng nhất khi hai người bước vào hôn nhân là gì?
 2|1|小夏和马克聊马克的中国朋友|马克刚来中国的时候适应这儿的生活吗？马克新交的中国朋友怎么样？|Tiểu Hạ và Mark nói chuyện về bạn Trung Quốc của Mark|Khi mới đến Trung Quốc, Mark có thích nghi với cuộc sống ở đây không? Người bạn Trung Quốc mới quen của Mark thế nào?
 2|2|小李和小林聊同学聚会的事情|小李为什么给小林打电话？|Tiểu Lý và Tiểu Lâm nói chuyện về buổi họp lớp|Vì sao Tiểu Lý gọi điện cho Tiểu Lâm?
 2|3|孙月和王静聊她们的朋友|王静看到上大学时的照片会想起什么？|Tôn Nguyệt và Vương Tĩnh nói chuyện về bạn bè của họ|Khi xem ảnh thời đại học, Vương Tĩnh nhớ lại điều gì?
