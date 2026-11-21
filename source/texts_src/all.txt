@@ -1079,122 +1079,361 @@
 ~ Teachers of children often see this: on the left and right of the classroom sit completely different children. Some copy a question wrong out of carelessness, which does not mean they are slow; some are too lazy to ask, which does not mean they cannot do it. There are also children who are very shy and look down as soon as they are asked; and some who, having just answered correctly, can easily become proud. If you want them to go on learning quietly, you first have to let them feel they can be understood. When they are wrong, change it slowly; when they are right, there is no need to say too much. Children are not objects on a desk. They watch your face, and they also hear that little bit of warmth in your tone.
 
 ## 16
-# 1 阿玲办签证 | A Linh làm visa | A Linh applies for a visa
-阿玲：小雪，我要报名参加一个夏令营，可是签证到底怎么办？
-= Tiểu Tuyết, mình muốn đăng ký trại hè, nhưng rốt cuộc làm visa thế nào?
-~ Xiaoxue, I want to sign up for a summer camp, but how on earth do I get a visa?
-小雪：你先在网上填好表格，然后去大使馆交材料。
-= Cậu điền tờ khai trên mạng trước, sau đó đến đại sứ quán nộp hồ sơ.
-~ First fill in the form online, then take your documents to the embassy.
-阿玲：表格上的内容太多了，我恐怕会填错。
-= Nội dung trong tờ khai nhiều quá, mình sợ sẽ điền sai.
-~ There's so much on the form — I'm afraid I'll get it wrong.
-小雪：别着急，冷静一点儿。我陪你一起填，千万不能马虎。
-= Đừng vội, bình tĩnh chút. Mình cùng cậu điền, tuyệt đối không được cẩu thả.
-~ Don't worry, stay calm. I'll fill it in with you — we mustn't be careless.
-阿玲：太好了！有你在，我就敢自己去大使馆了。
-= Tốt quá! Có cậu, mình dám tự đi đại sứ quán rồi.
-~ Wonderful! With you here, I'll dare to go to the embassy on my own.
-小雪：可别忘了带护照和照片啊！
-= Nhớ đừng quên mang hộ chiếu và ảnh đấy nhé!
-~ Just don't forget your passport and photos!
-# 2 短文：尊重别人 | Đoạn văn: Tôn trọng người khác | Passage: Respecting others
-尊重别人是一种礼貌。拿说话来说，别人讲话时不要随便打断，要认真地听。有时候朋友输了比赛，心情不好，我们应该同情他、鼓励他，而不是笑他。当我们尊重别人时，别人也会重视我们。一个有自信的人，往往也懂得尊重别人。
-= Tôn trọng người khác là một phép lịch sự. Lấy việc nói chuyện làm ví dụ, khi người khác đang nói đừng tùy tiện ngắt lời, phải chăm chú lắng nghe. Có khi bạn bè thua cuộc thi, tâm trạng không tốt, chúng ta nên thông cảm và động viên họ chứ không phải cười họ. Khi chúng ta tôn trọng người khác, người khác cũng sẽ coi trọng chúng ta. Một người tự tin thường cũng biết tôn trọng người khác.
-~ Respecting others is a form of politeness. Take speaking, for example: don't casually interrupt when someone is talking — listen carefully. When a friend loses a competition and feels low, we should sympathise and encourage them, not laugh at them. When we respect others, they will value us too. A confident person usually knows how to respect others as well.
+# 1 对话：林安办签证把表格填错了 | Hội thoại: Lâm An điền nhầm đơn xin visa | Dialogue: Lin An fills in the visa form wrongly
+@ 报名，表格，博士，传真，号码，签证
+小雪：林安，你不是要去报名那个交流项目吗？表格交了没有？
+= Lâm An, chẳng phải cậu định đăng ký chương trình trao đổi đó sao? Đơn nộp chưa?
+~ Lin An, weren't you going to sign up for that exchange programme? Have you handed in the form?
+林安：交了一次，可签证中心说博士推荐信上的号码写错了，让我重填一份表格。
+= Nộp một lần rồi, nhưng trung tâm visa bảo số trên thư giới thiệu của tiến sĩ viết sai, bắt mình điền lại một đơn.
+~ I handed one in, but the visa centre said the number on the doctoral supervisor's letter was wrong, and asked me to fill in the form again.
+阿玲：那怎么办？还来得及吗？
+= Vậy sao bây giờ? Vẫn còn kịp chứ?
+~ So what now? Is there still time?
+林安：老师说可以先把改好的推荐信传真过去，表格我今晚重新写。
+= Thầy bảo có thể fax thư giới thiệu đã sửa trước, đơn thì tối nay mình viết lại.
+~ The teacher said I can fax over the corrected letter first, and I'll rewrite the form tonight.
+小雪：号码一定要再对一遍。签证这件事，马虎不得。
+= Số nhất định phải đối lại một lượt. Việc visa không được sơ ý.
+~ You must check the number again. You can't be careless with a visa.
+林安：我知道。对好了再发给你看一眼。
+= Mình biết. Đối xong sẽ gửi cho cậu xem một mắt.
+~ I know. Once I've checked it I'll send it over for you to look at.
+# 2 对话：一个小伙子被记者采访 | Hội thoại: Một chàng trai được phóng viên phỏng vấn | Dialogue: A young man is interviewed by a reporter
+@ 小伙子，参观，激动，记者，恐怕
+周南：你看这条新闻，一个小伙子在郊区开小书店，今天有记者去采访他。
+= Cậu xem tin này, một chàng trai mở hiệu sách nhỏ ở ngoại ô, hôm nay có phóng viên đến phỏng vấn.
+~ Look at this news item: a young man opened a little bookshop in the suburbs, and a reporter went to interview him today.
+阿玲：我好像参观过那家店。他开店的时候，恐怕家里并不都支持。
+= Hình như mình đã tham quan tiệm ấy. Lúc cậu ấy mở, e là nhà không phải ai cũng ủng hộ.
+~ I think I've visited that shop. When he opened it, I'm afraid his family were not all in favour.
+周南：新闻里他说，第一次看到记者进来，自己都激动得说不出话。
+= Trong tin cậu ấy nói, lần đầu thấy phóng viên bước vào, bản thân xúc động đến nói không nên lời.
+~ In the report he said that the first time he saw the reporter come in, he was so excited he couldn't speak.
+阿玲：能坚持下来，真不容易。
+= Kiên trì được thật không dễ.
+~ It's really not easy to have kept it going.
+周南：周末要是有空，我们再去参观一次吧。
+= Cuối tuần nếu rảnh, mình ghé tham quan thêm lần nữa đi.
+~ If we're free at the weekend, shall we go and visit it again?
+阿玲：好。我想听听他后来是怎么把店做稳的。
+= Được. Mình muốn nghe sau này cậu ấy làm tiệm vững thế nào.
+~ Yes. I'd like to hear how he later got the shop onto a steady footing.
+# 3 对话：周南不好意思拒绝做导游 | Hội thoại: Châu Nam ngại từ chối làm hướng dẫn | Dialogue: Zhou Nan finds it hard to say no to being a guide
+@ 导游，到底，郊区，礼貌，失望，原谅，呀
+小雪：周南，同学约你周末去郊区，你到底去不去？
+= Châu Nam, bạn rủ cậu cuối tuần ra ngoại ô, rốt cuộc cậu đi hay không?
+~ Zhou Nan, your classmates asked you to the suburbs this weekend. Are you going or not, in the end?
+周南：他们想让我当导游。可我这周作业很多，呀，我真不知道怎么拒绝才礼貌。
+= Họ muốn mình làm hướng dẫn. Nhưng tuần này bài tập nhiều, ôi, mình thật không biết từ chối sao cho lịch sự.
+~ They want me to be the guide. But I've got a lot of homework this week. Oh, I really don't know how to say no politely.
+阿玲：直接说明情况就行。答应了做不到，他们反而会失望。
+= Cứ nói rõ tình hình là được. Đã hứa mà làm không được, họ ngược lại sẽ thất vọng.
+~ Just explain the situation clearly. If you say yes and then can't do it, they'll be disappointed instead.
+周南：要是他们不原谅我呢？
+= Nếu họ không tha thứ cho mình thì sao?
+~ What if they don't forgive me?
+小雪：真正的朋友会原谅的。你礼貌地说明白，比勉强去要好。
+= Bạn thật sự sẽ tha thứ. Cậu nói rõ một cách lịch sự còn hơn là cố đi.
+~ Real friends will forgive you. Explaining politely is better than going reluctantly.
+周南：那我今晚就跟他们说清楚。
+= Vậy tối nay mình nói rõ với họ.
+~ Then I'll make it clear to them tonight.
+# 4 短文：把今天的事先做完 | Đoạn văn: Hãy làm xong việc của hôm nay đã | Passage: Finish today's work first
+@ 马虎，同情，预习，重点，自信，挂，推
+有的事情一拖就会被推到明天。我以前也常这样：预习只看个大概，重点没画，电话一挂就把书合上。看起来是给自己留了余地，其实是把压力推给了后来的自己。后来老师并没有批评我，只是很平静地问：你是真的没时间，还是有点儿马虎？那句话谈不上严厉，我却一下子生出了同情——同情那个总在最后才着急的自己。从那以后，我先把当天的重点做完，再去休息。自信不是觉得自己什么都能拖，而是相信今天的自己可以把事情做完。
+= Có việc một trì hoãn là bị đẩy sang ngày mai. Trước tôi cũng hay thế: xem trước chỉ lướt đại khái, chỗ trọng tâm chưa khoanh, vừa gác máy đã đóng sách. Trông như để cho mình một khoảng trống, thật ra là đẩy áp lực cho cái tôi về sau. Sau cô giáo không phê bình, chỉ hỏi rất điềm: em thật sự không có thời gian, hay là hơi sơ ý? Câu ấy chẳng gọi là nghiêm, tôi lại bỗng thấy thương — thương cái tôi luôn đến phút cuối mới sốt ruột. Từ đó, tôi làm xong trọng tâm trong ngày đã, rồi mới nghỉ. Tự tin không phải nghĩ mình cái gì cũng trì được, mà tin cái tôi hôm nay làm xong việc được.
+~ Some things, once delayed, get pushed to tomorrow. I used to do this too: I would only skim the preview, leave the key points unmarked, and close the book as soon as I hung up the phone. It looked as if I was leaving myself some room, but in fact I was pushing the pressure onto my later self. Later the teacher did not criticise me; she only asked, very calmly, "Is it that you really have no time, or are you being a little careless?" That sentence was hardly harsh, yet I suddenly felt sympathy — sympathy for the self who always only grew anxious at the last moment. From then on I finish the day's key points first, and only then rest. Confidence is not thinking you can put everything off; it is trusting that today's self can get the work done.
+# 5 短文：输了，也要冷静 | Đoạn văn: Thua rồi, cũng phải bình tĩnh | Passage: Even if you lose, stay calm
+@ 冷静，重视，尊重，敢，输
+比赛里总有人赢，也总有人输。输并不可怕，可怕的是一输就乱。我见过有的同学敢冲上去，也见过有的人一落后就放弃思考。真正该重视的，不是眼前这一局，而是你还敢不敢在输了以后仍然冷静地看自己。尊重对手，也尊重那个还在场上的自己。能把失败看清楚的人，下一次才有机会走得更稳。
+= Trong thi đấu luôn có người thắng, cũng luôn có người thua. Thua không đáng sợ, đáng sợ là vừa thua đã loạn. Tôi thấy có bạn dám lao lên, cũng thấy có người vừa tụt lại đã bỏ suy nghĩ. Điều thật sự cần coi trọng không phải ván trước mắt, mà là bạn còn dám, sau khi thua, vẫn bình tĩnh nhìn mình hay không. Tôn trọng đối thủ, cũng tôn trọng cái tôi vẫn còn trên sân. Người nhìn rõ thất bại, lần sau mới có cơ hội đi vững hơn.
+~ In a contest there are always people who win, and always people who lose. Losing is not what is frightening; what is frightening is falling to pieces as soon as you lose. I have seen classmates who dare to go forward, and I have also seen people who give up thinking as soon as they fall behind. What you really ought to take seriously is not this one game in front of you, but whether, after a loss, you still dare to look at yourself calmly. Respect your opponent, and also respect the self who is still on the field. Only those who can see a failure clearly have a chance, next time, of walking more steadily.
+
 ## 17
-# 1 阿玲放暑假 | A Linh nghỉ hè | A Linh's summer holiday
-小雪：快放暑假了，你有什么计划？
-= Sắp nghỉ hè rồi, cậu có kế hoạch gì?
-~ The summer holiday's coming. Any plans?
-阿玲：我想去海边玩儿一趟，那儿比城市凉快多了。
-= Mình muốn đi biển chơi một chuyến, ở đó mát hơn thành phố nhiều.
-~ I'd like to take a trip to the seaside — it's much cooler than the city.
-小雪：可是暑假的时候人特别多，到处都要排队。
-= Nhưng nghỉ hè đông người lắm, chỗ nào cũng phải xếp hàng.
-~ But it's really crowded in the summer holidays; you have to queue everywhere.
-阿玲：人多倒是没关系，我就喜欢热闹。
-= Đông người thì cũng chẳng sao, mình thích náo nhiệt mà.
-~ Crowds don't bother me — I like a lively atmosphere.
-小雪：那我们一起去吧！为了省钱，我们可以早点儿订票。
-= Vậy mình đi cùng nhau đi! Để tiết kiệm tiền, mình có thể đặt vé sớm.
-~ Then let's go together! To save money, we can book tickets early.
-阿玲：好！虽然还有一个月，我仍然已经开始兴奋了。
-= Được! Tuy còn một tháng nữa, mình vẫn đã bắt đầu háo hức rồi.
-~ Great! Even though it's still a month away, I'm already getting excited.
-# 2 短文：大海的梦 | Đoạn văn: Giấc mơ về biển | Passage: Dreaming of the sea
-阿玲从小就有一个梦：去看大海。第一次看到海洋时，她激动得抱住了妈妈。蓝色的海水，白色的云，活泼的孩子在沙滩上跑来跑去。她觉得大自然真是太美了。现在社会竞争越来越大，人们的生活压力也很大。有空儿的时候，去海边走走，心情就会好很多。
-= Từ nhỏ A Linh đã có một giấc mơ: đi ngắm biển. Lần đầu tiên nhìn thấy đại dương, cô xúc động đến mức ôm chầm lấy mẹ. Nước biển xanh, mây trắng, những đứa trẻ hiếu động chạy tới chạy lui trên bãi cát. Cô thấy thiên nhiên thật là đẹp quá. Bây giờ xã hội cạnh tranh ngày càng gay gắt, áp lực cuộc sống của con người cũng rất lớn. Lúc rảnh rỗi, đi dạo bên bờ biển, tâm trạng sẽ tốt lên rất nhiều.
-~ Ever since she was little, A Linh had a dream: to see the sea. When she first saw the ocean, she was so excited she hugged her mother. Blue water, white clouds, lively children running back and forth on the sand — she thought nature was just so beautiful. Society today is ever more competitive, and people are under a lot of pressure. When you have free time, a walk by the sea will make you feel much better.
+# 1 对话：雨后的傍晚倒凉快了 | Hội thoại: Chiều sau mưa hóa ra lại mát | Dialogue: The evening after the rain turns out cool
+@ 广播，凉快，热闹，倒，云，照
+阿玲：你听刚才的广播了吗？说今晚云会散开。
+= Cậu nghe bản tin lúc nãy không? Bảo tối nay mây sẽ tan.
+~ Did you hear the broadcast just now? It said the clouds will clear this evening.
+小雪：听了。下午还挺热，现在倒凉快了，风也软。
+= Nghe rồi. Chiều còn khá nóng, giờ hóa lại mát, gió cũng dịu.
+~ I did. It was still quite hot in the afternoon, but now it's actually cool, and the wind is soft too.
+周南：那我们去河边走走？太阳一照出来，景色一定好看。
+= Vậy mình ra bờ sông đi? Mặt trời vừa chiếu ra, cảnh chắc đẹp.
+~ Shall we walk by the river then? As soon as the sun comes out and shines, the view is bound to be lovely.
+阿玲：河边今晚恐怕很热闹。好多人都趁凉快出来了。
+= Bờ sông tối nay e rất nhộn. Nhiều người nhân lúc mát đã ra rồi.
+~ I'm afraid it will be very lively by the river tonight. A lot of people have come out to enjoy the cool.
+小雪：热闹点儿也好。我正好想照几张相。
+= Nhộn một chút cũng hay. Mình đúng lúc muốn chụp vài tấm.
+~ A bit of bustle is fine too. I was just wanting to take a few photos.
+周南：那走吧，趁云还没完全散，光线软一些。
+= Vậy đi đi, nhân mây chưa tan hẳn, ánh sáng dịu hơn.
+~ Let's go then, while the clouds have not fully cleared and the light is still a little softer.
+# 2 对话：隔壁的小狗把毛弄湿了 | Hội thoại: Cún nhà bên làm ướt lông | Dialogue: The dog next door has got its fur wet
+@ 难受，严格，抱，干，毛
+小雪：你听，隔壁的狗又在叫，是不是难受了？
+= Cậu nghe, chó nhà bên lại kêu, có phải khó chịu không?
+~ Listen, the dog next door is barking again. Is it feeling unwell?
+阿玲：刚才下雨，它的毛全湿了。吴姐正把它抱进门，用毛巾把毛擦干。
+= Lúc nãy mưa, lông nó ướt hết. Chị Ngô đang bế nó vào cửa, dùng khăn lau khô lông.
+~ It rained just now, and its fur got all wet. Sister Wu is carrying it in and drying its fur with a towel.
+小雪：她对狗可严格了，每天都按时喂、按时遛。
+= Chị ấy với chó rất nghiêm, ngày nào cũng cho ăn đúng giờ, dắt đi đúng giờ.
+~ She's very strict with the dog: she feeds it and walks it on time every day.
+阿玲：所以那只狗才那么听她的话。一叫它，它就过去让她抱。
+= Nên con chó ấy mới nghe lời chị đến thế. Chỉ gọi một tiếng là nó lại để chị bế.
+~ That's why the dog listens to her so well. As soon as she calls, it goes over and lets her hold it.
+小雪：毛干了就好。湿着坐在门口，看起来真可怜。
+= Lông khô là được. Ngồi ướt ở cửa trông thương thật.
+~ It'll be fine once the fur is dry. Sitting wet in the doorway, it really looked pitiful.
+阿玲：吴姐说，今晚还要再给它吹一下。
+= Chị Ngô bảo tối nay còn thổi cho nó thêm một lúc.
+~ Sister Wu said she would also dry it with the dryer for a little while this evening.
+# 3 对话：放暑假去看老虎 | Hội thoại: Nghỉ hè đi xem hổ | Dialogue: Going to see the tigers in the summer holiday
+@ 放暑假，活泼，老虎，排队，入口，趟
+周南：放暑假你想去哪儿？
+= Nghỉ hè cậu muốn đi đâu?
+~ Where do you want to go in the summer holiday?
+阿玲：我想再去一趟野生园。上次在入口排了很久的队，里面的老虎却只远远看了一眼。
+= Mình muốn đi thêm một chuyến vườn hoang dã. Lần trước ở cửa vào xếp hàng rất lâu, vậy mà con hổ bên trong chỉ thấy thoáng từ xa.
+~ I'd like to make another trip to the wildlife park. Last time we queued for a long time at the entrance, but only saw the tigers from far away.
+小雪：听说那边新来了两只比较活泼的，白天常在近处走。
+= Nghe nói bên đó mới về hai con khá hiếu động, ban ngày hay đi gần.
+~ I heard two livelier ones have arrived, and they often walk nearby in the daytime.
+周南：那我们早一点儿到，少排会儿队。入口一开门就进去。
+= Vậy mình đến sớm một chút, xếp hàng ít thôi. Cửa vào vừa mở là vào.
+~ Then let's arrive a bit earlier and queue less. We'll go in as soon as the entrance opens.
+阿玲：好。这次要是能看清楚，就不枉跑这一趟。
+= Được. Lần này nếu nhìn rõ thì chuyến đi này không uổng.
+~ All right. If we can see them clearly this time, the trip won't have been wasted.
+小雪：我带上望远镜。排队的时候还可以看看地图。
+= Mình mang ống nhòm. Lúc xếp hàng còn xem bản đồ được.
+~ I'll bring binoculars. We can also look at the map while we're queuing.
+# 4 短文：森林里剩下的那一点儿空地 | Đoạn văn: Chút đất trống còn lại trong rừng | Passage: The little open ground left in the forest
+@ 竞争，暖和，森林，社会，剩
+城外有一片小小的森林。春天一暖和，树和草都开始争阳光、争水。看上去只是安静的绿色，其实也是一种竞争。社会里的人有时也是这样：谁都想过得好一点，剩下的机会却并不多。我并不觉得竞争本身可怕，可怕的是只顾往前冲，把旁边的人忘了。那片森林里，高的树会挡住风，矮的草仍能在根边找到自己的位置。能一起留下来的，才算真的剩下来了。
+= Ngoài thành có một khu rừng nhỏ. Mùa xuân vừa ấm, cây và cỏ đều bắt đầu tranh ánh nắng, tranh nước. Nhìn chỉ là màu xanh yên, thật ra cũng là một cuộc cạnh tranh. Người trong xã hội đôi khi cũng vậy: ai cũng muốn sống khá hơn một chút, cơ hội còn lại lại không nhiều. Tôi không thấy cạnh tranh tự nó đáng sợ, đáng sợ là chỉ lo lao tới, quên người bên cạnh. Trong khu rừng ấy, cây cao chắn gió, cỏ thấp vẫn tìm được chỗ bên gốc. Những gì ở lại cùng nhau, mới kể là thật sự còn lại.
+~ Outside the town there is a small forest. As soon as spring turns warm, the trees and the grass start competing for sunlight and for water. It looks like nothing but quiet green, but it is also a kind of competition. People in society are sometimes like this too: everyone wants to live a little better, yet the chances that are left are not many. I do not think competition itself is frightening; what is frightening is only charging forward and forgetting the people beside you. In that forest the tall trees keep off the wind, and the low grass can still find a place by the roots. What can stay on together is what has truly been left.
+# 5 短文：船还在海的底下走 | Đoạn văn: Thuyền vẫn đi dưới mặt biển | Passage: The ship is still travelling under the sea
+@ 公里，海洋，排列，仍然，底，梦
+去年夏天，我坐船去看海洋。从港口出发，过了几十公里，水面仍然很宽，像没有边。船舱的窗下，是一层深得看不透的蓝。我忽然想起小时候的梦：自己走到海的底，看见鱼像灯一样排列着，安静地游过去。梦里的底当然不是真的，可当船身轻轻一晃，我还是觉得，那片蓝离我并不远。海洋不必把所有秘密都说完，能让人愿意再看一眼，就已经够了。
+= Hè năm ngoái, tôi đi thuyền ra xem đại dương. Từ cảng xuất phát, đi đã vài chục kilomet, mặt nước vẫn rất rộng, như không bờ. Dưới ô cửa khoang là một lớp xanh sâu nhìn không xuyên. Tôi bỗng nhớ giấc mơ thuở nhỏ: tự mình đi xuống đáy biển, thấy cá xếp hàng như đèn, lặng lẽ bơi qua. Đáy trong mơ cố nhiên không phải thật, nhưng khi thân thuyền khẽ nghiêng, tôi vẫn thấy màu xanh ấy chẳng xa. Đại dương không cần nói hết mọi bí mật, khiến người ta muốn nhìn thêm một ánh, đã là đủ.
+~ Last summer I took a boat to see the ocean. After leaving the harbour and travelling several dozen kilometres, the water was still very wide, as if it had no edge. Below the cabin window was a layer of blue too deep to see through. I suddenly remembered a childhood dream: I had walked to the bottom of the sea and seen the fish arranged like lamps, swimming quietly past. The bottom in the dream was not real, of course, but when the hull swayed slightly I still felt that that blue was not far from me. The ocean need not tell all its secrets; if it can make you want to look once more, that is already enough.
+
 ## 18
-# 1 阿玲迷路了 | A Linh bị lạc đường | A Linh gets lost
-阿玲：喂，小雪，我好像迷路了，手机也快没电了。
-= Alo, Tiểu Tuyết, hình như mình bị lạc đường rồi, điện thoại cũng sắp hết pin.
-~ Hello, Xiaoxue? I think I'm lost, and my phone's nearly out of battery.
-小雪：别着急，你周围有什么？
-= Đừng lo, xung quanh cậu có gì?
-~ Don't panic. What's around you?
-阿玲：前面有一座桥，旁边是一个邮局。
-= Phía trước có một cây cầu, bên cạnh là một bưu điện.
-~ There's a bridge ahead, and a post office next to it.
-小雪：我知道了。你过了桥一直往前走，接着往左拐，就能看到我们学校的门了。
-= Mình biết rồi. Cậu qua cầu đi thẳng, tiếp đó rẽ trái là thấy cổng trường mình.
-~ I know where you are. Cross the bridge, keep going straight, then turn left and you'll see our school gate.
-阿玲：太好了！我真受不了自己，总是记不住路。
-= Tốt quá! Mình chịu hết nổi bản thân, lúc nào cũng không nhớ đường.
-~ Great! I can't stand myself — I can never remember the way.
-小雪：下次出门前先在地图上查一下地址，就安全多了。
-= Lần sau trước khi ra ngoài tra địa chỉ trên bản đồ trước, sẽ an toàn hơn nhiều.
-~ Next time check the address on the map before you go out — it's much safer.
-# 2 短文：网上付款 | Đoạn văn: Thanh toán trực tuyến | Passage: Paying online
-现在，用手机付款越来越普遍了。买东西、坐车、吃饭，只要输入密码，几秒钟就能完成。这种技术给生活带来了很多方便。除此以外，在网站上还能买火车票、交电费。不过，我们也要注意安全，不要把密码告诉别人，也不要随便打开不认识的网站。是否安全，关键在于我们自己是否小心。
-= Bây giờ thanh toán bằng điện thoại ngày càng phổ biến. Mua đồ, đi xe, ăn uống, chỉ cần nhập mật khẩu, vài giây là xong. Công nghệ này mang lại rất nhiều tiện lợi cho cuộc sống. Ngoài ra, trên trang web còn có thể mua vé tàu, trả tiền điện. Tuy nhiên, chúng ta cũng phải chú ý an toàn, đừng nói mật khẩu cho người khác, cũng đừng tùy tiện mở những trang web lạ. An toàn hay không, then chốt là ở chỗ bản thân chúng ta có cẩn thận hay không.
-~ Paying by phone is becoming more and more common. Shopping, taking a ride, eating out — just enter your password and it's done in a few seconds. This technology brings a lot of convenience. Besides that, you can buy train tickets and pay electricity bills on websites. But we must stay safe: don't tell anyone your password, and don't casually open unfamiliar websites. Whether it's safe or not depends on whether we ourselves are careful.
+# 1 对话：阿玲推荐一本很火的书 | Hội thoại: A Linh giới thiệu một cuốn sách đang rất hot | Dialogue: A Linh recommends a book that has become very popular
+@ 技术，降落，交通，是否，作者，火
+小雪：你手上这本什么书？最近怎么这么火？
+= Cuốn trên tay cậu là sách gì? Dạo này sao hot thế?
+~ What's that book in your hand? Why has it become so popular lately?
+阿玲：写机场和交通的。作者以前在机场工作，书里有一段讲飞机降落时的技术细节，很清楚。
+= Viết về sân bay và giao thông. Tác giả trước làm ở sân bay, trong sách có một đoạn kể chi tiết kỹ thuật lúc máy bay hạ cánh, rất rõ.
+~ It's about airports and transport. The author used to work at an airport, and there's a passage on the technical details of a plane landing that is very clear.
+周南：我是否也该看看？我对飞机不大懂。
+= Mình có nên xem không? Mình không rành máy bay lắm.
+~ Should I have a look at it too? I don't know much about planes.
+阿玲：值得看。不是只讲技术，也写了路上的人怎么等、怎么走。
+= Đáng xem. Không chỉ nói kỹ thuật, còn viết người trên đường chờ thế nào, đi thế nào.
+~ It's worth reading. It isn't only about the technology; it also describes how people wait and how they move on the road.
+小雪：看完借我。我想知道作者后来还写了什么。
+= Xem xong cho mình mượn. Mình muốn biết tác giả sau còn viết gì.
+~ Lend it to me when you've finished. I'd like to know what else the author wrote later.
+阿玲：好。我先做几个记号，再给你。
+= Được. Mình đánh dấu vài chỗ đã, rồi đưa cậu.
+~ All right. I'll mark a few places first, then give it to you.
+# 2 对话：密码太多，陈晓有点儿受不了 | Hội thoại: Mật khẩu quá nhiều, Trần Hiểu hơi chịu hết nổi | Dialogue: There are too many passwords, and Chen Xiao is finding it hard to bear
+@ 受不了，安全，密码，日记，允许，秒
+小雪：陈晓怎么对着手机叹气？
+= Trần Hiểu sao cứ thở dài vào điện thoại?
+~ Why is Chen Xiao sighing at his phone?
+阿玲：他又忘了邮箱密码。为了安全，每个网站都不一样，他简直受不了。
+= Cậu ấy lại quên mật khẩu thư. Vì an toàn, trang nào cũng khác, cậu ấy thật sự chịu hết nổi.
+~ He's forgotten his email password again. For safety, each site is different, and he can hardly bear it.
+小雪：那他日记里也不许写吗？
+= Vậy trong nhật ký cũng không được ghi à?
+~ Isn't he allowed to write them in his diary?
+阿玲：老师说日记可以记事情，可不要写密码。也不允许把密码发给不认识的人。
+= Cô giáo bảo nhật ký ghi việc được, nhưng đừng viết mật khẩu. Cũng không cho phép gửi mật khẩu cho người lạ.
+~ The teacher said a diary can be used for events, but you shouldn't write passwords in it. You also aren't allowed to send a password to anyone you don't know.
+小雪：那就设一个自己看得懂、别人看不懂的提示，几秒就能想起来。
+= Vậy đặt một gợi ý mình hiểu, người khác không hiểu, vài giây là nhớ ra.
+~ Then he should set a hint that he understands and other people don't, so he can remember it in a few seconds.
+阿玲：我回头跟他说。先把最常用的那个改好。
+= Lát mình nói với cậu ấy. Đổi cái dùng nhiều nhất trước đã.
+~ I'll tell him later. First he should get the one he uses most in order.
+# 3 对话：小雪做了一个奇怪的梦 | Hội thoại: Tiểu Tuyết nằm một giấc mơ kỳ lạ | Dialogue: Xiaoxue has had a strange dream
+@ 矿泉水，接着，警察，危险，桥，咸，座
+阿玲：你怎么一早就皱眉？
+= Sao sáng sớm cậu đã nhíu mày?
+~ Why are you frowning so early in the morning?
+小雪：昨晚做了个梦。我走在一座又长又窄的桥上，下面的水看起来有点儿危险。
+= Tối qua nằm mơ. Mình đi trên một cây cầu vừa dài vừa hẹp, nước bên dưới trông hơi nguy hiểm.
+~ I had a dream last night. I was walking on a long, narrow bridge, and the water below looked a little dangerous.
+周南：接着呢？
+= Rồi sao nữa?
+~ And then?
+小雪：接着桥中间站着一位警察，递给我一瓶矿泉水。我喝了一口，竟然是咸的。
+= Rồi giữa cầu đứng một cảnh sát, đưa cho mình một chai nước khoáng. Mình uống một ngụm, hóa ra lại mặn.
+~ Then a police officer was standing in the middle of the bridge and handed me a bottle of mineral water. I took a sip, and it was salty, unexpectedly.
+阿玲：咸的矿泉水？这梦倒有意思。
+= Nước khoáng mặn? Giấc mơ này ngược lại thú vị.
+~ Salty mineral water? That's an interesting dream, actually.
+小雪：醒来我还去倒了一杯真的水。还好，是淡的。
+= Tỉnh dậy mình còn rót một ly nước thật. May mà nhạt.
+~ When I woke up I even poured myself a glass of real water. Luckily, it was plain.
+# 4 短文：迷路的时候把手机举起来 | Đoạn văn: Lúc lạc đường hãy giơ điện thoại lên | Passage: When you are lost, hold your phone up
+@ 地点，地址，付款，迷路，举
+第一次到这座城，我在车站迷了路。身边没有熟悉的地点，路牌上的地址我也读得慢。后来我举起手机，把地图打开，跟着箭头走，终于找到那家小店。付款的时候，老板笑着说：“外地人第一次来，多半会转两圈。”我并不觉得丢脸。会迷路并不可怕，可怕的是不敢问、也不肯把地图举起来看一眼。城市很大，可只要你肯停下来找，路总会出现。
+= Lần đầu đến thành phố này, tôi lạc ở bến xe. Quanh mình không có địa điểm quen, địa chỉ trên biển cũng đọc chậm. Sau tôi giơ điện thoại, mở bản đồ, theo mũi tên, cuối cùng tìm ra tiệm nhỏ ấy. Lúc thanh toán, ông chủ cười: «Người tỉnh khác lần đầu đến, phần nhiều đi vòng hai vòng.» Tôi không thấy xấu hổ. Lạc đường không đáng sợ, đáng sợ là không dám hỏi, cũng không chịu giơ bản đồ lên nhìn một cái. Thành phố rất lớn, nhưng chỉ cần chịu dừng lại tìm, đường rồi sẽ hiện.
+~ The first time I came to this city, I got lost at the station. There was no familiar place around me, and I was also slow to read the addresses on the signs. Later I held up my phone, opened the map, followed the arrow, and finally found that little shop. When I was paying, the owner smiled and said, "People from out of town usually walk in a circle or two the first time." I did not feel ashamed. Getting lost is not frightening; what is frightening is not daring to ask, and not being willing to hold the map up and look. The city is large, but if you are willing to stop and look, the road will appear.
+# 5 短文：一封还在路上的信 | Đoạn văn: Một bức thư vẫn còn trên đường | Passage: A letter that is still on its way
+@ 世纪，网站，信封，信息，邮局，收
+这个世纪，信息走得很快。一条消息在网站上几秒就能看到，可我外婆仍然喜欢去邮局。她把信纸放进信封，写上我的名字，再问工作人员：“大概几天能收到？”我有时会觉得慢。可当那封信真的被我收到，摸着信封上她写歪的字，我会在桌边坐很久。快的信息告诉我世界在发生什么；慢的信，告诉我有人愿意为一个名字停下来。两种收法，我都想留着。
+= Thế kỷ này, thông tin đi rất nhanh. Một tin trên trang mạng vài giây đã thấy, nhưng bà ngoại tôi vẫn thích đến bưu điện. Bà bỏ giấy vào phong bì, viết tên tôi, rồi hỏi nhân viên: «Khoảng mấy ngày thì nhận được?» Đôi lúc tôi thấy chậm. Nhưng khi bức thư ấy thật sự được tôi nhận, sờ chữ bà viết lệch trên phong bì, tôi ngồi mãi bên bàn. Tin nhanh cho tôi biết thế giới đang xảy ra gì; thư chậm cho tôi biết có người chịu dừng lại vì một cái tên. Hai cách nhận, tôi đều muốn giữ.
+~ In this century, information travels very quickly. A piece of news can be seen on a website in a few seconds, yet my grandmother still likes to go to the post office. She puts the letter paper into an envelope, writes my name on it, then asks the staff, "About how many days before it's received?" Sometimes I feel it is slow. But when that letter is really received by me, and I touch the crooked characters she wrote on the envelope, I sit at the desk for a long time. Fast information tells me what is happening in the world; a slow letter tells me that someone was willing to stop for a name. I want to keep both ways of receiving things.
+
 ## 19
-# 1 阿玲找房子 | A Linh tìm nhà | A Linh looks for a flat
-阿玲：我想租一个离学校近的房子，你有什么好主意吗？
-= Mình muốn thuê một căn nhà gần trường, cậu có ý gì hay không?
-~ I want to rent a place near school. Any good ideas?
-小雪：你可以在网上找找，或者直接给房东打电话。
-= Cậu có thể tìm trên mạng, hoặc gọi thẳng cho chủ nhà.
-~ You could look online, or phone the landlords directly.
-阿玲：我刚才打了好几次，都占线。
-= Mình vừa gọi mấy lần rồi, đều máy bận.
-~ I've just called several times, but the line's always busy.
-小雪：别急，谁都有忙的时候。这个房子的厨房大不大？
-= Đừng vội, ai cũng có lúc bận. Căn này bếp có rộng không?
-~ Don't worry, everyone's busy sometimes. Is the kitchen in this one big?
-阿玲：挺大的，我可以在里面包饺子！总的来说，我很满意。
-= Khá rộng, mình có thể gói sủi cảo trong đó! Nói chung là mình rất hài lòng.
-~ Pretty big — I could make dumplings in there! Overall, I'm very happy with it.
-小雪：那就快去看看吧，好房子可不等人。
-= Vậy mau đi xem đi, nhà đẹp không chờ người đâu.
-~ Then go and see it quickly — good flats don't wait for anyone.
-# 2 短文：学一门功夫 | Đoạn văn: Học một môn võ | Passage: Learning a martial art
-阿玲这个学期报名学中国功夫。第一节课，老师先教大家打招呼，然后让大家抬胳膊、转身。阿玲觉得很难，可是老师说：“学功夫的关键在于坚持，谁都是从不会到会的。”现在，阿玲每天早上都练习半个小时。她说，功夫不仅让她身体更好，还让她更有耐心了。
-= Học kỳ này A Linh đăng ký học võ Trung Quốc. Buổi học đầu tiên, thầy dạy mọi người chào hỏi trước, sau đó cho mọi người nâng tay, xoay người. A Linh thấy rất khó, nhưng thầy nói: "Mấu chốt của việc học võ là ở sự kiên trì, ai cũng từ không biết đến biết." Bây giờ sáng nào A Linh cũng luyện tập nửa tiếng. Cô nói, võ thuật không chỉ giúp cô khỏe hơn mà còn giúp cô kiên nhẫn hơn.
-~ This term A Linh signed up for Chinese kung fu. In the first class the teacher taught everyone how to greet, then had them raise their arms and turn around. A Linh found it hard, but the teacher said, "The key to learning kung fu is persistence — everyone goes from not knowing to knowing." Now A Linh practises for half an hour every morning. She says kung fu has not only made her healthier but also more patient.
+# 1 对话：林安补交学期申请 | Hội thoại: Lâm An nộp bổ sung đơn học kỳ | Dialogue: Lin An hands in a term application again
+@ 出生，打印，道歉，复印，性别，学期
+阿玲：林安，你又去办公室了？
+= Lâm An, cậu lại ra văn phòng à?
+~ Lin An, have you been to the office again?
+林安：下个学期的申请表，出生日期和性别我写反了，得重新打印一份。
+= Đơn xin học kỳ sau, ngày sinh và giới tính mình viết ngược, phải in lại một bản.
+~ On next term's application form I wrote the date of birth and the gender the wrong way round, so I have to print a new one.
+小雪：原件呢？要不要先复印一份留着？
+= Bản gốc thì sao? Có cần photocopy một bản giữ lại không?
+~ What about the original? Do you want to photocopy one to keep first?
+林安：复印好了。我还向老师道歉了，她说改清楚再交就行。
+= Photocopy rồi. Mình còn xin lỗi cô, cô bảo sửa rõ rồi nộp là được.
+~ I've already made a copy. I also apologised to the teacher, and she said I could just hand it in once it was corrected clearly.
+阿玲：那就好。表格上的字，还是要再看一遍。
+= Thế thì tốt. Chữ trên đơn vẫn nên xem lại một lượt.
+~ That's good. The words on a form still need to be looked at once more.
+林安：我这回对着学生证，一项一项对。
+= Lần này mình đối với thẻ sinh viên, từng mục một.
+~ This time I'll check it item by item against my student card.
+# 2 对话：包饺子时刀把皮划破了 | Hội thoại: Lúc gói sủi cảo, dao rách da | Dialogue: While making dumplings, the knife nicks a finger
+@ 包子，饺子，理发，零钱，刀，破，脱
+小雪：你手怎么包着？是切菜了吗？
+= Tay cậu băng sao? Thái rau à?
+~ Why is your hand wrapped up? Were you cutting vegetables?
+阿玲：包饺子的时候，刀把指头划破了一点。我赶紧脱了围裙去洗。
+= Lúc gói sủi cảo, dao rách đầu ngón một chút. Mình vội cởi tạp dề đi rửa.
+~ While I was making dumplings, the knife nicked my finger a little. I quickly took off my apron and went to wash it.
+周南：严重吗？要不要去药店？我还有一些零钱。
+= Có nặng không? Có cần ra hiệu thuốc không? Mình còn ít tiền lẻ.
+~ Is it serious? Should we go to the pharmacy? I've still got some small change.
+阿玲：不严重，已经贴好了。饺子还是包完了，另外还蒸了几笼包子。
+= Không nặng, dán xong rồi. Sủi cảo vẫn gói xong, ngoài ra còn hấp thêm vài lồng bánh bao.
+~ It's not serious; it's already been dressed. We still finished the dumplings, and we also steamed a few baskets of baozi.
+小雪：你不是说下午要去理发吗？手还方便吗？
+= Chẳng phải cậu bảo chiều đi cắt tóc sao? Tay còn thuận không?
+~ Didn't you say you were going to have a haircut this afternoon? Is your hand still all right for that?
+阿玲：方便。破得不深，过两天就好。
+= Thuận. Rách không sâu, hai hôm nữa là ổn.
+~ It's fine. The cut isn't deep; it'll be all right in a couple of days.
+# 3 对话：国际交流课上练习转身 | Hội thoại: Giờ giao lưu quốc tế tập xoay người | Dialogue: Practising a turn in the international exchange class
+@ 打招呼，胳膊，国籍，眼镜，戴，抬，转
+小雪：你们交流课今天练什么了？
+= Giờ giao lưu hôm nay các cậu tập gì?
+~ What did you practise in the exchange class today?
+周南：一个转身的动作。老师让我们先打招呼，再慢慢抬起胳膊，转到另一边。
+= Một động tác xoay người. Cô bảo mình chào hỏi trước, rồi từ từ giơ cánh tay, xoay sang bên kia.
+~ A turning movement. The teacher had us greet each other first, then slowly raise our arms and turn to the other side.
+阿玲：你戴着眼镜，转的时候掉不掉？
+= Cậu đeo kính, lúc xoay có rơi không?
+~ You wear glasses — do they fall off when you turn?
+周南：我用手扶了一下，没掉。班里有好几个不同国籍的同学，大家一起练，倒不怕错。
+= Mình lấy tay giữ một cái, không rơi. Trong lớp có mấy bạn khác quốc tịch, cùng tập, ngược lại không sợ sai.
+~ I held them with my hand, and they didn't fall. There are several classmates of different nationalities in the class, and practising together we weren't actually afraid of getting it wrong.
+小雪：下次我可以去看吗？
+= Lần sau mình đến xem được không?
+~ May I come and watch next time?
+周南：可以。你来了，记得先跟老师打个招呼。
+= Được. Cậu đến thì nhớ chào cô một tiếng trước.
+~ Yes. When you come, remember to say hello to the teacher first.
+# 4 短文：电话占线的那天下午 | Đoạn văn: Buổi chiều điện thoại bị chiếm mạch | Passage: The afternoon the line was busy
+@ 厨房，房东，占线，租
+我想换一套带厨房的房子，照片看起来还不错。按广告上的号码打给房东，却一直占线。下午我又打了三次，有一次接通了，对方说自己不是房东，只是帮着看房子。我把租房要问的事情写在纸上，准备再打。后来我明白，急着租并不等于要立刻答应。厨房朝哪、房租包不包网，这些都得问清楚。占线不可怕，可怕的是问都没问完就点头。
+= Tôi muốn đổi một căn có bếp, ảnh trông cũng ổn. Gọi số trên quảng cáo cho chủ nhà, mãi bị bận tuyến. Chiều tôi gọi thêm ba lần, có lần bắt được, bên kia bảo mình không phải chủ, chỉ xem nhà hộ. Tôi viết những điều cần hỏi khi thuê lên giấy, định gọi nữa. Sau tôi hiểu, sốt ruột thuê không có nghĩa phải đồng ý ngay. Bếp hướng nào, tiền nhà có gồm mạng không, đều phải hỏi rõ. Máy bận không đáng sợ, đáng sợ là hỏi chưa xong đã gật.
+~ I wanted to change to a flat with a kitchen; the photos looked all right. I rang the landlord on the number in the advertisement, but the line was busy the whole time. That afternoon I called three more times. Once I got through, and the person said they were not the landlord, only helping to show the place. I wrote down on paper the things I needed to ask about the rental, and got ready to call again. Later I understood that being in a hurry to rent does not mean you have to say yes at once. Which way the kitchen faces, and whether the rent includes the internet, all have to be asked clearly. A busy line is not frightening; what is frightening is nodding before you have finished asking.
+# 5 短文：球场边那条不能踩的线 | Đoạn văn: Đường kẻ bên sân không được giẫm | Passage: The line by the court that you must not step on
+@ 乒乓球，羽毛球，功夫，禁止，座位，场
+学校新开了一场活动：一边是乒乓球，一边是羽毛球。场地不大，座位也不多，可规矩写得很清楚：禁止把饮料带进场，也禁止走进画好的白线。有个同学练过几年功夫，脚很稳，仍小心翼翼地绕着线走。我看着那两条白线，忽然觉得它们不只是给球用的。把该停的地方停住，大家才都有地方跑、有地方坐。一场小小的比赛，也能把人教得更有分寸。
+= Trường mới mở một hoạt động: một bên bóng bàn, một bên cầu lông. Sân không lớn, chỗ ngồi cũng không nhiều, nhưng quy củ viết rất rõ: cấm mang đồ uống vào sân, cũng cấm bước vào đường trắng đã kẻ. Có bạn từng luyện vài năm võ, chân rất vững, vẫn dè dặt đi vòng quanh đường kẻ. Tôi nhìn hai đường trắng ấy, bỗng thấy chúng không chỉ để cho bóng. Chỗ phải dừng thì dừng, mọi người mới có chỗ chạy, có chỗ ngồi. Một trận nhỏ cũng dạy người ta chừng mực hơn.
+~ The school has started a new activity: table tennis on one side, badminton on the other. The court is not large, and there are not many seats either, but the rules are written very clearly: it is forbidden to bring drinks onto the court, and also forbidden to step inside the painted white lines. One classmate who has practised kung fu for a few years, and whose footing is very steady, still walked carefully around the line. Looking at those two white lines, I suddenly felt they were not only there for the ball. Only if you stop where you ought to stop does everyone have room to run and room to sit. Even a small match can teach people to have a better sense of limits.
+
 ## 20
-# 1 阿玲和小雪去旅行 | A Linh và Tiểu Tuyết đi du lịch | A Linh and Xiaoxue go travelling
-小雪：航班推迟了一个小时，我们究竟几点出发？
-= Chuyến bay hoãn một tiếng rồi, rốt cuộc mấy giờ mình xuất phát?
-~ The flight's been delayed an hour. So what time are we actually leaving?
-阿玲：别着急，我们先去换登机牌，然后吃点儿东西。
-= Đừng vội, mình đi đổi thẻ lên máy bay trước, rồi ăn chút gì đó.
-~ Don't worry, let's get our boarding passes first and then grab something to eat.
-小雪：好。这次去成都，你最想吃什么？
-= Được. Lần này đi Thành Đô, cậu muốn ăn gì nhất?
-~ OK. On this trip to Chengdu, what do you most want to eat?
-阿玲：当然是小吃！听说那儿的菜又香又辣。
-= Tất nhiên là đồ ăn vặt! Nghe nói món ăn ở đó vừa thơm vừa cay.
-~ Street food, of course! I hear the food there is fragrant and spicy.
-小雪：你一到那儿就会爱上它的。来，为我们的旅行干杯！
-= Cậu vừa đến đó là sẽ yêu nó ngay. Nào, cạn ly cho chuyến du lịch của chúng mình!
-~ You'll fall in love with it the moment you arrive. Come on — cheers to our trip!
-阿玲：干杯！说着说着，我都饿了。
-= Cạn ly! Nói mãi nói mãi, mình đói luôn rồi.
-~ Cheers! All this talking is making me hungry.
-# 2 短文：旅行的意义 | Đoạn văn: Ý nghĩa của du lịch | Passage: Why we travel
-旅行可以让我们看到不同的风景，认识不同的民族，尝到各地的小吃。阿玲第一次来中国时，普通话说得不太好，常常闹笑话。现在她不但能和当地人对话，还能帮朋友收拾行李、安排路线。她说，旅行最大的收获不是照片，而是在路上成长起来的自己。
-= Du lịch giúp chúng ta ngắm những cảnh sắc khác nhau, làm quen với những dân tộc khác nhau, nếm thử món ăn vặt ở khắp nơi. Lần đầu tiên A Linh đến Trung Quốc, tiếng phổ thông nói chưa tốt lắm, thường xuyên nói nhầm gây cười. Bây giờ cô không những có thể trò chuyện với người địa phương mà còn giúp bạn bè thu dọn hành lý, sắp xếp lộ trình. Cô nói, thu hoạch lớn nhất của du lịch không phải là những tấm ảnh, mà là bản thân đã trưởng thành trên đường đi.
-~ Travel lets us see different scenery, meet different peoples and taste snacks from all over. When A Linh first came to China, her Mandarin wasn't very good and she often made funny mistakes. Now she can not only chat with locals but also help friends pack and plan their routes. She says the greatest reward of travel isn't the photos but the person you grow into along the way.
+# 1 对话：送周南去机场，航班却推迟了 | Hội thoại: Tiễn Châu Nam ra sân bay, chuyến bay lại hoãn | Dialogue: Seeing Zhou Nan off at the airport, but the flight is delayed
+@ 高速公路，登机牌，加油站，航班，首都，推迟
+小雪：周南不是今天去首都吗？你们怎么还在路上？
+= Châu Nam chẳng phải hôm nay vào thủ đô sao? Sao các cậu vẫn còn trên đường?
+~ Isn't Zhou Nan going to the capital today? Why are you still on the road?
+阿玲：高速公路有点堵。刚在加油站停了一下，手机上就显示：航班推迟了一个小时。
+= Cao tốc hơi tắc. Vừa dừng ở trạm xăng một chút, điện thoại đã hiện: chuyến bay hoãn một tiếng.
+~ The expressway was a bit jammed. We had just stopped at a petrol station for a moment when the phone showed that the flight had been delayed by an hour.
+周南：还好登机牌已经打出来了。推迟就推迟，安全到了最重要。
+= May mà thẻ lên máy bay đã in xong. Hoãn thì hoãn, đến nơi an toàn là quan trọng nhất.
+~ Luckily the boarding pass has already been printed. If it's delayed, it's delayed; arriving safely is what matters most.
+小雪：那你们在机场多等一下，别着急。
+= Vậy các cậu ở sân bay đợi thêm một lúc, đừng sốt.
+~ Then wait a bit longer at the airport, and don't worry.
+阿玲：我们正好用这段时间再检查一遍行李。
+= Mình đúng lúc dùng khoảng thời gian này kiểm tra hành lý thêm một lượt.
+~ We can use this time to check the luggage through once more.
+周南：到了首都我给你们发消息。
+= Đến thủ đô mình nhắn tin cho các cậu.
+~ I'll message you when I get to the capital.
+# 2 对话：祝贺一次合格的小旅行 | Hội thoại: Chúc mừng một chuyến đi nhỏ đạt yêu cầu | Dialogue: Congratulations on a small trip that went well
+@ 对面，合格，烤鸭，可怜，旅行，祝贺
+阿玲：对面那家店的烤鸭，是不是就是你们旅行时吃过的？
+= Tiệm đối diện kia, vịt quay có phải các cậu đã ăn khi đi du lịch không?
+~ Is the roast duck at the shop opposite the one you had on your trip?
+小雪：对。那次旅行虽然短，可行程安排得很合格，谁都没有掉队。
+= Đúng. Chuyến đi ấy tuy ngắn, nhưng lịch trình sắp rất đạt, chẳng ai bị tụt lại.
+~ That's the one. The trip was short, but the itinerary was arranged in a way that really measured up, and nobody was left behind.
+周南：回来的时候，陈晓还买了一只小鸭子给妹妹。她说旅馆的鸭子太可怜，想带一个回家。
+= Lúc về, Trần Hiểu còn mua một con vịt nhỏ cho em gái. Bé bảo vịt trong khách sạn thương quá, muốn mang một con về.
+~ When we came back, Chen Xiao even bought a little duck for his sister. She had said the ducks at the hotel looked so poor, and she wanted to take one home.
+阿玲：那得祝贺你们，第一次自己安排就这么顺利。
+= Vậy phải chúc mừng các cậu, lần đầu tự sắp mà thuận đến thế.
+~ Then I must congratulate you: the first time you arranged it yourselves, and it went so smoothly.
+小雪：晚上我们就着烤鸭，再把照片翻一遍。
+= Tối mình vừa ăn vịt quay vừa lật ảnh lại một lượt.
+~ This evening we'll go through the photos again over the roast duck.
+周南：下次旅行，还想再去那家对面的小店坐坐。
+= Lần sau đi du lịch, vẫn muốn ghé ngồi tiệm đối diện ấy nữa.
+~ On the next trip, I'd still like to sit in that little shop opposite again.
+# 3 对话：钥匙存前台的那晚 | Hội thoại: Đêm để chìa khóa ở quầy lễ tân | Dialogue: The night the key was left at the front desk
+@ 打扮，干杯，究竟，民族，笑话，钥匙，存
+小雪：你们去那个民族村，究竟好玩吗？
+= Các cậu đến thôn dân tộc ấy, rốt cuộc có vui không?
+~ When you went to that ethnic village, was it actually fun?
+阿玲：好玩。晚上大家稍微打扮了一下，还坐在一起干杯。有人讲了几个笑话，把我笑得差点把茶洒了。
+= Vui. Tối mọi người sửa soạn một chút, còn ngồi cùng cụng ly. Có người kể vài chuyện cười, mình cười suýt đổ trà.
+~ It was. In the evening everyone dressed up a little, and we also sat together and toasted. Someone told a few jokes, and I laughed so much I nearly spilled my tea.
+周南：后来呢？不是听说你把钥匙弄丢了？
+= Sau thì sao? Chẳng phải nghe nói cậu làm mất chìa khóa sao?
+~ And afterwards? Didn't I hear you lost the key?
+阿玲：没丢。我把它存在前台了，第二天一早就取回来。
+= Không mất. Mình gửi ở quầy lễ tân, sáng hôm sau lấy lại ngay.
+~ I didn't lose it. I left it at the front desk, and collected it first thing the next morning.
+小雪：还好。要是真丢了，那一晚恐怕大家都睡不好。
+= May. Nếu thật sự mất, e đêm ấy ai cũng ngủ không yên.
+~ Luckily. If it had really been lost, I'm afraid nobody would have slept well that night.
+阿玲：所以现在出门，钥匙我都先问自己：究竟放哪儿了？
+= Nên giờ ra khỏi cửa, chìa khóa mình đều tự hỏi trước: rốt cuộc để đâu rồi?
+~ So now, when I go out, I always first ask myself about the key: where exactly have I put it?
+# 4 短文：树下那碗汤，和一句普通话 | Đoạn văn: Bát canh dưới gốc cây, và một câu tiếng phổ thông | Passage: A bowl of soup under the tree, and a sentence in Putonghua
+@ 普通话，对话，棵，汤
+回老家的那天，我和舅舅坐在一棵老树下面喝汤。他先用家乡话跟我说话，我听得半懂不懂，只好用普通话说：“您再说一遍，好吗？”那一轮小小的对话并不长，可我忽然明白：语言不是为了比谁说得更标准，而是为了把一碗汤、一句关心送到对方面前。后来他也慢慢用普通话跟我讲树上的鸟。汤已经凉了，话却还热着。
+= Ngày về quê, tôi và cậu ngồi dưới một cây già uống canh. Cậu nói với tôi bằng tiếng quê trước, tôi nghe được nửa vời, đành dùng tiếng phổ thông: «Cậu nói lại một lần được không?» Vòng đối thoại nhỏ ấy không dài, nhưng tôi bỗng hiểu: ngôn ngữ không để so ai nói chuẩn hơn, mà để đưa một bát canh, một câu quan tâm đến trước mặt đối phương. Sau cậu cũng dần dùng tiếng phổ thông kể cho tôi về chim trên cây. Canh đã nguội, lời vẫn còn ấm.
+~ The day I went back to my hometown, my uncle and I sat under an old tree and drank soup. He first spoke to me in the home dialect; I only half understood, and had to say in Putonghua, "Would you say that again?" That little exchange of dialogue was not long, but I suddenly understood: language is not for comparing who speaks more correctly, but for placing a bowl of soup and a sentence of care in front of the other person. Later he also slowly used Putonghua to tell me about the birds in the tree. The soup had already gone cold, but the words were still warm.
+# 5 短文：出发前把小吃也收拾进包里 | Đoạn văn: Trước lúc xuất phát hãy xếp cả món vặt vào túi | Passage: Before setting out, pack the snacks into the bag too
+@ 出发，收拾，小吃，辣，酸，香
+每次出发前，我都要先收拾房间，再收拾包。衣服可以少带一件，小吃却常被我放进去：一包微辣的豆，一盒微酸的果干，还有家里烤的、很香的小饼。路上不一定每顿都能遇到合口的饭，可这些熟悉的味道会让人觉得，自己并没有走得太远。辣的让人清醒，酸的让人口里有回味，香的则像一封短短的家信。把它们收好，再关上门，路就没有那么硬了。
+= Mỗi lần trước lúc xuất phát, tôi phải xếp phòng trước, rồi mới xếp túi. Áo có thể bớt một món, nhưng đồ ăn vặt tôi thường bỏ vào: một gói đậu hơi cay, một hộp quả khô hơi chua, và bánh nhỏ nhà nướng, rất thơm. Dọc đường chưa chắc bữa nào cũng gặp cơm hợp miệng, nhưng những vị quen ấy khiến người ta thấy mình chưa đi quá xa. Cay làm người tỉnh, chua để lại dư vị trong miệng, thơm thì như một lá thư nhà ngắn. Thu chúng cho xong, rồi đóng cửa, đường không cứng đến thế nữa.
+~ Every time, before I set out, I first tidy the room, then pack the bag. I can take one fewer item of clothing, but I often put snacks in: a packet of slightly spicy beans, a box of slightly sour dried fruit, and some very fragrant little cakes baked at home. On the road you may not find a meal that suits you at every sitting, but these familiar flavours make you feel you have not gone too far. The spicy ones wake you up, the sour ones leave a taste in the mouth, and the fragrant ones are like a short letter from home. Once they are packed away and the door is shut, the road is not quite so hard.

@@ -694,31 +694,31 @@ const TRAW = `1|1|对话：阿玲和小雪聊阿玲的男朋友|阿玲跟周南�
 15|3|对话：诊所里的一次小小表扬|护士是怎样让妹妹不怕打针的？小雪认为表扬时千万要注意什么？|Hội thoại: Một lời khen nhỏ trong phòng khám|Cô y tá làm thế nào để bé không sợ tiêm? Tiểu Tuyết cho rằng lúc khen nhất định phải chú ý điều gì?
 15|4|短文：敲门进来之前|有的孩子把房间弄乱，一定是故意的吗？作者建议大人怎么做？|Đoạn văn: Trước khi gõ cửa bước vào|Trẻ làm loạn phòng, có nhất định là cố ý không? Tác giả khuyên người lớn nên làm gì?
 15|5|短文：教室左右两边的两种孩子|粗心或害羞的孩子该怎样理解？怎样才能让他们安静地学下去？|Đoạn văn: Hai kiểu trẻ ở hai bên lớp|Nên hiểu trẻ sơ ý hoặc nhút nhát thế nào? Làm sao để các em học yên được?
-16|1|小夏出国留学遇到了问题|如果想出国留学可能需要准备哪些材料？|Tiểu Hạ gặp vấn đề khi đi du học|Nếu muốn đi du học, có thể cần chuẩn bị những giấy tờ gì?
-16|2|王老板告诉李进自己成功的经验|王老板怎么介绍自己的成功经验的？|Ông chủ Vương kể cho Lý Tiến kinh nghiệm thành công của mình|Ông chủ Vương giới thiệu kinh nghiệm thành công của mình như thế nào?
-16|3|小林不好意思拒绝朋友|小李和小林两个人对“拒绝别人”有哪些不同的理解？|Tiểu Lâm ngại từ chối bạn bè|Tiểu Lý và Tiểu Lâm hiểu về việc “từ chối người khác” khác nhau thế nào?
-16|4|短文|对于“有什么事情明天再说”这句话，你认为正确吗？为什么？|Đoạn văn|Bạn có cho rằng câu “Có việc gì để mai hãy nói” là đúng không? Vì sao?
-16|5|短文|怎么理解“天外有天，人外有人”这句话？|Đoạn văn|Hiểu câu “Núi cao còn có núi cao hơn, người giỏi còn có người giỏi hơn” như thế nào?
-17|1|小夏和安娜在聊天气|现在是什么季节？天气怎么样？|Tiểu Hạ và Anna nói chuyện về thời tiết|Bây giờ là mùa gì? Thời tiết thế nào?
-17|2|小林和小李在聊小李的狗|小林为什么喜欢小李的狗？他为什么也想养狗？|Tiểu Lâm và Tiểu Lý nói chuyện về con chó của Tiểu Lý|Vì sao Tiểu Lâm thích con chó của Tiểu Lý? Vì sao anh ấy cũng muốn nuôi chó?
-17|3|马克和小夏在聊动物|马克什么时候去的北京动物园？他去那儿做什么了？|Mark và Tiểu Hạ nói chuyện về động vật|Mark đi sở thú Bắc Kinh khi nào? Anh ấy đến đó làm gì?
-17|4|短文|植物之间会竞争吗？它们会为了什么而竞争？|Đoạn văn|Giữa các loài thực vật có cạnh tranh không? Chúng cạnh tranh vì điều gì?
-17|5|短文|海洋在地球上占多大比例？海底世界里有什么？|Đoạn văn|Đại dương chiếm tỷ lệ bao nhiêu trên Trái Đất? Thế giới dưới đáy biển có gì?
-18|1|王静给孙月推荐一本书|王静给孙月推荐了一本什么书？为什么给她推荐这本书？|Vương Tĩnh giới thiệu cho Tôn Nguyệt một cuốn sách|Vương Tĩnh giới thiệu cho Tôn Nguyệt cuốn sách gì? Vì sao giới thiệu cuốn sách này cho cô ấy?
-18|2|李老师和高老师在聊电脑和互联网技术的发展|现在的大学生遇到不明白的问题怎么办？|Giáo viên Lý và giáo viên Cao nói chuyện về sự phát triển của máy tính và công nghệ Internet|Sinh viên bây giờ gặp vấn đề không hiểu thì làm thế nào?
-18|3|王静和孙月在聊关于梦的情况|人们对梦进行过哪些解释？目前的研究结果是什么？|Vương Tĩnh và Tôn Nguyệt nói chuyện về giấc mơ|Con người từng giải thích giấc mơ như thế nào? Kết quả nghiên cứu hiện nay là gì?
-18|4|短文|为什么说现代人的生活越来越离不开手机了？|Đoạn văn|Vì sao nói cuộc sống của người hiện đại ngày càng không thể thiếu điện thoại di động?
-18|5|短文|为什么人们把地球叫作“地球村”？|Đoạn văn|Vì sao người ta gọi Trái Đất là “ngôi làng toàn cầu”?
-19|1|马克申请下个学期继续在学校学习|填写申请表格时，应该提供哪些方面的信息？|Mark xin tiếp tục học ở trường vào học kỳ sau|Khi điền đơn xin, cần cung cấp những thông tin gì?
-19|2|课文2|今天他们能吃到羊肉饺子吗？如果吃不到，他们会怎么办？|Bài khóa 2 (chưa trích xuất được tiêu đề)|Hôm nay họ có ăn được sủi cảo nhân thịt cừu không? Nếu không ăn được, họ sẽ làm thế nào?
-19|3|安娜帮助马克练习舞蹈动作|马克的那个动作做得正确吗？那个动作应该怎么做？|Anna giúp Mark tập động tác múa|Mark làm động tác đó có đúng không? Động tác đó nên làm thế nào?
-19|4|短文|马克现在租的房子和广告上的房子各有哪些特点？马克为什么一直没联系上房东？|Đoạn văn|Căn nhà Mark đang thuê và căn nhà trên quảng cáo mỗi cái có đặc điểm gì? Vì sao Mark mãi không liên lạc được với chủ nhà?
-19|5|短文|“乒乓球”这个名字是怎么来的？|Đoạn văn|Cái tên “乒乓球” (bóng bàn) ra đời như thế nào?
-20|1|小张去北京，朋友送小张去机场||Tiểu Trương đi Bắc Kinh, bạn bè tiễn Tiểu Trương ra sân bay|
-20|2|孙月和丈夫计划放寒假带女儿去旅行|孙月和丈夫为什么想带女儿去旅行？他们准备去哪儿旅行？|Tôn Nguyệt và chồng dự định đưa con gái đi du lịch vào kỳ nghỉ đông|Vì sao Tôn Nguyệt và chồng muốn đưa con gái đi du lịch? Họ định đi du lịch ở đâu?
-20|3|安娜向马克介绍去丽江旅行的经验|安娜这次去丽江找的那个导游怎么样？为什么丽江值得去旅游？|Anna kể cho Mark kinh nghiệm du lịch Lệ Giang|Hướng dẫn viên Anna tìm khi đi Lệ Giang lần này thế nào? Vì sao Lệ Giang đáng để đi du lịch?
-20|4|短文|一个北方人跟上海人对话时，可能会遇到什么问题？|Đoạn văn|Khi một người miền Bắc nói chuyện với người Thượng Hải, có thể gặp vấn đề gì?
-20|5|短文|对“我”来说，旅行有哪些好处？旅行中什么东西给“我”的印象最深？|Đoạn văn|Đối với “tôi”, du lịch có những lợi ích gì? Trong chuyến đi, điều gì để lại cho “tôi” ấn tượng sâu sắc nhất?`;
+16|1|对话：林安办签证把表格填错了|林安的表格出了什么问题？老师建议他怎么补救？|Hội thoại: Lâm An điền nhầm đơn xin visa|Đơn của Lâm An có vấn đề gì? Thầy gợi ý cậu ấy khắc phục thế nào?
+16|2|对话：一个小伙子被记者采访|那个小伙子开了什么店？他第一次见到记者时怎么样？|Hội thoại: Một chàng trai được phóng viên phỏng vấn|Chàng trai ấy mở tiệm gì? Lần đầu gặp phóng viên, cậu ấy thế nào?
+16|3|对话：周南不好意思拒绝做导游|同学为什么想让周南当导游？阿玲和小雪建议他怎么拒绝？|Hội thoại: Châu Nam ngại từ chối làm hướng dẫn|Vì sao bạn muốn Châu Nam làm hướng dẫn? A Linh và Tiểu Tuyết khuyên anh ấy từ chối thế nào?
+16|4|短文：把今天的事先做完|作者以前是怎么把事情推到明天的？老师的哪句话改变了他？|Đoạn văn: Hãy làm xong việc của hôm nay đã|Trước kia tác giả đẩy việc sang ngày mai thế nào? Câu nào của cô giáo đã làm cậu ấy thay đổi?
+16|5|短文：输了，也要冷静|作者认为输了以后真正该重视的是什么？为什么还要尊重自己？|Đoạn văn: Thua rồi, cũng phải bình tĩnh|Tác giả cho rằng sau khi thua, điều thật sự cần coi trọng là gì? Vì sao vẫn phải tôn trọng chính mình?
+17|1|对话：雨后的傍晚倒凉快了|广播里说今晚天气会怎样？他们为什么想去河边？|Hội thoại: Chiều sau mưa hóa ra lại mát|Bản tin nói tối nay thời tiết sẽ thế nào? Vì sao họ muốn ra bờ sông?
+17|2|对话：隔壁的小狗把毛弄湿了|小狗为什么难受？吴姐是怎么照顾它的？|Hội thoại: Cún nhà bên làm ướt lông|Vì sao cún khó chịu? Chị Ngô chăm nó thế nào?
+17|3|对话：放暑假去看老虎|阿玲为什么还想再去一趟野生园？他们打算怎么少排队？|Hội thoại: Nghỉ hè đi xem hổ|Vì sao A Linh vẫn muốn đi thêm một chuyến vườn hoang dã? Họ định làm sao để xếp hàng ít hơn?
+17|4|短文：森林里剩下的那一点儿空地|春天暖和以后，森林里会发生什么？作者认为竞争里还应该记得什么？|Đoạn văn: Chút đất trống còn lại trong rừng|Mùa xuân ấm lên, trong rừng xảy ra điều gì? Tác giả cho rằng trong cạnh tranh còn nên nhớ điều gì?
+17|5|短文：船还在海的底下走|作者在船上想起了什么梦？海洋给他留下了什么感觉？|Đoạn văn: Thuyền vẫn đi dưới mặt biển|Trên thuyền, tác giả nhớ giấc mơ gì? Đại dương để lại cho tác giả cảm giác gì?
+18|1|对话：阿玲推荐一本很火的书|这本书写的是什么？为什么阿玲觉得值得看？|Hội thoại: A Linh giới thiệu một cuốn sách đang rất hot|Cuốn sách viết về gì? Vì sao A Linh thấy đáng xem?
+18|2|对话：密码太多，陈晓有点儿受不了|陈晓为什么受不了？日记里可不可以写密码？|Hội thoại: Mật khẩu quá nhiều, Trần Hiểu hơi chịu hết nổi|Vì sao Trần Hiểu chịu hết nổi? Trong nhật ký có được viết mật khẩu không?
+18|3|对话：小雪做了一个奇怪的梦|小雪的梦里出现了哪些人和东西？矿泉水是什么味道？|Hội thoại: Tiểu Tuyết nằm một giấc mơ kỳ lạ|Trong mơ của Tiểu Tuyết xuất hiện những ai và những gì? Nước khoáng có vị thế nào?
+18|4|短文：迷路的时候把手机举起来|作者第一次到这座城时遇到了什么事？他后来是怎么找到小店的？|Đoạn văn: Lúc lạc đường hãy giơ điện thoại lên|Lần đầu đến thành phố này, tác giả gặp chuyện gì? Sau đó cậu ấy tìm ra tiệm nhỏ thế nào?
+18|5|短文：一封还在路上的信|外婆为什么仍然喜欢去邮局？作者觉得快的信息和慢的信各告诉他什么？|Đoạn văn: Một bức thư vẫn còn trên đường|Vì sao bà ngoại vẫn thích đến bưu điện? Tác giả thấy tin nhanh và thư chậm mỗi thứ cho cậu ấy biết điều gì?
+19|1|对话：林安补交学期申请|林安的申请表哪里写错了？他做了哪些补救？|Hội thoại: Lâm An nộp bổ sung đơn học kỳ|Đơn xin của Lâm An viết sai chỗ nào? Cậu ấy đã khắc phục những gì?
+19|2|对话：包饺子时刀把皮划破了|阿玲的手是怎么破的？后来饺子和包子做得怎么样？|Hội thoại: Lúc gói sủi cảo, dao rách da|Tay A Linh bị rách thế nào? Sau đó sủi cảo và bánh bao làm ra sao?
+19|3|对话：国际交流课上练习转身|老师让他们先做什么，再怎么转？周南戴着眼镜有没有掉？|Hội thoại: Giờ giao lưu quốc tế tập xoay người|Cô giáo bảo họ làm gì trước, rồi xoay thế nào? Châu Nam đeo kính có bị rơi không?
+19|4|短文：电话占线的那天下午|作者为什么一直打不通房东的电话？后来他明白了什么？|Đoạn văn: Buổi chiều điện thoại bị chiếm mạch|Vì sao tác giả mãi không gọi được cho chủ nhà? Sau này cậu ấy hiểu ra điều gì?
+19|5|短文：球场边那条不能踩的线|这场活动有哪些规矩？作者从白线里看出了什么？|Đoạn văn: Đường kẻ bên sân không được giẫm|Hoạt động ấy có những quy củ nào? Từ đường trắng, tác giả nhìn ra điều gì?
+20|1|对话：送周南去机场，航班却推迟了|他们在路上遇到了什么？航班推迟后，周南怎么看？|Hội thoại: Tiễn Châu Nam ra sân bay, chuyến bay lại hoãn|Họ gặp chuyện gì trên đường? Chuyến bay hoãn, Châu Nam nghĩ thế nào?
+20|2|对话：祝贺一次合格的小旅行|他们的旅行为什么说很合格？陈晓给妹妹买了什么？|Hội thoại: Chúc mừng một chuyến đi nhỏ đạt yêu cầu|Vì sao nói chuyến đi của họ rất đạt? Trần Hiểu mua gì cho em gái?
+20|3|对话：钥匙存前台的那晚|他们在民族村里做了什么？钥匙到底有没有丢？|Hội thoại: Đêm để chìa khóa ở quầy lễ tân|Họ làm gì trong thôn dân tộc? Rốt cuộc chìa khóa có bị mất không?
+20|4|短文：树下那碗汤，和一句普通话|作者和舅舅是怎么开始对话的？他后来明白语言是为了什么？|Đoạn văn: Bát canh dưới gốc cây, và một câu tiếng phổ thông|Tác giả và cậu bắt đầu đối thoại thế nào? Sau này cậu ấy hiểu ngôn ngữ để làm gì?
+20|5|短文：出发前把小吃也收拾进包里|作者出发前会收拾些什么小吃？这些味道对他说有什么意义？|Đoạn văn: Trước lúc xuất phát hãy xếp cả món vặt vào túi|Trước lúc xuất phát, tác giả xếp những món vặt nào? Những vị ấy với cậu ấy có ý nghĩa gì?`;
 
 const GRAW = `1|不仅……也/还/而且……|他不仅足球踢得好，性格也不错。|“không những… mà còn…”: vế sau bổ sung thêm một ý cùng chiều, thường mạnh hơn vế trước.|Anh ấy không những đá bóng giỏi mà tính cách cũng rất tốt.
 1|从来|虽然我们认识的时间不长，但我从来没这么快乐过。|“từ trước đến nay”: nhấn mạnh một tình trạng chưa bao giờ thay đổi; thường đi với dạng phủ định 从来没(有)…过 / 从来不….|Tuy chúng tôi quen nhau chưa lâu, nhưng tôi chưa bao giờ hạnh phúc như thế này.
