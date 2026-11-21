@@ -1,7 +1,7 @@
 // Minimal standalone re-implementation of the page kit used by the HSK 4 pages.
-import React, { createContext, useContext, useEffect, useState, useMemo, useRef, useCallback, useReducer, Fragment } from "react";
+import React, { createContext, useContext, useEffect, useLayoutEffect, useState, useMemo, useRef, useCallback, useReducer, Fragment } from "react";
 import type { ReactNode, CSSProperties } from "react";
-export { useState, useMemo, useEffect, useRef, useCallback, useReducer, Fragment };
+export { useState, useMemo, useEffect, useLayoutEffect, useRef, useCallback, useReducer, Fragment };
 export type { ReactNode, CSSProperties };
 
 type TS = { fontSize: string; lineHeight: string; letterSpacing: string };
