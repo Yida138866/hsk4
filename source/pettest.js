@@ -1,5 +1,9 @@
 const puppeteer = require("puppeteer-core");
+const fs = require("fs");
 const base = process.argv[2]; const shot = process.argv[3] || "";
+const petSrc = fs.readFileSync(__dirname + "/pet_src/lines.txt", "utf8").trim().split("\n").filter(Boolean);
+const petAu = (k) => petSrc.map((l, i) => [l.split("|")[0], i]).filter((x) => x[0] === k).map((x) => x[1]);
+const RIGHT_AU = new RegExp("audio/pet/(" + petAu("right").join("|") + ")\\.mp3");
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const ds = (off = 0) => { const d = new Date(); d.setDate(d.getDate() + off); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
 const ALL = ["bow", "glasses", "beret", "crown", "scarf", "hoodie", "dress", "aodai", "sakura", "beach", "night", "plant", "lamp", "desk"];
@@ -82,7 +86,7 @@ const ALL = ["bow", "glasses", "beret", "crown", "scarf", "hoodie", "dress", "ao
     for (let i = 0; i < 5; i++) {
       const st2 = await get(); const d = st2.pq.items[i]; const want = i === 4 ? d.perm.findIndex((x) => x !== 0) : d.perm.indexOf(0);
       const n1 = reqs.length; await page.evaluate((k) => document.querySelectorAll(".pq-opts button")[k].click(), want); await sleep(700);
-      if (i === 0) ok(tag + " answer feedback audio", reqs.slice(n1).some((r) => /audio\/pet\/(19|20)\.mp3/.test(r)), reqs.slice(n1).join(","));
+      if (i === 0) ok(tag + " answer feedback audio", reqs.slice(n1).some((r) => RIGHT_AU.test(r)), reqs.slice(n1).join(","));
     }
     await page.click(".pq-finish"); await sleep(600); st = await get();
     ok(tag + " pet quiz 4/5 reward (+16XP +4⭐)", st.xp === 16 && st.stars === 4 && st.pq.done, `xp=${st.xp} s=${st.stars}`);

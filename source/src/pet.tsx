@@ -366,7 +366,7 @@ export function ctxLines(s: St): { l: Line; w: number }[] {
   const out: { l: Line; w: number }[] = []; const push = (l: Line | null, w: number) => { if (l) out.push({ l, w }); };
   if (stageOf(s) === 0) { push(fixedLine("egg"), 3); const e0 = evNow(); if (e0) push(fixedLine(e0.line), 2); return out; }
   const e = evNow(); if (e) push(fixedLine(e.line), 3);
-  if (moodOf(s) === "miss") push(fixedLine("back"), 6);
+  if (moodOf(s) === "miss") { push(fixedLine("miss"), 5); push(fixedLine("back"), 3); }
   const h = new Date().getHours(); push(fixedLine(h >= 5 && h < 10 ? "morning" : h >= 10 && h < 13 ? "noon" : h >= 13 && h < 17 ? "afternoon" : h >= 17 && h < 22 ? "evening" : "night"), 2);
   if (s.lastPass && dayDiff(s.lastPass.day, today()) <= 2) push(fixedLine("pass" + s.lastPass.l), 4);
   const wk = weakLesson(s); if (wk) push(fixedLine((wk.g ? "weakg" : "weakw") + wk.l), 3);
@@ -374,7 +374,7 @@ export function ctxLines(s: St): { l: Line; w: number }[] {
   if (n) { push({ zh: `错题本里有${n}个小单词在等你，不着急哦～`, vi: `Sổ lỗi có ${n} từ nhỏ đang đợi cậu, không vội đâu～`, en: `${n} little words are waiting in the mistake book, no rush～`, tts: true }, 2); push(fixedLine("rescue"), 1); }
   const cs = ciCur(s); if (cs >= 2) { push({ zh: `我们已经连续打卡${cs}天啦！`, vi: `Chúng mình đã điểm danh ${cs} ngày liền rồi!`, en: `We've checked in ${cs} days in a row!`, tts: true }, 2); push(fixedLine("streak"), 1); }
   const w = learnedWord(s); if (w) push({ zh: `你还记得「${w.h}」是什么意思吗？`, vi: `Cậu còn nhớ «${w.h}» nghĩa là gì không? → ${w.m}`, en: `Do you remember what «${w.h}» means? → ${w.m}`, tts: true }, 2);
-  push(fixedLine("cheer"), 1); push(fixedLine("hi"), 1);
+  push(fixedLine("cheer"), 1); push(fixedLine("hi"), 1); push(fixedLine("chat"), 3);
   return out;
 }
 export function pickLine(s: St, avoid?: string): Line | null {

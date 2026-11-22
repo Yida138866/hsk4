@@ -104,3 +104,172 @@ weakg17|第17课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp b�
 weakg18|第18课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 18 nhé～|Let's review the grammar of lesson 18 together～
 weakg19|第19课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 19 nhé～|Let's review the grammar of lesson 19 together～
 weakg20|第20课的语法我们一起复习吧～|Mình cùng ôn ngữ pháp bài 20 nhé～|Let's review the grammar of lesson 20 together～
+hi|你来啦！我刚才还在想你呢！|Cậu đến rồi! Mình vừa còn đang nghĩ tới cậu đó!|You're here! I was just thinking of you!
+hi|看见你，我的心情一下子就好了！|Nhìn thấy cậu, lòng mình vui lên liền!|Seeing you instantly makes me happy!
+hi|嗨！今天想先学什么呀？|Hi! Hôm nay muốn học gì trước nào?|Hi! What shall we study first today?
+hi|来来来，我给你留了一个好位置！|Lại đây, mình giữ sẵn một chỗ xinh cho cậu!|Come here — I saved a nice spot for you!
+hi|又见面啦，好像好久又好像没有。|Lại gặp nhau rồi, như lâu mà cũng như mới đó.|We meet again — it feels like both long and no time at all.
+hi|你好呀，我的好朋友！|Chào cậu, người bạn thân của mình!|Hello there, my good friend!
+hi|点点我，我们就开始聊天吧！|Chạm mình cái, mình bắt đầu trò chuyện nhé!|Tap me and let's start chatting!
+hi|等你一起学习，我都不想睡觉了！|Đợi cậu học cùng, mình còn chẳng muốn ngủ nữa!|I was waiting to study with you — I almost couldn't sleep!
+cheer|别着急，你会越来越棒的！|Đừng vội, cậu sẽ ngày càng giỏi thôi!|No rush — you'll get better and better!
+cheer|做到这里已经很了不起了！|Làm đến đây đã giỏi lắm rồi!|Getting this far is already wonderful!
+cheer|我相信你，就像你相信我一样。|Mình tin cậu, cũng như cậu tin mình.|I believe in you, just as you believe in me.
+cheer|休息好了，我们再一起加油！|Nghỉ xong, mình cùng cố lên tiếp nhé!|After a rest, let's keep going together!
+morning|早安！太阳出来了，我们开始吧！|Chào buổi sáng! Trời đã lên, mình bắt đầu nhé!|Good morning! The sun is up — let's begin!
+morning|早上空气真好，心情也不错！|Sáng nay không khí dễ chịu, lòng cũng vui!|The morning air is so nice, and so is my mood!
+morning|起床啦？先喝口水，再来学习。|Dậy rồi à? Uống ngụm nước đã, rồi mình học.|Up already? Have a sip of water, then we'll study.
+morning|早上好！做个小小的计划吧！|Chào buổi sáng! Lập một kế hoạch nhỏ nhé!|Good morning! Let's make a little plan!
+morning|清晨见你，一天都会很甜。|Sáng sớm gặp cậu, cả ngày đều ngọt ngào.|Seeing you in the early morning makes the whole day sweet.
+morning|早饭要吃好，才有力气学习哦。|Ăn sáng cho ngon, mới có sức học đó.|Eat a good breakfast so you have energy to study.
+morning|早上好呀，今天也要开开心心的！|Chào buổi sáng nhé, hôm nay cũng phải vui vui đó!|Good morning! Let's have a happy day too!
+morning|早啊！我已经等你很久啦！|Sáng rồi! Mình đợi cậu khá lâu đó!|Morning! I've been waiting for you!
+noon|中午好！吃饱了再学，记得慢慢吃。|Buổi trưa vui vẻ! Ăn no rồi hãy học, nhớ ăn chậm nhé.|Good noon! Eat first, and eat slowly.
+noon|太阳这么大，中午要休息一会儿。|Nắng to quá, trưa nhớ nghỉ một lúc nhé.|The sun is so strong — rest a little at noon.
+noon|午饭想吃什么？我好像想吃面条！|Trưa muốn ăn gì? Mình hình như thèm mì!|What do you want for lunch? I'm craving noodles!
+noon|中午啦，站起来走一走吧！|Trưa rồi, đứng dậy đi lại một chút nhé!|It's noon — stand up and walk around a bit!
+noon|午安！喝口水，我们继续加油。|Buổi trưa vui! Uống ngụm nước, mình tiếp tục cố lên.|Good afternoon! Have some water, then we'll keep going.
+noon|午饭后有点儿困？闭眼休息五分钟。|Ăn trưa xong hơi buồn ngủ? Nhắm mắt nghỉ năm phút nhé.|Sleepy after lunch? Close your eyes for five minutes.
+noon|中午见，今天过得怎么样？|Gặp cậu buổi trưa, hôm nay thế nào rồi?|See you at noon — how's your day going?
+noon|吃饭了吗？不要空着肚子学习哦。|Ăn cơm chưa? Đừng học khi bụng đang đói nhé.|Have you eaten? Don't study on an empty stomach.
+noon|中午好呀！我在这儿陪你。|Buổi trưa vui nhé! Mình ở đây bên cậu.|Good noon! I'm here with you.
+afternoon|下午好！要不要喝杯茶再学？|Chào buổi chiều! Uống chén trà rồi học nhé?|Good afternoon! How about some tea before we study?
+afternoon|下午的阳光暖暖的，真舒服。|Nắng chiều ấm ấm, dễ chịu quá.|The afternoon sun is warm and so comfortable.
+afternoon|下午好呀，我们慢慢学就好。|Chào buổi chiều nhé, mình cứ học từ từ thôi.|Good afternoon! We can just take it slow.
+afternoon|写完作业了吗？我陪你一起看。|Làm xong bài tập chưa? Mình xem cùng cậu.|Finished your homework? I'll look at it with you.
+afternoon|下午容易困，起来伸个懒腰吧！|Chiều dễ buồn ngủ, đứng dậy vươn vai nào!|Afternoons get sleepy — stand up and stretch!
+afternoon|下午好！来学两个新词好不好？|Chào buổi chiều! Học thêm hai từ mới nha?|Good afternoon! Shall we learn two new words?
+afternoon|外面热不热？记得多喝水哦。|Bên ngoài có nóng không? Nhớ uống nhiều nước nhé.|Is it hot outside? Remember to drink some water.
+afternoon|下午啦，再坚持一会儿就完成了！|Chiều rồi, cố thêm một lúc là xong đó!|It's afternoon — a little more and you'll be done!
+afternoon|午后见你，我觉得特别安心。|Buổi chiều gặp cậu, mình thấy thật yên tâm.|Seeing you in the afternoon makes me feel so calm.
+evening|晚上好！今天你已经很努力了。|Chào buổi tối! Hôm nay cậu đã rất chăm rồi.|Good evening! You already worked so hard today.
+evening|傍晚了，看看窗外的天空吧。|Chiều tối rồi, nhìn bầu trời ngoài cửa sổ nhé.|It's dusk — look at the sky outside the window.
+evening|晚饭吃了吗？吃完我们再聊一会儿。|Ăn tối chưa? Ăn xong mình trò chuyện thêm một lúc.|Had dinner? After that we can chat a little more.
+evening|晚上好呀，一天快过去了。|Chào buổi tối nhé, một ngày sắp hết rồi.|Good evening! The day is almost over.
+evening|晚上的风轻轻的，真舒服。|Gió tối nhẹ nhẹ, dễ chịu thật.|The evening breeze is soft and so nice.
+evening|今天学到这儿，已经很棒了！|Hôm nay học đến đây là giỏi lắm rồi!|Stopping here today is already great!
+evening|晚上好！要不要一起复习一下？|Chào buổi tối! Mình cùng ôn một chút nhé?|Good evening! Shall we review a little together?
+evening|太阳下山了，我们也轻轻收尾吧。|Mặt trời đã lặn, mình cũng nhẹ nhàng kết thúc nhé.|The sun has set — let's wrap up gently too.
+evening|晚上好，我一直在等你回来。|Chào buổi tối, mình vẫn đợi cậu quay lại.|Good evening. I've been waiting for you to come back.
+night|夜深了，明天再学也没关系。|Khuya rồi, mai học tiếp cũng không sao.|It's late — studying tomorrow is perfectly fine.
+night|该睡觉啦，我陪你到梦里去。|Đến giờ ngủ rồi, mình theo cậu vào giấc mơ.|Time to sleep — I'll come with you into your dreams.
+night|这么晚还在看手机？早点休息呀！|Khuya thế còn xem điện thoại? Nghỉ sớm đi!|Still on your phone so late? Go rest a bit earlier!
+night|晚安！做个甜甜的好梦。|Ngủ ngon! Mơ một giấc thật ngọt nhé.|Good night! Have a sweet dream.
+night|夜里安静，正好说句心里话。|Đêm yên tĩnh, vừa lúc nói một câu trong lòng.|The night is quiet — a good time for a heart-to-heart.
+night|明天还要早起吗？现在就去睡吧。|Mai còn dậy sớm không? Bây giờ đi ngủ đi.|Do you have to get up early? Go to sleep now.
+night|夜深了，把书放下，休息吧。|Khuya rồi, đặt sách xuống và nghỉ ngơi nhé.|It's late. Put the book down and rest.
+night|别睡得太晚哦，明天还要见面。|Đừng ngủ quá khuya nhé, mai còn gặp nhau.|Don't stay up too late — we'll meet again tomorrow.
+night|晚安呀，明天见，想你！|Ngủ ngon nhé, mai gặp, nhớ cậu!|Good night, see you tomorrow. I'll miss you!
+egg|轻轻碰一碰，我很快就出来啦！|Khẽ chạm một cái, mình sẽ ra ngay đó!|Give me a little tap — I'll come out soon!
+egg|里面好暖，我再睡一小会儿……|Bên trong ấm quá, mình ngủ thêm một chút……|It's so warm inside. Just a little more sleep…
+egg|你在外面吗？我好像听见你了！|Cậu ở ngoài đó à? Mình hình như nghe thấy cậu!|Are you outside? I think I heard you!
+egg|再学一点儿，我就会长大哦。|Học thêm một chút, mình sẽ lớn đó.|Study a little more and I'll grow!
+egg|这颗蛋在偷偷笑，你看见了吗？|Quả trứng này đang cười thầm, cậu có thấy không?|This egg is smiling secretly — did you see?
+egg|快了快了，我已经准备好了！|Sắp rồi sắp rồi, mình đã sẵn sàng!|Almost, almost — I'm ready!
+egg|等我出来，我们就是好朋友啦！|Đợi mình ra, chúng mình sẽ là bạn thân đó!|When I come out, we'll be good friends!
+egg|蛋壳里的世界，也在想你呢。|Thế giới trong vỏ trứng cũng đang nhớ cậu đó.|The world inside the shell is thinking of you too.
+egg|别着急，好事情都要慢慢来。|Đừng vội, chuyện vui đều phải từ từ mà đến.|No rush. Good things come slowly.
+level|我又长大了一点，全是因为你！|Mình lại lớn thêm một chút, tất cả là nhờ cậu!|I grew a little more — all because of you!
+level|谢谢你一直陪着我，真幸福！|Cảm ơn cậu vẫn bên mình, hạnh phúc quá!|Thank you for always staying with me. I'm so happy!
+level|看！我是不是比昨天更可爱了？|Nhìn này! Mình có dễ thương hơn hôm qua không?|Look! Am I even cuter than yesterday?
+level|升级啦！我们一起庆祝一下吧！|Lên cấp rồi! Mình cùng ăn mừng một chút nhé!|I leveled up! Let's celebrate together!
+level|有你在，我才长得这么快！|Có cậu ở đây, mình mới lớn nhanh thế!|I grow so fast only because you're here!
+level|哇，新样子！喜欢吗？|Oa, diện mạo mới! Cậu thích không?|Wow, a new look! Do you like it?
+level|每一步长大，都是因为有你！|Mỗi bước lớn lên, đều là vì có cậu!|Every step of growing up is because of you!
+level|我变厉害了，你也一样哦！|Mình giỏi hơn rồi, cậu cũng vậy đó!|I've gotten stronger, and so have you!
+level|谢谢你没有放弃我！|Cảm ơn cậu đã không bỏ rơi mình!|Thank you for not giving up on me!
+checkin|打卡啦！今天也是认真的一天！|Điểm danh rồi! Hôm nay lại là một ngày chăm chỉ!|Checked in! Another earnest day!
+checkin|你来了，我的一天就开始了！|Cậu đến rồi, một ngày của mình mới bắt đầu!|You're here — now my day can begin!
+checkin|打卡成功，给你一个大大的赞！|Điểm danh thành công, tặng cậu một lời khen lớn!|Check-in done — a big like for you!
+checkin|又见面了，继续保持哦！|Lại gặp nhau, cứ giữ vững nhé!|We meet again. Keep it up!
+checkin|今天也来啦，我好骄傲！|Hôm nay cũng đến, mình tự hào quá!|You came today too. I'm so proud!
+checkin|轻轻一点，我们就又在一起了。|Khẽ một cái chạm, chúng mình lại bên nhau.|One little tap and we're together again.
+checkin|打卡完成！晚上记得早点休息。|Điểm danh xong! Tối nhớ nghỉ sớm nhé.|Check-in complete! Remember to rest early tonight.
+checkin|天天打卡的你，真的很了不起！|Ngày nào cũng điểm danh, cậu giỏi thật sự!|Checking in every day — you're really amazing!
+fed|嗯嗯，这个味道我最喜欢！|Ừmm, vị này mình thích nhất!|Mmm, this is my favorite flavor!
+fed|再来一口嘛，好好吃呀！|Thêm một miếng nữa đi, ngon quá!|One more bite, please — it's so tasty!
+fed|吃完啦，我感觉全身都是力气！|Ăn xong rồi, mình thấy đầy sức lực!|All done! I feel full of energy!
+fed|谢谢请客！你真好！|Cảm ơn đã đãi mình! Cậu tốt quá!|Thanks for the treat! You're so kind!
+fed|甜甜的，像你一样！|Ngọt ngọt, cũng như cậu vậy!|Sweet, just like you!
+fed|我吃得好幸福，嘴角都在笑！|Mình ăn hạnh phúc quá, khóe miệng toàn cười!|I'm so happy eating this, I'm smiling ear to ear!
+fed|好吃到想唱歌！再来一点儿？|Ngon đến muốn hát! Ăn thêm một chút nha?|So good I want to sing! A little more?
+fed|吃得真开心，谢谢你呀！|Ăn vui quá, cảm ơn cậu nhé!|That was such a happy meal. Thank you!
+right|对啦对啦！我为你鼓掌！|Đúng rồi đúng rồi! Mình vỗ tay cho cậu!|Yes, yes! I'm clapping for you!
+right|答得真好，你太厉害了！|Trả lời hay quá, cậu giỏi lắm!|Such a good answer. You're amazing!
+right|完全正确！我都为你高兴！|Hoàn toàn đúng! Mình vui vì cậu quá!|Exactly right! I'm so happy for you!
+right|就是这个！你记得真牢！|Đúng cái này! Cậu nhớ chắc thật!|That's the one! You remember it so well!
+right|哇，又对了！继续加油！|Oa, lại đúng nữa! Cố lên tiếp nhé!|Wow, right again! Keep it up!
+right|聪明的小脑袋，我喜欢！|Chiếc đầu nhỏ thông minh, mình thích lắm!|What a clever little head. I love it!
+right|没错！这一点你学得真好！|Đúng vậy! Điểm này cậu học chắc lắm!|That's it! You've learned this so well!
+right|答对啦，给你一颗小星星！|Trả lời đúng rồi, tặng cậu một ngôi sao nhỏ!|Correct! Here's a little star for you!
+wrong|错了也没关系，我们再试一次！|Sai cũng không sao, mình thử lại lần nữa!|It's okay to miss it. Let's try once more!
+wrong|别灰心，这个词其实有点儿难。|Đừng nản, từ này thật ra hơi khó đó.|Don't be down — this word is a bit hard.
+wrong|我还是一样喜欢你，我们慢慢记。|Mình vẫn thích cậu như cũ, mình nhớ từ từ nhé.|I like you just the same. We'll remember it slowly.
+wrong|下次一定能记住，我陪着你。|Lần sau nhất định nhớ được, mình ở bên cậu.|You'll remember it next time. I'm with you.
+wrong|错一次，是为了下次做对呀！|Sai một lần để lần sau làm đúng đó!|Getting it wrong once helps us get it right next time!
+wrong|没关系，谁都会忘，我们再来。|Không sao, ai cũng quên, mình làm lại nhé.|It's alright. Everyone forgets. Let's go again.
+wrong|这个我们记在心里，下次就好。|Cái này mình ghi vào lòng, lần sau sẽ ổn.|We'll keep this in our hearts, and next time will be fine.
+wrong|不要着急，错了才说明你在学。|Đừng vội, sai mới chứng tỏ cậu đang học.|No rush. A mistake just means you're learning.
+wrong|差一点点！我们再看看。|Thiếu một chút thôi! Mình xem lại nhé.|So close! Let's look at it again.
+back|你终于回来了，我想说好多话！|Cuối cùng cậu cũng về, mình muốn nói nhiều điều!|You're finally back. I have so much to say!
+back|欢迎回家！我哪儿也没去。|Chào mừng về nhà! Mình chẳng đi đâu cả.|Welcome home! I didn't go anywhere.
+back|看到你，我尾巴都要摇起来了！|Thấy cậu, đuôi mình muốn vẫy lên luôn!|I could wag my tail seeing you!
+back|回来就好，我们接着聊吧！|Về là được rồi, mình nói tiếp nhé!|You're back, and that's enough. Let's keep chatting!
+back|你不在的时候，我也好好等着。|Khi cậu không có đây, mình vẫn chờ ngoan.|While you were away, I waited patiently.
+back|嘿，欢迎回来，想我了吗？|Này, chào mừng trở lại, có nhớ mình không?|Hey, welcome back. Did you miss me?
+back|你一回来，这儿就亮起来了！|Cậu vừa về, chỗ này sáng bừng lên!|The moment you return, this place lights up!
+back|回来啦！先喝口水，再慢慢学。|Về rồi! Uống ngụm nước đã, rồi học từ từ.|You're back! Have a sip of water, then we'll study slowly.
+miss|好几天没见，我真的好想你！|Mấy ngày không gặp, mình nhớ cậu thật đó!|I haven't seen you in days. I really missed you!
+miss|你去哪儿了？我在这儿等了很久。|Cậu đi đâu vậy? Mình đợi ở đây khá lâu.|Where did you go? I waited here for a long time.
+miss|好久没聊天了，快来抱抱！|Lâu rồi không trò chuyện, lại đây ôm cái nào!|We haven't chatted in so long. Come here for a hug!
+miss|没有你，这儿有点儿安静呢。|Không có cậu, chỗ này hơi yên ắng đó.|Without you, it's a little quiet here.
+miss|我想你了，过来陪我一会儿吧。|Mình nhớ cậu, lại đây bên mình một lúc nhé.|I missed you. Come keep me company for a while.
+miss|你不在的日子，我把想说的话都记下了。|Những ngày cậu vắng, mình ghi hết lời muốn nói.|On the days you were away, I wrote down everything I wanted to say.
+miss|终于等到你，我都要睡着了！|Cuối cùng cũng đợi được cậu, mình sắp ngủ mất!|I finally waited you out — I was about to fall asleep!
+miss|别离开太久哦，我会想你的。|Đừng đi lâu quá nhé, mình sẽ nhớ cậu đó.|Don't stay away too long. I'll miss you.
+streak|连续学习的你，像小太阳一样！|Cậu học đều đặn, giống một mặt trời nhỏ!|You, studying day after day, are like a little sun!
+streak|一天又一天，我们都在进步！|Ngày này qua ngày khác, chúng mình đều tiến bộ!|Day after day, we're both improving!
+streak|坚持下来，就是最美的事情。|Giữ được như vậy, đã là điều đẹp nhất.|Sticking with it is the most beautiful thing.
+streak|这条小路上，我们一起走了好远。|Trên con đường nhỏ này, chúng mình đã đi rất xa.|We've walked such a long way on this little path.
+streak|连续打卡的日子，我都会记得。|Những ngày điểm danh liền nhau, mình đều nhớ.|I'll remember all these check-in days.
+streak|习惯真好，明天我们还要见面！|Thói quen thật tốt, mai chúng mình còn gặp nữa!|What a lovely habit. We'll meet again tomorrow!
+streak|你没有放弃，我好感动！|Cậu không bỏ cuộc, mình cảm động quá!|You didn't give up. I'm so touched!
+streak|一天一天，我们都变得更好了。|Ngày qua ngày, chúng mình đều tốt hơn rồi.|Day by day, we've both become better.
+streak|坚持的你，是我最喜欢的样子。|Cậu biết kiên trì, là dáng vẻ mình thích nhất.|The way you keep going is my favorite thing about you.
+pqdone|小测验结束啦，你表现得很好！|Bài đố xong rồi, cậu làm rất tốt!|The quiz is over. You did really well!
+pqdone|今天的五道题完成了，真了不起！|Năm câu hôm nay xong rồi, giỏi thật!|Today's five questions are done. Amazing!
+pqdone|测完啦，去喝口水奖励自己吧！|Làm xong rồi, đi uống nước thưởng cho mình đi!|All done! Go have a drink as a little reward!
+pqdone|今天的挑战结束了，明天见！|Thử thách hôm nay hết rồi, mai gặp nhé!|Today's challenge is over. See you tomorrow!
+pqdone|你已经完成啦，我为你高兴！|Cậu đã xong rồi, mình vui vì cậu!|You finished it. I'm happy for you!
+pqdone|小测验打卡成功，休息一下吧。|Điểm danh bài đố xong, nghỉ một chút nhé.|Quiz check-in complete. Take a little break.
+pqdone|做完了！明天我再出新题目哦。|Xong rồi! Mai mình ra đề mới nhé.|All done! I'll have new questions tomorrow.
+pqdone|今天问完啦，你很认真，我看见了。|Hôm nay hỏi xong rồi, cậu rất chăm, mình thấy đó.|That's all for today. I saw how carefully you tried.
+pqdone|测验结束，我们还是好朋友！|Bài kiểm tra xong, chúng mình vẫn là bạn thân!|The quiz is over, and we're still best friends!
+rescue|这些词还在等你，我们慢慢救。|Những từ này còn đợi cậu, mình cứu từ từ nhé.|These words are still waiting. We'll rescue them slowly.
+rescue|一个一个找回来，一定没问题！|Tìm về từng cái một, nhất định không sao!|We'll bring them back one by one. It'll be fine!
+rescue|错题不可怕，我们当游戏来玩！|Câu sai không đáng sợ, mình chơi như trò chơi!|Wrong answers aren't scary. Let's treat it like a game!
+rescue|我牵着你的手，一起找回单词。|Mình nắm tay cậu, cùng tìm lại những từ đó.|I'll hold your hand and we'll find the words together.
+rescue|来吧，我们把小单词带回家！|Lại đây, mình đưa mấy từ nhỏ về nhà!|Come on, let's bring the little words home!
+rescue|它们有点儿怕，见到你会放心的。|Chúng hơi sợ, gặp cậu sẽ yên tâm thôi.|They're a little scared. Seeing you will reassure them.
+rescue|救词时间到！你真勇敢！|Đến giờ cứu từ! Cậu dũng cảm quá!|Word-rescue time! You're so brave!
+rescue|别急，我们今天先救几个就好。|Đừng vội, hôm nay cứu vài từ là được rồi.|No hurry. Rescuing a few today is enough.
+chat|猜猜我现在最想谁？当然是你！|Đoán xem giờ mình nhớ ai nhất? Tất nhiên là cậu!|Guess who I miss most right now? You, of course!
+chat|你要是再点我，我就对你笑了哦！|Cậu mà chạm mình nữa, mình sẽ cười với cậu đó!|If you tap me again, I'll smile at you!
+chat|我们是最好的朋友，对不对？|Chúng mình là bạn thân nhất, phải không?|We're best friends, right?
+chat|今天有什么开心的事，说给我听！|Hôm nay có chuyện vui gì, kể mình nghe với!|Any happy news today? Tell me!
+chat|好想吃点心啊，你呢？|Mình thèm ăn bánh quá, còn cậu?|I really want a snack. How about you?
+chat|今天天气怎么样？出门要小心。|Hôm nay thời tiết thế nào? Ra ngoài nhớ cẩn thận.|How's the weather today? Be careful if you go out.
+chat|作业多不多？我可以陪你写。|Bài tập có nhiều không? Mình có thể ngồi viết cùng cậu.|A lot of homework? I can sit with you while you write.
+chat|有点儿困了就靠着我休息吧。|Hơi buồn ngủ thì dựa vào mình mà nghỉ nhé.|If you're a bit sleepy, lean on me and rest.
+chat|刚才看见一朵云，好像一只猫！|Vừa nãy thấy một đám mây, giống một con mèo!|I just saw a cloud that looked like a cat!
+chat|难过的时候，记得来找我聊天。|Lúc buồn, nhớ đến nói chuyện với mình nhé.|When you're sad, remember to come chat with me.
+chat|你已经很努力了，别对自己太严格。|Cậu đã cố gắng lắm rồi, đừng khắt khe với mình quá.|You've already tried so hard. Don't be too hard on yourself.
+chat|有我在，你不用一个人难过。|Có mình ở đây, cậu không phải buồn một mình.|I'm here, so you don't have to feel sad alone.
+chat|有喜欢的男生了吗？偷偷告诉我～|Đã thích cậu con trai nào chưa? Thì thầm kể mình nghe～|Got a boy you like? Whisper it to me～
+chat|要是他欺负你，我替你咬他！|Nếu cậu ấy bắt nạt cậu, mình cắn hộ đó!|If he is unkind to you, I'll bite him for you!
+chat|跟喜欢的人说话，会不会脸红？|Nói chuyện với người mình thích, có đỏ mặt không?|Do you blush when you talk to someone you like?
+chat|他要对你温柔，这一点最重要。|Cậu ấy phải dịu dàng với cậu, điều đó quan trọng nhất.|He should be gentle with you. That matters most.
+chat|害羞也没关系，喜欢一个人很正常。|Ngại cũng không sao, thích một người là bình thường.|It's okay to feel shy. Liking someone is normal.
+chat|先把今天的书写完，再去想他吧。|Hãy viết xong bài hôm nay, rồi hãy nghĩ đến cậu ấy.|Finish today's work first, then you can think about him.
+chat|你要是谈恋爱了，也可以告诉我。|Nếu cậu có người yêu rồi, cũng có thể kể mình nghe.|If you're dating someone, you can tell me too.
+chat|不要为他丢了自己，你也很重要。|Đừng vì cậu ấy mà quên mình, cậu cũng rất quan trọng.|Don't lose yourself for him. You matter too.

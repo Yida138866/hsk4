@@ -3,6 +3,11 @@ const base = process.argv[2]; const shot = process.argv[3] || "";
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const ds = (off = 0) => { const d = new Date(); d.setDate(d.getDate() + off); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
 const EVS = ["tet", "mid", "qixi", "val", "w38", "w2010", "xmas"];
+const petSrc = fs.readFileSync(__dirname + "/pet_src/lines.txt", "utf8").trim().split("\n").filter(Boolean);
+const petAu = (k) => petSrc.map((l, i) => [l.split("|")[0], i]).filter((x) => x[0] === k).map((x) => x[1]);
+const petZh = (k) => petSrc.filter((l) => l.split("|")[0] === k).map((l) => l.split("|")[1]);
+const hasZh = (all, k) => petZh(k).some((z) => all.includes(z));
+const RESCUE_AU = new RegExp("audio/pet/(" + petAu("rescue").join("|") + ")\\.mp3");
 (async () => {
   const browser = await puppeteer.launch({ executablePath: "/usr/bin/google-chrome", headless: "new", args: ["--no-sandbox", "--autoplay-policy=no-user-gesture-required"] });
   let fail = 0; const ok = (t, c, x = "") => { console.log(`${t}: ${c ? "PASS" : "FAIL"} ${x}`); if (!c) fail++; };
@@ -45,7 +50,7 @@ const EVS = ["tet", "mid", "qixi", "val", "w38", "w2010", "xmas"];
     // rescue session: first right, second wrong
     const s0 = await get(); const n0 = reqs.length;
     await page.click(".wb-start"); await sleep(1200);
-    ok(tag + " rescue line audio", reqs.slice(n0).some((r) => /audio\/pet\/(25|26)\.mp3/.test(r)), reqs.slice(n0).join(","));
+    ok(tag + " rescue line audio", reqs.slice(n0).some((r) => RESCUE_AU.test(r)), reqs.slice(n0).join(","));
     const sessIds = await page.evaluate(() => null);
     // find the right option by matching text of the correct opt (bank opts[0]) via the explanation after click: brute force — click the option whose text matches bank opts[0]
     const pickRight = async (right) => page.evaluate((right) => { const bs = [...document.querySelectorAll(".wb-opts button")]; const b = bs.find((x) => x.textContent.replace(/^[A-D]\.\s*/, "") === right) || bs[0]; b.click(); }, right);
@@ -68,8 +73,9 @@ const EVS = ["tet", "mid", "qixi", "val", "w38", "w2010", "xmas"];
     const first = await page.$eval("#pet-top .bubble", (e) => e.textContent).catch(() => "");
     ok(tag + " greeting bubble on open", first.length > 3, first.slice(0, 30));
     let all = "";
-    for (let k = 0; k < 40; k++) { await page.click('#pet-top button[aria-label="pet"]'); await sleep(200); seen.add(await page.$eval("#pet-top .bubble", (e) => e.textContent)); all = [...seen].join(" | "); if (/第8课/.test(all) && /欢迎回来|你回来啦/.test(all) && /(连续打卡5天|每天见到你)/.test(all)) break; }
-    ok(tag + " context lines (lesson / break / streak / wb)", /第8课/.test(all) && /欢迎回来|你回来啦/.test(all) && /(连续打卡5天|每天见到你)/.test(all), all.slice(0, 300));
+    const ctxOk = () => /第8课/.test(all) && (hasZh(all, "back") || hasZh(all, "miss")) && (hasZh(all, "streak") || /连续打卡\d+天/.test(all));
+    for (let k = 0; k < 40; k++) { await page.click('#pet-top button[aria-label="pet"]'); await sleep(200); seen.add(await page.$eval("#pet-top .bubble", (e) => e.textContent)); all = [...seen].join(" | "); if (ctxOk()) break; }
+    ok(tag + " context lines (lesson / break / streak / wb)", ctxOk(), all.slice(0, 300));
     ok(tag + " fixed context lines have audio", reqs.slice(n1).some((r) => /audio\/pet\/(\d+)\.mp3/.test(r) && Number(r.match(/pet\/(\d+)/)[1]) >= 25));
     await page.evaluate(() => { const b = document.querySelector("#pet-top .bubble"); }); 
     // make the shot show a lesson line
