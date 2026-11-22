@@ -19,7 +19,7 @@ const EVS = ["tet", "mid", "qixi", "val", "w38", "w2010", "xmas"];
     const snap = async (n) => { if (shot) await page.screenshot({ path: `${shot}_${L}_${vp.name}_${n}.png` }); };
     await page.goto(base + path, { waitUntil: "networkidle0" }); await page.evaluate(() => localStorage.clear()); await open();
     await page.evaluate(() => document.querySelectorAll(".adopt button")[0].click()); await page.type("#pet-top input", "Bông"); await page.click(".adopt-go"); await sleep(500);
-    await seed({ xp: 700, lessons: [1, 2, 3, 4, 5, 6], stage: 2 });
+    await seed({ xp: 400, lessons: [1, 2, 3, 4, 5, 6], stage: 2 });
     // ---- 错题本: collect from lesson quiz, random test, pet quiz ----
     await click("[role=tab]", "每课小测"); await sleep(300);
     await page.evaluate(() => { const blocks = [...document.querySelectorAll("button")].filter((b) => /^[A-D][.、]/.test(b.textContent.trim())); }); 

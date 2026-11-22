@@ -95,9 +95,17 @@ const ALL = ["bow", "glasses", "beret", "crown", "scarf", "hoodie", "dress", "ao
     await page.click(".pq-finish"); await sleep(400); st = await get();
     ok(tag + " pet quiz 5/5 (+25XP +5⭐ +1💗)", st.xp === 25 && st.stars === 5 && st.hearts === 1, `xp=${st.xp} s=${st.stars} h=${st.hearts}`);
     // stages + shop
-    await seed({ xp: 700, lessons: [1, 2, 3, 4, 5, 6], stage: 2, minStage: 0, equip: { acc: "glasses", outfit: "hoodie", room: "sakura", furn: ["plant"] }, stars: 80, hearts: 10, owned: ["glasses", "hoodie", "sakura", "plant"] });
+    await seed({ xp: 400, lessons: [], stage: 2, minStage: 0, equip: { acc: "glasses", outfit: "hoodie", room: "sakura", furn: ["plant"] }, stars: 80, hearts: 10, owned: ["glasses", "hoodie", "sakura", "plant"] });
     let label = await page.evaluate(() => document.querySelector("#pet-top span[style*='linear-gradient']").textContent);
-    ok(`${tag} stage 2 at 700XP/6 lessons`, label.includes("小朋友"), label);
+    ok(`${tag} stage 2 at 400XP (XP only, no lesson gate)`, label.includes("小朋友"), label);
+    const growTxt = await page.evaluate(() => {
+      const texts = [...document.querySelectorAll("#pet-top div")].map((e) => e.textContent || "");
+      return {
+        grow: texts.find((x) => x.startsWith("Để lớn lên") || x.startsWith("To grow")) || "",
+        help: texts.find((x) => x.startsWith("Lớn lên") || x.startsWith("Growth")) || "",
+      };
+    });
+    ok(`${tag} to-grow and help are XP only`, /XP 400\/650/.test(growTxt.grow) && !/bài đã qua|lessons passed/.test(growTxt.grow) && /宝宝 75 XP/.test(growTxt.help) && /小朋友 300 XP/.test(growTxt.help) && /少女 650 XP/.test(growTxt.help) && /毕业 1200 XP/.test(growTxt.help) && !/bài đã qua|lessons passed/.test(growTxt.help), JSON.stringify(growTxt));
     await scrollTo("#pet-top"); await snap("stage2");
     const n2 = reqs.length; await page.evaluate(() => { window.__tts = 0; try { const ss = window.speechSynthesis; const o = ss.speak.bind(ss); ss.speak = (u) => { window.__tts++; try { o(u); } catch (e) {} }; } catch (e) {} });
     let talkMp3 = false, talkTts = 0;
@@ -110,7 +118,7 @@ const ALL = ["bow", "glasses", "beret", "crown", "scarf", "hoodie", "dress", "ao
     const after = await get();
     ok(tag + " shop feed + buy", after.stats.fed === before.stats.fed + 1 && after.owned.length === before.owned.length + 1 && after.stars < before.stars);
     // graduation via check-in crossing 1200
-    await seed({ xp: 1190, lessons: Array.from({ length: 15 }, (_, i) => i + 1), stage: 3, minStage: 0, gradDone: false, ciLast: ds(-1), ciStreak: 2, equip: { outfit: "aodai", room: "night", furn: ["lamp", "desk"] } });
+    await seed({ xp: 1190, lessons: [], stage: 3, minStage: 0, gradDone: false, ciLast: ds(-1), ciStreak: 2, equip: { outfit: "aodai", room: "night", furn: ["lamp", "desk"] } });
     label = await page.evaluate(() => document.querySelector("#pet-top span[style*='linear-gradient']").textContent);
     ok(`${tag} 1190XP still teen`, label.includes("少女"), label);
     await scrollTo(".checkin", 80); await page.click(".ci-btn"); await sleep(900);
@@ -137,7 +145,7 @@ const ALL = ["bow", "glasses", "beret", "crown", "scarf", "hoodie", "dress", "ao
     const code = await page.evaluate(() => [...document.querySelectorAll("#pet-top textarea")].map((t) => t.value).find((v) => v.startsWith("HSK4PET1:")));
     ok(tag + " export code", !!code && code.length > 50);
     // level-up (child) via task
-    await seed({ xp: 295, lessons: [1, 2, 3, 4, 5, 6], stage: 1, dayXp: 0, day: ds(0), claims: {} });
+    await seed({ xp: 295, lessons: [], stage: 1, dayXp: 0, day: ds(0), claims: {} });
     await page.evaluate(() => { localStorage.removeItem("hsk4-plan-vi-v1"); localStorage.removeItem("hsk4-plan-v1"); });
     await page.reload({ waitUntil: "networkidle0" }); await click("[role=tab]", "学习计划"); await click("button", "标记完成"); await sleep(900);
     ok(tag + " level-up to child", await page.evaluate(() => !!document.querySelector(".levelup")) && (await get()).stage === 2);

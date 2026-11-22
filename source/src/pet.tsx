@@ -68,7 +68,7 @@ export function usePet(): St { const [, f] = useState(0); useEffect(() => { cons
 
 export function stageOf(s: St): number {
   let st = 0;
-  for (let i = 1; i <= 4; i++) if (s.xp >= STAGES[i].xp && s.lessons.length >= STAGES[i].lessons) st = i;
+  for (let i = 1; i <= 4; i++) if (s.xp >= STAGES[i].xp) st = i;
   return Math.max(st, s.minStage || 0);
 }
 export function moodOf(s: St): string { return s.lastDay && dayDiff(s.lastDay, today()) >= 3 ? "miss" : "ok"; }
@@ -474,7 +474,7 @@ function PetTabInner() {
             <Bar v={s.xp} max={st < 4 ? next.xp : s.xp} />
             {st < 4 ? (
               <div style={{ fontSize: 12, color: "#8a5a82", marginTop: 6, lineHeight: "18px" }}>
-                {VI ? "Để lớn lên: " : "To grow: "}{`XP ${Math.min(s.xp, next.xp)}/${next.xp} ${s.xp >= next.xp ? "✓" : ""} · `}{VI ? "bài đã qua (kiểm tra ≥8/10)" : "lessons passed (quiz ≥8/10)"} {`${s.lessons.length}/${next.lessons} ${s.lessons.length >= next.lessons ? "✓" : ""}`}
+                {VI ? "Để lớn lên: " : "To grow: "}{`XP ${Math.min(s.xp, next.xp)}/${next.xp}${s.xp >= next.xp ? " ✓" : ""}`}
               </div>
             ) : <div style={{ fontSize: 13, color: "#167a59", marginTop: 6 }}>🎓 {VI ? "Đã tốt nghiệp! Giỏi quá!" : "Graduated! Amazing!"}</div>}
             <div style={{ fontSize: 12, color: "#8a5a82", marginTop: 4 }}>{VI ? "XP học hôm nay" : "Study XP today"}: {s.day === today() ? s.dayXp : 0}/{DAILY_CAP}{ciCur(s) >= 7 ? (VI ? " · thưởng chuỗi +10%" : " · streak bonus +10%") : ""}</div>
@@ -549,7 +549,7 @@ function PetTabInner() {
           <li>🧠 Pet quiz (once a day, outside the cap): 5 questions, +4 XP +1⭐ each correct; all 5 right adds +5 XP +1💗.</li>
           <li>🎓 Graduating unlocks every accessory, outfit, room and furniture item plus a badge, then you can adopt another pet.</li>
         </ul>}
-        <div style={{ marginTop: 6 }}>{VI ? "Lớn lên" : "Growth"}: {STAGES.slice(1).map((g) => `${g.zh} ${g.xp} XP + ${g.lessons} ${VI ? "bài đã qua" : "lessons passed"}`).join(" → ")}</div>
+        <div style={{ marginTop: 6 }}>{VI ? "Lớn lên" : "Growth"}: {STAGES.slice(1).map((g) => `${g.zh} ${g.xp} XP`).join(" → ")}</div>
       </div>
       <div style={{ ...box }}>
         <div style={{ fontWeight: 800, color: "#8f2160", marginBottom: 6 }}>💾 {L3("转移进度", "Chuyển tiến độ sang máy khác", "Move progress to another device")}</div>
@@ -846,5 +846,5 @@ export function PetWidget() {
   );
 }
 
-// Existing pets move up on the next page load if XP + lessons already meet the current thresholds (never demote).
+// Existing pets move up on the next page load if XP already meets the current thresholds (never demote).
 if (typeof window !== "undefined" && S.pet && stageOf(S) > (S.stage || 0)) finish([]);
