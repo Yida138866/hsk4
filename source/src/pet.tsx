@@ -1,7 +1,7 @@
 // Study pet + rewards. All data in localStorage; no backend.
 import { useState, useEffect, ZH_FONT } from "./kit";
 import type { ReactNode } from "./kit";
-import { PetArt, Room } from "./petart";
+import { PetArt, Room, usePetAct } from "./petart";
 import type { Kind, Equip } from "./petart";
 import { speakSeq, SpeakBtn } from "./audio";
 import { LINES } from "./pet_lines";
@@ -393,10 +393,12 @@ function importCode(c: string): boolean {
 const box = { borderRadius: 22, padding: "14px", background: "#fff", border: "1.5px solid rgba(248,190,220,0.7)", boxShadow: "0 6px 18px rgba(214,90,160,0.08)" } as const;
 const btn = (on = false) => ({ cursor: "pointer", border: on ? "none" : "1.5px solid rgba(232,85,154,0.3)", borderRadius: 9999, padding: "8px 14px", fontFamily: "inherit", fontSize: 14, fontWeight: 800, background: on ? "linear-gradient(135deg,#ff7eb6,#c58bff)" : "#fff", color: on ? "#fff" : "#8f2160", boxShadow: on ? "0 4px 12px rgba(232,85,154,0.28)" : "none" } as const);
 function Bar({ v, max, color }: { v: number; max: number; color?: string }) { const p = max > 0 ? Math.min(1, v / max) : 1; return <span style={{ display: "block", height: 10, borderRadius: 9999, background: "#fde8f3", overflow: "hidden" }}><span style={{ display: "block", height: "100%", width: `${p * 100}%`, background: color || "linear-gradient(90deg,#ff9cc6,#c58bff)", transition: "width .6s" }} /></span>; }
-export function PetSvg({ kind, stage, mood, equip, size, room, anim = true }: { kind: Kind; stage: number; mood?: string; equip?: Equip; size: number | string; room?: boolean; anim?: boolean }) {
+export function PetSvg({ kind, stage, mood, equip, size, room, anim = true, lite = false, tap = 0 }: { kind: Kind; stage: number; mood?: string; equip?: Equip; size: number | string; room?: boolean; anim?: boolean; lite?: boolean; tap?: number }) {
+  const act = usePetAct({ anim, lite, mood: mood || "ok", egg: (stage || 0) <= 0, tap });
+  const art = <PetArt kind={kind} stage={stage} mood={mood} equip={equip} anim={anim} act={act} lite={lite} />;
   return room
-    ? <div style={{ width: size, aspectRatio: "200 / 220", borderRadius: 24, overflow: "hidden" }}><Room id={equip?.room} furn={equip?.furn}><PetArt kind={kind} stage={stage} mood={mood} equip={equip} anim={anim} /></Room></div>
-    : <svg viewBox="0 0 200 220" width={size} height={typeof size === "number" ? size * 1.1 : undefined} aria-hidden="true" style={{ display: "block", overflow: "visible" }}><PetArt kind={kind} stage={stage} mood={mood} equip={equip} anim={anim} /></svg>;
+    ? <div style={{ width: size, aspectRatio: "200 / 220", borderRadius: 24, overflow: "hidden" }}><Room id={equip?.room} furn={equip?.furn}>{art}</Room></div>
+    : <svg viewBox="0 0 200 220" width={size} height={typeof size === "number" ? size * 1.1 : undefined} aria-hidden="true" style={{ display: "block", overflow: "hidden" }}><g>{art}</g></svg>;
 }
 const L3 = (zh: string, vi: string, en: string) => `${zh} · ${VI ? vi : en}`;
 
@@ -427,7 +429,7 @@ function PetTabInner() {
         <div className="adopt" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(96px,1fr))", gap: 10 }}>
           {pets.map(([k, zh, v, e]) => (
             <button key={k} aria-pressed={pick === k} onClick={() => setPick(k)} style={{ cursor: "pointer", borderRadius: 22, padding: "10px 6px", background: pick === k ? "linear-gradient(160deg,#ffe1ee,#f3e6ff)" : "#fff", border: pick === k ? "2.5px solid #e8559a" : "1.5px solid rgba(232,85,154,0.25)", fontFamily: "inherit", display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
-              <PetSvg kind={k} stage={2} size={"100%"} />
+              <PetSvg kind={k} stage={2} size={"100%"} lite />
               <span lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontWeight: 800, color: "#8f2160", fontSize: 16 }}>{zh}</span>
               <span style={{ fontSize: 12, color: "#a0507f" }}>{VI ? v : e}{doneKinds.includes(k) ? " 🎓" : ""}</span>
             </button>
@@ -454,7 +456,7 @@ function PetTabInner() {
       <div className="pet-main" style={{ display: "flex", flexWrap: "wrap", gap: 16, alignItems: "flex-start" }}>
         <div style={{ flex: "1 1 260px", maxWidth: 360, position: "relative" }}>
           <button aria-label="pet" onClick={talk} style={{ cursor: "pointer", border: "none", padding: 0, background: "transparent", width: "100%", display: "block", borderRadius: 24, boxShadow: "0 8px 24px rgba(143,33,96,0.15)" }}>
-            <PetSvg kind={s.pet} stage={st} mood={mood} equip={s.equip} size={"100%"} room />
+            <PetSvg kind={s.pet} stage={st} mood={mood} equip={s.equip} size={"100%"} room tap={pop} />
           </button>
           {pop ? <div key={pop} className="hearts-pop" aria-hidden>💗<span>💗</span><span>💗</span></div> : null}
           {line ? <div className="bubble" style={{ position: "absolute", left: 10, right: 10, top: 10, background: "rgba(255,255,255,0.95)", borderRadius: 18, padding: "8px 12px", boxShadow: "0 4px 14px rgba(143,33,96,0.15)", fontSize: 13, lineHeight: "19px", color: "#5a3a5f" }}>
@@ -821,6 +823,7 @@ export function PetWidget() {
   if (!PET_ON) return null;
   const st = stageOf(s); const next = STAGES[Math.min(4, st + 1)];
   const go = () => window.dispatchEvent(new CustomEvent("hsk4-goto", { detail: "pet" }));
+  const [wTap, setWTap] = useState(0);
   useEffect(() => { if (PET_ON && TEACHER) setTimeout(() => { go(); setTimeout(() => { const e = document.getElementById("teacher-top"); if (e && e.scrollIntoView) e.scrollIntoView({ block: "start" }); }, 120); }, 60); }, []);
   const ev = evNow();
   return (
@@ -836,9 +839,9 @@ export function PetWidget() {
           </div>
           : <div key={t.id} className="toast" style={{ background: t.kind === "gift" ? "linear-gradient(135deg,#fff3c4,#ffe1ee)" : "#fff", borderRadius: 9999, padding: "9px 16px", boxShadow: "0 8px 24px rgba(143,33,96,0.22)", fontSize: 14, fontWeight: 800, color: "#8f2160", border: "1.5px solid #ffc2dc" }}>{t.text}</div>)}
       </div>
-      <button className="pet-widget" aria-label={VI ? "Thú cưng của tôi" : "My pet"} onClick={go} style={{ position: "fixed", right: 12, bottom: 12, zIndex: 70, cursor: "pointer", border: "2px solid #ffc2dc", background: "rgba(255,255,255,0.95)", borderRadius: 24, padding: "6px 10px 8px", boxShadow: "0 8px 22px rgba(143,33,96,0.2)", display: "flex", flexDirection: "column", alignItems: "center", gap: 3, width: 84 }}>
+      <button className="pet-widget" aria-label={VI ? "Thú cưng của tôi" : "My pet"} onClick={() => { setWTap((x) => x + 1); go(); }} style={{ position: "fixed", right: 12, bottom: 12, zIndex: 70, cursor: "pointer", border: "2px solid #ffc2dc", background: "rgba(255,255,255,0.95)", borderRadius: 24, padding: "6px 10px 8px", boxShadow: "0 8px 22px rgba(143,33,96,0.2)", display: "flex", flexDirection: "column", alignItems: "center", gap: 3, width: 84, overflow: "hidden" }}>
         {ev ? <span className="widget-ev" aria-hidden style={{ position: "absolute", top: -10, left: -8, fontSize: 22 }}>{ev.icon}</span> : null}
-        {s.pet ? <PetSvg kind={s.pet} stage={st} mood={moodOf(s)} equip={s.equip} size={58} /> : <span style={{ fontSize: 34, lineHeight: "50px" }}>🥚</span>}
+        {s.pet ? <PetSvg kind={s.pet} stage={st} mood={moodOf(s)} equip={s.equip} size={58} lite tap={wTap} /> : <span style={{ fontSize: 34, lineHeight: "50px" }}>🥚</span>}
         <span style={{ fontSize: 10.5, fontWeight: 800, color: "#8f2160", maxWidth: 70, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{s.pet ? s.name : VI ? "Nhận nuôi!" : "Adopt!"}</span>
         {s.pet ? <span style={{ width: 64 }}><Bar v={st >= 4 ? 1 : s.xp} max={st >= 4 ? 1 : next.xp} /></span> : null}
       </button>

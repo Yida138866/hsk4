@@ -13,10 +13,61 @@ cfg = {
  "en": dict(dir=out + "/en", lang="en", other_href="../", other_label="Phiên bản tiếng Việt →", note="English · 中文", title="HSK 4 系统学习：10 周计划 · 20 课 · 测试", desc="A structured HSK 4 course: 10-week plan, 602 words, 100 grammar points, flashcards, placement test and lesson quizzes."),
 }
 PV_CSS = """
-.pet-bounce{animation:pb 2.4s ease-in-out infinite}
+.pet-bounce{animation:pb 2.6s ease-in-out infinite}
 @keyframes pb{0%,100%{transform:translateY(0) scale(1,1)}45%{transform:translateY(-6px) scale(1.01,.99)}55%{transform:translateY(-6px)}80%{transform:translateY(0) scale(1.03,.97)}}
+.pet-sad > .pet-bounce,.pet-sad .pet-bounce{animation:pbsad 4.4s ease-in-out infinite}
+@keyframes pbsad{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
 .pet-wobble{animation:pw 3s ease-in-out infinite}
 @keyframes pw{0%,80%,100%{transform:rotate(0)}85%{transform:rotate(-6deg)}90%{transform:rotate(6deg)}95%{transform:rotate(-3deg)}}
+.pet-move,.pet-bounce,.pet-wobble{transform-box:view-box;transform-origin:100px 205px}
+.pet-act-spin,.pet-act-roll{transform-origin:100px 128px}
+.pet-eyes,.pet-ears,.pet-ears-front,.pet-tail,.pet-arm-r,.pet-arm-l,.pet-face{transform-box:fill-box}
+.pet-busy > .pet-bounce,.pet-busy > .pet-wobble{animation:none}
+.pet-act-jump,.pet-act-hop{animation:pjump .7s ease-out}
+@keyframes pjump{0%,100%{transform:translateY(0)}28%{transform:translateY(-18px) scale(1.02,.96)}55%{transform:translateY(0) scale(1.05,.95)}78%{transform:translateY(-6px)}}
+.pet-act-spin{animation:pspin .8s ease-in-out}
+@keyframes pspin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.pet-act-wiggle,.pet-act-happy{animation:pwig .65s ease-in-out}
+@keyframes pwig{0%,100%{transform:rotate(0)}25%{transform:rotate(-10deg)}50%{transform:rotate(10deg)}75%{transform:rotate(-6deg)}}
+.pet-act-dance{animation:pdance .9s ease-in-out}
+@keyframes pdance{0%,100%{transform:translate(0,0) rotate(0)}20%{transform:translate(-5px,-8px) rotate(-8deg)}40%{transform:translate(5px,-3px) rotate(8deg)}60%{transform:translate(-4px,-10px) rotate(-6deg)}80%{transform:translate(4px,-2px) rotate(6deg)}}
+.pet-act-roll{animation:proll .85s ease-in-out}
+@keyframes proll{0%{transform:translateX(0) rotate(0)}50%{transform:translateX(8px) rotate(180deg)}100%{transform:translateX(0) rotate(360deg)}}
+.pet-act-sway{animation:psway 1.15s ease-in-out}
+@keyframes psway{0%,100%{transform:rotate(0)}30%{transform:rotate(-8deg)}70%{transform:rotate(8deg)}}
+.pet-act-stretch{animation:pstretch .85s ease-in-out}
+@keyframes pstretch{0%,100%{transform:scale(1,1)}40%{transform:scale(.96,1.08) translateY(-3px)}70%{transform:scale(1.05,.94)}}
+.pet-act-eggshake{animation:pes .55s ease-in-out}
+@keyframes pes{0%,100%{transform:rotate(0)}20%{transform:rotate(-12deg)}40%{transform:rotate(12deg)}60%{transform:rotate(-8deg)}80%{transform:rotate(6deg)}}
+.pet-act-eggbounce{animation:peb .6s ease-out}
+@keyframes peb{0%,100%{transform:translateY(0)}35%{transform:translateY(-12px)}62%{transform:translateY(0) scale(1.05,.93)}}
+.pet-act-blink .pet-eyes{animation:pblink .32s ease-in-out;transform-origin:50% 70%}
+@keyframes pblink{0%,100%{transform:scaleY(1)}45%,55%{transform:scaleY(.08)}}
+.pet-act-look .pet-face{animation:plook 1.1s ease-in-out;transform-origin:50% 50%}
+@keyframes plook{0%,100%{transform:translateX(0)}28%{transform:translateX(-5px)}72%{transform:translateX(5px)}}
+.pet-act-ears .pet-ears,.pet-act-ears .pet-ears-front{animation:pear .7s ease-in-out;transform-origin:50% 100%}
+@keyframes pear{0%,100%{transform:rotate(0)}30%{transform:rotate(-14deg)}62%{transform:rotate(14deg)}}
+.pet-act-ears .pet-tail,.pet-act-wiggle .pet-tail,.pet-act-hop .pet-tail{animation:ptail .55s ease-in-out;transform-origin:0 100%}
+@keyframes ptail{0%,100%{transform:rotate(0)}35%{transform:rotate(16deg)}70%{transform:rotate(-12deg)}}
+.pet-act-wave .pet-arm-r{animation:pwave .7s ease-in-out;transform-origin:50% 20%}
+@keyframes pwave{0%,100%{transform:rotate(0)}30%{transform:rotate(-42deg)}60%{transform:rotate(12deg)}}
+.pet-yawn,.pet-blush-x{opacity:0}
+.pet-act-yawn .pet-yawn{animation:pyawn .9s ease-in-out}
+@keyframes pyawn{0%,100%{opacity:0;transform:scale(.6)}40%,65%{opacity:1;transform:scale(1)}}
+.pet-act-shy .pet-blush-x{animation:pblush .8s ease-in-out}
+@keyframes pblush{0%,100%{opacity:.15}40%{opacity:1}}
+.pet-fx{pointer-events:none}
+.pet-fx-heart,.pet-fx-spark{opacity:0}
+.pet-act-heart .pet-fx-heart,.pet-act-sparkle .pet-fx-spark{opacity:1}
+.pet-act-heart .pet-fx-heart .pet-fx-bit,.pet-act-sparkle .pet-fx-spark .pet-fx-bit{animation:pfx .95s ease-out both}
+.pet-fx-bit:nth-child(2){animation-delay:.08s}
+.pet-fx-bit:nth-child(3){animation-delay:.16s}
+@keyframes pfx{0%{opacity:0;transform:translateY(0) scale(.55)}22%{opacity:1}100%{opacity:0;transform:translateY(-36px) scale(1.15)}}
+.pet-lite .pet-bounce{animation-duration:3.2s}
+.pet-lite.pet-act-jump,.pet-lite.pet-act-hop{animation-name:pjumpl;animation-duration:.6s}
+@keyframes pjumpl{0%,100%{transform:translateY(0)}40%{transform:translateY(-6px)}}
+.pet-lite.pet-act-wiggle{animation-duration:.5s}
+.pet-lite.pet-act-spin{animation-duration:.7s}
 .hearts-pop{position:absolute;left:50%;top:40%;pointer-events:none;font-size:22px;animation:hp 1.2s ease-out forwards}
 .hearts-pop span{position:absolute;left:-26px;top:10px;animation:hp 1.3s .1s ease-out forwards}
 .hearts-pop span+span{left:24px;top:4px;animation-delay:.2s}
@@ -34,7 +85,13 @@ PV_CSS = """
 @keyframes fl{0%,100%{transform:scale(1) rotate(-3deg)}50%{transform:scale(1.12) rotate(3deg)}}
 .ci-pop{animation:cip .6s cubic-bezier(.2,1.5,.4,1)}
 @keyframes cip{0%{transform:scale(.94)}100%{transform:none}}
-@media (prefers-reduced-motion: reduce){.pet-bounce,.pet-wobble,.confetti span,.pulse,.flame,.ci-pop{animation:none}}
+@media (prefers-reduced-motion: reduce){
+.pet-bounce,.pet-wobble,.confetti span,.pulse,.flame,.ci-pop,
+.pet-act-jump,.pet-act-hop,.pet-act-spin,.pet-act-wiggle,.pet-act-happy,.pet-act-dance,.pet-act-roll,.pet-act-sway,.pet-act-stretch,.pet-act-eggshake,.pet-act-eggbounce,
+.pet-act-blink .pet-eyes,.pet-act-look .pet-face,.pet-act-ears .pet-ears,.pet-act-ears .pet-ears-front,.pet-act-ears .pet-tail,.pet-act-wave .pet-arm-r,
+.pet-act-yawn .pet-yawn,.pet-act-shy .pet-blush-x,.pet-fx-bit,.hearts-pop,.hearts-pop span{animation:none!important}
+.pet-fx,.pet-yawn,.pet-blush-x{opacity:0!important}
+}
 """
 for k, c in cfg.items():
     PV_HEAD = "\n<script>window.HSK_BASE=" + ('"../"' if k == "en" else '""') + ";</script>"
