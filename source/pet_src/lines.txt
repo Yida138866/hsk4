@@ -273,3 +273,24 @@ chat|害羞也没关系，喜欢一个人很正常。|Ngại cũng không sao, t
 chat|先把今天的书写完，再去想他吧。|Hãy viết xong bài hôm nay, rồi hãy nghĩ đến cậu ấy.|Finish today's work first, then you can think about him.
 chat|你要是谈恋爱了，也可以告诉我。|Nếu cậu có người yêu rồi, cũng có thể kể mình nghe.|If you're dating someone, you can tell me too.
 chat|不要为他丢了自己，你也很重要。|Đừng vì cậu ấy mà quên mình, cậu cũng rất quan trọng.|Don't lose yourself for him. You matter too.
+hungry|肚子咕噜咕噜叫了，想吃点小零食～|Bụng kêu ùng ục rồi, thèm ăn chút đồ ăn vặt quá～|My tummy is rumbling — I'd love a little snack～
+hungry|有点儿饿了，可以喂我吃点东西吗？|Hơi đói rồi, cho mình ăn chút gì đó được không?|I'm a little hungry — could you feed me a bite?
+hungry|学一会儿就有饭团吃啦，好期待！|Học một lát là có cơm nắm ăn rồi, háo hức quá!|Study a little and we'll have rice balls — I can't wait!
+hungry|闻到香味了吗？我好想吃小蛋糕呀～|Ngửi thấy mùi thơm chưa? Mình thèm bánh kem quá～|Do you smell something yummy? I want some cake～
+hungry|有一点点饿，不过不用着急，你先忙～|Hơi đói một chút thôi, nhưng không vội đâu, cậu cứ làm việc đi～|A tiny bit hungry, no rush though — take your time～
+full|吃得太饱啦，肚子圆滚滚的！|Ăn no căng rồi, bụng tròn xoe luôn!|So full! My tummy is nice and round!
+full|好满足呀，谢谢你这么照顾我！|No nê quá, cảm ơn cậu chăm sóc mình nhé!|So satisfied — thank you for taking such good care of me!
+full|我已经饱饱的啦，现在超有精神！|Mình no lắm rồi, giờ tràn đầy năng lượng luôn!|I'm completely full and bursting with energy!
+full|太幸福了，一口都吃不下啦～|Hạnh phúc quá, không ăn thêm được miếng nào nữa đâu～|Pure bliss — I couldn't eat another bite～
+poop|哎呀，房间里好像有点味道……帮我扫一扫吧！|Ôi, phòng hình như hơi có mùi… quét giúp mình nhé!|Oops, it smells a tiny bit in here… help me sweep it up!
+poop|嘻嘻，刚才不小心便便了，点一下就能清掉哦！|Hihi, vừa nãy lỡ đi bậy rồi, chạm một cái là sạch ngay đó!|Hehe, I made a little mess — just tap it to clean up!
+poop|房间乱乱的，扫干净我会更开心～|Phòng hơi bừa rồi, quét sạch mình sẽ vui hơn nhiều～|The room is a bit messy — I'll be much happier once it's swept～
+poop|小扫把在哪里呀？快帮我打扫一下吧！|Chổi nhỏ ở đâu rồi nhỉ? Dọn giúp mình với!|Where's the little broom? Help me tidy up!
+dirty|身上沾到泥巴了，好想洗个泡泡浴！|Người dính bùn rồi, thèm tắm bọt xà phòng quá!|I got mud on me — I'd love a bubble bath!
+dirty|刚才玩得太开心，变成小花猫啦！|Vừa nãy chơi vui quá nên thành mèo mướp luôn rồi!|I played so hard I turned into a muddy little kitty!
+dirty|快带我去洗澡吧，我想要香香的～|Mau cho mình đi tắm đi, mình muốn thơm tho cơ～|Give me a bath please — I want to smell fresh～
+dirty|泡泡浴！泡泡浴！我要洗白白！|Tắm bọt! Tắm bọt! Mình muốn sạch bong!|Bubble bath! Bubble bath! Time to get squeaky clean!
+clean|洗完澡香喷喷的，太舒服啦！|Tắm xong thơm phức, dễ chịu quá đi!|Fresh and fragrant after a bath — that feels amazing!
+clean|干干净净的，心情一下子变好了！|Sạch sẽ rồi, tâm trạng vui lên hẳn luôn!|All clean — my mood just shot right up!
+clean|房间亮晶晶的，谢谢你照顾我！|Phòng sạch sáng bóng luôn, cảm ơn cậu chăm sóc mình!|Sparkling clean! Thank you for taking care of me!
+clean|哇，浑身都好清爽呀，继续加油吧！|Oa, người mát mẻ sảng khoái quá, mình cố lên tiếp nhé!|Whoa, I feel so refreshed — let's keep going!

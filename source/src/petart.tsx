@@ -129,7 +129,7 @@ export function Hold({ id }: { id?: string }) {
 }
 
 
-export function usePetAct(opts: { anim?: boolean; lite?: boolean; mood?: string; egg?: boolean; tap?: number }) {
+export function usePetAct(opts: { anim?: boolean; lite?: boolean; mood?: string; egg?: boolean; tap?: number; care?: { seq: number; act: string } }) {
   const [act, setAct] = useState("");
   const busy = useRef(false);
   const endT = useRef(0);
@@ -150,6 +150,10 @@ export function usePetAct(opts: { anim?: boolean; lite?: boolean; mood?: string;
       : ["jump", "spin", "wave", "heart", "wiggle", "shy", "roll", "dance", "sparkle"];
     play(pool[Math.floor(Math.random() * pool.length)], opts.egg ? 700 : 950);
   }, [opts.tap]);
+  useEffect(() => {
+    if (!opts.care?.seq || !opts.anim || reduce()) return;
+    play(opts.care.act, 1050);
+  }, [opts.care?.seq]);
   useEffect(() => {
     if (!opts.anim || reduce()) return;
     let stop = false;
@@ -206,7 +210,26 @@ export function Room({ id, furn, children }: { id?: string; furn?: string[]; chi
   );
 }
 
-export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true, act = "", lite = false }: { kind: Kind; stage: number; mood?: string; equip?: Equip; anim?: boolean; act?: string; lite?: boolean }) {
+export function PoopSvg({ size = 34 }: { size?: number | string }) {
+  return (
+    <svg viewBox="0 0 44 46" width={size} height={size} aria-hidden="true" style={{ display: "block" }}>
+      <g className="pet-stink" fill="none" stroke="#b987a8" strokeWidth="1.8" strokeLinecap="round">
+        <path d="M13 13 q-3 -4 0 -8 q3 -3 0 -6" />
+        <path d="M22 11 q-3 -4 0 -8 q3 -3 0 -5" />
+        <path d="M31 13 q-3 -4 0 -8 q3 -3 0 -6" />
+      </g>
+      <path d="M22 14 c3 0 5 2 4 4 c4 0 7 3 6 6 c5 1 8 4 7 9 c-1 4 -6 7 -17 7 c-11 0 -16 -3 -17 -7 c-1 -5 2 -8 7 -9 c-1 -3 2 -6 6 -6 c-1 -2 1 -4 4 -4z" fill="#9e6b47" stroke="#6f462b" strokeWidth="2" strokeLinejoin="round" />
+      <path d="M15 27 q6 -2 14 0" fill="none" stroke="#c7956d" strokeWidth="2" strokeLinecap="round" opacity="0.6" />
+      <circle cx="17.5" cy="30" r="1.8" fill="#4a2a52" />
+      <circle cx="26.5" cy="30" r="1.8" fill="#4a2a52" />
+      <ellipse cx="14.5" cy="32.5" rx="2.2" ry="1.2" fill="#ff9cc6" opacity="0.75" />
+      <ellipse cx="29.5" cy="32.5" rx="2.2" ry="1.2" fill="#ff9cc6" opacity="0.75" />
+      <path d="M20 33 q2 2 4 0" fill="none" stroke="#4a2a52" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true, act = "", lite = false, dirty = false }: { kind: Kind; stage: number; mood?: string; equip?: Equip; anim?: boolean; act?: string; lite?: boolean; dirty?: boolean }) {
   const p = PAL[kind];
   const moveCls = [lite ? "pet-lite" : "", mood === "miss" ? "pet-sad" : "", act ? "pet-act-" + act + " pet-busy" : "", "pet-move"].filter(Boolean).join(" ");
   const fx = (
@@ -220,6 +243,19 @@ export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true, act 
         <path className="pet-fx-bit" d="M64 62 l2 6 l6 2 l-6 2 l-2 6 l-2-6 l-6-2 l6-2z" />
         <path className="pet-fx-bit" d="M108 46 l3 8 l8 3 l-8 3 l-3 8 l-3-8 l-8-3 l8-3z" />
         <path className="pet-fx-bit" d="M140 66 l2 6 l6 2 l-6 2 l-2 6 l-2-6 l-6-2 l6-2z" />
+      </g>
+      <g className="pet-fx-crumbs">
+        <circle className="pet-fx-bit" cx="84" cy="120" r="3.4" fill="#ffb86c" />
+        <circle className="pet-fx-bit" cx="116" cy="118" r="3.8" fill="#ff8cc0" />
+        <rect className="pet-fx-bit" x="92" y="126" width="5" height="5" rx="1.5" fill="#ffd36e" />
+        <circle className="pet-fx-bit" cx="106" cy="128" r="3" fill="#f7a072" />
+      </g>
+      <g className="pet-fx-bubbles">
+        <g className="pet-fx-bit"><circle cx="66" cy="116" r="8" fill="rgba(180,238,255,0.65)" stroke="#88d8f5" strokeWidth="1.6" /><path d="M63 112 a3 3 0 0 1 4 -1" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" fill="none" /></g>
+        <g className="pet-fx-bit"><circle cx="136" cy="108" r="9.5" fill="rgba(195,244,255,0.65)" stroke="#88d8f5" strokeWidth="1.6" /><path d="M132 103 a3.5 3.5 0 0 1 5 -1" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" fill="none" /></g>
+        <g className="pet-fx-bit"><circle cx="96" cy="84" r="6.5" fill="rgba(210,248,255,0.7)" stroke="#9ae2fa" strokeWidth="1.4" /></g>
+        <g className="pet-fx-bit"><circle cx="122" cy="146" r="7" fill="rgba(190,240,255,0.65)" stroke="#88d8f5" strokeWidth="1.4" /></g>
+        <g className="pet-fx-bit"><circle cx="76" cy="152" r="5.5" fill="rgba(210,248,255,0.7)" stroke="#9ae2fa" strokeWidth="1.4" /></g>
       </g>
     </g>
   );
@@ -272,6 +308,14 @@ export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true, act 
         <Acc id={equip.acc} k={kind} />
         {stage === 4 ? <g><path d="M60 46 L100 30 L140 46 L100 62 Z" fill="#3b2c55" /><rect x="84" y="50" width="32" height="12" rx="3" fill="#3b2c55" /><path d="M138 47 v20" stroke="#ffd36e" strokeWidth="2.5" /><circle cx="138" cy="69" r="4" fill="#ffd36e" /></g> : null}
         {stage === 1 ? <g><path d="M50 196 q50 22 100 0 l-8 -16 l-10 8 l-10 -10 l-12 10 l-10 -10 l-12 10 l-10 -10 l-10 8z" fill={p.egg} stroke={p.stroke} strokeWidth="2.5" strokeLinejoin="round" /></g> : null}
+        {dirty ? <g className="pet-mud" opacity="0.84">
+          <ellipse cx="64" cy="116" rx="7" ry="4.5" transform="rotate(-14 64 116)" fill="#b57f50" />
+          <circle cx="62" cy="115" r="1.4" fill="#8f5c34" />
+          <circle cx="123" cy="68" r="4.5" fill="#b57f50" />
+          <ellipse cx="86" cy="176" rx="8.5" ry="5" transform="rotate(10 86 176)" fill="#b57f50" />
+          <circle cx="89" cy="176" r="1.6" fill="#8f5c34" />
+          <circle cx="114" cy="184" r="4.2" fill="#b57f50" />
+        </g> : null}
       </g>
       {mood === "miss" ? <g><circle cx="160" cy="48" r="4" fill="#fff" stroke={p.stroke} /><circle cx="170" cy="34" r="6" fill="#fff" stroke={p.stroke} /><ellipse cx="174" cy="16" rx="22" ry="13" fill="#fff" stroke={p.stroke} strokeWidth="2" /><path d="M164 18 q10 8 20 0" fill="#ffd36e" stroke="#e2a840" /><path d="M166 14 h16" stroke="#e2a840" strokeWidth="2" /></g> : null}
     </g>

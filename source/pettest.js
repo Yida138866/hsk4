@@ -116,11 +116,14 @@ const ALL = ["bow", "glasses", "beret", "crown", "scarf", "hoodie", "dress", "ao
     for (let t = 0; t < 6 && !talkMp3; t++) { await page.click('#pet-top button[aria-label="pet"]'); await sleep(1300); talkMp3 = reqs.slice(n2).some((r) => /^(200|206|304) .*audio\/pet\/\d+\.mp3/.test(r)); }
     talkTts = await page.evaluate(() => window.__tts);
     ok(tag + " pet talks (voice mp3 or TTS for dynamic lines)", talkMp3, `mp3=${talkMp3} tts=${talkTts}`);
+    await click("#pet-top button", EN ? "Food" : "Đồ ăn");
+    ok(tag + " overfeeding blocked at 100", await page.$eval("#pet-top .shop button", (b) => b.disabled));
+    await seed({ hunger: 60, clean: 100, poop: 0, dirty: false });
     const before = await get();
     await click("#pet-top button", EN ? "Food" : "Đồ ăn"); await click("#pet-top .shop button", EN ? "Feed" : "Cho ăn"); await sleep(300);
     await click("#pet-top button", EN ? "Accessories" : "Phụ kiện"); await click("#pet-top .shop button", EN ? "Buy" : "Mua"); await sleep(300);
     const after = await get();
-    ok(tag + " shop feed + buy", after.stats.fed === before.stats.fed + 1 && after.owned.length === before.owned.length + 1 && after.stars < before.stars);
+    ok(tag + " shop feed + buy", after.stats.fed === before.stats.fed + 1 && after.hunger > before.hunger && after.owned.length === before.owned.length + 1 && after.stars < before.stars);
     // graduation via check-in crossing 1200
     await seed({ xp: 1190, lessons: [], stage: 3, minStage: 0, gradDone: false, ciLast: ds(-1), ciStreak: 2, equip: { outfit: "aodai", room: "night", furn: ["lamp", "desk"] } });
     label = await page.evaluate(() => document.querySelector("#pet-top span[style*='linear-gradient']").textContent);

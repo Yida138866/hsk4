@@ -56,10 +56,25 @@ PV_CSS = """
 @keyframes pyawn{0%,100%{opacity:0;transform:scale(.6)}40%,65%{opacity:1;transform:scale(1)}}
 .pet-act-shy .pet-blush-x{animation:pblush .8s ease-in-out}
 @keyframes pblush{0%,100%{opacity:.15}40%{opacity:1}}
+.pet-act-eat{animation:peat .95s ease-in-out}
+@keyframes peat{0%,100%{transform:translateY(0) scale(1,1)}22%{transform:translateY(3px) scale(1.04,.95)}44%{transform:translateY(-5px) scale(.98,1.03)}66%{transform:translateY(2px) scale(1.03,.96)}84%{transform:translateY(-3px)}}
+.pet-act-bath{animation:pbath 1s ease-in-out}
+@keyframes pbath{0%,100%{transform:rotate(0) scale(1)}22%{transform:rotate(-9deg) translateY(-4px)}46%{transform:rotate(9deg) translateY(-2px)}70%{transform:rotate(-6deg) translateY(-4px)}}
 .pet-fx{pointer-events:none}
-.pet-fx-heart,.pet-fx-spark{opacity:0}
-.pet-act-heart .pet-fx-heart,.pet-act-sparkle .pet-fx-spark{opacity:1}
-.pet-act-heart .pet-fx-heart .pet-fx-bit,.pet-act-sparkle .pet-fx-spark .pet-fx-bit{animation:pfx .95s ease-out both}
+.pet-fx-heart,.pet-fx-spark,.pet-fx-crumbs,.pet-fx-bubbles{opacity:0}
+.pet-act-heart .pet-fx-heart,.pet-act-sparkle .pet-fx-spark,.pet-act-eat .pet-fx-crumbs,.pet-act-bath .pet-fx-bubbles,.pet-act-bath .pet-fx-spark{opacity:1}
+.pet-act-heart .pet-fx-heart .pet-fx-bit,.pet-act-sparkle .pet-fx-spark .pet-fx-bit,.pet-act-bath .pet-fx-spark .pet-fx-bit{animation:pfx .95s ease-out both}
+.pet-act-eat .pet-fx-crumbs .pet-fx-bit{animation:pcrumb .9s ease-out both}
+@keyframes pcrumb{0%{opacity:0;transform:translate(0,0) scale(.55)}22%{opacity:1}100%{opacity:0;transform:translate(8px,18px) scale(1.05) rotate(35deg)}}
+.pet-act-eat .pet-fx-crumbs .pet-fx-bit:nth-child(odd){animation-name:pcrumbl}
+@keyframes pcrumbl{0%{opacity:0;transform:translate(0,0) scale(.55)}22%{opacity:1}100%{opacity:0;transform:translate(-9px,18px) scale(1.05) rotate(-35deg)}}
+.pet-act-bath .pet-fx-bubbles .pet-fx-bit{animation:pbub 1.05s ease-out both}
+@keyframes pbub{0%{opacity:0;transform:translateY(10px) scale(.45)}24%{opacity:.95}100%{opacity:0;transform:translateY(-38px) scale(1.25)}}
+.pet-stink{animation:pstink 1.8s ease-in-out infinite;transform-origin:50% 100%}
+@keyframes pstink{0%,100%{opacity:.55;transform:translateY(0) skewX(-4deg)}50%{opacity:.95;transform:translateY(-3px) skewX(5deg)}}
+.poop-pop{animation:pspark .6s ease-out forwards;pointer-events:none}
+@keyframes pspark{0%{opacity:1;transform:scale(.5)}45%{opacity:1;transform:scale(1.2)}100%{opacity:0;transform:translateY(-16px) scale(1.35)}}
+.widget-care{animation:pu 2s ease-in-out infinite}
 .pet-fx-bit:nth-child(2){animation-delay:.08s}
 .pet-fx-bit:nth-child(3){animation-delay:.16s}
 @keyframes pfx{0%{opacity:0;transform:translateY(0) scale(.55)}22%{opacity:1}100%{opacity:0;transform:translateY(-36px) scale(1.15)}}
@@ -89,8 +104,9 @@ PV_CSS = """
 .pet-bounce,.pet-wobble,.confetti span,.pulse,.flame,.ci-pop,
 .pet-act-jump,.pet-act-hop,.pet-act-spin,.pet-act-wiggle,.pet-act-happy,.pet-act-dance,.pet-act-roll,.pet-act-sway,.pet-act-stretch,.pet-act-eggshake,.pet-act-eggbounce,
 .pet-act-blink .pet-eyes,.pet-act-look .pet-face,.pet-act-ears .pet-ears,.pet-act-ears .pet-ears-front,.pet-act-ears .pet-tail,.pet-act-wave .pet-arm-r,
+.pet-act-eat,.pet-act-bath,.pet-stink,.poop-pop,.widget-care,
 .pet-act-yawn .pet-yawn,.pet-act-shy .pet-blush-x,.pet-fx-bit,.hearts-pop,.hearts-pop span{animation:none!important}
-.pet-fx,.pet-yawn,.pet-blush-x{opacity:0!important}
+.pet-fx,.pet-yawn,.pet-blush-x,.poop-pop{opacity:0!important}
 }
 """
 for k, c in cfg.items():
