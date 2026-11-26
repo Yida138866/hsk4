@@ -345,26 +345,79 @@ export function adopt(kind: Kind, rawName: string) {
 function keepAcross(): Partial<St> { return { stars: S.stars, hearts: S.hearts, owned: S.owned, earned: S.earned, grads: S.grads, stats: S.stats, gifts: S.gifts, ciLast: S.ciLast, ciStreak: S.ciStreak, ciMax: S.ciMax, ciDays: S.ciDays, pq: S.pq, claims: S.claims, day: S.day, dayXp: S.dayXp, best: S.best }; }
 
 // ---------- shop & badges ----------
-type Item = { ev?: string; id: string; cat: "acc" | "outfit" | "food" | "room" | "furn" | "hold"; zh: string; vi: string; en: string; s?: number; h?: number; happy?: number; fill?: number; icon: string };
+type Item = { ev?: string; pet?: Kind; id: string; cat: "acc" | "outfit" | "food" | "room" | "furn" | "hold"; zh: string; vi: string; en: string; s?: number; h?: number; happy?: number; fill?: number; icon: string };
 export const SHOP: Item[] = [
+  // Accessories: 5 common + 3 exclusive per pet (8 per pet)
   { id: "bow", cat: "acc", zh: "蝴蝶结", vi: "Nơ xinh", en: "Bow", s: 15, icon: "🎀" },
   { id: "glasses", cat: "acc", zh: "眼镜", vi: "Kính", en: "Glasses", s: 20, icon: "👓" },
   { id: "beret", cat: "acc", zh: "贝雷帽", vi: "Mũ nồi", en: "Beret", s: 25, icon: "🧢" },
   { id: "crown", cat: "acc", zh: "花环", vi: "Vòng hoa", en: "Flower crown", s: 30, icon: "🌸" },
+  { id: "starclip", cat: "acc", zh: "星星发卡", vi: "Kẹp tóc sao", en: "Star hairclip", s: 18, icon: "⭐" },
+  { id: "bunny_carrot", pet: "bunny", cat: "acc", zh: "胡萝卜发卡", vi: "Kẹp cà rốt", en: "Carrot clip", s: 20, icon: "🥕" },
+  { id: "bunny_earbow", pet: "bunny", cat: "acc", zh: "兔耳双蝴蝶结", vi: "Nơ đôi tai thỏ", en: "Twin ear bows", s: 24, icon: "🎀" },
+  { id: "bunny_pearl", pet: "bunny", cat: "acc", zh: "珍珠发箍", vi: "Bờm ngọc trai", en: "Pearl headband", h: 3, icon: "🫧" },
+  { id: "panda_bamboo", pet: "panda", cat: "acc", zh: "竹叶发簪", vi: "Trâm lá trúc", en: "Bamboo hairpin", s: 20, icon: "🎋" },
+  { id: "panda_leaf", pet: "panda", cat: "acc", zh: "小嫩叶", vi: "Lá non xinh", en: "Sprout clip", s: 18, icon: "🌿" },
+  { id: "panda_beret", pet: "panda", cat: "acc", zh: "熊猫小帽", vi: "Mũ trúc xinh", en: "Bamboo beret", h: 3, icon: "🐼" },
+  { id: "kitten_bell", pet: "kitten", cat: "acc", zh: "金铃铛", vi: "Chuông vàng", en: "Golden bell", s: 20, icon: "🔔" },
+  { id: "kitten_yarn", pet: "kitten", cat: "acc", zh: "毛线发饰", vi: "Kẹp cuộn len", en: "Yarn clip", s: 22, icon: "🧶" },
+  { id: "kitten_fish", pet: "kitten", cat: "acc", zh: "小鱼发卡", vi: "Kẹp cá nhỏ", en: "Little fish clip", h: 3, icon: "🐟" },
+  { id: "tiger_wang", pet: "tiger", cat: "acc", zh: "萌虎小皇冠", vi: "Vương miện hổ", en: "Tiger cub crown", s: 26, icon: "👑" },
+  { id: "tiger_bandana", pet: "tiger", cat: "acc", zh: "活力头带", vi: "Băng đô đỏ", en: "Sport headband", s: 20, icon: "🧣" },
+  { id: "tiger_star", pet: "tiger", cat: "acc", zh: "星星耳饰", vi: "Kẹp sao hổ con", en: "Tiger star clip", h: 3, icon: "✨" },
+  { id: "dragon_gem", pet: "dragon", cat: "acc", zh: "额头宝石", vi: "Ngọc trán rồng", en: "Forehead gem", s: 24, icon: "💎" },
+  { id: "dragon_hornflow", pet: "dragon", cat: "acc", zh: "龙角小花", vi: "Hoa cài sừng", en: "Horn blossoms", s: 22, icon: "🌸" },
+  { id: "dragon_halo", pet: "dragon", cat: "acc", zh: "小龙光环", vi: "Vòng sáng rồng", en: "Starlight halo", h: 3, icon: "🌟" },
+  { id: "puppy_bone", pet: "puppy", cat: "acc", zh: "骨头发卡", vi: "Kẹp xương nhỏ", en: "Bone hairclip", s: 18, icon: "🦴" },
+  { id: "puppy_sunhat", pet: "puppy", cat: "acc", zh: "小草帽", vi: "Mũ cói nhỏ", en: "Straw sunhat", s: 26, icon: "👒" },
+  { id: "puppy_bell", pet: "puppy", cat: "acc", zh: "爪印项圈", vi: "Vòng cổ dấu chân", en: "Paw collar", h: 3, icon: "🐾" },
+  // Outfits: 5 common + 3 exclusive per pet (8 per pet)
   { id: "scarf", cat: "outfit", zh: "围巾", vi: "Khăn quàng", en: "Scarf", s: 15, icon: "🧣" },
   { id: "hoodie", cat: "outfit", zh: "卫衣", vi: "Áo hoodie", en: "Hoodie", s: 25, icon: "👕" },
   { id: "dress", cat: "outfit", zh: "连衣裙", vi: "Váy liền", en: "Dress", h: 4, icon: "👗" },
   { id: "aodai", cat: "outfit", zh: "奥黛", vi: "Áo dài", en: "Áo dài", h: 5, icon: "🌺" },
+  { id: "cardigan", cat: "outfit", zh: "针织开衫", vi: "Áo len khoác", en: "Cozy cardigan", s: 28, icon: "🧥" },
+  { id: "bunny_tutu", pet: "bunny", cat: "outfit", zh: "芭蕾蓬蓬裙", vi: "Váy múa xòe", en: "Ballet tutu", s: 30, icon: "🩰" },
+  { id: "bunny_berry", pet: "bunny", cat: "outfit", zh: "草莓背带裙", vi: "Yếm dâu tây", en: "Berry pinafore", h: 4, icon: "🍓" },
+  { id: "bunny_pajama", pet: "bunny", cat: "outfit", zh: "云朵睡衣", vi: "Đồ ngủ mây", en: "Cloud pajamas", s: 26, icon: "🌙" },
+  { id: "panda_hanfu", pet: "panda", cat: "outfit", zh: "汉服小裙", vi: "Hán phục nhỏ", en: "Little hanfu", h: 4, icon: "🏮" },
+  { id: "panda_bamboodress", pet: "panda", cat: "outfit", zh: "青竹背带裤", vi: "Yếm trúc xanh", en: "Bamboo overalls", s: 26, icon: "🎋" },
+  { id: "panda_tea", pet: "panda", cat: "outfit", zh: "茶屋围裙", vi: "Tạp dề tiệm trà", en: "Tea-shop apron", s: 28, icon: "🍵" },
+  { id: "kitten_maid", pet: "kitten", cat: "outfit", zh: "蕾丝围裙裙", vi: "Váy tạp dề ren", en: "Lace pinafore", h: 4, icon: "🎀" },
+  { id: "kitten_sailor", pet: "kitten", cat: "outfit", zh: "海军领水手服", vi: "Áo thủy thủ", en: "Sailor uniform", s: 28, icon: "⚓" },
+  { id: "kitten_cape", pet: "kitten", cat: "outfit", zh: "针织小披风", vi: "Áo choàng len", en: "Knit capelet", s: 25, icon: "🧶" },
+  { id: "tiger_kungfu", pet: "tiger", cat: "outfit", zh: "功夫小衫", vi: "Áo võ nhỏ", en: "Kungfu jacket", s: 28, icon: "🥋" },
+  { id: "tiger_sport", pet: "tiger", cat: "outfit", zh: "运动卫衣", vi: "Áo thể thao", en: "Varsity jacket", s: 26, icon: "🏅" },
+  { id: "tiger_royal", pet: "tiger", cat: "outfit", zh: "小虎披风", vi: "Áo choàng hổ", en: "Royal cub cape", h: 4, icon: "👑" },
+  { id: "dragon_wingcape", pet: "dragon", cat: "outfit", zh: "小龙翼披风", vi: "Áo choàng cánh rồng", en: "Little wing cape", h: 4, icon: "🦋" },
+  { id: "dragon_cloud", pet: "dragon", cat: "outfit", zh: "祥云小袍", vi: "Áo mây lành", en: "Cloud robe", s: 30, icon: "☁️" },
+  { id: "dragon_star", pet: "dragon", cat: "outfit", zh: "星辰小裙", vi: "Váy sao đêm", en: "Starry dress", s: 32, icon: "🌟" },
+  { id: "puppy_raincoat", pet: "puppy", cat: "outfit", zh: "小黄雨衣", vi: "Áo mưa vàng", en: "Sunny raincoat", s: 24, icon: "🐥" },
+  { id: "puppy_overalls", pet: "puppy", cat: "outfit", zh: "牛仔背带裤", vi: "Yếm denim", en: "Denim overalls", s: 26, icon: "👖" },
+  { id: "puppy_picnic", pet: "puppy", cat: "outfit", zh: "格纹野餐裙", vi: "Váy ca-rô dã ngoại", en: "Picnic dress", h: 4, icon: "🧺" },
+  // Food: 8 items
   { id: "boba", cat: "food", zh: "珍珠奶茶", vi: "Trà sữa trân châu", en: "Bubble tea", s: 5, happy: 25, fill: 20, icon: "🧋" },
   { id: "baozi", cat: "food", zh: "包子", vi: "Bánh bao", en: "Baozi", s: 3, happy: 15, fill: 15, icon: "🥟" },
   { id: "banhmi", cat: "food", zh: "越南面包", vi: "Bánh mì", en: "Bánh mì", s: 4, happy: 20, fill: 25, icon: "🥖" },
   { id: "mooncake", cat: "food", zh: "月饼", vi: "Bánh trung thu", en: "Mooncake", h: 2, happy: 40, fill: 35, icon: "🥮" },
+  { id: "pho", cat: "food", zh: "河粉", vi: "Phở bò", en: "Phở", s: 6, happy: 30, fill: 40, icon: "🍜" },
+  { id: "tangyuan", cat: "food", zh: "汤圆", vi: "Chè trôi nước", en: "Sweet dumplings", s: 4, happy: 22, fill: 20, icon: "🍡" },
+  { id: "matcha", cat: "food", zh: "抹茶蛋糕", vi: "Bánh matcha", en: "Matcha cake", s: 5, happy: 28, fill: 30, icon: "🍵" },
+  { id: "strawberry", cat: "food", zh: "草莓圣代", vi: "Kem dâu", en: "Berry sundae", h: 1, happy: 35, fill: 25, icon: "🍓" },
+  // Rooms: 6 items
   { id: "sakura", cat: "room", zh: "樱花房间", vi: "Phòng hoa anh đào", en: "Sakura room", s: 20, icon: "🌸" },
   { id: "beach", cat: "room", zh: "海边", vi: "Bờ biển", en: "Beach", s: 30, icon: "🏖️" },
   { id: "night", cat: "room", zh: "星空", vi: "Trời sao", en: "Starry night", h: 3, icon: "🌙" },
+  { id: "bamboo", cat: "room", zh: "竹林小院", vi: "Vườn trúc", en: "Bamboo garden", s: 24, icon: "🎍" },
+  { id: "cafe", cat: "room", zh: "甜品咖啡屋", vi: "Quán bánh ngọt", en: "Sweet café", s: 28, icon: "☕" },
+  { id: "cloud", cat: "room", zh: "云端小屋", vi: "Nhà trên mây", en: "Cloud cottage", h: 3, icon: "☁️" },
+  // Furniture: 6 items
   { id: "plant", cat: "furn", zh: "盆栽", vi: "Chậu cây", en: "Plant", s: 10, icon: "🪴" },
   { id: "lamp", cat: "furn", zh: "台灯", vi: "Đèn bàn", en: "Lamp", s: 10, icon: "💡" },
   { id: "desk", cat: "furn", zh: "小书桌", vi: "Bàn học", en: "Study desk", s: 15, icon: "📚" },
+  { id: "rug", cat: "furn", zh: "爱心小地毯", vi: "Thảm trái tim", en: "Heart rug", s: 12, icon: "🩷" },
+  { id: "clock", cat: "furn", zh: "小兔挂钟", vi: "Đồng hồ treo tường", en: "Wall clock", s: 14, icon: "🕰️" },
+  { id: "plushie", cat: "furn", zh: "小熊玩偶", vi: "Gấu bông", en: "Teddy plush", s: 18, icon: "🧸" },
   // festival-limited (earned by normal study during the event; not for sale)
   { ev: "tet", id: "lixi", cat: "hold", zh: "红包", vi: "Lì xì", en: "Red envelope", icon: "🧧" },
   { ev: "tet", id: "aodai_red", cat: "outfit", zh: "红色奥黛", vi: "Áo dài đỏ", en: "Red áo dài", icon: "👘" },
@@ -447,6 +500,7 @@ function giveBath(): { ok: boolean; line: Line | null } {
   return { ok: true, line: l };
 }
 function buy(it: Item): { ok: boolean; line: Line | null } {
+  if (it.pet && it.pet !== S.pet) return { ok: false, line: null };
   if (it.cat !== "food" && S.owned.includes(it.id)) return { ok: false, line: null };
   if (it.s && S.stars < it.s) return { ok: false, line: null }; if (it.h && S.hearts < it.h) return { ok: false, line: null };
   if (it.cat === "food") {
@@ -462,6 +516,7 @@ function buy(it: Item): { ok: boolean; line: Line | null } {
   return { ok: true, line: null };
 }
 function wear(it: Item) {
+  if (it.pet && it.pet !== S.pet) return;
   if (it.cat === "furn") { const f = S.equip.furn || []; S.equip = { ...S.equip, furn: f.includes(it.id) ? f.filter((x) => x !== it.id) : [...f, it.id] }; }
   else if (it.cat === "acc" || it.cat === "outfit" || it.cat === "room" || it.cat === "hold") { S.equip = { ...S.equip, [it.cat]: S.equip[it.cat] === it.id ? undefined : it.id }; }
   save();
@@ -680,21 +735,25 @@ function PetTabInner() {
         <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 10 }}>
           {([["acc", "饰品", "Phụ kiện", "Accessories"], ["outfit", "衣服", "Trang phục", "Outfits"], ["food", "美食", "Đồ ăn", "Food"], ["room", "房间", "Phòng", "Rooms"], ["furn", "家具", "Nội thất", "Furniture"], ["hold", "限定", "Quà dịp lễ", "Festival gifts"]] as [Item["cat"], string, string, string][]).map(([c, zh, v, e]) => <button key={c} onClick={() => setCat(c)} style={btn(cat === c)}>{zh} · {VI ? v : e}</button>)}
         </div>
-        <div className="shop" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px,1fr))", gap: 8 }}>
+        <div className="shop">
           {cat === "hold" ? <div style={{ gridColumn: "1 / -1", fontSize: 12.5, color: "#7a4f78" }}>{VI ? "🎊 Quà giới hạn chỉ có trong dịp lễ (Tết, Trung Thu, 8/3, 20/10…): học như bình thường là nhận được, không cần làm thêm gì." : "🎊 Limited gifts appear only during festivals (Tết, Mid-Autumn, 8/3, 20/10…): just study as usual to receive them, nothing extra needed."}</div> : null}
-          {SHOP.filter((i) => (cat === "hold" ? !!i.ev : i.cat === cat && !i.ev) && (!i.ev || s.owned.includes(i.id))).map((it) => {
+          {SHOP.filter((i) => (cat === "hold" ? !!i.ev : i.cat === cat && !i.ev) && (!i.ev || s.owned.includes(i.id)) && (!i.pet || i.pet === s.pet)).map((it) => {
             const own = it.cat !== "food" && s.owned.includes(it.id);
             const on = own && (it.cat === "furn" ? (s.equip.furn || []).includes(it.id) : (s.equip as Record<string, unknown>)[it.cat] === it.id);
             const afford = (it.s ? s.stars >= it.s : true) && (it.h ? s.hearts >= it.h : true);
             const fullBlock = it.cat === "food" && (st === 0 || s.hunger >= 100);
             const canBuy = afford && !fullBlock;
             return (
-              <div key={it.id} style={{ borderRadius: 18, padding: 10, background: on ? "linear-gradient(160deg,#ffe1ee,#f3e6ff)" : "#fff7fb", border: on ? "2px solid #e8559a" : "1.5px solid rgba(232,85,154,0.18)", textAlign: "center" }}>
-                <div style={{ fontSize: 30 }}>{it.icon}</div>
-                <div lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontWeight: 800, color: "#8f2160" }}>{it.zh}</div>
-                <div style={{ fontSize: 12, color: "#8a5a82", minHeight: 18 }}>{VI ? it.vi : it.en}{it.ev ? (VI ? " · giới hạn" : " · limited") : ""}{it.fill ? ` · +${it.fill}%🍙` : ""}{it.happy ? ` · +${it.happy}♡` : ""}</div>
-                {own ? <button onClick={() => wear(it)} style={{ ...btn(on), marginTop: 6, padding: "6px 12px", fontSize: 12 }}>{on ? (VI ? "Đang dùng ✓" : "On ✓") : VI ? "Dùng" : "Use"}</button>
-                  : <button disabled={!canBuy} onClick={() => { const r = buy(it); if (r.ok && it.cat === "food") triggerCare("eat", r.line); }} style={{ ...btn(canBuy), marginTop: 6, padding: "6px 12px", fontSize: 12, opacity: canBuy ? 1 : 0.45 }}>{it.s ? `${it.s}⭐` : `${it.h}💗`} {it.cat === "food" ? (s.hunger >= 100 && st > 0 ? (VI ? "Đã no" : "Full") : VI ? "Cho ăn" : "Feed") : VI ? "Mua" : "Buy"}</button>}
+              <div key={it.id} style={{ minWidth: 0, borderRadius: 14, padding: "8px 6px", background: on ? "linear-gradient(160deg,#ffe1ee,#f3e6ff)" : "#fff7fb", border: on ? "2px solid #e8559a" : "1.5px solid rgba(232,85,154,0.18)", textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+                <div>
+                  <div style={{ fontSize: 22, lineHeight: "26px" }}>{it.icon}</div>
+                  <div lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontSize: 13.5, fontWeight: 800, color: "#8f2160", lineHeight: "17px", marginTop: 2 }}>{it.zh}</div>
+                  <div style={{ fontSize: 11, color: "#8a5a82", lineHeight: "14px", marginTop: 1 }}>{VI ? it.vi : it.en}{it.pet ? (VI ? " · riêng" : " · exclusive") : ""}{it.ev ? (VI ? " · giới hạn" : " · limited") : ""}{it.fill ? ` · +${it.fill}%🍙` : ""}{it.happy ? ` · +${it.happy}♡` : ""}</div>
+                </div>
+                <div>
+                  {own ? <button onClick={() => wear(it)} style={{ ...btn(on), marginTop: 6, padding: "4px 10px", fontSize: 11.5 }}>{on ? (VI ? "Đang dùng ✓" : "On ✓") : VI ? "Dùng" : "Use"}</button>
+                    : <button disabled={!canBuy} onClick={() => { const r = buy(it); if (r.ok && it.cat === "food") triggerCare("eat", r.line); }} style={{ ...btn(canBuy), marginTop: 6, padding: "4px 10px", fontSize: 11.5, opacity: canBuy ? 1 : 0.45 }}>{it.s ? `${it.s}⭐` : `${it.h}💗`} {it.cat === "food" ? (s.hunger >= 100 && st > 0 ? (VI ? "Đã no" : "Full") : VI ? "Cho ăn" : "Feed") : VI ? "Mua" : "Buy"}</button>}
+                </div>
               </div>
             );
           })}

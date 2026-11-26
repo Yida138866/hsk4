@@ -91,6 +91,8 @@ rt{user-select:none}
 .poop-pop{animation:pspark .6s ease-out forwards;pointer-events:none}
 @keyframes pspark{0%{opacity:1;transform:scale(.5)}45%{opacity:1;transform:scale(1.2)}100%{opacity:0;transform:translateY(-16px) scale(1.35)}}
 .widget-care{animation:pu 2s ease-in-out infinite}
+.shop{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (min-width:640px){.shop{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .pet-fx-bit:nth-child(2){animation-delay:.08s}
 .pet-fx-bit:nth-child(3){animation-delay:.16s}
 @keyframes pfx{0%{opacity:0;transform:translateY(0) scale(.55)}22%{opacity:1}100%{opacity:0;transform:translateY(-36px) scale(1.15)}}
