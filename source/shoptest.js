@@ -205,6 +205,13 @@ const KINDS = ["bunny", "panda", "kitten", "tiger", "dragon", "puppy"];
       return c ? { txt: c.innerText, svg: !!c.querySelector("svg") } : null;
     });
     ok(`${L} pho SVG & text visible`, !!phoInfo && phoInfo.svg && phoInfo.txt.includes("河粉") && phoInfo.txt.includes(EN ? "Phở" : "Phở bò"), phoInfo ? phoInfo.txt.replace(/\s+/g, " ") : "missing");
+    for (const [zh, label] of [["包子", "baozi"], ["越南面包", "banhmi"], ["草莓圣代", "strawberry"]]) {
+      const hasSvg = await page.evaluate((zh) => {
+        const c = [...document.querySelectorAll("#pet-top .shop > div")].find((x) => x.innerText.includes(zh));
+        return !!(c && c.querySelector("svg"));
+      }, zh);
+      ok(`${L} ${label} custom SVG visible`, hasSvg);
+    }
     if (!EN) {
       await page.evaluate(() => {
         const s = document.querySelector("#pet-top .shop");

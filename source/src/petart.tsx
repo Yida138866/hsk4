@@ -368,7 +368,7 @@ export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true, act 
   );
 }
 
-export const CUSTOM_ICONS = new Set(["matcha", "pho"]);
+export const CUSTOM_ICONS = new Set(["matcha", "pho", "baozi", "banhmi", "strawberry"]);
 export function ItemIcon({ id, fallback, size = 24 }: { id?: string; fallback: string; size?: number }) {
   if (id === "matcha") {
     return (
@@ -434,6 +434,77 @@ export function ItemIcon({ id, fallback, size = 24 }: { id?: string; fallback: s
         </g>
         <path d="M19.8 4.4 L28.4 9.5" stroke="#c8965c" strokeWidth="1.35" strokeLinecap="round" />
         <path d="M18.4 5.7 L27.6 11.0" stroke="#dfb078" strokeWidth="1.25" strokeLinecap="round" />
+      </svg>
+    );
+  }
+  if (id === "baozi") {
+    return (
+      <svg viewBox="0 0 32 32" width={size} height={size} aria-hidden="true" style={{ display: "inline-block", verticalAlign: "middle" }}>
+        <path d="M11.5 5.6 Q10.5 4.2 11.7 2.8 M16 4.8 Q15 3.4 16.2 2 M20.5 5.6 Q19.5 4.2 20.7 2.8" fill="none" stroke="#c8b6c4" strokeWidth="1.15" strokeLinecap="round" opacity="0.85" />
+        <rect x="4.2" y="20.4" width="23.6" height="6.2" rx="2.2" fill="#e2b073" stroke="#996836" strokeWidth="0.95" />
+        <path d="M4.6 23.4 H27.4" stroke="#bd8649" strokeWidth="1.05" />
+        <path d="M9.5 20.6 V26.4 M16 20.6 V26.4 M22.5 20.6 V26.4" stroke="#c99357" strokeWidth="0.7" opacity="0.6" />
+        <path d="M6.2 20.4 C5.4 11.6 10.6 7.4 16 7.4 C21.4 7.4 26.6 11.6 25.8 20.4 Q16 22.4 6.2 20.4 Z" fill="#fffcf7" stroke="#ad927d" strokeWidth="0.95" strokeLinejoin="round" />
+        <path d="M7.1 18.8 Q16 21.4 24.9 18.8 Q25.2 20.3 24.7 20.6 Q16 22.3 7.3 20.6 Z" fill="#f3e7d8" />
+        <path d="M16 9.3 Q11.8 11.4 10.2 15.2 M16 9.3 Q14.0 12.2 13.7 15.8 M16 9.3 Q18.0 12.2 18.3 15.8 M16 9.3 Q20.2 11.4 21.8 15.2" fill="none" stroke="#c4aa94" strokeWidth="0.9" strokeLinecap="round" />
+        <path d="M14.3 8.8 Q16 7.5 17.7 8.8 Q16 10.1 14.3 8.8 Z" fill="#f7ecdf" stroke="#ad927d" strokeWidth="0.75" strokeLinejoin="round" />
+      </svg>
+    );
+  }
+  if (id === "banhmi") {
+    return (
+      <svg viewBox="0 0 32 32" width={size} height={size} aria-hidden="true" style={{ display: "inline-block", verticalAlign: "middle" }}>
+        <g transform="rotate(-14 16 16)">
+          <path d="M3.4 17.2 Q3.6 23.4 10.8 23.6 L24.6 23.2 Q29.4 22.6 29.2 17.2 Z" fill="#df9b48" stroke="#8f5522" strokeWidth="0.95" strokeLinejoin="round" />
+          <path d="M5.8 16.2 H27.4 Q27.6 18.8 24.4 19.0 L8.8 19.2 Q5.6 18.6 5.8 16.2 Z" fill="#fff1d2" />
+          <path d="M3.4 13.8 Q4.0 8.2 11.4 7.8 L22.6 7.8 Q28.6 8.2 28.8 13.2 Q22.5 11.6 16 11.6 Q9.5 11.6 3.4 13.8 Z" fill="#ebb05b" stroke="#8f5522" strokeWidth="0.95" strokeLinejoin="round" />
+          <path d="M9.6 9.0 L11.8 10.8 M15.2 8.6 L17.4 10.5 M20.8 9.0 L22.8 10.7" stroke="#b57029" strokeWidth="1.0" strokeLinecap="round" />
+          <g>
+            <ellipse cx="14.2" cy="15.8" rx="4.2" ry="2.2" fill="#eb8b8e" stroke="#b8585c" strokeWidth="0.65" />
+            <ellipse cx="21.0" cy="15.6" rx="3.8" ry="2.0" fill="#c77656" stroke="#8f4c32" strokeWidth="0.65" />
+            <path d="M8.6 14.6 L15.6 13.8 L15.4 15.8 L8.4 16.2 Z" fill="#63c76c" stroke="#36853e" strokeWidth="0.6" />
+            <path d="M16.2 13.6 Q21.2 11.8 26.8 13.8" fill="none" stroke="#ff8d38" strokeWidth="1.7" strokeLinecap="round" />
+            <path d="M10.4 13.2 Q14.0 11.6 17.6 13.4" fill="none" stroke="#ff9d47" strokeWidth="1.5" strokeLinecap="round" />
+            <path d="M12.6 12.2 Q14.8 9.8 17.0 12.2 Q14.8 14.0 12.6 12.2 Z" fill="#3da34a" stroke="#287031" strokeWidth="0.55" />
+            <path d="M21.4 11.9 Q23.6 9.8 25.6 12.1 Q23.6 13.8 21.4 11.9 Z" fill="#4cb559" stroke="#287031" strokeWidth="0.55" />
+            <circle cx="19.2" cy="13.8" r="1.2" fill="#e8384f" stroke="#a61e30" strokeWidth="0.5" />
+          </g>
+          <path d="M2.6 15.2 L8.8 13.8 L9.8 23.6 L3.6 22.8 Q2.2 19.2 2.6 15.2 Z" fill="#fffaf0" stroke="#c7b299" strokeWidth="0.85" strokeLinejoin="round" />
+          <path d="M3.8 17.5 L7.8 16.7 M4.2 20.2 L8.2 19.4" stroke="#f09bb8" strokeWidth="0.85" strokeLinecap="round" />
+        </g>
+      </svg>
+    );
+  }
+  if (id === "strawberry") {
+    return (
+      <svg viewBox="0 0 32 32" width={size} height={size} aria-hidden="true" style={{ display: "inline-block", verticalAlign: "middle" }}>
+        <path d="M20.2 10.6 L25.2 3.2 L27.0 4.4 L22.0 11.8 Z" fill="#e5a756" stroke="#a86d28" strokeWidth="0.7" strokeLinejoin="round" />
+        <path d="M22.2 7.6 L24.0 8.9 M24.0 5.0 L25.8 6.2" stroke="#b87b32" strokeWidth="0.65" />
+        <ellipse cx="16" cy="28.3" rx="6.2" ry="1.6" fill="#ffd9e8" stroke="#c96e94" strokeWidth="0.85" />
+        <rect x="14.4" y="24.5" width="3.2" height="3.6" fill="#ffe6f0" stroke="#c96e94" strokeWidth="0.8" />
+        <path d="M7.6 15.0 H24.4 L21.6 24.4 Q16 26.2 10.4 24.4 Z" fill="#ffeaf2" stroke="#c96e94" strokeWidth="0.95" strokeLinejoin="round" />
+        <path d="M8.8 19.0 Q16 20.6 23.2 19.0 L21.2 24.1 Q16 25.7 10.8 24.1 Z" fill="#ff9ac0" />
+        <path d="M9.0 15.4 H23.0 L22.2 19.4 Q16 20.8 9.8 19.4 Z" fill="#fffdf8" />
+        <path d="M10.4 15.6 Q12.2 18.8 13.2 16.4 Q14.6 15.2 15.8 18.6 Q17.2 15.4 18.6 17.6 Q19.8 15.6 21.8 16.6 L22.4 15.4 H9.6 Z" fill="#e83a60" />
+        <path d="M10.2 16.2 L11.4 22.8" stroke="rgba(255,255,255,0.65)" strokeWidth="1.2" strokeLinecap="round" />
+        <circle cx="12.6" cy="14.2" r="4.3" fill="#ffb3cf" stroke="#e07aa0" strokeWidth="0.7" />
+        <circle cx="19.4" cy="14.2" r="4.2" fill="#fffdf9" stroke="#d9c6cf" strokeWidth="0.7" />
+        <path d="M10.2 13.8 C10.2 11.2 12.5 10.2 16 10.2 C19.5 10.2 21.8 11.2 21.8 13.8 Z" fill="#ffffff" stroke="#d8c8d0" strokeWidth="0.65" />
+        <path d="M11.8 11.0 C12.0 8.9 13.9 8.2 16 8.2 C18.1 8.2 20.0 8.9 20.2 11.0 Z" fill="#fffdf9" stroke="#d8c8d0" strokeWidth="0.6" />
+        <path d="M13.8 8.7 C14.1 6.8 16 5.7 17.4 6.0 C16.7 7.2 18.4 7.8 18.4 8.7 Z" fill="#ffffff" stroke="#d8c8d0" strokeWidth="0.55" />
+        <path d="M11.0 13.0 Q12.4 14.6 13.6 12.8 Q15.2 11.4 16.6 14.2 Q18.0 11.6 19.6 13.4 L21.0 12.6" fill="none" stroke="#e83a60" strokeWidth="1.25" strokeLinecap="round" />
+        <g transform="translate(13.6 6.2) rotate(-14)">
+          <path d="M0 -3.0 C2.3 -3.0 3.1 -1.0 2.1 1.4 C1.3 3.2 0 3.9 0 3.9 C0 3.9 -1.3 3.2 -2.1 1.4 C-3.1 -1.0 -2.3 -3.0 0 -3.0 Z" fill="#e8354e" stroke="#a81d31" strokeWidth="0.6" />
+          <path d="M-1.9 -2.9 L0 -1.9 L1.9 -2.9 L1.1 -3.8 L0 -3.3 L-1.1 -3.8 Z" fill="#49ad52" />
+          <circle cx="-0.8" cy="-0.4" r="0.4" fill="#ffe178" />
+          <circle cx="0.9" cy="0.2" r="0.4" fill="#ffe178" />
+          <circle cx="-0.1" cy="1.6" r="0.4" fill="#ffe178" />
+        </g>
+        <g transform="translate(20.6 11.2) rotate(22)">
+          <path d="M-2.1 -1.1 C-2.1 -2.5 2.1 -2.5 2.1 -1.1 C2.1 0.8 0 2.5 0 2.5 C0 2.5 -2.1 0.8 -2.1 -1.1 Z" fill="#ff4d6d" stroke="#a81d31" strokeWidth="0.55" />
+          <path d="M-1.1 -0.9 C-1.1 -1.7 1.1 -1.7 1.1 -0.9 C1.1 0.2 0 1.3 0 1.3 C0 1.3 -1.1 0.2 -1.1 -0.9 Z" fill="#ffb8c6" />
+        </g>
+        <rect x="6.8" y="14.1" width="18.4" height="1.8" rx="0.9" fill="#fff4f8" stroke="#c96e94" strokeWidth="0.8" />
       </svg>
     );
   }
