@@ -202,6 +202,8 @@ const KINDS = ["bunny", "panda", "kitten", "tiger", "dragon", "puppy"];
       return { count: cards.length, twoCol: rows.length === 8 && rows[0].y === rows[1].y && rows[6].y === rows[7].y };
     });
     ok(`${L} food=8 & 2-col`, foodInfo.count === 8 && foodInfo.twoCol, `cnt=${foodInfo.count}`);
+    const matchaTxt = await page.evaluate(() => [...document.querySelectorAll("#pet-top .shop > div")].map((c) => c.innerText).find((t) => t.includes("抹茶冰炫风")) || "");
+    ok(`${L} matcha frappé visible`, matchaTxt.includes("🥤") && matchaTxt.includes("抹茶冰炫风") && matchaTxt.includes(EN ? "Matcha frappé" : "Matcha đá xay"), matchaTxt.replace(/\s+/g, " "));
     if (!EN) {
       await page.evaluate(() => {
         const s = document.querySelector("#pet-top .shop");

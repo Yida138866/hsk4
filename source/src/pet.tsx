@@ -402,7 +402,7 @@ export const SHOP: Item[] = [
   { id: "mooncake", cat: "food", zh: "月饼", vi: "Bánh trung thu", en: "Mooncake", h: 2, happy: 40, fill: 35, icon: "🥮" },
   { id: "pho", cat: "food", zh: "河粉", vi: "Phở bò", en: "Phở", s: 6, happy: 30, fill: 40, icon: "🍜" },
   { id: "tangyuan", cat: "food", zh: "汤圆", vi: "Chè trôi nước", en: "Sweet dumplings", s: 4, happy: 22, fill: 20, icon: "🍡" },
-  { id: "matcha", cat: "food", zh: "抹茶蛋糕", vi: "Bánh matcha", en: "Matcha cake", s: 5, happy: 28, fill: 30, icon: "🍵" },
+  { id: "matcha", cat: "food", zh: "抹茶冰炫风", vi: "Matcha đá xay", en: "Matcha frappé", s: 5, happy: 28, fill: 30, icon: "🥤" },
   { id: "strawberry", cat: "food", zh: "草莓圣代", vi: "Kem dâu", en: "Berry sundae", h: 1, happy: 35, fill: 25, icon: "🍓" },
   // Rooms: 6 items
   { id: "sakura", cat: "room", zh: "樱花房间", vi: "Phòng hoa anh đào", en: "Sakura room", s: 20, icon: "🌸" },
