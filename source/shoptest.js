@@ -25,14 +25,7 @@ const KINDS = ["bunny", "panda", "kitten", "tiger", "dragon", "puppy"];
 
     // Adopt panda first
     await page.click(".pet-widget"); await sleep(400);
-    await page.evaluate(() => {
-      const inp = document.querySelector("#pet-top input[placeholder]");
-      if (inp) {
-        const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, "value").set;
-        setter.call(inp, "Mochi");
-        inp.dispatchEvent(new Event("input", { bubbles: true }));
-      }
-    });
+    await page.type("#pet-top input[placeholder]", "Mochi");
     await sleep(150);
     await page.evaluate(() => {
       const btn = [...document.querySelectorAll("#pet-top button")].find((b) => /Nhận nuôi|Adopt/.test(b.textContent));
@@ -202,8 +195,11 @@ const KINDS = ["bunny", "panda", "kitten", "tiger", "dragon", "puppy"];
       return { count: cards.length, twoCol: rows.length === 8 && rows[0].y === rows[1].y && rows[6].y === rows[7].y };
     });
     ok(`${L} food=8 & 2-col`, foodInfo.count === 8 && foodInfo.twoCol, `cnt=${foodInfo.count}`);
-    const matchaTxt = await page.evaluate(() => [...document.querySelectorAll("#pet-top .shop > div")].map((c) => c.innerText).find((t) => t.includes("抹茶冰炫风")) || "");
-    ok(`${L} matcha frappé visible`, matchaTxt.includes("🥤") && matchaTxt.includes("抹茶冰炫风") && matchaTxt.includes(EN ? "Matcha frappé" : "Matcha đá xay"), matchaTxt.replace(/\s+/g, " "));
+    const matchaInfo = await page.evaluate(() => {
+      const c = [...document.querySelectorAll("#pet-top .shop > div")].find((x) => x.innerText.includes("抹茶冰炫风"));
+      return c ? { txt: c.innerText, svg: !!c.querySelector("svg") } : null;
+    });
+    ok(`${L} matcha frappé SVG & text visible`, !!matchaInfo && matchaInfo.svg && matchaInfo.txt.includes("抹茶冰炫风") && matchaInfo.txt.includes(EN ? "Matcha frappé" : "Matcha đá xay"), matchaInfo ? matchaInfo.txt.replace(/\s+/g, " ") : "missing");
     if (!EN) {
       await page.evaluate(() => {
         const s = document.querySelector("#pet-top .shop");

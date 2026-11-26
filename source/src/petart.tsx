@@ -367,3 +367,37 @@ export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true, act 
     </g>
   );
 }
+
+export function ItemIcon({ id, fallback, size = 24 }: { id?: string; fallback: string; size?: number }) {
+  if (id === "matcha") {
+    return (
+      <svg viewBox="0 0 32 32" width={size} height={size} aria-hidden="true" style={{ display: "inline-block", verticalAlign: "middle" }}>
+        <path d="M16.8 13 L21.8 2.2" stroke="#399a54" strokeWidth="2.4" strokeLinecap="round" />
+        <path d="M17.2 11.8 L21.5 2.5" stroke="#7ce092" strokeWidth="0.7" strokeLinecap="round" />
+        <path d="M8.5 13.5 C8.5 6.6 23.5 6.6 23.5 13.5 Z" fill="rgba(232,248,238,0.55)" stroke="#92c2a8" strokeWidth="0.9" />
+        <path d="M9.4 13.5 C9.2 11.1 11.4 10.2 16 10.2 C20.6 10.2 22.8 11.1 22.6 13.5 Z" fill="#ffffff" stroke="#d8e6dd" strokeWidth="0.6" />
+        <path d="M11 10.9 C11 8.8 13.1 8.1 16 8.1 C18.9 8.1 21 8.8 21 10.9 Z" fill="#fffdf9" stroke="#d8e6dd" strokeWidth="0.55" />
+        <path d="M13.2 8.6 C13.5 6.4 16 5.2 17.5 5.4 C16.7 6.8 18.7 7.4 18.7 8.6 Z" fill="#ffffff" stroke="#d8e6dd" strokeWidth="0.5" />
+        <g fill="#459a42" opacity="0.9">
+          <circle cx="13.6" cy="9.9" r="0.48" />
+          <circle cx="16.1" cy="9.0" r="0.45" />
+          <circle cx="18.3" cy="10.2" r="0.45" />
+          <circle cx="12.1" cy="12.2" r="0.45" />
+          <circle cx="14.9" cy="11.9" r="0.5" />
+          <circle cx="17.2" cy="12.4" r="0.4" />
+          <circle cx="19.6" cy="12.0" r="0.45" />
+        </g>
+        <path d="M8.2 14.6 L23.8 14.6 L21.4 28.4 Q16 29.7 10.6 28.4 Z" fill="#78cc6b" />
+        <path d="M9.2 22.8 L22.4 22.8 L21.4 28.4 Q16 29.7 10.6 28.4 Z" fill="#63b856" opacity="0.7" />
+        <path d="M9.2 18.4 Q13 16.8 16.5 18.8 T22.8 17.9" fill="none" stroke="#baf0ab" strokeWidth="1.5" strokeLinecap="round" opacity="0.9" />
+        <path d="M10.1 23.6 Q13.8 22 17.4 24.1 T22 23.1" fill="none" stroke="#d4f7c9" strokeWidth="1.2" strokeLinecap="round" opacity="0.75" />
+        <circle cx="13.5" cy="21" r="0.75" fill="#ebfde8" opacity="0.85" />
+        <circle cx="18.6" cy="25.8" r="0.65" fill="#ebfde8" opacity="0.8" />
+        <path d="M7.5 14 L24.5 14 L21.9 28.9 Q16 30.3 10.1 28.9 Z" fill="none" stroke="#6aa687" strokeWidth="1" strokeLinejoin="round" />
+        <path d="M9.8 16.4 L11.5 27.2" stroke="rgba(255,255,255,0.6)" strokeWidth="1.3" strokeLinecap="round" />
+        <rect x="6.7" y="12.9" width="18.6" height="2" rx="1" fill="#effaf2" stroke="#7cb496" strokeWidth="0.75" />
+      </svg>
+    );
+  }
+  return <>{fallback}</>;
+}

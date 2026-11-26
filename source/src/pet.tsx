@@ -1,7 +1,7 @@
 // Study pet + rewards. All data in localStorage; no backend.
 import { useState, useEffect, ZH_FONT } from "./kit";
 import type { ReactNode } from "./kit";
-import { PetArt, PoopSvg, Room, usePetAct } from "./petart";
+import { PetArt, PoopSvg, Room, usePetAct, ItemIcon } from "./petart";
 import type { Kind, Equip } from "./petart";
 import { speakSeq, SpeakBtn } from "./audio";
 import { LINES } from "./pet_lines";
@@ -138,10 +138,10 @@ export function needsCare(s: St): { hungry: boolean; poop: boolean; dirty: boole
 export function ciCur(s: St): number { if (!s.ciLast) return 0; return dayDiff(s.ciLast, today()) <= 1 ? s.ciStreak : 0; }
 
 // ---------- toasts / celebrations ----------
-type Toast = { id: number; text: string; kind: "reward" | "level" | "gift" | "info"; sub?: string; snap?: { pet: Kind; stage: number; equip: Equip } };
+type Toast = { id: number; text: string; iconId?: string; kind: "reward" | "level" | "gift" | "info"; sub?: string; snap?: { pet: Kind; stage: number; equip: Equip } };
 let toasts: Toast[] = []; let tid = 0;
 const tsubs = new Set<() => void>();
-function toast(text: string, kind: Toast["kind"] = "reward", sub?: string) { const t: Toast = { id: ++tid, text, kind, sub, snap: kind === "level" && S.pet ? { pet: S.pet, stage: S.stage, equip: { ...S.equip } } : undefined }; toasts = [...toasts, t]; tsubs.forEach((f) => f()); setTimeout(() => { toasts = toasts.filter((x) => x.id !== t.id); tsubs.forEach((f) => f()); }, kind === "level" ? 6000 : 3200); }
+function toast(text: string, kind: Toast["kind"] = "reward", sub?: string, iconId?: string) { const t: Toast = { id: ++tid, text, iconId, kind, sub, snap: kind === "level" && S.pet ? { pet: S.pet, stage: S.stage, equip: { ...S.equip } } : undefined }; toasts = [...toasts, t]; tsubs.forEach((f) => f()); setTimeout(() => { toasts = toasts.filter((x) => x.id !== t.id); tsubs.forEach((f) => f()); }, kind === "level" ? 6000 : 3200); }
 function useToasts(): Toast[] { const [, f] = useState(0); useEffect(() => { const g = () => f((x: number) => x + 1); tsubs.add(g); return () => { tsubs.delete(g); }; }, []); return toasts; }
 export function say(k: string, then?: [string, string, string][]) { const pool = LINES.filter((l) => l.k === k); const l = pool[Math.floor(Math.random() * pool.length)]; if (!l) return null; speakSeq([[l.au, l.zh, "pet:" + l.au], ...(then || [])]); return l; }
 
@@ -458,14 +458,14 @@ const BADGES: { id: string; icon: string; zh: string; vi: string; en: string; ok
   { id: "grad", icon: "🎓", zh: "毕业生", vi: "Tốt nghiệp (mở khoá mọi món đồ)", en: "Graduate (all items unlocked)", ok: (s) => s.gradDone || s.grads.length > 0 },
   { id: "collector", icon: "🏆", zh: "宠物收藏家", vi: "Nhà sưu tầm (3 bạn tốt nghiệp)", en: "Collector (3 graduates)", ok: (s) => s.grads.length + (s.gradDone ? 1 : 0) >= 3 },
 ];
-function afterEat(fill: number, happyGain: number, icon: string): Line | null {
+function afterEat(fill: number, happyGain: number, icon: string, iconId?: string): Line | null {
   S.hunger = Math.min(100, S.hunger + fill);
   S.happy = Math.min(100, S.happy + happyGain);
   S.stats.fed++;
   S.poopIn = (S.poopIn ?? CARE_RULES.poopIntervalMin) - 180;
   if (S.poopIn <= 0) { S.poopIn += CARE_RULES.poopIntervalMin; if (S.poop < CARE_RULES.maxPoop) { S.poop += 1; S.clean = Math.max(0, Math.round((S.clean - 8) * 10) / 10); } }
   const l = say(S.hunger >= 95 ? "full" : "fed");
-  toast(`${icon} +${fill}% ${VI ? "độ no" : "full"}${l ? " · " + l.zh : ""}`, "info");
+  toast(iconId === "matcha" ? `+${fill}% ${VI ? "độ no" : "full"}${l ? " · " + l.zh : ""}` : `${icon} +${fill}% ${VI ? "độ no" : "full"}${l ? " · " + l.zh : ""}`, "info", undefined, iconId);
   finish([]);
   return l;
 }
@@ -507,7 +507,7 @@ function buy(it: Item): { ok: boolean; line: Line | null } {
     if (!S.pet || stageOf(S) <= 0) { toast(VI ? "Trứng chưa cần ăn đâu 🥚" : "Eggs don't need food yet 🥚", "info"); return { ok: false, line: null }; }
     if (S.hunger >= 100) { toast(VI ? "Đã no 100% rồi! 💗" : "Already 100% full! 💗", "info"); return { ok: false, line: null }; }
     S.stars -= it.s || 0; S.hearts -= it.h || 0;
-    const l = afterEat(it.fill || 20, it.happy || 10, it.icon);
+    const l = afterEat(it.fill || 20, it.happy || 10, it.icon, it.id);
     return { ok: true, line: l };
   }
   S.stars -= it.s || 0; S.hearts -= it.h || 0;
@@ -746,7 +746,7 @@ function PetTabInner() {
             return (
               <div key={it.id} style={{ minWidth: 0, borderRadius: 14, padding: "8px 6px", background: on ? "linear-gradient(160deg,#ffe1ee,#f3e6ff)" : "#fff7fb", border: on ? "2px solid #e8559a" : "1.5px solid rgba(232,85,154,0.18)", textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                 <div>
-                  <div style={{ fontSize: 22, lineHeight: "26px" }}>{it.icon}</div>
+                  <div style={{ fontSize: 22, lineHeight: "26px", height: 26, display: "flex", alignItems: "center", justifyContent: "center" }}><ItemIcon id={it.id} fallback={it.icon} size={26} /></div>
                   <div lang="zh-Hans" style={{ fontFamily: ZH_FONT, fontSize: 13.5, fontWeight: 800, color: "#8f2160", lineHeight: "17px", marginTop: 2 }}>{it.zh}</div>
                   <div style={{ fontSize: 11, color: "#8a5a82", lineHeight: "14px", marginTop: 1 }}>{VI ? it.vi : it.en}{it.pet ? (VI ? " · riêng" : " · exclusive") : ""}{it.ev ? (VI ? " · giới hạn" : " · limited") : ""}{it.fill ? ` · +${it.fill}%🍙` : ""}{it.happy ? ` · +${it.happy}♡` : ""}</div>
                 </div>
@@ -1083,7 +1083,7 @@ export function PetWidget() {
             {t.sub ? <div style={{ fontSize: 13, color: "#7a4f78", marginTop: 2 }}>{t.sub}</div> : null}
             <div className="confetti" aria-hidden>{["💗", "⭐", "🌸", "✨", "💗", "⭐"].map((c, i) => <span key={i} style={{ left: `${10 + i * 15}%`, animationDelay: `${i * 0.12}s` }}>{c}</span>)}</div>
           </div>
-          : <div key={t.id} className="toast" style={{ background: t.kind === "gift" ? "linear-gradient(135deg,#fff3c4,#ffe1ee)" : "#fff", borderRadius: 9999, padding: "9px 16px", boxShadow: "0 8px 24px rgba(143,33,96,0.22)", fontSize: 14, fontWeight: 800, color: "#8f2160", border: "1.5px solid #ffc2dc" }}>{t.text}</div>)}
+          : <div key={t.id} className="toast" style={{ background: t.kind === "gift" ? "linear-gradient(135deg,#fff3c4,#ffe1ee)" : "#fff", borderRadius: 9999, padding: "9px 16px", boxShadow: "0 8px 24px rgba(143,33,96,0.22)", fontSize: 14, fontWeight: 800, color: "#8f2160", border: "1.5px solid #ffc2dc", display: "inline-flex", alignItems: "center", gap: 6 }}>{t.iconId === "matcha" ? <ItemIcon id={t.iconId} fallback="" size={20} /> : null}{t.text}</div>)}
       </div>
       <button className="pet-widget" aria-label={VI ? "Thú cưng của tôi" : "My pet"} onClick={() => { setWTap((x) => x + 1); go(); }} style={{ position: "fixed", right: 12, bottom: 12, zIndex: 70, cursor: "pointer", border: "2px solid #ffc2dc", background: "rgba(255,255,255,0.95)", borderRadius: 24, padding: "6px 10px 8px", boxShadow: "0 8px 22px rgba(143,33,96,0.2)", display: "flex", flexDirection: "column", alignItems: "center", gap: 3, width: 84, overflow: "hidden" }}>
         {ev ? <span className="widget-ev" aria-hidden style={{ position: "absolute", top: -10, left: -8, fontSize: 22 }}>{ev.icon}</span> : null}
