@@ -118,7 +118,27 @@ rt{user-select:none}
 @keyframes fl{0%,100%{transform:scale(1) rotate(-3deg)}50%{transform:scale(1.12) rotate(3deg)}}
 .ci-pop{animation:cip .6s cubic-bezier(.2,1.5,.4,1)}
 @keyframes cip{0%{transform:scale(.94)}100%{transform:none}}
+.celeb-overlay{position:fixed;inset:0;z-index:9999;pointer-events:none;overflow:hidden;animation:celeb-fade 3.7s ease-out forwards}
+@keyframes celeb-fade{0%,78%{opacity:1}100%{opacity:0}}
+.celeb-pill{position:fixed;top:18px;left:50%;transform:translateX(-50%);display:inline-flex;align-items:center;gap:6px;white-space:nowrap;max-width:92vw;padding:9px 18px;border-radius:9999px;background:linear-gradient(135deg,#fff5fa,#f3e8ff);border:2px solid #ff8cc0;box-shadow:0 10px 30px rgba(232,85,154,.32);color:#8f2160;font:800 15px/20px ui-rounded,"SF Pro Rounded","Nunito",system-ui,sans-serif;animation:celeb-pill-in .45s cubic-bezier(.2,1.5,.4,1) forwards}
+@keyframes celeb-pill-in{0%{opacity:0;transform:translateX(-50%) scale(.75)}100%{opacity:1;transform:translateX(-50%) scale(1)}}
+.celeb-burst{position:fixed;width:0;height:0;pointer-events:none}
+.celeb-ring{position:absolute;left:-30px;top:-30px;width:60px;height:60px;border-radius:50%;border:3px solid #ff7eb6;opacity:0;animation:celeb-ring 1.25s ease-out forwards}
+@keyframes celeb-ring{0%{transform:scale(.15);opacity:.95}65%{opacity:.6}100%{transform:scale(2.2);opacity:0}}
+.celeb-core{position:absolute;left:-7px;top:-7px;width:14px;height:14px;border-radius:50%;box-shadow:0 0 18px rgba(255,100,170,.85);opacity:0;animation:celeb-core .7s ease-out forwards}
+@keyframes celeb-core{0%{transform:scale(.3);opacity:1}40%{transform:scale(1.6);opacity:.95}100%{transform:scale(.1);opacity:0}}
+.celeb-ray{position:absolute;left:-2.5px;top:-11px;width:5px;height:22px;border-radius:99px;box-shadow:0 0 8px currentColor;opacity:0;animation:celeb-ray 1.35s cubic-bezier(.15,.8,.3,1) forwards}
+@keyframes celeb-ray{0%{transform:rotate(var(--deg)) translateY(0) scaleY(.4);opacity:0}12%{opacity:1}72%{opacity:.95}100%{transform:rotate(var(--deg)) translateY(calc(-1 * var(--dist))) scaleY(.25);opacity:0}}
+.celeb-heart{position:fixed;bottom:-48px;opacity:0;filter:drop-shadow(0 4px 10px rgba(232,85,154,.28));animation-name:celeb-rise;animation-timing-function:ease-in-out;animation-fill-mode:forwards}
+@keyframes celeb-rise{0%{transform:translate3d(0,0,0) rotate(0deg) scale(.65);opacity:0}12%{opacity:.95}80%{opacity:.88}100%{transform:translate3d(var(--sx),-115vh,0) rotate(var(--rot)) scale(1.1);opacity:0}}
+.celeb-star{position:fixed;opacity:0;filter:drop-shadow(0 0 8px rgba(255,211,110,.65));animation-name:celeb-twinkle;animation-timing-function:ease-in-out;animation-iteration-count:2;animation-fill-mode:both}
+@keyframes celeb-twinkle{0%{transform:scale(.2) rotate(0deg);opacity:0}35%{transform:scale(1.15) rotate(35deg);opacity:1}65%{transform:scale(.82) rotate(70deg);opacity:.85}100%{transform:scale(.25) rotate(110deg);opacity:0}}
 @media (prefers-reduced-motion: reduce){
+.celeb-overlay{animation:none!important;opacity:1}
+.celeb-pill{animation:none!important;opacity:1}
+.celeb-burst,.celeb-ring,.celeb-core,.celeb-ray{animation:none!important;opacity:0!important}
+.celeb-heart{animation:none!important;bottom:auto!important;top:var(--st)!important;opacity:.55!important}
+.celeb-star{animation:none!important;opacity:.75!important}
 .pet-bounce,.pet-wobble,.confetti span,.pulse,.flame,.ci-pop,
 .pet-act-jump,.pet-act-hop,.pet-act-spin,.pet-act-wiggle,.pet-act-happy,.pet-act-dance,.pet-act-roll,.pet-act-sway,.pet-act-stretch,.pet-act-eggshake,.pet-act-eggbounce,
 .pet-act-blink .pet-eyes,.pet-act-look .pet-face,.pet-act-ears .pet-ears,.pet-act-ears .pet-ears-front,.pet-act-ears .pet-tail,.pet-act-wave .pet-arm-r,
