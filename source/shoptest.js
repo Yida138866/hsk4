@@ -200,6 +200,11 @@ const KINDS = ["bunny", "panda", "kitten", "tiger", "dragon", "puppy"];
       return c ? { txt: c.innerText, svg: !!c.querySelector("svg") } : null;
     });
     ok(`${L} matcha frappé SVG & text visible`, !!matchaInfo && matchaInfo.svg && matchaInfo.txt.includes("抹茶冰炫风") && matchaInfo.txt.includes(EN ? "Matcha frappé" : "Matcha đá xay"), matchaInfo ? matchaInfo.txt.replace(/\s+/g, " ") : "missing");
+    const phoInfo = await page.evaluate(() => {
+      const c = [...document.querySelectorAll("#pet-top .shop > div")].find((x) => x.innerText.includes("河粉"));
+      return c ? { txt: c.innerText, svg: !!c.querySelector("svg") } : null;
+    });
+    ok(`${L} pho SVG & text visible`, !!phoInfo && phoInfo.svg && phoInfo.txt.includes("河粉") && phoInfo.txt.includes(EN ? "Phở" : "Phở bò"), phoInfo ? phoInfo.txt.replace(/\s+/g, " ") : "missing");
     if (!EN) {
       await page.evaluate(() => {
         const s = document.querySelector("#pet-top .shop");

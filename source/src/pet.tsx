@@ -1,7 +1,7 @@
 // Study pet + rewards. All data in localStorage; no backend.
 import { useState, useEffect, ZH_FONT } from "./kit";
 import type { ReactNode } from "./kit";
-import { PetArt, PoopSvg, Room, usePetAct, ItemIcon } from "./petart";
+import { PetArt, PoopSvg, Room, usePetAct, ItemIcon, CUSTOM_ICONS } from "./petart";
 import type { Kind, Equip } from "./petart";
 import { speakSeq, SpeakBtn } from "./audio";
 import { LINES } from "./pet_lines";
@@ -465,7 +465,7 @@ function afterEat(fill: number, happyGain: number, icon: string, iconId?: string
   S.poopIn = (S.poopIn ?? CARE_RULES.poopIntervalMin) - 180;
   if (S.poopIn <= 0) { S.poopIn += CARE_RULES.poopIntervalMin; if (S.poop < CARE_RULES.maxPoop) { S.poop += 1; S.clean = Math.max(0, Math.round((S.clean - 8) * 10) / 10); } }
   const l = say(S.hunger >= 95 ? "full" : "fed");
-  toast(iconId === "matcha" ? `+${fill}% ${VI ? "độ no" : "full"}${l ? " · " + l.zh : ""}` : `${icon} +${fill}% ${VI ? "độ no" : "full"}${l ? " · " + l.zh : ""}`, "info", undefined, iconId);
+  toast(iconId && CUSTOM_ICONS.has(iconId) ? `+${fill}% ${VI ? "độ no" : "full"}${l ? " · " + l.zh : ""}` : `${icon} +${fill}% ${VI ? "độ no" : "full"}${l ? " · " + l.zh : ""}`, "info", undefined, iconId);
   finish([]);
   return l;
 }
@@ -1083,7 +1083,7 @@ export function PetWidget() {
             {t.sub ? <div style={{ fontSize: 13, color: "#7a4f78", marginTop: 2 }}>{t.sub}</div> : null}
             <div className="confetti" aria-hidden>{["💗", "⭐", "🌸", "✨", "💗", "⭐"].map((c, i) => <span key={i} style={{ left: `${10 + i * 15}%`, animationDelay: `${i * 0.12}s` }}>{c}</span>)}</div>
           </div>
-          : <div key={t.id} className="toast" style={{ background: t.kind === "gift" ? "linear-gradient(135deg,#fff3c4,#ffe1ee)" : "#fff", borderRadius: 9999, padding: "9px 16px", boxShadow: "0 8px 24px rgba(143,33,96,0.22)", fontSize: 14, fontWeight: 800, color: "#8f2160", border: "1.5px solid #ffc2dc", display: "inline-flex", alignItems: "center", gap: 6 }}>{t.iconId === "matcha" ? <ItemIcon id={t.iconId} fallback="" size={20} /> : null}{t.text}</div>)}
+          : <div key={t.id} className="toast" style={{ background: t.kind === "gift" ? "linear-gradient(135deg,#fff3c4,#ffe1ee)" : "#fff", borderRadius: 9999, padding: "9px 16px", boxShadow: "0 8px 24px rgba(143,33,96,0.22)", fontSize: 14, fontWeight: 800, color: "#8f2160", border: "1.5px solid #ffc2dc", display: "inline-flex", alignItems: "center", gap: 6 }}>{t.iconId && CUSTOM_ICONS.has(t.iconId) ? <ItemIcon id={t.iconId} fallback="" size={20} /> : null}{t.text}</div>)}
       </div>
       <button className="pet-widget" aria-label={VI ? "Thú cưng của tôi" : "My pet"} onClick={() => { setWTap((x) => x + 1); go(); }} style={{ position: "fixed", right: 12, bottom: 12, zIndex: 70, cursor: "pointer", border: "2px solid #ffc2dc", background: "rgba(255,255,255,0.95)", borderRadius: 24, padding: "6px 10px 8px", boxShadow: "0 8px 22px rgba(143,33,96,0.2)", display: "flex", flexDirection: "column", alignItems: "center", gap: 3, width: 84, overflow: "hidden" }}>
         {ev ? <span className="widget-ev" aria-hidden style={{ position: "absolute", top: -10, left: -8, fontSize: 22 }}>{ev.icon}</span> : null}

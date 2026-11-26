@@ -368,6 +368,7 @@ export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true, act 
   );
 }
 
+export const CUSTOM_ICONS = new Set(["matcha", "pho"]);
 export function ItemIcon({ id, fallback, size = 24 }: { id?: string; fallback: string; size?: number }) {
   if (id === "matcha") {
     return (
@@ -396,6 +397,43 @@ export function ItemIcon({ id, fallback, size = 24 }: { id?: string; fallback: s
         <path d="M7.5 14 L24.5 14 L21.9 28.9 Q16 30.3 10.1 28.9 Z" fill="none" stroke="#6aa687" strokeWidth="1" strokeLinejoin="round" />
         <path d="M9.8 16.4 L11.5 27.2" stroke="rgba(255,255,255,0.6)" strokeWidth="1.3" strokeLinecap="round" />
         <rect x="6.7" y="12.9" width="18.6" height="2" rx="1" fill="#effaf2" stroke="#7cb496" strokeWidth="0.75" />
+      </svg>
+    );
+  }
+  if (id === "pho") {
+    return (
+      <svg viewBox="0 0 32 32" width={size} height={size} aria-hidden="true" style={{ display: "inline-block", verticalAlign: "middle" }}>
+        <path d="M11.6 25.8 L20.4 25.8 L19.7 28.3 Q16 28.9 12.3 28.3 Z" fill="#dfe8f2" stroke="#7692b2" strokeWidth="0.85" strokeLinejoin="round" />
+        <path d="M3.2 14.2 Q3.5 26.2 16 26.5 Q28.5 26.2 28.8 14.2 Z" fill="#ffffff" stroke="#7692b2" strokeWidth="0.95" strokeLinejoin="round" />
+        <path d="M4.6 17.8 Q16 20.4 27.4 17.8" fill="none" stroke="#5b90cc" strokeWidth="1.25" strokeLinecap="round" />
+        <path d="M6.4 21.8 Q16 24.4 25.6 21.8" fill="none" stroke="#a6c4e6" strokeWidth="0.8" strokeLinecap="round" />
+        <ellipse cx="16" cy="14" rx="12.8" ry="5.6" fill="#ffffff" stroke="#7692b2" strokeWidth="0.95" />
+        <ellipse cx="16" cy="14.2" rx="11.4" ry="4.5" fill="#f3cb7a" />
+        <path d="M7.2 14.1 Q11.4 16.1 15.6 13.7" fill="none" stroke="#fffdf7" strokeWidth="1.65" strokeLinecap="round" />
+        <path d="M8.0 16.1 Q12.8 17.8 18.2 15.5" fill="none" stroke="#fff8ea" strokeWidth="1.6" strokeLinecap="round" />
+        <path d="M9.8 12.1 Q13.4 13.5 16.8 11.9" fill="none" stroke="#fffdf7" strokeWidth="1.45" strokeLinecap="round" />
+        <g>
+          <ellipse cx="20.4" cy="13.6" rx="3.4" ry="1.8" transform="rotate(-14 20.4 13.6)" fill="#c96f6b" stroke="#9e4c49" strokeWidth="0.6" />
+          <path d="M18.4 13.4 Q20.4 12.8 22.3 13.6" fill="none" stroke="#f2b8b2" strokeWidth="0.7" strokeLinecap="round" />
+          <ellipse cx="17.2" cy="15.3" rx="3.2" ry="1.6" transform="rotate(10 17.2 15.3)" fill="#d67f78" stroke="#9e4c49" strokeWidth="0.6" />
+          <path d="M15.4 15.2 Q17.2 14.7 19.0 15.4" fill="none" stroke="#f5c3bd" strokeWidth="0.65" strokeLinecap="round" />
+        </g>
+        <g>
+          <path d="M7.8 11.8 Q9.8 9.2 12.6 10.6 Q10.6 13.0 7.8 11.8 Z" fill="#3c9449" stroke="#2c7036" strokeWidth="0.5" />
+          <path d="M8.4 11.5 L11.6 10.7" stroke="#85de8f" strokeWidth="0.55" strokeLinecap="round" />
+          <path d="M10.4 10.0 Q12.8 7.8 15.2 9.4 Q12.8 11.4 10.4 10.0 Z" fill="#49a856" stroke="#2c7036" strokeWidth="0.5" />
+        </g>
+        <g fill="none" stroke="#47a64f" strokeWidth="0.9">
+          <circle cx="11.2" cy="14.5" r="1.05" />
+          <circle cx="15.2" cy="12.5" r="0.95" />
+          <circle cx="13.5" cy="16.4" r="1.0" />
+        </g>
+        <g transform="translate(25.2 11.8) rotate(18)">
+          <path d="M-2.8 0.8 A3.0 3.0 0 0 1 2.8 0.8 Z" fill="#48ab45" stroke="#2f7d2d" strokeWidth="0.55" />
+          <path d="M-2.1 0.6 A2.2 2.2 0 0 1 2.1 0.6 Z" fill="#cef48e" />
+        </g>
+        <path d="M19.8 4.4 L28.4 9.5" stroke="#c8965c" strokeWidth="1.35" strokeLinecap="round" />
+        <path d="M18.4 5.7 L27.6 11.0" stroke="#dfb078" strokeWidth="1.25" strokeLinecap="round" />
       </svg>
     );
   }
