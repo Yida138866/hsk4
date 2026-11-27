@@ -64,6 +64,8 @@ rt{user-select:none}
 .pet-act-ears .pet-ears,.pet-act-ears .pet-ears-front{animation:pear .7s ease-in-out;transform-origin:50% 100%}
 @keyframes pear{0%,100%{transform:rotate(0)}30%{transform:rotate(-14deg)}62%{transform:rotate(14deg)}}
 .pet-act-ears .pet-tail,.pet-act-wiggle .pet-tail,.pet-act-hop .pet-tail{animation:ptail .55s ease-in-out;transform-origin:0 100%}
+.pet-move:not(.pet-sad):not(.pet-lite):not(.pet-busy) .pet-tail{animation:ptailidle 3.6s ease-in-out infinite;transform-origin:0 100%}
+@keyframes ptailidle{0%,100%{transform:rotate(0)}35%{transform:rotate(6deg)}70%{transform:rotate(-4deg)}}
 @keyframes ptail{0%,100%{transform:rotate(0)}35%{transform:rotate(16deg)}70%{transform:rotate(-12deg)}}
 .pet-act-wave .pet-arm-r{animation:pwave .7s ease-in-out;transform-origin:50% 20%}
 @keyframes pwave{0%,100%{transform:rotate(0)}30%{transform:rotate(-42deg)}60%{transform:rotate(12deg)}}
@@ -143,7 +145,7 @@ rt{user-select:none}
 .pet-act-jump,.pet-act-hop,.pet-act-spin,.pet-act-wiggle,.pet-act-happy,.pet-act-dance,.pet-act-roll,.pet-act-sway,.pet-act-stretch,.pet-act-eggshake,.pet-act-eggbounce,
 .pet-act-blink .pet-eyes,.pet-act-look .pet-face,.pet-act-ears .pet-ears,.pet-act-ears .pet-ears-front,.pet-act-ears .pet-tail,.pet-act-wave .pet-arm-r,
 .pet-act-eat,.pet-act-bath,.pet-stink,.poop-pop,.widget-care,
-.pet-act-yawn .pet-yawn,.pet-act-shy .pet-blush-x,.pet-fx-bit,.hearts-pop,.hearts-pop span{animation:none!important}
+.pet-tail,.pet-ears,.pet-act-yawn .pet-yawn,.pet-act-shy .pet-blush-x,.pet-fx-bit,.hearts-pop,.hearts-pop span{animation:none!important}
 .pet-fx,.pet-yawn,.pet-blush-x,.poop-pop{opacity:0!important}
 }
 
