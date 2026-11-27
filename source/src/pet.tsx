@@ -124,6 +124,7 @@ export function happyOf(s: St): number {
 export function moodOf(s: St): string {
   if (s.lastDay && dayDiff(s.lastDay, today()) >= 3) return "miss";
   if (s.pet && stageOf(s) > 0 && (s.hunger < 25 || s.poop >= 2 || happyOf(s) < 35)) return "miss";
+  if (s.pet && stageOf(s) > 0 && happyOf(s) >= 85 && s.hunger >= 75 && !s.dirty && s.poop === 0 && (!s.lastDay || dayDiff(s.lastDay, today()) < 2)) return "great";
   return "ok";
 }
 export function xpMult(s: St): number {

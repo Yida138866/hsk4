@@ -134,6 +134,17 @@ const ALL = ["bow", "glasses", "beret", "crown", "scarf", "hoodie", "dress", "ao
     ok(tag + " level-up celebration", await page.evaluate(() => !!document.querySelector(".levelup")));
     await snap("graduation_popup");
     await scrollTo("#pet-top"); await sleep(300); await snap("stage4");
+    const capSel = 'path[d="M62 49 L100 34 L138 49 L100 64 Z"]';
+    ok(tag + " stage4 default shows grad cap", (await page.$(`#pet-top svg ${capSel}`)) !== null);
+    await seed({ stage: 4, xp: 1300, gradDone: true, owned: ALL, equip: { acc: "crown", room: "cozy", furn: [] } });
+    ok(tag + " stage4 + crown hides grad cap", (await page.$(`#pet-top svg ${capSel}`)) === null);
+    await seed({ stage: 4, xp: 1300, gradDone: true, owned: ALL, equip: { acc: "glasses", room: "cozy", furn: [] } });
+    ok(tag + " stage4 + glasses keeps grad cap", (await page.$(`#pet-top svg ${capSel}`)) !== null);
+    await seed({ stage: 4, xp: 1300, gradDone: true, owned: ALL, hunger: 95, clean: 100, poop: 0, dirty: false, happy: 95, equip: { room: "cozy", furn: [] } });
+    ok(tag + " great mood renders open smile", (await page.$('#pet-top svg path[d="M95 112.2 q5 8 10 0 z"]')) !== null);
+    await seed({ stage: 4, xp: 1300, gradDone: true, owned: ALL, hunger: 10, clean: 100, poop: 0, dirty: false, equip: { room: "cozy", furn: [] } });
+    ok(tag + " hungry mood shows miss expression", (await page.$('#pet-top svg path[d="M93 116 q7 -5.5 14 0"]')) !== null);
+    await seed({ stage: 4, xp: 1300, gradDone: true, owned: ALL, hunger: 90, clean: 100, poop: 0, dirty: false, equip: { outfit: "aodai", room: "night", furn: ["lamp", "desk"] } });
     await scrollTo(".gradcard", 60); await snap("achievement");
     // adopt next
     const keep = await get();
@@ -146,6 +157,9 @@ const ALL = ["bow", "glasses", "beret", "crown", "scarf", "hoodie", "dress", "ao
     ok(tag + " new pet is an egg", label.includes("蛋"), label);
     await page.evaluate(() => document.querySelector(".collection button").click()); await sleep(400);
     ok(tag + " collection view", await page.$(".coll-view") !== null);
+    const animLeak = await page.evaluate(() => document.querySelectorAll(".collection button svg .pet-yawn, .collection button svg .pet-blush-x").length);
+    const dupIds = await page.evaluate(() => { const ids = [...document.querySelectorAll("svg [id]")].map((e) => e.id); return ids.length - new Set(ids).size; });
+    ok(tag + " static PetArt omits yawn/blush-x & SVG ids unique", animLeak === 0 && dupIds === 0, `leak=${animLeak} dupIds=${dupIds}`);
     await scrollTo(".collection", 60); await snap("collection");
     // export/import
     await click("#pet-top button", EN ? "Export code" : "Xuất mã"); await sleep(200);

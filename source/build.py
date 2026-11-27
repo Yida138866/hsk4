@@ -46,6 +46,7 @@ PV_CSS = """
 .pet-act-look .pet-face{animation:plook 1.1s ease-in-out;transform-origin:50% 50%}
 @keyframes plook{0%,100%{transform:translateX(0)}28%{transform:translateX(-5px)}72%{transform:translateX(5px)}}
 .pet-act-ears .pet-ears,.pet-act-ears .pet-ears-front{animation:pear .7s ease-in-out;transform-origin:50% 100%}
+.pet-act-ears .pet-ears-front{transform-origin:50% 15%}
 @keyframes pear{0%,100%{transform:rotate(0)}30%{transform:rotate(-14deg)}62%{transform:rotate(14deg)}}
 .pet-act-ears .pet-tail,.pet-act-wiggle .pet-tail,.pet-act-hop .pet-tail{animation:ptail .55s ease-in-out;transform-origin:0 100%}
 .pet-move:not(.pet-sad):not(.pet-lite):not(.pet-busy) .pet-tail{animation:ptailidle 3.6s ease-in-out infinite;transform-origin:0 100%}

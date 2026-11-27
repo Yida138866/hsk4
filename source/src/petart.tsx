@@ -131,7 +131,7 @@ function EarsFront({ k, g }: { k: Kind; g: string }) {
   return null;
 }
 
-function Face({ k, stage, mood, g }: { k: Kind; stage: number; mood: string; g: string }) {
+function Face({ k, stage, mood, g, anim = true }: { k: Kind; stage: number; mood: string; g: string; anim?: boolean }) {
   const p = PAL[k];
   const sad = mood === "miss";
   const great = mood === "great";
@@ -236,9 +236,11 @@ function Face({ k, stage, mood, g }: { k: Kind; stage: number; mood: string; g: 
           <path d="M91 106 q-21 -3 -33 7 q-7 7 2 10" /><path d="M109 106 q21 -3 33 7 q7 7 -2 10" />
         </g>
       ) : null}
-      <ellipse className="pet-blush-x" cx="66" cy="109" rx="11" ry="6.5" fill="#ff76aa" />
-      <ellipse className="pet-blush-x" cx="134" cy="109" rx="11" ry="6.5" fill="#ff76aa" />
-      <ellipse className="pet-yawn" cx="100" cy="117" rx="6" ry="7.5" fill="#4a2a52" />
+      {anim ? <>
+        <ellipse className="pet-blush-x" cx="66" cy="109" rx="11" ry="6.5" fill="#ff76aa" />
+        <ellipse className="pet-blush-x" cx="134" cy="109" rx="11" ry="6.5" fill="#ff76aa" />
+        <ellipse className="pet-yawn" cx="100" cy="117" rx="6" ry="7.5" fill="#4a2a52" />
+      </> : null}
     </g>
   );
 }
@@ -835,7 +837,7 @@ export function Hold({ id }: { id?: string }) {
   const g = (c: ReactNode) => <g transform="translate(58 155)">{c}</g>;
   if (id === "lixi") return g(<g transform="rotate(-12)"><rect x="-10" y="-15" width="20" height="28" rx="3" fill="#e8384f" stroke="#b52035" strokeWidth="1.5" /><path d="M-10 -9 q10 8 20 0" fill="none" stroke="#ffd36e" strokeWidth="2" /><circle cx="0" cy="2" r="4.8" fill="#ffd36e" /><circle cx="0" cy="2" r="1.8" fill="#e8384f" /></g>);
   if (id === "lantern") return g(<g><path d="M0 -32 v7" stroke="#a0507f" strokeWidth="2" /><rect x="-6.5" y="-26" width="13" height="4.5" rx="2" fill="#ffd36e" /><ellipse cx="0" cy="-10" rx="14" ry="13" fill="#ff5a5a" stroke="#cc2f36" strokeWidth="1.3" /><path d="M-8 -21 q-4 11 0 22 M8 -21 q4 11 0 22 M0 -23 v26" stroke="#ffb8aa" strokeWidth="1.3" fill="none" /><rect x="-6.5" y="2.5" width="13" height="4.5" rx="2" fill="#ffd36e" /><path d="M0 7 v11 M-3 9 v8 M3 9 v8" stroke="#ffd36e" strokeWidth="1.5" strokeLinecap="round" /></g>);
-  if (id === "fan") return g(<g transform="rotate(-14)"><path d="M0 4 v22" stroke="#b97b4b" strokeWidth="2.8" strokeLinecap="round" /><circle r="14.5" fill="#fff5fb" stroke="#ff82b8" strokeWidth="2.2" /><circle cx="-4" cy="-3" r="3.8" fill="#ffb3d1" /><circle cx="5" cy="2" r="2.8" fill="#c58bff" opacity="0.7" /><path d="M-7 6 q7 -4 13 2" stroke="#7ad8c8" strokeWidth="1.7" fill="none" /></g>);
+  if (id === "fan") return g(<g transform="rotate(-14)"><path d="M0 4 v22" stroke="#b97b4b" strokeWidth="2.8" strokeLinecap="round" /><path d="M0 24 l-3 6 M0 24 l3 6" stroke="#ff7eb6" strokeWidth="1.4" strokeLinecap="round" /><circle r="14.5" fill="#fff6fb" stroke="#ff82b8" strokeWidth="2.2" /><circle r="11.5" fill="none" stroke="#ffd885" strokeWidth="1" strokeDasharray="3 2" /><g transform="translate(-1 -1)" fill="#ff9cc6">{[0,72,144,216,288].map((a)=><ellipse key={a} cx="0" cy="-4.2" rx="2.6" ry="4.1" transform={`rotate(${a})`}/>)}<circle r="2.1" fill="#ffd36e"/></g><path d="M-7 6 q7 4 13 -1" stroke="#7ad8c8" strokeWidth="1.6" strokeLinecap="round" fill="none" /></g>);
   if (id === "rose") return g(<g transform="rotate(-10)"><path d="M0 0 v28" stroke="#53b06b" strokeWidth="2.8" strokeLinecap="round" /><path d="M0 13 q-9 -4 -11 4 q7 2 11 -4" fill="#6ccf9a" /><circle cx="0" cy="-4" r="8.5" fill="#e8384f" stroke="#b8213a" strokeWidth="1.2" /><path d="M-4.5 -6 q4.5 -5.5 9 0 q-4.5 4.5 -9 0" fill="#ff7383" /><path d="M-3 -3 q3 3 6 0" stroke="#b8213a" strokeWidth="1.3" fill="none" /></g>);
   if (id === "bouquet") return g(<g><path d="M-13 4 L0 30 L13 4 Z" fill="#c58bff" stroke="#9960d6" strokeWidth="1.4" strokeLinejoin="round" /><path d="M-4 20 l4 4 l4 -4" fill="#ffd36e" />{[[-7.5, -6, "#ff8cc0"], [0, -11.5, "#ffd36e"], [7.5, -6, "#ff6f91"]].map(([x, y, c], i) => <g key={i}><path d={`M${x} ${Number(y) + 6} V6`} stroke="#5cb874" strokeWidth="1.9" /><path d={`M${Number(x) - 4.8} ${y} q0 7.5 4.8 7.5 q4.8 0 4.8 -7.5 l-2.4 2.8 l-2.4 -3.8 l-2.4 3.8z`} fill={String(c)} /></g>)}</g>);
   if (id === "gift") return g(<g><rect x="-12" y="-7" width="24" height="20" rx="3" fill="#7ad8c8" stroke="#4ba898" strokeWidth="1.3" /><rect x="-14" y="-12" width="28" height="6.5" rx="2" fill="#5cc0b0" stroke="#4ba898" strokeWidth="1.2" /><rect x="-2.8" y="-12" width="5.6" height="25" fill="#ff5fa2" /><path d="M0 -12 q-9 -11 -11 -2 q4 4 11 2 q7 2 11 -2 q-2 -9 -11 2" fill="#ff8cc0" stroke="#d44583" strokeWidth="1" /></g>);
@@ -898,6 +900,7 @@ export function usePetAct(opts: { anim?: boolean; lite?: boolean; mood?: string;
 }
 
 export function Room({ id, furn, children }: { id?: string; furn?: string[]; children?: ReactNode }) {
+  const rg = useRef("r" + Math.random().toString(36).slice(2, 8)).current;
   const bg: Record<string, ReactNode> = {
     sakura: <g><rect width="200" height="220" fill="#ffe8f1" />{[[30, 30], [160, 50], [90, 18], [40, 120], [170, 140]].map(([x, y], i) => <g key={i} transform={`translate(${x} ${y})`} fill="#ffb3d1">{[0, 72, 144, 216, 288].map((a) => <ellipse key={a} cx="0" cy="-5" rx="3.5" ry="6" transform={`rotate(${a})`} />)}<circle r="2" fill="#fff" /></g>)}</g>,
     night: <g><rect width="200" height="220" fill="#4b3b78" />{[[20, 20], [60, 50], [150, 25], [180, 70], [100, 15], [30, 90]].map(([x, y], i) => <path key={i} d={`M${x} ${y - 5} l1.6 3.4 l3.4 1.6 l-3.4 1.6 l-1.6 3.4 l-1.6 -3.4 l-3.4 -1.6 l3.4 -1.6z`} fill="#ffe28a" />)}<circle cx="165" cy="40" r="14" fill="#fff6c8" /><circle cx="171" cy="35" r="12" fill="#4b3b78" /></g>,
@@ -911,12 +914,12 @@ export function Room({ id, furn, children }: { id?: string; furn?: string[]; chi
     beach: <g><rect width="200" height="130" fill="#bfe8ff" /><rect y="130" width="200" height="90" fill="#ffe7b8" /><path d="M0 128 q25 -10 50 0 t50 0 t50 0 t50 0 v10 h-200z" fill="#7fd0f0" /><circle cx="160" cy="36" r="16" fill="#ffd36e" /></g>,
     bamboo: <g><rect width="200" height="164" fill="#e6f9ed" /><rect y="164" width="200" height="56" fill="#cdeed7" />{[18, 36, 168, 184].map((x, i) => <g key={i}><rect x={x} y="0" width="7" height="190" fill={i % 2 ? "#75cc94" : "#5eb980"} />{[32, 68, 104, 140].map((y) => <path key={y} d={`M${x - 1} ${y} h9`} stroke="#d8ffe6" strokeWidth="2" />)}</g>)}<path d="M24 44 q14 -10 24 0 q-10 8 -24 0z M156 58 q14 -10 24 0 q-10 8 -24 0z" fill="#5eb980" /><ellipse cx="100" cy="200" rx="52" ry="7" fill="#b7e2c4" /></g>,
     cafe: <g><rect width="200" height="162" fill="#fff5ea" /><rect y="162" width="200" height="58" fill="#f7dfca" /><rect y="160" width="200" height="4" fill="#e9c4a6" />{[0, 25, 50, 75, 100, 125, 150, 175].map((x, i) => <path key={x} d={`M${x} 0 h25 v20 a12.5 9 0 0 1 -25 0z`} fill={i % 2 ? "#ff9ec2" : "#fff"} />)}<rect x="70" y="34" width="60" height="44" rx="8" fill="#bfe8ff" stroke="#e4b898" strokeWidth="4" /><path d="M100 34 v44 M70 56 h60" stroke="#e4b898" strokeWidth="2.5" /><rect x="16" y="106" width="28" height="22" rx="4" fill="#ffe6f0" stroke="#e4b898" strokeWidth="2.5" /><path d="M30 121 l-5 -5 a3 3 0 0 1 5 -3 a3 3 0 0 1 5 3z" fill="#ff7eb6" /></g>,
-    cloud: <g><defs><linearGradient id="csky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#cbe8ff" /><stop offset="1" stopColor="#f9dff7" /></linearGradient></defs><rect width="200" height="220" fill="url(#csky)" /><path d="M26 110 a74 68 0 0 1 148 0" fill="none" stroke="#ffb3d1" strokeWidth="5" opacity="0.55" /><path d="M32 110 a68 62 0 0 1 136 0" fill="none" stroke="#ffe699" strokeWidth="5" opacity="0.55" /><path d="M38 110 a62 56 0 0 1 124 0" fill="none" stroke="#aee8d8" strokeWidth="5" opacity="0.55" /><g fill="#fff" opacity="0.92"><ellipse cx="44" cy="46" rx="22" ry="12" /><ellipse cx="58" cy="42" rx="14" ry="10" /><ellipse cx="154" cy="60" rx="24" ry="12" /><ellipse cx="140" cy="56" rx="14" ry="10" /><ellipse cx="48" cy="186" rx="34" ry="14" /><ellipse cx="152" cy="188" rx="34" ry="14" /></g></g>,
+    cloud: <g><defs><linearGradient id={`${rg}csky`} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#cbe8ff" /><stop offset="1" stopColor="#f9dff7" /></linearGradient></defs><rect width="200" height="220" fill={`url(#${rg}csky)`} /><path d="M26 110 a74 68 0 0 1 148 0" fill="none" stroke="#ffb3d1" strokeWidth="5" opacity="0.55" /><path d="M32 110 a68 62 0 0 1 136 0" fill="none" stroke="#ffe699" strokeWidth="5" opacity="0.55" /><path d="M38 110 a62 56 0 0 1 124 0" fill="none" stroke="#aee8d8" strokeWidth="5" opacity="0.55" /><g fill="#fff" opacity="0.92"><ellipse cx="44" cy="46" rx="22" ry="12" /><ellipse cx="58" cy="42" rx="14" ry="10" /><ellipse cx="154" cy="60" rx="24" ry="12" /><ellipse cx="140" cy="56" rx="14" ry="10" /><ellipse cx="48" cy="186" rx="34" ry="14" /><ellipse cx="152" cy="188" rx="34" ry="14" /></g></g>,
   };
   return (
     <svg viewBox="0 0 200 220" width="100%" height="100%" aria-hidden="true" style={{ display: "block" }}>
-      <defs><linearGradient id="rbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#fff3f9" /><stop offset="1" stopColor="#f3e8ff" /></linearGradient></defs>
-      {id && bg[id] ? bg[id] : <rect width="200" height="220" fill="url(#rbg)" />}
+      <defs><linearGradient id={`${rg}rbg`} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#fff3f9" /><stop offset="1" stopColor="#f3e8ff" /></linearGradient></defs>
+      {id && bg[id] ? bg[id] : <rect width="200" height="220" fill={`url(#${rg}rbg)`} />}
       {furn?.includes("rug") ? <ellipse cx="100" cy="202" rx="70" ry="12" fill="#ffc2dc" opacity="0.7" /> : null}
       {furn?.includes("bed") ? <g><rect x="8" y="168" width="54" height="36" rx="8" fill="#ffb3d1" /><rect x="12" y="164" width="22" height="14" rx="5" fill="#fff" /><path d="M8 184 h54" stroke="#ff8cc0" strokeWidth="3" /></g> : null}
       {furn?.includes("plant") ? <g><path d="M168 184 h20 l-3 22 h-14z" fill="#e89a6c" /><path d="M178 184 q-12 -18 -4 -30 q10 8 4 30z M178 184 q12 -16 12 -26 q-14 4 -12 26z" fill="#6ccf9a" /></g> : null}
@@ -1010,9 +1013,10 @@ export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true, act 
 
   if (stage <= 0) {
     return (
-      <g className={moveCls} data-pet-act={act || "idle"}>
+      <g>
         {defs}
         <ellipse cx="100" cy="202" rx="44" ry="9" fill={`url(#${g}shadow)`} />
+        <g className={moveCls} data-pet-act={act || "idle"}>
         <g className={anim && !act ? "pet-wobble" : undefined} style={{ transformOrigin: "100px 200px" }}>
           <path d="M100 84 C128 84, 146 122, 142 158 C139 186, 122 200, 100 200 C78 200, 61 186, 58 158 C54 122, 72 84, 100 84 Z" fill={`url(#${g}egg)`} stroke={p.stroke} strokeWidth="2.5" strokeLinejoin="round" />
           <ellipse cx="82" cy="112" rx="10" ry="18" transform="rotate(20 82 112)" fill="rgba(255,255,255,0.65)" />
@@ -1024,6 +1028,7 @@ export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true, act 
           {kind === "puppy" ? <g fill={p.egg2} opacity="0.85"><ellipse cx="100" cy="162" rx="10" ry="8" /><circle cx="87" cy="148" r="4" /><circle cx="96" cy="143" r="4" /><circle cx="105" cy="143" r="4" /><circle cx="114" cy="148" r="4" /><circle cx="74" cy="126" r="5.5" opacity="0.65" /><circle cx="126" cy="182" r="6.5" opacity="0.65" /></g> : null}
           <path d="M86 105 l7 7 l-6 6 l8 5" fill="none" stroke={p.stroke} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
         </g>
+        </g>
         {fx}
       </g>
     );
@@ -1034,9 +1039,10 @@ export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true, act 
   const hasOutfit = Boolean(equip.outfit) || stage === 4;
 
   return (
-    <g className={moveCls} data-pet-act={act || "idle"}>
+    <g>
       {defs}
       <ellipse cx="100" cy="202" rx={46 * s} ry={8.5 * s} fill={`url(#${g}shadow)`} />
+      <g className={moveCls} data-pet-act={act || "idle"}>
       <g className={anim && !act ? "pet-bounce" : undefined} style={{ transformOrigin: "100px 205px" }}>
         <g transform={`translate(100 202) scale(${s}) translate(-100 -202)`}>
           {kind === "kitten" ? (
@@ -1124,7 +1130,7 @@ export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true, act 
           <path d="M100 52 C127 52, 146 67, 148 91 C150 115, 132 135, 100 135 C68 135, 50 115, 52 91 C54 67, 73 52, 100 52 Z" fill={`url(#${g}body)`} stroke={p.stroke} strokeWidth="2.3" strokeLinejoin="round" />
           <ellipse cx="83" cy="67" rx="14" ry="5" transform="rotate(-16 83 67)" fill="rgba(255,255,255,0.24)" />
 
-          <Face k={kind} stage={stage} mood={mood} g={g} />
+          <Face k={kind} stage={stage} mood={mood} g={g} anim={anim} />
           <g className="pet-ears-front"><EarsFront k={kind} g={g} /></g>
 
           {stage === 2 && !equip.acc ? (
@@ -1143,7 +1149,7 @@ export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true, act 
 
           <Acc id={equip.acc} k={kind} />
 
-          {stage === 4 ? (
+          {stage === 4 && (!equip.acc || new Set(["glasses", "heartglasses", "bow", "kitten_bell", "puppy_bell"]).has(equip.acc)) ? (
             <g>
               <path d="M62 49 L100 34 L138 49 L100 64 Z" fill="#3d2d58" stroke="#281c3d" strokeWidth="1.7" strokeLinejoin="round" />
               <rect x="85" y="53" width="30" height="11" rx="3" fill="#3d2d58" stroke="#281c3d" strokeWidth="1.5" />
@@ -1179,6 +1185,7 @@ export function PetArt({ kind, stage, mood = "ok", equip = {}, anim = true, act 
             <path d="M166 14 h16" stroke="#e2a840" strokeWidth="2" />
           </g>
         ) : null}
+      </g>
       </g>
       {fx}
     </g>

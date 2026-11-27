@@ -102,6 +102,20 @@ const RESCUE_AU = new RegExp("audio/pet/(" + petAu("rescue").join("|") + ")\\.mp
     const src = await page.$eval(".card-img", (e) => e.src).catch(() => "");
     const dims = await page.$eval(".card-img", (e) => [e.naturalWidth, e.naturalHeight]).catch(() => [0, 0]);
     ok(tag + " card PNG generated 1080x1350", src.startsWith("data:image/png") && dims[0] === 1080 && dims[1] === 1350, String(dims));
+    const cardClean = await page.evaluate((u) => new Promise((res) => {
+      const im = new Image(); im.onload = () => {
+        const c = document.createElement("canvas"); c.width = im.width; c.height = im.height;
+        const x = c.getContext("2d"); x.drawImage(im, 0, 0);
+        const d = x.getImageData(320, 480, 440, 260).data;
+        let yawn = 0, blush = 0;
+        for (let i = 0; i < d.length; i += 4) {
+          if (Math.abs(d[i]-74)<=2 && Math.abs(d[i+1]-42)<=2 && Math.abs(d[i+2]-82)<=2) yawn++;
+          if (Math.abs(d[i]-255)<=2 && Math.abs(d[i+1]-118)<=2 && Math.abs(d[i+2]-170)<=2) blush++;
+        }
+        res({ yawn, blush });
+      }; im.src = u;
+    }), src);
+    ok(tag + " card PNG has zero yawn/blush-x bleed", cardClean.yawn === 0 && cardClean.blush === 0, JSON.stringify(cardClean));
     if (shot && src) fs.writeFileSync(`${shot}_${L}_${vp.name}_classcard.png`, Buffer.from(src.split(",")[1], "base64"));
     const text = await page.$eval(".card-text", (e) => e.value); const code1 = (text.match(/HSK4C2\.[A-Za-z0-9_-]+\.[0-9a-z]+/) || [""])[0];
     ok(tag + " text version + code", /Lan/.test(text) && /A1/.test(text) && !!code1, text.split("\n")[0]);
